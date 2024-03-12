@@ -1,0 +1,824 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Data types Module Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Data types Module Supervisor</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="DatatypesModuleSupervisor" data-magellan-target="DatatypesModuleSupervisor"><span>Data types Module Supervisor</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <ul>
+                                                            <li><a href="ATY_A.htm">A (Alphanumeric type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AAR.htm">AAR (Parameter code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AB0.htm">AB0 (Image file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABA.htm">ABA (Recurring task code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABB.htm">ABB (Image file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABC.htm">ABC (Batch server calendar)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABD.htm">ABD (Doc. image file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABF.htm">ABF (Fact tables)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABG.htm">ABG (Groups of tasks)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABH.htm">ABH (Hourly constraints)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABI.htm">ABI (Dimensions)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABIMG.htm">ABIMG (Image blob)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABM.htm">ABM (Datamart)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABO.htm">ABO (Business objects reports)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABR.htm">ABR (Abbreviation screen/table)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABS.htm">ABS (Grid variable )</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABT.htm">ABT (Task code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABV.htm">ABV (Synchronisation rules)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ABW.htm">ABW (Data warehouse)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AC.htm">AC (Key type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AC0.htm">AC0 (Text file (clob))</a>
+                                                            </li>
+                                                            <li><a href="ATY_AC1.htm">AC1 (Text file URL)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACB.htm">ACB (Standard text file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACD.htm">ACD (Documentation clob)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACG.htm">ACG (Key change)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACHTML.htm">ACHTML (HTML clob)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACL.htm">ACL (Control table)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACLA.htm">ACLA (Structure)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACN.htm">ACN (Inquiries)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACPLAIN.htm">ACPLAIN (Plain text clob)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACR.htm">ACR (Crystal report name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACRTF.htm">ACRTF (RTF clob)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACS.htm">ACS (Access code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACST.htm">ACST (Constant)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACT.htm">ACT (Action)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACTX.htm">ACTX (Context)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ACV.htm">ACV (Activity code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADATIM.htm">ADATIM (Date time)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADC.htm">ADC (Processing)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADD.htm">ADD (Remote folder)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADI.htm">ADI (Miscellaneous table set-up)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADL.htm">ADL (Address line)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADLK.htm">ADLK (Setup kit)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADLV.htm">ADLV (Deliverable)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADP.htm">ADP (General parameters)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADR.htm">ADR (Address code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADRL.htm">ADRL (Address code (Control/List))</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADRNC.htm">ADRNC (Address code (no control))</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADS.htm">ADS (Folder)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADV.htm">ADV (Miscellaneous table set-up)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADW.htm">ADW (Parameter value)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ADZ.htm">ADZ (Help key-word)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AEV.htm">AEV (Table setup/import)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AEX.htm">AEX (Exclusion)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFAC.htm">AFAC (Factory owner)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFC.htm">AFC (Functions)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFE.htm">AFE (Adonix formula)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFF.htm">AFF (Adonix formula)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFR.htm">AFR (Adonix formula)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AFT.htm">AFT (User function profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AGB.htm">AGB (Global variable)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AGC.htm">AGC (Company groupings)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AGF.htm">AGF (Site groupings)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AGS.htm">AGS (GDPR setup)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AHH.htm">AHH (Hierarchies)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AHI.htm">AHI (History/purge)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AII.htm">AII (Predefined conditions)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AIM.htm">AIM (Printers)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AIT.htm">AIT (Interactive components)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AIU.htm">AIU (BI user profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ALEG.htm">ALEG (Legislation)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ALH.htm">ALH (Query tool)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ALO.htm">ALO (User login code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ALOGLEV.htm">ALOGLEV (Log level)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ALQ.htm">ALQ (Query tool)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMC.htm">AMC (Machine name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AME.htm">AME (Profession code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMIME.htm">AMIME (MIME management)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMK.htm">AMK (Screen code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMM.htm">AMM (Memo code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMS.htm">AMS (Workflow)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AMSG.htm">AMSG (Messages)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ANB.htm">ANB (Number of elements)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ANG.htm">ANG (Navigation)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ANM.htm">ANM (Document number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ANU.htm">ANU (User directory)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ANX.htm">ANX (Table index)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AOB.htm">AOB (Object)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AOE.htm">AOE (Import/export templates)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AOI.htm">AOI (Import/export flag)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AOR.htm">AOR (Transcribe import/export)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AOW.htm">AOW (Lot number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AP2.htm">AP2 (Multilists)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APH.htm">APH (Setup templates)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APHOTO.htm">APHOTO (Photo)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APM.htm">APM (User menu profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APP.htm">APP (Dashboard view parameters)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APR.htm">APR (Processes)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APS.htm">APS (Dashboard pages)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APU.htm">APU (Publication group)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APV.htm">APV (Dashboard views)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APW.htm">APW (Password)</a>
+                                                            </li>
+                                                            <li><a href="ATY_APWS.htm">APWS (Password)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARA.htm">ARA (ZPL file templates)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARC.htm">ARC (Archiving rules)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AREL.htm">AREL (Version-release)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARF.htm">ARF (Structure reference)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARP.htm">ARP (Report)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARQTFIC.htm">ARQTFIC (Query log)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ART.htm">ART (RTF file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARU.htm">ARU (EDM user profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARX.htm">ARX (Print code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ARZ.htm">ARZ (ZPL printer setup)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASB.htm">ASB (Graphic components)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASL.htm">ASL (Conditional styles)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASM.htm">ASM (Methods)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASO.htm">ASO (Solution)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASTO.htm">ASTO (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASU.htm">ASU (Subprograms)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASW.htm">ASW (Representations)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASY.htm">ASY (Presentation styles)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ASYM.htm">ASYM (Symbol)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AT.htm">AT (Image file type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AT1.htm">AT1 (Transactions)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATB.htm">ATB (Tables)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATBFIC.htm">ATBFIC (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATN.htm">ATN (Transaction type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATP.htm">ATP (Gadget type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATRAFIC.htm">ATRAFIC (Log file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATRANS.htm">ATRANS (Translation)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATT.htm">ATT (Dictionary text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATU.htm">ATU (Geographic subdivisions)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATX.htm">ATX (Dictionary text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATY.htm">ATY (Data type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ATYP.htm">ATYP (Prototype type)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AUR.htm">AUR (Links)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AUS.htm">AUS (User)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AUTIL.htm">AUTIL (Utilities)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AUUID.htm">AUUID (Single identifier)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AV.htm">AV (Variable format)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVA.htm">AVA (Field name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVB.htm">AVB (Variable name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVC.htm">AVC (Property path)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVF.htm">AVF (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVL.htm">AVL (Volume)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVOIDBLB.htm">AVOIDBLB (Blbfile empty)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVOIDCLB.htm">AVOIDCLB (Clbfile empty)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVOL.htm">AVOL (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVOLFIC.htm">AVOLFIC (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVOLFIL.htm">AVOLFIL (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVP.htm">AVP (Gadget)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVPRC.htm">AVPRC (Visual process)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVR.htm">AVR (Values)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVT.htm">AVT (Table - view)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVV.htm">AVV (Variable format)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVW.htm">AVW (Views)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AVWT.htm">AVWT (Table - view)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWA.htm">AWA (Workflow rules)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWE.htm">AWE (Publication name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWM.htm">AWM (Data models)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWR.htm">AWR (Assignment rules)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWW.htm">AWW (Workflow workbench)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AWX.htm">AWX (Notifications)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AX1.htm">AX1 (Short translatable text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AX2.htm">AX2 (Normal translatable text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AX3.htm">AX3 (Long translatable text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AXL.htm">AXL (Web services)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AXX.htm">AXX (Translatable text (text))</a>
+                                                            </li>
+                                                            <li><a href="ATY_AY.htm">AY (Website patch)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AY8.htm">AY8 (Temporary composite key)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AY9.htm">AY9 (Composite key)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYA.htm">AYA (Web action)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYB.htm">AYB (Blocks)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYC.htm">AYC (List of values)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYD.htm">AYD (Web site profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYE.htm">AYE (Entity)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYF.htm">AYF (Field)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYG.htm">AYG (Web pages)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYH.htm">AYH (Safe X3 WAS profile)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYI.htm">AYI (Interface)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYL.htm">AYL (Dynamic links)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYM.htm">AYM (Messages)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYN.htm">AYN (Lines by types)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYO.htm">AYO (Web services pools)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYP.htm">AYP (Personalized styles)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYR.htm">AYR (Parameters)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYS.htm">AYS (Website)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYV.htm">AYV (Values)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYW.htm">AYW (Conditioned blocks)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYY.htm">AYY (Html document)</a>
+                                                            </li>
+                                                            <li><a href="ATY_AYZ.htm">AYZ (Form)</a>
+                                                            </li>
+                                                            <li><a href="ATY_BID.htm">BID (Bank ID code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_BPA.htm">BPA (Entity number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_C.htm">C (Short integer)</a>
+                                                            </li>
+                                                            <li><a href="ATY_COE.htm">COE (Coefficient)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CPY.htm">CPY (Company)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CRN.htm">CRN (Company tax ID number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CRT.htm">CRT (Site tax ID code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CRY.htm">CRY (Country code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CT0.htm">CT0 (City)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CTY.htm">CTY (City)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CTYN.htm">CTYN (City)</a>
+                                                            </li>
+                                                            <li><a href="ATY_CUR.htm">CUR (Currency)</a>
+                                                            </li>
+                                                            <li><a href="ATY_D.htm">D (Date)</a>
+                                                            </li>
+                                                            <li><a href="ATY_DBN.htm">DBN (Database name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_DCB.htm">DCB (BCD)</a>
+                                                            </li>
+                                                            <li><a href="ATY_DEP.htm">DEP (Depositor)</a>
+                                                            </li>
+                                                            <li><a href="ATY_DES.htm">DES (Description)</a>
+                                                            </li>
+                                                            <li><a href="ATY_DR.htm">DR (Relative date)</a>
+                                                            </li>
+                                                            <li><a href="ATY_E164TEL.htm">E164TEL (Telephone)</a>
+                                                            </li>
+                                                            <li><a href="ATY_EEC.htm">EEC (EU VAT no.)</a>
+                                                            </li>
+                                                            <li><a href="ATY_FCY.htm">FCY (Site)</a>
+                                                            </li>
+                                                            <li><a href="ATY_FEN.htm">FEN (Window)</a>
+                                                            </li>
+                                                            <li><a href="ATY_FIC.htm">FIC (File)</a>
+                                                            </li>
+                                                            <li><a href="ATY_FOR.htm">FOR (Formula)</a>
+                                                            </li>
+                                                            <li><a href="ATY_GEO.htm">GEO (Geographic code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_GTC.htm">GTC (Inquiries)</a>
+                                                            </li>
+                                                            <li><a href="ATY_HM.htm">HM (Time hh:mm)</a>
+                                                            </li>
+                                                            <li><a href="ATY_HS.htm">HS (Time hh:mm:ss)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ICO.htm">ICO (Icon)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ID.htm">ID (Identifier)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ID1.htm">ID1 (Identifier 1)</a>
+                                                            </li>
+                                                            <li><a href="ATY_ID2.htm">ID2 (Identifier 2)</a>
+                                                            </li>
+                                                            <li><a href="ATY_L.htm">L (Long integer)</a>
+                                                            </li>
+                                                            <li><a href="ATY_L10.htm">L10 (Long integer)</a>
+                                                            </li>
+                                                            <li><a href="ATY_LAN.htm">LAN (Language)</a>
+                                                            </li>
+                                                            <li><a href="ATY_LNK.htm">LNK (Link expression)</a>
+                                                            </li>
+                                                            <li><a href="ATY_M.htm">M (Local menu)</a>
+                                                            </li>
+                                                            <li><a href="ATY_M1.htm">M1 (Checkbox)</a>
+                                                            </li>
+                                                            <li><a href="ATY_M14.htm">M14 (Local menu 14)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MAI.htm">MAI (Email address)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD0.htm">MD0 (Amount in currency)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD1.htm">MD1 (Amount in currency)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD2.htm">MD2 (Short amount)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD3.htm">MD3 (Currency amt without separator)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD4.htm">MD4 (Special amount in currencies)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MD5.htm">MD5 (Price in currency)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MM.htm">MM (Local menu can be modified)</a>
+                                                            </li>
+                                                            <li><a href="ATY_MNL.htm">MNL (Local menu number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_NAF.htm">NAF (SIC code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_NAM.htm">NAM (Name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_NCY.htm">NCY (Country name)</a>
+                                                            </li>
+                                                            <li><a href="ATY_NID.htm">NID (Unique identification number)</a>
+                                                            </li>
+                                                            <li><a href="ATY_PAB.htm">PAB (Paying bank)</a>
+                                                            </li>
+                                                            <li><a href="ATY_POS.htm">POS (Postal code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_POSN.htm">POSN (Postal code)</a>
+                                                            </li>
+                                                            <li><a href="ATY_PS1.htm">PS1 (Statistical parameters)</a>
+                                                            </li>
+                                                            <li><a href="ATY_PS2.htm">PS2 (Statistical parameters)</a>
+                                                            </li>
+                                                            <li><a href="ATY_RCU.htm">RCU (Currency rate)</a>
+                                                            </li>
+                                                            <li><a href="ATY_SAT.htm">SAT (Region (county, state, ..))</a>
+                                                            </li>
+                                                            <li><a href="ATY_SATN.htm">SATN (Region (county, state, ..))</a>
+                                                            </li>
+                                                            <li><a href="ATY_SATNOREF.htm">SATNOREF (Region (county, state, ..))</a>
+                                                            </li>
+                                                            <li><a href="ATY_SHO.htm">SHO (Short description)</a>
+                                                            </li>
+                                                            <li><a href="ATY_TCU.htm">TCU ()</a>
+                                                            </li>
+                                                            <li><a href="ATY_TEL.htm">TEL (Telephone)</a>
+                                                            </li>
+                                                            <li><a href="ATY_TEX.htm">TEX (Text)</a>
+                                                            </li>
+                                                            <li><a href="ATY_TFOLEG.htm">TFOLEG (Formulas per legislation)</a>
+                                                            </li>
+                                                            <li><a href="ATY_TRA.htm">TRA (Log file)</a>
+                                                            </li>
+                                                            <li><a href="ATY_UOM.htm">UOM (Unit)</a>
+                                                            </li>
+                                                            <li><a href="ATY_URL.htm">URL (URL)</a>
+                                                            </li>
+                                                            <li><a href="ATY_UUID.htm">UUID (UUID identifier)</a>
+                                                            </li>
+                                                            <li><a href="ATY_UVY.htm">UVY (Unavailable periods)</a>
+                                                            </li>
+                                                            <li><a href="ATY_VCR.htm">VCR (Entry number )</a>
+                                                            </li>
+                                                            <li><a href="ATY_W.htm">W (Filler)</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#DatatypesModuleSupervisor">Data types Module Supervisor</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[0,1],u:['../Content/About.htm'],s:['$action','principal'],p:[['$action',3],['dark',7],['is',7],['refer',4],['ver_x3_erp_function',2]]});

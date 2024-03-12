@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Node.js web server recommendations" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Node.js web server recommendations
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/Images/doc.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript"><![CDATA[
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+]]></script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="Nodejswebserverrecommendations" data-magellan-target="Nodejswebserverrecommendations"> Node.js web server recommendations
+</h1>
+                                                <!-- Public -->
+                                                <h2 id="Introductionmainprinciplesofsetup" data-magellan-target="Introductionmainprinciplesofsetup">Introduction: main principles of setup</h2>
+                                                <p>The Sage X3 Warehousing web server architecture is based on <i>node.js</i> instances that are load balanced. Each <i>node.js</i> process can manage pages for several users.</p>
+                                                <p>The Syracuse load balancer distributes user sessions over the different <i>node.js</i> processes. The distribution is based on an algorithm that considers the response time and occupation rate (number of sessions) of every <i>node.js</i> process.</p>
+                                                <p>The load balancer will also:</p>
+                                                <ul>
+                                                    <li>Check their memory consumption</li>
+                                                    <li>Stop assigning new sessions to a process if necessary (“Restricted mode”)</li>
+                                                    <li>Create new processes to supplement restricted ones</li>
+                                                </ul>
+                                                <p>It is critical to size the number of nodes and to tune their CPU and memory consumption to get the best performance. <i>node.js</i> is a standard framework that works in asynchronous mode. It is therefore difficult to accurately estimate the number of node.js processes and to size them for a customer instance without extensive analysis.</p>
+                                                <p>The sizing requirement differs according to the type of page and functions the users run. The heaviest consumption is encountered with classic pages containing grids with a large number of lines (over 1,000).</p>
+                                                <p>The guidelines in this document are a starting point but can be modified on site according to observation, if the result is not optimal.</p>
+                                                <p>The configuration of <i>node.js</i> is based on three elements:</p>
+                                                <ul>
+                                                    <li><b>Number of <i>node.js</i> child processes</b>: The number of node.js processes is set up in the host administration page (Administration menu &gt; Administration &gt; Servers &gt; Hosts)</li>
+                                                    <li><b>Memory sizing</b> Memory sizing for each <i>node.js</i> process is defined in a configuration file called <i>nodelocal.js</i>, located in ..\Syracuse\bin in the Syracuse installation directory).</li>
+                                                    <li><b>Time-out settings</b>: The time-out conditions on <i>node.js</i> processes, also defined in <i>nodelocal.js</i>.</li>
+                                                </ul>
+                                                <h2 id="Numberofnodejsprocesses" data-magellan-target="Numberofnodejsprocesses">Number of node.js processes</h2>
+                                                <p>The number of node processes depends on the maximum number of session requests during peak activity.</p>
+                                                <p>You can use a set of simple rules to initially size a Sage Syracuse (web) server:</p>
+                                                <ul>
+                                                    <li>For normal usage, a <i>node.js</i> process can serve up to about 25 typical interactive user sessions. If some or all of those sessions have a high activity level this number should be lowered (see below for examples of high activity levels).</li>
+                                                    <li>A session is a single browser tab running a classic page function, or a set of tabs opened by a user running functions in Syracuse mode. Make sure that two tabs of the same browser displayed in different windows are running under the same session. Be careful, if you open a browser tab in incognito/private mode, it is considered as a different session.</li>
+                                                    <li>The activity level of a session consists in the actual operations performed by a session. For example, if there are 50 users who perform small operations and whose sessions are inactive most of the time, then it is possible to serve them all through a couple of <i>node.js</i> processes. Inversely, if they perform heavy operations intensively, such as creating hundreds of sales order lines per minute or using large enquiries with thousands of lines, then you need to spread the sessions over more <i>node.js</i> processes.</li>
+                                                    <li>A single dedicated logical processor (CPU core) can run 2 to 4 <i>node.js</i> processes (depending on their activity rate).</li>
+                                                    <li>The rule above also applies to <i>node.js</i> processes that are dedicated to web services. In that case, memory consumption is normally lower because web service sessions are usually stateless.</li>
+                                                </ul>
+                                                <p>The number of <i>node.js</i> processes can be set up through the <b>Administration menu</b>: <i>Administration &gt; Servers &gt; Hosts</i>, mainly through the <b>Number of child processes</b> setting. You do not need to restart the server when increasing the number of child processes, but when decreasing them you need to make sure you are the only user connected to the application.</p>
+                                                <p>Some recommendations can be given to the end users to reduce memory and CPU pressure on the <i>node.js</i> processes:</p>
+                                                <ul>
+                                                    <li>Please note that all the tabs or windows opened in the same browser of a user are assigned to a single <i>node.js</i> process because they belong to the same session (except for private/incognito tabs). If your tabs contain large classic screens with lots of lines, it is preferable to limit the number of simultaneous browser tabs to avoid memory over-consumption for a single node.</li>
+                                                    <li>The memory associated to classic pages is only released when the function is closed. Make sure the browser tabs are closed when not needed anymore.</li>
+                                                    <li>If you really need to open several pages with huge classic page grids, you can use several browsers (such as Chrome and Firefox, with also a private/incognito tab) to distribute the sessions on several node processes. A normal session and an incognito window on Chrome plus a normal tab and a private tab on Firefox will represent 4 sessions. These sessions can be split across 4 nodes if the number of nodes is big enough.</li>
+                                                </ul>
+                                                <h2 id="Sizingofnodejsprocesses" data-magellan-target="Sizingofnodejsprocesses">Sizing of node.js processes</h2>
+                                                <p>A default Syracuse installation has default sizing settings that define the memory consumption of each <i>node.js</i> process, but you can modify them and also use advanced parameters defined in the <i>nodelocal.js</i> configuration file.</p>
+                                                <p>The configuration file is located on the Syracuse server (<i>..\Syracuse\bin\nodelocal.js</i>) and contains default parameters settings. The <i>nodelocal.js</i> file is never modified during an update and must always be set up manually. The modification will only be effective when you restart your Syracuse server.</p>
+                                                <p><b>Warning:</b> It is recommended to back up the file before any modification. Incorrect JSON syntaxes in <i>nodelocal.js</i> will prevent the Syracuse server from starting.</p>
+                                                <p>The default <i>nodelocal.js</i> file supplied at installation does not contain any of the advanced sizing parameters but experience shows that it might be necessary to change default values to cover most heavy activity classic page users. The table below lists the settings and their recommended values.</p>
+                                                <p>Three parameters are related to the heap memory consumption (i.e., the dynamic allocated memory) of node. The heap memory includes the objects used by <i>node.js</i> and the ones that have been allocated but are not used anymore. Periodically, the garbage collector will make the no more used memory available again. These parameters defined in MB are the following:<br /></p>
+                                                <ul>
+                                                    <br />
+                                                    <li><code>memoryThreshold1</code>: defines the limit beyond which a <i>node.js</i> process will be placed in restricted mode, i.e., it will not accept any new connections. This value can be extended up to the size given by <code>max_old_space_size</code>, see below.
+<p>When a <i>node.js</i> process is placed in restricted mode, it stops being part of the load balancing group and another process is created to take its place. The current (restricted) process continues to handle its current sessions normally but will not accept any new connection. When the last session hosted on this node will end, the corresponding node will stop.</p><p>The new process created when a <i>node.js</i> is restricted runs just like a normal <i>node.js</i> process. It is identified in the process list as “no_cleanup_Nx”, if the restricted node was Nx.</p></li>
+                                                    <br />
+                                                    <li><code>memoryThreshold2</code>: defines the memory consumption limit or a <i>node.js</i> process. When the memory consumed exceeds that value, the load balancer will terminate the <i>node.js</i> process. This value must always be higher than <code>memoryThreshold1</code>.
+<p>The no_cleanup_Nx node is also terminated when it exceeds <code>memoryThreshold2</code>. Note that the memory really consumed by a node can exceed this parameter, because only the heap memory is concerned. For example, if <code>memoryThreshold2</code> is equal to 8,000 the node process will terminate only if the total memory exceeds (approximately) 9,500 MB.</p></li>
+                                                    <br />
+                                                    <li><code>max_old_space_size</code>: This is the maximum memory allocation possible of a node process. When this limit is reached, <i>node.js</i> will crash and stop. The parameters <code>memoryThreshold1</code> and <code>memoryThreshold2</code> must be smaller than this value.</li>
+                                                    <br />
+                                                </ul>
+                                                <p>As the load balancer will kill the <i>node.js</i> process if the memory exceeds <code>memoryThreshold2</code>, there is no significant advantage to make <code>max_old_space_size</code> much bigger than <code>memoryThreshold2</code>. The higher this parameter is, the less frequently the node will consider cleaning the allocated but not yet used memory (in other terms, running the garbage collector). Therefore, if there is a difference between <code>memoryThreshold2</code> and <code>max_old_space_size</code>, it might only enhance the performance of the running nodes by decreasing the number of times the garbage collector runs.</p>
+                                                <p>Additional parameters are used to manage the load balancer behavior:</p>
+                                                <ul>
+                                                    <li><code>maxRestrictedChildren</code>: maximum number of node processes restricted for all nodes on a server. When this number is reached, if a node is in the condition to be placed in restricted mode, it will be killed and replaced by a new node. The number of restricted nodes cannot exceed this value.</li>
+                                                    <li><code>childStatusPolling</code>: defines the frequency used by the load balancer to poll every node process to check its status.</li>
+                                                    <li><code>childPingStatusTimeout</code>: when a child process takes longer than the number of milliseconds specified here to respond to the load balancer’s ping, it is placed in restricted mode.</li>
+                                                    <li><code>childMaxTimeoutDelay</code>: when a child process in restricted mode has not responded to any load balancer ping during the number of minutes specified here, the process is killed.</li>
+                                                </ul>
+                                                <p>The process used by the load balancer to manage the process can be summarized by the following flowchart:<br /><img src="../Resources/Images/images_Process-node-js.png" /></p>
+                                                <p><b>Note:</b> from version 12, it will also be possible to define <code>memoryThreshold1</code> and <code>memoryThreshold2</code> as a percentage of <code>max_old_space_size</code> with the following syntax: <code>memoryThreshold1</code>="80%". If no values are given for <code>memoryThreshold1</code> and <code>memoryThreshold2</code>, they will be defined by default as 80% and 95% of <code>max_old_space_size</code>.</p>
+                                                <p>The recommended values for these advanced parameters are as follows:</p>
+                                                <table>
+                                                    <tr>
+                                                        <th />
+                                                        <th>Value recommended for normal/medium usage (Inquiries &lt; 1,000 lines, no large Excel exports)</th>
+                                                        <th>Value recommended with large classic screens (Inquiries &gt; 1,000 lines, large Excel exports, multiple tabs with large screens…)</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>memoryThreshold1</code>
+                                                        </td>
+                                                        <td>2,500 MB</td>
+                                                        <td>4,000 MB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>memoryThreshold2</code>
+                                                        </td>
+                                                        <td>3,000 MB</td>
+                                                        <td>5,000 MB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>childPingStatusTimeout</code>
+                                                        </td>
+                                                        <td colspan="2">30,000 ms</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>childMaxTimeoutDelay</code>
+                                                        </td>
+                                                        <td colspan="2">30 min</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>max_old_space_size</code>
+                                                        </td>
+                                                        <td colspan="2">At least the value of <code>memoryThreshold2</code> (an increment of approximately 10% can be added) 3,500 MB or 5,500 MB for the example above</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>maxRestrictedChildren</code>
+                                                        </td>
+                                                        <td colspan="2">
+                                                            <ul>
+                                                                <li>Recommended general value: <code>maxRestrictedChildren</code> = number of node child processes.</li>
+                                                                <li><b>Caution:</b> this has to be adjusted depending on user activity and on server resources. For example, if your users rarely or never use large inquiries, then you can safely assume they will never need that many restricted nodes.
+In general, for a small number of node processes (e.g. 4, 5) you can apply this formula. For larger numbers, you need to evaluate user activity and adjust. Please contact Sage Support in case you have any doubt.</li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h2 id="nodelocaljsexample" data-magellan-target="nodelocaljsexample">nodelocal.js example</h2>
+                                                <p>Here is an extract of a configuration that can be adapted:</p><pre xml:space="preserve">
+"searchEngine": {    
+        "hostname": "mysearchserver",
+        "port": 9600
+                },
+    "x3fusion": {
+               "records": {
+                       "dumpPath": "C:\\Sage\\SAFEX3\\MYSYRSERV/Syracuse/cache/_cvg___USERNAME__"
+                           },
+                },
+     "session": {
+               "timeout": 20,
+                "checkInterval": 60,
+                 "auth": "basic"
+                },
+       "nanny": {
+                 // Number of nodes in restricted mode before killing the next node turning in restricted mode:
+                 // DefaultValue = 10; most of the time, 10 nodes are too much and allocate too much memory
+                 // In this example there are 5 nodes.
+                 "maxRestrictedChildren": 5,
+                 // try to connect child processes every 'childPingStatusPolling' milliseconds.
+        // Load balancer will measure the response time and consider this for load balancing.
+            // This is a sliding mean, it is computed as follows:
+                 // the newest value will be considered by (100-'childSlidingMean') percent, the previous computed
+                 // value by 'childSlidingMean' percent. When a child process takes longer than
+        // 'childPingStatusTimeout'milliseconds for the ping response, it will be turned into 
+        // restricted mode.
+                 // Default value: 60000 (milliseconds)
+                 "childPingStatusPolling": 60000,
+                // Default value: 20 (percents)
+                 "childSlidingMean": 20,
+        // Default value: 30000 (milliseconds)
+        "childPingStatusTimeout": 30000,
+        // Max delay for a child to stay in a consecutive timeout state. 
+        // If this period of time is exceeded, the process is killed.
+        // Default value: 30 (minutes)
+        "childMaxTimeoutDelay": 30
+        // waiting time (milliseconds) during load balancing to obtain results of other processes
+        // Default value: 600
+        "balancingWaitTime": 600
+        },
+      "system": {
+        // Load balancer will not assign new sessions anymore when the heap usage exceeds this value (in MB)
+        "memoryThreshold1": 2500
+        // Process will be killed during load balancer ping operation when the heap usage exceeds 
+        // this value (in MB)
+        "memoryThreshold2": 3000
+        },
+     "hosting": { 
+        // node.js options 
+        "nodeOptions": "--max_old_space_size=3500"
+        }
+}
+</pre>
+                                                <h2 id="LoadbalancerformultiSyracuseserverarchitectures" data-magellan-target="LoadbalancerformultiSyracuseserverarchitectures">Load balancer for multi-Syracuse server architectures</h2>
+                                                <p>We strongly recommend using dedicated load balancing services such as HAProxy, NGINX, VMWare NSX, ALB or F5 on architectures involving a cluster of Syracuse Servers, when there are more than 200 concurrent sessions.</p>
+                                                <p>For instances with less than 200 sessions, you can use the integrated load balancer.</p>
+                                                <h2 id="Serverresources" data-magellan-target="Serverresources">Server resources</h2>
+                                                <p>The total memory and CPU capacity on the Syracuse server must be tailored for your settings. <br />Total memory must be able to accommodate all node processes at their peak usage, and also the additional “no_cleanup” node processes that are allowed by <code>maxRestrictedChildren</code>, which must be taken into account. The maximum memory consumption of a node is defined by <code>max_old_size</code>.</p>
+                                                <p>In addition, you must consider the operating system and any other applications running on that machine. Make sure you have enough memory available. Also make sure you have appropriate swap space on the server's disks.</p>
+                                                <p>The total number of cores is calculated similarly based on the guidelines in this document. Also make sure you have enough physical cores, proper socket distribution and the proper power management settings (set to 'Performance', and not 'Balanced'). These will be important for the number of vCPUs if you are running a virtualized environment.</p>
+                                                <h2 id="Memoryconsumptionexamples" data-magellan-target="Memoryconsumptionexamples">Memory consumption examples</h2>
+                                                <p>Memory consumed by a connection is directly linked to the activity of that session. For example, running a large inquiry or request with 10,000 lines displayed on the screen will cause the related <i>node.js</i> process to consume hundreds of Megabytes holding the full data structure. Syracuse pages do not cause as much memory consumption as paging/caching is used natively. Here are a few typical examples as an illustration:</p>
+                                                <table>
+                                                    <tr>
+                                                        <th>Sage X3 Warehousing management function</th>
+                                                        <th>Display</th>
+                                                        <th>Session's <i>node.js</i> memory consumption</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Account inquiry (CONSCPT): 10,000 lines</td>
+                                                        <td>500 lines per page, 20 pages</td>
+                                                        <td>~ 600 MB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Manual matching (LETTRAGE): 30,000 lines</td>
+                                                        <td>15 lines per page, 2,000 pages</td>
+                                                        <td>~ 950 MB</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Manual matching (LETTRAGE): 30,000 lines</td>
+                                                        <td>500 lines per page, 20 pages</td>
+                                                        <td>~ 850 MB</td>
+                                                    </tr>
+                                                </table>
+                                                <h2 id="Calculationformulas" data-magellan-target="Calculationformulas">Calculation formulas</h2>
+                                                <p>You will find below a set of formulas that you can use as a starting base to set up an initial architecture to work with. </p>
+                                                <p><b>Caution:</b> these are only initial indications, you will have to evaluate and tune the parameters according to your customer’s use cases.</p>
+                                                <p>Assuming:</p>
+                                                <ul>
+                                                    <li>N = number of node child processes defined in the instance (see above)</li>
+                                                    <li>maxR = value of the <code>maxRestrictedChildren</code> parameter</li>
+                                                </ul>
+                                                <p>Then:</p>
+                                                <ul>
+                                                    <li>Total maximum memory requirement for Syracuse component = <code>(memoryThreshold1 * N) + (max_old_size * maxR)</code> <b>Note</b>: This is a maximum value considering all potential heavy sessions are working at maximum capacity. In most cases this is too much. 
+You should adjust the value based on observation and benchmarking: if memory consumption is consistently lower, then you can lower memory requirements.
+In most normal cases, the following formula will work:
+<code>Max Syracuse memory = memoryThreshold1 * N</code></li>
+                                                </ul>
+                                                <h2 id="Sagelegaldisclaimer" data-magellan-target="Sagelegaldisclaimer">Sage legal disclaimer</h2>
+                                                <p>The information contained in this guide are for general guidance only and are subject to change without notice. The sizing principles explained are intended to give you an indication on how to size the web server. The result may vary depending on the configuration and the use cases.</p>
+                                                <p>If you need specific recommendations for dedicated cases, we recommend a collaboration with Sage experts.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Nodejswebserverrecommendations"> Node.js web server recommendations
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introductionmainprinciplesofsetup">Introduction: main principles of setup</a>
+                                                        </li>
+                                                        <li><a href="#Numberofnodejsprocesses">Number of node.js processes</a>
+                                                        </li>
+                                                        <li><a href="#Sizingofnodejsprocesses">Sizing of node.js processes</a>
+                                                        </li>
+                                                        <li><a href="#nodelocaljsexample">nodelocal.js example</a>
+                                                        </li>
+                                                        <li><a href="#LoadbalancerformultiSyracuseserverarchitectures">Load balancer for multi-Syracuse server architectures</a>
+                                                        </li>
+                                                        <li><a href="#Serverresources">Server resources</a>
+                                                        </li>
+                                                        <li><a href="#Memoryconsumptionexamples">Memory consumption examples</a>
+                                                        </li>
+                                                        <li><a href="#Calculationformulas">Calculation formulas</a>
+                                                        </li>
+                                                        <li><a href="#Sagelegaldisclaimer">Sage legal disclaimer</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

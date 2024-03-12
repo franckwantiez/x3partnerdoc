@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Error handling" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Error handling
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="Errorhandling" data-magellan-target="Errorhandling"> Error handling
+</h1>
+                                                <p><strong>When code is written to be executed through an event, errors and warnings may need to be handled, for example, an erroneous value entered in a field.</strong>
+                                                </p>
+                                                <p>This document describes how to trigger an error or a warning message to send to the user. Additional errors methods have been added in update 9.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#0-the-aseterror-method">1. Errors status values</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2" />
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#5-error-transferring-methods">6. Errors transferring methods</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#1-the-aseterror-method">2. Errors throwing methods</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1" />
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1"><a href="#6-astatus-variable">7. ASTATUS variable</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#2-error-retrieving-methods">3. Max error retrieving methods</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2" />
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#7-how-to-handle-the-errors">8. How to handle the errors</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#3-list-error-retrieving-methods">4. Error list retrieving methods</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1" />
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1"><a href="#8-example-of-controls">9. Example of controls</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2" />
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#4-error-deleting-methods">5. Errors deleting methods</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1" />
+                                                    </tr>
+                                                </table>
+                                                <h1 id="1Errorsstatusvalues" data-magellan-target="1Errorsstatusvalues"><a id="0-the-aseterror-method">1. Errors status values</a>
+                                                </h1>
+                                                <p>The management of error gravity is based on a numeric value called status. Available statuses are defined by constant values (in increasing order, which mean that you can test the fact that the status is greater or equal than <code>[V]CST_ERROR</code>, for example):</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Constant</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Meaning</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><code>[V]CST_ASUCCESS</code>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">The requested operation has been successfully performed.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><code>[V]CST_AINFO</code>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Information message: no error occurs.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><code>[V]CST_AWARNING</code>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Warning message: an unusual set of values has been entered. The system sends a warning and allows you to modify the data entered.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><code>[V]CST_AERROR</code>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">An error occurred. The data entered must be modified to execute the operation requested.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><code>[V]CST_AFATAL</code>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">A fatal error occurred. A restart of the complete process is necessary.</td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="2Errorsthrowingmethods" data-magellan-target="2Errorsthrowingmethods"><a id="1-the-aseterror-method">2. Errors throwing methods</a>
+                                                </h1>
+                                                <p>Two standard methods available on the classes allow to throw errors. One allows to give an additional category, the other remains for historical reasons. These methods can be invoked several times when more than one error occurs.</p><pre xml:space="preserve"><code>INTEGER_VAL=fmet this.ASETERRORCAT (PROPERTY,MESSAGE, ERROR_TYPE, CATEGORY)
+INTEGER_VAL=fmet this.ASETERROR(PROPERTY, MESSAGE, ERROR_TYPE)</code></pre>
+                                                <br />The parameters of these methods are:
+<table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Use</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">PROPERTY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Code of the property in which the error occurs. If empty, the error is general and not linked to a property.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">MESSAGE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">String value containing the error message (in the language of the user).</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">ERROR_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Status (see chapter 1 above).<br /><code>[V]CST_AOK</code> must not be used with ASETERROR error throwing method (if the user interface is implied, it returns an error without a message).
+</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">CATEGORY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">An integer value that contains an error category. This can freely be defined by application developers.</td></tr></table><h1 id="3Maxerrorretrievingmethods" data-magellan-target="3Maxerrorretrievingmethods"><a id="2-error-retrieving-methods">3. Max error retrieving methods</a></h1><p>On every instance, we will provide a set of methods:</p><pre xml:space="preserve"><code>INTEGER_VAL=fmet this.AGETMAXERRORALL()
+INTEGER_VAL=fmet this.AGETMAXERROR(PROPERTY) 
+INTEGER_VAL=fmet this.AGETMAXERRORTXT(SEARCH_TYPE, PROPERTY, ERROR_TYPE, PROPERTY_LABEL, MESSAGE,CATEGORY,ENVIRONMENT)</code></pre><br />The parameters of the last method are described in the following table:
+<table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Description</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Value Integer SEARCH_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Contains one of the following values<br /><code>CST_ACURRENT</code>: if only the errors from the current instance are extracted<br /><code>CST_ALL</code>:if the nested sub-instance and the copied instance are extracted</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Value Char PROPERTY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Property concerned only (if not empty and if <code>ERR_LOCAL</code> is <code>CST_ACURRENT</code>)</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Value Integer ERROR_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Can have the following values:<br /><code>CST_ALL</code>: returns the highest error in the instance and nested sub-instances<br /><code>CST_ACURRENT</code>: returns the highest error in the current instance only.<br /></td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Variable Char PROPERTY_LABEL</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Label associated to the property if PROPERTY returned</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Variable Char MESSAGE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Error message</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Variable Integer CATEGORY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Category (given by the developer when throwing the error)</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Variable Char ENVIRONMENT</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Environment code given by developer when the error is transferred (empty if the error was not copied from another instance)</td></tr></table><h1 id="4Errorlistretrievingmethods" data-magellan-target="4Errorlistretrievingmethods"><a id="3-list-error-retrieving-methods">4. Error list retrieving methods</a></h1><p>Accessing to the complete error stack is performed with the following methods:</p><h2 id="Initialcall" data-magellan-target="Initialcall">Initial call</h2><pre xml:space="preserve"><code>INTEGER_VAL=fmet this.ASEARCHINFOS(SEARCH_TYPE, PROPERTY, ERROR_TYPE, SEL_TYPE)</code></pre>
+This first method initializes a temporary error storage structure. It returns an integer value that is the first error index (this value is 0 if no errors have been found). The parameters are the following:
+<table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Value Integer SEARCH_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Contains one of the following values<br /><code>CST_ACURRENT</code>: if only the errors from the current instance are extracted<br /><code>CST_ALL</code>:if the nested sub-instance and the copied instance are extracted</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Value Char PROPERTY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Property concerned only (if not empty and if <code>ERR_LOCAL</code> is <code>CST_ACURRENT</code>)</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Value Integer ERROR_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Filter on status(<code>CST_ASUCCESS</code>, <code>CST_AINFO</code>, <code>CST_AWARNING</code>, <code>CST_AERROR</code>, <code>CST_AFATAL</code>)
+</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Value Integer SEL_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Comparizon operator on status (<code>[V]CST_ALOWER</code>=less or equal to <code>ASTATUS</code>, <code>[V]CST_AEQUAL</code>=equal to <code>ASTATUS</code>, <code>[V]CST_AGREATER</code>=greater than <code>ASTATUS</code>)</td></tr></table><h2 id="Callstogetthenexterrors" data-magellan-target="Callstogetthenexterrors">Calls to get the next errors</h2><pre xml:space="preserve"><code>INTEGER_VAL=fmet this.AGETNEXTINFOS(ERROR_TYPE, PROPERTY, PROPERTY_LABEL, MESSAGE, CATEGORY, ENVIRONMENT)</code></pre>
+This second method returns the errors in the chronological order and fills the corresponding parameters. When the last error has been sent back, 0 is returned and the temporary error structure is cleaned up.
+<p>The parameters are the following:</p><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Variable Integer ERROR_TYPE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">status error (<code>CST_ASUCCESS</code>, <code>CST_AINFO</code>, <code>CST_AWARNING</code>, <code>CST_AERROR</code> or <code>CST_AFATAL</code>)</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Variable Char PROPERTY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Corresponding property if applicable</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Variable Char PROPERTY_LABEL</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Property description if applicable</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Variable Char MESSAGE</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Error message</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Variable Integer CATEGORY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Category (given by the developer when throwing the error)</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Variable Char ENVIRONMENT</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Environment code given by developer when the error is transferred (empty if the error was not copied from another instance)</td></tr></table><h2 id="Exampleoferrorhandling" data-magellan-target="Exampleoferrorhandling">Example of error handling</h2>
+This example uses a log file to manage the errors:<pre xml:space="preserve"><code>$ERROR_LOG_WRITE
+# Instantiate a class to generate the log
+Local Instance MYLOG Using C_ALOG
+  MYLOG=NewInstance C_ALOG AllocGroup Null
+# Open the log file
+Local Integer OK
+  OK=fmet MYLOG.ABEGINLOG("Error dump")
+# Fill the error structure
+Local Integer IF_ERROR
+Local Integer ERR_STAT, ERR_CAT
+Local Char ERR_PROP(250), ERR_LAB(250), ERR_MESS(250), ERR_ENV(250)
+  IF_ERROR= fmet this.ASEARCHINFOS([V]CST_ALL,"",[V]CST_AINFO,[V]CST_AGREATER)
+  # Display an error header log
+  If IF_ERROR&lt;&gt;[V]CST_AOK
+    OK=fmet MYLOG.APUTLINE("Error stack generated by"-this.ACTX.USER-"at"-num$(timestamp$))
+    OK=fmet MYLOG.APUTLINE(string$(80,"-"))
+  Endif
+  # Loop as long as errors are encountered
+  While IF_ERROR=[V]CST_AOK
+    OK=fmet MYLOG.APUTLINE("Index"-num$(IF_ERROR)+":")
+    IF_ERROR=fmet this.AGETNEXTINFOS(ERR_STAT, ERR_PROP, ERR_LAB, ERR_MESS, ERR_CAT, ERR_ENV)
+    OK=fmet MYLOG.APUTLINE("  Status="+string$(ERR_STAT=[V]CST_AERROR,"Error")
+&amp;                                     +string$(ERR_STAT=[V]CST_AWARNING,"Warning")
+&amp;                                     +string$(ERR_STAT=[V]CST_AFATAL,"Fatal error"))
+    OK=fmet MYLOG.APUTLINE("  Message="+ERR_MES)
+    IF ERR_PROP&lt;&gt;""
+      OK=fmet MYLOG.APUTLINE("  on property="+ERR_PROP+string$(ERR_LAB&lt;&gt;"","("+ERR_LAB+")"))
+    Endif
+    IF ERR_CAT&lt;&gt;0
+      OK=fmet MYLOG.APUTLINE("  application category="+num$(ERR_CAT))
+    Endif
+    IF ERR_ENV&lt;&gt;""
+      OK=fmet MYLOG.APUTLINE("  origin environment="+ERR_ENV)
+    Endif
+   Wend
+  OK=fmet MYLOG.AENDLOG()
+  FreeGroup MYLOG
+Return</code></pre><h1 id="5Errorsdeletingmethods" data-magellan-target="5Errorsdeletingmethods"><a id="4-error-deleting-methods">5. Errors deleting methods</a></h1>
+These methods delete the errors. The first one deletes errors only on the property name given as parameter. It can be called with a dedicated value of PROPERTY (ie. `CST_ALLERRORS`) to delete all errors, but this should be considered as deprecated, as the second method has been implemented.<pre xml:space="preserve"><code>INTEGER_VAL=fmet this.ADELETERROR(PROPERTY)
+INTEGER_VAL=fmet this.ADELETERRORALL()</code></pre><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Value Char PROPERTY</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Property on which the error must be deleted</td></tr></table><h1 id="6Errorstransferringmethods" data-magellan-target="6Errorstransferringmethods"><a id="5-error-transferring-methods">6. Errors transferring methods</a></h1><p>This method copies the error structures from the instance given as parameters to the error structure associated to this.<br />The environnement string allows to give a context:</p><p><code>INTEGER_VALUE=fmet this.AGETERRORSFROM(INSTANCE,ENVIRONMENT)</code></p><ul><li><code>INSTANCE</code> is the instance from which the errors are copied</li><li><code>ENVIRONMENT</code> is a character value given by the developer to indicate the origin of a nested error.</li></ul><h1 id="7ASTATUSvariableandsupervisorbehaviour" data-magellan-target="7ASTATUSvariableandsupervisorbehaviour"><a id="6-astatus-variable">7. ASTATUS variable and supervisor behaviour</a></h1><p>This variable is available on all the events, whether <code>this</code> is available or not. The value range is the same as the status values used by the ASETERROR method.</p><p><strong>Setting this variable to <code>[V]CST_AERROR</code> or <code>[V]CST_AFATAL</code> is important when an error occurs because these values are tested by the supervisor layer on a return from an event code.</strong></p><p>If an error is reported, the supervisor behaves as follows:</p><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Type of event</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Event Codes</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Behavior</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD operation events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert.html">AINSERT</a>,
+<a href="developer-guide_event-aread.html">AREAD</a>,
+<a href="developer-guide_event-aupdate.html">AUPDATE</a>,
+<a href="developer-guide_event-adelete.html">ADELETE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">The database update should not have been performed.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Properties events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-init.html">INIT</a>,
+<a href="developer-guide_event-get.html">GET</a>,
+<a href="developer-guide_event-control.html">CONTROL</a>,
+<a href="developer-guide_event-propagate.html">PROPAGATE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">The event failed. If this happens during an input, the error will be displayed. If it happens on control at the final stage before the database updates, the updates will not be triggered, but the controls will continue on every Property. A complete list of the errors will be generated.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD control events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert_control_before.html">AINSERT_CONTROL_BEFORE</a>,
+<a href="developer-guide_event-ainsert_control_after.html">AINSERT_CONTROL_AFTER</a>,
+<a href="developer-guide_event-adelete_control_before.html">ADELETE_CONTROL_BEFORE</a>,
+<a href="developer-guide_event-adelete_control_after.html">ADELETE_CONTROL_AFTER</a>,
+<a href="developer-guide_event-aupdate_control_before.html">AUPDATE_CONTROL_BEFORE</a>,
+<a href="developer-guide_event-aupdate_control_after.html">AUPDATE_CONTROL_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">The control failed. The operation 'Update operation' will not be performed (the control is not fulfilled).</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">CRUD update events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-ainsert_before.html">AINSERT_BEFORE</a>,
+<a href="developer-guide_event-ainsert_after.html">AINSERT_AFTER</a>,
+<a href="developer-guide_event-adelete_before.html">ADELETE_BEFORE</a>,
+<a href="developer-guide_event-adelete_after.html">ADELETE_AFTER</a>,
+<a href="developer-guide_event-aupdate_before.html">AUPDATE_BEFORE</a>,
+<a href="developer-guide_event-aupdate_after.html">AUPDATE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">An error occurred in the transaction. The corresponding rollback operation will be executed.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD error handling events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert_rollback.html">AINSERT_ROLLBACK</a>,
+<a href="developer-guide_event-adelete_rollback.html">ADELETE_ROLLBACK</a>,
+<a href="developer-guide_event-aupdate_rollback.html">AUPDATE_ROLLBACK</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">An error occurred during the rollback operation.</td></tr></table><p>When errors or warnings are triggered while using these methods, the result is the following:</p><ul><li>If <code>ASTATUS</code> code is <code>[V]CST_AOK</code>, nothing occurs.</li><li>If <code>ASTATUS</code> code is <code>[V]CST_ASUCCESS</code>, a message can be transmitted to the user interface.</li><li>If <code>ASTATUS</code> code is <code>[V]CST_AINFO</code> or <code>[V]CST_AWARNING</code>, the message is considered an informational or a warning message.</li><li>If <code>ASTATUS</code> code is <code>[V]CST_AERROR</code> or <code>[V]CST_AFATAL</code>, the message is considered an error message.</li></ul><p>The supervisor layer considers that an error occurred during a class operation or method if ASTATUS returns a value of <code>[V]CST_AERROR</code> or <code>[V]CST_AFATAL</code>.</p><p>The warning or error messages updated by these methods will be displayed if a user's interface is involved. For example, if an error occurs during data entry, the error is displayed on the top of the screen with a link that brings the cursor to the Property field where the error was found.</p><p>If no user interface is involved, the development partner calling a method that returns errors can manage them in their own code or write them in a <a href="developer-guide_managing-log-files.html">log file</a>.</p><h1 id="8Howtohandletheerrors" data-magellan-target="8Howtohandletheerrors"><a id="7-how-to-handle-the-errors">8. How to handle the errors</a></h1><p>The following principles must be followed:</p><h2 id="Inaneventorarule" data-magellan-target="Inaneventorarule">In an event or a rule</h2><p>The following principles must be followed:</p><ul><li>the <code>this.ASETERROR()</code> method must be used to set the message error. The property code must be filled if the error is linked to a Property. </li><li>The ASTATUS variable must also be set to prompt the supervisor to abort the operation whenever an error occurs.</li></ul><h2 id="Inamethodoranoperation" data-magellan-target="Inamethodoranoperation">In a method or an operation</h2><p>Every method and operation returns a value. This can be used either for returning a result or for returning an error code.</p><p>The <code>this.ASETERROR()</code> method must be used to return an error. The value returned by the operation or method (<code>ARET_VALUE</code>) must be assigned with the right value chosen when an error is encountered.</p>
+An example of a call of a supervisor method is provided below:<pre xml:space="preserve"><code>Local Integer RETURN_VALUE
+RETURN_VALUE=this.AREAD(KEY)
+If RETURN_VALUE &gt; [V]CST_AWARNING
+   # An error occurred
+    End RETURN_VALUE
+Else 
+    # The program continues
+    ...
+Endif</code></pre><h1 id="9Exampleofcontrols" data-magellan-target="9Exampleofcontrols"><a id="8-example-of-controls">9. Example of controls</a></h1><p>This code is called in a control event on a property that cannot be increased (a warning is sent if the amount is decreased by more than 10%).</p><pre xml:space="preserve"><code># Note : no need to assign [L]ASTATUS=[V]CST_AOK if no error (done by default)
+Local Decimal DECR_PERCENT
+If this.AMOUNT&gt;this.snapshot.AMOUNT
+  [L]ASTATUS=fmet this.ASETERROR("AMOUNT","Amount cannot be &gt; "-num$(this.snapshot.AMOUNT),[V]CST_AERROR)
+Else
+  DECR_PERCENT=100*(this.snapshot.AMOUNT-this.AMOUNT)/(this.snapshot.AMOUNT+(this.snapshot.AMOUNT=0))
+  If DECR_PERCENT&gt;=10
+    [L]ASTATUS=fmet this.ASETERROR("AMOUNT","Amount decreased by"-num$(int(DECR_PERCENT))-"%",[V]CST_AWARNING)
+  Endif
+Endif
+Return</code></pre><br /></div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Errorhandling"> Error handling
+</a>
+                                                    </li>
+                                                    <li><a href="#1Errorsstatusvalues">1. Errors status values</a>
+                                                    </li>
+                                                    <li><a href="#2Errorsthrowingmethods">2. Errors throwing methods</a>
+                                                    </li>
+                                                    <li><a href="#3Maxerrorretrievingmethods">3. Max error retrieving methods</a>
+                                                    </li>
+                                                    <li><a href="#4Errorlistretrievingmethods">4. Error list retrieving methods</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Initialcall">Initial call</a>
+                                                        </li>
+                                                        <li><a href="#Callstogetthenexterrors">Calls to get the next errors</a>
+                                                        </li>
+                                                        <li><a href="#Exampleoferrorhandling">Example of error handling</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#5Errorsdeletingmethods">5. Errors deleting methods</a>
+                                                    </li>
+                                                    <li><a href="#6Errorstransferringmethods">6. Errors transferring methods</a>
+                                                    </li>
+                                                    <li><a href="#7ASTATUSvariableandsupervisorbehaviour">7. ASTATUS variable and supervisor behaviour</a>
+                                                    </li>
+                                                    <li><a href="#8Howtohandletheerrors">8. How to handle the errors</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Inaneventorarule">In an event or a rule</a>
+                                                        </li>
+                                                        <li><a href="#Inamethodoranoperation">In a method or an operation</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#9Exampleofcontrols">9. Example of controls</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 février 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Sage X3 : Pré et post-requis fonctionnels de migration d'un dossier en V7" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Sage X3 : Pré et post-requis fonctionnels de migration d'un dossier en V7</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="SageX3PréetpostrequisfonctionnelsdemigrationdundossierenV7" data-magellan-target="SageX3PréetpostrequisfonctionnelsdemigrationdundossierenV7"><span>Sage X3 : Pré et post-requis fonctionnels de migration d'un dossier en V7</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+La migration des données et paramétrages contenus dans le dossier migré nécessite deux interventions : une intervention avant (pré-requis) et une intervention après (post-requis) le traitement de migration automatiquement réalisé lors de la première validation du dossier migré dans la solution V7.
+      </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_15"></a>
+                                                            <h2 class="g1" id="Localisationespagnole" data-magellan-target="Localisationespagnole">Localisation espagnole</h2>
+                                                            <p>
+Lors de la migration d'un dossier de législation espagnole, merci de contacter votre service client espagnol afin de connaître la procédure de migration dédiée.
+        </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Prérequisautraitementdemigration" data-magellan-target="Prérequisautraitementdemigration">Pré-requis au traitement de migration</h2>
+                                                            <p>On trouvera ci-dessous les pré-requis de migration d'un dossier. De façon générale, une première étape, qu'il est fortement conseillé de réaliser, est de <b>vérifier la cohérence des données à migrer</b>. En effet, sur un dossier qui a beaucoup de mouvements, et qui a parfois subi des étapes de maintenance, il est possible que certaines données ne soient pas parfaitement cohérentes (et ce d'autant plus que l'on peut avoir des développements spécifiques).</p>
+                                                            <p>Cette <a href="UTIBASE.htm"><span style="color: #0066cc;">opération</span> </a>permettra de détecter d'éventuels problèmes liés à des données qui risquent de provoquer des erreurs lors de la procédure de migration à proprement parler, obligeant à la relancer.</p>
+                                                            <p>Il est aussi conseillé de purger un certain nombre de tables temporaires dont la migration peut être longue (par exemple la table des requêtes).</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Postrequisautraitementdemigration" data-magellan-target="Postrequisautraitementdemigration">Post-requis au traitement de migration</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_60">Processus métier</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_150">Comptabilité</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_300">Immobilisations</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_400">Négoce</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><a id="MIS_40_60"></a>
+                                                            <h3 class="g1">Processus métier</h3>
+                                                            <p>Les processus utilisés en version 6 doivent être revalidés par la fonction Recodification processus (ARECOPRO). Cette validation&#160;permet de les conformer à la version 7. </p>
+                                                            <p>La validation des processus doit se faire :</p>
+                                                            <ul>
+                                                                <li>après chaque validation de dossier,</li>
+                                                                <li>après chaque copie de processus d'un dossier à un autre.</li>
+                                                            </ul><a id="MIS_40_150"></a>
+                                                            <h3 class="g1">Comptabilité</h3>
+                                                            <p />
+                                                            <h5>Pièces automatiques</h5>
+                                                            <p>De nouvelles pièces automatiques sont disponibles en version 7&#160;et certaines pièces automatiques de la version 6 ont été modifiées.&#160;<br />Vous devez donc lancer l’utilitaire de comparaison des pièces automatiques entre le dossier migré et le dossier Sage X3.</p>
+                                                            <h5>Intitulés longs et courts des données déclinées par législation</h5>
+                                                            <p>Certaines fonctions de paramétrage sont désormais déclinées par législation. A l’occasion de cette adaptation, les champs intitulés longs et courts ont été rendus obligatoires dans la langue de connexion de l’utilisateur. En cas de modification de la valeur d’un champ d’une telle donnée, si l’intitulé long ou court n’est pas présent dans la langue de connexion, il doit être complété.<br />Les fonctions concernées utilisées en finance sont les types de pièces (GESGTE), les journaux (GESJOU), les destinations comptables (GESCDA), les transactions de règlements (GESTPY), les codes éditions (GESTED), les modes de règlements (GESTAM), les fichiers bancaires (GESTFB), les codes taxes (GESTVT), les régimes de taxe (GESTVB), les codes escomptes/agios (GESTDA), les types de factures ventes et achats (GESTSV et GESTPV).</p>
+                                                            <h5>Groupe d’états</h5>
+                                                            <p>En version 7, les fonctions permettant de gérer les déclarations à des organismes fiscaux ou administratifs ont été regroupées dans un menu Déclarations et réorganisées par thème puis législation.<br />Les états associés à ces fonctions ont aussi été réorganisés en conséquence, leur groupe de rattachement (via le menu local 97) étant donc forcé pour correspondre à cette nouvelle structure. <br />Dans le cas où certaines particularités clients quant au groupe de rattachement doivent perdurer après migration, il conviendra de modifier le groupe d’états de l’état.</p>
+                                                            <h5>Champs indiquant un chemin de fichier</h5>
+                                                            <p>Le nouveau mode de gestion des volumes en V7 et l’utilisation d’un browser internet plutôt qu’un client lourd implique que les champs permettant d’indiquer un chemin de génération de fichier fonctionnent différemment. Sont concernés des valeurs paramètres d’une part, mais aussi des champs de certaines fonctions.<br />Pour ce qui est des paramètres contenant un chemin, ils sont désormais utilisés uniquement quand la destination est de type Serveur. Ils doivent de ce fait contenir un chemin relatif au volume sélectionné (ou simplement un volume), exprimé avec la syntaxe idoine.<br />Par exemple, le paramètre EXPCASPAY devra contenir [CASH] afin que les fichiers soient générés sous le volume CASH.<br />Ces paramètres doivent donc être mis à jour pour contenir les volumes ou chemins relatifs selon la nouvelle syntaxe.<br />Pour ce qui est du cas des champs de fonction, les fonctions ‘Paramétrage ENEREGY’ (GESNRY) et ‘Paramétrage ACCENTFIL’ (GESFAE) sont concernées. Ces&#160;deux fonctions contiennent une zone qui dans le cas d’une génération de type Serveur doit contenir un chemin relatif au volume sélectionné (ou simplement un volume).</p><a id="MIS_40_300"></a>
+                                                            <h3 class="g1">Immobilisations</h3>
+                                                            <p />
+                                                            <h5>Types d'écritures</h5>
+                                                            <p>En version 7, le paramétrage des Types d'écritures comptables (GESTPE)&#160;a été modifié. Les types d'écritures ont été recodifiés en standard et il est désormais possible de saisir un type de pièce et un code journal par législation.<br />Il est donc conseillé de vérifier leur paramétrage.</p><a id="MIS_40_400"></a>
+                                                            <h3 class="g1">Négoce</h3>
+                                                            <p />
+                                                            <h5>Législations</h5>
+                                                            <p>En version 7, la gestion de certaines fonctions intègre la notion de législation.</p>
+                                                            <ul>
+                                                                <li>Les fiches possédant un filtre sur la législation, disposent de&#160;ce code législation dans la nouvelle clé.</li>
+                                                                <li>Les fiches qui n’ont pas de filtre sur la législation ont un code vide pour la législation. Ces fiches sont alors considérées comme multi-législations.</li>
+                                                                <li>Les informations du groupe sont maintenues en tant que filtre.</li>
+                                                                <li>L'intitulé long et l'intitulé court sont conservés. Si dans certaines fiches ces intitulés sont vides, l’utilisateur doit saisir ces intitulés manuellement lors de leur mise à jour.</li>
+                                                            </ul>
+                                                            <p>Ci-dessous, la liste des fonctions gérées par législation et la clé correspondante modifiée sur la table associée à l'objet.</p>
+                                                            <p />
+                                                            <table width="70%" border="1" cellpadding="5" style="HEIGHT: 80px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Fonction</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Nom de la fonction</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Eléments de clé</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESCDA</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Destinations comptables</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>COD+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESGTE</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Types de pièces</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>TYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESJOU</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Journaux comptables</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>JOU+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTDA</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Escomptes/Agios</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>DEP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTFB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Fichiers bancaires</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>COD+BAN+RECTYP+ORDNUM+LEG+NUM</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTPT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Conditions de paiement</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>PTE+LEG+PTELIN</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTPV</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Types facture fournisseur</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>PIVTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTSV</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Types facture client</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>SIVTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTPY</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Transactions saisie règlements</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>PAYTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTRE</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Types de retours</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>SRHTYP+LEG (Nouveau en V7)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTSD</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Types de livraisons</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>SDHTYP+LEG (Nouveau en V7)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTSO</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Types de commandes</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>SOHTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTVC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Détermination taxes</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>COD+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>GESTVT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Taux de taxes</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>VAT+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <h5>Tables diverses</h5>
+                                                            <ul>
+                                                                <li>Les tables diverses 1, 2, 3, 6, 15 et 304 sont migrées en nouveaux objets.</li>
+                                                                <li>Les tables qui possèdent un filtre sur la législation disposent de ce code législation dans la nouvelle clé.</li>
+                                                                <li>Les tables qui n’ont pas de filtre sur la législation ont un code vide pour la législation. Ces tables sont alors considérées comme multi-législations.</li>
+                                                                <li>Pour une ancienne table diverse qui a une information de groupe, cette information de groupe est maintenue dans le nouvel objet en tant que filtre. Toutes les autres informations standards de cette table diverse sont transférées dans la nouvelle table objet.</li>
+                                                                <li>Tous les champs non-standards ajoutés lors du paramétrage des tables diverses (A1, A2, N1, N2 fields) sont transférés dans la nouvelle table objet (ils ne seront pas affichés dans le nouvel objet).</li>
+                                                            </ul>
+                                                            <p>Ci-dessous, le tableau de correspondance entre les tables diverses utilisées en V6 et les fonctions de gestion des objets en V7.</p>
+                                                            <p />
+                                                            <table width="90%" border="1" cellpadding="5" style="HEIGHT: 80px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Numéro de la table diverse en V6</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Nom de la table</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Nouvelle table</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Eléments de clé</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Nouvelle fonction</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Nom de la nouvelle fonction</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>1</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Régimes de taxes tiers</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>TABVACBPR</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>VACBPR+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTVB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Régime de taxe du tiers</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>2</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Niveaux de taxes articles</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>TABVACITM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>VACITM+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTVI</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Niveau de taxe</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Modes de réglement</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>TABPAM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>PAM+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTAM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Modes de règlement</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>6</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Nature transaction DEB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>TABEECNAT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>EECNAT+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GESTEC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Nature transaction</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>15</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Régimes statistiques DEB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>TABEECSCH</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>EECSCH+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>GESTSC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Régime statistique</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>304</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Code édition</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>TABCODEDT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>CODEDT+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>GESTED</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>Code édition</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <h5>Types de livraison et types de retours</h5>
+                                                            <p>Le processus de migration doit attribuer :</p>
+                                                            <ul>
+                                                                <li>un type de livraison dans le champ SDHTYP pour toutes les livraisons existantes.</li>
+                                                                <li>un type de retour dans le champ SRHTYP pour tous les retours existants.<br />Le type de livraison et le type de retour à utiliser proviennent du dossier de référence. Seuls&#160;ceux qui ont des législations prises en charge dans le dossier de destination et ceux qui ont une législation vide sont copiés à partir du dossier de référence.<br />Le même processus s'applique pour les paramètres généraux suivants, avec leurs valeurs par législation: SDHTYPNOR, SDHTYPLND et SDHTYPCSO.<br /><img src="../Resources/Images/SEEINFO.png" alt="SEEINFO" keeps="true" realloc="SEEINFO" />&#160;<span style="color: #bf7f00;">Le client&#160;a la possibilité d'établir les données à deux niveaux différents en fonction de la façon dont la migration est réalisée : </span></li>
+                                                                <ul>
+                                                                    <li><span style="color: #bf7f00;">la migration est faite en même temps que la validation du dossier : la configuration doit être faite correctement dans le dossier de référence, avec les codes des types attendus (les tables des types et les paramètres généraux). Sinon, le système utilise les types par défaut livrés en standard.</span>
+                                                                    </li>
+                                                                    <li><span style="color: #bf7f00;">la migration est faite après la validation du dossier : la configuration doit être faite correctement dans le dossier&#160;de destination avec les codes des types attendus ( tables types et paramètres généraux). Sinon, le système utilise les types par défaut&#160; qui ont été copiés depuis le dossier de référence.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <li>Lorsque les tables des types de livraisons et des types de retours sont remplies, et lorsque les paramètres généraux SDHTYP* sont définis,&#160; le système alimente les livraisons et les retours selon les processus suivants. :</li>
+                                                                <ul>
+                                                                    <li>pour chaque livraison :</li>
+                                                                    <ul>
+                                                                        <li>le système vérifie le paramètre général correspondant à la catégorie de livraison,</li>
+                                                                        <li>si aucune valeur n’est définie, le système prend le premier type de livraison, dans l’ordre alphabétique, qui correspond à la législation de livraison et la catégorie de livraison,</li>
+                                                                        <li>si aucune valeur n’est définie, le système prend le premier type de livraison, dans l’ordre alphabétique, qui a une législation vide et qui correspond à la catégorie de livraison,</li>
+                                                                    </ul>
+                                                                    <li>pour chaque retour :</li>
+                                                                    <ul>
+                                                                        <li>le système prend le premier type de retour, dans l’ordre alphabétique, qui correspond à la législation de retour et à la catégorie de retour,</li>
+                                                                        <li>si aucune valeur n’est définie, le système prend le premier type de retour, dans l’ordre alphabétique, qui a une législation vide et qui correspond à la catégorie de retour.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <h5>Mass Mailing CRM</h5>
+                                                            <ul>
+                                                                <li>Le paramètre WORDPATH&#160;(Utilisateurs/Paramètres/CRM/DEF/WORDPATH) n’existe plus,&#160;le mode de création des documents Microsoft Word ayant changé.</li>
+                                                                <li>La&#160; table Etat mailing (OMMRPT) contient seulement les modèles d’états Crystal. Lors de la migration, le processus suivant est alors appliqué :</li>
+                                                                <ul>
+                                                                    <li>toutes les fiches qui identifient des modèles Microsoft Word sont supprimées,</li>
+                                                                    <li>le champ Type (TYPTPL) est supprimé,</li>
+                                                                    <li>le champ Langue est rempli avec la langue du dossier par défaut,</li>
+                                                                    <li>le champ Code état (MAGTPL) identifie maintenant la fiche ‘Code d’état’,</li>
+                                                                    <li>un nouveau champ contient le nom de l’état Crystal. Ce champ non visible est rempli en même temps que le champ précédent,</li>
+                                                                    <li>les champs Description courte et Description longue sont remplis avec le code de l’état,</li>
+                                                                    <li>une nouvelle clé est créée avec le code de la langue : Code de la langue + Code d’état.</li>
+                                                                </ul>
+                                                                <li>La&#160; table Publipostage xml (MAILXML) contient deux nouveaux champs : les champs Description courte et Description longue, avec le code XML de mass mailing.</li>
+                                                            </ul>
+                                                            <h5>Modèles d'import</h5>
+                                                            <ul>
+                                                                <li>Le type de livraison est ajouté dans le modèle d'import SDHFL.</li>
+                                                                <li>De nouveaux modèles d'import, résultants de la création d'objets en remplacement des tables diverses, sont ajoutés : TAM (Modes de règlement), TEC&#160;(Nature transaction), TED&#160;(Code édition), TPV&#160; (Types de facture fournisseur), TRE&#160;(Types de retours), TSC&#160;(Régime statistique), TSD&#160;(Types de livraisons), TSO&#160;(Types de commandes), TSV&#160;(Types facture vente), TVB&#160;(Régime de taxe tiers), TVI&#160;(Niveau de taxe).</li>
+                                                            </ul>
+                                                            <h5>Etats</h5>
+                                                            <ul>
+                                                                <li>Les éléments liés au SDD sont ajoutés dans les états factures (SBONFAC*).</li>
+                                                                <li>Les éléments liés aux types de livraison et types de retour sont ajoutés dans les états BONLIV*, BONRETLIV, SDELIVERY*, SRETURN*.<br /></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SageX3Pr%C3%A9etpostrequisfonctionnelsdemigrationdundossierenV7">Sage X3 : Pré et post-requis fonctionnels de migration d'un dossier en V7</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Localisationespagnole">Localisation espagnole</a>
+                                                        </li>
+                                                        <li><a href="#Pr%C3%A9requisautraitementdemigration">Pré-requis au traitement de migration</a>
+                                                        </li>
+                                                        <li><a href="#Postrequisautraitementdemigration">Post-requis au traitement de migration</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

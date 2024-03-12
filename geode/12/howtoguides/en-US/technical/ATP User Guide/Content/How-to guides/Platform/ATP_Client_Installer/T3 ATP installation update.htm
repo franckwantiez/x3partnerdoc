@@ -1,0 +1,741 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Installing and updating the Sage X3 Automated Test Platform library</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../ATP_UserGuide/T1_ATP_UserGuide.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div data-mc-conditions="Other.HTML5-TopNav">
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Installing and updating the Sage X3 Automated Test Platform library</h1>
+                                            <p>This chapter explains how to install and update the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library.</p>
+                                            <h2><a name="Verify"></a>Verify the prerequisites</h2>
+                                            <h3>Part 1: Verify the software prerequisites</h3>
+                                            <ol>
+                                                <li value="1">Ensure that the following programs are installed on your local machine. The installation is controlled, and the installation cannot be executed if it is not installed.</li>
+                                                <li value="2">
+                                                    <p>You can confirm if those programs were installed by following these steps:</p>
+                                                    <ol style="list-style-type: lower-alpha;">
+                                                        <li value="1">
+                                                            <p>In the Windows search bar, type <span class="reference">program</span> and click <span class="reference">Add or remove programs</span></p>
+                                                            <p>Example for Windows 11:</p>
+                                                            <p class="image">
+                                                                <img src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-1.png" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>In the search box, filter on the program you are looking for and confirm that the program is installed on your system</p>
+                                                            <p>Search for java or zulu and chrome (version of java or Azul Zulu or Google Chrome may differ if newer releases are available or depending on your system configuration):</p>
+                                                            <p class="image"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="197" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                            </p>
+                                                            <p class="image"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-3.png" data-mc-popup-alt="Une image contenant capture d’écran&#xA;&#xA;Description générée automatiquement"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="198" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" alt="Une image contenant capture d’écran&#xA;&#xA;Description générée automatiquement" tabindex="" /></a>
+                                                            </p>
+                                                            <p class="image"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-4.png" data-mc-popup-alt="Une image contenant capture d’écran&#xA;&#xA;Description générée automatiquement"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="191" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-4_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" alt="Une image contenant capture d’écran&#xA;&#xA;Description générée automatiquement" tabindex="" /></a>
+                                                            </p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <p>If the programs mentioned above  are not installed,  the installation files can be found here:</p>
+                                            <ul>
+                                                <li>Java 8 or 11 Runtime Environment (JRE) — choose one of the following:<ul><li><p>Azul Zulu 8 or 11 (LTS) Runtime Environment (JRE): <a href="https://www.azul.com/downloads/zulu-community/" target="_blank">https://www.azul.com/downloads/zulu-community/</a></p></li><li><p>Oracle Java 8 or 11 Runtime Environment (JRE): <a href="https://www.java.com/en/download/manual.jsp" target="_blank">https://www.java.com/en/download/manual.jsp</a></p></li></ul><div class="note-settings">During the Java runtime installation process, select the option to create the <span class="reference">JAVA_HOME</span> environment variable if it is suggested.<br />If the <span class="reference">JAVA_HOME</span> environment variable creation is not suggested, refer to <a href="#Part" class="MCXref xref">Part 2: Verify/Create the JAVA_HOME environment variable</a>.</div></li>
+                                                <li><a href="https://www.google.fr/chrome/" target="_blank">Chrome installer</a>
+                                                </li>
+                                            </ul>
+                                            <p>Make sure you install the version compliant with your operating system. For example, if you have Windows 10 64-bit, ensure to install the 64-bit version of Java.</p>
+                                            <h3><a name="Part"></a>Part 2: Verify/Create the JAVA_HOME environment variable</h3>
+                                            <p>When installing the Java runtime, some installers such as Azul Zulu suggest creating the <span class="reference">JAVA_HOME</span> environment variable automatically during the installation process.</p>
+                                            <p>You can create it manually if you didn’t select this option or if it wasn’t suggested during the Java runtime installation.</p>
+                                            <p>This variable is used to automatically locate the version of the JAVA runtime installed on your system.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>	Enter <span class="reference">Environment</span> in the Windows search bar.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Select <span class="reference">Edit the system environment variables</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="350" data-mc-height="351" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Select the <span class="reference">Environment Variables</span> button.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="360" data-mc-height="408" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-6_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>Check if the <span class="reference">JAVA_HOME</span> variable exists in the <span class="reference">System variables</span> section. </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="473" data-mc-height="453" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Prerequisite-7_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>If not, follow these steps to create the <span class="reference">JAVA_HOME</span> variable:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Select <span class="reference">New</span>.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Enter <span class="reference">JAVA_HOME</span> for the variable name.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Enter the value for your <span class="reference">JAVA_HOME</span> variable. It is the path where Java or Azul Zulu is installed. Generally, it is under <span class="reference">C:\Program Files\...</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li value="6">
+                                                    <p>Select <span class="reference">OK</span> to close the <span class="reference">Environment variables</span> window.</p>
+                                                </li>
+                                                <li value="7">
+                                                    <p>Select <span class="reference">OK</span> to close the <span class="reference">System properties</span> window.</p>
+                                                </li>
+                                            </ol>
+                                            <h3>Part 3: Prepare the installation files</h3>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Copy the <span class="reference">atp-M.m.P-win</span> ZIP file on your local machine.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Unzip the <span class="reference">atp-M.m.P-win</span> ZIP file.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>The following folder and files are extracted:</p>
+                                                    <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                        <col class="TableStyle-Normal-Column-Column1" />
+                                                        <col class="TableStyle-Normal-Column-Column1" style="width: 47px;" />
+                                                        <col class="TableStyle-Normal-Column-Column1" />
+                                                        <tbody>
+                                                            <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                                <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">Folder</td>
+                                                                <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">File</td>
+                                                                <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">Description</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Normal-Body-Body1">
+                                                                <td class="TableStyle-Normal-BodyE-Column1-Body1"><![CDATA[	]]><span class="reference">\atp-M.m.P-win\01-ClientInstaller-updater</span></td>
+                                                                <td class="TableStyle-Normal-BodyE-Column1-Body1"><span class="reference">sagex3atp-setup-M.m.P.jar</span>
+                                                                </td>
+                                                                <td class="TableStyle-Normal-BodyD-Column1-Body1">Installer/updater setup wizard.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Normal-Body-Body1">
+                                                                <td class="TableStyle-Normal-BodyE-Column1-Body1"><span class="reference">\atp-M.m.P-win\02-JenkinsPipelines</span>
+                                                                </td>
+                                                                <td class="TableStyle-Normal-BodyE-Column1-Body1"><span class="reference">ATP-TemplateRunAutomatedTests.xml</span>
+                                                                </td>
+                                                                <td class="TableStyle-Normal-BodyD-Column1-Body1"><span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> template pipeline for Jenkins.</td>
+                                                            </tr>
+                                                            <tr class="TableStyle-Normal-Body-Body1">
+                                                                <td class="TableStyle-Normal-BodyB-Column1-Body1"><span class="reference">	\atp-M.m.P-win\03-NexusCredentials</span>
+                                                                </td>
+                                                                <td class="TableStyle-Normal-BodyB-Column1-Body1"><span class="reference">Nexus Credentials.txt</span>
+                                                                </td>
+                                                                <td class="TableStyle-Normal-BodyA-Column1-Body1">Credentials required during the installation process.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </li>
+                                            </ol>
+                                            <h2>Install <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></h2>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Double-click the <span class="reference">sagex3atp-setup-M.m.P.jar</span> file to execute the installation process.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>The setup wizard opens and the welcome page displays.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="457" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>The <span class="reference">License agreements</span> page displays.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1384" data-mc-height="1043" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>To continue the installation process, select <span class="reference">I accept the terms of this license agreement</span>.</p>
+                                                </li>
+                                                <li value="6">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                </li>
+                                                <li value="7">
+                                                    <p>The <span class="reference">Prerequisite software</span> page displays.</p>
+                                                    <div class="note-warning">The installation will stop if Chrome or Java are not installed:<br /><ol><li value="1">Select the <span class="reference">Quit</span> button to close the setup wizard.</li><li value="2">Refer to the <a href="#Verify" class="MCXref xref">Verify the prerequisites</a> section of this documentation and follow the guidelines.</li></ol></div>
+                                                </li>
+                                                <li value="8">
+                                                    <p>If the prerequisites are OK, select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p> (Version of java or Azul Zulu or Google Chrome may differ if newer releases are available or depending on your system configuration)</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="604" data-mc-height="457" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="9">
+                                                    <p>The <span class="reference">Required software</span> page displays. Node.js and Visual Studio Code are required. At that stage, the installer only informs you of what it will install on your system.</p>
+                                                </li>
+                                                <li value="10">
+                                                    <p>Select <span class="reference">Node.js is not installed and will be downloaded</span>, <span class="reference">Visual Studio Code is not installed and will be downloaded</span>, and <span class="reference">Next</span> to install Node.js and Visual Studio Code if they are not already installed on your device.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-4.png" />
+                                                    </p>
+                                                </li>
+                                                <li value="11">
+                                                    <p>If Node.js and Visual Studio Code are already installed, select the <span class="reference">Next</span> button to continue. If your current version of Node.js is up to date or if Visual Studio Code is already installed, then their installation will be skipped.</p>
+                                                </li>
+                                                <li value="12">
+                                                    <p>If your current version of Node.js is compatible with the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library, but a more recent version of Node.js version 18.x.x exists:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Select <span class="reference">Yes</span> to update Node.js and then select the <span class="reference">Next</span> button to continue. Refer to the following documentation: <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp</a> to know which version of Nodejs is compliant with your <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Select <span class="reference">No</span> if you don't want to update Node.js and then select the <span class="reference">Next</span> button to continue.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li value="13">
+                                                    <p>If your current  Node.js is prior to version 18.x.x, the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library is not compatible. You need to upgrade Node.js:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>The setup wizard will ask you if you want to upgrade Node.js and install the latest version of Node.js 18.x.x. Refer to the following documentation: <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp</a> to know which version of Nodejs is compliant with your <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>
+                                                                <div class="note-warning">Read the warning message carefully: Upgrading Node.js can break compatibility with your other Node.js applications.</div>
+                                                            </p>
+                                                            <p>If you want to upgrade Node.js:</p>
+                                                            <ol>
+                                                                <li value="1">
+                                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                                </li>
+                                                                <li value="2">
+                                                                    <p>Select the <span class="reference">OK</span> button to upgrade Node.js.</p>
+                                                                </li>
+                                                            </ol>
+                                                            <p>You can select the <span class="reference">Quit</span> button if you want to cancel the installation.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li value="14">
+                                                    <p>If your current Node.js is later than version 18.x.x, the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library is not compatible.  </p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>You need to uninstall your current version of Node.js and install Node.js version 18.x.x. </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Refer to the following documentation: <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp</a> to know which version of Nodejs is compliant with your <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="note-warning">Read the warning message carefully: Upgrading Node.js can break compatibility with your other Node.js applications.</div>
+                                                    <p>Select the <span class="reference">Quit</span> button to cancel the installation.</p>
+                                                </li>
+                                                <li value="15">
+                                                    <p>The <span class="reference">Optional software</span> page displays. At this stage, the installer informs you of what it will install on your system.</p>
+                                                </li>
+                                                <li value="16">
+                                                    <p>Indicate if you want to install Git or not and select <span class="reference">Next</span> to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1386" data-mc-height="1043" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="17">
+                                                    <p>The <span class="reference">Destination installation folder</span> page displays.</p>
+                                                </li>
+                                                <li value="18">
+                                                    <p>Click the <span class="reference">Browse</span> button to select the path where you want to install <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                </li>
+                                                <li value="19">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1386" data-mc-height="1047" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-6_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="20">
+                                                    <p>Select the <span class="reference">OK</span> button to confirm the creation of the folder.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="459" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-7_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="21">
+                                                    <p>The <span class="reference">Installation summary</span> page displays. It summarizes the third-party software and <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library that will be installed on your system.</p>
+                                                </li>
+                                                <li value="22">
+                                                    <p>Select the <span class="reference">Install</span> button to proceed with the installation of the third-party software and <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="456" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-8_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="23">
+                                                    <p>The <span class="reference">Unpacking installation files</span> page displays.</p>
+                                                </li>
+                                                <li value="24">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1383" data-mc-height="1044" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-9_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="25">
+                                                    <p>The <span class="reference">Configuring 3<sup>rd</sup> party software</span> page displays and the previously selected third-party software are installed on your system.</p>
+                                                </li>
+                                                <li value="26">
+                                                    <p>Wait until the end of the third-party software installation and select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p> (Version of Git and Visual Studio Code may differ if newer releases are available or depending on your system configuration)</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-10.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="461" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-10_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="27">
+                                                    <p>The <span class="reference"><span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> authentication</span> page displays.</p>
+                                                </li>
+                                                <li value="28">
+                                                    <p>Enter the Nexus login and password provided in the <span class="reference">atp-M.m.P-win</span> ZIP file.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-11.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1384" data-mc-height="1048" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-11_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="29">
+                                                    <p>Select the <span class="reference">Next</span> button to continue and install <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                </li>
+                                                <li value="30">
+                                                    <p>The <span class="reference">Installing <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></span> page displays and the installation of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> starts.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-12.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="457" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-12_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="31">
+                                                    <p>Once <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> is installed, the following message displays: <span class="reference"><span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> M.m.P installed successfully!</span></p>
+                                                </li>
+                                                <li value="32">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-13.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="460" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-13_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="33">
+                                                    <p>The <span class="reference">Installation finished</span> page displays.</p>
+                                                </li>
+                                                <li value="34">
+                                                    <p>To open Visual Studio Code and load <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>, select the <span class="reference">Open install folder</span> button. This opens the <span class="reference">ATP</span> folder in the Windows file explorer.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-14.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1383" data-mc-height="1041" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Install-14_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="35">
+                                                    <p>Double-click the <span class="reference">LaunchVsCode</span> application to launch Visual Studio Code and to load <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 LaunchVSCode.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="513" data-mc-height="277" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 LaunchVSCode_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="36">
+                                                    <p>In Visual Studio Code, select <span class="reference">Yes, I trust the authors</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 VSCode trust authors.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="603" data-mc-height="329" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 VSCode trust authors_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="37">
+                                                    <p>Close Visual Studio Code.</p>
+                                                </li>
+                                                <li value="38">
+                                                    <p>Go to the setup wizard and select <span class="reference">Done</span> to finish the installation.</p>
+                                                </li>
+                                                <li value="39">
+                                                    <p>The next time you will open Visual Studio Code, the application will launch with <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <h2>Update <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></h2>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Double-click the <span class="reference">sagex3atp-setup-M.m.P.jar</span> file to execute the update process.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>The setup wizard opens and the welcome page displays.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="457" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>The <span class="reference">License agreements</span> page displays.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1384" data-mc-height="1043" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>Select <span class="reference">I accept the terms of this license agreement</span> and <span class="reference">Next</span> to continue the update process.</p>
+                                                </li>
+                                                <li value="6">
+                                                    <p>The <span class="reference">Prerequisites software</span> page displays. It will only display if you update <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> from a version prior to 2.8.0.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>For more information on software prerequisites, refer to the <a href="#Verify" class="MCXref xref">Verify the prerequisites</a> section of this documentation.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>If the prerequisites are OK, select the <span class="reference">Next</span> button to continue.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="604" data-mc-height="457" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="7">
+                                                    <p>The <span class="reference">Required software</span> page displays. As you already used a previous version of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>, the setup wizard indicates which version of Visual Studio Code and Node.js you are using. It also controls if your version of Node.js is compliant with the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version you want to update.</p>
+                                                    <p> (Version of Node.js and Visual Studio Code may differ if newer releases are available or depending on your system configuration)</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-4.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="455" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-4_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="8">
+                                                    <p>If your current version of Node.js is compatible with the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library, but a more recent release of Node.js version 18.x.x exists:</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Select <span class="reference">Yes</span> and <span class="reference">Next</span> to update Node.js. Refer to the following documentation: <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp</a> to know which version of Nodejs is compliant with your <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Select <span class="reference">No</span> and <span class="reference">Next</span> if you don’t want to update Node.js.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li value="9">
+                                                    <p>The <span class="reference">Optional software</span> page displays. As you already used a previous version of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>, the setup wizard indicates which version of Git you are using.</p>
+                                                </li>
+                                                <li value="10">
+                                                    <p>If you didn’t install Git before, indicate if you want to install Git or not and select <span class="reference">Next</span> to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1386" data-mc-height="1043" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="11">
+                                                    <p>The <span class="reference">Destination installation folder</span> page displays if you update <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> from a version prior to 2.8.0.</p>
+                                                    <ol>
+                                                        <li value="1">
+                                                            <p>Click the <span class="reference">Browse</span> button to select the path where <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> is already installed.</p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>Select <span class="reference">Yes</span> to confirm that existing files will be overwritten.  Only the necessary files will be overwritten. Your existing feature files won’t be modified.</p>
+                                                        </li>
+                                                    </ol>
+                                                    <div class="note-tip">If you update from <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> version 2.8.0 or later, the installation summary page displays directly and you don’t need to indicate where <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> is installed anymore.</div>
+                                                </li>
+                                                <li value="12">
+                                                    <p>The <span class="reference">Installation summary</span> page displays. It summarizes the third-party software and <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library that will be installed or updated on your system.</p>
+                                                </li>
+                                                <li value="13">
+                                                    <p>Select the <span class="reference">Install</span> button to proceed with the update.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-6.png" />
+                                                    </p>
+                                                </li>
+                                                <li value="14">
+                                                    <p>The <span class="reference">Unpacking installation files</span> page displays.</p>
+                                                </li>
+                                                <li value="15">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-7.png" />
+                                                    </p>
+                                                </li>
+                                                <li value="16">
+                                                    <p>The <span class="reference">Installing <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></span> page displays and the update of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> starts.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="460" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-8_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="17">
+                                                    <p>Once <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> is updated, the following message displays: <span class="reference"><span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> updated to version M.m.P.</span></p>
+                                                </li>
+                                                <li value="18">
+                                                    <p>Select the <span class="reference">Next</span> button to continue.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="459" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-9_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="19">
+                                                    <p>The <span class="reference">Installation finished</span> page displays.</p>
+                                                </li>
+                                                <li value="20">
+                                                    <p>Select the <span class="reference">Done</span> button to finish the update.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-10.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1383" data-mc-height="1041" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Update-10_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            <h2>Uninstall <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></h2>
+                                            <p>This section explains how to uninstall <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                            <p>The uninstallation process only uninstalls the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>. Third-party components, such as Visual Studio Code, Node.js, and Git, are not uninstalled as you can continue using them for other purposes.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Back up the feature test files you have created before uninstalling <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Make sure that all your applications are closed.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Enter <span class="reference">Program</span> in the Windows search bar. (Example with Windows 11)</p>
+                                                </li>
+                                                <li value="4">
+                                                    <p>Select <span class="reference">Add or remove programs</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Uninstall-1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="464" data-mc-height="461" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Uninstall-1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>Search for <span class="reference"><span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></span> in the list.</p>
+                                                </li>
+                                                <li value="6">
+                                                    <p>Select <span class="reference">Uninstall</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Uninstall-2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="175" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3_Uninstall-2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="7">
+                                                    <p>The uninstaller wizard launches.</p>
+                                                </li>
+                                                <li value="8">
+                                                    <p>Select the <span class="reference">Force the deletion of ...</span> checkbox.</p>
+                                                </li>
+                                                <li value="9">
+                                                    <p>Select the <span class="reference">Uninstall</span> button.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 Uninstall wizard.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="260" data-mc-height="168" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 Uninstall wizard_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li value="10">
+                                                    <p>Wait until the end of the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> uninstallation process.</p>
+                                                </li>
+                                                <li value="11">
+                                                    <p>Select the <span class="reference">Quit</span> button when the uninstallation process is finished.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 Quit uninstallation.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="291" data-mc-height="181" src="../../../Resources/Images/ATP-ClientInstaller-2.2.0/T3 Quit uninstallation_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            <h2>Find out more</h2>
+                                            <h3>First steps with <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library</h3>
+                                            <p style="color: #000000;">To know more about using the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library, refer to the section <strong>First steps with <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library</strong> in the document <a href="http://online-help.sageerpx3.com/erp/12/wp-static-content/public/ATP User Guide/Default.htm" target="_blank" data-mc-conditions="Sage_X3.V12">Sage X3 Automated Test Platform - User guide</a>. </p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Previous</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">17 November 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

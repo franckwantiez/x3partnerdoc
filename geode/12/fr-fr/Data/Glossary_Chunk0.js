@@ -1,0 +1,1 @@
+﻿define({'glossary':{d:'This is the definition for the glossary term.',l:''}});

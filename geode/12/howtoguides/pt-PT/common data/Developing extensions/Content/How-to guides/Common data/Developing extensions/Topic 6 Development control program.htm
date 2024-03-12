@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Developing extensions" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Development control program</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Topic 1 Developing extensions.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__Developing_extensions.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Trilhos" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Você está aqui: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Development control program</h1>
+                                            <h2>Introduction</h2>
+                                            <p>A common observation about the technology is that the tool gives you the freedom to make many modifications and provides a reasonable way of protecting them using specific or vertical activity codes.</p>
+                                            <p>But a common complaint about the technology is that the patching process is cumbersome and hard to automate, mostly because conflicts and errors linked to the freedom given need manual rectifications when they happen.</p>
+                                            <p>It becomes especially critical for Cloud implementations because our customers expect at the same time:</p>
+                                            <ul>
+                                                <li>To have the ability to bespoke or vertical developments in these environments.</li>
+                                                <li>To ensure that the application of standard patches can be done automatically without conflicts.</li>
+                                            </ul>
+                                            <p>This is why it is necessary to restrict the way partners can create bespoke and vertical developments. This can be given by defining rules that give norms, but also restrain dictionary modifications. These rules are not only mandatory in Cloud implementations. They are also critical to ensure to all our customers a smooth upgrade path.</p>
+                                            <p><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> created a checking tool that runs on existing environments. This tool was improved in Update 10. This document describes the rules that will be checked by this latest version.</p>
+                                            <p>This tool only checks the consistency of the dictionaries (meta-data). In the future, <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> expects to improve the tool to also check the sources.</p>
+                                            <p>As the dictionary is designed today, it might be hard to follow the rules in some cases, especially in classic code. The Syracuse code has been designed to make it possible to follow these rules in these contexts.</p>
+                                            <h2>Launching the tool</h2>
+                                            <p>The tool is supplied as a classic function called <span class="reference">ACTLSPE</span>. It includes a window where you can enter additional parameters. It must be executed on the folder where the vertical and bespoke development has been done.</p>
+                                            <p>The parameters to be entered are:</p>
+                                            <ul>
+                                                <li>	The folder to be tested</li>
+                                                <li>The reference folder (usually the application folder)</li>
+                                                <li>Optional ranges for specific or vertical elements such as names and numbers for local menus and miscellaneous tables</li>
+                                            </ul>
+                                            <p>The script runs and returns a log file with four levels of information:</p>
+                                            <ul>
+                                                <li><span class="reference">Information</span>: Describes safe changes that might have an impact if done differently by another supplier. For instance, increasing the length of a standard data type. This is just a reminder about points to be checked when several vertical or bespoke developments are installed together in a given environment.</li>
+                                                <li><span class="reference">Warning</span>: Describes changes that are not considered errors, but might become errors in the future. For instance, if the dictionaries are enhanced to ease the upgrade by supplying a different way to develop some features.</li>
+                                                <li><span class="reference">Error</span>: Describes an error in the design that will prevent a proper automatic upgrade. This prevents an installation on Cloud environments but can be managed for on-premise environments. It makes the upgrade process more difficult because you will have to check these elements.</li>
+                                                <li><span class="reference">Fatal error</span>: Describes an error that prevents a proper upgrade to be done; This is the case for modification of dictionary elements.</li>
+                                            </ul>
+                                            <h2>Detail of the rules</h2>
+                                            <h3>Naming conventions</h3>
+                                            <p>The first important point is that naming conventions are provided to handle the potential conflicts between partners supplying vertical developments or add-ons. Every partner willing to develop such features receives codification ranges. The rule is the following:</p>
+                                            <ul>
+                                                <li>Add-ons range names start with <span class="reference">X</span></li>
+                                                <li>Vertical range names start with <span class="reference">Y</span></li>
+                                                <li>Bespoke range names start with <span class="reference">Z</span></li>
+                                            </ul>
+                                            <p>This rule applies only to the highest level of nesting associated with the element. For instance:</p>
+                                            <ul>
+                                                <li>A vertical screen must follow the naming rule, but the sub-elements (fields) can be named freely.</li>
+                                                <li>On a standard screen, a vertical added field must follow the naming rule.</li>
+                                                <li>The same rule applies for columns and indexes on tables, collection names, or methods on classes and representations.</li>
+                                            </ul>
+                                            <p>The elements controlled based on the naming rule are: tables, screens, windows, objects, inquiries, actions, data types, classes, representations, activity codes, parameters definitions, scripts, and reports. The sub-elements of standard elements are checked as defined before.</p>
+                                            <p>The miscellaneous tables and local menus have numeric ranges.</p>
+                                            <p>Some elements of dictionaries are considered as not standard even though they do not start with <span class="reference">X</span>, <span class="reference">Y</span>, or <span class="reference">Z</span>:</p>
+                                            <ul>
+                                                <li>Functions starting with <span class="reference">CONSX</span>, <span class="reference">CONSY</span>, <span class="reference">CONSZ</span> (inquiries)</li>
+                                                <li>Windows starting with <span class="reference">DCNSX</span>, <span class="reference">DCNSY</span>, <span class="reference">DCNSZ</span>, <span class="reference">FCNSX</span>, <span class="reference">FCNSY</span>, <span class="reference">FCNSZ</span> (associated to non-standard inquiries)</li>
+                                                <li>Scripts starting with <span class="reference">SPE</span> (scripts starting with <span class="reference">SPV</span> must be renamed from Update 8, see below)</li>
+                                            </ul>
+                                            <p>Dictionary elements and scripts starting with <span class="reference">W</span> are generated elements. It is therefore forbidden to create directly such elements. They are normally generated from a template which name does not start with W.</p>
+                                            <p>Any element following these naming rules is a not-standard element that must be protected by an activity code starting with <span class="reference">X</span>, <span class="reference">Y</span>, or <span class="reference">Z</span>. Any element not following the naming convention and not present on the application folder is an added non-standard element that is not following the naming convention (this is an error).</p>
+                                            <div class="note-warning">Dictionary elements starting with <span class="reference">A</span> are supervisor elements. These elements follow specific rules. Modifying them usually returns a fatal error.</div>
+                                            <h3>Restrictions on classic dictionaries</h3>
+                                            <p>The following restrictions apply to classic dictionaries:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Dictionary element</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Operation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">
+                                                            <p>Reason and comments</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard table, mask,
+ window, object, action definition (header)</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Set a specific activity code.</p>
+                                                            <p>Replace standard
+ activity code by another if it exists.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Assigning a specific activity code will deactivate
+ any standard update on these entities.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard columns, fields, properties
+ in standard tables, masks, classes, representations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Modify their characteristics even if they are
+ protected by an activity code.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>This prevents standard evolutions in the future.
+ This rule is more restrictive than the previous recommendations. Modifications
+ can be done on standard data types, and changes in localization and titles
+ are done differently (by authoring). More restrictive controls can be done in
+ scripts.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard column in a table</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Change its data type, the corresponding length for
+ the generic data types (<span class="reference">L</span>, <span class="reference">DCB</span>, <span class="reference">A</span>…), or the local menu associated with it.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>The impact cannot be measured on the standard code.
+ Internal variables might be defined according to the standard column data
+ type. If the size of a column needs to be enlarged, the generic data type
+ must be replaced by a non-generic data type.</p>
+                                                            <p><strong>This kind of request has to
+ be requested like an entry point creation (with the same priority).</strong>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Standard miscellaneous
+ table definition</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Decrease the length of the code or change the
+ length if not allowed.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Impact cannot be measured on the standard code.</p>
+                                                            <p>A check box defines if the length can be changed.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Restrictions on Syracuse dictionaries</h3>
+                                            <p>The following restrictions apply to Syracuse dictionaries:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Dictionary element</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Operation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">
+                                                            <p>Reason and comments</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ classes, representations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Set a specific activity
+ code. </p>
+                                                            <p>Replace the standard activity code with another if it exists.</p>
+                                                            <p>Change the characteristics
+ of a standard method.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Setting this activity code
+ to false would deactivate the corresponding entity.</p>
+                                                            <p>Assigning a specific
+ activity code will deactivate any standard update on these entities.</p>
+                                                            <p>The method can be used by
+ standard entities. Adding a parameter or change the return type would break
+ the standard code. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ collections in classes and representations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Change their
+ characteristics.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>The impact cannot be measured
+ on the standard code.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ properties in classes and representation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Change its data type, the
+ corresponding length for the generic data types (<span class="reference">L</span>, <span class="reference">DCB</span>, <span class="reference">A</span>…), or the local
+ menu associated with it.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>The impact cannot be measured on the standard code. </p>
+                                                            <p>If the size of a column needs to be enlarged, the
+ generic data type must be replaced by a non-generic data type.</p>
+                                                            <p><strong>This kind of request has to
+ be requested like an entry point creation (with the same priority).</strong>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Standard
+ scripts </p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Install a modified
+ standard script in a folder.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>If the standard script
+ evolves, the evolution won’t be taken into account.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Allowed modifications on classic dictionaries</h3>
+                                            <p>The following restrictions apply to Classic dictionaries:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Dictionary element</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Operation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">
+                                                            <p>Reason and comments</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ field in a standard screen</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Set a specific activity
+ code on it to make it specific. There is a risk if the activity code
+ is set to <span class="reference">Inactive</span>. A good way to
+ reduce this risk is to make the activity code dependent on TRU.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Deactivated fields are
+ invisible but still exist. <strong>This must
+ be avoided because the impact can exist on the standard. </strong></p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ screen</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Add specific fields or
+ blocks.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">&#160;</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ window</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Add specific tabs,
+ specific buttons, assign specific activity code to standard buttons
+ to deactivate them.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">&#160;</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Any
+ entity (window, screen, table, object, action, local menu, miscellaneous
+ table, etc.)</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Create a new specific
+ element.</p>
+                                                            <p>&#160;</p>
+                                                            <p>Assign specific or
+ vertical scripts names in the dictionary.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>&#160;</p>
+                                                            <p>&#160;</p>
+                                                            <p>Disabling standard action
+ by assigning <span class="reference">GPE</span> is dangerous and should be prohibited but it is not
+ controlled for the moment.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Allowed modifications on Syracuse dictionaries</h3>
+                                            <p>The following restrictions apply to Syracuse dictionaries:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">
+                                                            <p>Dictionary element</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">
+                                                            <p>Operation</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Standard
+ class and representations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Add specific properties, operations, or methods.</p>
+                                                            <p>Add specific collections.</p>
+                                                            <p>Assign a collection to a specific class (including
+ mapping information).</p>
+                                                            <p>Add specific and vertical
+ scripts.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Specific
+ classes, representation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Create classes and
+ representation.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p>Standard
+ class and representations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Add specific properties, operations, or methods.</p>
+                                                            <p>Add specific collections.</p>
+                                                            <p>Assign a collection to a specific class (including
+ mapping information).</p>
+                                                            <p>Add specific and vertical
+ scripts.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h3>Additional rules or comments</h3>
+                                            <p>The following additional checks are done:</p>
+                                            <ul>
+                                                <li>As stated before, <strong>any modification on supervisor tables</strong> is considered a fatal error.</li>
+                                                <li>The consistency tool checks only the local menus and not the chapter dedicated to messages. Gaps are signaled as errors. For example, if the choice N and the choice N+2 are defined without a choice N. The check is done only on the languages managed in the folder.</li>
+                                                <li>Any non-standard element not protected by a non-standard activity code is displayed as an error.</li>
+                                                <li>Any non-standard element not named in the non-standard codification range is displayed as an error.</li>
+                                            </ul>
+                                            <p>Dictionary elements starting with W are excluded from the log. The system considers that the consistency has already been checked on the source elements of the generation.</p>
+                                            <p>Adding buttons in standard windows is sometimes necessary, but this creates issues that we cannot solve correctly:</p>
+                                            <ul>
+                                                <li>Only four values are available for non-standard extensions.</li>
+                                                <li>Conflicts between verticals cannot be solved and need a specific check when several verticals are installed together.</li>
+                                            </ul>
+                                            <p>The normalization applied in Version 7 makes it possible to create as many links as necessary, with a codified name.</p>
+                                            <p>Specific recommendations should be provided to people creating specific automatic journals. The best practice is to duplicate and rename them to handle more easily their upgrade using comparison tools. Parameters are available to re-assign the automatic journal code used when a posting operation is done.</p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Navegar para anterior" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navegar para anterior">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Navegar para seguinte" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navegar para seguinte">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Wise Links</h5>
+                                                <p><a href="https://my.sage.pt/" target="_blank" class="external">Sage Services Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/pt/sage-x3-portugal/" class="external" target="_blank" title="Clique para acessar a comunidade de clientes e especialistas da Sage." alt="Clique para acessar a comunidade de clientes e especialistas da Sage.">Comunidade Sage City</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Informações sobre a página</h5>
+                                                <p>Data de publicação: <span class="mc-variable Dates.DateProjectBuilt variable">25 novembro 2021</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a> <a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a> <a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

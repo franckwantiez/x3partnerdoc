@@ -1,0 +1,98 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.MasterTopNavOptional" />*/
+/* Localised text - contains all the text in the CSS files that can be localised */
+
+p.note,
+div.note
+{
+	mc-auto-number-format: "Note: "; /* Label for Note style */
+}
+
+p.tip,
+div.tip
+{
+	mc-auto-number-format: "Tip: "; /* Label for Tip style */
+}
+
+MadCap|breadcrumbsProxy	
+{
+	mc-breadcrumbs-prefix: "Menu: "; /* Label for breadcrumbs */
+}
+
+MadCap|miniTocProxy
+{
+	mc-auto-number-format: "In this section"; /* Title for mini-TOC box */
+}
+
+MadCap|miniTocProxy.right
+{
+	mc-auto-number-format: "In this section"; /* Title for mini-TOC box */
+}
+
+div.MCMiniTocBox,
+div.MCMiniTocBox_0,
+div.MCMiniTocBox_right,
+div.MCMiniTocBox_right_0
+{
+	mc-auto-number-format: "In this section"; /* Title for mini-TOC box */
+}
+
+div.linksBox,
+div.linksBoxRight
+{
+	mc-auto-number-format: "See also"; /* Title for links box */
+}
+
+div.stepsBox
+{
+	mc-auto-number-format: "What's Next?"; /* Title for steps box */
+}
+
+p.location
+{
+	mc-auto-number-format:  "Open: "; /* Label for Location style */
+}
+
+MadCap|conceptLink
+{
+	mc-label: "See also"; /* Label for concept (see also) link */
+}
+
+MadCap|relatedTopics
+{
+	mc-label: "Related topics"; /* Label for related topics link */
+}
+
+MadCap|keywordLink
+{
+	mc-label: "Index"; /* Label for Index link */ 
+}
+
+a.dropDownClose:before,
+a.togglerClose:before
+{
+	content: "Close"; /* Label for DropDown close icon */
+}
+
+#page-toc:before
+{
+	content: "On this page"; /* Label for page TOC */
+}
+
+div.menu-topic-container::before
+{
+	content: "Menu"; /* Label for Menu proxy (side menu) */
+}
+
+a.go-to-top::after
+{
+	content: "Top"; /* Label for go to top link */
+}
+
+@media PDF
+{
+	MadCap|xref
+	{
+		mc-format: '{para} on page {page}'; /* Label for cross references in PDF output */
+	}
+}

@@ -1,0 +1,1118 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Servidor, Barch, Petición, Fichero" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Sumisión de peticiones por ficheros" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Sumisión de peticiones por ficheros</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Sumisióndepeticionesporficheros" data-magellan-target="Sumisióndepeticionesporficheros"><span>Sumisión de peticiones por ficheros</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>el lanzamiento de peticiones adonix a través del servidor batch puede ser controlado desde una de las funciones adonix: el <a href="EXERQT.htm">lanzamiento de peticiones</a>. Pero también es posible controlar el lanzamiento de peticiones batch por el servidor mediante fichas ascii con la definición de petición en un directorio definido en los parámetros del servidor. Esto permite también activar las peticiones batch a partid de la aplicación de supervisiones externas. Este documento describe en detalle los ficheros a utilizar, así como el funcionamiento de la ejecución de las peticiones. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Prerequisitos" data-magellan-target="Prerequisitos">Pre-requisitos </h2>
+                                                            <p>Para que el lanzamiento de peticiones batch pueda realizarse por medio de ficheros, es necesario:</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.gif" alt="*" width="7" height="7" border="0" />&#160;&#160;&#160; Que el parámetro general <i>Uso de ficheros batch</i> sea <i>Sí</i> en los <a href="ABATPAR.htm">parámetros del servidor batch</a>.</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.gif" alt="*" width="7" height="7" border="0" />&#160;&#160;&#160; Que el parámetro <a href="../OBJ/ADP_SUP_EXTBATCH.htm">EXTBATCH</a> sea <i>Sí</i>. Este parámetro, que pertenece al grupo <i>SUP</i>, puede definirse a nivel del dossier y del usuario. Es posible prohibir globalmente el lanzamiento de peticiones batch de este modo para un dossier dado, concediendo, en caso de ser necesario, una excepción a los usuarios designados. </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Losficherosdepeticiónextensiónreq" data-magellan-target="Losficherosdepeticiónextensiónreq">Los ficheros de petición (extensión req)</h2>
+                                                            <p>El lanzamiento de una petición batch puede realizarse depositando un fichero de extensión <b><i>.job</i></b> en el repertorio dedicado a estos ficheros. Este fichero de tipo ascii, estructuradas en línea terminadas por &lt;CR&gt; o &lt;CR&gt;&lt;LF&gt;, cada línea que define el valor de un parámetro con la forma:</p>
+                                                            <p>PARÁMETRO=VALOR</p>
+                                                            <p>Ciertos parámetros son obligatorios e identifican el contexto de ejecución de la petición. Hay otros parámetros que dependen de la petición que va a lanzar; su nombre corresponde al nombre de los parámetros definidos en la pantalla asociada al lanzamiento de la petición. En ciertos casos se define un cuadro de parámetros en la pantalla; entonces se parametriza la sintaxis (<i>índice)</i>=VALOR, <i>índice</i></p>
+                                                            <p>Con el fin de facilitar la creación de un fichero de este tipo, es posible lanzar la petición desde la aplicación, marcando la casilla <i>modelo</i> en la pantalla de <a href="EXERQT.htm">lanzamiento de las peticiones</a>. Si se hace esto, se crea un fichero con la lista completa de los parámetros de lanzamiento y se crea un valor en el repertorio de lanzamiento. Este fichero se crea con el nombre de la petición y la extensión <b><i>.mod</i></b>. </p>
+                                                            <p>En el cuadro que aparece a continuación, aparece en nombre de los parámetros obligatorios y su definición. </p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p align="center"><b>PARÁMETRO</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p align="center"><b>DEFINICIÓN</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>DOSSIER</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El código del dossier sobre el que se lanza la petición</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>UTIL</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El código de uso de conexión al dossier</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>CONTRASEÑA</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La clave encriptada del usuario</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>GRP</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El grupo de peticiones (si se lanza un grupo)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>TAREA</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La petición (si se lanza una petición)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>FECHA</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La fecha de inicio (en formato <i>AAAAMMDD</i>)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1">
+                                                                            <p>HORA</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La hora de lanzamiento (en formato <i>HHMM</i>)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Hay que tener en cuenta que los valores del parámetros se dan sin separadores de ningún tipo, y que es posible poner líneas de comentarios prefijados por el caracter <b><i>#</i></b>. De este modo, se podrá meter en el fichero de petición:</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; # Parámetros obligatorios</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; DOSSIER=DEMO</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; DATE=20020614</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; …</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160; # Parámetros complementarios</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160; PARAM(1)=TEST</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; PARAM(2)=ABC</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Cinemáticadetratamientodelosficherosdepetición" data-magellan-target="Cinemáticadetratamientodelosficherosdepetición">Cinemática de tratamiento de los ficheros de petición</h2>
+                                                            <p>El servidor batch inspecciona a intervalos regulares el contenido del directorio dedicado a los ficheros de petición. En el momento de la inspección, lee los ficheros presentes en el repertorio tomándoles en órden de la clasificación ascii. De este modo, se aconseja denominar estos ficheros con una raíz fija y un número secuencial con una longitud fija. Por ejemplo, <b><i>REQ000001.req</i></b>, <b><i>REQ0000002.req</i></b>…</p>
+                                                            <p>En el momento del tratamiento de cada fichero, se crean ficheros sucesivamente en los distintos directorios definidos por los <a href="GIMPEXPPAR.htm">parámetrs del servidor batch</a>. Estos ficheros se definen a continuación:</p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p align="center"><b>ETAPA DE TRATAMIENTO</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p align="center"><b>FICHEROS ACTUALIZADOS</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Presentar una solicitud de tratamiento batch</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Creación del fichero <i>xxxxx.job</i> por un proceso externo en el directorio dedicado.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El servidor batch tiene en cuenta la solicitud y actualiza su tabla de peticiones a lanzar</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El fichero <i>xxxxx.job</i>&#160;se redenomina como<i>xxxxx.req</i> (y se desplaza si los directorios no son los mismos)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El servidor decta un error en el fichero de parámetros (contraseña incorrecta, código de tarea desconocido...)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El fichero <i>xxxxx.job</i>&#160;se redenomina como<i>xxxxx.old</i> (y se desplaza si los directorios no son los mismos). Se crea un fichero <i>xxxxx.sta</i> en el repertorio dedicado. Contiene un código de error que permite saber qué fichero de entrada era incorrecto (ver formato del fichero a continuación).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La petición está en curso de ejecucuón tras el lanzamiento del servidor batch. </p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El fichero <i>xxxxx.req</i>&#160;se redenomina como<i>xxxxx.old</i> (y se desplaza si los directorios no son los mismos). Se crea un fichero <i>xxxxx.run</i> en el repertorio dedicado. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Se termina la petición (de forma correcta o con un error)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>el fichero <i>xxxxx.run</i> se borra y se crea un fichero <i>xxxxx.sta</i> en el directorio dedicado: este fichero contiene un estatus de retorno (ver formato del fichero a continuación).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Presenta una solicitud de interrupción de la petición batch (a la espera del lanzamiento o ya lanzado)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Creación del fichero <i>xxxxx.kil</i> por un proceso externo en el directorio dedicado.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Tener un cuenta la solicitud de interrupción (si la petición no se ha lanzado aún)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>El fichero <i>xxxxx.req</i> (o el fichero <i>xxxxx.job</i> si aún no se había tenido en cuenta) se redenomina <i>xxxxx.old</i>. Se crea un fichero <i>xxxxx.sta</i> en el repertorio dedicado. Contiene un código de error que permite saber que la petición se ha interrumpido sin haberse lanzado. Se borra el l fichero <i>xxxxx.kil </i>.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Tener un cuenta la solicitud de interrupción (si la petición no se ha terminado aún)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La petición se interrumpe en <i>killadx</i>, después se crea el fichero <i>xxxxx.sta</i> en el directorio dedicado, con un código de error que permite saber que se ha interrumpido la petición. Se borran los ficheros <i>xxxxx.kil </i>y <i>xxxxx.run </i>.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Teniendo en cuenta las prioridades de ejecución o de parón del servidor batch; la petición no ha podido lanzarse en los plazos previstos (petición fuera de plazo) </p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1">
+                                                                            <p>No se ha lanzado la peticón, pero el fichero<i>xxxxx.req</i> (el fichero <i>xxxxx.job</i>en caso contrario) se redenomina como  <i>xxxx.old </i> y se desplaza s es necesario. Se crea un fichero <i>xxxxx.sta</i> en el repertorio dedicado. Contiene un código de error que permite saber que la petición no se ha podid lanzar. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Hay que tener en cuenta que la existencia del fichero <i>xxxxx.run</i> no significa necesariamente que la petición en cuestión se repita. De hecho, si se detiene el servidor batch sin que las peticiones de vuelta no han parado, los ficheros <i>xxxxx.run</i> correspondientes existen siempre incluso cuando la petición ha terminado el tratamiento. En este caso, el fichero <i>xxxxx.sta</i> no se creará más. Por otro lado, cuando el servidor batch se lanza de nuevo, el fichero <i>xxxxx.run</i> se borray se crea un fichero <i>xxxxx.sta </i> con un estatus particular.</p>
+                                                            <p>El nombre de peticiones batch en curso de tratamiento no puede deducirse forzosamente del número de ficheros <i>xxxxx.run</i> presentes en el repertorio dedicado. </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="DescripcióndelosficherosXXXstaXXXrunXXXkil" data-magellan-target="DescripcióndelosficherosXXXstaXXXrunXXXkil">Descripción de los ficheros XXX.sta, XXX.run, XXX.kil</h2>
+                                                            <p>Estos ficheros son ficheros ascii, códigos en ascii 8 bits, presentes en distintos repertorios, según la parametrización:</p>
+                                                            <ul>
+                                                                <li>El fichero .kil puede estar vacío o contener un comentario que se retomará en el fichero de extensión .sta</li>
+                                                                <li>El fichero .run contiene una línea conforme a la estructura definida a continuación; las informaciones indicadas como númer de la petición, la fecha y la hora de inicio, y el códgio de la tarea (las otras informaciones se completan con 0 o espacios)</li>
+                                                                <li>El fichero .sta contiene una línea cuyo formato se define a continuación, y todos los campos están indicados. </li>
+                                                            </ul>
+                                                            <p>La estructura de la línea única contenida en los ficheros <i>.run</i> y <i>.sta</i> es la siguiente:</p>
+                                                            <ul>
+                                                                <li>La línea se compone de 8 campos de longitud fija, con separadores (el caracter dos puntos ‘&#160;:’).</li>
+                                                                <li>La longitud total es de entre 154 y 155 caracteres</li>
+                                                            </ul>
+                                                            <p>El esquema exacto es el siguiente:</p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Nº estado</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Nº petición</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Fecha y hora de inicio</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Fecha y hora de fin</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Código de dossier</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Código de usuario</p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Código de la tarea</p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Mensaje en claro</p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Fin de línea</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1">
+                                                                            <p>NNNNN</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1">
+                                                                            <p>NNNNNNNN</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>AAAAMMDDHHMMSS</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>AAAAMMDDHHMMSS</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1">
+                                                                            <p><i>DDDDDDDDDD</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1">
+                                                                            <p><i>UUUUU</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1">
+                                                                            <p><i>TTTTTTTTTT</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1">
+                                                                            <p>XXXXXXXXXXXXXXXXXX</p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&lt;CR&gt; <br />o &lt;CR&gt;&lt;LF&gt;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1">
+                                                                            <p>5 cifras</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(8 cifras)</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(14 cifras)</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(14 cifras)</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(10 caracteres) </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(5 caracteres) </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(10 caracteres) </p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1">
+                                                                            <p>(80 caracteres) </p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1">
+                                                                            <p>( 1 ó 2 octetos)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>La zona de mensaje permite explicitar el código de error si es necesario. Se almacena con una longitud fija de 80 caracteres (el mensaje se completa con espacios si es necesario). </p>
+                                                            <p>El número de petición se almacena en 8 caracteres, precedidos por ceros si es necesario. Este número permite conocer el nombre del fichero de traza generado en el momento de la ejecución de la petición. Este fichero se denomina RQT <i>NNNNNNNN</i>.tra (<i>NNNNNNNN</i> es el número de petición en 8 caracteres). Lo encontramos en el sub directorio TRA del dossier SERVX3. Hay que tener en cuenta que este númoer puede ser nulo en ciertos casos de error, cuando no ha podido lanzarse ninguna petición. </p>
+                                                            <p>El código de la tarea correspondiente a la tarea o al encadenamiento de tareas lanzadas, tal y como se muestra en la tabla de tareas o de los encadenamientos. </p>
+                                                            <p>El código de estado, en 5 caracteres numéricos, permite conocer el resultado de la ejecución. La primera cifra determina el resultado global de la ejecución, las cifras siguientes aportan los datos complementarios. Cuando la petición se termina sin errores y sin avisos, el código de error que se obtiene es igual a 00000. El detalle de los códigos se especifica a continuación:</p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="548" valign="top" colspan="4" rowspan="1">
+                                                                            <p align="center"><b>Valor del código de error en 5 cifras</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Mensaje en claro</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="79" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Primera cifra</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Significado</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Complemento</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Significado</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="79" valign="top" colspan="1" rowspan="2">
+                                                                            <p><b>0</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="2">
+                                                                            <p>Fin normal del tratamiento</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Sin aviso</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN TERMINADA</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b><i>NNNN</i></b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Con <b><i>NNNN </i></b>avisos en la traza (9999 si 9999 o más) </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN TERMINADA CON AVISOS</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="79" valign="top" colspan="1" rowspan="5">
+                                                                            <p><b>1</b>
+                                                                            </p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="5">
+                                                                            <p>Fin de tratamiento por error</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error no especificado (por ejemplo si GOK=-1 y no hay más información suplementaria)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN TERMINADA CON UN ERROR DESCONOCIDO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;1<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error no <b><i>NNNN </i></b>del motor adonix (mensaje <b><i>M</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>FIN POR ERROR ADONIX: <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error de bloqueo (GOK=0)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ERROR DE BLOQUEO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="2">
+                                                                            <p>&#160;3<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error lógico de tratamiento con: <b><i>NNN</i></b><i> = </i>valor variable GERRBATCH,<br /><b><i>M</i></b> = valor variable GMESSBATCH</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN TERMINADA CON UN ERROR <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="585" valign="top" colspan="2" rowspan="1">
+                                                                            <p><b>&#160;<b>Nota</b>:</b>
+                                                                            </p>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>las variables GERRBATCH y GMESSBATCH permiten a los programadores calificar de forma precisa las condiciones del error; esto es posile en una tarea específica, pero también en una tarea estándar por los puntos de entrada. </p>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <p>El valor de la variable GERRBATCH influye en el seguimiento del tratamient, cuando este está integrado en un grupo de tareas. De hecho, si la variable GERRBATCH es estrictamente inferior a 100, la tarea que sigue se lanzará a pesar del error. Si, por otro lado GERRBATCH tiene un valor superior o igual, las tareas siguientes del grupo no se lanzarán. </p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="79" valign="top" colspan="1" rowspan="10">
+                                                                            <p><b>2</b>
+                                                                            </p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="10">
+                                                                            <p>Tratamiento no lanzado</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>1000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>La tarea se ha programado para una hora dada, pero no ha podido lanzarse en los plazos previstos. </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PLAZO SOBREPASADO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Tarea inexistente</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b><i>TTT </i></b>TAREA INEXISTENTE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>3000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (no especificada)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>TRATAMIENTO NO LANZADO POR PROBLEMA DE HABILITACIÓN NO ESPECIFICADA</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;3100</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (usuario<b><i>U</i></b> desconocido)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>USUARIO <b><i>U</i> </b>DESCONOCIDO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;3200</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (contraseña incorrecta para ese usuario <b><i>U</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Contraseña incorrecta para ese usuario <b><i>U</i></b>)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;3300</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (rechazo por punto de entrada)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>TRATAMIENTO NO LANZADO POR HABILITACIÓN RECHAZADA POR PUNTO DE ENTRADA</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>3400</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (nivel <b><i>N</i></b> de la tarea prohibida al usuario <b><i>U </i></b> insuficiente)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>NIVEL DE ACCESO <b><i>N</i> </b>NO AUTORIZADO AL USUARIO<b><i>U</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>3500</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Habilitación (función <b><i>F </i></b> no autorizado al usuario <b><i>U</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b><i>F</i></b> FUNCIÓN NO AUTORIZADA AL USUARIO<b><i>U</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>4<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Paso en modo mono imposible (<b><i>NNN</i> </b>usuario en curso)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PASO EN MODO MONO IMPOSIBLE POR <b><i>NNN</i> </b>HABER USUARIOS CONECTADOS</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>5000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Tratamiento <b><i>T</i> </b>inexistente</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>TRATAMIENTO <b><i>T </i></b>INEXISTENTE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="79" valign="top" colspan="1" rowspan="5">
+                                                                            <p><b>3</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="5">
+                                                                            <p>Tratamiento detenido</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Tratamiento detenido, razón desconocida (por ejemplo si un proceso distinto al servidor batch ha detenido la petición)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN INTERRUMPIDA (RAZÓN DESCONOCIDA)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="2">
+                                                                            <p>1000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Por fichero de extensión .kil, con el mensaje <b><i>M</i></b></p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN INTERRUMPIDA POR <b><i>U</i></b> DEBIDO A <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="585" valign="top" colspan="2" rowspan="1">
+                                                                            <p>Nota: en caso de un kill por fichero, el código de usuario puede vaciarse. De hecho, el sistema intenta saber, a partir de la identidad del usuario que ha creado el fichero, si le corresponde un código de usuario adonix o no. Esta búsqueda puede no tener resultado según los sistemas de explotación empleados. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Por la gestión de las tareas del usuario <b><i>U </i></b>: el mensaje capturado es <b><i>M</i></b></p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>PETICIÓN INTERRUMPIDA POR <b><i>U</i></b> DEBIDO A <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1">
+                                                                            <p>3000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Por el servidor batch car time-out</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1">
+                                                                            <p>	TRATAMIENTO INTERRUMPIDO POR EL SERVIDOR MOTIVO=SUPERACIÓN DEL TIEMPO PREDETERMINADO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                            <h2 class="g1" id="Notas" data-magellan-target="Notas">Notas</h2>
+                                                            <p>Hay que tener en cuenta que, en el marco de la diferenciación por modelos de las tareas batch (modelo GTRAITE), el usuario dispone de las variables siguientes, a las que se puede acceder desde las tareas específicas, o en las tareas estándar por medio de puntos de entrada:</p>
+                                                            <ul>
+                                                                <li>La variable GOK es un estatus actualizado de los lanzamientos de la tarea. Si no hay ningún problema, tiene valor 1, 0 en caso de bloqueo, -1 en un error grave de otro tipo y 2 en un error grave que implica al servidor. Esta variable la generan las tareas estándar: Si no tiene valor 1 al final de un tratamiento batch, la tarea aparece en estado <i>Error</i> en vigilancia de las tareas; en este caso, si la tarea forma parte de un grupo de tareas, las tareas siguientes se bloquean y no se lanzarán. </li>
+                                                                <li>La variable GERREUR sólo se adjudica a un valor no nulo en caso de error en la ejecución de una instrucción (es el número de error que corresponde a una excepción tratada por la instrucción <b><i>Onerrgo</i></b>). Si esta variable es no nula al final de la tarea, el estado de la tarea se coloca en <i>Abortado</i> en la vigilancia de tareas, y las tareas que siguen, si la tarea forma parte de un grupo, se bloquean. </li>
+                                                                <li>La variable GERRTRACEC permite contar el número de líneas de traza de error creadas por la tarea. También la generan las tareas estándar. Al ser positiva, la tarea se coloca en <i>Error</i> en la tarea de vigilancia, sin por ello bloquear el encadenamiento de las tareas siguientes en un grupo. De hecho se trata del descuento de un número de líneas de error que se suponen sin malas consecuencias. </li>
+                                                                <li>La variable GERBATCH es una variable numérica suplementaria, que permite dar un código de error que depende de la tarea si se considera que la tarea no se ha terminado correctamente (esto es independiente del hecho de que las líneas de traza de error hayan sido generadas o no). Si el valor de GERRBATCH es inferior a 100, se considera que se trata de un estatus de error benigno. Si, por otro lado, el valor de GERRBATCH es superior o igual a 100, el estado de la tarea en la función de supervisión de las tareas pasa a <i>Erreur</i> al final de la ejecución, y si la tarea forma parte de un grupo, el encadenamiento de las tareas siguientes se interrumpe. Esta variable ha sido creada para permitir una gestión de error específico por un punto de entrada<strong>.</strong></li>
+                                                                <li>La variable GMESSBATCH es una variable alfanumérica que permite dar un mensaje de error complementario. Este mensaje se inserta en el contenido del fichero de extensión <b><i>.sta</i></b> si se produce un error. </li>
+                                                            </ul>
+                                                            <p><b><i>Excepto por un error de coherencia en el lanzamiento, las tareas batch de la aplicacin tienen en cuenta en todos los casos que los errores encontrados son benignos y simplemente actualizan la traza incrementando GERRTRACE. Esto significa que cualquier error grave que deba interrumpir el tratamiento, debe ser tratado de forma especfica, por medio de puntos de entrada, dando a GERRBATCH</i>óí un valor superior a 100.</b>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Descripcióndelficheroservidortra" data-magellan-target="Descripcióndelficheroservidortra">Descripción del fichero servidor.tra</h2>
+                                                            <p>Este fichero, presente en el sub directorio TRA del directorio SERVX3, contiene la traza del servidor. La estructura de las líneas es conforme a la de un fichero de traza clásica (encabezado normalizado, y el estatus numérico en 5 caracteres). Cada línea se compone de un texte precedido por un número (este número se ve precedido a su vez por el caracter &lt; si se considera que se trata de un error, por = se trata de un aviso).</p>
+                                                            <p>Los números de estado siguiente existen (están precedidos por 4 y 5 por razones de continuidad de numeración con los estados precedentes). Hay que tener en cuenta que los estados que empiezan por 4 son estados graves que no deberían ocurrir en un trabajo normal (problemas de actualización, de gestión de tareas, de bloqueo del servidor batch) y pueden proceder de problemas de sistema, bien por una mala instalación, bien por específicos. Los estados que empiezan por 5 son, estados normales de la actividad del servidor batch:</p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="691" valign="top" colspan="3" rowspan="1">
+                                                                            <p align="center"><b>ERRORES GRAVES DE COHERENCIA DEL SERVIDOR</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Situación</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Explicación</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p><b>Texto </b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>41000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Desincronizción de tarea</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ERROR DE DESINCRONIZACIÓN DE TAREA</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>42000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Problema de acceso a la tabla de tareas</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ERROR DE ACCESO A LA TABLA DE TAREAS</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>43000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Número de petición inexistente</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ERROR DE PETICIÓN INEXISTENTE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>44000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Problema de acceso a la tabla de parámetros batch</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>&#160;</p>
+                                                            <table border="1" cellspacing="3" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="691" valign="top" colspan="3" rowspan="1">
+                                                                            <p align="center"><b>MENSAJES DE EXPLOTACIÓN NORMALES DEL SERVIDOR</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>50000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Arranque del servidor</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ARRANQUE DEL SERVIDOR BATCH</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>51000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Activación de petición (proceso id <b><i>P</i></b><i>)</i></p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ACTIVACIÓN PETICIÓN PID=<b><i>P</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>52<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error adonix <b><i>NNN</i> </b>en el momento de arrancar el servidor (mensaje de error = <b><i>M</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>	ERROR EN EL ARRANQUE DEL SERVIDOR <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>53000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Error distinto del arranque del servidor</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>ERROR INDETERMINADO EN EL ARRANQUE DEL SERVIDOR</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>54000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Lanzamiento del servidor cuando aún está activo</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>EL SERVIDOR ESTÁ YA ACTIVO</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1">
+                                                                            <p>55000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1">
+                                                                            <p>Desactivación del servidor</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_90_10"></a>
+                                                            <h2 class="g1" id="DescripcióndelosficherosRQTNNNNNNNNtra" data-magellan-target="DescripcióndelosficherosRQTNNNNNNNNtra">Descripción de los ficheros RQTNNNNNNNN.tra</h2>
+                                                            <p>Estos ficheros, presentes en el sub directorio TRA del directorio SERVX3, contiene la traza asociada a la petición en sí misma. La estructura de las líneas es conforme a la de un fichero de traza clásica (encabezado normalizado, y el estatus numérico en 5 caracteres). Cada línea se compone de un texte precedido por un número (este número se ve precedido a su vez por el caracter &lt; si se considera que se trata de un error o de un aviso). Estos ficheros pueden ser leídos directamente desde el gestionador de peticiones mediante el botón derecho / <i>Lectura traza</i>.</p>
+                                                            <p>Pasada la línea de cabecera, la primera línea de un fichero de este tipo se presenta en forma de una línea con el formato siguiente (integra el estado <i>Activación de petición</i> definida a continuación):</p>
+                                                            <p>=51000 <b><i>NNNNNNNN</i></b><i> <b>JJ/MM/AA hh&#160;:mm&#160;:ss Activación petición(51000)</b></i></p>
+                                                            <p>(<b><i>NNNNNNNN </i></b>representa aquí el número de la tarea)</p>
+                                                            <p>Las líneas de traza clásica de la tarea siguen esta primera línea (si el tratamiento en cuestión no se lanza en batch, estas líneas se escribirán en un fichero de traza clásico <i>F<b>NNNNN</b>.tra</i> en el directorio TRA del dossier de lanzamiento). Después, excepto si la tarea se ha detenido de forma brusca (por un <i>killadx</i>, por ejemplo), se encontrará una línea final de estructura idéntica, pero en la que el número es conforme al estado de fin correcto (0000) o de error (1<b><i>NNNN</i></b>) descrito a continuación. </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_100_10"></a>
+                                                            <h2 class="g1" id="Tablasutilizadas" data-magellan-target="Tablasutilizadas">Tablas utilizadas</h2>
+                                                            <p>105:Las tablas siguientes se utilizan en la función:</p>
+                                                            <ul>
+                                                                <li><a href="../MCD/ABATRQT.htm">Tabla ABATRQT</a>
+                                                                </li>
+                                                                <li><a href="../MCD/ABATTAC.htm">Tabla ABATTAC</a>
+                                                                </li>
+                                                                <li><a href="../MCD/ABATGRP.htm">Tabla ABATGRP</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Sumisi%C3%B3ndepeticionesporficheros">Sumisión de peticiones por ficheros</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisitos">Pre-requisitos </a>
+                                                        </li>
+                                                        <li><a href="#Losficherosdepetici%C3%B3nextensi%C3%B3nreq">Los ficheros de petición (extensión req)</a>
+                                                        </li>
+                                                        <li><a href="#Cinem%C3%A1ticadetratamientodelosficherosdepetici%C3%B3n">Cinemática de tratamiento de los ficheros de petición</a>
+                                                        </li>
+                                                        <li><a href="#Descripci%C3%B3ndelosficherosXXXstaXXXrunXXXkil">Descripción de los ficheros XXX.sta, XXX.run, XXX.kil</a>
+                                                        </li>
+                                                        <li><a href="#Notas">Notas</a>
+                                                        </li>
+                                                        <li><a href="#Descripci%C3%B3ndelficheroservidortra">Descripción del fichero servidor.tra</a>
+                                                        </li>
+                                                        <li><a href="#Descripci%C3%B3ndelosficherosRQTNNNNNNNNtra">Descripción de los ficheros RQTNNNNNNNN.tra</a>
+                                                        </li>
+                                                        <li><a href="#Tablasutilizadas">Tablas utilizadas</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 enero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

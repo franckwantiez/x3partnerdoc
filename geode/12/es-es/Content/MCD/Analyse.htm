@@ -1,0 +1,907 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Title" content="Stock" />
+        <meta name="Author" content="FSUSSAN" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Analyse</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../Resources/Images/Analyse_frameset.js" type="text/javascript" language="javascript">
+        </script>
+        <script type="text/javascript" language="javascript">/*<![CDATA[*/
+
+
+function FileEntry (pageIndex, pageID, pageName, priImage, secImage) 
+{
+	this.PageIndex = pageIndex;
+	this.PageID	 = pageID;
+	this.PageName = pageName;
+	this.PriImage = priImage;
+	this.SecImage = secImage;
+}
+var viewMgr = null;
+var g_FileList = new Array(
+ new FileEntry (1, 0, "Analyse", "Analyse_gif_1.htm", "")
+);
+var g_CurPageIndex = 0;
+var g_ZoomLoaded = false;
+var g_WidgetsLoaded = false;
+var g_FileProtocol = "file://";
+var g_HLMenuEntry = "menuEntry";
+var g_HLMenuEntryDiv = "menuEntryDiv";
+var g_LoadingWidgets = false;
+var isSVG = g_FileList[g_CurPageIndex].PriImage.indexOf("svg") >= 0;
+var isVML = g_FileList[g_CurPageIndex].PriImage.indexOf("vml") >= 0;
+var isXAML = g_FileList[g_CurPageIndex].PriImage.indexOf("xaml") >= 0;
+function CViewMgr(convertedImgID, highlightDivID)
+{
+	this.onResize = null;
+	this.ApplyZoom = null;
+	this.ChangingView = false;
+	this.put_Location = ViewMgrDefaultFind;
+	this.Zoom = ViewMgrDefaultResize;
+	this.PostZoomProcessing = null;
+	this.setView = null;
+	this.PostSetViewProcessing = null;
+	this.viewChanged = null;
+	this.SupportsDetails = false;
+	this.SupportsSearch = false;
+	this.visBBoxLeft = 0.0;
+	this.visBBoxRight = 0.0;
+	this.visBBoxBottom = 0.0;
+	this.visBBoxTop = 0.0;
+	this.highlightDiv = null;
+	this.stepWidth = 10;
+	this.id = convertedImgID;
+	this.zoomFactor = -1;
+	this.zoomLast = -1;
+	this.origWH = 1;
+	this.origWidth = 100;	
+	this.aspectRatio = 1;
+	this.docDrawing = null;
+	var docDrawing = frmDrawing.document;
+	if(docDrawing)
+	{
+		this.docDrawing = docDrawing;
+		var docEl = docDrawing.getElementById(this.id);
+		if (!docEl)
+			docEl = docDrawing.childNodes[0];
+		this.s = docEl.style;
+		this.origWidth = this.s.pixelWidth;
+		this.origWH = this.s.pixelWidth / this.s.pixelHeight;
+		this.highlightDiv = docDrawing.getElementById(highlightDivID);
+	}
+	this.loadPage = DefPageLoad;
+	this.getPNZ	= null;
+}
+function DefPageLoad (pageIndex)
+{
+	if (pageIndex >= 0)
+	{
+		var curPath = frmDrawing.location.href;
+		var fileDelim = curPath.lastIndexOf ('/');
+ if (fileDelim == -1)
+ fileDelim = curPath.lastIndexOf ('\\');
+		var newPath = curPath.substring (0, fileDelim + 1);
+		newPath += g_FileList[pageIndex].PriImage;
+		frmDrawing.location.href = newPath;
+		SetPNZDisplay (pageIndex);
+	}
+}
+function CurPageUpdate (pageIndex)
+{
+	if (pageIndex >= 0)
+	{
+		g_CurPageIndex = pageIndex;
+		SetCurPageInGoto (pageIndex);
+		var divDetails = frmToolbar.document.getElementById("divDetails");
+		if (divDetails)
+		{
+			var displayStatus = "block";
+			if (!viewMgr || !viewMgr.SupportsDetails)
+			{
+				displayStatus = "none";
+			}
+			divDetails.style.display = displayStatus;
+		}
+		var divSearch = frmToolbar.document.getElementById("divSearch");
+		if (divSearch)
+		{
+			var displayStatus = "block";
+			if (!viewMgr || !viewMgr.SupportsSearch)
+			{
+				displayStatus = "none";
+			}
+			divSearch.style.display = displayStatus;
+		}
+		SetPNZDisplay (pageIndex);
+		LoadZoom ();
+	}
+}
+function FramePageLoaded ()
+{
+	if (isUpLevel && viewMgr == null)
+	{
+		var curPath = frmDrawing.location.href;
+		var fileDelim = curPath.lastIndexOf ('/');
+		if (fileDelim >= 0)
+		{
+			var fileName = curPath.substring (fileDelim + 1, curPath.length);
+			var pageIndex = PageIndexFromFileName (fileName);
+			SetCurPageInGoto (pageIndex);
+			SetPNZDisplay (pageIndex);
+		}
+	}
+}
+function LoadZoom ()
+{
+	var zoomWidget = frmToolbar.frames["ifrmPNZ"];
+	if (zoomWidget)
+	{
+		if (g_ZoomLoaded)
+		{
+			zoomWidget.findContent();
+			PageLoadedDoCallback ();
+		}
+		else
+		{
+			window.setTimeout("LoadZoom()", 500);
+		}
+	}
+	else
+	{
+		PageLoadedDoCallback ();
+	}
+}
+function SetCurPageInGoto (pageIndex)
+{
+	var gotoPageSelect = frmToolbar.document.getElementById("Select1");
+	if (gotoPageSelect != null)
+	{
+		gotoPageSelect.value = pageIndex;
+	}
+}
+function SetPNZDisplay (pageIndex)
+{
+	var divPNZ = frmToolbar.document.getElementById("divPNZ");
+	if (divPNZ)
+	{
+		var displayStatus = "block";
+		if (g_FileList[pageIndex].PageID < 0)
+		{
+			displayStatus = "none";
+		}
+		divPNZ.style.display = displayStatus;
+	}
+}
+function ViewMgrDefaultFind()
+{
+	return;
+}
+function ViewMgrDefaultResize(size)
+{
+	return;
+}
+g_callBackFunctionArray = new Array();
+function PageLoadedDoCallback()
+{
+	if (g_WidgetsLoaded)	
+	{
+		for( var i=0; i < g_callBackFunctionArray.length; i++ )
+		{
+			g_callBackFunctionArray[i]();
+		}
+		g_callBackFunctionArray = new Array();
+	}
+	else
+	{
+		window.setTimeout("PageLoadedDoCallback()", 500);
+	}
+}
+function ParseParams (strRawParams)
+{
+	if ( strRawParams != null && strRawParams.length > 0 )
+	{
+		strRawParams = strRawParams.substring(1);
+		var arrayParamTokens = strRawParams.split('&');
+		for (var count = 0; count < arrayParamTokens.length; count++)
+		{
+			arrayParamTokens[count] = unescape(arrayParamTokens[count]);
+			this[count] = arrayParamTokens[count].substring(0, arrayParamTokens[count].indexOf('='));
+			this[this[count]] = arrayParamTokens[count].substring(arrayParamTokens[count].indexOf('=') + 1);
+		}
+	}
+	else
+	{
+		this[0] = null;
+	}
+	return this;
+}
+var gParams = ParseParams (location.search);
+var g_PageParamValue = gParams['page'];
+if (g_PageParamValue != null && 
+	g_PageParamValue.length > 0)
+{
+	var pageIndex = PageIndexFromName (g_PageParamValue);
+	if (pageIndex > 0 && pageIndex < g_FileList.length)
+	{
+		g_CurPageIndex = pageIndex;
+	}
+}
+else
+{
+	g_PageParamValue = null;
+}
+var g_FirstPageToLoad = g_PageParamValue;
+var g_ZoomParamValue = gParams['zoom'];
+if (g_ZoomParamValue != null && g_ZoomParamValue.length > 0)
+{
+	g_ZoomParamValue = 1.0 * g_ZoomParamValue;
+	if (g_ZoomParamValue >= 10 && g_ZoomParamValue <= 500)
+	{
+		g_callBackFunctionArray[g_callBackFunctionArray.length] = function () { if (viewMgr && viewMgr.Zoom) { viewMgr.Zoom(g_ZoomParamValue); } };
+	}
+}
+var g_ShapeParamValue = gParams['shape'];
+if (g_ShapeParamValue != null && g_ShapeParamValue.length > 0)
+{
+	if (g_PageParamValue != null && g_PageParamValue.length > 0)
+	{
+		g_callBackFunctionArray[g_callBackFunctionArray.length] = function () { var shapeNode = FindShapeXMLByName (g_PageParamValue, g_ShapeParamValue); if (shapeNode) { frmToolbar.TreeSelect (g_FileList[g_CurPageIndex].PageID, shapeNode.attributes.getNamedItem ("ID").text); } };
+	}
+	else
+	{
+		g_ShapeParamValue = null;
+	}
+}
+var g_SearchParamValue = gParams['search'];
+if (g_SearchParamValue != null && g_SearchParamValue.length > 0)
+{
+	g_callBackFunctionArray[g_callBackFunctionArray.length] = function () { if (frmToolbar.theForm) { frmToolbar.theForm.findString.value = g_SearchParamValue; } };
+	g_callBackFunctionArray[g_callBackFunctionArray.length] = function () { var goButton = frmToolbar.document.getElementById('GoButton'); if(goButton) { goButton.click(); } };
+}
+var strHLTooltipText = "Click to follow hyperlink.";
+var strPropsTooltipText = "Ctrl + Click to view details.";
+var strFocusHLTooltipText = "Enter to follow hyperlink.";
+var strFocusPropsTooltipText = "Ctrl + Enter to view details.";
+function UpdateTooltip (element, pageID, shapeID)
+{
+	if (isUpLevel)
+	{
+		var strHL, strProps;
+		if(frmDrawing.event.type == "focus")
+		{
+			strHL = strFocusHLTooltipText;
+			strProps = strFocusPropsTooltipText;
+		}
+		else
+		{
+			strHL = strHLTooltipText;
+			strProps = strPropsTooltipText;
+		}
+		var strTooltip = "";
+		if (element.origTitle)
+		{
+			strTooltip = element.origTitle.toString();
+		}
+		var shapeNode = FindShapeXML (pageID, shapeID);
+		if( shapeNode != null )
+		{
+			var propColl = SelectNodes(shapeNode, "Prop");
+			if (propColl != null && propColl.length > 0)
+			{
+				if (strTooltip.length > 0)
+				{
+					strTooltip += "\n";
+				} 
+				strTooltip += strProps;
+			}
+		}
+		var hlObj = GetHLAction (shapeNode, pageID, shapeID);
+		if (hlObj != null && (hlObj.DoFunction.length > 0 || hlObj.Hyperlink.length > 0))
+		{
+			if (strTooltip.length > 0)
+			{
+				strTooltip += "\n";
+			}	
+			strTooltip += strHL;
+		}
+		element.title = strTooltip;
+		if (element.alt != null)
+		{
+			element.alt = strTooltip;
+		}
+	}
+}
+function GetHLAction (shapeNode, pageID, shapeID)
+{
+	var hlObj = new HLObj ("", "", "", false);
+	if (shapeNode != null)
+	{
+		try
+		{
+			var hlColl = SelectNodes(shapeNode, "Scratch/B/SolutionXML/HLURL:Hyperlinks/HLURL:Hyperlink");
+		}
+		catch(err)
+		{
+			var hlColl = [];
+		}
+		if (hlColl.length > 1)
+		{
+			if(window.frmDrawing.event)
+			{
+				hlObj.DoFunction = "showMenu(" + pageID + ", " + shapeID + ");"
+			}
+			else // XAML
+			{
+				// Use default hyperlink to set the action
+				var fFoundDefault = false;
+				for (var count = 0; count < hlColl.length; ++count)
+				{
+					var hlDefault = SelectSingleNode(hlColl[count], "HLURL:Default/text()");
+					if (hlDefault != null && hlDefault.nodeValue.length > 0 &&
+						hlDefault.nodeValue == "1" /*Indicates that this is the default hyperlink <HLURL:Default>1<hlurl:default>*/)
+					{
+						hlObj = CreateHLObj(hlColl[count]);
+						fFoundDefault = true;
+						break;
+					}
+				}
+				if (!fFoundDefault)
+					hlObj = CreateHLObj(hlColl[0]);
+			}
+		}
+		else if (hlColl.length == 1)
+		{
+			hlObj = CreateHLObj (hlColl[0]);
+		}
+	}
+	return hlObj;
+}
+function HLObj (strHyperlink, strDoFunction, strDesc, newWindow) 
+{
+	this.Hyperlink = strHyperlink;
+	this.DoFunction = strDoFunction;
+	this.Desc = strDesc;
+	this.NewWindow = newWindow;
+}
+function clickMenu()
+{
+	var e = window.frmDrawing.event;
+	var menu = frmDrawing.document.getElementById("menu1")
+	if (menu != null && menu.style.display != "none")
+	{
+		menu.style.display="none";
+		if (e && e.srcElement && e.srcElement.doFunction != null)
+		{
+			eval(e.srcElement.doFunction);
+		}
+	}
+}
+function toggleMenuDiv(el, highlight) 
+{
+	var divEl = el;
+	var aEl = null;
+	var ID = el.id.substring (g_HLMenuEntryDiv.length, el.id.length) * 1.0;
+	aEl = frmDrawing.document.getElementById(g_HLMenuEntry + ID);
+	toggleMenu(divEl, aEl, highlight);
+}
+function toggleMenuLink(el, highlight) 
+{
+	var divEl = null;
+	var aEl = el;
+	var ID = el.id.substring (g_HLMenuEntry.length, el.id.length) * 1.0;
+	divEl = frmDrawing.document.getElementById(g_HLMenuEntryDiv + ID);
+	toggleMenu(divEl, aEl, highlight);
+}
+function toggleMenu(divEl, aEl, highlight)
+{
+	if (highlight)
+	{
+	 divEl.className="highlightItem";
+	 aEl.className="highlightItem";
+	} 
+	else 
+	{
+	 divEl.className="menuItem";
+	 aEl.className="menuItem";
+	}
+}
+function showMenu(pageID, shapeID)
+{
+	var shapeXML = FindShapeXML (pageID, shapeID);
+	if (shapeXML != null)
+	{
+		CreateHLMenu (shapeXML);
+		var menu = frmDrawing.document.getElementById("menu1");
+		if (menu != null)
+		{
+			menu.style.visibility = "hidden";
+			menu.style.display = "inline";
+ var clientWidth = frmDrawing.document.body.clientWidth;
+		 var clientHeight = frmDrawing.document.body.clientHeight;
+		 var menuWidth = menu.clientWidth;
+		 var menuHeight = menu.clientHeight;
+		 var doc = frmDrawing.document;
+			var e = window.frmDrawing.event;
+			if(e)
+			{
+			 var elem = e.srcElement;
+			 var menuLeft = e.x;
+			 var menuTop = e.y;
+			 var img = doc.getElementById("ConvertedImage");
+			 if( (menuLeft + doc.body.scrollLeft < elem.offsetLeft) || (menuLeft + doc.body.scrollLeft > elem.offsetLeft + elem.offsetWidth + img.offsetLeft) )
+			 {
+				 menuLeft = elem.offsetLeft + img.offsetLeft + elem.offsetWidth/2;
+			 }
+			 if( (menuTop + doc.body.scrollTop < elem.offsetTop) || (menuTop + doc.body.scrollTop > elem.offsetTop + elem.offsetHeight + img.offsetTop) )
+			 {
+				 menuTop = elem.offsetTop + img.offsetTop + elem.offsetHeight/2;
+			 }
+			 var scrollBarSize = 20;
+			 if (menuLeft + menuWidth > clientWidth - scrollBarSize)
+			 {
+				 menuLeft = clientWidth - menuWidth - scrollBarSize;
+			 }
+			 if (menuTop + menuHeight > clientHeight - scrollBarSize)
+			 {
+				 menuTop = clientHeight - menuHeight - scrollBarSize;
+			 }
+				menu.style.posLeft = menuLeft + frmDrawing.document.body.scrollLeft;
+				menu.style.posTop = menuTop + frmDrawing.document.body.scrollTop;
+				menu.style.visibility = "visible";
+				var firstLink = frmDrawing.document.getElementById(g_HLMenuEntry + "0");
+				firstLink.focus ();
+				if (e.keyCode == 13)
+				{
+					toggleMenuLink(firstLink, true);
+				}
+				e.cancelBubble = true;
+			}
+		}
+	}
+}
+function MenuKeyDown ()
+{
+	var e = window.frmDrawing.event;
+	var el = e.srcElement;
+	if (e.keyCode == 27)	// 27 == ESC
+	{
+		clickMenu();
+		e.cancelBubble = true;
+		return;
+	}
+	var curSelID = el.id.substring (g_HLMenuEntry.length, el.id.length) * 1.0;
+	var newSelID = -1;
+	if (e.keyCode == 40)	// 40 == down arrow
+	{
+		newSelID = curSelID + 1;
+	}
+	else if (e.keyCode == 38) // 38 == up arrow
+	{
+		newSelID = curSelID - 1;
+	}
+	var newSelEntry = frmDrawing.document.getElementById(g_HLMenuEntry + newSelID);
+	if (newSelEntry)
+	{
+		newSelEntry.focus();
+		var curSelEntry = frmDrawing.document.getElementById(g_HLMenuEntry + curSelID);
+		toggleMenuLink (curSelEntry, false);
+		toggleMenuLink (newSelEntry, true);
+	}
+	e.cancelBubble = true;
+}
+function CreateHLMenu (shapeNode)
+{
+	var strHLMenuHTML = "";
+	if (shapeNode != null)
+	{
+		var hlColl = SelectNodes(shapeNode, "Scratch/B/SolutionXML/HLURL:Hyperlinks/HLURL:Hyperlink");
+		strHLMenuHTML = "<div class='innerhlMenu'>";
+		var hlCount = hlColl.length;
+		for (var count = 0; count < hlCount; count++)
+		{
+			var hlObj = CreateHLObj (hlColl[count]);
+			if (hlObj != null)
+			{
+				if (hlObj.Desc.length > 0)
+				{
+					strHLMenuHTML += "<div id='" + (g_HLMenuEntryDiv + count) + "' class='menuItem' onmouseover='toggleMenuDiv(this, true)' onmouseout='toggleMenuDiv(this, false)' onclick='" + (g_HLMenuEntry + count) + ".click()'>";
+					strHLMenuHTML += "<a href=";
+					if (hlObj.DoFunction.length > 0)
+					{
+						strHLMenuHTML += "'javascript:" + hlObj.DoFunction + "'";
+					}
+					else
+					{
+						var targetVal = "_top";
+						if (hlObj.NewWindow)
+						{
+							targetVal = "_blank";
+						}
+						strHLMenuHTML += "'" + hlObj.Hyperlink + "' target='" + targetVal + "'";
+					}
+					strHLMenuHTML += " class='menuItem' id='" + (g_HLMenuEntry + count) + "' onkeydown='parent.MenuKeyDown();' onmouseover='toggleMenuLink(this, true)' onmouseout='toggleMenuLink(this, false)'>";
+					strHLMenuHTML += hlObj.Desc + "<a><div>";
+				}
+			}
+		}
+		strHLMenuHTML += "<div>";
+	}
+	var menu = frmDrawing.document.getElementById("menu1")
+	menu.innerHTML = strHLMenuHTML;
+}
+function CreateHLObj (hlNode)
+{
+	var strAddress = "";
+	var hlObj = new HLObj ("", "", "", false);
+	if (hlNode != null)
+	{
+		var hlAddress = SelectSingleNode(hlNode,"HLURL:Address/text()");
+		if (hlAddress != null && hlAddress.nodeValue.length > 0)
+		{
+			// Get AbsoluteURL
+			var absoluteURL = SelectSingleNode(hlNode,"HLURL:AbsoluteURL/text()");
+			var strAbsURL = "";
+			if (absoluteURL != null && absoluteURL.nodeValue.length > 0)
+				strAbsURL = absoluteURL.nodeValue;
+			// Get Address
+			var strAddr = hlAddress.nodeValue;
+			// Use relative address if AbsoluteURL is missing
+			if (strAbsURL == "")
+			{
+				strAddress = strAddr;
+			}
+			else if (strAbsURL.indexOf (g_FileProtocol) == 0)
+			{
+				var strAbsPath = strAbsURL.substring (g_FileProtocol.length, strAbsURL.length);
+				strAbsPath.toLowerCase ();
+				strAddr.toLowerCase ();
+				if (strAbsPath == strAddr)
+				{
+					strAddress = strAbsPath;
+				}
+				else
+				{
+					strAddress = strAddr;
+					var hlSubAddress = SelectSingleNode(hlNode,"HLURL:SubAddress/text()");
+					if (hlSubAddress != null && hlSubAddress.nodeValue.length > 0)
+					{
+						strAddress += '#';
+						strAddress += hlSubAddress.nodeValue;
+					}
+					var hlExtraInfo = SelectSingleNode(hlNode,"HLURL:ExtraInfo/text()");
+					if (hlExtraInfo != null && hlExtraInfo.nodeValue.length > 0)
+					{
+						strAddress += '?';
+						strAddress += hlExtraInfo.nodeValue;
+					}
+				}
+			}
+			else
+			{
+				strAddress = strAbsURL;
+			}		
+			strAddress = HTMLEscape (strAddress);
+			hlObj.Hyperlink += strAddress;
+		}
+		else
+		{
+			hlAddress = SelectSingleNode(hlNode,"HLURL:SubAddress/text()");
+			if (hlAddress != null && hlAddress.nodeValue.length > 0)
+			{
+				strAddress = hlAddress.nodeValue;
+				var pageShapeSep = strAddress.lastIndexOf ('/');
+				if (pageShapeSep > 0)
+				{
+					if (PageIndexFromName (strAddress) < 0)
+					{
+						strAddress = unescape (strAddress);
+						if (PageIndexFromName (strAddress) < 0)
+						{
+							strAddress = strAddress.substring (0, strAddress.lastIndexOf ('/'));
+						}
+					}
+				}
+				var pageIndex = PageIndexFromName (strAddress);
+				hlObj.DoFunction = "GoToPage (" + pageIndex + ");";
+				strAddress = HTMLEscape (strAddress);
+				hlObj.Desc = strAddress;
+			}
+		}
+		hlDesc = SelectSingleNode(hlNode,"HLURL:Description/text()");
+		if (hlDesc != null && hlDesc.nodeValue.length > 0)
+		{
+			hlObj.Desc = HTMLEscape (hlDesc.nodeValue);
+		}
+		else
+		{
+			hlObj.Desc = strAddress;
+		}
+		var hlNewWindow = SelectSingleNode(hlNode,"HLURL:NewWindow/text()");
+		if (hlNewWindow != null && hlNewWindow.nodeValue.length > 0)
+		{
+			hlObj.NewWindow = (hlNewWindow.nodeValue == "1");
+		}		
+	}
+	return hlObj;
+}
+		
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="" data-magellan-target="" />
+                                                <ul>
+                                                    <li><a href="Analyse_gif_1.htm">Analyse</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 enero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

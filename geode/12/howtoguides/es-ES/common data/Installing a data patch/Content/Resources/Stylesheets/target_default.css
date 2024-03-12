@@ -1,0 +1,2255 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.Master,Other.MasterTopNav" />*/
+
+/* This stylesheet contains styles for the '(default)' medium (i.e. no medium). */
+/* These styles may be modified by styles in the other stylesheets, according to the medium and target used. */
+
+html
+{
+	
+}
+
+body	/* body: font-size sets standard font 1em as 87.5% of 16px = 14px */
+{
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 87.5%;
+	line-height: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	color: rgba(0,0,0,0.9); /* CSS variable IE 11 support */
+	color: var(--col-black-90); 
+	margin: 0.5em 1em 0.5em 1em;
+	
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+}
+
+h1
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 2.286em; /* 32/14 */
+	font-weight: 600;
+	line-height: 1.25em; /* 40/32 */
+	margin: 0.25em 0em 0.5em 0em;
+}
+
+h2
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.715em; /* 24/14 */
+	font-weight: 600;
+	line-height: 1.25em; /* 30/24 */
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h3
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.429em; /* 20/14 */
+	font-weight: 600;
+	line-height: 1.25em; /* 25/20 */
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h4
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.286em; /* 18/14 */
+	font-weight: 600;
+	line-height: 1.25em;
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h5
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.143em; /* 16/14 */
+	font-weight: 600;
+	line-height: 1.25em;
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h6
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1em; /* 14/14 */
+	font-weight: 600;
+	line-height: 1.25em;
+	margin: 1.5em 0em 0.5em 0em;
+}
+
+h1 + h2,
+h1 + h3,
+h1 + h4,
+h1 + h5,
+h1 + h6,
+h2 + h3,
+h2 + h4,
+h2 + h5,
+h2 + h6,
+h3 + h4,
+h3 + h5,
+h3 + h6,
+h4 + h5,
+h4 + h6,
+h5 + h6	/* reduce top margin for consecutive headings */
+{
+	margin-top: 1em;
+}
+
+hr	/* hr: page divider - doesn't clear floated elements */
+{
+	border-style: none;
+	color: transparent;
+	background-color: transparent;
+	height: 2px;
+	padding: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	size: 0;
+	border-bottom: 2px solid #B9BAB7;
+	width: auto;
+}
+
+hr.clear	/* hr: page divider - clears floated elements */
+{
+	clear: both;
+	width: 100%;
+}
+
+a,
+a:link,
+a:visited	/* a: normal hyperlink styles */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	text-decoration: none;
+}
+
+a:hover,
+a:focus	/* a: normal hyperlink styles */
+{
+	
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1);	
+	text-decoration: underline;
+}
+
+:focus /* set the focus outline colour */
+{
+	outline-style: solid; /* required for IE11 */
+	outline-width: 2px;
+	outline-color: #FFB500; /* CSS variable IE 11 support */
+	outline-color: var(--col-gold);
+}
+	
+b	/* b: bold text - set as 700 */
+{
+	font-weight: 700;
+}
+
+p	/* p: body paragraph text */
+{
+	font-size: 1em;
+	line-height: 1.5em;
+	margin: 0em 0em 1em 0em;
+}
+
+p.note,
+div.note,
+p.tip,
+div.tip,
+div.note-settings,
+div.note-warning,
+div.note-danger,
+div.note-info,
+div.note-success,
+div.note-error,
+div.note-tip	/* message styles */
+{
+	width: auto;
+	overflow: auto;
+}
+
+
+p.note,
+div.note,
+p.tip,
+div.tip
+{
+	margin: 1em 0em 1em 0em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border-style: solid;
+	border-width: 0;
+	border-left-width: 2em;
+}
+
+
+div.note-settings,
+div.note-warning,
+div.note-danger,
+div.note-info,
+div.note-success,
+div.note-error,
+div.note-tip	/* message styles */
+{
+	position: relative; /* must be relative to allow icon positioning */
+	margin: 1em 0em 1em 0em;
+	padding: 0.5em 0.5em 0.5em 2.5em;
+}
+
+p.note,
+div.note
+{
+	border-color: #CCD6DB; /* CSS variable IE 11 support */
+	border-color: var(--col-slate-80);
+	mc-auto-number-format: 'Note: '; /* LOCALISED in localised_text.css */
+	mc-auto-number-class: noteformat;
+}
+
+p.tip,
+div.tip
+{
+	border-color: #CCD6DB; /* CSS variable IE 11 support */
+	border-color: var(--col-slate-80);
+	mc-auto-number-format: 'Tip: '; /* LOCALISED in localised_text.css */
+	mc-auto-number-class: noteformat;
+}
+
+span.noteformat	/* span.noteformat: formatting of note/tip text */
+{
+	font-weight: 700;
+	/* color: #2C2A29; */
+}
+
+div.note span.noteformat,
+div.tip span.noteformat	/* increase spacing when note and tip used as div */
+{
+	display: block;
+}
+
+div.note-settings:before	/* DLS style message - settings */
+{
+	background-color: #668592; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-40);
+}
+
+div.note-warning:before	/* DLS style message - warning */
+{
+	background-color: #E96400; /* CSS variable IE 11 support */
+	background-color: var(--col-carrot);
+}
+
+div.note-danger:before	/* DLS style message - danger */
+{
+	background-color: #C7384F; /* CSS variable IE 11 support */
+	background-color: var(--col-error-red);
+}
+
+div.note-info:before	/* DLS style message - info */
+{
+	background-color: #0073C2; /* CSS variable IE 11 support */
+	background-color: var(--col-aegean);
+}
+
+div.note-tip:before /* DLS style message - tip */
+{
+	background-color: #4099D6; /* CSS variable IE 11 support */
+	background-color: var(--col-aegean-tint-25);
+}
+
+div.note-success:before /* DLS style message - success */
+{
+	background-color: #00B000; /* CSS variable IE 11 support */
+	background-color: var(--col-green-20);
+}
+
+div.note-error:before /* DLS style message - error */
+{
+	background-color: #C7384F; /* CSS variable IE 11 support */
+	background-color: var(--col-error-red);
+}
+
+div.note-settings:before,
+div.note-warning:before,
+div.note-danger:before,
+div.note-info:before,
+div.note-success:before,
+div.note-error:before,
+div.note-tip:before	/* Set colour bar for DLS style messages */
+{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	content: "";
+	width: 2em;
+	height: 100%;
+}
+
+div.note-settings:after,
+div.note-warning:after,
+div.note-danger:after,
+div.note-info:after,
+div.note-success:after,
+div.note-error:after,
+div.note-tip:after	/* Set icon style for DLS style messages */
+{
+	color: white;
+    font-family: "CarbonIcons";
+	content: "\e92a";
+    display: block;	
+    position: absolute;
+	left: 0.5em; /* 2em total width, 1em icon width, so indent 0.5em */
+    top: calc(50% - 0.75em); /* icon height is normally 1.5em, so subtract 0.75em */
+}
+
+div.note-info:after /* DLS style message - info icon */
+{
+	content: "\e92a";
+}
+
+div.note-settings:after /* DLS style message - settings icon */
+{
+	content: "\e91a";
+}
+
+div.note-warning:after /* DLS style message - warning icon */
+{
+	content: "\e924";
+}
+
+div.note-danger:after /* DLS style message - danger icon */
+{
+	content: "\e958";
+}
+
+div.note-tip:after/* DLS style message - tip icon */
+{
+	content: "\e95d";
+}
+
+div.note-success:after /* DLS style message - success icon */
+{
+	content: "\e950";
+}
+
+div.note-error:after /* DLS style message - error icon */
+{
+	content: "\e923";
+}
+
+pre.code	/* pre.code: block code examples */
+{
+	color: rgba(0,0,0,0.9); /* CSS variable IE 11 support */
+	color: var(--col-black-90);
+	font-family: monospace, sans-serif;
+	font-size: 1.143em; /* 16/14 */
+	line-height: 1.5em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	margin: 0.5em 0 1em 0;
+	padding: 1em;
+	border: 2px solid #e8e9e6;
+	width: auto;
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+code	/* code: inline code examples */
+{
+	color: rgba(0,0,0,0.9); /* CSS variable IE 11 support */
+	color: var(--col-black-90);
+	font-family: monospace, sans-serif;
+	font-size: 1.143em; /* 16/14 */
+}
+
+span.code	/* span.code: inline code examples */
+{
+	color: rgba(0,0,0,0.9); /* CSS variable IE 11 support */
+	color: var(--col-black-90);
+	font-family: monospace, sans-serif;
+	font-size: 1.143em; /* 16/14 */
+}
+
+span.reference	/* span.reference: references to UI */
+{
+	/* color: #8E8A86; */
+	font-weight: 600; /* semi bold */
+}
+
+span.input	/* span.input: references to keyboard */
+{
+	font-style: italic;
+	/* color: #8E8A86; */
+}
+
+span.term	/* span.term: references to terms */
+{
+	font-style: italic;
+}
+
+a span.reference,
+a:link span.reference,
+a:visited span.reference,
+a span.input,
+a:link span.input,
+a:visited span.input,
+a span.code,
+a:link span.code,
+a:visited span.code	/* Format span styles in links */
+{
+	color: inherit;
+}
+
+a:hover span.reference,
+a:focus span.reference,
+a:hover span.input,
+a:focus span.input,
+a:hover span.code,
+a:focus span.code	/* Format span styles in links */
+{
+	color: inherit;
+}
+
+span.icon-carbon /* Used to format icon using Carbon Icons */
+{
+   font-family: "CarbonIcons";
+}
+
+p.image	/* p.image: paragraph with image */
+{
+	font-style: italic;
+}
+
+p.image	+ p.image /* p.image: remove margin on consecutive line */
+{
+	margin-top: -1em;
+}
+
+img	/* img: remove border */
+{
+	border: none;
+}
+
+img.inParagraph	/* img.inParagraph: inline images */
+{
+	margin: 0 0.5em 0 0.5em;
+	border-collapse: collapse;
+	vertical-align: baseline;
+}
+
+img.thumbnail	/* img.thumbnail: set image as thumbnail */
+{
+	mc-thumbnail: popup;
+	mc-thumbnail-max-height: 96px;
+	padding: 1em;
+	border: 1px solid #c2d3e2;
+}
+
+img.thumbnail:hover,
+img.thumbnail:focus 
+/* img.thumbnail: thumbail hover and focus */
+{
+
+	border: 1px solid #28A3DA;
+	box-shadow: 0 5px 5px 0 rgba(0,20,29,0.2), 0 10px 10px 0 rgba(0,20,29,0.1); /* DLS - shadow depth level 1 */
+}
+
+div.MCPopupContainer
+/* add shadow to image popup */
+{
+	box-shadow: 0 10px 20px 0 rgba(0,20,29,0.2), 0 20px 40px 0 rgba(0,20,29,0.1); /* DLS - shadow depth level 2 */
+}
+
+.pageBreakBefore	/* pageBreakBefore: manual page breaks */
+{
+	page-break-before: always;
+}
+
+.pageBreakAfter	/* pageBreakAfter: manual page breaks */
+{
+	page-break-after: always;
+}
+
+MadCap|dropDown	/* MadCap|dropDown: Drop downs */
+{
+	margin-bottom: 1em;
+	mc-open-image-alt-text: Close this section;
+	mc-closed-image-alt-text: Open this section;
+	mc-image-spacing: 0;
+	mc-open-image: none;
+	mc-closed-image: none;
+	mc-image-position: none;
+}
+
+MadCap|dropDownHead
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	font-size: 1.143em; /* 16px = 16/14 */
+	font-weight: 600;
+}
+
+MadCap|dropDownHead.heading	/* MadCap|dropDownHead.heading: Drop down with heading */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.429em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+.dropDown.MCDropDown_Closed > .dropDownHead > .dropDownHotspot:after	/* FontAwesome : fa-angle-down for closed */
+{
+	font-family: "FontAwesome";
+	content: "\f107";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+.dropDown.MCDropDown_Open > .dropDownHead > .dropDownHotspot:after	/* FontAwesome : fa-angle-up for closed open */
+{
+	font-family: "FontAwesome";
+	content: "\f106";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+MadCap|dropDownHotspot
+{
+	/* color: inherit; */
+	text-decoration: none;
+}
+
+MadCap|dropDownHotspot:link	/* fix link colour for HTML5 help in IE, for Flare v10+ */
+{
+	/* color: #008200; */ /* CSS variable IE 11 support */
+	/* color: var(--business-product); */
+}
+
+MadCap|dropDownHotspot:visited	/* fix visited link colour for HTML5 help in IE, for Flare v10+ */
+{
+	/* color: #008200; */ /* CSS variable IE 11 support */
+	/* color: var(--business-product); */
+}
+
+MadCap|dropDownHotspot:hover
+{
+	text-decoration: underline;
+}
+
+MadCap|dropDownHotspot:focus
+{
+	text-decoration: underline;
+}
+
+.dropDownHead,
+.dropDownHotspot:link,
+.dropDownHotspot:visited /* CSS variables - fix generated styles */
+{
+	/* color: #008200; */ /* CSS variable IE 11 support */
+	/* color: var(--business-product); */ /* CSS variable support - Fix for generated styles to support variables */
+}
+
+.dropDownHotspot:hover,
+.dropDownHotspot:focus /* CSS variables - fix generated styles */
+{
+	/* color: #006300; */ /* CSS variable IE 11 support */
+	/* color: var(--business-product-hover1); */
+	text-decoration: underline !important;
+	/* fix underline on dropdowns - hard-coded as 'none' in HTML5 outputs */
+}
+
+.dropDownHotspot:empty
+/* [ REMOVED .dropDownHotspot[name] selector as causes bug if bookmark in hotspot - need to review if it's required. ] Fix for issue where bookmark (which inserts a 'name' property) or an empty tag is included in dropdownhotspot; this extra link tag will cause a duplicate icon, so we need to hide it */
+{
+	display: none;
+}
+
+MadCap|dropDownBody
+{
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0em;
+	padding-right: 0em;
+	border-bottom-style: solid;
+	border-bottom-color: #008200;  /* CSS variable IE 11 support */
+	border-bottom-color: var(--business-product);
+	border-bottom-width: 1px;
+	width: auto;
+}
+
+.dropDownBody
+{
+	border-bottom-color: #008200; /* CSS variable IE 11 support */
+	border-bottom-color: var(--business-product); /* CSS variable support - Fix for generated styles to support variables */
+}
+
+
+MadCap|toggler	/* MadCap|toggler: togglers */
+{
+	color: #008200; /* CSS variable IE 11 support. Must specify colour to override Flare defaults */
+	color: var(--business-product);
+	text-decoration: none;
+	margin-bottom: 1em;
+	mc-open-image: none;
+	mc-open-image-alt-text: Close this section;
+	mc-closed-image: none;
+	mc-closed-image-alt-text: Open this section;
+	mc-image-position: none;
+	mc-image-spacing: 0;
+}
+
+.toggler.MCToggler_Closed:after	/* FontAwesome : fa-angle-down for closed */
+{
+	font-family: "FontAwesome";
+	/* content: "\F078"; */
+	content: "\f107";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+.toggler.MCToggler_Open:after	/* FontAwesome : fa-angle-up for open */
+{
+	font-family: "FontAwesome";
+	/* content: "\F077"; */
+	content: "\f106";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+MadCap|toggler:link	/* fix link colour for HTML5 help in IE, for Flare v10+ */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+MadCap|toggler:visited	/* fix visited link colour for HTML5 help in IE, for Flare v10+ */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+MadCap|toggler:hover
+{
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1);
+	text-decoration: underline !important;
+}
+
+MadCap|toggler:focus
+{
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1);
+	text-decoration: underline !important;
+}
+
+
+.toggler,
+.toggler:link,
+.toggler:visited  /* CSS variables - fix generated styles */
+{
+	color: var(--business-product);
+}
+
+
+.toggler:hover,
+.toggler:focus /* CSS variables - fix generated styles */
+{
+	color: var(--business-product-hover1);
+	text-decoration: underline !important; /* fix underline on togglers - hard-coded as 'none' in HTML5 outputs */
+}
+
+MadCap|toggler.heading	/* MadCap|toggler.heading: Toggler with heading */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.429em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+
+
+[data-mc-target-name]	/* toggler body */
+{
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #008200; /* CSS variable IE 11 support */
+	border-bottom: 1px solid var(--business-product);
+	width: auto;
+	overflow: hidden;
+}
+
+MadCap|expanding	/* MadCap|expanding: expanding text */
+{
+	mc-image-spacing: 0px;
+	mc-open-image: none;
+	mc-closed-image: none;
+}
+
+MadCap|expandingHead	/* link colour */
+{
+	color: #008200;  /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+MadCap|expandingHead:link
+{
+	color: #008200;  /* CSS variable IE 11 support */
+	color: var(--business-product); /* fix visited link colour for HTML5 help in IE, for Flare v10+ */
+}
+
+MadCap|expandingHead:visited
+{
+	color: #008200;  /* CSS variable IE 11 support */
+	color: var(--business-product); /* fix visited link colour for HTML5 help in IE, for Flare v10+ */
+}
+
+MadCap|expandingHead:hover
+{
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1);		
+	text-decoration: underline;
+}
+
+MadCap|expandingHead:focus
+{
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1);	
+	text-decoration: underline;
+}
+
+.expanding.MCExpanding_Closed > a:after	/* FontAwesome : fa-angle-right for closed */
+{
+	font-family: "FontAwesome";
+	/* content: "\F077"; */
+	content: "\f105";
+	padding: 0 0.5em 0 0.5em;
+	display: inline-block;
+}
+
+.expanding.MCExpanding_Open > a:after	/* FontAwesome : fa-angle-left for open */
+{
+	font-family: "FontAwesome";
+	/* content: "\F077"; */
+	content: "\f104";
+	padding: 0 0.5em 0 0.5em;
+	display: inline-block;
+}
+
+.expandingHead,
+.expandingHead:link,
+.expandingHead:visited /* CSS variable support - Fix for generated styles to support variables */
+{
+	color: var(--business-product);
+}
+
+.expandingHead:hover,
+.expandingHead:focus /* CSS variable support - Fix for generated styles to support variables */
+{
+	color: var(--business-product-hover1);	
+	text-decoration: underline !important; /* use important to fix link underline for HTML5 */
+}
+
+MadCap|expandingBody
+{
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	padding: 0em 0.25em 0em 0.25em;
+}
+
+.expandingBody	/* CSS variable support - Fix for generated styles to support variables */
+{
+	background-color: var(--col-slate-95);
+}
+
+MadCap|glossaryProxy	/* MadCap|glossaryProxy: glossary proxy */
+{
+	margin-top: 0em;
+	padding-left: 0em;
+	padding-top: 0em;
+	border-top-style: none;
+	border-top-width: 0em;
+}
+
+MadCap|glossaryTerm	/* MadCap|glossaryTerm: glossary term */
+{
+	font-weight: 400;
+	mc-term-display: popup;
+	mc-closed-image: none;
+	mc-open-image: none;
+	color: #8e634f;
+	text-decoration: none;
+	mc-popup-height: auto;
+	mc-popup-width: auto;
+}
+
+MadCap|glossaryTerm:link
+{
+	color: #8e634f;
+}
+
+MadCap|glossaryTerm:visited
+{
+	color: #8e634f;
+}
+
+MadCap|glossaryTerm:hover
+{
+	color: #d69577;
+	text-decoration: underline;
+}
+
+MadCap|glossaryTerm:focus
+{
+	color: #d69577;
+	text-decoration: underline;
+}
+
+div.GlossaryPageHeading	/* Glossary page heading - i.e. alphabetical heading above section */
+{
+	font-weight: 700;
+	font-size: 1.5em;
+	border-bottom-color: #B9BAB7;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+div.GlossaryPageDefinition	/* Glossary page definition */
+{
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+}
+
+div.GlossaryPageTerm	/* Glossary page term (print and PDF only) */
+{
+	font-size: 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+div.GlossaryPageEntry	/* Glossary page entry container for each term and definition */
+{
+	
+}
+
+a.Popup,
+a.Popup:link,
+a.Popup:visited	/* a.Popup: topic popup link */
+{
+	color: #8e634f;
+	text-decoration: none;
+}
+
+a.Popup:hover,
+a.Popup:focus
+{
+	color: #d69577;
+	text-decoration: underline;
+}
+
+MadCap|popupBody	/* MadCap|popupBody: text popup body */
+{
+	background-color: #faf6f5;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b9bfc0;
+}
+
+MadCap|popupHead	/* MadCap|popupHead: text popup link */
+{
+	text-decoration: none;
+	color: #8e634f;
+}
+
+MadCap|popupHead:hover
+{
+	color: #d69577;
+	text-decoration: underline;
+}
+
+MadCap|popupHead:focus
+{
+	color: #d69577;
+	text-decoration: underline;
+}
+
+MadCap|relatedTopics	/* MadCap|relatedTopics: Related topics help control */
+{
+	display: inline-block;
+	text-decoration: none;
+	mc-label: 'Related topics'; /* LOCALISED in localised_text.css */
+	mc-image: none;
+	mc-image-spacing: 0px;
+	mc-image-position: none;
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	padding: 0.5em;
+}
+
+a.keywordLink:after,
+a.relatedTopics:after,
+a.conceptLink:after	/* Icons for related/concept/index(keyword) links. FontAwesome : fa-caret-down */
+{
+	font-family: "FontAwesome";
+	content: "\f0d7";
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+a.keywordLink span,
+a.relatedTopics span,
+a.conceptLink span	/* Fix for hard-coded image in related/concept/index(keyword) links. Remove background image, and padding for image spacing.*/
+{
+	background: none;
+	padding: 0;
+}
+
+MadCap|relatedTopics:focus
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+MadCap|relatedTopics:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+MadCap|conceptLink	/* MadCap|conceptLink: Concept link (see also) help control */
+{
+	display: inline-block;
+	text-decoration: none;
+	mc-label: 'See also'; /* LOCALISED in localised_text.css */
+	mc-image: none;
+	mc-image-spacing: 0px;
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	padding: 0.5em;
+}
+
+MadCap|conceptLink:focus
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+MadCap|conceptLink:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+MadCap|keywordLink	/* MadCap|keywordLink: index link help control */
+{
+	display: inline-block;
+	text-decoration: none;
+	mc-label: 'Index'; /* LOCALISED in localised_text.css */
+	mc-image: none;
+	mc-image-spacing: 0px;
+	mc-image: none;
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	padding: 0.5em;
+}
+
+MadCap|keywordLink:focus
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+MadCap|keywordLink:hover
+{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+}
+
+.conceptLink:link,
+.keywordLink:link,
+.relatedTopics:link /* CSS variable support - Fix for generated styles to support variables */
+{
+	color: var(--business-product);
+	border: 1px solid var(--business-product);	
+}
+
+.conceptLink:hover,
+.conceptLink:focus,
+.keywordLink:hover,
+.keywordLink:focus,
+.relatedTopics:hover,
+.relatedTopics:focus /* Fix for generated styles to support variables */
+{
+	color: #ffffff;
+	background-color: var(--business-product);
+}
+
+MadCap|breadcrumbsProxy	/* MadCap|breadcrumbsProxy: breadcrumbs proxy */
+{
+	font-size: 1em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: none;
+	mc-breadcrumbs-count: 10;
+	mc-breadcrumbs-divider: ' / ';
+	mc-breadcrumbs-prefix: 'Menu: '; /* LOCALISED in localised_text.css */
+}
+
+MadCap|miniTocProxy	/* MadCap|miniTocProxy: MiniTocProxy (normal) */
+{
+	border-top: none;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	width: auto;
+	overflow: auto;
+	mc-auto-number-format: 'In this section'; /* LOCALISED in localised_text.css */
+	mc-auto-number-class: boxTitle;
+	mc-toc-depth: 0;
+}
+
+MadCap|miniTocProxy.right	/* MadCap|miniTocProxy.right: MiniTocProxy (right) */
+{
+	clear: right;
+	float: right;
+	width: 30%;
+	max-width: 350px;
+	margin-top: 0.5em;
+	margin-right: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	border-top: none;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	mc-auto-number-format: 'In this section'; /* LOCALISED in localised_text.css */
+	mc-auto-number-class: boxTitle;
+	mc-toc-depth: 0;
+	word-wrap: break-word;
+}
+
+div.MCMiniTocBox,
+div.MCMiniTocBox_0,
+div.MCMiniTocBox_right,
+div.MCMiniTocBox_right_0	/* Fix to add title to miniTOC boxes in output */
+{
+	mc-auto-number-format: 'In this section'; /* LOCALISED in localised_text.css */
+	mc-auto-number-class: boxTitle;
+}
+
+p.MiniTOC1	/* p.MiniTOC1: MiniTOC entries (level 1) */
+{
+	font-weight: inherit;
+	margin: 0em 0em 0.25em 0em;
+}
+
+a[class^="MiniTOC"],
+a[class^="MiniTOC"]:link,
+a[class^="MiniTOC"]:visited
+/* override Flare hard-coded link colour */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+a[class^="MiniTOC"]:hover,
+a[class^="MiniTOC"]:focus
+{
+	color: #006300; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1); /* override Flare hard-coded link colour */	
+	text-decoration: underline !important; /* fix hover  */
+}
+
+p[class^="MiniTOC"]:before	/* All minitoc levels have font icon fa-caret-right */
+{
+	font-family: "FontAwesome";
+	content: "\f0da";
+	padding: 0 0.5em 0 0;
+}
+
+MadCap|relationshipsProxy	/* MadCap|relationshipsProxy: Relationships table proxy (normal) */
+{
+	border-top: none;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	width: auto;
+	overflow: auto;
+}
+
+MadCap|relationshipsProxy.right	/* MadCap|relationshipsProxy.right: Relationships table proxy (right) */
+{
+	clear: right;
+	float: right;
+	width: 30%;
+	max-width: 350px;
+	border-top: none;
+	margin-top: 0.5em;
+	margin-right: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	word-wrap: break-word;
+}
+
+MadCap|relationshipsHeading	/* MadCap|relationshipsHeading: Relationships table headings */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 1.286em; /* 18/14 */
+	line-height: 1.25em;
+	margin: 0em 0em 0.5em 0em;
+}
+
+MadCap|relationshipsItem	/* MadCap|relationshipsItem: Relationships table items */
+{
+	font-size: 1em;
+	font-weight: inherit;
+	margin: 0em 0em 0.25em 0em;
+}
+
+div[class^="MCRelationshipsProxy"] > p[class*="Item"]:before	/* Links in relationship tables. Titles have class of <name>heading and links have class of <name>Item */
+{
+	font-family: "FontAwesome";
+	content: "\f0da";
+	padding: 0 0.5em 0 0;
+}
+
+MadCap|conceptsProxy	/* MadCap|conceptsProxy: proxy for concept lists */
+{
+	border-top: none;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	width: auto;
+	overflow: auto;
+}
+
+a.GenConceptText,
+a.GenConceptText:link,
+a.GenConceptText:visited /* Links in concept proxy - override hard-coded properties */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+a.GenConceptText:hover,
+a.GenConceptText:focus /* Links in concept proxy - override hard-coded properties */
+{
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+}
+
+
+span.boxTitle	/* span.boxTitle: Heading style for boxes (based on h4) */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.286em;
+	font-weight: 600;
+	line-height: 1.25em;
+	margin: 0em 0em 0.5em 0em;
+	display: block;
+}
+
+div[class*="highlightBox"] > *:first-child,
+div[class*="box"] > *:first-child,
+div[class*="note-"] > *:first-child,
+div.note > *:first-child,
+div.tip > *:first-child
+{
+	margin-top: 0em;
+	/* remove top margin from first item (e.g. heading) in all containers */
+}
+
+div.linksBox	/* div.linksBox: Box containing links (normal) */
+{
+	margin: 0.5em 0em 1em 0em;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	width: auto;
+	overflow: auto;
+	mc-auto-number-class: boxTitle;
+	mc-auto-number-format: 'See also'; /* LOCALISED in localised_text.css */
+}
+
+div.linksBoxRight	/* div.linksBoxRight: Box containing links (right) - WIDTH DISABLED FOR MasterTopNav */
+{
+	/* clear: right; */
+	float: right;
+	width: 30%;
+	max-width: 350px;
+	margin: 0.5em 0em 0.5em 1em;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	mc-auto-number-class: boxTitle;
+	mc-auto-number-format: 'See also'; /* LOCALISED in localised_text.css */
+	word-wrap: break-word;
+}
+
+div.stepsBox	/* div.stepsBox: Steps box (normal) */
+{
+	margin: 0.5em 0em 1em 0em;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	mc-auto-number-format: "What's next?";  /* LOCALISED in localised_text.css */
+	mc-auto-number-class: boxTitle;
+	width: auto;
+	overflow: auto;
+}
+
+p.linksboxHeading /* based on h4 */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.286em; /* 18/14 */
+	font-weight: 600;
+	line-height: 1.25em;
+}
+
+div.box	/* div.box: Box padding */
+{
+	margin: 0.5em 0em 1em 0em;
+	padding: 1em;
+	width: auto;
+	overflow: auto;
+}
+
+div.highlightBox	/* div.highlightBox: Highlight box (normal) */
+{
+	margin: 0.5em 0em 1em 0em;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	width: auto;
+	overflow: auto;
+}
+
+div.highlightBoxRight	/* div.highlightBoxRight: Highlight box (right)  - WIDTH DISABLED FOR MasterTopNav */
+{
+	/* clear: right; */
+	float: right;
+	width: 30%;
+	max-width: 350px;
+	margin: 0.5em 0em 0.5em 1em;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	overflow: auto;
+	word-wrap: break-word;
+}
+
+p.boxHeading	/* p.boxHeading: based on h4 style  */
+{
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.286em; /* 18/14 */
+	font-weight: 600;
+	line-height: 1.25em;
+	margin: 0em 0em 0.5em 0em;
+}
+
+object.demoBox	/* object.demoBox: container for demo movies */
+{
+	margin: 0em;
+	padding: 0.5em;
+	border-style: solid;
+	border-color: #CCD6DB; /* CSS variable IE 11 support */
+	border-color: var(--col-slate-80);
+	border-width: 1px;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+}
+
+ol	/* ol: numbered lists */
+{
+	list-style-image: none;
+	list-style-type: decimal;
+	line-height: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	margin-right: 0em;
+	padding-left: 0em;
+}
+
+ul	/* ul: bullet lists */
+{
+	list-style-type: square;
+	line-height: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 2em;
+	margin-right: 0em;
+	padding-left: 0em;
+}
+
+ol ol,
+ul ol	/* second level numbered lists */
+{
+	list-style-type: lower-alpha;
+	margin-bottom: 1em;
+}
+
+ol ol ol,
+ul ol ol,
+ul ul ol,
+ol ul ol	/* third level numbered lists */
+{
+	list-style-type: lower-roman;
+	margin-bottom: 1em;
+}
+
+ul ul,
+ol ul	/* second level bullet lists */
+{
+	list-style-type: disc;
+	margin-bottom: 1em;
+}
+
+ul ul ul,
+ol ul ul,
+ol ol ul,
+ul ol ul	/* third level bullet lists */
+{
+	list-style-type: circle;
+	margin-bottom: 1em;
+}
+
+ul.prerequisite	/* ul.prerequisite: bullet list for prerequisites */
+{
+	list-style-type: none;
+	margin-left: 2em;
+}
+
+ul.prerequisite > li:before
+{
+	/* FontAwesome: fa-check-square-o */
+	font-family: "FontAwesome";
+	content: "\f046";
+	padding: 0 0.5em 0 0.5em;
+	margin-left: -2em;
+	float: left; /* prevents paragraph items inside list appearing on new line */
+}
+
+ul.checklist	/* ul.ul.checklist: bullet list for checklists */
+{
+	list-style-type: none;
+	margin-left: 2em;
+}
+
+ul.checklist > li:before
+{
+	/* FontAwesome: fa-square-o */
+	font-family: "FontAwesome";
+	content: "\f096";
+	padding: 0 0.5em 0 0.5em;
+	margin-left: -2em;
+	float: left; /* prevents paragraph items inside list appearing on new line */	
+}
+
+li	/* li: list items */
+{
+	margin-top: 0.5em;
+	margin-right: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+	padding-left: 0em;
+	page-break-inside: avoid;
+}
+
+li>p,
+ol>p,
+ul>p,
+ul div.MCDropDown,
+ol div.MCDropDown,
+li div.MCDropDown	/* set spacing for paragrpahs and dropdowns in lists */
+{
+	margin-top: 0.5em;
+	margin-right: 0em;
+	margin-bottom: 0.5em;
+	margin-left: 0em;
+	padding-left: 0em;
+}
+
+td ol,
+td ul	/* reduce list top margin in tables */
+{
+	margin-top: 0em;
+}
+
+dl
+{
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0em;
+	margin-right: 0em;
+
+}
+
+dt
+{
+	font-weight: 700; /* same as bold */
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	margin-right: 0em;
+}
+
+dd
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+	margin-right: 0em;
+}
+
+table	/* table: standard table styles */
+{
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-align: left;
+	vertical-align: top;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+th	/* th: table header */
+{
+	vertical-align: top;
+	text-align: left;
+	margin-top: 0.5em;
+}
+
+thead
+{
+	display: table-header-group;
+}
+
+td	/* td: table cell */
+{
+	vertical-align: top;
+	text-align: left;
+	margin: 0em;
+	padding: 0em;
+}
+
+caption	/* caption: table caption */
+{
+	color: rgba(0,0,0,0.9);  /* CSS variable IE 11 support */
+	color: var(--col-black-90);
+	font-weight: 700;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+table.shaded	/* table.shaded: used for manual table formatting */
+{
+	border-collapse: collapse;
+	border-width: 1px;
+	border-color: #d9e0e4;
+	border-style: solid;
+}
+
+table.shaded th	/* shaded table header */
+{
+	color: #ffffff;
+	background-color: #335C6D; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-20);
+	padding: 0.5em;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-style: solid;
+}
+
+table.shaded th p	/* shaded table paragraph formatting */
+{
+	color: #ffffff;
+	font-weight: 700;
+	padding: 0em;
+	margin: 0em;
+}
+
+table.shaded th.sub	/* shaded table header sub-heading */
+{
+	background-color: #668592; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-40);
+	color: #ffffff;
+	padding: 0.5em;
+	border-width: 1px;
+	border-color: #d9e0e4;
+	border-style: solid;
+	background-image: none;
+}
+
+table.shaded td	/* shaded table normal table cell */
+{
+	background-color: #ffffff;
+	padding: 0.5em;
+	border-width: 1px;
+	border-color: #d9e0e4;
+	border-style: solid;
+}
+
+table.shaded td.stripe	/* shaded table striped table cell */
+{
+	background-color: #fafbfb;
+	padding: 0.5em;
+	border-width: 1px;
+	border-color: #d9e0e4;
+	border-style: solid;
+}
+
+table.shaded td.sub	/* shaded table cell sub-heading */
+{
+	background-color: #668592; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-40);
+	color: #ffffff;
+	padding: 0.5em;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-style: solid;
+}
+
+div.onRight	/* div.onRight: float item (right) */
+{
+	clear: right;
+	float: right;
+	padding: 0.5em 0.5em 1em 1em;
+}
+
+div.onLeft	/* div.onLeft: float item (left) */
+{
+	clear: left;
+	float: left;
+	padding: 0.5em 1em 1em 0.5em;
+}
+
+MadCap|xref	/* MadCap|xref: cross-reference */
+{
+	mc-format: '{para}';
+	color: #008200; /* CSS variable IE 11 support */
+	color: var(--business-product);
+	text-decoration: none;
+}
+
+MadCap|xref:hover
+{
+	text-decoration: underline;
+}
+
+MadCap|xref:focus
+{
+	text-decoration: underline;
+}
+
+p.location	/* p.location: prefix for instructions to find a screen */
+{
+	margin-bottom: 0.5em;
+	mc-auto-number-class: noteformat;
+	mc-auto-number-format: 'Open: ';  /* LOCALISED in localised_text.css */
+}
+
+p.location:before	/* Add location icon: desktop */
+{
+	font-family: "FontAwesome";
+	content: "\f108";
+	padding: 0 0.5em 0 0.5em;
+}
+
+/*
+/*
+a[href*=".htm"]:after
+{
+	font-family: "FontAwesome";	
+	content: "\f0f6";
+	padding: 0 0 0 0.5em;
+}
+*/
+
+a[href*=".pdf"]:after	/* PDF link: file-pdf-o */
+{
+	font-family: "FontAwesome";
+	content: "\f1c1";
+	padding: 0 0 0 0.5em;
+}
+
+a[href*=".xls"]:after,
+a[href*=".csv"]:after	/* Excel link: file-excel-o */
+{
+	font-family: "FontAwesome";
+	content: "\f1c3";
+	padding: 0 0 0 0.5em;
+}
+
+a[href*=".xml"]:after	/* XML link: file-code-o */
+{
+	font-family: "FontAwesome";
+	content: "\f1c9";
+	padding: 0 0 0 0.5em;
+}
+
+a[href*=".doc"]:after	/* Word link: file-word-o */
+{
+	font-family: "FontAwesome";
+	content: "\f1c2";
+	padding: 0 0 0 0.5em;
+}
+
+a[href*=".mp4"]:after,
+a[href*=".avi"]:after
+/* video link: video-camera */
+{
+	font-family: "FontAwesome";
+	content: "\f03d";
+	padding: 0 0 0 0.5em;
+}
+
+a.external:after	/* external links */
+{
+	font-family: "FontAwesome";
+	content: "\f08e";
+	padding: 0 0 0 0.5em;
+}
+
+p.indent	/* p.indent: manual indent to align with first level of list */
+{
+	padding-left: 2em;
+}
+
+MadCap|footnote
+{
+	
+}
+
+MadCap|footnotesBlock	/* MadCap|footnotesBlock: footnotes */
+{
+	border-top-color: #E6EBED; /* CSS variable IE 11 support */
+	border-top-color: var(--col-slate-90);
+	border-top-style: solid;
+	border-top-width: 2px;
+}
+
+MadCap|tocProxy	/* MadCap|tocProxy: proxy for contents */
+{
+	border-top-style: none;
+	border-top-width: 0em;
+}
+
+p.guideTitle	/* p.guideTitle: main guide title */
+{
+	font-weight: 100;
+	line-height: 150%;
+	font-size: 5em;
+	text-align: center;
+}
+
+p.guideTitleSub	/* p.guideTitle: guide title sub-heading */
+{
+	font-weight: 100;
+	line-height: 150%;
+	font-size: 5em;
+	text-align: center;
+}
+
+p.guideTitle,
+p.guideTitleSub,
+p.guideCoverType,
+p.guideCoverHeader,
+p.guideCoverDescription,
+p.guideCoverEnd,
+p.guideCoverCopyright,
+h1.NotTOC,
+h1.chapter,
+h1.chapterNoNumber	/* include these PDF styles in default medium */
+{
+	
+}
+
+p.MiniTOC2,
+p.MiniTOC3,
+p.MiniTOC4,
+p.MiniTOC5,
+p.MiniTOC6,
+p.MiniTOC7,
+p.MiniTOC8,
+p.MiniTOC9	/* hide miniTOC styles */
+{
+	mc-disabled: true;
+}
+
+object.video	/* video object inserted as multimedia - set max width as 100% */
+{
+	max-width: 100%;
+	height: auto;
+}
+
+video	/* video inserted as video tag - set max width as 100% */
+{
+	max-width: 100%;
+	height: auto;
+}
+
+video:hover,
+video:focus	/* add hover shadow for videos */
+{
+	box-shadow: 0 5px 5px 0 rgba(0,20,29,0.2), 0 10px 10px 0 rgba(0,20,29,0.1); /* DLS - shadow depth level 1 */
+}
+
+span.SearchHighlight1
+{
+	background-color: #ffffcc;
+	color: rgba(0,0,0,0.9);  /* CSS variable IE 11 support */	
+	color: var(--col-black-90);
+}
+
+span.SearchHighlight2
+{
+	background-color: #ccffff;
+	color: rgba(0,0,0,0.9);  /* CSS variable IE 11 support */	
+	color: var(--col-black-90);
+}
+
+span.SearchHighlight3
+{
+	background-color: #ffcccc;
+	color: rgba(0,0,0,0.9);  /* CSS variable IE 11 support */	
+	color: var(--col-black-90);
+}
+
+span.SearchHighlight4
+{
+	background-color: #ccffcc;
+	color: rgba(0,0,0,0.9);  /* CSS variable IE 11 support */	
+	color: var(--col-black-90);
+}
+
+MadCap|helpControlMenu /* pop up menu for help controls - conceptLink, relatedTopics, keywordLink (index) */
+{
+	background-color: #F2F5F6; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95);
+	border: none 1px #000000;
+	border-radius: 0px;
+}
+
+MadCap|helpControlMenuItem /* override Flare default settings, use normal font and colour */
+{
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+}
+
+.link-list-popup ul li:hover /* Added to fix generated style for above */
+{
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+}
+
+a:after,
+a:before
+/* Fix for IE to stop underlined FontAwesome icons when using before/after (1) */
+{
+	text-decoration:underline; /* (1) set to underline first */
+	display:inline-block;
+}
+
+a:after,
+a:before, 
+a:hover:after,
+a:hover:before,
+a:focus:after,
+a:focus:before
+/* Fix for IE to stop underlined FontAwesome icons when using before/after (2) */
+{
+	text-decoration:none; /* (2) then set to not underline in normal, hover, focus */
+	display:inline-block;
+}
+
+MadCap|codeSnippet /* Code snippet container */
+{
+	font-size: 1em;
+	border: solid 2px #e8e9e6;
+	padding: 1em;
+	background-color: #F2F5F6; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-95);
+	margin: 0.5em 0 1em 0;
+}
+
+MadCap|codeSnippetBody /* Code snippet body */
+{
+	font-family: monospace, sans-serif;
+	line-height: 1.5em;
+	padding: 1em 0 1em 0;
+}
+
+MadCap|codeSnippetCaption /* Code snippet based on heading 4 */
+{
+	text-decoration: none;
+	font-family: AdelleSansSage, Arial, Helvetica, sans-serif;
+	font-size: 1.286em;
+	font-weight: 600;
+	line-height: 1.25em;
+}
+
+MadCap|codeSnippetCopyButton /* Code snippet copy button */
+{
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	background-color: #ffffff;
+	color: #008200 !important; /* CSS variable IE 11 support */
+	color: var(--business-product) !important;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1em;
+	padding: 0.5em;
+}
+
+.codeSnippetCopyButton /* Code snippet copy button - fix to apply business accent colour */
+{
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	color: #008200 !important; /* CSS variable IE 11 support */
+	color: var(--business-product) !important;
+
+}
+
+MadCap|codeSnippetCopyButton:hover /* Code snippet copy button hover */
+{
+	color: #ffffff !important;
+	background-color: #006300; /* CSS variable IE 11 support */
+	background-color: var(--business-product-hover1);
+	border: 1px solid #006300; /* CSS variable IE 11 support */	
+	border: 1px solid var(--business-product-hover1);
+	text-decoration: none;
+}
+
+.codeSnippetCopyButton:hover,
+.codeSnippetCopyButton:focus /* Code snippet copy button hover (and focus) - fix to apply business accent colour */
+{
+	color: #ffffff !important;
+	background-color: #006300; /* CSS variable IE 11 support */
+	background-color: var(--business-product-hover1);
+	border: 1px solid #006300; /* CSS variable IE 11 support */	
+	border: 1px solid var(--business-product-hover1);
+}
+
+
+/* ------------------------------------------------------------------------- RIGHT/LEFT floated elements ------------------ */
+
+.right
+{
+	float: right !important;
+	padding-right: 0em;
+	clear: right;
+}
+
+.left
+{
+	float: left !important;
+	padding-left: 0em;
+}
+
+.right.linksBox,
+.right > .linksBox,
+.right.linksBoxRight,
+.right > .linksBoxRight,
+.right.highlightBox,
+.right > .highlightBox,
+.right.highlightBoxRight,
+.right > .highlightBoxRight	/* Formatting for old right-aligned boxes; set these to have additional classes "small-12 medium-4 large-3 right" */
+{
+	clear: right;
+	mc-disabled: true;
+}
+
+/* --------------------------------------------------- Coloured backgrounds for boxes ------------ */
+
+.colour-light-1	/* light grey background */
+{
+	background-color: #F2F5F6 !important; /* CSS variable IE 11 support */	
+	background-color: var(--col-slate-95) !important;
+}
+
+.colour-light-2	/* light grey background */
+{
+	background-color: #E6EBED !important; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-90) !important;
+}
+
+.colour-light-3	/* light grey background */
+{
+	background-color: #CCD6DB !important; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-80) !important;
+}
+
+
+.colour-dark-1	/* Slate background */
+{
+	background-color: #003349 !important; /* CSS variable IE 11 support */
+	background-color: var(--col-slate) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-2	/* Slate 20 background */
+{
+	background-color: #335C6D !important; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-20) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-3	/* Slate 40 background */
+{
+	background-color: #0073C2 !important; /* CSS variable IE 11 support */
+	background-color: var(--col-slate-40) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-4	/* Black 65 background */
+{
+	background-color: rgba(0,0,0,0.65) !important; /* CSS variable IE 11 support */
+	background-color: var(--col-black-65) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-5	/* Black 55 background */
+{
+	background-color: rgba(0,0,0,0.55) !important; /* CSS variable IE 11 support */
+	background-color: var(--col-black-55) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-product-1
+{
+	background-color: #008200 !important; /* CSS variable IE 11 support */
+	background-color: var(--business-product) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-product-2
+{
+	background-color: #009900 !important; /* CSS variable IE 11 support */
+	background-color: var(--business-marketing) !important;
+	color: #f2f2f2;
+}
+
+.colour-dark-product-3
+{
+	background-color: #40B340 !important; /* CSS variable IE 11 support */
+	background-color: var(--business-product-tint-25) !important;
+	color: #f2f2f2;
+}
+
+.colour-light-product-1
+{
+	background-color: #E6F5E6 !important; /* CSS variable IE 11 support */
+	background-color: var(--business-product-tint-90) !important;
+}
+
+.colour-light-product-2
+{
+	background-color: #CCEBCC !important; /* CSS variable IE 11 support */
+	background-color: var(--business-product-tint-80) !important;
+}
+
+[class*="colour-"]
+{
+	/* overflow: auto; */
+}
+ 
+[class*="colour-dark"] a,
+[class*="colour-dark"] a:hover,
+[class*="colour-dark"] a:focus
+{
+	color: #ffffff !important;
+	/* set link colour inside coloured boxes */
+}
+
+[class*="colour-dark"] [class*="highlightBox"] /* reset text colour for notes/boxes inside dark coloured boxes */
+{
+	color: rgba(0,0,0,0.9); /* CSS variable IE 11 support */
+	color: var(--col-black-90);
+}
+
+[class*="colour-dark"] [class*="highlightBox"] a /* reset link colour for boxes inside dark coloured boxes */
+{
+	color: #008200 !important; /* CSS variable IE 11 support */
+	color: var(--business-product) !important;
+}
+
+[class*="colour-dark"] [class*="highlightBox"] a:hover,
+[class*="colour-dark"] [class*="highlightBox"] a:focus /* reset link hover colour for boxes inside dark coloured boxes */
+{
+	color: #006300 !important; /* CSS variable IE 11 support */
+	color: var(--business-product-hover1) !important;
+	
+}
+
+
+/* ------------------------------------------------------------------------- BUTTON STYLES ------------------ */
+
+a.sageButton,
+a.sageButtonLeft,
+a.sageButtonRight,
+a.sageButtonMedium,
+a.sageButtonMediumLeft,
+a.sageButtonMediumRight,
+a.sageButtonLarge,
+a.sageButtonLargeLeft,
+a.sageButtonLargeRight	/* Defined button styles */
+{
+	
+}
+
+a[class*="sageButton"]	/* sageButton: base styles for button  - default is right arrow */
+{
+	border: 1px solid #008200; /* CSS variable IE 11 support */
+	border: 1px solid var(--business-product);
+	background-color: #ffffff;
+	color: #008200 !important; /* CSS variable IE 11 support */
+	color: var(--business-product) !important;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1em;
+	padding: 0.5em;
+}
+
+a[class*="sageButton"]:hover,
+a[class*="sageButton"]:focus	/* sageButton: hover style for button */
+{
+	color: #ffffff !important;
+	background-color: #006300; /* CSS variable IE 11 support */
+	background-color: var(--business-product-hover1);
+	border: 1px solid #006300; /* CSS variable IE 11 support */	
+	border: 1px solid var(--business-product-hover1);
+	text-decoration: none;
+}
+
+a[class*="sageButton"][class*="Left"]	/* sageButton(Medium/Large)Left: base styles for button  - left arrow */
+{
+	text-align: right;
+}
+
+a[class*="sageButtonMedium"]	/* sageButtonMedium(Left): base styles for button  - left arrow */
+{
+	font-size: 1.25em;
+	color: #ffffff !important;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+}
+
+a[class*="sageButtonLarge"]	/* sageButtonLarge(Left): base styles for button  - left arrow */
+{
+	font-size: 1.5em;
+	color: #ffffff !important;
+	background-color: #008200; /* CSS variable IE 11 support */
+	background-color: var(--business-product);
+}
+
+a.sageButtonRight:after,
+a.sageButtonMediumRight:after,
+a.sageButtonLargeRight:after /* add icon for right button */
+{
+	font-family: "FontAwesome";
+	content: "\f105";
+	/* FontAwesome : fa-angle-right */
+	padding: 0 0 0 0.5em;
+	display: inline-block;
+}
+
+a.sageButtonLeft:before,
+a.sageButtonMediumLeft:before,
+a.sageButtonLargeLeft:before /* add icon for left button */
+{
+	font-family: "FontAwesome";
+	content: "\f104";
+	/* FontAwesome : fa-angle-left */
+	padding: 0 0.5em 0 0;
+	display: inline-block;
+}
+
+/* ------------------------------------------------------------------------- Disabled styles  ------------------ */
+div.feedbackBox,
+div.MCDropDown,
+div.MCDropDownBody,
+div.MCDropDownBody_0,
+div.MCDropDownHead_heading_0,
+a.MCDropDownHotSpot_0,
+a.dropDownHotspot,
+div.MCPopupContainer,
+div.MCRelationshipsProxy_0,
+div.MCRelationshipsProxy_right_0,
+span.boxTitle,
+span.noteformat,
+span.chapter,
+span.dropdown,
+address,
+abbr,
+acronym,
+big,
+cite,
+del,
+fieldset,
+ins,
+kbd,
+samp,
+small,
+span.boolean,
+span.state,
+span.locationformat,
+span.SeeAlsoIndex,
+span.SeeAlsoIndexTerms,
+span.SeeIndex,
+span.SeeIndexTerms,
+span.dropDownHead.heading,
+span.dropDownHotspot,
+tt,
+var,
+span.SearchHighlight1,
+span.SearchHighlight2,
+span.SearchHighlight3,
+span.SearchHighlight4	/* hide styles from editor */
+{
+	mc-disabled: true;
+}
+
+
+
+/* ------------------------------------------------------------------------- MEDIA QUERIES - RESPONSIVE ELEMENTS -------------- */
+/* --------------------------------------------------- SMALL screens (MOBILE) */
+@media only screen and (max-width: 40em)
+{
+	body	/* body: font size on small/mobile screens - 1em = 100% of 16px = 16px */
+	{
+		font-size: 100%;
+	}
+	
+	h1	/* h1 heading on small screens */
+	{
+		font-size: 1.375em; /* (22/16) */
+	}
+
+	h2	/* h2 heading on small screens */
+	{
+		font-size: 1.25em; /* (20/16) */
+	}
+
+	h3	/* h3 heading on small screens */ 
+	{
+		font-size: 1.125em; /* (18/16)*/
+	}
+	
+	h4	/* h3 heading on small screens */ 
+	{
+		font-size: 1.0625em; /* 17/16 */
+	}		
+	
+	h5	/* h3 heading on small screens */ 
+	{
+		font-size: 1em; /* 16/16 */
+	}		
+	
+	h6	/* h3 heading on small screens */ 
+	{
+		font-size: 0.9375em; /* 15/16 */
+	}		
+}
+
+/* --------------------------------------------------- MEDIUM screens (TABLET) */
+@media only screen and (min-width: 40.063em)
+{
+	body	/* body: font size on medium/tablet screens - 1em = 87.5% of 16px = 14px */
+	{
+		font-size: 87.5%;
+	}
+}
+
+/* --------------------------------------------------- LARGE screens (DESKTOP) */
+@media only screen and (min-width: 64.063em)
+{
+	body	/* body: font size on large/desktop screens - 1em = 87.5% of 16px = 14px */
+	{
+		font-size: 87.5%;
+	}
+
+}

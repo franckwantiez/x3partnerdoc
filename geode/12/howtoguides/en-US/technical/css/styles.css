@@ -1,0 +1,406 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #232323;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+	margin: 0 auto;
+}
+
+html{
+	background-color: white;
+}
+
+section {
+	background-color: #ffffff;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.container-fluid{
+	background-color: #e0ecef;
+}
+
+section:last-child {
+    margin-bottom: 0px;
+}
+
+section > header,
+footer > header {
+    padding: 3rem 2rem;
+}
+
+body > header {
+    position: relative;
+}
+
+body > header > #logo {
+    background-image: url(../header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 36vw;
+    width: 100%;
+}
+
+#logo {
+    padding-top: 65px;
+}
+
+#logo > img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer section {
+	width: 85%;
+}
+
+footer section div {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 100;
+    position: absolute;
+    max-width: 80vw;
+    top: 15vw;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 span {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1600px;
+	background-color: #ffffff;
+	padding: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+h3 {
+    color: #757575;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #255BC7;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    position: relative;
+}
+
+.footer-links{
+	padding: 1rem 1rem 4rem 1rem;
+	position: relative;
+	font-size: 0.8rem;
+	color: #d6d6d6;
+	width: 100%;
+}
+
+a{
+    color:#28A3DA;
+}
+
+a:hover{
+    color:#28A3DA;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #28A3DA;
+    color: white;
+    cursor: pointer;
+    padding: 3px 8px 5px 8px;
+    font-size: 15px;
+}
+
+/*
+.btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 35px;
+    top: 25%;
+    bottom: 25%;
+    border-left: 1px solid;
+        transform: translateY(-50%) rotate(45deg);
+}
+
+.btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    height: 12px;
+    width: 12px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    right: 20px;
+}
+*/
+
+.btn-pink {
+    color: #fff;
+    background-color: #C8006E;
+    border-color: #C8006E;
+}
+
+.btn-pink:hover {
+    color: #fff;
+    background-color: #AC005E;
+    /*border-color: #800147;*/
+    cursor: pointer;
+}
+
+/****** beginning of CARDS ******/
+
+.card {
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    border: none;
+    
+    height: calc(100% - 15px);
+    margin-bottom: 15px;
+	min-height: 150px;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35), 0 10px 10px rgba(0, 0, 0, 0.32);
+}
+
+.card .card-body {
+    padding: 1rem 1.25rem 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.65) 100%);
+    /*margin-top: 50%;*/
+}
+
+.card .card-body ul {
+    margin-top: 1.25rem;
+}
+
+.card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.card h5 {
+	margin-top: -0.5rem;
+	margin-bottom: -0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #f5f5f5;
+}
+
+.card-link {
+    color: #00DC00;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+    color: #00DC00;
+}
+
+.card-0 {
+    background-image: url(../card-0.jpg);
+}
+
+.card-1 {
+    background-image: url(../card-1.jpg);
+}
+
+.card-2 {
+    background-image: url(../card-2.jpg);
+}
+
+.card-3 {
+    background-image: url(../card-3.jpg);
+}
+
+.card-4 {
+    background-image: url(../card-4.jpg);
+}
+
+.card-5 {
+    background-image: url(../card-5.jpg);
+}
+
+.card-6 {
+    background-image: url(../card-6.png);
+}
+
+.card-7 {
+    background-image: url(../card-7.png);
+}
+
+/****** end of CARDS ******/
+
+#faq {
+    padding-bottom: 3rem;
+}
+
+#faq a {
+    font-weight: bold;
+}
+
+#faq a:hover {
+	text-decoration: underline;
+}
+
+#contact {
+    background-color: #e0ecef;
+    padding-bottom: 4rem;
+	padding-top: 2rem;
+}
+
+#contact * {
+    text-align: center;
+    color: #000000;
+}
+
+#contact p {
+    font-size: 0.8rem;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+#contact h2{
+	color: #004b87;
+}
+
+#contact h3{
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #858585;
+	margin-bottom: 3em;
+}
+
+#contact h5{
+	font-size: 1.6em;
+}
+
+#contact a{
+	color: #004b87;
+	font-weight: 600;
+}
+
+/******* icon *********/
+
+.icon {
+    width: 64px;
+    height: 64px;
+    display: block;
+    background-size: 64px 64px;
+    display: inline-block;
+}
+
+#mail {
+    background-image: url(../mail.png);
+    background-repeat: no-repeat;
+}
+
+
+/******** responsive *********/
+
+@media screen and (max-width: 375px) {
+    body{
+        font-size:14px;
+    }
+    #logo img {
+        display: none;
+    }
+    h1 {
+        top:10vw;
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+	
+	h3{
+        font-size: 0.8rem;
+    }
+   
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+	
+	h2{
+        font-size: 1.3rem;
+    }
+	
+	h3{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 578px) {
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #logo {
+        padding: 0;
+    }
+    #logo img {
+        width: 25vw;
+        max-width: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+   
+}

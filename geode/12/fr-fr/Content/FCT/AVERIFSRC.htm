@@ -1,0 +1,591 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Vérifications qualité du code" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Vérifications qualité du code" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Vérifications qualité du code</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Vérificationsqualitéducode" data-magellan-target="Vérificationsqualitéducode"><span>Vérifications qualité du code</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Cette fonction est&#160;réservée (et utile) aux développeurs.<br />Le lancement en batch est possible.</p>
+                                                            <p>Le language de développement X3 est extrèmement flexible et permet d'exécuter du code souvent sans préjuger du type de données utilisé, en générant a posteriori des sous-programmes qui ne seront contrôlés qu'à l'exécution. Autant cette flexibilité est utile pour accroître l'efficacité et la généricité du code, autant elle a pour contrepartie la possibilité d'écrire des programmes qui ne provoqueront des erreurs qu'au moment de l'exécution.</p>
+                                                            <p>Le but de ce traitement est de pallier cette flexibilité en détectant un certain nombre d'erreurs de programmation. En agissant ainsi en amont de la mise en service, on améliore la qualité.</p>
+                                                            <p>Ce traitement permet de lancer diverses séries de contrôle dans un dossier :</p>
+                                                            <ul>
+                                                                <li>vérification des sous-programmes et fonctions : elle traite principalement de l'appel de sous-programmes dans les sources (existence, nombre et cohérence des paramètres...).</li>
+                                                                <li>vérification des classes [F] et [M] : elle permet principalement de vérifier l'existence des tables, écrans et champs dans les sources.</li>
+                                                                <li>autres vérifications : elle permet divers contrôles dans les sources.</li>
+                                                            </ul>
+                                                            <p>Les contrôles sont subdivisés en 2 parties :</p>
+                                                            <ul>
+                                                                <li>Les erreurs : Elles sont suceptibles de générer un arrêt produit.</li>
+                                                                <li>Les anomalies : Elles relèvent du non respect des normes ou d'un manque de précision pouvant induire des erreurs lors de l'éxécution du traitement.</li>
+                                                            </ul>
+                                                            <p>Le traitement génère deux fichiers trace (un pour les erreurs, un pour les anomalies).<br />Le fichier des anomalies porte le même nom que celui des erreurs avec le suffixe W (pour Warning).</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="ECR"></a>
+                                                            <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#ON1">Onglet Ecran de saisie</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_300">Liste des erreurs et anomalies recherchées</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_310">Balises pour masquer certaines erreurs</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>
+L'écran présente le dossier courant.
+        </p><a id="ON1"></a>
+                                                            <h3 class="g1">Ecran de saisie</h3>
+                                                            <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                <p>
+Saisie des paramètres souhaités
+        </p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Bloc numéro 1</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Dossier (<a href="GESADS.htm">champ DOSSIER</a>)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>
+choix du dossier à traiter.<br />pour des questions de performances, il est recommandé de traiter le dossier courant.
+                </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Type de contrôle</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Sous-programmes et fonctions (champ VERIFCALL)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Classes [F] et [M] (champ VERIFVAR)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>vérification des classes [F] et [M].</p>
+                                                                                        <p>ce choix&#160;permet principalement de vérifier l'existence des tables, écrans et champs dans les sources.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Autres (champ VERIFAUT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>autres vérifications.</p>
+                                                                                        <p>ce choix&#160;permet divers contrôles dans les sources.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Critères</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Source(s) (champ NOMSRC)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>sélection d'un traitement.</p>
+                                                                                        <p>sélection de tous par *, d'un seul par son nom ou de plusieurs par début*.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Module (champ CHXMODULE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>choix d'un module (via un écran liste)<br />seuls les traitements de ce module seront contrôlés</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ LIBMODULE</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Erreur (champ CHXERREUR)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>choix d'une erreur particulière&#160;(via un écran liste).<br />cette sélection est possible si un seul contrôle est demandé.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ NUMERR</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Tri</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Module (champ PARMODULE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Enchaînement par module<br />Cela permet d'obtenir les erreurs (et anomalies)&#160;triées par module.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Trace</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Sur poste client (champ TRACE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Fichier de trace.</p>
+                                                                                        <p>Il est possible de l'enregistrer directement sur le poste client (case à cocher).<br />Son nom est modifiable dans ce cas.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><a id="MIS_40_300"></a>
+                                                            <h3 class="g1">Liste des erreurs et anomalies recherchées</h3>
+                                                            <p />
+                                                            <h4>vérification des sous-programmes et fonctions.</h4>
+                                                            <h5>Erreurs recherchées :</h5>
+                                                            <ul>
+                                                                <li>Dbgaff trouvé.</li>
+                                                                <li>Traitement inexistant.</li>
+                                                                <li>Sous-programme (ou fonction) inexistant.</li>
+                                                                <li>Erreur lors d'un appel par GOSUB.</li>
+                                                                <li>Variable globale VAR inexistante.</li>
+                                                                <li>Paramètre de type différent sur appel de Sous-programme (ou fonction).</li>
+                                                                <li>Nombre de paramètres différent sur appel Sous-programme (ou fonction).</li>
+                                                                <li>Goto&#160;à une étiquette située dans un autre traitement.</li>
+                                                                <li>Appel d'une étiquette par un Call.</li>
+                                                                <li>Etiquette inexistante.</li>
+                                                            </ul>
+                                                            <h5>Anomalies recherchées :</h5>
+                                                            <ul>
+                                                                <li>Fonction ayant un type d'argument non renseigné dans le dictionnaire ASUBPROG.</li>
+                                                                <li>Fonction ayant un type d'argument (du End) dans le dico différent de celui du traitement.</li>
+                                                                <li>le sous-programme (ou fonction) a l'argument n° N non déclaré.</li>
+                                                                <li>Variable globale VAR déjà déclarée avec un type différent.</li>
+                                                                <li>Sous-programme (ou fonction) avec un descriptif vide (documetation).</li>
+                                                                <li>Paramètre [=VALEUR] de type différent sur appel de Sous-programme (ou fonction).</li>
+                                                                <li>Paramètre de type différent entre dico et déclaration du sous-programme (ou fonction).</li>
+                                                                <li>Paramètre ayant un passage par adresse/valeur différent entre dico et déclaration du sous-pro. (ou fct).</li>
+                                                                <li>Nombre de paramètres différent entre dico et déclaration du sous-programme (ou fonction).</li>
+                                                                <li>le sous-programme (ou fonction) a l'argument n° N qui a un nom différent lors de la définition du type.</li>
+                                                            </ul>
+                                                            <h4>vérification des classes [F] et [M].</h4>
+                                                            <h5>Erreurs recherchées :</h5>
+                                                            <ul>
+                                                                <li>Source non référencé dans le dictionnaire des traitements.</li>
+                                                                <li>Variable écran inexistante [M:ABV]CHP</li>
+                                                                <li>Variable table inexistante [F:ABV]CHP</li>
+                                                                <li>Variable inexistante [ABV]CHP dans les tables du LNK</li>
+                                                                <li>Table non trouvée</li>
+                                                                <li>Longueur d'abréviation trop longue (&gt; 4)</li>
+                                                            </ul>
+                                                            <h5>Anomalies recherchées :</h5>
+                                                            <ul>
+                                                                <li>Variable inexistante [G:ABV]CHP</li>
+                                                            </ul>
+                                                            <h4>Autres vérifications</h4>
+                                                            <h5>Erreurs recherchées :</h5>
+                                                            <ul>
+                                                                <li>Sous- prog (ou fct) fini et For sans Next</li>
+                                                                <li>Sous- prog (ou fct) fini et If sans Endif</li>
+                                                                <li>Sous- prog (ou fct) fini et Case sans Endcase</li>
+                                                                <li>Sous- prog (ou fct) fini et While sans Wend</li>
+                                                                <li>End trouvé dans une boucle For [Read]</li>
+                                                                <li>Return trouvé dans une boucle For [Read] </li>
+                                                                <li>Documentations de point d'entrée inexistante.</li>
+                                                            </ul>
+                                                            <h5>Anomalies recherchées :</h5>
+                                                            <ul>
+                                                                <li>Sous-programme (ou fonction) ne contient aucun code</li>
+                                                                <li>Sous-programme (ou fonction) a un tableau en paramètre passé par valeur</li>
+                                                                <li>Return trouvé dans un Sous-programme (ou fonction)</li>
+                                                                <li>Message d'erreur imprécis, à compléter par : "(" + [L]COMPTEUR - num$([L]STAT) + ")".</li>
+                                                                <li>#@ est une instruction obsolette</li>
+                                                                <li>Instruction evalue inutile sur un dim de champ.</li>
+                                                            </ul><a id="MIS_40_310"></a>
+                                                            <h3 class="g1">Balises pour masquer certaines erreurs</h3>
+                                                            <p>Certaines erreurs sont complexes à analyser, d'autres correspondent à des cas particuliers.<br />Pour cela, vous disposez de balises (dans les traitements) pour les masquer.<br />L'intérêt est de ne pas polluer les comptes rendus par de 'fausses' erreurs récurrentes.</p>
+                                                            <p>Le but de ces balises n'est pas, par une utilisation généralisée, de masquer toutes les erreurs en quelques CHECK.<br />Il est de traiter les cas particuliers.</p>
+                                                            <h5>
+                                                                <br />mode d'emploi :</h5>
+                                                            <p>Première phase : Analysez les sources sans placer de balise.<br />Relancez la vérification autant de fois que nécessaire pour obtenir le nombre d'erreurs le plus petit possible.</p>
+                                                            <p>Deuxième phase : Placez les balises souhaitées puis analysez les sources jusqu'à obtenir le résultat souhaité (aucune erreur !).</p>
+                                                            <p>Troisième phase : Adaptez vos balises en fonction des erreurs survenues sur d'autres traitements.<br />Par exemple, un source marqué comme inutilisé ne devra plus l'être si un autre traitement fait appel à un de ses sous-programmes.</p>
+                                                            <h5>
+                                                                <br />précisions :</h5>
+                                                            <p>Le CHECK IGNORE_SOURCE est plutôt prévu pour ne pas contrôler un source en cours de développement (trop d'erreurs temporaires).<br />Le CHECK UNUSED_SOURCE est prévu pour vérifier qu'un source n'est plus utilisé. Il pourra alors être supprimé dans un second temps.<br />Les CHECK IGNORE_BEGIN et CHECK UNUSED_BEGIN sont faits pour cibler une partie de traitement (jusqu'au #CHECK ..._END).<br />Le CHECK IGNORE_WRSEQ sert à ne pas analyser les instructions Wrseq (cas des sources générateurs).</p>
+                                                            <p>Il faut privilégier un CHECK UNUSED_SOURCE plutôt qu'un UNUSED_BEGIN (dès le début) sur un traitement :<br />Si un autre traitement lui fait appel (Call From), l'erreur précisera alors que le traitement appelé est marqué comme non utilisé.</p>
+                                                            <h5>Liste des différentes balises :</h5>
+                                                            <p>
+                                                                <br />#CHECK FILE_DECLARE &lt;file&gt; [&lt;abrev&gt;]<br />Pour déclarer une table ayant été ouverte dans un autre traitement avec une abréviation non standard<br />Ne déclarer qu'une seule table par ligne<br />A placer en début de ligne (avant celles utilisant cette abréviation).</p>
+                                                            <p>#CHECK MASK_DECLARE &lt;masque&gt; [&lt;abrev&gt;]<br />Pour déclarer un&#160;masque&#160;écran&#160;ayant été ouvert dans un autre traitement avec une abréviation non standard<br />Ne déclarer qu'une seul&#160;masque par ligne<br />A placer en début de ligne (avant celles utilisant cette abréviation).</p>
+                                                            <p>#CHECK IGNORE_SOURCE<br />Pour ne pas analyser un source.<br />A&#160;placer en début de traitement</p>
+                                                            <p>#CHECK IGNORE_BEGIN<br />A partir de cette ligne, les instructions suivantes du traitement ne sont pas analysées.<br />A placer en début de ligne (avant celles à ne pas analyser).</p>
+                                                            <p>#CHECK IGNORE_END<br />Pour arrêter le CHECK IGNORE BEGIN.<br />A placer en début de ligne</p>
+                                                            <p>#CHECK IGNORE_LINE<br />Pour ignorer une seule instruction.<br />A placer en fin de ligne comme un commentaire</p>
+                                                            <p>#CHECK IGNORE_WRSEQ<br />A partir de cette ligne, les lignes contenant un Wrseq sont ignorées.<br />A placer en début de ligne</p>
+                                                            <p>#CHECK WRSEQ_END<br />Pour arrêter le CHECK IGNORE_WRSEQ.<br />A placer en début de ligne</p>
+                                                            <p>#CHECK UNUSED_SOURCE<br />Pour ne pas analyser un traitement obsolète.<br />A placer en début de traitement</p>
+                                                            <p>#CHECK UNUSED_BEGIN<br />A partir de cette ligne, les instructions suivantes du traitement ne sont jamais analysées.<br />A placer en début de ligne (avant celles à ne pas analyser).</p>
+                                                            <p>#CHECK UNUSED_END<br />Pour arrêter le CHECK UNUSED BEGIN.<br />A placer en début de ligne</p>
+                                                            <p>#CHECK MIGRATE_SOURCE<br />Reconnaissance d'un traitement de migration. A partir de cette ligne, certains contrôles seront ignorés.<br />A placer en début de ligne (avant celles à ne pas analyser).<br />Erreurs masquées par ce CHECK : n° 109</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ABT"></a>
+                                                            <h2 class="g1" id="Tâchebatch" data-magellan-target="Tâchebatch">Tâche batch</h2>
+                                                            <p>Cette fonction peut être lancée en batch. La tâche standard AVERIFSRC est prévue à cet effet.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ERR"></a>
+                                                            <h2 class="g1" id="Messagesderreur" data-magellan-target="Messagesderreur">Messages d'erreur</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="ERR_GEN.htm">Messages génériques</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Il n'y a pas de message d'erreur autre que les messages d'erreur génériques.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ATB"></a>
+                                                            <h2 class="g1" id="Tablesmisesenoeuvre" data-magellan-target="Tablesmisesenoeuvre">Tables mises en oeuvre</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_AVERIFSRC.htm#ATB">Mise en oeuvre</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#V%C3%A9rificationsqualit%C3%A9ducode">Vérifications qualité du code</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#T%C3%A2chebatch">Tâche batch</a>
+                                                        </li>
+                                                        <li><a href="#Messagesderreur">Messages d'erreur</a>
+                                                        </li>
+                                                        <li><a href="#Tablesmisesenoeuvre">Tables mises en oeuvre</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

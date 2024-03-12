@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Web_outputs__Partner_license_tool_Chunk',chunkstart:['/Content/How-to guides/Platform/Partner license tool/T1 Partner license tool.htm'],tree:{n:[{i:0,c:0,n:[{i:1,c:0},{i:2,c:0},{i:3,c:0},{i:4,c:0}]}]}});

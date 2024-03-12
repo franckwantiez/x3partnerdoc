@@ -1,0 +1,124 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.MasterTopNavOptional" />*/
+/* Custom stylesheet - add your own project-specific styles */
+/* import extra CSS files for this project */
+
+MadCap|miniTocProxy
+{
+	list-style-type: disc !important;
+}
+
+div.menu-topic-container#menu-on-page::before
+{
+	content: "Nesta página"; /* Label for topic headings menu (side menu) */
+}
+
+MadCap|miniTocProxy
+{
+	mc-auto-number-format: "Nesta secção"; /* Title for mini-TOC box */
+}
+
+MadCap|miniTocProxy.right
+{
+	mc-auto-number-format: "Nesta secção"; /* Title for mini-TOC box */
+}
+
+div.MCMiniTocBox,
+div.MCMiniTocBox_0,
+div.MCMiniTocBox_right,
+div.MCMiniTocBox_right_0
+{
+	mc-auto-number-format: "Nesta secção"; /* Title for mini-TOC box */
+}
+
+.go-to-top::after
+{
+	content: "Topo"; /* Label for go to top link */
+}
+
+html.home .nav-search-wrapper {
+  display: none;
+}
+
+.nav-search-wrapper {
+  margin-right: 200px !important;
+}
+
+.button.select-language-button div.button-icon
+{
+	background: url('../Images/Assets/Icons/Sage/60x60_globe_white-on-transparent_icon.svg') !important;
+}
+
+.button.select-language-button:hover div.button-icon:hover
+{
+	background: url('../Images/Assets/Icons/Sage/60x60_globe_green-on-transparent_icon.svg') !important;
+	size: 120%;
+}
+
+.button.select-language-button
+{
+	transition: transform .1s;
+}
+
+.button.select-language-button:hover
+{
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
+.toolbar-button-drop-down.select-language-drop-down
+{
+	right: 0 !important;
+	left: 85% !important;
+	position: absolute;
+	size: maximum-width;
+	width: 100%;
+	text-decoration: none !important;
+}
+
+.toolbar-button-drop-down.select-language-drop-down ul li:hover
+{
+	color: #ffffff !important;
+	background: #000000;
+	text-decoration: underline !important;
+	text-decoration-color: #33DE61 !important;
+	text-decoration-thickness: 4px !important;	
+}
+
+MadCap|dropDownHead.HTG-DD
+{
+	color: black !important;
+	border-radius: 10px;
+	font-family: 'Sage Text Medium';
+	background: #ffffff;
+	border: solid 5px #01661c;
+}
+
+MadCap|dropDownHead.HTG-DD:hover
+{
+	color: black !important;
+	background: #01661c;
+	border: solid 5px #01661c;
+	border-radius: 10px;
+	font-family: 'Sage Text Medium';
+}
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	height: 100%;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #01661c;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+	background: #33DE61;
+}

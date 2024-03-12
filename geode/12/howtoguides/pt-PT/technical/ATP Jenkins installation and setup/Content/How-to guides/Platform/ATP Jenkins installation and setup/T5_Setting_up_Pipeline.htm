@@ -1,0 +1,1068 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Setting up Jenkins pipeline</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="T1_ATP_Jenkins_Installation.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__ATP_Jenkins_installation_and_setup.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Setting up Jenkins pipeline</h1>
+                                            <h2><a name="Installi"></a>Installing the Jenkins pipeline template</h2>
+                                            <p>The following steps install the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong>. This pipeline will subsequently be duplicated then configured to execute your automated tests on your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment.</p>
+                                            <ol>
+                                                <li value="1">Open your browser.</li>
+                                                <li value="2">Go to <span class="reference">http://[Jenkins_hostname]:[jenkins_port]/jnlpJars/jenkins-cli.jar</span>, where <span class="reference">[Jenkins_hostname]:[jenkins_port]</span> is your <span class="reference">Jenkins</span> URL.</li>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example URL</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><a href="http://myjenkinsserver:8080/" target="_blank"><span class="Hyperlink">http://myjenkinsserver:8080/jnlpJars/jenkins-cli.jar</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="note-info">
+                A <strong>jenkins-cli.jar</strong> file is downloaded.
+            </div>
+                                                <li value="3">Create a <span class="reference">ATPJenkinsPipelineInstall</span> folder
+in your <span class="reference">Documents</span> folder.</li>
+                                                <li value="4">
+                Copy the <strong>Jenkins-cli.jar</strong> file to the <span class="reference">ATPJenkinsPipelineInstall</span> folder.
+            </li>
+                                                <li value="5">
+                Copy the <strong>ATP-TemplateRunAutomatedTests.xml</strong> file to the <span class="reference">ATPJenkinsPipelineInstall</span> folder.</li>
+                                                <div class="note-info"> The <strong>ATP-TemplateRunAutomatedTests.xml</strong> file is in the <strong>atp-x.x.x-win</strong> zipped (compressed) file you downloaded to the <span class="reference">02-JenkinsPipeline</span> folder.
+            </div>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="6">
+                Open a new Windows PowerShell session in <strong>administrator</strong> mode.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="7">
+                Change to the <span class="reference">ATPJenkinsPipelineInstall</span> directory.<div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">
+                Example command</a></span><div class="MCDropDownBody dropDownBody"><p><span class="code">cd C:\Users\[myuser]\Documents\ATPJenlinsPipelineInstall\</span></p><p>
+                Where <span class="code">[myuser]</span> is your Windows user account.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div></div></li>
+                                                <li value="8">
+                Enter the following command, replacing:<ol style="list-style-type: lower-roman;"><li value="1"><span class="reference">[jenkins_account]</span> with your <strong>Jenkins</strong> administrator account.</li><li value="2"><span class="reference">[jenkins_password]</span> with your <strong>Jenkins</strong> administrator password.</li><li value="3"><span class="reference">[Jenkins_hostname]:[jenkins_port]</span> with your <strong>Jenkins</strong> URL and port.</li></ol><p><span class="code">type ATP-TemplateRunAutomatedTests.xml | java -jar jenkins-cli.jar -s http://[jenkins_account]:[jenkins_password]@[Jenkins_hostname]:[jenkins_port]/ create-job ATP-TemplateRunAutomatedTests</span></p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-4.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                            </ol>
+                                            <div class="note-success">The <strong>Jenkins Pipeline</strong> template <strong>ATP-TemplateRunAutomatedTests</strong> has been imported.<br /><br /><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-5.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /><br /></p></div>
+                                            <br />
+                                            <h2>Creating your ATP-RunAutomatedTests pipeline</h2>
+                                            <p>This section describes how to create your <span class="reference">ATP-RunAutomatedTests</span> pipeline from the <span class="reference">ATP-TemplateRunAutomatedTests</span> pipeline.</p>
+                                            <div class="note-warning">Do not use the <span class="reference">ATP-TemplateRunAutomatedTests</span> template pipeline directly.</div>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">New Item</span>.</li>
+                                                <li value="3"><span class="reference">Enter an item name</span>: Type <span class="reference">ATP-RunAutomatedTests</span>. <span class="reference">ATP-RunAutomatedTests</span> is the name for your new pipeline.</li>
+                                                <li value="4">
+                Select <span class="reference">Pipeline</span>.</li>
+                                                <li value="5"><span class="reference">Copy from</span>: Set to <span class="reference">ATP-TemplateRunAutomatedTests</span>.</li>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Create_Pipeline-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="6">
+                Click <span class="reference">OK</span>, then <span class="reference">Apply</span>, then <span class="reference">Save</span>.</li>
+                                                <li value="7">
+                Return to the <strong>Jenkins</strong> home page.
+            </li>
+                                            </ol>
+                                            <div class="note-success">The <strong>Jenkins</strong> home page displays two pipelines - your new <span class="reference">ATP-RunAutomatedTests</span> pipeline and the <span class="reference">ATP-TemplateRunAutomatedTests</span> template pipeline.<br /><br /><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Create_Pipeline-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div>
+                                            <h2><a name="Configur"></a>Configuring your ATP-RunAutomatedTests pipeline</h2>
+                                            <p>This section describes how to configure your <span class="reference">ATP-RunAutomatedTests</span> pipeline to execute the automated tests on your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> Test environment  that you have pushed on <strong>GitHub</strong>, or on your <strong>Jenkins</strong> server.</p>
+                                            <div class="note-info"><span class="reference">ATP-RunAutomatedTests</span> is the pipeline you created from the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong>.</div>
+                                            <ol>
+                                                <li value="1">
+                Check that you are connected as an <strong>administrator user</strong>.
+            </li>
+                                                <li value="2">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="3">
+                Click <span class="reference">ATP-RunAutomatedTests</span>.</li>
+                                                <li value="4">
+                Click <span class="reference">Configure</span>.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                            </ol>
+                                            <ol data-mc-continue="true">
+                                                <li value="5">
+                Configure the following parameters:</li>
+                                                <p><span class="reference">UpdateATP<span class="mc-variable Sage-Product.ProductName variable">X3</span></span>: This parameter is for setting up the update of the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Library on your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>By default, the <span class="reference">UpdateATP<span class="mc-variable Sage-Product.ProductName variable">X3</span></span> parameter is deactivated and the <span class="reference">Install/Update ATP</span> stage is skipped. <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> recommends leaving it inactive by default and activating it only when you need to update the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Library on your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>If you activate the <span class="reference">UpdateATP<span class="mc-variable Sage-Product.ProductName variable">X3</span></span> parameter, Jenkins will install the latest <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Library version.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>When you run your <span class="reference">ATP-RunAutomatedTests</span> pipeline for the first time, the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Library is installed regardless of the value set for the <span class="reference">UpdateATP<span class="mc-variable Sage-Product.ProductName variable">X3</span></span> parameter.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>You can check the install or update status of the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Library in the console output of your <span class="reference">ATP-RunAutomatedTests</span> pipeline for the specific build executed during the update.</p>
+                                                        <div class="note-info">Make sure that your <span class="reference">ATP-RunAutomatedTests</span> pipeline has been updated to the latest version before activating the <span class="reference">UpdateATP<span class="mc-variable Sage-Product.ProductName variable">X3</span></span> parameter.<br /><br /><MadCap:conditionalText data-mc-conditions="Sage_X3.V12">Follow <a href="#Updating2" target="_self">this procedure</a> to update your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</MadCap:conditionalText></div>
+                                                    </li>
+                                                </ul>
+                                                <p><span class="reference">CUCUMBER_BASE_URL</span>: The URL for the <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is mandatory.</p>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <p><span class="reference">CUCUMBER_TAGS</span>: This parameter  filters for the automated tests which are defined with a specific tag or a combination of tags. To filter for multiple automated tests, each test must be separated using the "and" / "or" condition. This parameter is optional.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">
+                Example <span class="reference">CUCUMBER_TAGS</span> value</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>The 
+                 <span class="reference">CUCUMBER_TAGS</span> parameter must be defined with the following value for <strong>Jenkins</strong> to select the automated tests which are defined with both the @TestToRun1 and @TestToRun2 tags, or the automated test that is defined with the @TestToRun3 tag.</p>
+                                                        <p class="image">
+                                                            <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="note-tip">All automated tests defined in the <span class="reference">FeatureFolders</span> parameter are executed if you leave this parameter blank.</div>
+                                                <p><span class="reference">FEATURE_TO_RUN</span>: This parameter filters for the specific automated tests to execute. To filter for multiple automated tests, each test must be separated using a carriage return. This parameter is optional.</p>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-4.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <div class="note-tip">All automated tests defined in the <span class="reference">FeatureFolders</span> parameter are executed if you leave this parameter blank.</div>
+                                                <p><span class="reference">loginUserName</span>: Enter the required <span class="mc-variable Sage-Product.ProductName variable">X3</span> user to execute the automated tests on the applicative folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is mandatory.</p>
+                                                <p><span class="reference">loginPassword</span>: Enter the required <span class="mc-variable Sage-Product.ProductName variable">X3</span> user password to execute the automated tests on your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is mandatory.</p>
+                                                <p><span class="reference">loginUserRootName</span>:  Enter the required <span class="mc-variable Sage-Product.ProductName variable">X3</span> user to connect to the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is optional and only needs to be defined if you have automated tests requiring connection to the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment.</p>
+                                                <p><span class="reference">loginUserRootPassword</span>:  Enter the required <span class="mc-variable Sage-Product.ProductName variable">X3</span> user password to connect to the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is optional and only needs to be defined if you have automated tests requiring connection to the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment.</p>
+                                                <p><span class="reference">loginType</span>: You must define this parameter for <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> to use the correct authentication method  to connect to the <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. Set to one of the following:</p>
+                                                <ul>
+                                                    <li><span class="reference">basic</span> - For a basic connection.</li>
+                                                    <li><span class="reference"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>id</span> - For a <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>id connection (when <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>id mode is defined and the <span class="reference">loginUserName</span> parameter corresponds to the email address used for your <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>ID account).</li>
+                                                </ul>
+                                                <p><span class="reference">endpointRoot</span>:  Enter the endpoint description of the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment. This parameter is optional and only needs to be defined if you have automated tests requiring connection to the <span class="mc-variable Sage-Product.ProductName variable">X3</span> root folder of your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment.</p>
+                                                <p><span class="reference">endPointName1</span>: The primary endpoint description for your test folder that the automated tests will select when executing the test. This parameter is mandatory.</p>
+                                                <p><span class="reference">endPointName2</span>: The secondary endpoint description for your test folder that the automated tests will select when executing the test. This parameter is mandatory if it is used in your automated tests (feature file).</p>
+                                                <p><span class="reference">MAX_INSTANCES</span>: The value of this parameter must be in the range 1 - 4.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                When <span class="reference">MAX_INSTANCES</span> = <span class="reference">1</span>, the automated tests are executed sequentially one after the other. </p>
+                                                    </li>
+                                                    <li>
+                                                        <p>
+                When <span class="reference">MAX_INSTANCES &gt; 1</span>, the automated tests are executed in parallel, for up to four tests at the same time.</p>
+                                                    </li>
+                                                </ul>
+                                                <div class="note-warning">Refer to the <a href="../ATP_UserGuide/T3_MethodologyFAQs.htm#ExeTestPara" title="Link to 'Executing test in parallel' section">Executing test in parallel</a> chapter for recommendations on how to execute tests in parallel.          </div>
+                                                <p><span class="reference">COPY_FEATURES_FROM</span>: This parameter defines where the feature files are retrieved from. Set to one of the following:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><span class="reference">None</span> - The <strong>Jenkins</strong> Workspace directory is not updated. The folder path or <strong>Git</strong> repository URL to copy the features from are ignored.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><span class="reference">Git</span> - The feature files are downloaded from the <strong>GitHub</strong> repository defined in the parameter <span class="reference">COPY_FROM_FOLDER</span>, then copied into the <strong>Jenkins</strong> pipeline Workspace to be executed.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><span class="reference">Folder</span> - This method is useful if you are not using <strong>GitHub</strong>. The feature files are downloaded from the folder path defined in the parameter <span class="reference">COPY_FROM_FOLDER</span>, then copied into the <strong>Jenkins</strong> pipeline Workspace to be executed.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><span class="reference">COPY_FROM_FOLDER</span>:</p>
+                                                <ul>
+                                                    <li>
+                If <span class="reference">COPY_FEATURES_FROM</span> = <span class="reference">Git</span>, <span class="reference">COPY_FROM_FOLDER</span> must be set to the following (the separator character is a semicolon ("<span class="reference">;</span>"): <p><span class="reference">Git URL;Branch=branch name;SparsePath=directory path</span></p><p>Where:</p><p><span class="reference">Git URL</span>&#160;= The URL for your <strong>GitHub</strong> repository. This URL is mandatory.</p><p><span class="reference">Branch=branch name</span> = A specific <strong>Git</strong> branch to check out. This information is optional. If the <span class="reference">Branch</span> parameter is not defined, by default the master branch is checked out.</p><p><span class="reference">SparsePath=directory path</span> = A specific file or folder in the <strong>Git</strong> repository to check out. This information is optional. If the <span class="reference">SparcePath</span> parameter is not defined, by default all files and "directories" of the <strong>GitHub</strong> repositories are checked out.</p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">
+                Example COPY_FROM_FOLDER = Git URLs
+                </a></span><div class="MCDropDownBody dropDownBody"><ul><li>Case 1 - Only the <strong>Git</strong> URL is defined.</li><p>The whole repository on the master branch is checked out.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-5.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></ul><ul><li>Case 2 - A specific branch and path is defined.<p>The <strong>GitHub</strong> repository is checked out, with <span class="reference">branch=mytestbranch</span> only the <span class="reference">MyProject01/02-Tests/</span> path is checked out.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-6.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li></ul></div></div></li>
+                                                </ul>
+                                            </ol>
+                                            <ol data-mc-continue="true">
+                                                <ul>
+                                                    <li>
+                                                        <p>
+                If <span class="reference">COPY_FEATURES_FROM</span> = <span class="reference">Folder</span>, <span class="reference">COPY_FROM_FOLDER</span> will be the local path for the <strong>Jenkins</strong> server, where the feature files are copied by the user.<div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">
+                        Example COPY_FROM_FOLDER = Folder URL</a></span><div class="MCDropDownBody dropDownBody"><p>You created a shared directory <span class="reference">\\myServer\MyProject</span> based on the local server path <strong>D:\\ATP\</strong> that contains several sub-folders where the users copy their automated tests once they are ready for <strong>Jenkins</strong> to execute.</p><p>Set the  <span class="reference">COPY_FEATURES_FROM</span> parameter to the local server path <span class="reference">D:\\ATP\*</span>.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-7.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p><div class="note-warning">
+                The <span class="reference">ATP</span> folder will also be created in the <strong>Jenkins</strong> Workspace if you omit the star "<span class="reference">*</span>" character.  </div><p>
+                The <span class="reference">ATP</span> folder contains the subfolder <span class="reference">MyProject01</span>:</p><ul><li>
+                        If you define the path as <span class="reference">D:\ATP\*</span>, the directories and files will be copied into the <strong>Jenkins</strong> Workspace and contain <span class="reference">\Workspace\MyProject01</span>.</li><li>
+                        If you define the path as <span class="reference">D:\ATP\</span>, the directories and files will be copied into the <strong>Jenkins</strong> Workspace and contain <span class="reference">\Workspace\ATP\MyProject01</span>.</li></ul></div></div></p>
+                                                    </li>
+                                                </ul>
+                                                <p><span class="reference">FeatureFolders</span>: Defines the relative path to the feature files or folders containing them. Therefore, depending on which path you define in the parameter <span class="reference">COPY_FEATURES_FROM</span>, the parameter <span class="reference">FeatureFolders</span> will have to be defined accordingly, with or without the root folder (for example, ATP). To execute the features in multiple directories, each directory must be separated using a carriage return.</p>
+                                                <p>
+                When <strong>Jenkins</strong> pipeline is executed, the feature files downloaded from <strong>GitHub</strong> or from the <strong>Jenkins</strong> server are temporally copied into the current pipeline workspace.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example FeatureFolders path</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Your <strong>GitHub</strong> repository has the following folder architecture:</p>
+                                                        <ul>
+                                                            <li><span class="reference">MyATPTest</span> is the repository.</li>
+                                                            <li><span class="reference">MyATPTest</span> contains three folders:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-8.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                            <li>The 
+                 <span class="reference">FeatureFolders</span> parameter must be defined with the following values to execute all the features in the <span class="reference">02-Tests</span> and <span class="reference">03-Tests</span> directories:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-9.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <br /><span class="reference">PREREQUISITE_SCRIPT_PATH</span>: Defines the path of the prerequisite automated tests to be executed before the automated tests selected via the <span class="reference">FeatureFolders</span> parameter are executed. This parameter is optional.</p>
+                                                <p>
+                When <strong>Jenkins</strong> pipeline is executed, the feature files downloaded from <strong>GitHub</strong> or from the <strong>Jenkins</strong> server are temporally copied into the current pipeline workspace.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example PREREQUISITE_SCRIPT_PATH path</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Your <strong>GitHub</strong> repository has the following folder architecture:</p>
+                                                        <ul>
+                                                            <li><span class="reference">MyATPTest</span> is the repository.</li>
+                                                            <li><span class="reference">MyATPTest</span> contains three folders:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-8.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                            <li>The 
+                 <span class="reference">PREREQUISITE_SCRIPT_PATH</span> parameter must be defined with the following value to execute all the features in the <span class="reference">01-Prerequisites</span> directory:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-10.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    <br /><span class="reference">PREREQUISITE_SCRIPT_TAGS</span>: This parameter  filters for the prerequisite automated tests which are defined with a specific tag or a combination of tags. To filter for multiple automated tests, each test must be separated using the "and" / "or" condition. This parameter is optional.</p>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example PREREQUISITE_SCRIPT_TAGS value</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p>Your <strong>GitHub</strong> repository has the following folder architecture:</p>
+                                                        <ul>
+                                                            <li><span class="reference">MyATPTest</span> is the repository.</li>
+                                                            <li><span class="reference">MyATPTest</span> contains three folders:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-8.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                            <li>The 
+                 <span class="reference">PREREQUISITE_SCRIPT_PATH</span> parameter is defined with the following value to execute all the features in the <span class="reference">01-Prerequisites</span> directory:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-10.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                            <li>The 
+                 <span class="reference">PREREQUISITE_SCRIPT_TAGS</span> parameter must be defined with the following value for <strong>Jenkins</strong> to select the prerequisite automated tests in the <span class="reference">01-Prerequisites</span> directory which are defined with both the  @PREREQ1 and @ PREREQ2 tags, or the prerequisite automated test that is defined with the @PREREQ3 tag:<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-11.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="note-tip">All prerequisite automated tests defined in the <span class="reference">PREREQUISITE_SCRIPT_PATH</span> parameter are executed if you leave this parameter blank.</div>
+                                                <p><span class="reference">downloadFolder</span>: Default path where files and reports are generated by <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span></p>
+                                                <p><span class="reference">userStoredValuesFile</span>: Define the path of the <span class="reference">user-stored-values</span> file that will be loaded before each test is executed. This parameter is optional.</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP Jenkins installation and setup/T5_User stored values.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="259" data-mc-height="72" src="../../../Resources/Images/ATP Jenkins installation and setup/T5_User stored values_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                </p>
+                                                <p>You should also push  on the Jenkins server the <span class="reference">user-stored-values</span> file that you use with <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> on your local machine. For Jenkins, the library is contained in the Jenkins workspace of the required pipeline.</p>
+                                                <p>For example, for the Jenkins service used to install Jenkins, the <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> Automated Test library is installed on the <span class="reference">ATP-RunAutomatedTests</span> Jenkins pipeline workspace after the <span class="reference">ATP-RunAutomatedTests</span>  Jenkins pipeline has been executed at least once.</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP Jenkins installation and setup/T5_Jenkins pipeline.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1136" data-mc-height="123" src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Jenkins pipeline_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                </p>
+                                                <p>At the beginning of the <span class="reference">ATP-RunAutomatedTests</span> Jenkins pipeline  execution, if the <span class="reference">userStoredValuesFile</span> parameter contains an incorrect path, no feature will be executed. The execution will directly stop at the <span class="reference">Check user Stored Values</span> stage. No Allure report is generated.</p>
+                                                <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP Jenkins installation and setup/T5_Fail.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="705" data-mc-height="414" src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Fail_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                </p>
+                                                <p>To learn more about using user stored values in your feature file,  refer to the  <a href="../ATP_UserGuide/T3_MethodologyFAQs.htm#Using" target="_blank">related documentation</a>.</p>
+                                                <p><strong>Timeout</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>timeout parameter indicates how long the robot should wait before returning an error when the element could not be found, the state of the element is incorrect, or the actual value found is different from the expected one.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Parameter default value: 10000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>timeout parameter must not been set with a value below 10000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>timeout parameter can’t exceed timeoutCucumber parameter.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>timeoutLocks</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>timeoutLocks parameter indicates how long the robot can wait when the following step definition is executed: "the user adds the lock entry" and before returning a functional error message to the user.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Parameter default value: 240000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Default value when the parameter is not defined: 240000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>timeoutLocks  parameter can’t exceed timeoutCucumber parameter.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>timeoutPrint</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>timeoutPrint parameter indicates how long the robot can wait when the following step definition is executed: "the user waits for a report printout with message" and before returning an error message to the user.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Parameter default value: 120000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Default value when the parameter is not defined: 120000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>timeoutPrint  parameter can’t exceed timeoutCucumber parameter.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>timeoutWaitfor</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>timeoutWaitfor parameters indicates how long the robot can wait for Sage X3 or Sage X3 Warehousing feedbacks (e.g screen validation, page loading, open a function etc..) before returning a functional error message to the user.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Parameter default value: 200000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Default value when the parameter is not defined: 200000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>timeoutWaitfor parameter can’t exceed timeoutCucumber parameter.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>timeoutCucumber</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>timeoutCucumber parameters indicates the maximum time the robot can wait before returning a timeout error message to the user.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Parameter default value: 300000 ms.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Default value when the parameter is not defined: 300000 ms.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>allurePDFPrint</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>When this parameter is activated, the allure report is also printed as a pdf document</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>allurePDFName</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>name of the allure pdf document</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>space are not allowed.</p>
+                                                    </li>
+                                                </ul>
+                                                <p><strong>allurePDFPath</strong>:</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>path where the allure pdf document is generated</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>e.g.  c:\atp\myreport.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>If you need to access a shared directory create a Symbolic Link  between the Jenkins server and the shared directory.</p>
+                                                        <ul>
+                                                            <li>
+                                                                <p>Ms command:</p>
+                                                                <p>mklink /D C:[Name of folder] [network share folder path]</p>
+                                                            </li>
+                                                            <li>
+                                                                <p>Powershell</p>
+                                                                <p>New-Item -Path C:[Name of folder] -ItemType SymbolicLink -Target [network share folder path]</p>
+                                                                <p>network share folder path is generally defined as \\server\folder\</p>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <p>Note the allure pdf report is also attached as build artifact</p>
+                                                <p>
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Configure_Pipeline-12.png" />
+                                                </p>
+                                                <p><span class="reference">JENKINS_NODE</span>: This parameter defines on which Jenkins node you want to execute your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p>When the <span class="reference">JENKINS_NODE</span> parameter is left empty, your <span class="reference">ATP-RunAutomatedTests</span> pipeline is executed on any available nodes, based on the node strategy configured in Jenkins (<span class="reference">Manage Jenkins</span> &gt; <span class="reference">Manage nodes and clouds</span>). If you didn’t configure any node, the pipeline is executed on the <span class="reference">built-in</span> node (<span class="reference">master</span> node for older Jenkins versions).</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>If the <span class="reference">JENKINS_NODE</span> parameter is defined, your <span class="reference">ATP-RunAutomatedTests</span> pipeline is executed on the chosen node.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The <span class="reference">JENKINS_NODE</span> parameter is based on the Jenkins node label.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>To set up a label for a Jenkins node:</p>
+                                                        <ol>
+                                                            <li value="1">
+                                                                <p>Log in as an administrator.</p>
+                                                            </li>
+                                                            <li value="2">
+                                                                <p>Go to the Jenkins home page.</p>
+                                                            </li>
+                                                            <li value="3">
+                                                                <p>Select <span class="reference">Manage Jenkins</span> &gt; <span class="reference">Manage nodes and clouds</span>.</p>
+                                                            </li>
+                                                            <li value="4">
+                                                                <p>Select the settings icon for the specific node you want to set up.</p>
+                                                            </li>
+                                                            <li value="5">
+                                                                <p>Define the label for the node. Spaces are not allowed.</p>
+                                                            </li>
+                                                            <li value="6">
+                                                                <p>Save your changes.</p>
+                                                            </li>
+                                                        </ol>
+                                                        <div class="note-info">The built-in node in Jenkins has an internal label named <span class="reference">built-in</span>.
+</div>
+                                                    </li>
+                                                </ul>
+                                            </ol>
+                                            <h2>Executing your ATP-RunAutomatedTests pipeline</h2>
+                                            <p>Now that you have configured your <span class="reference">ATP-RunAutomatedTests</span> pipeline you can execute the automated tests  on your <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> test environment that you have pushed on <strong>GitHub</strong> or on your <strong>Jenkins</strong> server.</p>
+                                            <ol>
+                                                <li value="1">Check that you are connected as a <strong>Jenkins QualityTester</strong> user.</li>
+                                                <li value="2">Click <span class="reference">ATP-RunAutomatedTests</span>.</li>
+                                                <li value="3">
+                Click <span class="reference">Build with parameters</span>.</li>
+                                                <li value="4">
+                Leave the default parameter values or change if required. See <a href="#Configur" target="_self" class="Hyperlink">Configuring your ATP-RunAutomatedTests pipeline</a>.</li>
+                                                <li value="5">
+                Select a value for the <span class="reference">COPY_FEATURE_FROM</span>, and associated <span class="reference">COPY_FROM_FOLDER</span>, parameters.</li>
+                                            </ol>
+                                            <p class="image">
+                                                <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Execute_Pipeline-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="6">
+                Click <span class="reference">Build</span>.</li>
+                                                <li value="7">
+                Refer to the <span class="reference">Stage View</span> block to view the progress of the build.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Executing_Pipeline-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="8">
+				Once the pipeline has executed, click the <span class="reference">allure</span> icon <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Execute_Pipeline-3.png" class="inParagraph" /> to access the build detail and open the generated <span class="reference">Allure Report</span>.
+        <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Executing_Pipeline-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="9">
+                                                    <p>When executing the Sage X3 Automated Test pipeline the following stages are executed</p>
+                                                    <p>
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Executing_Pipeline-3.png" />
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            <ul>
+                                                <li>
+                                                    <p>Stage Check Nodejs version:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage controls the compatibility between the version of Node.js installed on the Jenkins server and the version of Sage X3 Automated Test Platform.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>If the version of Node.js is not compliant with the version of Sage X3 Automated Test platform, the pipeline execution is stopped.</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>Refer to <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp</a> online documentation for more information about Nodejs compatibility with <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>.</p>
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Executing-Pipeline-4.png" />
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>Stage Install/Update ATP:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage indicates the status of Sage X3 Automated Test Platform install or upgrade.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>it is executed when the pipeline is executed for the first time, to install Sage X3 Automated Test Platform library.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Or if the<strong> UpdateATPX3</strong> parameter is activated.</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p> If a new version of Sage X3 Automated Platform is available, the upgrade is performed.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>Stage Check User Stored values file:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage controls if the file path defined in the parameter <strong>userStoredValuesFile</strong> exists.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>If the file path is incorrect, the pipeline execution is stopped.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <p>
+                                                <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Executing-Pipeline-5.png" style="mc-thumbnail-max-height: 100px;" />
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>Stage run prerequisite tests:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage indicates the status of the prerequisite tests execution.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>It is executed if the parameter <strong>PREREQUISITE_SCRIPT_PATH</strong> is defined.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>Stage tests execution:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage executes the automated tests.</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>It is named with the the path defined in the parameter <strong>FeatureFolders</strong></p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>There are as many stages as there are path defined in <strong>FeatureFolders</strong> parameter.</p>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>Stage generate report:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage indicates the status of the allure report generation.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <p>Generate allure pdf:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>This stage indicates the status of the processing to generate the allure report in pdf format.</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>It is executed when the <strong>allurePDFPrint</strong> parameter is activated.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <div class="linksBox" data-mc-autonum="See also"><span class="autonumber"><span class="boxTitle">See also</span></span>
+                                                <p><a href="T6_Appendix_1.htm#top" target="_self" class="Hyperlink">Appendix</a> for a description of the different pages included in the generated <span class="reference">Allure Report</span>.</p>
+                                            </div>
+                                            <h2><a name="Updating2"></a>Updating your ATP-RunAutomatedTests pipeline</h2>
+                                            <div class="note-info">This section is only applicable when a new version of the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong> is released.</div>
+                                            <div class="note-info">You must complete this section if you have already installed and configured <span class="reference">Jenkins</span> with a version of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> older than version <span class="reference">2.4.0</span>.</div>
+                                            <div class="note-danger">Do not update your <span class="reference">ATP-RunAutomatedTests</span> pipeline directly as the <strong>Jenkins</strong> parameters will be overwritten.</div>
+                                            <p>To avoid overwriting your <strong>Jenkins</strong> parameters you should update the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong> then report the changes to your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</p>
+                                            <h3>Updating the Jenkins pipeline template</h3>
+                                            <p>The following steps update the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong>.</p>
+                                            <ol>
+                                                <li value="1">Open your browser.
+                </li>
+                                                <li value="2">Go to <span class="reference">http:/[Jenkins server]:[port]/jnlpJars/jenkins-cli.jar</span>, where <span class="reference">[Jenkins server]:[port]</span> is your <strong>Jenkins</strong> URL.</li>
+                                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example URL</a></span>
+                                                    <div class="MCDropDownBody dropDownBody">
+                                                        <p><a href="http://myjenkinsserver:8080/" target="_blank"><span class="Hyperlink">http://myjenkinsserver:8080/jnlpJars/jenkins-cli.jar</span></a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="note-info">
+                A <strong>jenkins-cli.jar</strong> file is downloaded.
+            </div>
+                                                <li value="3">Create&#160;a <span class="reference">ATPJenkinsPipelineInstall</span> folder
+in your <span class="reference">Documents</span> folder.</li>
+                                                <li value="4">
+                Copy the <strong>Jenkins-cli.jar</strong> file to the <span class="reference">ATPJenkinsPipelineInstall</span>  folder.
+            </li>
+                                                <li value="5">
+                Copy the <strong>ATP-TemplateRunAutomatedTests.xml</strong> file to the <span class="reference">ATPJenkinsPipelineInstall</span> folder.</li>
+                                                <div class="note-info"> The <strong>ATP-TemplateRunAutomatedTests.xml</strong> file is in the <strong>atp-x.x.x-win</strong> zipped (compressed) file you downloaded to the <span class="reference">02-JenkinsPipeline</span> folder.
+            </div>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="6">
+                Open a new Windows PowerShell session in administrator mode.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="7">
+                Change to the <span class="reference">ATPJenkinsPipelineInstall</span> directory.<div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">
+                Example command</a></span><div class="MCDropDownBody dropDownBody"><p><span class="code">cd C:\Users\[myuser]\Documents\ATPJenlinsPipelineInstall\</span></p><p>
+                Where <span class="code">[myuser]</span> is your Windows user account.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Template-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div></div></li>
+                                                <li value="8">
+                Enter the following command, replacing:<ol style="list-style-type: lower-roman;"><li value="1"><span class="reference">[jenkins_account]</span> with your <strong>Jenkins</strong> administrator account.</li><li value="2"><span class="reference">[jenkins_password]</span> with your <strong>Jenkins</strong> administrator password.</li><li value="3"><span class="reference">[Jenkins_hostname]:[jenkins_port]</span> with your <strong>Jenkins</strong> URL and port.</li></ol><p><span class="code">type ATP-TemplateRunAutomatedTests.xml | java -jar jenkins-cli.jar -s http://[jenkins_account]:[jenkins_password]@[Jenkins_hostname]:[jenkins_port]/ update-job ATP-TemplateRunAutomatedTests</span></p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Update_Pipeline-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                            </ol>
+                                            <div class="note-success">The Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong> has been updated.</div>
+                                            <h3><a name="Updating"></a>Updating your ATP-RunAutomatedTests pipeline</h3>
+                                            <p>The following steps update your <span class="reference">ATP-RunAutomatedTests</span> pipeline from the Jenkins pipeline template <strong>ATP-TemplateRunAutomatedTests</strong>.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p><strong>Make sure the right version of Nodejs is installed on the Jenkins server.</strong>
+                                                    </p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>To define the right version of Nodejs, refer to the <a href="https://online-help.sageerpx3.com/erp/12/public/prerequisites_atp.html">prerequisites_atp </a>documentation.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li value="2">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="3">
+                Select the <span class="reference">ATP-TemplateRunAutomatedTests</span> pipeline.</li>
+                                                <li value="4">
+                Click <span class="reference">Configure</span>.</li>
+                                                <li value="5">
+			Go to the Pipeline <span class="reference">Script</span> section.</li>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T5_Update_Pipeline-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="6">
+                Copy the complete script.</li>
+                                                <li value="7">
+                Close the page.</li>
+                                                <li value="8"> Go to your <span class="reference">ATP-RunAutomatedTests</span> pipeline.</li>
+                                                <li value="9">
+                Click <span class="reference">Configure</span>.</li>
+                                                <li value="10">
+			Go to the pipeline <span class="reference">Script</span> section.</li>
+                                                <li value="11">
+                Delete the existing script.</li>
+                                                <li value="12">
+                Paste the script (that you copied in step <strong>5</strong>).</li>
+                                                <li value="13">
+                                                    <p>Create the new parameters delivered with the latest version of <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span>. </p>
+                                                    <p>To create these parameters, refer to their <a href="#Configur" target="_self">setup</a> in the <span class="reference">ATP-TemplateRunAutomatedTests</span> Jenkins pipeline template or to the <a href="#NewParameters">new parameters</a> section.</p>
+                                                </li>
+                                                <li value="14">
+                Click <span class="reference">Apply</span>, then <span class="reference">Save</span>.</li>
+                                            </ol>
+                                            <div class="note-success">Your <span class="reference">ATP-RunAutomatedTests</span> pipeline will be updated with the new version when it is next executed.</div>
+                                            <h2><a name="NewParameters"></a>New parameters</h2>
+                                            <h3>New parameters delivered with version Sage X3 Automated Test 2.3.0</h3>
+                                            <p><strong>loginUserRootName</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: X3 ROOT Login user name</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: adminname</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>loginUserRootPassword</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: X3 ROOT Login password</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: adminpassword</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>downloadFolder</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: Folder where files will be downloaded while browsing</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value:  C:\ATP\DOWNLOAD</p>
+                                                </li>
+                                            </ul>
+                                            <h3>New parameters delivered with version Sage X3 Automated Test 2.4.0</h3>
+                                            <p><strong>userStoredValuesFile</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: User custom values file location</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: cucumber-user-config/samples/samples-user-stored-values</p>
+                                                </li>
+                                            </ul>
+                                            <h3>New parameters delivered with version Sage X3 Automated Test 2.7.0</h3>
+                                            <p><strong>UpdateATPX3</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: bollean parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: ATP / X3 Framework will be updated to the latest version.</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: unticked</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>JENKINS_NODE</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: Jenkins node(s) to run ATP tests. To run on the Built-In Node use label "built-in"</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value:</p>
+                                                </li>
+                                            </ul>
+                                            <h3>New parameters delivered with version Sage X3 Automated Test 3.0.0</h3>
+                                            <p><strong>timeout</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: Selenium timeouts (implicit)</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: 10000</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>timeoutLocks</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description : timeout maximum to lock test</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: 240000</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>timeoutPrints</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: timeout maximum to print report in X3.</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: 120000</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>timeoutWaitfor</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: WebdriverIO related timeouts</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: 200000</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>timeoutCucumber</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: Cucumber maximum timeout</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: 300000</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>allurePDFPrint</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: Boolean parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: Print Allure report as a PDF</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: unticked</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>allurePDFName</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type: string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description: PDF Report title and file name</p>
+                                                </li>
+                                                <li>
+                                                    <p>trim the string: yes</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: Allure-PDF-report</p>
+                                                </li>
+                                            </ul>
+                                            <p><strong>allurePDFPath</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <p>type : string parameter</p>
+                                                </li>
+                                                <li>
+                                                    <p>description; Path to export report PDF to. Accepts Windows or Linux style relative or literal paths.</p>
+                                                </li>
+                                                <li>
+                                                    <p>default value: allure-pdf</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Previous</span>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Next">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Next</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">17 November 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

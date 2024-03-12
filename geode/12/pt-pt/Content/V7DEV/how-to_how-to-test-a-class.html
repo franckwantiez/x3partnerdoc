@@ -1,0 +1,745 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="How to test a class" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> How to test a class
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="Howtotestaclass" data-magellan-target="Howtotestaclass"> How to test a class
+</h1>
+                                                <p><strong>The best development practices include the design of test cases. For every persistent class, the development partner must create a test case to check that everything is functioning correctly, while invoking standard or additional methods used in the class declaration.</strong>
+                                                </p>
+                                                <p>The purpose of this test case is not only to verify that all methods work well with the correct data, but also to examine various error cases and make sure that errors are handled correctly. Before reading this document, it is recommended that you read the <a href="how-to_how-to-use-axunit.html">How to use AXUNIT</a> document. </p>
+                                                <p>A test case consists of a normalized script. A specific chart for naming the test scripts is described in the <a href="how-to_how-to-naming.html">How to Naming Rule</a> document. For example, a test script on a given persistent class called 'MYCLASS' in the functional domain 'FDO' could be called 'QLF_FDO_MYCLASS'.</p>
+                                                <p>The different sections of the scripts and the main considerations about how they must be defined are explained in this document.</p>
+                                                <h2 id="Establishthedatausedbythetest" data-magellan-target="Establishthedatausedbythetest">Establish the data used by the test</h2>
+                                                <blockquote>
+                                                    <h2 id="Maindatarequired" data-magellan-target="Maindatarequired">Main data required</h2>
+                                                    <p>Minimum data is necessary to execute the test. For example, customers, items, and currencies might be a prerequisite for the test of methods associated with the sales order.</p>
+                                                    <p>Two alternatives are available to provide necessary:</p>
+                                                    <ul>
+                                                        <li>Data description is documented (as comments). In this case, the development partner must ensure the presence of the right data set in the different environments where the test must be conducted. There might be some data present in the SEED folder that will be copied in all the environments where non-regression tests must be executed.</li>
+                                                        <li>Data must be created during the test. This can be part of the automated test for the corresponding data as a sub-program in the test case. If a customer is required, a good practice is to call at the beginning of the test case the 'SETUP' sub-program of the test data script associated with the customer class.</li>
+                                                    </ul>
+                                                    <h2 id="Cleaningthedatabeforestartingthetest" data-magellan-target="Cleaningthedatabeforestartingthetest">Cleaning the data before starting the test</h2>
+                                                    <p>In the 'SETUP' sub-program, a procedure that cleans the data should be written. Because an automated test is likely to fail, this cleaning sub-program:</p>
+                                                    <ul>
+                                                        <li>Must delete the data created during the test.</li>
+                                                        <li>Must be called at the beginning and not at the end. A cleaning at the end of test could not be performed in case of test failure.</li>
+                                                        <li>Must not consider that a cleaning error (remaining data) is a failure of the cleaning procedure.</li>
+                                                    </ul>
+                                                </blockquote>
+                                                <h2 id="Writethetestexecutionlines" data-magellan-target="Writethetestexecutionlines">Write the test execution lines</h2>
+                                                <p>Test execution lines are written using the 'TESTSUITE' function. It is called by the 'AXUNIT' tool from every 'QLF*' script to execute the test.</p>
+                                                <p>In the 'TESTSUITE' function, the following sub-programs are called:</p>
+                                                <ul>
+                                                    <li>'TESTSUITE_START' From 'AXUNIT' to describe the test suite.</li>
+                                                    <li>'ADD_TESTCASE' Fom 'AXUNIT' to add the list of test cases to be initiated.</li>
+                                                    <li>'RUN_TESTSUITE' From 'AXUNIT' to run the test.</li>
+                                                </ul>
+                                                <p>Every test sub-program added by 'ADD_TESTCASE' has a name. For a persistent class, the name of the test sub-program can be:</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Test Case sub-program name</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Use</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">MYCLASS_CREATE</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Creation of a class instance</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">MYCLASS_READ</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Read operation on a class instance</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">MYCLASS_UPDATE</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Update of a class instance</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">MYCLASS_MYMETHOD</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Test of the Method 'MYMETHOD'</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">MYCLASS_MYPROP_PROPAGATE</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Test of the propagation rule on 'MYPROP' property</td>
+                                                    </tr>
+                                                </table>
+                                                <p>When complex documents with headers and lines are created, it is important to test all the operations on the child classes, including the insertion and deletion of lines.</p>
+                                                <p>The beginning of the test script looks like the example below:</p><pre xml:space="preserve"><code>CODECODE CODEsh
+#**
+#* The main entry point of the unit test suite
+#*
+#*!
+Funprog TESTSUITE()
+# Start the test suite
+Call TESTSUITE_START("MYCLASS", "MYCLASS test") From AXUNIT
+# Call the different test cases
+Call ADD_TESTCASE("MYCLASS_CREATION","Creation of MYCLASS with errors check",0) From AXUNIT
+Call ADD_TESTCASE("MYCLASS_READ","Read MYCLASS",0) From AXUNIT
+Call ADD_TESTCASE("MYCLASS_UPDATE","Update MYCLASS",0) From AXUNIT
+Call ADD_TESTCASE("MYCLASS_DELETE","Deletion MYCLASS",0) From AXUNIT
+# Run the test and return the result
+Local Clbfile RESULT_SUITE
+  RESULT_SUITE=func AXUNIT.RUN_TESTSUITE("MYCLASS","MYCLASS test")
+End RESULT_SUITE</code></pre>
+                                                <br />In the different test cases, to check if the result expected is the right one, the 'CHECK_EQUAL', 'CHECK_NOTEQUAL', 'CHECK_TRUE', 'CHECK_FALSE'... sub-programs from "AXUNIT" must be used.
+The 'MYCLASS_CREATE' sub-program should look like the example below:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Creation subprogram
+Subprog MYCLASS_CREATION()
+Local Integer ASTATUS
+Local Instance MYINST01 Using C_MYCLASS
+# Instantiate the class
+MYINST01 = NewInstance C_MYCLASS AllocGroup Null
+# Assign all the properties but with some errors (repeat it several times with various error cases)
+  MYINST01.PROP1 = ...
+  MYINST01.PROP2 = ...
+  ...
+  MYINST01.PROPN = ...
+  [L]ASTATUS = fmet MYINST01.AINSERT()
+  Call CHECK_EQUAL([L]ASTATUS,[V]CST_AERROR) From AXUNIT
+...
+# Assign correctly the elements to have successful creations
+  MYINST01.PROP1 = ...
+  MYINST01.PROP2 = ...
+  ...
+  MYINST01.PROPN = ...
+  [L]ASTATUS = fmet MYINST01.AINSERT()
+  Call CHECK_EQUAL([L]ASTATUS,[V]CST_AOK) From AXUNIT
+# Check also if necessary the values of some properties if they are computed at insertion
+  Call CHECK_EQUAL(MYINST01.PROP1,"EXPECTED_VALUE") From AXUNIT
+# Repeat other creation cases if necessary
+...
+# End of test
+  FreeGroup MYINSTA01
+End</code></pre><h2 id="Completeexample" data-magellan-target="Completeexample">Complete example</h2><p>A complete example of a test program for the classes created in the <a href="how-to_how-to-crud-3-levels.html">CRUD example</a> is provided below.</p><h2 id="TheMainroutine" data-magellan-target="TheMainroutine">The Main routine</h2><p>The code for the main routine is shown below. This routine starts the job and calls the different test cases, which are:</p><ul><li>An Insertion of an entity (54 unit tests)</li><li>A Read operation on the entity (77 unit tests)</li><li>An Update operation on the entity (11 unit tests)</li><li>An execution of an operation (2 unit tests)</li><li>An execution of a Delete operation (5 unit tests).</li></ul>
+The lines are as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+#**
+#* The main entry point of the unit test suite
+#*
+#*!
+Call TESTSUITE
+End
+Funprog TESTSUITE()
+# Start the test suite
+  Call TESTSUITE_START("YORDER", "YORDER test") From AXUNIT
+# Call the different test cases
+  Call ADD_TESTCASE("YORDER_AINSERT","Creation of YORDER with errors check",54) From AXUNIT
+  Call ADD_TESTCASE("YORDER_AREAD","Check YORDER previously created",77) From AXUNIT
+  Call ADD_TESTCASE("YORDER_AUPDATE","Check YORDER update",11) From AXUNIT
+  Call ADD_TESTCASE("YORDER_YVALIDATE","Check YORDER validation operation",2) From AXUNIT
+  Call ADD_TESTCASE("YORDER_ADELETE","Check YORDER deletion",5) From AXUNIT
+# Run the test and return the result
+Local Clbfile RESULT_SUITE
+  RESULT_SUITE=func AXUNIT.RUN_TESTSUITE("YORDER","YORDER test")
+End RESULT_SUITE</code></pre><h2 id="TheInsertiontest" data-magellan-target="TheInsertiontest">The Insertion test</h2><p>This routine creates an order of several steps:</p><ul><li>The instance is created. At this point, a temporary hack has been added because the mandatory constraints are not updated by the class constructor, but this will evolve in the near future.</li><li>Lines and sub-lines are added by using the 'ADDLINE' method at different levels.</li><li>A first insertion is tried but it fails due to an unfilled mandatory information. A detailed log provides a list of all the detected errors.</li><li>A call to an internal method is done to cancel all the errors (this will also change in the future). Otherwise, it would be necessary to re-instantiate a class and fill all the properties again.</li><li>The order number is updated at the header level, a test is done to verify that the lines and sub-lines values have been propagated.</li><li>A second unsuccessful insertion attempt is performed (still some mandatory values missing).</li><li>Errors are written in the log again, and then cancelled. The missing values are filled and a final successful insertion is performed.</li><li>The computation price is verified.</li></ul>
+The code for the Insertion routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Create an order
+Subprog YORDER_AINSERT
+Local Instance MYORDER Using C_YORDER
+Local Integer I,J,K,L,OK
+Local Decimal TOTAL_PRICE
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+# Double loop on lines and sub-lines
+# The total price is computed on the fly to be able to perform a consistency check
+  TOTAL_PRICE=0
+# 5 lines inserted
+  For I=1 To 5
+    J=fmet MYORDER.ADDLINE("YOD",[V]CST_ALASTPOS)
+    Call LOG_LINE("Result of ADDLIN I="+num$(I)) From AXUNIT
+    Call CHECK_TRUE(J&gt;=0) From AXUNIT
+    # We use existing items coded "BMSMN0020x" where x varies from 3 to 8
+    MYORDER.YOD(J).YITM="BMSMN0020"+num$(2+I)
+#   4 sub-lines inserted for every line
+    For L=1 To 4
+      K=fmet MYORDER.YOD(J).ADDLINE("YOL",[V]CST_ALASTPOS)
+      Call LOG_LINE("Result of ADDLIN L="+num$(L)) From AXUNIT
+      Call CHECK_TRUE(K&gt;=0) From AXUNIT
+      # We use successively the units "UN","TEN","CAR","PAC"
+      MYORDER.YOD(J).YOL(K).YUNIT=vireblc(mid$("UN TENCARPAC",3*L-2,3),2)
+      MYORDER.YOD(J).YOL(K).YQTY=I*L
+      MYORDER.YOD(J).YOL(K).YUNITPRICE=5+L
+      TOTAL_PRICE+=(I*L)*(5+L)
+    Next L
+  Next I
+# A lot of mandatory properties have no value : LOG_ERRORS will dump them
+  OK=fmet MYORDER.AINSERT
+  Call LOG_LINE("Result of AINSERT") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AERROR) From AXUNIT
+  Call LOG_ERRORS(MYORDER)
+# Assigning the order number here will propagate
+  MYORDER.YORDNUM="314159"
+# Check the propagation
+  Call LOG_LINE("Propagate checks") From AXUNIT
+  For I=1 To 5
+    For J=1 To 4
+      Call CHECK_EQUAL(MYORDER.YOD(I).YOL(J).YORDNUM,MYORDER.YORDNUM) From AXUNIT
+    Next J
+    Call CHECK_EQUAL(MYORDER.YOD(I).YORDNUM,MYORDER.YORDNUM) From AXUNIT
+  Next I
+# Still a lot of mandatory properties have no value
+  OK=fmet MYORDER.AINSERT
+  Call LOG_LINE("Result of AINSERT") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AERROR) From AXUNIT
+  Call LOG_ERRORS(MYORDER)
+# Now let's assign the missing mandatory values
+# Customer code, sales rep code and currency code are supposed to exist
+  MYORDER.YBPC="BPC-000003"
+  MYORDER.YREP="REPRE004"
+  MYORDER.YORDDAT=[09/05/2002]
+  MYORDER.YCUR='EUR'
+  MYORDER.YSTATUS=1
+  OK=fmet MYORDER.AINSERT
+# Check if the creation is OK
+  Call LOG_LINE("Checks the insertion when everything is OK") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+  Call LOG_LINE("Checks the total price computation") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YTOTAL,TOTAL_PRICE) From AXUNIT
+  FreeGroup MYORDER
+End</code></pre><h2 id="TheReadtest" data-magellan-target="TheReadtest">The Read test</h2><p>This routine reads the previous order and performs the following verifications:</p><ul><li>The return value of 'AREAD' is OK.</li><li>The header properties have the expected values.</li><li>The lines and sub-lines properties have the right values.</li><li>The total price is verified.</li></ul>
+The code for the Read routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+Subprog YORDER_AREAD
+Local Instance MYORDER Using C_YORDER
+Local Integer I,J,K,L,M,N,OK
+Local Decimal TOTAL_PRICE
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+  OK=fmet MYORDER.AREAD("314159")
+  Call LOG_LINE("Checks the AREAD method") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+  Call LOG_LINE("Verify the values read") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YBPC,"BPC-000003") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YREP,"REPRE004") From AXUNIT
+  Call CHECK_EQUAL(num$(MYORDER.YORDDAT),"09/05/2002") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YCUR,'EUR') From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YSTATUS,1) From AXUNIT
+  Call LOG_LINE("Verify the lines and sub-lines values read") From AXUNIT
+  K=0
+  For I=1 To maxtab(MYORDER.YOD)
+    If MYORDER.YOD(I)&lt;&gt;null
+      J+=1
+      K=MYORDER.YOD(I).AORDER
+      Call CHECK_EQUAL(MYORDER.YOD(I).YITM,"BMSMN0020"+num$(2+K)) From AXUNIT
+      Call CHECK_EQUAL(MYORDER.YOD(I).YPRICE,sigma(1,4,K*indcum*(5+indcum))) From AXUNIT
+      For L=1 To maxtab(MYORDER.YOD(I).YOL)
+        M=0
+        If MYORDER.YOD(I).YOL(L)&lt;&gt;null
+          M+=1
+          N=MYORDER.YOD(I).YOL(L).AORDER
+          Call CHECK_EQUAL(MYORDER.YOD(I).YOL(L).YUNIT,vireblc(mid$("UN TENCARPAC",3*N-2,3),2)) From AXUNIT
+          Call CHECK_EQUAL(MYORDER.YOD(I).YOL(L).YQTY,K*N) From AXUNIT
+          Call CHECK_EQUAL(MYORDER.YOD(I).YOL(L).YUNITPRICE,5+N) From AXUNIT
+          TOTAL_PRICE+=(5+N)*K*N
+        Endif
+      Next L
+    Endif
+  Next I
+  Call LOG_LINE("Verify the total price read") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YTOTAL,TOTAL_PRICE) From AXUNIT
+  FreeGroup MYORDER
+End</code></pre><h2 id="TheUpdatetest" data-magellan-target="TheUpdatetest">The Update test</h2><p>This routine reads the previous order and performs the following updates:</p><ul><li>Deletion of a sub-line</li><li>Insertion of a sub-line</li><li>Modification of a line</li><li>Deletion of a line</li><li>Update of the document</li><li>Verification of the total (lines and header)</li></ul>
+The code of the Update routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# The update test
+Subprog YORDER_AUPDATE
+Local Instance MYORDER Using C_YORDER
+Local Integer I,J,K,L,M,N,OK
+Local Decimal TOTAL_PRICE, LINE_PRICE
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+  OK=fmet MYORDER.AREAD("314159")
+  Call LOG_LINE("Checks the AREAD method") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Different modifications will be done here:
+# Get the 2nd line, then the 2nd sub-line of this line, and delete it
+  Call LOG_LINE("Checks an insertion at level 2") From AXUNIT
+  I=fmet MYORDER.AGETINDBYLINE("YOD",2)
+  OK=fmet MYORDER.YOD(I).ADELLINE("YOL",2)
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Get the 4th line, then insert a line at the third position of the sub-lines
+  Call LOG_LINE("Checks an insertion of a sub-line") From AXUNIT
+  I=fmet MYORDER.AGETINDBYLINE("YOD",4)
+  J=fmet MYORDER.YOD(I).ADDLINE("YOL",3)
+  Call LOG_LINE("Checks an insertion of a sub-line"-num$(J)) From AXUNIT
+  Call CHECK_NOTEQUAL(J,[V]CST_ANOTDEFINED) From AXUNIT
+  MYORDER.YOD(I).YOL(J).YUNIT="TEN"
+  MYORDER.YOD(I).YOL(J).YQTY=3
+  MYORDER.YOD(I).YOL(J).YUNITPRICE=16
+# Get the 5th line, then modify the 4th sub-line
+  Call LOG_LINE("Checks a modification of a sub-line") From AXUNIT
+  I=fmet MYORDER.AGETINDBYLINE("YOD",5)
+  J=fmet MYORDER.YOD(I).AGETINDBYLINE("YOL",4)
+  Call CHECK_NOTEQUAL(J,[V]CST_ANOTDEFINED) From AXUNIT
+  MYORDER.YOD(I).YOL(J).YUNIT="TEN"
+  MYORDER.YOD(I).YOL(J).YQTY=10
+  MYORDER.YOD(I).YOL(J).YUNITPRICE=43
+# Delete the 3rd line
+  Call LOG_LINE("Checks a deletion on a line") From AXUNIT
+  OK=fmet MYORDER.ADELLINE("YOD",3)
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Update the order
+  Call LOG_LINE("Checks the update") From AXUNIT
+  OK=fmet MYORDER.AUPDATE
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+  Call LOG_LINE("Verify the lines and sub-lines values after update") From AXUNIT
+  # K is the grand total, and L the total of every line (cumulated sub-lines)
+  TOTAL_PRICE=0
+  For I=1 To maxtab(MYORDER.YOD)
+    If MYORDER.YOD(I)&lt;&gt;null
+      If find(MYORDER.YOD(I).ASTALIN,[V]CST_ADEL, [V]CST_ANEWDEL)=0
+        LINE_PRICE=0
+        For J=1 To maxtab(MYORDER.YOD(I).YOL)
+          If MYORDER.YOD(I).YOL(J)&lt;&gt;null
+            If find(MYORDER.YOD(I).YOL(J).ASTALIN,[V]CST_ADEL, [V]CST_ANEWDEL)=0
+              LINE_PRICE+=MYORDER.YOD(I).YOL(J).YQTY*MYORDER.YOD(I).YOL(J).YUNITPRICE
+            Endif
+          Endif
+        Next J
+        TOTAL_PRICE+=LINE_PRICE
+        Call LOG_LINE("Verify the total price of line"-num$(I)) From AXUNIT
+        Call CHECK_EQUAL(MYORDER.YOD(I).YPRICE,LINE_PRICE) From AXUNIT
+      Endif
+    Endif
+  Next I
+  Call LOG_LINE("Verify the total price read") From AXUNIT
+  Call CHECK_EQUAL(MYORDER.YTOTAL,TOTAL_PRICE) From AXUNIT
+  FreeGroup MYORDER
+End</code></pre><h2 id="TheOperationtest" data-magellan-target="TheOperationtest">The Operation test</h2><p>This routine performs an operation (YVALIDATE) that can return a warning if it has already been performed.</p><ul><li>A first call is performed and the return status is checked.</li><li>A second call is performed and the return must be a warning.</li></ul>
+The code of the operation routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Validate an order
+Subprog YORDER_YVALIDATE
+Local Instance MYORDER Using C_YORDER
+Local Integer OK
+# Instantiate the order
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+# First time, it will work
+  Call LOG_LINE("Verify the order validation result") From AXUNIT
+  OK=fmet MYORDER.YVALIDATE("314159")
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Do it again : a warning is expected
+  Call LOG_LINE("Verify the order validation result with warning") From AXUNIT
+  OK=fmet MYORDER.YVALIDATE("314159")
+  Call CHECK_EQUAL(OK,[V]CST_AWARNING) From AXUNIT
+  FreeGroup MYORDER
+ End</code></pre><h2 id="TheDeletiontest" data-magellan-target="TheDeletiontest">The Deletion test</h2><p>This routine performs a deletion:</p><ul><li>First, the instance is read.</li><li>Then a first attempt is done: it fails because the order has been validated by the previous test.</li><li>The validation flag is updated by a direct database update.</li><li>A second call is done that must succeed.</li><li>A call is done to the cleaning function that returns the number of deleted databases (must be 0).</li></ul>
+The code for the Operation routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Delete an order
+Subprog YORDER_ADELETE
+Local Instance MYORDER Using C_YORDER
+Local Integer OK
+# Instantiate the order
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+# Read the order
+  OK=fmet MYORDER.AREAD("314159")
+  Call LOG_LINE("Verify the order exists") From AXUNIT
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# As this order is validated, it cannot be deleted
+  Call LOG_LINE("Verify the order cannot be deleted") From AXUNIT
+  OK=fmet MYORDER.ADELETE
+  Call CHECK_EQUAL(OK,[V]CST_AERROR) From AXUNIT
+# Clean up the class
+  FreeGroup MYORDER
+  MYORDER=NewInstance C_YORDER AllocGroup Null
+# Now let's invalidate the order
+  Local File YORDER
+  Trbegin [YOH]
+  Update [YOH] Where YORDNUM="314159" With YSTATUS=1
+  Commit
+# Read the order again
+  Call LOG_LINE("Read the order again") From AXUNIT
+  OK=fmet MYORDER.AREAD("314159")
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Do it again : it should be OK
+  Call LOG_LINE("Verify the order has been deleted") From AXUNIT
+  OK=fmet MYORDER.ADELETE
+  Call CHECK_EQUAL(OK,[V]CST_AOK) From AXUNIT
+# Verify that nothing remains
+  Call LOG_LINE("Verify that the lines in the database have been deleted") From AXUNIT
+  OK=func CLEANUP("314159")
+  Call CHECK_EQUAL(OK,0) From AXUNIT
+  FreeGroup MYORDER
+ End</code></pre><h2 id="Thecleanupfunction" data-magellan-target="Thecleanupfunction">The clean-up function</h2><p>This function deletes the header, lines, and sub-lines associated with a key value and returns the number of lines deleted. It is called in the previous test and in the 'SETUP' sub-program. This 'SETUP' sub-program is automatically called by the unit test framework at the beginning of a test to ensure that no remaining data is likely to hinder the normal test operation.</p>
+The code for the Operation routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Delete the order and count the number of deleted lines
+Funprog CLEANUP(NUMYOH)
+Value Char NUMYOH
+Local Integer I
+Local File YORDER,YORDERLINE,YORDERSUBLIN
+Trbegin [YOH],[YOD],[YOL]
+  Delete [YOH] Where YORDNUM=NUMYOH
+  I+=adxdlrec
+  Delete [YOD] Where YORDNUM=NUMYOH
+  I+=adxdlrec
+  Delete [YOL] Where YORDNUM=NUMYOH
+  I+=adxdlrec
+  Commit
+End I
+Subprog SETUP
+Local Integer I
+I=func CLEANUP("314159")
+End</code></pre><h2 id="Additionalsubprograms" data-magellan-target="Additionalsubprograms">Additional sub-programs</h2><p>Some routines have been added at the end of the test. The following routines are available:</p><ul><li>A function "ADELERRORS" deletes the errors by using an internal routine. This is temporary, a permanent method will be supplied later.</li><li>A "LOG_ERROR" sub-program goes through the error hierarchy to get the errors. A standard method exists for this task, but the generated standard log is not detailed enough.</li><li>A "LINE_LOG" sub-program handles an error line in the log.</li></ul>
+The code for the Operation routine is as follows:<pre xml:space="preserve"><code>CODECODE CODEsh
+# Will be replaced later
+Funprog ADELERRORS(MYCLASS)
+Value Instance MYCLASS Using C_YORDER
+End MYCLASS._ADELERRORS("+")
+Subprog LOG_ERRORS(MYORDER)
+Value Instance MYORDER Using C_YORDER
+Local Integer IFERROR,I,J
+# Errors on the header
+  For I=1 To maxtab(MYORDER.AERROR)
+    If MYORDER.AERROR(I)&lt;&gt;null
+      Call LINE_LOG("Header",MYORDER.AERROR(I),IFERROR)
+    Endif
+  Next I
+# Errors on the lines
+  For I=1 To maxtab(MYORDER.YOD)
+    If MYORDER.YOD(I)&lt;&gt;null
+      For J=1 To maxtab(MYORDER.YOD(I).AERROR)
+        If MYORDER.YOD(I).AERROR(J)&lt;&gt;null
+          Call LINE_LOG("Line"-num$(MYORDER.YOD(I).AORDER),MYORDER.YOD(I).AERROR(J),IFERROR)
+        Endif
+      Next J
+      For K=1 To maxtab(MYORDER.YOD(I).YOL)
+        If MYORDER.YOD(I).YOL(K)&lt;&gt;null
+          For J=1 To maxtab(MYORDER.YOD(I).YOL(K).AERROR)
+            If MYORDER.YOD(I).YOL(K).AERROR(J)&lt;&gt;null
+              Call LINE_LOG("Sub-Line ("+num$(MYORDER.YOD(I).AORDER)+","+num$(MYORDER.YOD(I).YOL(K).AORDER)+")",
+&amp;                           MYORDER.YOD(I).YOL(K).AERROR(J),IFERROR)
+            Endif
+          Next J
+        Endif
+      Next K
+    Endif
+  Next I
+End
+Subprog LINE_LOG(MES1,ERRINS,IFERROR)
+Value Char MES1()
+Value Instance ERRINS Using C_AERROR
+Variable Integer IFERROR
+Local Char MESSAGE(250)
+  If IFERROR=0
+    Call LOG_LINE("*** Errors dump ***") From AXUNIT
+    IFERROR=1
+  Endif
+   MESSAGE=MES1
+   If ERRINS.PRO="" : MESSAGE-="(Global)"
+   Else               MESSAGE-="["+ERRINS.PRO+"]"
+   Endif
+   MESSAGE-=":"-ERRINS.MES
+   Call LOG_LINE(MESSAGE) From AXUNIT
+End</code></pre><h2 id="Thegeneratedlogfile" data-magellan-target="Thegeneratedlogfile">The generated log file</h2><p>Part of the 285 lines produced by the test are provided below as an example:</p><p>```<br />CODECODE CODE<br />2013-03-07T16:18:36.983: Start suite - QLFYDOM_Y1 - YORDER - YORDER test</p><p>2013-03-07T16:18:36.987: Start test case - Creation of YORDER with errors check<br />2013-03-07T16:18:36.999: Result of ADDLIN I=1<br />2013-03-07T16:18:37.027: Result of ADDLIN L=1<br />2013-03-07T16:18:37.077: Result of ADDLIN L=2<br />2013-03-07T16:18:37.090: Result of ADDLIN L=3<br />2013-03-07T16:18:37.103: Result of ADDLIN L=4<br />2013-03-07T16:18:37.117: Result of ADDLIN I=2<br />2013-03-07T16:18:37.127: Result of ADDLIN L=1<br />2013-03-07T16:18:37.138: Result of ADDLIN L=2<br />.....<br />2013-03-07T16:18:37.392: Result of ADDLIN L=4<br />2013-03-07T16:18:37.465: Result of AINSERT<br />2013-03-07T16:18:37.466: <strong>* Errors dump <em></em></strong><br />2013-03-07T16:18:37.466: Header [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.467: Header [YBPC] : Mandatory field<br />2013-03-07T16:18:37.467: Header [YREP] : Mandatory field<br />2013-03-07T16:18:37.467: Header [YORDDAT] : Mandatory field<br />2013-03-07T16:18:37.468: Header [YCUR] : Mandatory field<br />2013-03-07T16:18:37.468: Line 1 [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.468: Sub-Line (1,1) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.469: Sub-Line (1,2) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.469: Sub-Line (1,3) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.470: Sub-Line (1,4) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.470: Line 2 [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.470: Sub-Line (2,1) [YORDNUM] : Mandatory field<br />.....<br />2013-03-07T16:18:37.477: Sub-Line (5,4) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.501: Propagate checks<br />2013-03-07T16:18:37.512: Result of AINSERT<br />2013-03-07T16:18:37.512: <strong><em></em> Errors dump *</strong><br />2013-03-07T16:18:37.512: Header [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.513: Header [YBPC] : Mandatory field<br />2013-03-07T16:18:37.513: Header [YREP] : Mandatory field<br />2013-03-07T16:18:37.513: Header [YORDDAT] : Mandatory field<br />2013-03-07T16:18:37.513: Header [YCUR] : Mandatory field<br />2013-03-07T16:18:37.514: Line 1 [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.514: Sub-Line (1,1) [YORDNUM] : Mandatory field<br />2013-03-07T16:18:37.514: Sub-Line (1,2) [YORDNUM] : Mandatory field<br />.....<br />2013-03-07T16:18:38.029: Checks the total price computation<br />1.1 - check isTrue - OK<br />1.2 - check isTrue - OK<br />1.3 - check isTrue - OK<br />1.4 - check isTrue - OK<br />1.5 - check isTrue - OK<br />1.6 - check isTrue - OK<br />1.7 - check isTrue - OK<br />1.8 - check isTrue - OK<br />1.9 - check isTrue - OK<br />......<br />1.24 - check isTrue - OK<br />1.25 - check isTrue - OK<br />1.26 - check equal - OK: 4<br />1.27 - check equal - OK: '314159'<br />1.28 - check equal - OK: '314159'<br />1.29 - check equal - OK: '314159'<br />1.30 - check equal - OK: '314159'<br />1.31 - check equal - OK: '314159'<br />1.32 - check equal - OK: '314159'<br />1.33 - check equal - OK: '314159'<br />......<br />1.51 - check equal - OK: '314159'<br />1.52 - check equal - OK: 4<br />1.53 - check equal - OK: 0<br />1.54 - check equal - OK: 1200</p><blockquote><p>0001 success=54, failure=0, elapsed=1044ms</p></blockquote><p>2013-03-07T16:18:38.030: Start test case - Check YORDER previously created<br />2013-03-07T16:18:38.251: Checks the AREAD method<br />2013-03-07T16:18:38.251: Verify the values read<br />2013-03-07T16:18:38.254: Verify the lines and sub-lines values read<br />2013-03-07T16:18:38.276: Verify the total price read<br />2.1 - check equal - OK: 0<br />2.2 - check equal - OK: 'BPC-000003'<br />2.3 - check equal - OK: 'REPRE004'<br />2.4 - check equal - OK: '09/05/2002'<br />2.5 - check equal - OK: 'EUR'<br />2.6 - check equal - OK: 1<br />2.7 - check equal - OK: 'BMSMN00203'<br />2.8 - check equal - OK: 80<br />......<br />2.76 - check equal - OK: 9<br />2.77 - check equal - OK: 1200</p><blockquote><p>0001 success=77, failure=0, elapsed=246ms</p></blockquote><p>2013-03-07T16:18:38.277: Start test case - Check YORDER update<br />2013-03-07T16:18:38.467: Checks the AREAD method<br />2013-03-07T16:18:38.468: Checks an insertion at level 2<br />2013-03-07T16:18:38.470: Checks an insertion of a sub-line<br />2013-03-07T16:18:38.484: Checks an insertion of a sub-line 5<br />2013-03-07T16:18:38.487: Checks a modification of a sub-line<br />2013-03-07T16:18:38.491: Checks a deletion on a line<br />2013-03-07T16:18:38.493: Checks the update<br />2013-03-07T16:18:38.758: Verify the lines and sub-lines values after update<br />2013-03-07T16:18:38.759: Verify the total price of line 1<br />2013-03-07T16:18:38.759: Verify the total price of line 2<br />2013-03-07T16:18:38.760: Verify the total price of line 4<br />2013-03-07T16:18:38.761: Verify the total price of line 5<br />2013-03-07T16:18:38.761: Verify the total price read<br />3.1 - check equal - OK: 0<br />3.2 - check equal - OK: 0<br />3.3 - check notEqual - OK: 5<br />3.4 - check notEqual - OK: 4<br />3.5 - check equal - OK: 0<br />.......<br />3.11 - check equal - OK: 1230</p><blockquote><p>0001 success=11, failure=0, elapsed=485ms</p></blockquote><p>2013-03-07T16:18:38.763: Start test case - Check YORDER validation operation<br />2013-03-07T16:18:38.764: Verify the order validation result<br />2013-03-07T16:18:38.809: Verify the order validation result with warning<br />4.1 - check equal - OK: 0<br />4.2 - check equal - OK: 3</p><blockquote><p>0001 success=2, failure=0, elapsed=50ms</p></blockquote><p>2013-03-07T16:18:38.812: Start test case - Check YORDER deletion<br />2013-03-07T16:18:38.952: Verify the order exists<br />2013-03-07T16:18:38.952: Verify the order cannot be deleted<br />2013-03-07T16:18:38.964: Read the order again<br />2013-03-07T16:18:39.099: Verify the order has been deleted<br />2013-03-07T16:18:39.324: Verify that the lines in the database have been deleted<br />5.1 - check equal - OK: 0<br />5.2 - check equal - OK: 4<br />5.3 - check equal - OK: 0<br />5.4 - check equal - OK: 0<br />5.5 - check equal - OK: 0</p><blockquote><p>0001 success=5, failure=0, elapsed=516ms<br />2013-03-07T16:18:39.329: QLFYDOM_Y1 - YORDER - 5 Succeed, 0 Failed, 2354ms elapsed<br />Trace has been written to '....../TRA/QLFYDOM_Y1_DOM.tra'<br />JSON result is available at: <a href="../">http://.../TMP/QLFYDOM_Y1_DOM.json</a><br />```</p></blockquote><br /></div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Howtotestaclass"> How to test a class
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Establishthedatausedbythetest">Establish the data used by the test</a>
+                                                        </li>
+                                                        <li><a href="#Maindatarequired">Main data required</a>
+                                                        </li>
+                                                        <li><a href="#Cleaningthedatabeforestartingthetest">Cleaning the data before starting the test</a>
+                                                        </li>
+                                                        <li><a href="#Writethetestexecutionlines">Write the test execution lines</a>
+                                                        </li>
+                                                        <li><a href="#Completeexample">Complete example</a>
+                                                        </li>
+                                                        <li><a href="#TheMainroutine">The Main routine</a>
+                                                        </li>
+                                                        <li><a href="#TheInsertiontest">The Insertion test</a>
+                                                        </li>
+                                                        <li><a href="#TheReadtest">The Read test</a>
+                                                        </li>
+                                                        <li><a href="#TheUpdatetest">The Update test</a>
+                                                        </li>
+                                                        <li><a href="#TheOperationtest">The Operation test</a>
+                                                        </li>
+                                                        <li><a href="#TheDeletiontest">The Deletion test</a>
+                                                        </li>
+                                                        <li><a href="#Thecleanupfunction">The clean-up function</a>
+                                                        </li>
+                                                        <li><a href="#Additionalsubprograms">Additional sub-programs</a>
+                                                        </li>
+                                                        <li><a href="#Thegeneratedlogfile">The generated log file</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 fevereiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

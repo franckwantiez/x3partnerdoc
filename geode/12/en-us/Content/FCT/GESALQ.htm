@@ -1,0 +1,890 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="Home|Product help|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Creation,Query,Object" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="SQL query tool" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>SQL query tool</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div class="nocontent">
+                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                                </div>
+                                            </div>
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="SQLquerytool" data-magellan-target="SQLquerytool"><span>SQL query tool</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>The softwares in SAFE X3 technology include a <a href="GESALH.htm">query tool</a> that is used to create inquiry screens from queries expressed in the form of a list of fields obtained from the tables in the database, these tables being linked either by default or by explicitly named links. This approach makes it possible for a user to rapidly create queries without using a specific query language, by having a simple understanding of the tables in the database, knowledge that can be aided by the use of the technical documentation (notably MCD). In addition it provides a user friendly inquiry interface in the multi-column screens with the availability of using a tunnel.</p>
+                                                            <p>This query tool nevertheless has several limitations, for example with respect to complex queries that cannot be strictly expressed in the form of a list of fields. Thus, for users that have more technical ability and an understanding of the SQL language, this query tool does not easily give the desired results.</p>
+                                                            <p>It is for this reason that an additional tool has been created, the SQL query tool, which is used to express queries by using classic SQL language. This SQL query tool is only distinguishable from the previous query tool by its setup screen. In fact, the screens created by this query tool are called by the same <a href="EXEALH.htm">request execution</a> function as that used by the standard query tool.</p>
+                                                            <p>This signifies that, like the standard query tool, the SQL query tool functions by the temporary extraction of data from a table (the same as the classic query tool), then by consultation of this table. However, the inquiry can only be carried out on one level, breaks and totals not being possible at this level.</p>
+                                                            <p>Similarly to the classic query tool, the structure of this temporary table means that each user conserves the results of the last request carried out in it and the use of this functionality includes three different steps:</p>
+                                                            <ul>
+                                                                <li>definition of the request by this function, then Validation in order to create the corresponding inquiry screen.</li>
+                                                                <li>launch of the query (either using the&#160;<input type="button" value="Exécution" />button, or by using the interrogation function and the data refresh request).</li>
+                                                                <li>inquiry of the query if it has already been executed.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prerequisite" data-magellan-target="Prerequisite">Prerequisite</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Refer to documentation  <a href="PRQ_AFC_GESALQ.htm#PRQ">Implementation</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Screenmanagement" data-magellan-target="Screenmanagement">Screen management</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#INC_40_100">Header</a>
+                                                                        </li>
+                                                                        <li><a href="#ON1">Tab Setups</a>
+                                                                        </li>
+                                                                        <li><a href="#INC_40_400">Tab Graphic</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div><a id="INC_40_100"></a>
+                                                                <h3 class="g1">Header</h3>
+                                                                <div id="desc_inc_40_100" class="ddesc" style="display: block;">
+                                                                    <p>The header provides information to identify the query and some setups of a general nature.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="inc_40_100" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 1</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Query (<a href="GESALH.htm">field COD</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+This code is used to identify a request.  
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Description (field INTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+[object Object]
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Short description (field INTITSHO)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This title, which describes the record, is used in some screens or records when there is not enough space to display the long title.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Active (field ENAFLG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Select this check box to activate the current record.</p>
+                                                                                            <p>Disabled records keep their content and setup but cannot be used by recalling their code:</p>
+                                                                                            <ul>
+                                                                                                <li>On other records such as documents and settings</li>
+                                                                                                <li>On mass processes</li>
+                                                                                            </ul>
+                                                                                            <p>The authorizations for a given function can prohibit the creation of an active record. In this case, the check box is disabled by default. It can only be modified by an authorized user or through a signature <a href="GESAWA.htm">workflow</a>.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Characteristics</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Query type (field ALLUSR)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to manage the display of a query in inquiry mode, with the following behaviors:</p>
+                                                                                            <ul>
+                                                                                                <li>Normal query: the result of the query is displayed if the query has already been viewed by the user. In effect, if the box is not checked, each user launching the query creates a set of data that belongs to them and which cannot be viewed by anyone else. </li>
+                                                                                                <li>Shared query: the result of the execution of this query by a user can be viewed by other users. Shared queries are useful in that when a large query is launched at a given moment by a single user, a group of users can then access the common information. It is recommended, for this type of query, that only one user can run the query, the others having inquiry access. In addition, it is preferable to run this type of query in batch mode if it is particularly large; the corresponding batch task code is called <i>CALALH</i>.</li>
+                                                                                                <li>Recalculated query: the result of the query is never displayed automatically. It is necessary to press on the button to refresh or enter the criteria. This type of query is interesting in that it makes it possible to avoid reloading data if they are known to become rapidly obsolete. </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Representation (field REPGRA)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This indicator defines the fashion in which the representation of the data will be made in the screen. The possibilities offered are as follows :</p>
+                                                                                            <ul>
+                                                                                                <li><em><strong>Character</strong></em> :&#160; the data is uniquely represented un the form of a grid.</li>
+                                                                                                <li><strong><em>Char. or Graph.</em></strong>&#160;: the data are presented in the form of one or to modes. The default mode is determined by the field <strong><em>Default display</em></strong> defined in the graphical parameters of the record.</li>
+                                                                                                <li><strong><em>Char. and Graph.</em></strong>&#160;: the data is presented in the both modes simultaneously. The graphical position &#160;with respect to the grid is determined by the field <strong><em>Position</em></strong> for the <em>Graph</em> tab.</li>
+                                                                                                <li><em><strong>Character</strong></em> :&#160; the data is uniquely presented in the form of a graph.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field OPTGRA</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to organize the relationship between the character and the graphic, when the presentation mode for the data allows both. According to the case :</p>
+                                                                                            <ul>
+                                                                                                <li>if the representation is <em><strong>Char or Graph</strong></em>, the default value is chosen for the representation.</li>
+                                                                                                <li>If the representation is <em><strong>Char&#160;and Graph</strong></em>, the position of the graph is given with respect to the data grid.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON1"></a>
+                                                                <h3 class="g1">Tab Setups</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>The first tab is used to enter the query and additional general parameters.</p>
+                                                                    <p>In the table called <em>Columns</em>, information to obtain a more precise presentation will be provided. Upon execution, the query returns a list of values which are loaded in the grid. When there is no further information:</p>
+                                                                    <ul>
+                                                                        <li>the grid columns do not have a title.</li>
+                                                                        <li>they have the type alphanumeric, numeric, they are dates without much details, depending of the data types returned.</li>
+                                                                    </ul>
+                                                                    <p>Moreover a fix SQL query does not have much interest. It is necessary to integrate the parameters which are to be entered at the moment of the launch. This is enabled by the grid entitled <em>Parameters</em>.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 1</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Report (<a href="GESARP.htm">field RPT</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the code of a report that will be associated with the <i>File / List</i> function from the query inquiry. If this is not entered, the report ALISTE is used, which will submit a default page format. It is possible to duplicate this generic report (in principle it will then only be necessary to modify the page format) to create reports perfectly defined for the query thus defined.</p>
+                                                                                            <p>The report code entered here can be associated with a set of print codes via the <a href="GESARX.htm">dedicated function</a>.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Function (<a href="GESAFC.htm">field FCTLNK</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to link the authorizations to access the query with those authorizations granted on the function.</p>
+                                                                                            <p>The principle is as follows: upon entering the query, it is checked that the linked fucntion is authorized to the user (for at least one site, if the authorization on said function is granted by site). This is checked <u>only in the case when this query is not shared</u>.</p>
+                                                                                            <p>In effect, if the query is shared, it is admitted that the authorizations of the person that run the query are applied and shared with all those that have the right to view it. It is therefore necessary to be very careful when defining the authorizations of the shared queries if they concern sensitive data. This is done using the access code located in this tab.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Access code (<a href="GESACS.htm">field ACS</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This access code makes it possible to prohibit access to the current record for some users.</p>
+                                                                                            <p>As a matter of fact, if the field is completed, only the users having this access code with read rights (respectively write rights) can view (respectively modify) the concerned record.</p>
+                                                                                            <p>The execution right controls who can execute the query in question (by refreshing the query or by modifying the parameters and then re-running it).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Number of lines (field NBRLIG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to define a logical number of lines by page in the inquiry screen generated by the query designer. If this number of lines exceeds the number of physical lines that can be displayed, a scrolling bar appears on the righthand side of the grid. Buttons located in the upper part of the screen will enable navigation between logical pages (view next, previous, last, first page). </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Maximum lines (field MAXLIG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>The maximum number of lines corresponds to a query parameter (<i>maxrows</i>) that stops the search once the number of lines meets the conditions that have been found in the database (these lines will then be sorted, but the database does not guarantee that the N lines found are the first N in the sort order). This represents an optimization used to limit the database load.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Group (field GRP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to make a classification criterion available for requests.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>No. fixed columns (field NBRCOL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Makes it possible to fix the first x columns of a grid in the case of horizontal paging.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Maximum times (field MAXTIM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Allows the stopping of the search after this period of time. (expressed in seconds) This makes it possible to avoid waiting too long a time, namely in the case where a new query is being set up.</p>
+                                                                                            <p><strong>Note</strong>: Contrary to the maximum number of lines, this information is not transmitted to the data base. The maximum time can be exceeded if the duration of the inquiry is too long. </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>SQL query</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field TEXTE</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>The request itself is then entered in the classic SQL form comprehensible by the database.</p>
+                                                                                            <p>Several notes on the subject of this request :</p>
+                                                                                            <ul>
+                                                                                                <li>Any <strong><em>Select</em></strong> request including complex ones can be written here, provided it return a field number less than the maximum admissible. </li>
+                                                                                                <li>it should be remembered that the NOMCHAMP(index) field, managed in the NOMTABLE table, is defined in the database like the NOMCHAMP_indice field in the NOMTABLE tables, index value 0, 1, 2... N-1, N being the dimension of the field.</li>
+                                                                                            </ul>
+                                                                                            <blockquote style="MARGIN-RIGHT: 0px;">
+                                                                                                <p>For example, it is possible to write :</p>
+                                                                                                <blockquote style="MARGIN-RIGHT: 0px;">
+                                                                                                    <p><strong>Select LOGIN_0, CHEF_2 From AUTILIS<br />Where USR_0 like %1%<br />Order by CREDAT_0</strong>
+                                                                                                    </p>
+                                                                                                </blockquote>
+                                                                                            </blockquote>
+                                                                                            <ul>
+                                                                                                <li>
+                                                                                                    <div style="MARGIN-RIGHT: 0px;">In a request of this type, it is possible to define the parameters using the syntax %N%, which refers to parameter number N defines in the parameters grid (%1% in the example above). These parameters will be entered by means of the<input type="button" value="Criteria" />button during the execution of the request.</div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Grid</a><i> Columns</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Description (field COLTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (<a href="GESATY.htm">field COLTYP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This <a href="GESATY.htm">data type</a> is used to specify how the data will be presented.. In the case of a local menu, specify the number of the local menu used. If the data type used is linked to an <a href="GESAOB.htm">object</a>, it will be possible to use a tunnel to the object management during the enquiry.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Menu (field COLNUM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to define a  <a href="TXT.htm">local menu</a> number to be used to present the numerical value of the corresponding column sent by the request. </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Graph type (field GRA)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This field can only be entered if the representation mode selected in the header is not <strong><em>Character</em></strong>. It is used to specify the fashion in which the graphical representation will be used.</p>
+                                                                                            <p>It can take the following values:</p>
+                                                                                            <ul style="MARGIN-RIGHT: 0px;">
+                                                                                                <li><strong><em>None</em></strong> or <strong><em>Label</em></strong> if the line field is of the type alphanumeric. The field using the value <strong><em>Label </em></strong>will be used as the graph title. Warning, only a line in the grid can take this value ; if it is already present on a line, it will be necessary to first modify the value of the line carrying the value <strong><em>Label</em> </strong>in order to return the value <em><strong>None</strong></em> before being able to assign this value to another line in the grid.</li>
+                                                                                                <li><strong><em>None</em></strong>, <strong><em>Value </em></strong>or <strong><em>Default </em></strong>if the field is of the type numeric. The rule is as follows :</li>
+                                                                                                <ul>
+                                                                                                    <li><strong><em>None</em></strong> signifies that the field will never be presented in the graph. </li>
+                                                                                                    <li>If the graph defined in the last tab is used to make several series appear, all the series corresponding to the fields marked <strong><em>Default </em></strong>will be displayed (provided they haven't already).</li>
+                                                                                                    <li>if the graph in the last tab is not used to make a series appear, the column corresponding to the first field marked <strong><em>Default </em></strong>will be displayed (this will be the first if none has been declared before).</li>
+                                                                                                </ul>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Representation (field REP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This field can only be entered :</p>
+                                                                                            <ul>
+                                                                                                <li>if the representation method chosen in the header is not <em><strong>Character</strong></em>.</li>
+                                                                                                <li>on the numeric fields where a value will be displayed.</li>
+                                                                                            </ul>
+                                                                                            <p>It is used to manage the graph combinations if the graphic type defined in the graphical parameters is used to make several series appear, independently of different types (it is ignored in other cases). In practice, the usable combinations are as follows :</p>
+                                                                                            <ul>
+                                                                                                <li>Type = <strong><em>Multi graph</em></strong>, Default graph=<strong><em>Lines</em></strong>, Representation=<strong><em>Multi</em></strong></li>
+                                                                                                <li>Type = <strong><em>Multi graph</em></strong>, Default graph=<strong><em>Bars</em></strong>, Representation=<strong><em>Multi</em></strong></li>
+                                                                                            </ul>
+                                                                                            <p>The rule is as follows :</p>
+                                                                                            <ul>
+                                                                                                <li><strong><em>Default </em></strong>signifies that the graphical presentation of the series corresponds to the default graph of the last tab (<strong><em>Bars</em></strong>, or <em><strong>Lines </strong></em>in this case).</li>
+                                                                                                <li><em><strong>Bar</strong></em>&#160;or <em><strong>Line</strong>&#160;</em>is used to force the corresponding presentation method in question.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Grid</a><i> Parameters</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Description (field PARTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>If this field is entered, a parameter where the title corresponds to this field can be entered before the execution of the request (using the button<input type="button" value="Criteria" />).</p>
+                                                                                            <p>This parameter can be used in the body of the request by means of the syntax %N%, where N is the corresponding line number in the parameters grid.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (<a href="GESATY.htm">field PARTYP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This <a href="GESATY.htm">data type</a> is used to facilitate the entry of the corresponding parameter. In fact, if a type is defined :</p>
+                                                                                            <ul>
+                                                                                                <li>the format controls are carried out.</li>
+                                                                                                <li>If the data type used is linked to an <a href="GESAOB.htm">object</a>, it is possible to use the corresponding selection window.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Menu (field PARNUM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Used to define a <a href="TXT.htm">local menu</a> number to be used to enter the parameter value.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Default value (field VALDEB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="INC_40_400"></a>
+                                                                <h3 class="g1">Tab Graphic</h3>
+                                                                <div id="desc_inc_40_400" class="ddesc" style="display: block;">
+                                                                    <p>This tab can only be entered if a graphical representation is available for the query. The way the data are displayed on the graphic is then defined.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="inc_40_400" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Graph</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (field TYPGRA)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This field is used once there is more than one numeric value in the grid that is likely to be presented in a graphical form. It can take one of two values :</p>
+                                                                                            <ul>
+                                                                                                <li><em><strong>Single graph</strong></em> : in this case, only one column of values is displayed at a time (a selector is used to make to choice)/</li>
+                                                                                                <li><em><strong>Multi-graph</strong></em> : in this case, all the columns are displayed, combined according to the parameter defined by the parameter <em>Representation</em>.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Representation (field FSHGRA)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When several series are presented in the graph (provided that the presentation of all the series is identical and is not by sector type), it is possible to specify how the series values are combined in the display, by entering the following value :</p>
+                                                                                            <ul>
+                                                                                                <li><em>Multi </em>is used to present the values of each series side by side (one color by series)</li>
+                                                                                                <li><em>Cumulative</em>&#160;is used to present the values in a vertical total.</li>
+                                                                                                <li><em>Comparative</em>&#160;is used to present them in a relative comparison (the height of the graph is constant).</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Default graph (field DEFGRA)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Defines the graphical representation used for the data to be presented (from the choices <em>Bars</em>,<em> Lines</em>, <em>Area</em>, <em>Sectors</em>). An image is displayed as a function of the choice made illustrating the type of presentation obtained.</p>
+                                                                                            <p>If only one series of values is available, the graphical representation is by default fixed by this parameter.</p>
+                                                                                            <p>If several series of values are presented, it is possible to mix the presentation modes (one series in the form of bars, another in the form of lines for example). In this case, each series of values is represented as a function of the field <em><strong>Representation</strong> </em> located in the grid of fields :</p>
+                                                                                            <ul>
+                                                                                                <li>if it is <em>Bar </em>or <em>Line</em>, this representation mode is used for the series of values concerned if it is compatible with the default graphical representation (it is not possible to mix sectors with bars or lines). </li>
+                                                                                                <li>if it is <em>Default</em>, the default graphical representation for the series is used.</li>
+                                                                                            </ul>
+                                                                                            <p>When used, if the representation of the series is homogenous (that is there is only one series in the graph), there is a graph type selector for the user to select a different mode of presentation.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 3</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field IMAG</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Image explaining the information previously entered.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 2</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="MIS_45_10"></a>
+                                                                <h2 class="g1" id="Importantnote" data-magellan-target="Importantnote">Important note</h2>
+                                                                <p>It should be noted that no filter linked to authorizations is carried out (irrespective of whether they are authorizes by role, by site or by access codes) with the SQL query tool. It is therefore advisable to protect the queries of this type with an access code to limit the display rights and even more the execution of these queries. Similarly, the access to this function must normally be limited to a restricted list of users.</p>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                                <h2 class="g1" id="SpecificButtons" data-magellan-target="SpecificButtons">Specific Buttons</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#BOU_70_20">Validate</a>
+                                                                        </li>
+                                                                        <li><a href="#BOU_70_30">Execute</a>
+                                                                        </li>
+                                                                        <li><a href="#INC_70_40">Copy</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_20"></a>
+                                                                            <p><b>Validate </b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>generates the screen associated with the inquiry and verifies the query by submitting it to the database for the verification of the syntax and the semantics.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_30"></a>
+                                                                            <p><b>Execute </b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Is used to execute the current query. The execution is launched by updating a temporary table passes to the function to <a href="EXEALH.htm">view queries</a>, which makes it possible to view the result of the query.&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a id="INC_70_40"></a>
+                                                                            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Copy</a></span>
+                                                                                <div class="MCDropDownBody dropDownBody">
+                                                                                    <p xmlns="http://www.w3.org/1999/xhtml">This button is used to copy the record definition from or to <a href="COP_DOS.htm">another folder</a>.</p>
+                                                                                    <div id="inc_70_40" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                        <h4 class="bloctitle">
+                                                                                            <p><b>Block number 1</b>
+                                                                                            </p>
+                                                                                        </h4>
+                                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field OBJET</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field CLES</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                        <h4 class="bloctitle">
+                                                                                            <p><b>Block number 2</b>
+                                                                                            </p>
+                                                                                        </h4>
+                                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>From folder (field DOSORG)</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                    <p>Indicate the folder from which the record is going be copied. The possible syntaxes are described in the <a href="COP_DOS.htm">dedicated appendix</a>.</p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>All folders (field TOUDOS)</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                    <p>This option is used to copy the record to all the folders defined in the dictionary (<a href="../MCD/ADOSSIER.htm">ADOSSIER</a> table from the current solution).</p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>To folder (field DOSDES)</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                    <p>Indicate the folder in which the record is going be copied. The possible syntaxes are described in the <a href="COP_DOS.htm">dedicated appendix</a>.</p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SQLquerytool">SQL query tool</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisite">Prerequisite</a>
+                                                        </li>
+                                                        <li><a href="#Screenmanagement">Screen management</a>
+                                                        </li>
+                                                        <li><a href="#Importantnote">Important note</a>
+                                                        </li>
+                                                        <li><a href="#SpecificButtons">Specific Buttons</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

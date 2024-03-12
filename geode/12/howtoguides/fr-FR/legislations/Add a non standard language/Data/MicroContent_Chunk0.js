@@ -1,0 +1,1 @@
+define({"0":{u:"../MicroContent/Resources/Micro content/Micro content examples/micro-content.htm",c:"\u003ch1\u003eTopic heading\u003c/h1\u003e\u003cp\u003eSome text.\u003c/p\u003e",p:["Micro content"],l:"../Content/Topic.htm",tr:false,s:["../Content/Resources/Stylesheets/Sage_X3.css","../Content/Resources/Stylesheets/Sage.css"]},});

@@ -1,0 +1,678 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Request,Query,Management" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Query management" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Query management</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Querymanagement" data-magellan-target="Querymanagement"><span>Query management</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Use this function to list and track the tasks (requests) sent to the batch server, either from a <a href="EXERQT.htm">request submission</a> or <a href="RQT_FILE.htm">request files</a> placed in a dedicated directory.&#160;</p>
+                                                            <p>You can use it to relaunch and stop tasks, and for starting recurring batch tasks.</p>
+                                                            <p>You can check the status of the batch server. Each task executed by the batch server is assigned an individual process ID.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prerequisite" data-magellan-target="Prerequisite">Prerequisite</h2>
+                                                            <div class="links">
+                                                            </div>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Refer to documentation  <a href="PRQ_AFC_AREQUETE.htm#PRQ">Implementation</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Screenmanagement" data-magellan-target="Screenmanagement">Screen management</h2>
+                                                                <p>The Query management function displays the list of tasks submitted to the server (released or not released) and their statuses.</p><a id="ON1"></a>
+                                                                <h3 class="g1">Entry screen</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>Each line in the Query results grid (table) is a task submitted to the batch server (released or not released). Each task has a status and is displayed using a color. The color reflects the status of the task. The standard colors are as follows:</p>
+                                                                    <ul>
+                                                                        <li><span style="color: rgb(0, 153, 0);">Green</span>. Task currently being executed.</li>
+                                                                        <li>Black. Task finished without error.</li>
+                                                                        <li><span style="color: rgb(255, 0, 0);">Red</span>. Task interrupted or terminated with errors.</li>
+                                                                        <li><span style="color: rgb(51, 51, 255);">Blue</span>. Task pending execution.</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Grid</a><i> Queries</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Number (field NUMREQ)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This single number identifies the request. It is assigned starting from an initial number defined in the <a href="ABATPAR.htm">parameters of the batch server</a>.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Folder (<a href="GESADS.htm">field DOSSIER</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+It defines the folder in which the task execution has been requested.
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Task code (<a href="GESABT.htm">field TACHE</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Code identifying the launched task</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Language (<a href="GESTLA.htm">field LAN</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Usr (<a href="GESAUS.htm">field USER</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the code of the user who launched the task.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date (field DAT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+It defines the planned start date and time for the task
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Time (field HEURE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Single (field MONO)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>If this field is set to <em>Yes</em>, the task can only be executed in the single user mode for the folder.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Status (field FLAG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This status flag of the requests in process can take the values defined by the <a href="../MCD/MEN0021.htm">local menu 21</a> : </p>
+                                                                                            <p>Standby : the request has not yet been started</p>
+                                                                                            <ul>
+                                                                                                <li>In progress : the request is in the process of being executed</li>
+                                                                                                <li>Finished : the request has finished without errors.</li>
+                                                                                                <li>Aborted : the request was interrupted</li>
+                                                                                                <li>Error : the task has terminated on an error.</li>
+                                                                                                <li>Held : the request is part of a group in the process of execution or it is blocked manually by an interruption.</li>
+                                                                                                <li>Kill : A user has requested the termination of the request.</li>
+                                                                                                <li>Immediate the task has been submitted for immediate processing (via the intermediary of a file)</li>
+                                                                                                <li>Warning : the task ended on a non-blocking error code (GERRBATCH variable&lt;100).</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>End time (field HFIN)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the end date and time for the execution of the task. This information is entered only if the task has already been launched and it is completed.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>End date (field DFIN)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Task type (field TYPTAC)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This field, that is defined by the <a href="../MCD/MEN0020.htm">local menu 20</a>, specifies whether the task launched is an adonix process or a script (shellscript or command file) executed on the process server.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Script (field ETAT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+It defines the code of the process or the script, when the launched task does not correspond to a basic software function.
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Server (field SERVER)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Port (field PORT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Session ID (field SESSIONID)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Process no. (field PROCESS)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Each request is executed by an adonix process given on the application server. This field identifies the process number (usually called process id, or pid).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Time-out (field TIMOUT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When this field is not null, it defines a timeout duration, that is to say, a time limit above which the task is automatically stopped if it is still running.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Group (<a href="GESABG.htm">field GRP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When the task belongs to a launched group of tasks, the grid mentions a number common to all the tasks of the group, and a sequence number in the group (these fields are empty if the request does not belong to a group).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Order no. (field NUMGRP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Series (field SEQGRP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Frequency (min) (field FRQ)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When the batch task is launched at a specified frequency every N minutes, this column defines the value of N.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Reminder (field IMPETX)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When a task has been subscribed to be executed with a frequency, a single line appears to notify its execution, but each time that it is relaunched, 1 is added to this column. Thus, it is possible to know how many times it has been executed.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Batch file (field JOB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>When the task has been launched via a job file (see the corresponding <a href="RQT_FILE.htm">technical appendix</a>), the name of the file that has been submitted (without the extension) can be found here.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 2</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field PAGCUR</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Ir displays the number of the current page, along with the total number of pages.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Action icon</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Parameter entry</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Parameter entry</span> from the <span style="font-weight: bold;">Actions</span> icon to change the request parameters (whether pending launch or already finished) for this task.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Interruption</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Interruption</span> from the <span style="font-weight: bold;">Actions</span> icon to interrupt the execution of this task. You will be prompted to confirm your reason for interrupting this task.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Modification</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Modification</span> from the <span style="font-weight: bold;">Actions</span> icon to modify prior to launch, the date and time of launch, and the execution priority of this task.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Log</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Log</span> from the <span style="font-weight: bold;">Actions</span> icon to display the trace file for this executed task. The trace file is prefixed 'RQT' followed by the request number. It can be found in the TRA directory of the SERVX3 directory (which is located in the Runtime directory).</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Relaunch query</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Relaunch query</span> from the <span style="font-weight: bold;">Actions</span> icon to create a new task with the same launch parameters as this (original) task.</p>
+                                                                                    <p>By default, execution of the new task is requested for the same day, a few minutes after selecting this action. Use the <span style="font-weight: bold;">Modification</span> action to modify the date/time of launch of the new task.</p>
+                                                                                    <p>
+                                                                                        <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" />&#160;<span style="color: rgb(191, 127, 0);"></span><span style="color: rgb(191, 127, 0);"></span></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Restart recur. task</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Click <span style="font-weight: bold;">Restart recur. task</span> from the <span style="font-weight: bold;">Actions</span> icon to restart this task as a recurring task.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                            <h2 class="g1" id="SpecificButtons" data-magellan-target="SpecificButtons">Specific Buttons</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#BOU_70_15">Delete</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_20">Query</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_30">Update</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_40">Log</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_50">Purge</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_60">Information</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_15"></a>
+                                                                        <p><b>Delete </b>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Click the <span style="font-weight: bold;">Delete</span> action to delete the current task.</p>
+                                                                        <p>
+                                                                            <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" />&#160;<span style="color: rgb(191, 127, 0);">This action is only available for tasks pending execution. Use the <span style="font-weight: bold;">Stop</span> action if the task is in progress; use the <span style="font-weight: bold;"></span>Purge</span><span style="font-weight: bold;"></span></p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a id="BOU_70_20"></a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Querymanagement">Query management</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisite">Prerequisite</a>
+                                                        </li>
+                                                        <li><a href="#Screenmanagement">Screen management</a>
+                                                        </li>
+                                                        <li><a href="#SpecificButtons">Specific Buttons</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

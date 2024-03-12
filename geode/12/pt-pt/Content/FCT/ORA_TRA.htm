@@ -1,0 +1,651 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Rasto, Base, Dados, Oracle" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Rasto dos pedidos oracle" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="[Supervisor]" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Rasto dos pedidos oracle</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Rastodospedidosoracle" data-magellan-target="Rastodospedidosoracle"><span>Rasto dos pedidos oracle</span>
+                                                        </h1>
+                                                    </div>
+                                                </div>
+                                                <div id="supportingText" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                        <h2 class="g1" id="Introdução" data-magellan-target="Introdução">Introdução</h2>
+                                                        <p>Este utilitário está acessível depois não importa qual ecrã do software desde logo que a base de dados utilizados é Oracle™, via o menu <i>Utilitários</i> situado em alto de ecrã, que contém as duas escolhas seguintes : </p><a id="MIN_20_20"></a>
+                                                        <h3 class="g1">Activação rasto oracle</h3><a id="MIN_20_20"></a>
+                                                        <p>Via a duncionalidade SQL_TRACE de Oracle, activa-se o registo de ordens SQL executadas num ficheiro que poderão em seguida ser analizadas.</p><a id="MIN_20_30"></a>
+                                                        <h3 class="g1">Desactivação rasto</h3><a id="MIN_20_30"></a>
+                                                        <p>Esta função lança o retratamento via i utilitário oracle TKPROF que trata o ficheiro de rasto obtido por activação, depois visualiza o resultado. Isto permite ver todas as ordens SQL executadas durante a activação.</p>
+                                                    </div>
+                                                    <div class="stdBloc"><a id="PRQ"></a>
+                                                        <h2 class="g1" id="Prérequisitos" data-magellan-target="Prérequisitos">Pré-requisitos</h2><a id="INC_30_20"></a>
+                                                        <h3 class="g1">Habilitação</h3><a id="MIN_30_20"></a>
+                                                        <p>O utilizador deve ser autorizado a utilizar o debugger (parâmetro <a href="../OBJ/ADP_SUP_DBG.htm">DBG</a>).</p><a id="INC_30_30"></a>
+                                                        <h3 class="g1">Constrangimento técnico</h3><a id="MIN_30_30"></a>
+                                                        <p>A função só pode funcionar se um servidor de tratamento está instalado e está activo sobre a máquina da base de dados.</p><a id="MIN_30_40"></a>
+                                                        <h3 class="g1">Direitos do utilizador para Unix</h3><a id="MIN_30_40"></a>
+                                                        <p><span style="color: #ff0000;">Para as configurações onde o servidor de aplicaçao se encontra sobre uma máquina Unix, os utilizadores desejosos de lançar o rasto Oracle devem estar no grupo <b>DBA</b></span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="stdBloc"><a id="INC_40_10"></a>
+                                                        <h2 class="g1" id="Interfaceutilizador" data-magellan-target="Interfaceutilizador">Interface utilizador</h2>
+                                                        <p>Quando se lança a função, um ecrã permite de registar um conjunto de opções :</p><a id="MIN_40_20"></a>
+                                                        <h3 class="g1">Recuperação dos resultados</h3><a id="MIN_40_20"></a>
+                                                        <p>Pode-se escolher de utilizar ou não as três opções seguintes.</p>
+                                                        <table width="97%" border="1" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="18%" colspan="1" rowspan="1">
+                                                                        <p>AGGREGATE</p>
+                                                                    </td>
+                                                                    <td width="81%" colspan="1" rowspan="1">
+                                                                        <p>Indica se os registos idênticos devem estar reagrupados num único pedido SQL ou deixados independentes.</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="18%" colspan="1" rowspan="1">
+                                                                        <p>WAITS</p>
+                                                                    </td>
+                                                                    <td width="81%" colspan="1" rowspan="1">
+                                                                        <p>Indique se os recapitulativos devem ser registados para os eventos de espera. Esta opção não está disponível que depois a versão 9i</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td width="18%" colspan="1" rowspan="1">
+                                                                        <p>SYS</p>
+                                                                    </td>
+                                                                    <td width="81%" colspan="1" rowspan="1">
+                                                                        <p>Indica se falta afixar o SQL recursivo executado por SYS</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table><a id="MIN_40_30"></a>
+                                                        <h3 class="g1">Opções de ordenação</h3><a id="MIN_40_30"></a>
+                                                        <p>Por defeito as ordens SQL são detalhadas por ordem cronológica mas é possível de indicar as opções de ordenação.</p>
+                                                        <p>Várias proposições de ordenação propostas e encontrar-se-á em primeiro as ordens correspondentes ao custo mais importante segundo a ordenação pedida.</p>
+                                                        <p>O utilizador pode também escolher ele mesmo as opções de ordenação pretendidos "Parâmetro ordenação avançada". A janela correspondente lhe permitirá de escolher todas as opções possíveis por entre as seguintes (listadas por fase de tratamento do pedido) :</p>
+                                                        <ul>
+                                                            <li>A fase de análise : (PARSE) </li>
+                                                        </ul>
+                                                        <table width="70%" border="1" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="20%" colspan="1" rowspan="1">
+                                                                        <p>prscnt</p>
+                                                                    </td>
+                                                                    <td width="80%" colspan="1" rowspan="1">
+                                                                        <p>Número de chamadas de análise (PARSE) </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prscpu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo CPU consumido para análise </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prsela</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo esgotado para a análise </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prsdsk</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de leituras sobre o disco </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prsqry</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de memória tampão para uma leitura coerente ao curso de análise </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prscu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de buffers durante a fase de análise </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>prsmis</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de fracassos na "cache" "library" ao curso de análise </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ul>
+                                                            <li>A fase de execução : (EXEC) </li>
+                                                        </ul>
+                                                        <table width="70%" border="1" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="20%" colspan="1" rowspan="1">
+                                                                        <p>execnt</p>
+                                                                    </td>
+                                                                    <td width="80%" colspan="1" rowspan="1">
+                                                                        <p>Número de execuções chamadas </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>execpu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo CPU consumido para execução </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>exeela</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo passado durante a execução </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>exedsk</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de leituras sobre o disco durante a execução </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>exeqry</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de memória tampão para uma leitura coerente ao curso de execução</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>execu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de buffers durante a fase de execução</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>exerow</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de linhas tratadas durante a execução </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>exemis</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de fracassos na "cache" "library" no curso de execução  </p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <ul>
+                                                            <li>A fase de extracção : (FETCH) </li>
+                                                        </ul>
+                                                        <table width="70%" border="1" cellspacing="0" cellpadding="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td width="20%" colspan="1" rowspan="1">
+                                                                        <p>fchcnt</p>
+                                                                    </td>
+                                                                    <td width="80%" colspan="1" rowspan="1">
+                                                                        <p>Número de chamadas de extracção (FECTH)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchcpu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo CPU consumido para a extracção</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchela</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Tempo esgotado para a extracção</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchdsk</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de leituras sobre o disco ao curso de FETCH </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchqry</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de memória tampão para uma leitura coerente ao curso de extracção</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchcu</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de memória tampão para uma leitura ao curso de extracção </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>fchrow</p>
+                                                                    </td>
+                                                                    <td colspan="1" rowspan="1">
+                                                                        <p>Número de linhas tratadas durante a extração</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table><a id="MIN_40_40"></a>
+                                                        <h3 class="g1">Apresentação dos resultados</h3><a id="MIN_40_40"></a>
+                                                        <p>O utilizador pode escolher de não listar que os n primeiras ordens SQL reconduzidas.</p>
+                                                        <p>No caso onde se escolheu uma ordenação, obter-se-á as n primeiras ordens SQL que correspondem ao custo mais importantes desta ordenação.</p>
+                                                    </div>
+                                                    <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                        <h2 class="g1" id="Explicaçãodoresultadodetkprof" data-magellan-target="Explicaçãodoresultadodetkprof">Explicação do resultado de tkprof</h2>
+                                                        <p />
+                                                        <ul>
+                                                            <li>Colunas </li>
+                                                        </ul>
+                                                        <div align="center">
+                                                            <table width="80%" border="1" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td width="20%" colspan="1" rowspan="1">
+                                                                            <p>Count</p>
+                                                                        </td>
+                                                                        <td width="80%" colspan="1" rowspan="1">
+                                                                            <p>Número de análises, execuções e recuperação efectuadas. <br />(Bem verificar a presença de um valor superior a 0 antes de intrepretar as outras colunas). A menos de ter especificado AGGREGATE=no, TKPROF reagrupa as instruções SQL idênticas.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>CPU</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tempos CPU total, exprimido em segundos, consagrados nas etapas de análise, de execução e de recuperação. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Elapsed</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tempo total, em segundos, consagrado a todos os pedidos de análise, de execução de recuperação (Aqui os "wait" são acrescentados e então compreende também as operações Oracle que as operações CPU ). <br />Falta verificar que não existe diferença notável entre CPU e Elapsed </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Disk</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Número total de blocos de dados lidos fisicamente nos ficheiros de dados para as etapas de análise, de execução de recuperação.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Query</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Número total de buffers extraidos em modo coerente para todas as etapas.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Corrente</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Número total de buffers extraidos em modo corrente para todas as etapas.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Rows</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Número total de linhas tratadas (mas isso não respeita os sub-pedidos)<br />- Select : este número se encontra na coluna Fetch<br />- Insert, Update et Delete : este número se encontra na coluna Execute </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <ul>
+                                                            <li>Observações sobre os planos de execução:<br /><br /> Se o plano de execução de um pedido diferente do plano de execução normalmente previsto, isso pode vir de índice ruptura ou de estatísticas sobre a base de dados.</li>
+                                                        </ul>
+                                                        <div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="stdBloc"><a id="ERR"></a>
+                                                        <h2 class="g1" id="Erros" data-magellan-target="Erros">Erros</h2>
+                                                        <div class="links">
+                                                            <ul>
+                                                                <li><a href="ERR_GEN.htm">[Generic messages]</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <p>[In addition to the generic error messages, the following messages can appear during the entry] :</p>
+                                                        <h4>"Erro no momento de acesso ao servidor da base de dados"</h4>
+                                                        <p>O acesso à máquina da base de dados não é possível, não existe servidor de tratamento onde não foi arrancado. </p>
+                                                        <h4>"Erro de acesso ao directório dos rastos da base de dados"</h4>
+                                                        <p>O directório indicado como directório dos rastos não está acessível</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Rastodospedidosoracle">Rasto dos pedidos oracle</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introdu%C3%A7%C3%A3o">Introdução</a>
+                                                        </li>
+                                                        <li><a href="#Pr%C3%A9requisitos">Pré-requisitos</a>
+                                                        </li>
+                                                        <li><a href="#Interfaceutilizador">Interface utilizador</a>
+                                                        </li>
+                                                        <li><a href="#Explica%C3%A7%C3%A3odoresultadodetkprof">Explicação do resultado de tkprof</a>
+                                                        </li>
+                                                        <li><a href="#Erros">Erros</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janeiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

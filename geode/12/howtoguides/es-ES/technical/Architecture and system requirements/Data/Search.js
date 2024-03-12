@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[0,1],u:['../Content/About.htm'],s:['0','nuev'],p:[['0',2],['datos',2],['hardware',8],['orci',13],['tamaño',2]]});

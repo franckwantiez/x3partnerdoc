@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Web_outputs__Customize_add_ons_Chunk',chunkstart:['/Content/How-to guides/Platform/Customize add-ons/T1 Customizing add-ons.htm'],tree:{n:[{i:0,c:0,n:[{i:1,c:0},{i:2,c:0},{i:3,c:0},{i:4,c:0}]}]}});

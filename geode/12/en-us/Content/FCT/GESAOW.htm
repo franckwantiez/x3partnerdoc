@@ -1,0 +1,716 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Import,Export,Object" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Import/export temporary storage spaces" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Import/export temporary storage spaces</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Importexporttemporarystoragespaces" data-magellan-target="Importexporttemporarystoragespaces"><span>Import/export temporary storage spaces</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>When a data import process is launched, the data to be integrated are read by logical line groups of different types (for instance, a header, the associated detail lines, a sub-detail of the detail lines etc.). Each logical group of lines forms a record.</p>
+                                                            <p>The structure of the record is defined in the import-export template (via the flag grid). If no line is defined in this grid, each line composes a record.</p>
+                                                            <p>Upon import, each record is tested from a data format point of view, but also by using more general consistency rules (business rules). If errors are detected at this stage, the record is not integrated (but the next records may be integrated).</p>
+                                                            <p>The import-export temporary storage space is used to store the detail of the rejected data for a given imported file: in a batch, each rejected record is observed under the form of 1 to N lines, and in each line, there is the description of the line structure, along with the field values read in the file. When errors have been detected in a given field, they are highlighted with a preset style.</p>
+                                                            <p>Then, the user can:</p>
+                                                            <ul>
+                                                                <li>modify the wrong values</li>
+                                                                <li>add lines, if need be</li>
+                                                                <li>reextract the data of a set of batches into a file, so as to reimport it again after correction.</li>
+                                                                <li>add records in a given batch.</li>
+                                                            </ul>
+                                                            <p>It is also possible to directly import a file into the import/export temporary storage space without attempting to import it for real. In that case, only the consistency controls of the data format will be performed, and all the groups will be put in the temporary storage space.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prerequisite" data-magellan-target="Prerequisite">Prerequisite</h2>
+                                                            <div class="links">
+                                                            </div>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Refer to documentation  <a href="PRQ_AFC_GESAOW.htm#PRQ">Implementation</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Screenmanagement" data-magellan-target="Screenmanagement">Screen management</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#ENT">Header</a>
+                                                                        </li>
+                                                                        <li><a href="#ON1">Tab Lines</a>
+                                                                        </li>
+                                                                        <li><a href="#ON2">Tab Text file</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p>The storage space is managed in an object subdivided into two tabs, the left lists provide, in addition to the traditional divisions (left list presenting a line by batch, and last read) the possibility to display:</p>
+                                                                <ul>
+                                                                    <li>the numbers with the detail of the lines, in a hierarchical manner (<em><strong>Import/export temporary storage space by Batch</strong></em>)</li>
+                                                                    <li>a hierarchy by batch number / line number / field for the lines for which an error has been detected (<em><strong>Import/export temporary storage space by error</strong></em>).</li>
+                                                                </ul><a id="ENT"></a>
+                                                                <h3 class="g1">Header</h3>
+                                                                <div id="desc_ent" class="ddesc" style="display: block;">
+                                                                    <p>The header identifies the batch and the current line in the batch.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="ent" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 1</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Lot no. (field NUMLOT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>The batch number, that is assigned from a sequence number counter, identifies a consistent group of data imported into the storage space.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Template (<a href="GESAOE.htm">field EXT</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the import/export template that has been used when feeding the storage space.</p>
+                                                                                            <p>This template code can be used in the batch numbering, if the sequence number counter incorporates a segment of a <em>Complement</em> type.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>No. of lines (field NBRLIG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It is used to display the number of lines of the current batch.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>File (field FILEXT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This field defines the path of the default <a href="FILE_NAME.htm">data file</a> proposed during the launch of the import or export. This data file is used in automatic mode when launching an import or export chain. This file path can be relative. In this case, the database directory is supposed to be the database directory for the software's installation.</p>
+                                                                                            <p>The path can include the <b>#</b> character. In this case, there will be a sequential number management:</p>
+                                                                                            <ul>
+                                                                                                <li>In import mode: All the files where the template corresponds to the path will be searched, with <b>#</b> representing five numbers. The files are integrated in increasing order of the numbers.</li>
+                                                                                                <li>In export mode: A file is created integrating the formatted value of the <b>[C]EXPORT</b> sequence number counter on five numbers. This is related to checking the <b>Sequence number management</b> box during the launch of the <a href="GEXPOBJ.htm">export</a> function.</li>
+                                                                                            </ul>
+                                                                                            <p>For example, if the export sequence number is equal to <b>156</b>, <b>/u/tmp/fil#</b> makes it possible to generate the <b>/u/tmp/fil156</b> file.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 2</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field LIGFIR</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>These radio buttons make it possible to navigate in the lines of the current batch, by respectively returning to the first line, the previous line, then switching to the next line, to the last line.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field LIGPRE</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field LIGNEX</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field LIGLST</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Line no. (field NUMLIG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Indicator (field LEVCOD)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the code of the user corresponding to the processed line. For instance, if an import template manages header lines identifies with a H, detail lines identified with an L and sub-detail lines identified with an S, one of these 3 characters will be used.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Recording (field ENR)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It specifies the current line number and the number of lines by batch.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON1"></a>
+                                                                <h3 class="g1">Tab Lines</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>This tab is used to display the fields of the template as they must be integrated for the current line type (identified by the flag). At the same time, there are the values found in the import file (with a specific formatting if an error has been detected on the field). </p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle"><a href="TBL_MGT.htm">Grid</a>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field NBLIG</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Table (<a href="GESATB.htm">field FLDATB</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Displayed field that identifies the table in which the information is supposed to be integrated during import (this table is also found for the import/export template).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Field (field FLDNAM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Displayed field that identifies the field in which the information is supposed to be integrated during import (this field is also found for the import/export template).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Description (field FLDINTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Title associated with the previous code.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (<a href="GESATY.htm">field FLDATY</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Displayed field that defines the type of data linked with the field to be integrated. Based on this type, some consistency controls can be performed. If the field value is entered, a selection window that is exactly dependent on the type can be activated.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Value (field FLDVAL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the value of the field to be integrated.</p>
+                                                                                            <p>By default, there is the value that has been found during the import, and it is highlighted using a particular style if it is considered to be wrong. It can also be modified using this function.</p>
+                                                                                            <p>It should be noted that, during entry:</p>
+                                                                                            <ul>
+                                                                                                <li>selection functions can be accessed (via right click) in linked tables or in a list of local menus (in that case, the choice number is sent back).</li>
+                                                                                                <li>existence tables are not carried out in the linked table or in the local menu (it is considered that the table in question can be updated using a preliminary import): the control will be performed only when the update is actually performed).</li>
+                                                                                            </ul>
+                                                                                            <p>A wrong field is displayed again in the default style whenever an entry complying with the field format constraints has been completed on the line. The concerned line also disappears from the error list (it is still included in the error table, but a flag indicates that it has been corrected).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON2"></a>
+                                                                <h3 class="g1">Tab Text file</h3>
+                                                                <div id="desc_on2" class="ddesc" style="display: block;">
+                                                                    <p>When a clob type field (lenghty character string) is defined in the template, this tab is used to display its value and to modify it, if necessary, by clicking on the corresponding button.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Field descriptions</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on2" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 1</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Text file (clob) (field CLBINTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>It defines the clob code.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Modification (field CLBEXE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>This button is used to switch to the modification mode for the text (clob type) presented here below.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Block number 2</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field WA</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>field FLDCLB</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Clob type field as it has been integrated into the import/export storage space. It can be modified via the button located at the top of the tab.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="ARP"></a>
+                                                                <h2 class="g1" id="Reports" data-magellan-target="Reports">Reports</h2>
+                                                                <p>By default, the following reports are associated with this function :</p>
+                                                                <p>
+                                                                    <img border="0" width="7" height="7" src="../Resources/Images/bullet_brique.GIF" />&#160;
+ PRTSCR&#160;:&#160;Screen print
+        </p>
+                                                                <p>This can be changed using a different setup.</p>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                                <h2 class="g1" id="SpecificButtons" data-magellan-target="SpecificButtons">Specific Buttons</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#BOU_70_20">Addition</a>
+                                                                        </li>
+                                                                        <li><a href="#BOU_70_30">Export</a>
+                                                                        </li>
+                                                                        <li><a href="#BOU_70_40">Import</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_20"></a>
+                                                                            <p><b>Addition </b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>It is used to add a line to the group by shifting by 1 line all the next lines in the record. The added line is proposed by default with the values of the previous line, but it is possible to modify said values. In case of aborting, the added line is deleted, and the shifted lines are given new numbers to bring them back to their original position.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a id="BOU_70_30"></a>
+                                                                            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Export</a></span>
+                                                                                <div class="MCDropDownBody dropDownBody">
+                                                                                    <p xmlns="http://www.w3.org/1999/xhtml">It is used to reexport the current batch to a file whose name has been entered.</p>
+                                                                                    <div id="bou_70_30" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                        <h4 class="bloctitle">
+                                                                                            <p><b>File</b>
+                                                                                            </p>
+                                                                                        </h4>
+                                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Destination type (field TYPEXP)</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Data file (field NOMEXP)</b>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                    <p>It is used to define the path of a <a href="FILE_NAME.htm">data file</a> into which the export has been launched. In case of a relative file path, the basic directory is supposed to be the basic software installation software. </p>
+                                                                                                    <p>It is possible to place the # metacharacter in the name of a file to be exported. In that case, this character is replaced by the current export sequence number, over 5 figures (preceded by zero, if need be), provided that a chronological export has been launched. </p>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Import</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p xmlns="http://www.w3.org/1999/xhtml">It is used to import the content of a file into the storage space. Unlike the standard import, that only stores in the storage space those records for which errors have been located, this function imports into the storage space all the records in the file. It creates a new batch.</p>
+                                                                    <div id="bou_70_40" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Block number 1</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Template (<a href="GESAOE.htm">field EXT</a>)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Use this field to define which template is to be used to extract data from the structured file into a format that can be used by Sage X3. Each template is defined using the <a href="GESAOE.htm">Import/export templates</a> function (<b>Setup &gt; Usage &gt; Imports/exports</b>).</p>
+                                                                                    <p>Imported data is converted into the right format to populate the details in the matching database table in Sage X3.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Location</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Destination type (field TYPEXP)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Data file (field NOMIMP)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>It is used to define the path of a <a href="FILE_NAME.htm">data file</a> from which the import has been launched. In case of a relative file path, the basic directory is supposed to be the basic software installation software.</p>
+                                                                                    <p>It is possible to place the # metacharacter in the name of a file to be imported. In that case, the import of all the files corresponding to the file name with figures instead of the # 4 will be carried out sequentially, the import order being the increasing order of the figures. This makes it possible to automatically import files created by the chronological export function, by importing the data in the order of their extraction.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Importexporttemporarystoragespaces">Import/export temporary storage spaces</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisite">Prerequisite</a>
+                                                        </li>
+                                                        <li><a href="#Screenmanagement">Screen management</a>
+                                                        </li>
+                                                        <li><a href="#Reports">Reports</a>
+                                                        </li>
+                                                        <li><a href="#SpecificButtons">Specific Buttons</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,603 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Représentation graphique de l'agenda" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Représentation graphique de l'agenda</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Représentationgraphiquedelagenda" data-magellan-target="Représentationgraphiquedelagenda"><span>Représentation graphique de l'agenda</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">L'agenda est utilisé comme un agenda classique pour la gestion&#160; d'événements tels que les rendez-vous, les tâches et les appels en action commerciale ou les interventions en support client.<br />A l'ouverture de l'écran, il se présente en vue mensuelle de la façon suivante :</p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">
+                                                                <img src="../Resources/Images/GRAPH_REP_03.jpg" alt="./GRAPH_REP_03.jpg" keeps="true" realloc="./GRAPH_REP_03.jpg" />
+                                                            </p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">&#160;Les données contenues dans l'agenda peuvent être affichées sous forme de tableau. <br />Le passage du mode graphique au mode tableau s'effectue en cliquant sur l'icône&#160;suivante :<img src="../Resources/Images/TBL_MGT_01.jpg" alt="./TBL_MGT_01.jpg" keeps="true" realloc="./TBL_MGT_01.jpg" />&#160;en mode client serveur, ou&#160;<img src="../Resources/Images/TBL_MGT_10.jpg" alt="./TBL_MGT_10.jpg" keeps="true" realloc="./TBL_MGT_10.jpg" />&#160;en mode Web, située dans le coin supérieur gauche du graphique. Un exemple et des informations supplémentaires sur les caractéristiques communes des représentations graphiques sont donnés dans la documentation générale <i><a href="GRAPH_REP.htm"><span style="color: #0000ff;">Représentations graphiques</span></a>.</i></p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_30_5"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Pré-requis</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_30_10">Comment modifier la vue de l'agenda ?</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_20">Choix de la vue et repérage visuel des événements</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_30">Mode de présentation des événements</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_40">Affichage du détail d'un événement</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Si vous utilisez le navigateur Mozilla, vous devez avoir installé le plugin Flash Player pour afficher correctement l'agenda sous forme graphique. Ce plugin est disponible à l'adresse suivante :<br /><a href="../FCT/http://get.adobe.com/fr/flashplayer/">http://get.adobe.com/fr/flashplayer/</a>&#160;</p><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Commentmodifierlavuedelagenda" data-magellan-target="Commentmodifierlavuedelagenda">Comment modifier la vue de l'agenda ?</h2>
+                                                            <p style="MARGIN: 0cm 0cm 0pt 18pt;">&#160;</p><a id="MIS_30_20"></a>
+                                                            <h4 class="g1">Choix de la vue et repérage visuel des événements</h4>
+                                                            <p />
+                                                            <ul>
+                                                                <li><b>Vue&#160;<i>panoramique</i> de tous les événements</b>. </li>
+                                                            </ul>
+                                                            <p>Les bornes de cette vue correspondent aux dates minimum et maximum&#160;auxquelles des événements ont&#160;été enregistrés. <br />Seuls sont matérialisés les jours pour lesquels il existe des événements. </p>
+                                                            <p>Ces événements sont différenciés, selon leur statut, par un pictogramme de couleur :&#160;<br /><img src="../Resources/Images/GRAPH_AGENDA_06.jpg" alt="./GRAPH_AGENDA_06.jpg" keeps="true" realloc="./GRAPH_AGENDA_06.jpg" />&#160;rouge, lorsque l'événement est en retard (la date est passée et l'événement n'a pas été effectué),</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GRAPH_AGENDA_07.jpg" alt="./GRAPH_AGENDA_07.jpg" keeps="true" realloc="./GRAPH_AGENDA_07.jpg" />&#160;gris, lorsque l'événement est terminé,</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GRAPH_AGENDA_08.jpg" alt="./GRAPH_AGENDA_08.jpg" keeps="true" realloc="./GRAPH_AGENDA_08.jpg" />&#160;vert, lorsque l'événement reste à traiter.</p>
+                                                            <p>
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="792" height="556">
+                                                                    <param name="_cx" value="20955" />
+                                                                    <param name="_cy" value="14710" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_01.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_01.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                            </p>
+                                                            <ul>
+                                                                <li><b>Vue mensuelle, hebdomadaire (7 ou 5 jours) ou quotidienne :</b>
+                                                                </li>
+                                                            </ul>
+                                                            <p>
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="793" height="557">
+                                                                    <param name="_cx" value="20981" />
+                                                                    <param name="_cy" value="14737" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_02.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_02.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                                <br />
+                                                                <br />Chaque type d'événement est différencié par sa couleur :<br /></p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GRAPH_AGENDA_01.jpg" alt="./GRAPH_AGENDA_01.jpg" keeps="true" realloc="./GRAPH_AGENDA_01.jpg" />&#160;: Rendez-vous&#160;,</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GRAPH_AGENDA_02.jpg" alt="./GRAPH_AGENDA_02.jpg" keeps="true" realloc="./GRAPH_AGENDA_02.jpg" />&#160;: Appel</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GRAPH_AGENDA_03.jpg" alt="./GRAPH_AGENDA_03.jpg" keeps="true" realloc="./GRAPH_AGENDA_03.jpg" />&#160;:&#160;Tâche</p>
+                                                            <p>Les événements terminés (c'est-à-dire ceux dont le statut est "effectué) sont présentés barrés :<br /><img src="../Resources/Images/GRAPH_AGENDA_04.jpg" alt="./GRAPH_AGENDA_04.jpg" keeps="true" realloc="./GRAPH_AGENDA_04.jpg" />.</p><a id="MIS_30_30"></a>
+                                                            <h4 class="g1">Mode de présentation des événements</h4>
+                                                            <p>Lorsque la vue est mensuelle, hebdomadaire ou quotidienne, les événements peuvent être présentés&#160;:<br />-<span style="font-family: 'Times New Roman';">&#160; </span>soit en liste (exemple ci-dessus),<br />-&#160;soit positionnés dans l'agenda sur le créneau horaire correspondant.<br />Dans ce cas, l'échelle horaire peut être modifiée et adaptée par l'utilisateur : 8 heures, 12 heures et 24 heures :<br /><br /><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="568" height="490"><param name="_cx" value="15028" /><param name="_cy" value="12964" /><param name="FlashVars" /><param name="Movie" value="GRAPH_AGENDA_04.swf" /><param name="Src" value="GRAPH_AGENDA_04.swf" /><param name="WMode" value="Window" /><param name="Play" value="-1" /><param name="Loop" value="-1" /><param name="Quality" value="High" /><param name="SAlign" /><param name="Menu" value="-1" /><param name="Base" /><param name="AllowScriptAccess" /><param name="Scale" value="ShowAll" /><param name="DeviceFont" value="0" /><param name="EmbedMovie" value="0" /><param name="BGColor" value="FFFFFF" /><param name="SWRemote" /><param name="MovieData" /><param name="SeamlessTabbing" value="1" /><param name="Profile" value="0" /><param name="ProfileAddress" /><param name="ProfilePort" value="0" /><param name="AllowNetworking" value="all" /><param name="AllowFullScreen" value="false" /></object></p><a id="MIS_30_40"></a>
+                                                            <h4 class="g1">Affichage du détail d'un événement</h4>
+                                                            <p />
+                                                            <ul>
+                                                                <li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Un résumé de l'événement s'affiche lorsque le curseur survole l'événement.<br /></span>
+                                                                </li>
+                                                                <li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Une fiche plus détaillée est obtenue par simple clic sur cet événement : </span>
+                                                                </li>
+                                                            </ul><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;"><p align="center" style="MARGIN: 0cm 0cm 0pt;"><br /><img src="../Resources/Images/GRAPH_AGENDA_09.jpg" alt="./GRAPH_AGENDA_09.jpg" keeps="true" realloc="./GRAPH_AGENDA_09.jpg" /></p></span>
+                                                            <ul><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;"><ul><li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Cette fiche peut être déplacée sur l'agenda avec la souris ou positionnée automatiquement (sur la gauche, au centre ou sur la droite de l'agenda) grâce aux boutons disponibles au bas de cette fiche. </span></li><li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Pour visualiser le détail d'un autre événement, il n'est pas nécessaire de fermer la fiche ; son contenu est automatiquement mis à jour en cliquant sur<span>&#160;l'intitulé de cet </span>événement. </span></li><li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Un lien sur la référence de l'événement permet d'accéder par tunnel à la fonction de gestion de cet événement. L'accès en <a href="#MIS_60_10">Création/Modification</a> de l'événement est détaillé ci-dessous. </span></li><li><span style="FONT-FAMILY: Arial;FONT-SIZE: 10pt;">Dans l'exemple ci-dessus, une croix sur la fiche indique que l'événement a été effectué. </span></li></ul></span>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Commentsélectionnerlesévénementsàafficher" data-magellan-target="Commentsélectionnerlesévénementsàafficher">Comment sélectionner les événements à afficher ?</h2>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">Les&#160; événements peuvent être affichés de façon sélective. </p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">La sélection&#160; peut porter sur : </p>
+                                                            <ul>
+                                                                <li>le <strong>Type</strong> : rendez-vous, tâche, appel en action commerciale <p /></li>
+                                                                <li>le <strong>Statut</strong> : terminé , non terminé </li>
+                                                            </ul>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">&#160;</p>
+                                                            <p align="center" style="MARGIN: 0cm 0cm 0pt;">
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="424" height="491">
+                                                                    <param name="_cx" value="5080" />
+                                                                    <param name="_cy" value="5080" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_03.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_03.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Commentnaviguerdanslagendaetsélectionnerunedate" data-magellan-target="Commentnaviguerdanslagendaetsélectionnerunedate">Comment naviguer dans l'agenda et sélectionner une date ?</h2>
+                                                            <p />
+                                                            <ul>
+                                                                <li>De façon "classique" avec les boutons de navigation : <img src="../Resources/Images/GRAPH_AGENDA_05.jpg" alt="./GRAPH_AGENDA_05.jpg" keeps="true" realloc="./GRAPH_AGENDA_05.jpg" />.<br />En fonction de la vue de l'agenda, la navigation se fait de jour en jour, de semaine en semaine ou de mois en mois :<br />&#160;</li>
+                                                            </ul>
+                                                            <p style="MARGIN: 0cm 0cm 0pt 18pt;">
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1002" height="521">
+                                                                    <param name="_cx" value="26511" />
+                                                                    <param name="_cy" value="13784" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_05.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_05.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                            </p>
+                                                            <ul>
+                                                                <li>Au moyen de la roue de sélection (Round Date Picker).<br /><br />Elle est en réalité constituée de 3 roues : celle des années, celle des mois et celle des jours. Leur rotation dans un sens ou l'autre, permet de se positionner rapidement sur la date voulue.<br />La rotation d'une roue s'effectue soit en continu, en déplaçant le curseur tout en maintenant le bouton gauche de la souris enfoncée, soit au coup par coup en cliquant successivement sur les différentes années, mois et jours jusqu'à la date recherchée.<br />Le mois sélectionné s'affiche en couleur rose.<br />La&#160;date sélectionné est matérialisée par la&#160;ligne&#160; verticale coupant les trois roues en leur milieu.<br /><br />Dans l'exemple suivant, la date en cours est le&#160;28 juin 2007, la date recherchée est le&#160;13 avril 2006.</li>
+                                                            </ul>
+                                                            <p align="center">&#160;<span style="font-family: 'Times New Roman';"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="369" height="339"><param name="_cx" value="9763" /><param name="_cy" value="8969" /><param name="FlashVars" /><param name="Movie" value="GRAPH_AGENDA_06.swf" /><param name="Src" value="GRAPH_AGENDA_06.swf" /><param name="WMode" value="Window" /><param name="Play" value="-1" /><param name="Loop" value="-1" /><param name="Quality" value="High" /><param name="SAlign" /><param name="Menu" value="-1" /><param name="Base" /><param name="AllowScriptAccess" /><param name="Scale" value="ShowAll" /><param name="DeviceFont" value="0" /><param name="EmbedMovie" value="0" /><param name="BGColor" value="FFFFFF" /><param name="SWRemote" /><param name="MovieData" /><param name="SeamlessTabbing" value="1" /><param name="Profile" value="0" /><param name="ProfileAddress" /><param name="ProfilePort" value="0" /><param name="AllowNetworking" value="all" /><param name="AllowFullScreen" value="false" /></object></span></p>
+                                                            <p><span style="font-family: 'Times New Roman';"></span>
+                                                            </p>
+                                                            <p>Le retour à la date du jour est facilité grâce au pictogramme de couleur jaune qui matérialise cette date :</p>
+                                                            <p align="center">
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="370" height="362">
+                                                                    <param name="_cx" value="9789" />
+                                                                    <param name="_cy" value="9577" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_08.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_08.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Commentcréermodifierunévénement" data-magellan-target="Commentcréermodifierunévénement">Comment créer/modifier un événement ?</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_60_20">Accès par tunnel, en modification d'un événement</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_30">Accès par tunnel, en création d'un événement</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p style="MARGIN: 0cm 0cm 0pt 18pt;">&#160;L'agenda en lui même permet uniquement la visualisation des événements.</p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt 18pt;">Leur modification ou leur création&#160; s'effectue par tunnel, dans la fonction de gestion de l'objet correspondant au type d'événement (gestion des rendez-vous, gestion des tâches, etc…).</p><a id="MIS_60_20"></a>
+                                                            <h4 class="g1">Accès par tunnel, en modification d'un événement</h4>
+                                                            <p>Deux possibilités :</p>
+                                                            <ul>
+                                                                <li>Soit directement sur l'agenda via l'icône <img src="../Resources/Images/GRAPH_AGENDA_10.jpg" alt="./GRAPH_AGENDA_10.jpg" keeps="true" realloc="./GRAPH_AGENDA_10.jpg" />.</li>
+                                                                <li>Soit depuis la fiche détaillée de l'événement en cliquant sur le lien disponible sur la référence de l'événement.</li>
+                                                            </ul><a id="MIS_60_30"></a>
+                                                            <h4 class="g1">Accès par tunnel, en création d'un événement</h4>
+                                                            <p>Deux possibilités :</p>
+                                                            <ul>
+                                                                <li>Soit via un menu dédié depuis la date à laquelle l'événement est à créer.</li>
+                                                                <li>Soit depuis le bouton d'aide à la création permettant l'affichage d'une fenêtre de&#160;pré saisie de l'événement (type date, heure et libellé descriptif).</li>
+                                                            </ul>
+                                                            <p align="center">
+                                                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="424" height="490">
+                                                                    <param name="_cx" value="11218" />
+                                                                    <param name="_cy" value="12965" />
+                                                                    <param name="FlashVars" />
+                                                                    <param name="Movie" value="GRAPH_AGENDA_07.swf" />
+                                                                    <param name="Src" value="GRAPH_AGENDA_07.swf" />
+                                                                    <param name="WMode" value="Window" />
+                                                                    <param name="Play" value="-1" />
+                                                                    <param name="Loop" value="-1" />
+                                                                    <param name="Quality" value="High" />
+                                                                    <param name="SAlign" />
+                                                                    <param name="Menu" value="-1" />
+                                                                    <param name="Base" />
+                                                                    <param name="AllowScriptAccess" />
+                                                                    <param name="Scale" value="ShowAll" />
+                                                                    <param name="DeviceFont" value="0" />
+                                                                    <param name="EmbedMovie" value="0" />
+                                                                    <param name="BGColor" value="FFFFFF" />
+                                                                    <param name="SWRemote" />
+                                                                    <param name="MovieData" />
+                                                                    <param name="SeamlessTabbing" value="1" />
+                                                                    <param name="Profile" value="0" />
+                                                                    <param name="ProfileAddress" />
+                                                                    <param name="ProfilePort" value="0" />
+                                                                    <param name="AllowNetworking" value="all" />
+                                                                    <param name="AllowFullScreen" value="false" />
+                                                                </object>
+                                                            </p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;"><em></em>
+                                                            </p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">Remarque : sur la fenêtre de pré-saisie de l'événement, l'heure de début est symbolisée par le pictogramme bleu et l'heure de fin par le pictogramme rouge.</p>
+                                                            <p style="MARGIN: 0cm 0cm 0pt;">La modification s'effectue :</p>
+                                                            <ul>
+                                                                <li>
+                                                                    <div style="MARGIN: 0cm 0cm 0pt;">soit en déplaçant les pictogrammes,</div>
+                                                                </li>
+                                                                <li>
+                                                                    <div style="MARGIN: 0cm 0cm 0pt;">soit en cliquant directement sur le planning horaire. Un clic positionne l'heure de début ; l'heure de fin est positionnée par un clic tout en maintenant la touche Maj enfoncée.</div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Repr%C3%A9sentationgraphiquedelagenda">Représentation graphique de l'agenda</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Pré-requis</a>
+                                                        </li>
+                                                        <li><a href="#Commentmodifierlavuedelagenda">Comment modifier la vue de l'agenda ?</a>
+                                                        </li>
+                                                        <li><a href="#Comments%C3%A9lectionnerles%C3%A9v%C3%A9nements%C3%A0afficher">Comment sélectionner les événements à afficher ?</a>
+                                                        </li>
+                                                        <li><a href="#Commentnaviguerdanslagendaets%C3%A9lectionnerunedate">Comment naviguer dans l'agenda et sélectionner une date ?</a>
+                                                        </li>
+                                                        <li><a href="#Commentcr%C3%A9ermodifierun%C3%A9v%C3%A9nement">Comment créer/modifier un événement ?</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

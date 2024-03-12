@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Componentes, XSL, Cuadro" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Los componentes XSL" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Los componentes XSL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="LoscomponentesXSL" data-magellan-target="LoscomponentesXSL"><span>Los componentes XSL</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Planningmensual" data-magellan-target="Planningmensual">Planning mensual</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_20_13">Uso del componente</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_14">Uso de la paleta</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_15">Posibilidades de concepción</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_30">La pantalla</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_40">La parametrización XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Gráfico asociado a un cuadro X3; permite visualizar y modificar un planning mensual.</p>
+                                                            <p>Las posibilidades de este planning mensual son:</p>
+                                                            <ul>
+                                                                <li>Asignación de 1 a 8 actividades</li>
+                                                                <li>Recorte del conjunto de los días entre 1 y 4 partes</li>
+                                                                <li>Gestión de 12 meses máximo, que puede estar repartido en dos años. </li>
+                                                                <li>Muestra de entre 1 y 12 meses de forma simultanea. Según esta parametrización, se dispondrá de un ascensor vertical. </li>
+                                                                <li>Selección de secciones dentro de un mes para la asignación de una actividad. </li>
+                                                                <li>Tres tipos de jornadas (menú local 9836): laboral, fin de semana, festivo</li>
+                                                                <li>Las actividades sólo pueden asignarse a los días laborables. </li>
+                                                            </ul><a id="MIS_20_13"></a>
+                                                            <h3 class="g1">Uso del componente</h3>
+                                                            <p>Drag and Drop:</p>
+                                                            <ul>
+                                                                <li>Desplazar un elemento y todos los que lleva adjuntos</li>
+                                                            </ul>
+                                                            <p>Pinchar en la zona: </p>
+                                                            <ul>
+                                                                <li>Aviso para posicionarse en el servidor en línea del cuadro correspondiente</li>
+                                                            </ul>
+                                                            <p>Pinchar en el botón derecho en la zona: </p>
+                                                            <ul>
+                                                                <li>Botón del Menú contextual, colocándose en línea con el cuadro correspondiente</li>
+                                                            </ul>
+                                                            <p>Hacer doble click sobre la zona:</p>
+                                                            <ul>
+                                                                <li>Ejecución del tratamiento AMAJHIER con el CODACT="E"</li>
+                                                            </ul><a id="MIS_20_14"></a>
+                                                            <h3 class="g1">Uso de la paleta</h3>
+                                                            <p>Primero hay que seleccionar una actividad. El epígrafe aparece en negrita. <br />Se pueden seleccionar grupos de días en los que esta actividad va a sustituit la actividad previa. El componente XSL contactará con el servidor mediante el programa de interacción definido en la parametrización de XSL. Es el servidor el que se encarga de la actualidad de los datos de los cuadros subyacentes. Si el servidor reenvía un código de retorno distinto de 1, la actualización local se anula. El programa entregado en modo estándar no autoriza a la asignación de una actividad a los días festivos y de fin de semana. </p><a id="MIS_20_15"></a>
+                                                            <h3 class="g1">Posibilidades de concepción</h3>
+                                                            <p />
+                                                            <ul>
+                                                                <li>Asignación de 1 a 8 actividades</li>
+                                                                <li>Recorte del conjunto de los días entre 1 y 4 secciones</li>
+                                                                <li>Gestión de 12 meses máximo, que puede estar repartido en dos años. </li>
+                                                                <li>Muestra de entre 1 y 12 meses de forma simultanea. Según esta parametrización, se dispondrá de un ascensor vertical. </li>
+                                                                <li>Selección de secciones dentro de un mes para la asignación de una actividad. </li>
+                                                                <li>Tres tipos de jornadas (menú local 9836): laboral, fin de semana, festivo</li>
+                                                                <li>Las actividades sólo pueden asignarse a los días laborables. </li>
+                                                            </ul>
+                                                            <p>Para su funcionamiento, el componente XSL planning necesita los datos del cuadro asociado al gráfico y de la parametrización de XSL. </p><a id="MIS_20_30"></a>
+                                                            <h3 class="g1">La pantalla</h3>
+                                                            <p />
+                                                            <h5>Parámetros gráficos vinculados al bloque de cuadro</h5>
+                                                            <p>El componente XSL planning mensual <strong>APLANM</strong> propone 4 opciones:</p>
+                                                            <ul>
+                                                                <li><strong>NBMONT</strong>: Numero de meses vinculados simultaneamente (valor de 1 a 12). </li>
+                                                                <li><strong>MENACT</strong>: Menu local tipo de actividad (9837 con 5 valores en estándar). Los elementos de este menú local pueden modificarse. Este parámetro permite abrir otro menú local. No pueden superarse los 8 elementos para el menú local 9837 que se propone en estándar ni para ningún otro menú local. <br />Nota: los colores empleados, por otro lado, están predeterminados por el XSL.</li>
+                                                                <li><strong>SDATA</strong>: Actualización del gráfico tras la interacción. Valor 0 o 1. Por defecto No (0). Al acabar con el subprograma de interacción, el gráfico no se recalcula, aunque se haya producido una recuperación de datos. Sólo se trata el código de retorno que valida o no la recuperación de información y da lugar a una interacción local para aceptar la modificación.  </li>
+                                                                <li><strong>PINTER</strong>: Programa de interacción. Por defecto se inicia el programa <strong>AMAJPLAN</strong>, pero es posible iniciar otros, lo que permite denominar los campos de otro modo e intervenir en las reglas de aceptación, de interacción o de acumulación. </li>
+                                                            </ul>
+                                                            <h5>Campos del cuadro</h5>
+                                                            <p>El cuadro X3 debe estar constituido de entrada por una línea para cada día. </p>
+                                                            <p>El cuadro debe contener los campos siguientes, caracterizados por la columna "parametrización". </p>
+                                                            <ul>
+                                                                <li>"Fecha interna" en campo (alfa 15) compuesta de <ul><li>Año SSAA</li><li>	N	º de mes MM</li><li>Nº de día del mes DD</li><li>Nº de semana del año SS</li><li>Nº de día de la semana D (1 lunes a 7 domingo)</li></ul></li>
+                                                            </ul>
+                                                            <p>Cada valor está separado por un -. <br />el sub-pro TRSFDATP(DATE,DATTEC) from INTRUTILA permite construir DATTEC a partir de una fecha en formato de fecha Adonix. Esta columna puede definirse en un campo invisible y transmitirse a los clientes de otros tipos.. Ejemplo de valor: 2006-05-12-19-5 es el viernes 12 de mayo de 2006.</p>
+                                                            <ul>
+                                                                <li>"Tipo de día" cuyos valores están asociados al menú local 9836.<ul><li>1 : laborable</li><li>2 : fin de semana</li><li>3 : festivo</li></ul></li>
+                                                            </ul>
+                                                            <p>Para reducir el flujo entre el servidor y el cliente, se puede definir el valor digital y sustituirlo con los valores 1, 2 o 3 que están impuestos. Con el programa de interacción estándar entregado, sólo podrán actualizarse los días festivos en los cambios de actividad.  </p>
+                                                            <ul>
+                                                                <li>"Sección 1 a Sección n" según la descomposición del día escogido. Se puede recortar el día en de 1 a 4 secciones. La presencia de las columnas define el número de playas.  </li>
+                                                            </ul>
+                                                            <p>Además, si se desea trabajar con el programa de interacción estándar <strong>AMAJPLAN</strong>, los nombres de los campos siguientes son obligatorios.  </p>
+                                                            <ul>
+                                                                <li>Columna a pie de cuadro: <strong>NBDAY</strong> </li>
+                                                                <li>Fecha interna: <strong>TECDAT</strong> </li>
+                                                                <li>Tipo de día: <strong>TYPDAY</strong> </li>
+                                                                <li>Secciones de día: <strong>PLAG1</strong>, <strong>PLAG2</strong>, <strong>PLAG3</strong> y <strong>PLAG4</strong>. Es necesario definir al menos 1; el programa comprueba su presencia y se adapta al número definido.  </li>
+                                                                <li>Totales: <strong>TOTTYP1</strong> a <strong>TOTTYP8</strong>. El programa comprueba su presencia y los carga en función del número de día que corresponde a cada tipo de día. </li>
+                                                            </ul><a id="MIS_20_40"></a>
+                                                            <h3 class="g1">La parametrización XSL</h3>
+                                                            <p><u>Estos tres menúes locales</u> se entregan en estándar y asociados a un código en la parametrización del XSL:</p>
+                                                            <ul>
+                                                                <li>9001 : <strong>MONTH</strong> - Descripción de lo meses</li>
+                                                                <li>9833 : <strong>DAY</strong> - Descripción de lo días</li>
+                                                                <li>9834 : <strong>ABRDAY</strong> - Descripción resumida de los días</li>
+                                                            </ul>
+                                                            <p>Existe la posibilidad de asignar otros menúes locales a estos códigos que son fijos.  </p>
+                                                            <p><u>Interacciones </u>
+                                                            </p>
+                                                            <p>Se definen mediante un subprograma estándar <strong>MAJPLAN</strong> From <strong>AMAJPLAN</strong> al que se pasa en parámetro: </p>
+                                                            <ul>
+                                                                <li><strong>LDEB</strong>: Integer- Línea del cuadro de inicio de interacción</li>
+                                                                <li><strong>PLAGED</strong>: Integer - Sección inicio (1 a 4 según el número de secciones de día)</li>
+                                                                <li><strong>LFIN</strong>: Integer - Línea fin</li>
+                                                                <li><strong>PLAGEF</strong>: Integer - Sección fin (idem sección inicio) </li>
+                                                                <li><strong>INFORME</strong>: Integer - Tipo de actividad para los días laborables (de 1 al número del valor del menú tipo de actividad - 9837 o de su sustituto-)</li>
+                                                                <li><strong> MENSAJE</strong>: Char -Mensaje de retorno</li>
+                                                                <li><strong>CODRET</strong>: Integer - Código retorno (1 = OK) </li>
+                                                            </ul>
+                                                            <p>El componente tiene asignadas 365 o 366 líneas en el cuadro, que representan 12 meses sucesivos que pueden extenderse en dos años.  </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Planninganual" data-magellan-target="Planninganual">Planning anual</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_30_13">Uso del componente</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_14">Uso de la paleta</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_15">Posibilidades de concepción</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_30">La pantalla</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_40">La parametrización XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Gráfico asociado a un cuadro X3; permite visualizar y modificar un planning anual.</p><a id="MIS_30_13"></a>
+                                                            <h3 class="g1">Uso del componente</h3>
+                                                            <p>Idem planning mensual</p><a id="MIS_30_14"></a>
+                                                            <h3 class="g1">Uso de la paleta</h3>
+                                                            <p>Idem planning mensual</p><a id="MIS_30_15"></a>
+                                                            <h3 class="g1">Posibilidades de concepción</h3>
+                                                            <p />
+                                                            <ul>
+                                                                <li>Asignación de 1 a 8 actividades</li>
+                                                                <li>Recorte del conjunto de los días entre 1 y 4 secciones</li>
+                                                                <li>Gestión de 12 meses máximo, que puede estar repartido en dos años. </li>
+                                                                <li>Selección de secciones dentro de un mes para la asignación de una actividad. </li>
+                                                                <li>Tres tipos de jornadas (menú local 9836): laboral, fin de semana, festivo</li>
+                                                                <li>Las actividades sólo pueden asignarse a los días laborables. </li>
+                                                            </ul>
+                                                            <p>El componente XSL planning necesita identificar los datos siguientes para su funcionamiento. Estos datos aparecen en el cuadro asociado y en la parametrización del XSL.  </p><a id="MIS_30_30"></a>
+                                                            <h3 class="g1">La pantalla</h3>
+                                                            <p />
+                                                            <h5>Parámetros gráficos vinculados al bloque de cuadro</h5>
+                                                            <p>El componente XSL planning anual <strong>APLANY</strong> propone 3 opciones:</p>
+                                                            <ul>
+                                                                <li><strong>MENACT</strong>: Menu local tipo de actividad (9837 con 5 valores en estándar). Los elementos de este menú local pueden modificarse. Este parámetro permite abrir otro menú local. No pueden superarse los 8 elementos para el menú local 9837 que se propone en estándar ni para ningún otro menú local. <br />Nota: los colores empleados, por otro lado, están predeterminados por el XSL.</li>
+                                                                <li><strong>SDATA</strong>: Actualización del gráfico tras la interacción. Valor 0 o 1. Por defecto No (0). Al acabar con el subprograma de interacción, el gráfico no se recalcula, aunque se haya producido una recuperación de datos. Sólo se trata el código de retorno que valida o no la recuperación de información y da lugar a una interacción local para aceptar la modificación.  </li>
+                                                                <li><strong>PINTER</strong>: Programa de interacción. Por defecto se inicia el programa <strong>AMAJPLAN</strong>, pero es posible iniciar otros, lo que permite denominar los campos de otro modo e intervenir en las reglas de aceptación, de interacción o de acumulación. </li>
+                                                            </ul>
+                                                            <h5>Campos del cuadro</h5>
+                                                            <p>El cuadro X3 debe estar constituido de entrada por una línea para cada día. </p>
+                                                            <p>El cuadro debe contener los campos siguientes, caracterizados por la columna "parametrización". </p>
+                                                            <ul>
+                                                                <li>"Fecha interna" en campo (alfa 15) compuesta de </li>
+                                                                <ul>
+                                                                    <li>Año SSAA</li>
+                                                                    <li>	N	º de mes MM</li>
+                                                                    <li>Nº de día del mes DD</li>
+                                                                    <li>Nº de semana del año SS</li>
+                                                                    <li>Nº de día de la semana D (1 lunes a 7 domingo)</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Cada valor está separado por un -. <br />el sub-pro TRSFDATP(DATE,DATTEC) from INTRUTILA permite construir DATTEC a partir de una fecha en formato de fecha Adonix. Esta columna puede definirse en un campo invisible y transmitirse a los clientes de otros tipos.. Ejemplo de valor: 2006-05-12-19-5 es el viernes 12 de mayo de 2006.</p>
+                                                            <ul>
+                                                                <li>"Tipo de día" cuyos valores están asociados al menú local 9836.</li>
+                                                                <ul>
+                                                                    <li>1 : laborable</li>
+                                                                    <li>2 : fin de semana</li>
+                                                                    <li>3 : festivo</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Para reducir el flujo entre el servidor y el cliente, se puede definir el valor digital y sustituirlo con los valores 1, 2 o 3 que están impuestos. Con el programa de interacción estándar entregado, sólo podrán actualizarse los días festivos en los cambios de actividad.  </p>
+                                                            <ul>
+                                                                <li>"Sección 1 a Sección n" según la descomposición del día escogido. Se puede recortar el día en de 1 a 4 secciones. La presencia de las columnas define el número de playas.  </li>
+                                                            </ul>
+                                                            <p>Además, si se desea trabajar con el programa de interacción estándar <strong>AMAJPLAN</strong>, los nombres de los campos siguientes son obligatorios.  </p>
+                                                            <ul>
+                                                                <li>Columna a pie de cuadro: <strong>NBDAY</strong> </li>
+                                                                <li>Fecha interna: <strong>TECDAT</strong> </li>
+                                                                <li>Tipo de día: <strong>TYPDAY</strong> </li>
+                                                                <li>Secciones de día: <strong>PLAG1</strong>, <strong>PLAG2</strong>, <strong>PLAG3</strong> y <strong>PLAG4</strong>. Es necesario definir al menos 1; el programa comprueba su presencia y se adapta al número definido.  </li>
+                                                                <li>Totales: <strong>TOTTYP1</strong> a <strong>TOTTYP8</strong>. El programa comprueba su presencia y los carga en función del número de día que corresponde a cada tipo de día.  </li>
+                                                            </ul>
+                                                            <h5>
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                            </h5><a id="MIS_30_40"></a>
+                                                            <h3 class="g1">La parametrización XSL</h3>
+                                                            <p>idem planning mensual</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Radar" data-magellan-target="Radar">Radar</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_13">Uso del componente</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_30">La pantalla</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualización de un cuadro con una representación gráfica en forma de radar en el que:</p>
+                                                            <ul>
+                                                                <li>cada color representa una línea del cuadro.</li>
+                                                                <li>cada eje representa una columna de valor del cuadro.</li>
+                                                            </ul>
+                                                            <p>Las posibilidades vinculadas a este radar son:</p>
+                                                            <ul>
+                                                                <li>Gráfico sólo en visualización</li>
+                                                                <li>Posible botón en la variable de la parte inferior del cuadro accesible, en el gráfico, haciendo click en el botón derecho en cada color. </li>
+                                                                <li>Es posible mostrar una referencia de valor máximo</li>
+                                                                <li>Es posible mostrar una escala</li>
+                                                                <li>Se pueden visualiza varios elementos (línea cuadro). Limitarse a un número razonable para mayor claridad del gráfico. </li>
+                                                                <li>Se pueden visualiza varios ejes (columna cuadro). 3 mínimo, y conviene limitarse a un número razonable para mayor claridad del gráfico. </li>
+                                                            </ul><a id="MIS_40_13"></a>
+                                                            <h3 class="g1">Uso del componente</h3>
+                                                            <p>Barrido de una zona: </p>
+                                                            <ul>
+                                                                <li>Aumenta la opacidad de la zona</li>
+                                                                <li>descripción</li>
+                                                            </ul>
+                                                            <p>Pinchar en la zona: </p>
+                                                            <ul>
+                                                                <li>Aviso para posicionarse en el servidor (línea del cuadro correspondiente)</li>
+                                                            </ul>
+                                                            <p>Pinchar en el botón derecho en la zona: </p>
+                                                            <ul>
+                                                                <li>Aviso para posicionarse (línea del cuadro correspondiente)</li>
+                                                                <li>Botón de Menú contextual (línea del cuadro correspondiente)</li>
+                                                            </ul>
+                                                            <p>Hacer click sobre el color indicado: </p>
+                                                            <ul>
+                                                                <li>Passa a primer plano la zona correspondiente</li>
+                                                                <li>Aumenta la opacidad</li>
+                                                            </ul>
+                                                            <p>Hacer click sobre el "ojo" indicado: </p>
+                                                            <ul>
+                                                                <li>Enmascara la zona correspondiente</li>
+                                                            </ul>
+                                                            <p>El componente XSL radar necesita identificar los datos siguientes para su funcionamiento. Estos datos aparecen en el cuadro asociado y en la parametrización del XSL.  </p><a id="MIS_40_30"></a>
+                                                            <h3 class="g1">La pantalla</h3>
+                                                            <p />
+                                                            <h5>Parámetros gráficos vinculados al bloque de cuadro</h5>
+                                                            <p>El componente XSL planning radar <strong>ARADAR</strong> propone 3 opciones:</p>
+                                                            <ul>
+                                                                <li><strong>SCALE</strong>: permite fijar una escala de representación (por defecto 0). Si esta escala está en 0, el componente adapta su escala al valor más grande a representar de los hallados; en caso contrario, los valores son contrastados con la escala.  </li>
+                                                                <li><strong>MENSCA</strong>: Menú Escala. Permite definir una leyenda para los distintos valores de la escala. Esta información debe ser un número del menú local. Si el valor está en 0 (por defecto), no hay escala mostrada. </li>
+                                                                <li><strong>SDATA</strong>: Actualización del gráfico tras la interacción. Valor 0 o 1. Por defecto Sí (1). </li>
+                                                            </ul>
+                                                            <h5>Campos del cuadro</h5>
+                                                            <p>El cuadro X3 debe estar constituido por una línea para cada elemento a estudiar.  </p>
+                                                            <p>El cuadro debe contener los campos siguientes, caracterizados por la columna "parametrización". </p>
+                                                            <ul>
+                                                                <li>"Clave": campo que contiene un identificador único</li>
+                                                                <li>"Descripción": campo que contiene la descripción del identificador</li>
+                                                                <li>"Valor": un campo por eje de análisis cuyo título se precisa en el epígrafe. Estos campos deben ser de tipo entero o decimal. </li>
+                                                            </ul>
+                                                            <p />
+                                                            <p />
+                                                            <h5>
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                            </h5>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Nomenclaturahorizontal" data-magellan-target="Nomenclaturahorizontal">Nomenclatura horizontal</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_50_30">La pantalla</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_50_40">La parametrización XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualización de un cuadro con una representación gráfica en forma de organigrama en el que:</p>
+                                                            <ul>
+                                                                <li>cada elemento representa una línea del cuadro.</li>
+                                                            </ul>
+                                                            <p>Posibilidades vinculadas a la nomenclatura horizontal:</p>
+                                                            <ul>
+                                                                <li>posibilidad de desplazar un elemento y todo lo que lleva adjunto (sometido a parametrización)</li>
+                                                                <li>es posible mostrar una imagen en los cuadros (sometidos a parametrización)</li>
+                                                                <li>se dispone de un menú contextual para cada elemento (supresión de elemento por acción botón)</li>
+                                                                <li>Es posible ejecutar un tratamiento asociado al doble click (sometido a parametrización)</li>
+                                                            </ul>
+                                                            <p>El componente XSL "nomenclatura horizontal" necesita identificar los datos siguientes para su funcionamiento. Estos datos aparecen en el cuadro asociado y en la parametrización del XSL.  </p><a id="MIS_50_30"></a>
+                                                            <h3 class="g1">La pantalla</h3>
+                                                            <p />
+                                                            <h5>Parámetros gráficos vinculados al bloque de cuadro</h5>
+                                                            <p>El componente XSL planning mensual <strong>ANOMH</strong> propone 5 opciones:</p>
+                                                            <ul>
+                                                                <li><strong>MODHIE</strong>: Autorizar el desplazamiento de un elemento y de todo lo que lleva adjunto. Valor: 1 no / 2 sí. Por defecto Sí (2). </li>
+                                                                <li><strong>SIZEB</strong>: Tamaño del cuadro de cada elemento en pixels expresado en altura y longitud. (tamaño por defecto: 100,100).</li>
+                                                                <li><strong>SDATA</strong>: Actualización del gráfico tras la interacción. Valor: 0 no / 1 sí. Por defecto No (0). Al acabar con el subprograma de interacción, el gráfico no se recalcula, aunque se haya producido una recuperación de datos. Sólo se trata el código de retorno que valida o no la recuperación de información y da lugar a una interacción local para aceptar la modificación.  </li>
+                                                                <li><strong>PINTER</strong>: Programa de interacción. Por defecto se inicia el programa <strong>AMAJHIER</strong>, pero es posible iniciar otros, lo que permite denominar los campos de otro modo e intervenir en las reglas de aceptación o de interacción. </li>
+                                                                <li><strong>EXECFL</strong>: Autorizar una activación de un subprogram haciendo doble click en el elemento de último nivel. </li>
+                                                            </ul>
+                                                            <h5>Campos del cuadro</h5>
+                                                            <p>El cuadro X3 debe estar constituido de entrada por una línea para cada día. </p>
+                                                            <p>El cuadro debe contener los campos siguientes, caracterizados por la columna "parametrización". </p>
+                                                            <ul>
+                                                                <li>"Clave del padre": Clave del padre del registro actual. Vacío, si se trata de la cabecera de la nomenclatura; en caso contrario es obligatorio. </li>
+                                                                <li>"Clave": clave del registro actual.obligatorio. </li>
+                                                                <li>"Imagen": imagen mostrada en los cuadros del organigrama. La imagen debe localizarse en el listado de recursos por dossier (/X3_PUB/dossier/RES). La imagen está redimensionada en función del parámetro SIZEB. Columna opcional.</li>
+                                                                <li>"Descripción corta": mostrado en el marco del elemento. Columna opcional.</li>
+                                                                <li>"descripción larga": info en barrido del elemento. Columna opcional.</li>
+                                                            </ul>
+                                                            <p>Además, si se desea trabajar con el programa de interacción estándar <strong>AMAJHIER</strong>, los nombres de los campos siguientes son obligatorios: </p>
+                                                            <ul>
+                                                                <li>Columna a pie de cuadro: <strong>NBCMP</strong> </li>
+                                                                <li>Clave del padre: <strong>PARENT</strong></li>
+                                                                <li>Clave: <strong>KEYC</strong></li>
+                                                                <li>Descripción corta: <strong>LIBSHORT</strong> </li>
+                                                                <li>Descripción larga: <strong>LIBL1</strong></li>
+                                                                <li>Imagen: <strong>IMG </strong></li>
+                                                            </ul><a id="MIS_50_40"></a>
+                                                            <h3 class="g1">La parametrización XSL</h3>
+                                                            <p><u>Interacciones </u>
+                                                            </p>
+                                                            <p>Se definen mediante un subprograma estándar <strong>MAJHIER</strong> From <strong>AMAJHIER</strong> al que se pasa en parámetro: </p>
+                                                            <ul>
+                                                                <li><strong>CODACT</strong>: Char <strong>-</strong> código de acción (D delete / M Modify / Execute) </li>
+                                                                <li><strong>NLI</strong>: Integer - Número de línea del componente a tratar (1 a n)</li>
+                                                                <li><strong>FATHVAL</strong>: Integer - Número de línea del elemento de unión (padre si RANGNIV=0,&#160;hermano si RANGNIV=1 o -1) <p /></li>
+                                                                <li><strong>RANGNIV</strong>: Integer - tipo de unión (0 inferior, 1 derech, -1 izquierda)</li>
+                                                                <li><strong> MENSAJE</strong>: Char -Mensaje de retorno</li>
+                                                                <li><strong>CODRET</strong>: Integer - Código retorno (1 = OK) </li>
+                                                            </ul>
+                                                            <p>Para suprimir un elemento, se emplea una acción botón sobre la variable de la parte inferior del cuadro, y se escribe:</p>
+                                                            <p><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Local Char MENSAJE(100)<br /></span></span><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Local Integer CODRET <br /></span></span><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Call MAJHIER("D",nolign,"",0,MENSAJE,CODRET) From AMAJHIER <br />If CODRET&lt;&gt;1<br />&#160;&#160;&#160;Call ERROR(MENSAJE) From GESECRAN<br />Endif</span></span> </p>
+                                                            <div><span></span>
+                                                            </div>
+                                                            <p>&#160;&#160;</p>
+                                                            <dir>
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                            </dir>
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Nomenclaturavertical" data-magellan-target="Nomenclaturavertical">Nomenclatura vertical</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_60_30">La pantalla</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_40">La parametrización XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualización de un cuadro con una representación gráfica en forma de organigrama en el que:</p>
+                                                            <ul>
+                                                                <li>cada elemento representa una línea del cuadro.</li>
+                                                            </ul>
+                                                            <p>Posibilidades vinculadas a la nomenclatura horizontal:</p>
+                                                            <ul>
+                                                                <li>plegar -desplegar un eleento (click)</li>
+                                                                <li>desplazar un elemento y todo lo que lleva adjunto (sometido a parametrización)</li>
+                                                                <li>suprimir un elemento y todo lo que lleva adjunto (click derecho)</li>
+                                                                <li>ejecutar un tratamiento con doble clic en el último elemento (sometido a parametrización)</li>
+                                                            </ul>
+                                                            <p>El componente XSL "nomenclatura horizontal" necesita identificar los datos siguientes para su funcionamiento. Estos datos aparecen en el cuadro asociado y en la parametrización del XSL.  </p><a id="MIS_60_30"></a>
+                                                            <h3 class="g1">La pantalla</h3>
+                                                            <p />
+                                                            <h5>Parámetros gráficos vinculados al bloque de cuadro</h5>
+                                                            <p>El componente XSL planning mensual <strong>ANOMV</strong> propone 4 opciones:</p>
+                                                            <ul>
+                                                                <li><strong>MODHIE</strong>: Autorizar el desplazamiento de un elemento y de todo lo que lleva adjunto. Valor: 1 no / 2 sí. Por defecto Sí (2). </li>
+                                                                <li><strong>EXECFL</strong>: Autorizar una activación de un subprogram haciendo doble click en el elemento de último nivel. </li>
+                                                                <li><strong>SDATA</strong>: Actualización del gráfico tras la interacción. Valor: 0 no / 1 sí. Por defecto No (0). Al acabar con el subprograma de interacción, el gráfico no se recalcula, aunque se haya producido una recuperación de datos. Sólo se trata el código de retorno que valida o no la recuperación de información y da lugar a una interacción local para aceptar la modificación.  </li>
+                                                                <li><strong>PINTER</strong>: Programa de interacción. Por defecto se inicia el programa <strong>AMAJHIER</strong>, pero es posible iniciar otros, lo que permite denominar los campos de otro modo e intervenir en las reglas de aceptación o de interacción. </li>
+                                                            </ul>
+                                                            <h5>Campos del cuadro</h5>
+                                                            <p>El cuadro X3 debe estar constituido de entrada por una línea para cada día. </p>
+                                                            <p>El cuadro debe contener los campos siguientes, caracterizados por la columna "parametrización". </p>
+                                                            <ul>
+                                                                <li>"Clave del padre": Clave del padre del registro actual. Vacío, si se trata de la cabecera de la nomenclatura; en caso contrario es obligatorio. </li>
+                                                                <li>"Clave": clave de registri actual. obligatoria.</li>
+                                                                <li>"Icono": opcional. icono mostrado al inicio de la línea. El icono debe estar localizado en el listado de recursos estándar (X3_PUB/X3_PUB/RESSTD/IMG), específico (/X3_PUB/X3_PUB/RESPER/IMG), o verticale(/X3_PUB/X3_PUB/RESVER/IMG). </li>
+                                                                <li>"descripción larga": descripción larga. obligatoria.</li>
+                                                                <li>"Descripción corta": descripción corta. opcional. en caso de presencia de la columna, mostrada en info-bulle.</li>
+                                                            </ul>
+                                                            <p>Además, si se desea trabajar con el programa de interacción estándar <strong>AMAJHIER</strong>, los nombres de los campos siguientes son obligatorios:</p>
+                                                            <ul>
+                                                                <li>Columna a pie de cuadro: <strong>NBCMP</strong> </li>
+                                                                <li>Clave del padre: <strong>PARENT</strong></li>
+                                                                <li>Clave: <strong>KEYC</strong></li>
+                                                                <li>Descripción larga: <strong>LIBL1 </strong></li>
+                                                                <li>Descripción corta: <strong>LIBSHORT</strong> </li>
+                                                                <li>Imagen: <strong>ICO </strong></li>
+                                                            </ul><a id="MIS_60_40"></a>
+                                                            <h3 class="g1">La parametrización XSL</h3>
+                                                            <p><u>Interacciones </u>
+                                                            </p>
+                                                            <p>Se definen mediante un subprograma estándar <strong>MAJHIER</strong> From <strong>AMAJHIER</strong> al que se pasa en parámetro: </p>
+                                                            <ul>
+                                                                <li><strong>CODACT</strong>: Char <strong>-</strong> código de acción (D delete / M Modify / Execute) </li>
+                                                                <li><strong>NLI</strong>: Integer - Número de línea del componente a tratar (1 a n)</li>
+                                                                <li><strong>FATHVAL</strong>: Integer - Número de línea del elemento de unión (padre si RANGNIV=0,&#160;hermano si RANGNIV=1 o -1) </li>
+                                                                <li><strong>RANGNIV</strong>: Integer - tipo de unión (0 inferior, 1 derech, -1 izquierda)</li>
+                                                                <li><strong> MENSAJE</strong>: Char -Mensaje de retorno</li>
+                                                                <li><strong>CODRET</strong>: Integer - Código retorno (1 = OK) </li>
+                                                            </ul>
+                                                            <p>Para suprimir un elemento, se emplea una acción botón sobre la variable de la parte inferior del cuadro, y se escribe:</p>
+                                                            <p><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Local Char MENSAJE(100)<br /></span></span><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Local Integer CODRET <br /></span></span><span style="FONT-SIZE: 33%;FONT-FAMILY: Courier;"><span>Call MAJHIER("D",nolign,"",0,MENSAJE,CODRET) From AMAJHIER <br />If CODRET&lt;&gt;1<br />&#160;&#160;&#160;Call ERROR(MENSAJE) From GESECRAN<br />Endif</span></span> </p>
+                                                            <div><span></span>
+                                                            </div>
+                                                            <p>&#160;&#160;</p>
+                                                            <dir>
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                            </dir>
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#LoscomponentesXSL">Los componentes XSL</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Planningmensual">Planning mensual</a>
+                                                        </li>
+                                                        <li><a href="#Planninganual">Planning anual</a>
+                                                        </li>
+                                                        <li><a href="#Radar">Radar</a>
+                                                        </li>
+                                                        <li><a href="#Nomenclaturahorizontal">Nomenclatura horizontal</a>
+                                                        </li>
+                                                        <li><a href="#Nomenclaturavertical">Nomenclatura vertical</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 enero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

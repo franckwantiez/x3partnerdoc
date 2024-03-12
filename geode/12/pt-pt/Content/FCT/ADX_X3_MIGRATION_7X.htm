@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Sage X3 : Pré e pós-requisitos funcionais de migração de um dossier em V7" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="[Supervisor]" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Sage X3 : Pré e pós-requisitos funcionais de migração de um dossier em V7</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="SageX3PréepósrequisitosfuncionaisdemigraçãodeumdossieremV7" data-magellan-target="SageX3PréepósrequisitosfuncionaisdemigraçãodeumdossieremV7"><span>Sage X3 : Pré e pós-requisitos funcionais de migração de um dossier em V7</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+A migração dos dados e parametrizações contidos no dossier migrado necessita duas intervenções : uma intervenção antes (pré-requisitos) e uma intervenção após (pós-requisito) o tratamento de migração automaticamente realizado no momento da primeira validação do dossier migrado da solução V7.
+      </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_15"></a>
+                                                            <h2 class="g1" id="Localizaçãoespanhola" data-magellan-target="Localizaçãoespanhola">Localização espanhola</h2>
+                                                            <p>
+No momento da migração de um dossier de legislação espanhola, obrigado de contactar o seu serviço ao cliente espanhol afim de conhecer o procedimento de migração dedicada.
+        </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Prérequisitoaotratamentodemigração" data-magellan-target="Prérequisitoaotratamentodemigração">Pré-requisito ao tratamento de migração</h2>
+                                                            <p>Encontrar-se-á em baixo os pré-requisitos de migração de um dossier De maneira geral, uma primeira etapa, que é fortemente aconselhada de realizar, é de <b>verificar a coerência dos dados a migrar</b>. Com efeito, sobre um dossier que tem muitos movimentos, e que teve por vezes sofrido de etapas de manutenção, é possível que certos dados não sejam perfeitameto coerentes (e que tantos mais que se pode ter desenvolvimentos especificos).</p>
+                                                            <p>Esta <a href="UTIBASE.htm"><span style="color: #0066cc;">operação</span> </a>permitirá detetar eventuais problemas ligados a dados que riscam provocar os erros no momento do procedimento de migração a propriamente falar, obrigam a relançar.</p>
+                                                            <p>Está também aconselhado de purgar um certo número de tabelas temporárias cuja migração pode ser muito longa (por exemplo da tabela dos pedidos).</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Pósrequisitosaotratamentodemigração" data-magellan-target="Pósrequisitosaotratamentodemigração">Pós-requisitos ao tratamento de migração</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_60">Processo ofício</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_150">Contabilidade</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_300">Imobilizações</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_400">Negócio</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><a id="MIS_40_60"></a>
+                                                            <h3 class="g1">Processo ofício</h3>
+                                                            <p>Os processos utilizados em versão 6 devem ser revalidados pela função Recodificação processo (ARECOPRO). Esta validação permite de os confirmar á versão 7. </p>
+                                                            <p>A validação dos processos deve se fazer :</p>
+                                                            <ul>
+                                                                <li>após cada validação de dossier,</li>
+                                                                <li>após cada cópia de processo de um dossier a um outro.</li>
+                                                            </ul><a id="MIS_40_150"></a>
+                                                            <h3 class="g1">Contabilidade</h3>
+                                                            <p />
+                                                            <h5>Documentos automáticos</h5>
+                                                            <p>Novos documentos automáticos estão disponíveis em versão 7 e certos documentos automáticos da versão 6 foram modificados.<br />Você deve então lançar o utilitário de comparação dos documentos automáticos entre o dossier migrado e o dossier Sage X3.</p>
+                                                            <h5>titulos longos e curtos dos dados declinados pela legislação</h5>
+                                                            <p>Certas funções de parametrização são então de ora avante declinados por legislação. Na ocasião desta adaptação, os campos títulos longos e curtos foram tornados obrigatórios na língua de conexão do utilizador. Em caso de modificação do valor de um campo de um tal dado, se o título longo ou curto não está presente na língua de conexão, deve estar completado.<br />As funções afetados utilizados em finanças são o tipo de documentos (GESGTE), os diários (GESJOU), os destinos contabilísticos (GESCDA), as transações de pagamentos (GESTPY), os códigos de edições (GESTED), os modos de pagamentos (GESTAM), os ficheiros bancários (GESTFB), os códigos taxas (GESTVT), os regimes de taxa (GESTVB), os códigos descontos/juros (GESTDA), os tipos de faturas vendas e compras (GESTSV e GESTPV).</p>
+                                                            <h5>Grupo de listas</h5>
+                                                            <p>Em versão 7, as funções permitem gerir as declarações a organismos fiscais ou administrativos foram reagrupados num menu declarações e reorganizados por tema depois legislação.<br />As listas associadas a estas funções foram também reorganizadas em consequência, o seu grupo de anexação (via o meu local 97) sendo então forçado para corresponder a esta nova estrutura. <br />No caso onde certas particularidades clientes quanto ao grupo de anexação devem perdurar após migração, convirá modificar o grupo de listas da lista.</p>
+                                                            <h5>Campos indicando um caminho de ficheiro</h5>
+                                                            <p>O novo modo de gestão dos volumes em V7 e utilização de um browser internet antes que um cliente pesado implica que os campos permitem indicar um caminho de geração de ficheiro funcionando diferentemente. São afetados os valores parâmetros de uma parte, mas também os campos de certas funções.<br />Para que estes parâmetros contendo um caminho, são de ora avante utilizados unicamente quando o destino é de tipo Servidor. Devem conter um caminho relativo ao volume selecionado (ou simplesmente um volume), exprimido com a sintaxe idónea.<br />Por exemplo,o parâmetro EXPCASPAY deverá conter [CASH] afim que os ficheiros sejam gerados sob o volume CASH.<br />Estes parâmetros devem então ser atualizados para conter os volumes ou caminhos relativos segundo a nova sintaxe.<br />Para que este é do caso dos campos de função, as funções "Parametrização ENEREGY" (GESNRY) e "Parametrização ACCENTFIL" (GESFAE) são afetados. Estas duas funções contêm uma zona que está no caso de uma geração de tipo Servidor deve conter um caminho relativo ao volume selecionado (ou simplesmente um volume).</p><a id="MIS_40_300"></a>
+                                                            <h3 class="g1">Imobilizações</h3>
+                                                            <p />
+                                                            <h5>Tipo de registos</h5>
+                                                            <p>Em versão 7, a parametrização dos tipos de registos contabilísticos (GESTPE) foi modificada. Os tipos de registos foram recodificados em standard e é de ora avante possível de registar um tipo de documento e um código diário pela legislação.<br />É então aconselhado de verificar a sua parametrização.</p><a id="MIS_40_400"></a>
+                                                            <h3 class="g1">Negócio</h3>
+                                                            <p />
+                                                            <h5>Legislações</h5>
+                                                            <p>Em versão 7, a gestão de certas funções entrega a noção da legislação.</p>
+                                                            <ul>
+                                                                <li>As fichas possuindo um filtro sobre a legislação, dispõem deste código legislação na nova chave.</li>
+                                                                <li>As fichas que não têm filtro sobre a legislação têm um código vazio para a legislação. Estas fichas são então consideradas como multi-legislações.</li>
+                                                                <li>As informações do grupo são mantidos em tanto que filtro.</li>
+                                                                <li>O titulo longo e o título curto são conservados. Se em certas fichas estes titulos estão vazios, o utilizador deve registar estes titulos manualmente no momento da atualização.</li>
+                                                            </ul>
+                                                            <p>A seguir, a lista das funções geradas pela legislação e a chave correspondente modificadas sobre a tabela associada ao objeto.</p>
+                                                            <p />
+                                                            <table width="70%" border="1" cellpadding="5" style="HEIGHT: 80px;">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Função</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nome da função.</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Elementos de chave</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESCDA</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Destinos contabilísticos</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>COD+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESGTE</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos de documentos</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESJOU</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Diários contabilísticos</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>JOU+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTDA</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Descontos/Juros</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>DEP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTFB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Ficheiros bancários</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>COD+BAN+RECTYP+ORDNUM+LEG+NUM</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTPT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Condições de pagamento</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>PTE+LEG+PTELIN</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTPV</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos fatura fornecedor</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>PIVTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTSV</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos fatura cliente</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>SIVTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTPY</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Transações registo pagamentos</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>PAYTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTRE</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos de devolução</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>SRHTYP+LEG (Novo em V7)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTSD</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos de entregas</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>SRHTYP+LEG (Novo em V7)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTSO</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Tipos de encomenda</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>SOHTYP+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTVC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Determinação taxas</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>COD+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTVT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nível de taxa</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>VAT+LEG</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <h5> Tabelas diversas</h5>
+                                                            <ul>
+                                                                <li>As tabelas diversas 1, 2, 3, 6, 15 e 304 são migradas em novos objetos.</li>
+                                                                <li>As fichas possuindo um filtro sobre a legislação, dispõem deste código legislação na nova chave.</li>
+                                                                <li>As fichas que não têm filtro sobre a legislação têm um código vazio para a legislação. Estas fichas são então consideradas como multi-legislações.</li>
+                                                                <li>Para uma antiga tabela diversa que tem uma informação de grupo, esta informação de grupo está mantida no novo objeto em tanto que filtro. Todas as outras informações standards desta tabela diversa são transferidas na nova tabela objeto.</li>
+                                                                <li>Todos os campos não standards acrescentados no momento da parametrização das tabelas diversas (A1, A2, N1, N2 fields) são transferidos na tabela objeto (não serão afixados no novo objeto).</li>
+                                                            </ul>
+                                                            <p>A seguir, o quadro de correspondência entre as tabelas diversas utilizadas em V6 e as funções de gestão dos objetos em V7.</p>
+                                                            <p />
+                                                            <table width="90%" border="1" cellpadding="5" style="HEIGHT: 80px;">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Número da tabela diversa em V6</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nome da tabela </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nova tabela</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Elementos de chave</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nova função</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nome da nova função.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>1</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Regimes de taxas terceiras</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABVACBPR</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>VACBPR+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTVB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Regime da taxa do terceiro</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>2</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nível de taxas artigos</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABVACITM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>VACITM+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTVI</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Nível de taxa :</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Modos de pagamento</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABPAM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>PAM+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTAM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Modos de pagamento</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>6</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Natureza transação DEB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABEECNAT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>EECNAT+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTEC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Natureza transação</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>15</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Regimes estatísticos DEB</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABEECSCH</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>EECSCH+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTSC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Regime estatístico</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr align="center">
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>304</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Código edição</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>TABCODEDT</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>CODEDT+LEG</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>GESTED</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Código edição</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <h5>Tipos de entrega e tipos de devoluções</h5>
+                                                            <p>O processo de migração deve atribuir :</p>
+                                                            <ul>
+                                                                <li>um tipo de entrega no campo SDHTYP para todas as entregas existentes.</li>
+                                                                <li>um tipo de devolução no campo SRHTYP para todas as devoluções existentes.<br />O tipo de entrega e o tipo de devolução a utilizar provêm do dossier de referência. Apenas os que têm legislações tomadas em carga no dossier de destino e aqueles que têm uma legislação vazia são copiados a partir do dossier de referência.<br />O mesmo processo se aplica para os parâmetros gerais seguintes, com os seus valores por legislação : SDHTYPNOR, SDHTYPLND e SDHTYPCSO.<br /><img src="../Resources/Images/SEEINFO" alt="SEEINFO" keeps="true" realloc="SEEINFO" />&#160;<span style="color: #bf7f00;">O cliente tem a possibilidade de estabelecer os dados a dois níveis diferentes em função da maneira cuja migração está realizada: </span></li>
+                                                                <ul>
+                                                                    <li><span style="color: #bf7f00;">a migração está feita ao mesmo tempo que a validação do dossier : a configuração deve ser feita corretamente no dossier de referência, com os códigos dos tipos esperados (as tabelas dos tipos e os parâmetros gerais). Senão, o sistema utiliza os tipos por defeito entregues em standard.</span>
+                                                                    </li>
+                                                                    <li><span style="color: #bf7f00;">a migração está feita após a validação do dossier : a configuração deve ser feita corretamente no dossier de referência, com os códigos dos tipos esperados (as tabelas dos tipos e os parâmetros gerais). Senão, o sistema utiliza os tipos por defeito que foram copiados depois o dossier de referência.</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <li>Qunado as tabelas dos tipos de entrega e os tipos de devoluções são preenchidos, e quando os parâmetros gerais SDHTYP* são definidos, o sistema alimenta as entregas e as devoluções segundo os processos seguintes. :</li>
+                                                                <ul>
+                                                                    <li>para cada entrega :</li>
+                                                                    <ul>
+                                                                        <li>o sistema verifica o parâmetro geral correspondente à categoria de entrega,</li>
+                                                                        <li>se nenhum valor foi definido, o sistema toma pelo primeiro tipo de entrega, na ordem alfabética, que corresponde à legislação de entrega e a categoria de entrega,</li>
+                                                                        <li>se nenhum valor foi definido, o sistema toma pelo primeiro tipo de entrega, na ordem alfabética, que uma legislação vazia e que a categoria corresponde à categoria de entrega,</li>
+                                                                    </ul>
+                                                                    <li>para cada devolução :</li>
+                                                                    <ul>
+                                                                        <li>o sistema toma o primeiro tipo de devolução, na ordem alfabética, que corresponde à legislação de devolução e na categoria de devolução,</li>
+                                                                        <li>se nenhum valor foi definido, o sistema toma pelo primeiro tipo de entrega, na ordem alfabética, que uma legislação vazia e que a categoria corresponde à categoria de devolução.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <h5>Mass Mailing CRM</h5>
+                                                            <ul>
+                                                                <li>O parâmetro WORDPATH (Utilizadores/Parâmetros/CRM/DEF/WORDPATH) não existe mais, o modo de criação dos documentos Microsoft Word tendo alterado.</li>
+                                                                <li>A tabela "Etat mailing (OMMRPT)" contêm apenas os modelos de listas Crystal No momento da migração, o processo seguinte está então aplicado :</li>
+                                                                <ul>
+                                                                    <li>todas as fichas que identifiquem os modelos Microsoft Word são suprimidos,</li>
+                                                                    <li>o campo Tipo (TYPTPL) está suprimida,</li>
+                                                                    <li>o campo Língua está preenchida com a lingua do dossier por defeito,</li>
+                                                                    <li>o campo Código lista (MAGTPL) identifica agora a ficha "Código de lista",</li>
+                                                                    <li>um novo campo contém o nome de lista Crystal. Este campo não visível está preenchido ao mesmo tempo que o campo precedente,</li>
+                                                                    <li>os campos Descrição curta e Descrição longa são prenchidos com o códigos de lista,</li>
+                                                                    <li>uma nova chave está criada com o código da língua : Código da língua + Código de lista</li>
+                                                                </ul>
+                                                                <li>A tabela "Publipostage xml (MAILXML)" contém dois novos campos : os campos Descrição curta e Descrição longa, com o código XML de mass mailing.</li>
+                                                            </ul>
+                                                            <h5>Modelos de importação</h5>
+                                                            <ul>
+                                                                <li>O tipo de entrega está acrescentado no modelo de importação SDHFL. </li>
+                                                                <li>Novos modelos de importação, resultantes da criação de objetos em prenchendo das tabelas diversas, são acrescentadas : TAM (Modos de pagamento), TEC&#160;(Natureza transação), TED&#160;(Código edição), TPV&#160; (Tipos fatura fornecedor), TRE&#160;(Tipos de devoluções), TSC&#160;(Regime estatístico), TSD&#160;(Tipos de entrega), TSO&#160;(Tipos de encomendas), TSV&#160;(Tipos fatura venda), TVB&#160;(Regime de taxa terceiros), TVI&#160;(Nível de taxa).</li>
+                                                            </ul>
+                                                            <h5>Listas</h5>
+                                                            <ul>
+                                                                <li>Os elementos ligados ao SDD são acrescentados nas listas faturas (SBONFAC*).</li>
+                                                                <li>Os elementos ligados aos tipos de entrega e tipos de devolução são acrescentado nas listas BONLIV*, BONRETLIV, SDELIVERY*, SRETURN*<br /></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SageX3Pr%C3%A9ep%C3%B3srequisitosfuncionaisdemigra%C3%A7%C3%A3odeumdossieremV7">Sage X3 : Pré e pós-requisitos funcionais de migração de um dossier em V7</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Localiza%C3%A7%C3%A3oespanhola">Localização espanhola</a>
+                                                        </li>
+                                                        <li><a href="#Pr%C3%A9requisitoaotratamentodemigra%C3%A7%C3%A3o">Pré-requisito ao tratamento de migração</a>
+                                                        </li>
+                                                        <li><a href="#P%C3%B3srequisitosaotratamentodemigra%C3%A7%C3%A3o">Pós-requisitos ao tratamento de migração</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janeiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

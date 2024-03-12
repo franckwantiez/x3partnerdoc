@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],m:[0,1],u:['../Content/About.htm'],s:['$mssql_indexcod','note'],p:[['$mssql_indexcode',1],['country',1],['prg+subprg',2]]});

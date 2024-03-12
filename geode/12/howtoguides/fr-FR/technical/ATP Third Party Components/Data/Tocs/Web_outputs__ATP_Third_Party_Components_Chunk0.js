@@ -1,0 +1,1 @@
+﻿define({'/Content/How-to guides/Platform/ATP_ThirdPartyComponents/T1 ATP_ThirdPartyComponents.htm':{i:[0],t:['Sage X3 Automated Test Platform - Third-party components'],b:['']},'/Content/How-to guides/Platform/ATP_ThirdPartyComponents/T2 License agreements.htm':{i:[1],t:['Third-party components'],b:['']}});

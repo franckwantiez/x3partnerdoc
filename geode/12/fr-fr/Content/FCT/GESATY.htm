@@ -1,0 +1,1119 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Types,Données,Objet" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Types de données" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Types de données</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Typesdedonnées" data-magellan-target="Typesdedonnées"><span>Types de données</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Utilisez cette fonction pour définir des types de données utilisables dans tous les dictionnaires où des données sont définies&#160;: écrans, champs des tables, paramètres des états…</p>
+                                                            <p>Un type de données est lié à un certain nombre de caractéristiques (type interne, longueur, actions…) automatiquement rattachées à tous les champs utilisant ce type. Il n'est toutefois pas nécessaire de définir toutes les caractéristiques d'un type. En effet, les caractéristiques non définies au niveau du type seront demandées à la définition de l'écran, ce qui permet de définir des types génériques. Un certain nombre de types de données sont livrées par défaut, contenant uniquement le type interne, c'est-à-dire le type de stockage du champ. Ces types de données ne peuvent pas être modifiés. La liste est la suivante :</p>
+                                                            <table width="567" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Code type</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Définition</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p> Il</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Chaîne alphanumérique</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p> ABB</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Blob</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p> ACB</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Clob</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p> C</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Entier court</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p> D</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Date</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p> DCB</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Montant décimal</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p> L</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Entier long</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p> M</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Menu Local</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p> MM</p>
+                                                                        </td>
+                                                                        <td width="90%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p> Menu local avec possibilité de filtre des éléments</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p />
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" width="7" height="7" border="0" realloc="bullet_brique.gif" />  &#160;<b>M</b> ou <b>MM</b> correspondent à un <a href="TXT.htm">menu local</a> dont le numéro est donné par le contenu de la colonne Menu dans le dictionnaire des tables ou écrans. Un menu local est une table d'intitulés, saisie soit sous la forme d'une combo box, soit sous la forme de boutons radios, soit sous la forme d'une case à cocher (s'il s'agit du menu local 1 qui stocke les valeurs Oui / Non). Dans la base de données, on ne stocke que le numéro du choix dans la liste (0 si la zone n'est pas renseignée, 1 si le premier intitulé de la liste est sélectionné, et ainsi de suite).</p>
+                                                            <p>Le tableau ci-dessous liste les types de données correspondant à des éléments techniques du Superviseur&#160;:</p>
+                                                            <table width="80%" border="1" cellspacing="0" cellpadding="0" style="HEIGHT: 170px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p> Code type</p>
+                                                                        </td>
+                                                                        <td width="85%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Définition</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p> ABS</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Variable bas de tableau</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>AT</p>
+                                                                        </td>
+                                                                        <td width="85%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Champ indiquant le type de blob</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>AX1</p>
+                                                                        </td>
+                                                                        <td width="85%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Texte traduit (longueur 12)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>AX2</p>
+                                                                        </td>
+                                                                        <td width="85%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p> Texte traduit (longueur 20)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>AX3 </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p> Texte traduit (longueur 30)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p> W</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p> Filler</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" width="7" height="7" border="0" realloc="bullet_brique.gif" /><b>ABS </b>identifie la zone écran de bas de tableau. Cette zone est obligatoire pour tout bloc tableau défini dans un écran. Si le tableau est saisissable, cette zone doit être en mode saisie&#160;; si le tableau est invisible, cette zone doit être en mode invisible.</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" width="7" height="7" border="0" realloc="bullet_brique.gif" /><b>W</b> identifie un ‘filler’. Ce type de donnée placé sur une zone écran aura seulement pour effet de laisser un espace entre la zone précédente et la zone suivante, si ces deux zones sont sur une même ligne. Dans ce contexte, il est préférable d'utiliser la rubrique colonne du dictionnaire des écrans et de n'utiliser les champs avec type de donnée <b>W</b> qu'en dernier recours.</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" width="7" height="7" border="0" realloc="bullet_brique.gif" /><b>AX1, AX2, AX3</b>&#160;identifient les textes traduits. Ce champ n'est pas concrètement créé dans la base de donnée. L’intitulé de ce champ permet simplement d'identifier le texte traduit qui sera stocké dans la table dédiée ATEXTRA.</p>
+                                                            <p>Le tableau ci-dessous liste les types fonctionnels les plus importants (liste non exhaustive)&#160;:</p>
+                                                            <table width="80%" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Code type</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Définition</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>MD1 à MD4</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Formats de montants dépendant de la <a href="GESTCU.htm">devise</a> (qui doit être en ligne)&#160;: les 4 formats correspondants sont définis dans la table des devises.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>MC1 à MC4</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Formats de montants dépendant de la devise&#160;: il s'agit des même types que ci-dessus, mais ils sont optimisés pour une utilisation dans un tableau déroulant dans lequel une colonne est saisie dans une devise qui ne dépend pas de la ligne courante.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>MS1 à MS4</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Montants en monnaie du site</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>ADI</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Code stocké dans une table diverse (dont le numéro est donné, dans le <a href="GESATB.htm">dictionnaire des tables</a>, par l'expression de lien)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>HM</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Heures : minutes</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>QTY</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Quantité</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="25%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>QT1 à QT5</p>
+                                                                        </td>
+                                                                        <td width="77%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>Optimisée pour bloc tableau (même remarque que ci-dessus&#160;: le format d'une colonne ne doit pas dépendre de la ligne courante)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Prérequis</h2>
+                                                            <div class="links">
+                                                            </div>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_GESATY.htm#PRQ">Mise en oeuvre</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#ENT">En-tête</a>
+                                                                        </li>
+                                                                        <li><a href="#ON1">Onglet Écran de saisie</a>
+                                                                        </li>
+                                                                        <li><a href="#ON2">Onglet Convergence</a>
+                                                                        </li>
+                                                                        <li><a href="#ON3">Onglet Classe</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div><a id="ENT"></a>
+                                                                <h3 class="g1">En-tête</h3>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="ent" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code type (<a href="#" class="selected">champ CODTYP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé (champ ZINTITTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON1"></a>
+                                                                <h3 class="g1">Onglet Écran de saisie</h3>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Caractéristiques</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code activité (<a href="GESACV.htm">champ CODACT</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Module (champ MODULE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Type</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type interne (champ TYPTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Longueur (champ LNGTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>No menu local (champ NOLIB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Format</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Format adonix (champ FORTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Options (champ OPTION)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON2"></a>
+                                                                <h3 class="g1"><u>Onglet Convergence</u>
+                                                                </h3>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on2" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Objet</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Objet lié (<a href="GESAOB.htm">champ OBJLIEN</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Permet d'indiquer, le cas échéant, l'objet associé au type de données. La table liée gérée par l'objet est affichée.</p>
+                                                                                            <p>La présence d'un code objet déclenche automatiquement: </p>
+                                                                                            <ul>
+                                                                                                <li>Le contrôle d'existence</li>
+                                                                                                <li>Les fenêtres de sélection et sélection avancée&#160;</li>
+                                                                                                <li>La possibilté d'un tunnel vers la gestion de l'objet </li>
+                                                                                                <li>La possibilité d'afficher les propriétés de l'enregistrement courant de l'objet</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Table liée (<a href="GESATB.htm">champ FICLIEN</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Format</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Format tableau (champ OPTTAB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Permet d'optimiser l'affichage des gros tableaux. Ceci est réservé au type de donnée du standard, car il nécessite un traitement particulier, dans le superviseur.</p>
+                                                                                            <ul>
+                                                                                                <li><strong><em>Paramétre</em></strong> : représente le code paramétre à saisir en gestion d'écran sur le type de donnée. </li>
+                                                                                                <li><strong><em>Variable</em></strong> : représente la zone qui sera initialisée par la valeur du paramétre dans l'action avant_saisie de la variable de bas de tableau. </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Paramètre (<a href="GESAAR.htm">champ PARTAB</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ W1</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Variable (champ VARTAB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Permet d'optimiser l'affichage des gros tableaux. Ceci est réservé au type de donnée du standard, car il nécessite un traitement particulier, dans le superviseur.</p>
+                                                                                            <ul>
+                                                                                                <li><strong><em>Paramétre</em></strong> : représente le code paramétre à saisir en gestion d'écran sur le type de donnée. </li>
+                                                                                                <li><strong><em>Variable</em></strong> : représente la zone qui sera initialisée par la valeur du paramétre dans l'action avant_saisie de la variable de bas de tableau. </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Valeur par défaut (champ VALDEF)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Ce champ permet de saisir une formule de calcul pour attribuer une valeur par défaut aux zones de ce type. </p>
+                                                                                            <p>Un exemple peut être vu sur le type <i>CRY</i>, qui définit le code pays&#160;: la variable <i>GPAYS</i>, qui définit le pays local, est proposée en valeur par défaut pour tous les champs de ce type. Cette valeur par défaut est automatiquement proposée sur les zones des écrans utilisant ce type de donnée. Cependant, si une zone utilisant ce type de donnée a sa propre valeur par défaut dans l'écran, c'est cette dernière qui est prise en compte; dans ce cas, la valeur par défaut du type de donnée est ignorée.&#160;&#160;</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Tableau</a><i> Actions</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (champ ACTTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Ce tableau permet de déclarer des actions cataloguées dans le dictionnaire des actions. L'objectif est que sur tous les champs ayant ce type de donnée, les actions définies ici s'exécuteront systématiquement. </p>
+                                                                                            <p>Si un même type d'action est défini à la fois sur le type de donnée et sur la zone d'écran, les actions s'exécuteront consécutivement et dans l'ordre suivant&#160;: celle du type de donnée puis celle du champ. Il y a un cas particulier pour les actions «&#160;sélection&#160;», «&#160;bouton&#160;» et "icône", pour lesquelles, seule, l'action de la zone d'écran s'exécutera.</p>
+                                                                                            <p>Ce tableau permet de définir les actions particulières associées à la zone. Les types d'actions possibles sont: </p>
+                                                                                            <ul>
+                                                                                                <li><b><i>Avant-zone :</i></b> Action avant toute saisie ou affichage de la zone. On peut l'utiliser par exemple pour définir le format de la zone. </li>
+                                                                                                <li><b><i>Init_bouton :</i></b> Permet de définir les intitulés de bouton du menu contextuel.</li>
+                                                                                                <li><i><b>Init </b></i>: Permet&#160;d'initialiser une zone. </li>
+                                                                                                <li><b><i>Avant_saisie :</i></b> Action effectuée avant chaque saisie. on peut l'utiliser par exemple pour positionner mkstat et ne pas la saisir. </li>
+                                                                                                <li><b><i>Contrôle :</i></b> Permet de tester la validité de la zone. </li>
+                                                                                                <li><b><i>Après-zone :</i></b> Effectuée après le contrôle si celui-ci est valide. Permet par exemple d'affecter ou d'afficher d'autres zones. </li>
+                                                                                                <li><b><i>Après-modif :</i></b> idem mais n'est déclenchée que si la zone a été modifiée. </li>
+                                                                                                <li><b><i>Sélection :</i></b> Déclenchée par la touche F12. </li>
+                                                                                                <li><b><i>Bouton 1 :</i></b> Déclenché par la touche F9 (réservée pour les tunnels) </li>
+                                                                                                <li><b><i>Bouton 2 à 20 :</i></b> La touche F4 permet d'avoir la liste des menus contextuels. </li>
+                                                                                                <li><b><i>Avant_ligne :</i></b> Uniquement pour les tableaux déroulants, permet de faire quelque chose à chaque fois qu'on entre en modification d'une ligne. </li>
+                                                                                                <li><b><i>Après_ligne :</i></b> Uniquement pour les tableaux déroulants, permet de faire quelque chose après chaque saisie de ligne. </li>
+                                                                                                <li><b><i>Clic :</i></b> Uniquement pour les champs icônes. Permet le déclenchement d'une action au clic sur l'icône.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code (<a href="GESACT.htm">champ ACTION</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Indiquez les actions à effectuer de manière systématique sur ce type de données. <br />On ne renseignera pas à ce niveau, d'actions STD, SPE ou SPV qui sont liées à une fonction particulière.<br />On peut renseigner plusieurs actions pour un même type d'action, sauf pour les actions &#160;«&#160;sélection&#160;», «&#160;bouton&#160;» ou "icône". </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Exécution (champ EXEACT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Ce champ permet de définir le contexte d'exécution de l'action: </p>
+                                                                                            <ul>
+                                                                                                <li><strong><em>Interactive :</em></strong> cas de la saisie en ligne. </li>
+                                                                                                <li><strong><em>Import / Web service&#160;:</em></strong> cas&#160;d'alimentation de la fiche en mode web service ou&#160;import. L'exécution des actions sur les champs est réalisée lorsque tous les champs sont renseignés. </li>
+                                                                                                <li><strong><em>Toujours :</em></strong> dans tous les cas. </li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON3"></a>
+                                                                <h3 class="g1">Onglet Classe</h3>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on3" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Type</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (champ TYPSELSYR)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Détails</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Content type (<a href="GESATYP.htm">champ TYPPROSYR</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé (champ PROTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Gestion superviseur (champ SUPFLG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Format spécial (champ FMTPROSYR)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Classe (<a href="GESACLA.htm">champ CODCLA</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Représentations par défaut</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b><a href="GESASW.htm">champ DEFREPDES</a></b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b><a href="GESASW.htm">champ DEFREPMOB</a></b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b><a href="GESASW.htm">champ DEFREPTAB</a></b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Tableau</a><i> Règles</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (champ TYPRUL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Script (champ TRTRUL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Sous-programme (champ PRGRUL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Rang (champ ORDRUL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code activité (<a href="GESACV.htm">champ ACTRUL</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Actif (champ ENARUL)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Tableau</a><i> Paramètres</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code (champ PARCOD)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé (champ ZPARTIT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Clé (champ PARCLE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (champ PARTYP)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Classe (<a href="GESACLA.htm">champ PARCLA</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Dim (champ PARDIM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Mode (champ PARMOD)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Icône Actions</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Ajout contrôle référence</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Mettre à jour les paramètres</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ARP"></a>
+                                                            <h2 class="g1" id="États" data-magellan-target="États">États</h2>
+                                                            <p>Par défaut, les états suivants sont associés à la fonction :</p>
+                                                            <p>
+                                                                <img border="0" width="7" height="7" src="../Resources/Images/bullet_brique.GIF" />&#160;
+          <a href="../OBJ/ARP_ATYPE.htm">ATYPE</a>&#160;:&#160;Type de donnée
+        </p>
+                                                            <p>Mais ceci peut être modifié par paramétrage.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                            <h2 class="g1" id="Boutonsspécifiques" data-magellan-target="Boutonsspécifiques">Boutons spécifiques</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#BOU_70_20">Validation</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_30">Copie</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_20"></a>
+                                                                        <p><b>Validation </b>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Utilisez cette action pour mettre à jour et compiler le traitement WWGLOBLON. Dans ce traitement, on a, pour chaque type de données alphanumérique, une variable globale de type shortint contenant la longueur saisie sur le type de donnée. Ces variables sont nommées GLONxxx ( xxx = type de donnée ). Elles sont utilisées lors de la définition de variables de travail liées à un type de donnée dans les traitements. Cela permet de s'affranchir des problèmes liés à une modification de la longueur d'un type de donnée.</p>
+                                                                        <p><u>Exemple d'utilisation de ces variables :</u>
+                                                                            <br /># variable de travail pour la référence article <br />Local Char WITEM (GLONITM)<br />WITEM = [F:ITM]ITMREF &#160;</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a id="BOU_70_30"></a>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Copie</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p xmlns="http://www.w3.org/1999/xhtml">Utilisez cette action pour recopier la définition du type de donnée vers <a href="COP_DOS.htm">un autre dossier</a>.</p>
+                                                                                <div id="bou_70_30" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                    <h4 class="bloctitle">
+                                                                                        <p><b>Bloc numéro 1</b>
+                                                                                        </p>
+                                                                                    </h4>
+                                                                                    <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ OBJET</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ CLES</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <h4 class="bloctitle">
+                                                                                        <p><b>Bloc numéro 2</b>
+                                                                                        </p>
+                                                                                    </h4>
+                                                                                    <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Depuis le dossier (champ DOSORG)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>﻿Ce champ permet de définir le dossier à partir duquel la fiche va être copiée. Les syntaxes possibles sont décrites dans <a href="COP_DOS.htm">l'annexe dédiée</a>.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Tous dossiers (champ TOUDOS)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>Cette option permet de copier la fiche&#160;vers tous les dossiers définis dans le dictionnaire (table <a href="../MCD/ADOSSIER.htm">ADOSSIER</a> de la solution courante).</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Vers le dossier (champ DOSDES)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>﻿Ce champ permet de définir le dossier dans lequel la fiche&#160;va être copiée. Les syntaxes possibles sont décrites dans <a href="COP_DOS.htm">l'annexe dédiée</a>.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Typesdedonn%C3%A9es">Types de données</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Prérequis</a>
+                                                        </li>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#%C3%89tats">États</a>
+                                                        </li>
+                                                        <li><a href="#Boutonssp%C3%A9cifiques">Boutons spécifiques</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Trace, Base,Donnees,SQL,Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Trace des requêtes SQL Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Trace des requêtes SQL Server</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="TracedesrequêtesSQLServer" data-magellan-target="TracedesrequêtesSQLServer"><span>Trace des requêtes SQL Server</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                            <p>Cet outil est accessible depuis n’importe quel écran du progiciel dès lors que la base de données utilisée est SQL Server™, via le menu <i>Outils</i> situé en haut de l’écran, qui contient les deux choix suivants :</p><a id="MIN_20_20"></a>
+                                                            <h3 class="g1">Activation trace SQL Server</h3><a id="MIN_20_20"></a>
+                                                            <p>Cette fonction permet via la fonctionnalité de trace sous SQL Server, d'activer l'enregistrement d'évènements sur la base dans un fichier, événements qui pourront ensuite être analysés.</p><a id="MIN_20_30"></a>
+                                                            <h3 class="g1">Désactivation trace</h3><a id="MIN_20_30"></a>
+                                                            <p>Cette fonction lance le retraitement du fichier de trace obtenu par l'activation puis la visualisation du résultat. Ceci permet de visualiser toutes les actions SQL exécutés durant l'activation.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Pré-requis</h2><a id="MIN_30_20"></a>
+                                                            <h3 class="g1">Habilitation</h3><a id="MIN_30_20"></a>
+                                                            <p>L’utilisateur doit être autorisé à utiliser le débogueur (paramètre <a href="../OBJ/ADP_SUP_DBG.htm">DBG</a>).</p><a id="MIN_30_30"></a>
+                                                            <h3 class="g1">Contrainte technique</h3><a id="MIN_30_30"></a>
+                                                            <p>La fonction ne peut fonctionner que si un serveur de traitement est installé et est actif sur la machine de la base de données.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Interfaceutilisateur" data-magellan-target="Interfaceutilisateur">Interface utilisateur</h2>
+                                                            <p>Lorsque l’on lance la fonction, un écran permet de saisir un ensemble d’options&#160;:</p><a id="MIN_40_20"></a>
+                                                            <h3 class="g1">Récupération des résultats</h3><a id="MIN_40_20"></a>
+                                                            <p>Il faut indiquer quelles informations vont être collectées pour analyse.</p>
+                                                            <p>L'option Standard permet de récupérer les plans d'exécution des requêtes</p>
+                                                            <p>L'option Tuning permet de récupérer des informations sur les actions SQL exécutées ainsi que les plans d'exécution des requêtes.</p>
+                                                            <p>L'utilisateur peut aussi choisir lui-même les évènements à collecter par "Paramétrage évènements avancé". La fenêtre correspondante lui permettra de choisir toutes les options possibles. </p>
+                                                            <p>Ces évènements sont regroupés par type. Pour plus d'informations sur les évènements, on se reportera à la documentation Sql Server, dont on trouvera un extrait&#160;en annexe.</p>
+                                                            <h4>Options de tri</h4>
+                                                            <p>Par défaut les ordres SQL sont détaillés par ordre chronologique mais il est possible de préciser des options de tri.</p>
+                                                            <p>Plusieurs propositions de tri sont proposées et on retrouvera en premier les ordres correspondant au coût le plus important selon le tri demandé.</p>
+                                                            <h4>Présentation des résultats</h4>
+                                                            <p>L'utilisateur peut choisir de ne lister que les n premiers enregistrements ramenés.</p>
+                                                            <p>Dans le cas où il a choisit un tri, il obtiendra les n premiers évènements passés sur la base de données qui correspondent au coût le plus important de ce tri.</p><a id="MIN_40_30"></a>
+                                                            <h3 class="g1">Utilisation de la trace obtenue</h3><a id="MIN_40_30"></a>
+                                                            <p>On pourra regarder la durée (duration) obtenue lors de l'exécution des requêtes et actions SQL (obtenue sur evènement "Completed")</p>
+                                                            <p>Lorsqu'on obtiendra un coût sur ces actions, on pourra regarder si la requête est performante, si elle utilise bien les index</p>
+                                                            <p>il ne faudrait pas trouver de Table Scan</p>
+                                                            <p>il ne faudrait pas trouver de Constant Scan</p>
+                                                            <p>Lorsqu'on trouve l'utilisation d'un index (Index Seek), il faut vérifier que l'on utilise au maximum les colonnes de l'index (dans la partie "SEEK:")</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="ExtraitdeladocumentationSQLServer" data-magellan-target="ExtraitdeladocumentationSQLServer">Extrait de la documentation SQL Server</h2>
+                                                            <p>Ce tableau répertorie les événements qui peuvent être ajoutés ou supprimés d'une trace.</p>
+                                                            <table width="661" border="1" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Numéro de l'événement</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>
+                                                                                <br />Nom de l'événement</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>
+                                                                                <br />Description</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>0-9</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>10</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>RPC:Completed</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'un appel de procédure distante (RPC) s'est terminé.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>11</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>RPC:Starting</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'un appel de procédure distante a commencé.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>12</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SQL:BatchCompleted</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'un lot d'instructions Transact-SQL est terminé.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>13</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SQL:BatchStarting</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'un lot d'instructions Transact-SQL a démarré.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>14</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Login</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'un utilisateur réussit à se connecter à SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>15</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Logout</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'un utilisateur se déconnecte de SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>16</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Attention</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit en même temps que les événements d'avertissement, tels que les requêtes d'interruption du client ou les ruptures de connexion client.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>17</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>ExistingConnection</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Détecte toutes les activités des utilisateurs connectés à SQL Server avant le démarrage de la trace.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>18</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>ServiceControl</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsque l'état des services de SQL Server est modifié.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>19</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>DTCTransaction</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Trace les transactions coordonnées par Microsoft Distributed Transaction Coordinator (MS DTC) entre deux ou plusieurs bases de données.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>20</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Login Failed</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'une tentative de connexion à SQL Server depuis un client a échoué.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>21</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>EventLog</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique que les événements ont été consignés dans le journal des applications de Microsoft Windows NT®.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>22</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>ErrorLog</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique que des événements d'erreur sont consignées dans le journal d'erreurs de SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>23</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Lock:Release</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un verrou sur une ressource, une page par exemple, a été débloqué.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>24</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Lock:Acquire</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'un verrou a été acquis sur une ressource, une page de données par exemple.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>25</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Lock:Deadlock</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique que deux transactions concurrentes ont généré un interblocage, l'une essayant d'obtenir des verrous incompatibles sur des ressources appartenant à l'autre. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>26</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Lock:Canceled</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique que l'acquisition d'un verrou sur une ressource a été annulée (par exemple à cause d'un interblocage).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>27</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Lock:Timeout</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une demande de verrou sur une ressource (par exemple une page) a dépassé le délai d'attente parce qu'une autre transaction retient un verrou bloquant sur la ressource requise. Le délai d'attente est déterminé par la fonction @@LOCK_TIMEOUT et peut être défini à l'aide de l'instruction SET LOCK_TIMEOUT. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>28</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>DOP Event</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit avant l'exécution d'une instruction SELECT, INSERT ou UPDATE. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>29-31</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Utilisez plutôt l'événement 28.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>32</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>33</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Exception</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une exception s'est produite dans SQL Server. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>34</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SP:CacheMiss</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'une procédure stockée est introuvable dans le cache de procédure.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>35</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SP:CacheInsert</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un élément est inséré dans le cache de procédure.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>36</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SP:CacheRemove</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'un élément est supprimé du cache de procédure.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>37</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SP:Recompile</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une procédure stockée a été recompilée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>38</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SP:CacheHit</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'une procédure stockée est trouvée dans le cache de procédure.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>39</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SP:ExecContextHit</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique quand la version d'exécution d'une procédure stockée a été trouvée dans le cache.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>40</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SQL:StmtStarting</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsque l'instruction Transact-SQL a démarré.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>41</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SQL:StmtCompleted</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lors de la fin de l'instruction Transact-SQL.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>42</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SP:Starting</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique que la procédure stockée a démarré.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>43</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>SP:Completed</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique que la procédure stockée s'est terminée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>44</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Utilisez plutôt l'événement 40.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>45</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Utilisez plutôt l'événement 41.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>46</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Objetct:Created</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'un objet a été créé, par exemple avec les instructions CREATE INDEX, CREATE TABLE et CREATE DATABASE.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>47</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Objetct:Deleted</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un objet a été supprimé, par exemple avec les instructions DROP INDEX et DROP TABLE.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>48</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>49</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>50</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>SQL Transaction</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Trace les instructions Transact-SQL BEGIN, COMMIT, SAVE et ROLLBACK TRANSACTION.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>51</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Scan:Started</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une analyse de table ou d'index a démarré.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>52</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Scan:Stopped</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'une analyse de table ou d'index s'est terminée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>53</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>CursorOpen</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un curseur est ouvert dans une instruction Transact-SQL par ODBC, OLE DB ou DB-Library.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>54</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Transaction Log</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Trace à quel moment les transactions sont écrites dans le journal des transactions.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>55</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>HashWarning</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une opération de hachage (jointure hachée, agrégation hachée, union hachée, hachage distinct) qui n'est pas en cours sur un tampon de partition bascule vers un plan de rechange. Ceci se produit à cause de la profondeur de récurrence, du décalage des données, des indicateurs de trace ou du comptage des bits.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>56-57</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>58</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Auto Update Stats</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'une mise à jour automatique des statistiques d'index a eu lieu.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>59</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Lock:Deadlock Chain</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Produit pour chacun des événements entraînant le blocage.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>60</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Lock:Escalation</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsque l'étendue des verrous est accrue. Exemple : verrou de ligne augmenté ou converti en verrou de page.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>61</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>OLE DB Errors</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'une erreur OLE DB s'est produite.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>62-66</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>67</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>ExecutionWarnings</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique les messages d'avertissement survenus lors de l'exécution d'une instruction ou d'une procédure stockée SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>68</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Execution Plan</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Affiche l'arborescence du plan de l'instruction SQL exécutée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>69</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Sort Warnings</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique les opérations de tri ne pouvant pas être effectuées en mémoire. N'inclut pas les opérations de tri comprenant la création d'index, seulement les opérations de tri au sein d'une requête (une clause ORDER BY dans une commande SELECT, par exemple).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>70</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>CursorPrepare</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un curseur dans une instruction Transact-SQL est préparé pour être utilisé par ODBC, OLE DB ou DB-Library.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>71</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Prepare SQL</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ODBC, OLE DB ou DB-Library a préparé une ou plusieurs instructions Transact-SQL à utiliser.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>72</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Exec Prepared SQL</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>ODBC, OLE DB ou DB-Library a exécuté une ou plusieurs instructions préparées Transact-SQL.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>73</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Unprepare SQL</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ODBC, OLE DB ou DB-Library a annulé une ou des instructions Transact-SQL préparées.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>74</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>CursorExecute</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Un curseur précédemment préparé dans une instruction Transact-SQL par ODBC, OLE DB ou DB-Library est exécuté.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>75</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>CursorRecompile</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Un curseur ouvert dans une instruction Transact-SQL par ODBC ou DB-Library a été recompilé soit directement, soit du fait d'un changement de schéma. </p>
+                                                                            <p>Déclenché pour les curseurs ANSI et non-ANSI.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>76</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>CursorImplicitConversion</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Un curseur dans une instruction Transact-SQL est converti par SQL Server d'un type à un autre. </p>
+                                                                            <p>Déclenché pour les curseurs ANSI et non-ANSI.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>77</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>CursorUnprepare</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Un curseur préparé dans une instruction Transact-SQL est annulé par ODBC, OLE DB ou DB-Library.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>78</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>CursorClose</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Un curseur précédemment ouvert dans une instruction Transact-SQL par ODBC, OLE DB ou DB-Library est fermé.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>79</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Missing Column Statistics</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Des statistiques de colonne qui auraient pu être utiles pour l'optimiseur ne sont pas disponibles.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>80</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Missing Join Predicate</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Une requête sans prédicat de jointure est en cours d'exécution. Ceci peut rendre la requête longue à exécuter.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>81</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Server Memory Change</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>L'utilisation de la mémoire de Microsoft SQL Server a augmenté ou diminué, soit de 1 méga-octet (Mo), soit de 5% de la taille maximale de la mémoire, selon celle qui est la plus grande.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>82-91</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>User Configurable (0 -9)</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Données d'événements définies par l'utilisateur.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>92</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Data File Auto Grow</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'un fichier journal a été augmenté automatiquement par le serveur.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>93</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Log File Auto Grow</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un fichier journal a été augmenté automatiquement par le serveur.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>94</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Data File Auto Shrink</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Indique qu'un fichier de données a été réduit automatiquement par le serveur.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>95</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Log File Auto Shrink</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Indique qu'un fichier journal a été réduit automatiquement par le serveur.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>96</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Show Plan Text</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Affiche l'arborescence du plan de requête de l'instruction SQL à partir de l'optimiseur de requête.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>97</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Show Plan ALL</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Affiche le plan de requête avec les détails complets de la compilation de l'instruction SQL en cours d'exécution.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>98</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Show Plan Statistics</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Affiche le plan de requête avec les détails complets de l'exécution de l'instruction SQL en cours.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>99</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>100</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>RPC Output Parameter</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Produit les valeurs de sortie des paramètres pour tous les RPC.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>101</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Reserved</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>102</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Statement GDR</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit chaque fois que GRANT, DENY ou REVOKE sont émis par un utilisateur pour une autorisation d'instruction dans SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>103</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Object GDR</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit chaque fois que GRANT, DENY ou REVOKE sont émis par un utilisateur pour une autorisation d'objet dans SQL Server.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>104</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Add/Drop Login</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'une connexion d'accès SQL Server est ajoutée ou supprimée ; pour sp_addlogin et sp_droplogin.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>105</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Login GDR</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'un droit de connexion Microsoft Windows® est ajouté ou supprimé ; pour sp_grantlogin, sp_revokelogin et sp_denylogin.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>106</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Login Change Property</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'une propriété d'une connexion d'accès, sauf pour les mots de passe, est modifiée ; pour sp_defaultdb et sp_defaultlanguage.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>107</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Login Change Password</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsque le mot de passe d'une connexion d'accès SQL Server est modifié. </p>
+                                                                            <p>Les mots de passe ne sont pas enregistrés.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>108</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Add Login to Server Role</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'une connexion d'accès est ajoutée ou supprimée d'un rôle de serveur fixe ; pour sp_addsrvrolemember et sp_dropsrvrolemember.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>109</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Add DB User</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'une connexion d'accès est ajoutée ou supprimée sous forme d'utilisateur de base de données (Windows ou SQL Server) dans une base de données ; pour sp_grantdbaccess, sp_revokedbaccess, sp_adduser et sp_dropuser.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>110</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Add Member to DB</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'une connexion d'accès est ajoutée ou supprimée sous forme d'utilisateur de base de données (fixe ou défini par l'utilisateur) dans une base de données ; pour sp_addrolemember, sp_droprolemember et sp_changegroup.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>111</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Add/Drop Role</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'une connexion d'accès est ajoutée ou supprimée sous forme d'utilisateur de base de données dans une base de données ; pour sp_addrole et sp_droprole.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>112</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>App Role Pass Change</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsque le mot de passe d'un rôle d'application est modifié.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>113</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Statement Permission</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'une autorisation d'instruction (par exemple, CREATE TABLE) est utilisée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>114</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit Object Permission</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsqu'une autorisation d'objet (par exemple, SELECT) est utilisée, de manière réussie ou non.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>115</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Backup/Restore</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsqu'une commande BACKUP ou RESTORE est émise.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>116</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Audit DBCC</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Se produit lorsque des commandes DBCC sont émises.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>117</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Audit Change Audit</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Se produit lorsque des modifications de trace d'audit sont effectuées.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>118</p>
+                                                                        </td>
+                                                                        <td width="26%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Audit Object Derived Permission</p>
+                                                                        </td>
+                                                                        <td width="57%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>Se produit à l'émission de commandes d'objets CREATE, ALTER et DROP.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ERR"></a>
+                                                            <h2 class="g1" id="Erreurs" data-magellan-target="Erreurs">Erreurs</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="ERR_GEN.htm">Messages génériques</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Outre les messages génériques, les messages d'erreur suivants peuvent apparaître lors de la saisie :</p>
+                                                            <h4>"Erreur lors de l'accès au serveur de la base de données"</h4>
+                                                            <p>L'accès à la machine de la base de données n'est pas possible, il n'y a pas de serveur de traitement ou il n'est pas démarré </p>
+                                                            <h4>"Erreur d'accès au répertoire des traces de la base de données"</h4>
+                                                            <p>Le répertoire indiqué comme répertoire des traces n'est pas accessible</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Tracedesrequ%C3%AAtesSQLServer">Trace des requêtes SQL Server</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introduction">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#Pr%C3%A9requis">Pré-requis</a>
+                                                        </li>
+                                                        <li><a href="#Interfaceutilisateur">Interface utilisateur</a>
+                                                        </li>
+                                                        <li><a href="#ExtraitdeladocumentationSQLServer">Extrait de la documentation SQL Server</a>
+                                                        </li>
+                                                        <li><a href="#Erreurs">Erreurs</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

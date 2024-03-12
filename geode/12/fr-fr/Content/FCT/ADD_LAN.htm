@@ -1,0 +1,477 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Ajout et paramétrage d'une langue non standard" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Ajout et paramétrage d'une langue non standard</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Ajoutetparamétragedunelanguenonstandard" data-magellan-target="Ajoutetparamétragedunelanguenonstandard"><span>Ajout et paramétrage d'une langue non standard</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Les progiciels en technologie SAFE X3 permettent de gérer un ensemble de langues standard, livrées systématiquement sur le CD-Rom. Mais il est aussi possible, moyennant une procédure manuelle, de rajouter des langues de connexion supplémentaires.</p>
+                                                            <p>Cette procédure ne garantit pas l'évolutivité des messages de la langue&#160;lorsqu'un patch standard, susceptible d'ajouter des messages, est livré. Il faut dans ce cas les ajouter dans la langue non standard qui aura été créée.</p>
+                                                            <p>Il est fortement recommandé d'exporter les textes en nouvelle langue des tables APLSTD et ATEXTE dans un fichier de sauvegarde une fois que le processus aura été fait, afin de permettre de les réimporter si nécessaire. Sage ne garantit&#160;pas que des fonctions de maintenance particulière en gestion de dossier ne provoquent pas la perte d'éventuels messages d'une langue non standard.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Pré-requis</h2>
+                                                            <p>Le pré-requis à toute traduction de langue non-standard est d'obtenir un nouveau code langue auprès de Sage X3. Toute demande d’ajout de code langue est prise en compte pour la version suivante à celle diffusée au jour de la demande. Cette nouvelle version intégrera&#160;:&#160;</p>
+                                                            <ul>
+                                                                <li>la nouvelle langue dans la&#160;boîte de dialogue permettant une connexion à Sage X3,</li>
+                                                                <li>la nouvelle langue dans la table des langues, permettant ainsi de&#160;créer le dossier avec le code de la langue à gérer.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Débuterlatraduction" data-magellan-target="Débuterlatraduction">Débuter la traduction</h2>
+                                                            <p>Il existe deux méthodes de traduction.</p>
+                                                            <ul>
+                                                                <li>La traduction hors Sage X3&#160;: cette traduction est faite hors-contexte mais est vivement recommandée lorsqu’il s’agit de démarrer une nouvelle traduction, cette méthode étant de loin la plus rapide. <br />Pour exporter les textes (table ATEXTE) et les messages/menus locaux (table APLSTD), il convient d’utiliser respectivement les modèles <a href="GESAOE.htm">d’import/export</a> TRXXLS et TRDXLS. <br />Si la langue utilise des caractères UNICODE, il faut vérifier et le cas échéant modifier les modèles d'import.<br /><img src="../Resources/Images/SEEWARNING.png" alt="SEEWARNING" keeps="true" realloc="SEEWARNING" />&#160;La longueur des textes est limitée. <span style="color: #7f0000;"><b>est ce qu'on connait le nombre de caractères?<br /><img src="../Resources/Images/SEEWARNING.png" alt="SEEWARNING" keeps="true" realloc="SEEWARNING" /></b><span style="color: #000000;">&#160;Certains menus locaux sont à traduire à l'identique.<br />Filtrez amenloc le champ NONTRA avec la valeur 2 </span></span><span style="color: #bf0000;"><b>pas compris tout tout, c'est ou ? pour l'exp de Cathy sur le 91 avec les points d'interrogation au début à bien laisser à l'identique est ce qu'on le met ?</b></span></li>
+                                                                <li>La traduction dans Sage X3&#160;: il s’agit d’utiliser les outils de traduction standards qui peuvent être activés grâce au code activité <a href="../OBJ/ACV_DIS.htm">DIS</a>. L’utilisation de ces outils est recommandée notamment dans le cas de modifications ou d’ajouts de traduction.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Installationdelenvironnement" data-magellan-target="Installationdelenvironnement">Installation de l'environnement</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEINFO.png" alt="SEEINFO" keeps="true" realloc="SEEINFO" />&#160;<span style="color: #bf7f00;">Cette étape démarre uniquement avec la version intégrant le code langue non-standard.</span></p>
+                                                            <p>L’environnement qui recevra la traduction, doit être installé comme suit&#160;:</p>
+                                                            <ul>
+                                                                <li>niveau supérieur&#160;: dossier mère X3,</li>
+                                                                <li>niveau secondaire&#160;: dossier de traduction et dossier d’exploitation ou prototype,</li>
+                                                                <li>dernier niveau&#160;: aucun dossier ou dossier d’exploitation.</li>
+                                                            </ul>
+                                                            <p>Chaque dossier, tant au niveau secondaire qu’au dernier niveau, doit comporter&#160;:</p>
+                                                            <ul>
+                                                                <li>le code d’au moins l’une des langues standards,</li>
+                                                                <li>le code de la langue non standard,</li>
+                                                                <li>le code activité DIS doit&#160;avoir pour valeur&#160;'Oui'.</li>
+                                                            </ul>
+                                                            <p>Le dossier de traduction est le référentiel qui permet d’identifier les deltas de traduction. Il permet également de faire évoluer la traduction suite à des patchs ou à des mises à jour&#160;: vous pouvez à tout instant connaître les messages et textes restant à traduire dans la documentation <a href="ATXNOTRANS.htm">Textes-APLSTD non traduits</a>. </p>
+                                                            <p>Le dossier d’exploitation ou prototype (que celui-ci soit au second ou dernier niveau) est le dossier de destination de la traduction.</p>
+                                                            <p>La validation de chaque dossier permet de générer le dictionnaire de langue standard et de créer l’architecture nécessaire à l’import de la langue non-standard.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="ParamétragesdansSageX3" data-magellan-target="ParamétragesdansSageX3">Paramétrages dans Sage X3</h2>
+                                                            <p>1 - Lorsque tout le paramétrage préalable hors Sage X3 a été réalisé et que les fichiers ont été renommé en .txt, importez ces derniers dans votre dossier, par le biais des fonctions <a href="AIMPATD.htm">AIMPATD</a> pour les messages et <a href="AIMPATD.htm">AIMPATR</a>&#160;pour les textes.<br />Vérifiez si la langue utilise des caractères UNICODE et le cas échéant, modifiez les modèles d'import.</p>
+                                                            <p>2 - Dans votre dossier, ouvrez la fonction <a href="GESTLA.htm">Langue</a>&#160;(GESTLA). </p>
+                                                            <ul>
+                                                                <li>Si le code n'existe pas dans la liste vous pouvez l'ajouter ainsi que son intitulé (dans la langue de connexion), ou seulement le modifier s'il existe.<br />Si la langue est prise en charge par la norme unicode, sélectionnez 'Oui' dans le champ [Langue unicode].<br />La langue paramétrée est votre de langue de connexion, sélectionnez 'Oui' dans le champ [Langue de connexion].<br />Renseignez le code ISO si nécessaire.</li>
+                                                                <li>Effectuez un clic droit sur le libellé pour entrer dans la fonction de traduction du libellé. Ajoutez le nouveau code et sa traduction.<br />Enregistrez.</li>
+                                                            </ul>
+                                                            <p>3 - En utilisant la fonction de <a href="FUNTRATXI.htm">traduction des libellés</a>, au moment de la mise à jour de la table des langues, traduisez dans la nouvelle langue les intitulés des autres langues. Inversement, dans les autres langues, traduisez l'intitulé de la langue ajoutée (au moins celles&#160;susceptible d'être utilisées comme langue de connexion).</p>
+                                                            <p>4 - Ajoutez la nouvelle langue dans la fiche du <a href="GESADS.htm">dossier</a>&#160;(onglet "Init") et cochez le champ [Ref. traduction]&#160; sur la ligne de la langue ajoutée.</p>
+                                                            <p>5 - Ouvrez la fonction <a href="VALDICO.htm">Validation du dictionnaire</a> (VALDICO) et cochez la case [Ajout d'une langue].<br />Validez à l'aide du bouton [OK].</p>
+                                                            <p>6&#160;- Ouvrez la fonction <a href="ALANG.htm">Génération des libellés</a>&#160;(ALANG), sélectionnez la ligne correspondant à la langue en cours de paramétrage&#160;et cochez (en double-cliquant) le champ [A générer]. Validez en cliquant sur [OK].</p>
+                                                            <p>7 - Déconnectez-vous.</p>
+                                                            <p>8&#160;- Copiez le fichier contenant les messages du moteur de la langue ajoutée depuis [X3_Install_dir]\folders\X3_PUB\X3_ROOT\GEN\ALL\LIB\"code de la langue"&#160; vers le répertoire [X3_Install_dir]\runtime\lan du serveur de traitement principal et des autres serveurs le cas échéant.&#160;</p>
+                                                            <p>9 - Reconnectez-vous dans la langue de paramétrage initial.</p>
+                                                            <p>10&#160;- Fermez l'application afin que le programme enregistre les différentes opérations.</p>
+                                                            <p>11 - Vous pouvez maintenant vous connecter à l'application dans la langue nouvellement créée et utiliser le produit dans cette même langue.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                            <h2 class="g1" id="ElémentsSyracuse" data-magellan-target="ElémentsSyracuse">Eléments Syracuse</h2>
+                                                            <p>
+Tous les élements sont stokés dans la base MongoDB.
+        </p><a id="MIS_80_10"></a>
+                                                            <h4 class="g1">Etape 1 : pages classiques et pages de navigation</h4>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_80_20">Pages Syracuse</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_80_30">Particularités des vignettes</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_80_40">Processus métier</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Les taches de création et traduction des pages classiques (entrées de menu) et des pages de navigation (modules, sous-modules, blocs) sont effectués automatiquement par l'import des profils menus basé sur le profil menu ADMIN.</p>
+                                                            <p>Lors de la création d'une page classique ou de la mise à jour d'une page de navigation, utilisez la procédure suivante :</p>
+                                                            <ul>
+                                                                <li>mise à jour du profil menu X3 ADMIN avec les nouvelles fonctions et le structure du menu <span style="color: #bf0000;"><b>(ou et comment)</b></span></li>
+                                                                <li>lancement de l'outil d'import du profil menu pour mettre à jour les entrées de menu et les pages de navigation du profil menu ADMIN.</li>
+                                                            </ul>
+                                                            <p>Utilisez la fonction <a href="ATXTTRAD.htm">Traduction texte</a> pour traduire dans votre langue les entrées de menu et les éléments des pages de navigation. <span style="color: #bf0000;"><b>dans quel dossier? et est ce qu'on a besoin de préciser toute la procédure ?</b></span></p><a id="MIS_80_20"></a>
+                                                            <h4 class="g1">Pages Syracuse</h4>
+                                                            <p>Les taches de création et traduction des pages Syracuse (pages d'administration, représentations et pages d'accueil)&#160; sont effectués dans le serveur Syracuse. </p>
+                                                            <h4>Création des pages Syracuse </h4>
+                                                            <p>Lors de la création d'une page Syracuse, utilisez la procédure suivante :</p>
+                                                            <ul>
+                                                                <li>créez les entrées de menu&#160;<span style="color: #bf0000;"><b>(ou et comment) en anglais et dans la langue de traduction</b></span></li>
+                                                                <li>mettez à jour manuellement les pages de navigation <b><span style="color: #bf0000;">(ou et comment) en anglais et dans la langue de traduction</span></b></li>
+                                                            </ul>
+                                                            <h4>Normes d'écriture</h4>
+                                                            <p><b><span style="color: #bf0000;">Claude peux tu me donner les normes ?</span></b>
+                                                            </p>
+                                                            <p>Pour les partenaires développant un add-on ou un vertical, utilisez votre identifiant partenaire.</p>
+                                                            <p>Pour les clients possedant un developpement spécifique, utilisez le "Z" comme prefixe.</p>
+                                                            <p><span style="color: #00bf7f;"><b>voir plus bas pour la traduction des éléments syracuse.</b></span>
+                                                            </p><a id="MIS_80_30"></a>
+                                                            <h4 class="g1">Particularités des vignettes</h4>
+                                                            <p>Pour pouvoir sélectionner les statistiques, requêtes et vignettes du calendrier sur une page d'accueil, créez les entrées de menu associées.</p>
+                                                            <ul>
+                                                                <li>Créez les vignettes dans la fonction GESAPV en anglais et dans la langue de traduction.</li>
+                                                                <li>lancez l'outil d'import du profil menu (option "Import des vignettes" pour créer/mettre à jour les entrées de menus traduites.</li>
+                                                            </ul><a id="MIS_80_40"></a>
+                                                            <h4 class="g1">Processus métier</h4>
+                                                            <p>La procédure de traduction des processus métier se fait via la fonction <a href="APRTRAD.htm">Traduction processus</a>.</p>
+                                                            <p>Pour pouvoir sélectionner les processus métier sur une page d'accueil, créez les entrées de menu associées.</p>
+                                                            <ul>
+                                                                <li>Créez les vignettes dans la fonction GESAPV en anglais et dans la langue de traduction.</li>
+                                                                <li>lancez l'outil d'import du profil menu (option "Import des vignettes" pour créer/mettre à jour les entrées de menus traduites.</li>
+                                                            </ul>
+                                                            <p /><a id="MIS_90_10"></a>
+                                                            <h4 class="g1">Etape 2 : Eléments Syracuse épars</h4>
+                                                            <p>Certains éléments d'interface ne peuvent se traduire via les fonctions de traduction habituelles . Il est nécessaire de suivre les procédures listées ci-dessous afin de traduire tous les éléments d'interface.</p>
+                                                            <h4>1. Fichiers .json dans Ressources</h4>
+                                                            <p />
+                                                            <p>Dans le répertoire Bin se trouvent un certain nombre de répertoires Ressources (bin &gt; node_module &gt; ib &gt; ressources). <br />Dans ces répertoires se trouvent des fichiers .json. Ces fichiers regroupent des libellés de champs et de boutons ainsi que des messages d'erreur.</p>
+                                                            <p>Attention à bien respecter la casse ! Les répertoires Ressource au singulier ne sont pas à considérer.</p>
+                                                            <p><span style="color: #bf0000;"><b>écrire où se trouve ces répertoires</b></span>
+                                                            </p>
+                                                            <p><span style="color: #bf0000;"><b>Mettre copie d'écran</b></span>
+                                                                <br />Duppliquez ces fichiers en leur additionnant l'extension de la langue sous la forme <span style="color: #bf0000;"><b>XXXXXX (mettre l'exp)<br /></b></span>Utilisez&#160;l'anglais et remplacez-le par votre traduction.</p>
+                                                            <p><b><span style="color: #bf0000;">Mettre copie d'écran</span></b>
+                                                            </p>
+                                                            <h4>2. Menus d'administration Syracuse</h4>
+                                                            <p><span style="color: #bf0000;"><b>Claude&#160;quel terme utilises-tu quand tu parles&#160;des éléments Syracuse aux partenaires?</b></span>
+                                                            </p>
+                                                            <p>Les menus d'administration Syracuse font l'objet d'une Traduction en ligne. </p>
+                                                            <p><span style="color: #bf0000;"><b>Mettre la procédure</b></span>
+                                                            </p>
+                                                            <p><b><span style="color: #bf0000;">Mettre copie d'écran</span></b>
+                                                            </p>
+                                                            <h4>3. Fichiers dotnet dans appli desktop</h4>
+                                                            <p><b><span style="color: #bf0000;">Claude savais tu qu'il y a des fichiers qui sont sur chaque poste et qui ne peuvent être traduits ?</span></b>
+                                                            </p>
+                                                            <p><b><span style="color: #bf0000;">est ce qu'on en parle ?</span></b>
+                                                            </p>
+                                                            <p><b><span style="color: #bf0000;"><b><span style="color: #bf0000;"></span></b></span></b>
+                                                            </p><a id="MIS_90_50"></a>
+                                                            <h4 class="g1">Mobilité</h4>
+                                                            <p>Les interfaces mobiles sont traduites au travers des deux étapes décrites ci-dessus :</p>
+                                                            <ul>
+                                                                <li>via les fichiers .json</li>
+                                                                <li>via la traduction en ligne.</li>
+                                                            </ul>
+                                                            <p><span style="color: #bf0000;"><b>Attention les titres des blocs ne sont pas traduisibles, ils auront toujours l'anglais. dois-je le mettre?</b></span>
+                                                            </p><a id="MIS_100_10"></a>
+                                                            <h4 class="g1">Récap</h4>
+                                                            <p>
+si je peux avoir une copie d'écran générique où je mets un récap de là où&#160;on traduit
+        </p><a id="MIS_110_10"></a>
+                                                            <h4 class="g1">Glossaire</h4>
+                                                            <p />
+                                                            <h5><span style="color: #bf0000;">Mettre des copies d'écran</span>
+                                                            </h5>
+                                                            <h5>Page classique</h5>
+                                                            <p>Une page classique est une page d'édition liée à une fonction X3.<br />A la différence, une page Syracuse est liée à une représentation.</p>
+                                                            <h5>Pages de navigation</h5>
+                                                            <p>Une page de navigation est une page présentant les différentes entrées de menu.</p>
+                                                            <h5>Module, sous-module, bloc</h5>
+                                                            <p>Un module correspond à une entrée de menu au premier niveau de hérarchie d'une page de navigation.<br />Un sous-module correspond à une entrée de menu au second niveau de hérarchie d'une page de navigation.<br />Un bloc correspond à une entrée&#160;de menu au troisième niveau de hérarchie d'une page de navigation.</p>
+                                                            <h5>Entrée de menu</h5>
+                                                            <p>Une entrée de menu définit un lien vers une page gérée par le logiciel.</p>
+                                                            <h5>ATEXTE</h5>
+                                                            <p>ATEXTE est une table X3 contenant tous les textes.</p>
+                                                            <h5>APLSTD</h5>
+                                                            <p>APLSTD est une table X3 contenant tous les menus locaux (messages).</p>
+                                                            <h5>ATEXTRA</h5>
+                                                            <p>ATEXTRA est une table X3 contenant tous les champs traduisibles.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Ajoutetparam%C3%A9tragedunelanguenonstandard">Ajout et paramétrage d'une langue non standard</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Pré-requis</a>
+                                                        </li>
+                                                        <li><a href="#D%C3%A9buterlatraduction">Débuter la traduction</a>
+                                                        </li>
+                                                        <li><a href="#Installationdelenvironnement">Installation de l'environnement</a>
+                                                        </li>
+                                                        <li><a href="#Param%C3%A9tragesdansSageX3">Paramétrages dans Sage X3</a>
+                                                        </li>
+                                                        <li><a href="#El%C3%A9mentsSyracuse">Eléments Syracuse</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Pushing and merging automated tests into master branch</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="T1_ATP_UserGuide.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__ATP_UserGuide.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Pushing and merging automated tests into master branch</h1>
+                                            <p>When your automated tests are done and have been executed without any errors, follow the below steps to push your automated test files into GitHub.</p>
+                                            <p><b>Prerequisites</b>
+                                            </p>
+                                            <ul class="prerequisite">
+                                                <li>
+                                                    <p>Git must be installed on your local machine.</p>
+                                                </li>
+                                                <li>
+                                                    <p>You must have a GitHub account and a GitHub repository.</p>
+                                                </li>
+                                                <li>
+                                                    <p>For the following steps the PowerShell terminal was used. See <a href="T4_GetStarted.htm#_Ref45181997">Setting up VS Code terminal to use PowerShell (optional)</a> if you want to change your default shell.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Your GitHub project has been initialized using one of the methods below:<br /><a href="T4_GetStarted.htm#Option3">Option 2: Initiating your project and uploading it in GitHub</a><br /><a href="T4_GetStarted.htm#Option2">Option 3: Initiating your project by cloning your GitHub repository</a></p>
+                                                </li>
+                                            </ul>
+                                            <h2>Pushing your automated test</h2>
+                                            <p>First, you need to update your feature branch with master to ensure there are no conflicts.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p>Enter the <span class="reference">git pull origin master</span> command and then press <span class="reference">Enter</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p class="indent">If your feature branch is not up to date with master, any updates are added (merged) into your feature branch.</p>
+                                            <ol start="2">
+                                                <li value="2">
+                                                    <p>When new automated tests are created and git management is activated, the new files are marked as "untracked."</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Click the <span class="reference">Source Control</span> icon in the left panel.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T5 git source code.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="261" data-mc-height="218" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T5 git source code_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                            </ol>
+                                            <ol start="4">
+                                                <li value="4">
+                                                    <p>Stage the modifications you want to commit and push in GitHub.</p>
+                                                </li>
+                                            </ol>
+                                            <p>Click the <span class="reference">Plus sign</span> to stage each automated tests.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_11.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="484" data-mc-height="135" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_11_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Or click <span class="reference">…</span>  and select <span class="reference">Stage All changes</span>.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_12.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="639" data-mc-height="468" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_12_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol start="5">
+                                                <li value="5">
+                                                    <p>After the tests are staged, they display under <span class="reference">Staged Changes</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p>Click the <span class="reference">Minus sign</span> to unstage a test or click <span class="reference">…</span> and select <span class="reference">Unstage All Changes</span> to cancel all the modifications.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_13.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="493" data-mc-height="227" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_13_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol start="6">
+                                                <li value="6">
+                                                    <p>Commit your changes.</p>
+                                                </li>
+                                            </ol>
+                                            <p>Enter your commit message and click the <span class="reference">Check mark</span> to commit your changes.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_14.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="488" data-mc-height="149" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_14_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>When the files are committed, the <span class="reference">Staged Changes</span> swimlane is empty, and you see that there is something pending to be pushed to the server in the bottom left corner.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_15.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="63" data-mc-height="21" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_15_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="7">
+                                                    <p>Push your changes to your repository on GitHub.</p>
+                                                </li>
+                                            </ol>
+                                            <p>Click <span class="reference">…</span>  and then click <span class="reference">Push</span>.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_16.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="641" data-mc-height="177" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_16_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Confirm you want to push the feature branch.</p>
+                                            <ol start="8">
+                                                <li value="8">
+                                                    <p>If you go to GitHub, you can see your changes.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_17.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1237" data-mc-height="288" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_17_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h2>Creating a pull request</h2>
+                                            <p>Now that your feature branch is up to date with master, you can create a pull request process to merge your automation test feature branch into master.</p>
+                                            <div class="highlightBox">
+                                                <div>
+                                                    <p><b>Recommendations</b>
+                                                    </p>
+                                                    <p>You should always work in a feature branch and not directly commit and push your feature branch into the master branch.</p>
+                                                    <p>It is recommended to protect the master branch by creating a pull request.</p>
+                                                    <p>When you create a pull request, GitHub checks to make sure there are no conflicts. Depending your organization's workflow, the pull request is reviewed by someone before the feature branch is actually merged with master.</p>
+                                                    <p>You can refer to the GitHub help page <a href="https://docs.github.com/en/enterprise/2.13/user/articles/enabling-required-reviews-for-pull-requests" target="_blank">Enabling required reviews for pull requests</a> to configure your branch policy and activate pull requests on the master branch.</p>
+                                                </div>
+                                            </div>
+                                            <ol start="1">
+                                                <li value="1">
+                                                    <p>Make sure your modifications in your feature branch have been committed and pushed and that your branch is up to date with master.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Connect to your GitHub repository and select your feature branch.</p>
+                                                </li>
+                                                <li value="3">
+                                                    <p>Click the <span class="reference">Pull request</span> tab and then click <span class="reference">New pull request</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_18.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1342" data-mc-height="399" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_18_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="4">
+                                                    <p>Make sure that you have selected <span class="reference">base: master</span> and select your feature branch to compare to master.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_19.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1251" data-mc-height="358" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_19_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="5">
+                                                    <p>Click <span class="reference">Create pull request</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_20.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1260" data-mc-height="227" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_20_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <div class="note-warning">If your branch is not able to be merged, check that your branch is up to date with master and try again.</div>
+                                            <ol data-mc-continue="true">
+                                                <li value="6">
+                                                    <p>Add the required information:</p>
+                                                </li>
+                                            </ol>
+                                            <ul>
+                                                <li>
+                                                    <p>Write a description for the request.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Explain what is in the feature branch to be merged.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Enter a reviewer.</p>
+                                                </li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_21.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1562" data-mc-height="557" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_21_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="7">
+                                                    <p>Click <span class="reference">Create pull request</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p>The pull request is added to the list of pull requests to be reviewed and merged.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_22.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1703" data-mc-height="309" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_22_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="8">
+                                                    <p>The reviewer receives an email asking to review the pull request.</p>
+                                                </li>
+                                            </ol>
+                                            <ol data-mc-continue="true">
+                                                <li value="9">
+                                                    <p>The reviewer opens the pull request and clicks <span class="reference">Add your review</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_23.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1275" data-mc-height="589" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_23_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="10">
+                                                    <p>The reviewer can review the modifications, by clicking on <span class="reference">Review changes</span>. The reviewer has three options:</p>
+                                                </li>
+                                            </ol>
+                                            <p class="indent"><span class="reference">Comment</span> - Submit general feedback without explicit approval.</p>
+                                            <p class="indent"><span class="reference">Approve</span> - Submit feedback and approve merging these changes.</p>
+                                            <p class="indent"><span class="reference">Request changes</span> - Submit feedback that must be addressed before merging. The pull request is closed and you will need to submit a new pull request.</p>
+                                            <ol data-mc-continue="true">
+                                                <li value="11">
+                                                    <p>Next the reviewer clicks <span class="reference">Submit review</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_24.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1270" data-mc-height="900" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_24_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="12">
+                                                    <p>If the pull request is approved, the reviewer can merge your feature branch into the master branch by clicking <span class="reference">Merge pull request</span>.</p>
+                                                    <p>If not approved, you need to address the changes and <a href="#Creating">re-request a pull request</a>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_25.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="924" data-mc-height="337" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_25_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="13">
+                                                    <p>The reviewer clicks <span class="reference">Confirm merge</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_26.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="917" data-mc-height="193" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_26_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="14">
+                                                    <p>The pull request is closed.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_27.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1548" data-mc-height="289" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_27_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h3><a name="Creating"></a>Creating a re-request for a pull request</h3>
+                                            <p>Sometimes your initial pull request is not approved and the reviewer asks for modifications. In this case you don’t need to reopen a pull request. You can re-request your pull request.</p>
+                                            <ol start="1">
+                                                <li value="1">
+                                                    <p>In VS Code, make sure you are on your feature branch.</p>
+                                                </li>
+                                                <li value="2">
+                                                    <p>Click in the left bottom corner on the current branch.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_28.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="384" data-mc-height="149" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_28_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="3">
+                                                    <p>Select your feature branch.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_29.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="950" data-mc-height="243" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_29_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Switch branch using the command line</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ul>
+                                                        <li>
+                                                            <p>In the VS Code terminal, enter the command <span class="reference">git checkout &lt;Branch_Name&gt;</span> and then press <span class="reference">Enter</span>.</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <ol data-mc-continue="true">
+                                                <li value="4">
+                                                    <p>Make the changes requested by the reviewer.</p>
+                                                </li>
+                                                <li value="5">
+                                                    <p>Stage, commit and push your modifications. </p>
+                                                </li>
+                                            </ol>
+                                            <ol data-mc-continue="true">
+                                                <li value="6">
+                                                    <p>Connect to GitHub and go to the initial pull request and select <span class="reference">Re-Request review</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_31.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="929" data-mc-height="356" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_31_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="7">
+                                                    <p>The reviewer must review again.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_32.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="910" data-mc-height="357" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_32_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="8">
+                                                    <p>The process continues as explained above.</p>
+                                                </li>
+                                            </ol>
+                                            <h2>Deleting your feature branch after a pull request</h2>
+                                            <p>To keep the remote repository clean, you can delete your feature branch after the pull request has been approved and merged into master.</p>
+                                            <ol>
+                                                <li value="1">
+                                                    <p> In GitHub, <span class="reference">Delete branch</span>. The feature branch is then deleted from the remote repository.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_33.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="929" data-mc-height="90" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T4 Working with the ATP Library_33_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <div class="highlightBox">
+                                                <div>
+                                                    <p><b>Recommendations</b>
+                                                    </p>
+                                                    <p>The person who created the feature branch should be the one to delete it. This person knows if or when the branch can be deleted. This follows the principle of not modifying someone else's data.</p>
+                                                    <p>After a branch has been merged by pull request into master, you should delete it and create a new branch from master for the next modifications or tests.</p>
+                                                </div>
+                                            </div>
+                                            <ol data-mc-continue="true">
+                                                <li value="2">
+                                                    <p>In VS Code, switch to the master branch and pull as described above.</p>
+                                                </li>
+                                            </ol>
+                                            <p>Check that your modifications are listed within the list of elements integrated to the master branch. </p>
+                                            <p>For example, the screenshot below shows the new automated tests <span class="reference">Mytest05</span> and <span class="reference">Mytest06</span> have been merged in master branch and added on your local master branch.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 mytests.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="536" data-mc-height="302" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 mytests_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="3">
+                                                    <p>In the VS Code terminal enter the <span class="reference">git branch -D &lt;Branch_Name&gt;</span> command and press <span class="reference">Enter</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 git brand D branch name.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="98" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 git brand D branch name_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>If you have not deleted your feature branch from GitHub, you can also do it in the VS Code terminal using the <span class="reference">git push origin --delete &lt;Branch_Name&gt;</span> command.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 git push origin delete.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="111" src="../../../Resources/Images/ATP-UserGuide-2.2.0-MadCap/T7 git push origin delete_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Previous</span>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Next">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Next</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">17 November 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1 @@
+﻿document.documentElement.classList.add('sage-product-medium');

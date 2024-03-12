@@ -1,0 +1,1 @@
+define({'/Content/How-to guides/Platform/Update history/Topic 1 Update history.htm':{i:[0],t:['Update history'],b:['']},'/Content/How-to guides/Platform/Update history/Topic 2 Appendix.htm':{i:[1],t:['Appendix: Release number correspondence'],b:['']}});

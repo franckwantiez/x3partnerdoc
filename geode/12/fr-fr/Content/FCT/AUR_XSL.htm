@@ -1,0 +1,1257 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Composants, XSL, Tableau" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Les composants XSL" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Les composants XSL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="LescomposantsXSL" data-magellan-target="LescomposantsXSL"><span>Les composants XSL</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Planningmensuel" data-magellan-target="Planningmensuel">Planning mensuel</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_20_13">Utilisation du composant</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_30">Le tableau X3 associé</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_35">Les options du composant XSL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_40">Le traitement d'interaction</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Graphe associé à un tableau X3, permettant de visualiser et de modifier un planning présenté mois par mois.</p>
+                                                            <p>Le composant présente :</p>
+                                                            <ul>
+                                                                <li>x groupes de n mois à partir d'un tableau de données. </li>
+                                                                <li>Une palette permettant de faire défiler les groupes de mois. </li>
+                                                                <li>Un pavé légende comprenant une liste d'activités associées à une couleur sélectionnable. Elle&#160;permet d'affecter une activité à une periode. </li>
+                                                            </ul>
+                                                            <p>
+                                                                <br />
+                                                            </p>
+                                                            <p>Les possibilités liées à ce planning mensuel :</p>
+                                                            <ul>
+                                                                <li>Découpage de l'ensemble des journées en 1 à 4 plages</li>
+                                                                <li>Gestion de 12 mois maximum, éventuellement à cheval sur deux années.</li>
+                                                                <li>Affichage de 1 à 12 mois simultanément. Selon ce paramétrage, on pourra avoir un ascenseur vertical.</li>
+                                                                <li>Sélection de plages, dans la limite d'un mois,&#160;pour l'affectation d'une activité.</li>
+                                                                <li>Trois types de jour obligatoirement (menu local 9836) : ouvré, week-end, férié</li>
+                                                                <li>Une activité ne peut s'affecter que sur les jours ouvrés.</li>
+                                                                <li>Interdire la saisie d'activité sur une période, en affectant par la valeur -1, sur les plages à interdire.</li>
+                                                                <li>Réduire le nombre de plage, avant l'affichage du planning, en blanchissant le libellé de l'entête d'une ou de plusieurs colonnes typées PLAGn. &#160;</li>
+                                                                <li>Personnalisation des activités et leur association&#160;aux couleurs par menus locaux.</li>
+                                                            </ul><a id="MIS_20_13"></a>
+                                                            <h3 class="g1">Utilisation du composant</h3>
+                                                            <p><u>Click droit sur une période&#160;:</u> </p>
+                                                            <p>appel du menu contextuel de ligne de tableau correspondant à la période. </p>
+                                                            <p><u>Click sur période ou sélection période :</u> </p>
+                                                            <p>Avec un type d'activité selectionné,&#160;la période passe dans la nouvelle couleur. </p><a id="MIS_20_30"></a>
+                                                            <h3 class="g1">Le tableau X3 associé</h3>
+                                                            <p>Le tableau X3 comprend une ligne par jour, et&#160;représente au maximum 12 mois éventuellement à cheval sur deux années.<br />Le composant XSL planning a besoin pour fonctionner d’identifier les colonnes du tableau X3; celles-ci doivent donc être typées par la rubrique "Paramétrage" sur l'onglet champ. </p>
+                                                            <p><u>Typage des colonnes :</u>
+                                                            </p>
+                                                            <p>Le type indique au processeur XSL le mode d'utilisation de la colonne. Le tableau doit donc contenir les champs typés suivants :</p>
+                                                            <p />
+                                                            <table width="100%" border="1" style="HEIGHT: 1005px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;Champ</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Type&#160;</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>Description&#160;</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>NBDAY</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;Obligatoire. Variable bas de tableau&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;<b>TECDAT</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Date interne</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;Obligatoire. champ (alpha 15)&#160;sous la&#160;forme&#160;SSAA-MM-JJ-SS-J&#160; composée de :</p>
+                                                                            <p>- SSAA : Année<br />- MM : N° de mois <br />- JJ : N° du jour dans le mois<br />- SS : N° de semaine dans l’année<br />- J : N° de jour dans la semaine (1 Lundi à 7 Dimanche) </p>
+                                                                            <p>Chaque valeur est séparée par un -. <br />Le sous-pro TRSFDATP(DATE,DATTEC) from INTRUTILA permet de construire DATTEC à partir d’une date en format date Adonix. Cette colonne peut être définie en champ invisible, transmis&#160;à tout&#160;client. Exemple de valeur&#160;: 2006-05-12-19-5 correspondant au vendredi 12 mai 2006.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>TYPDAY</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Type de jour</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Obligatoire. Type de jour (ouvré, WE, férié). Ces valeurs sont associées au menu local 9836 (en particulier l’ordre et le nombre de valeurs –3- sont imposés), mais pour diminuer les flux entre le serveur et le client, il est possible de définir la valeur en numérique et de la remplir avec les valeurs: </p>
+                                                                            <p>1&#160;: Ouvré <br />2&#160;: Week-end <br />3&#160;: Férié&#160; </p>
+                                                                            <p>Seules les plages appartenant à un jour de type 1 sont affectable à une activité. </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>PLAG1<br />PLAG2<br />PLAG3<br />PLAG4<br /></b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Plages de jour</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Il est nécessaire d’en définir au moins 1, le programme teste leur présence et s’adapte au nombre défini. </p>
+                                                                            <p>Valeurs possible&#160;: de -1 à "nombre d'activités". </p>
+                                                                            <p>-1&#160;: Plage dans jour ouvré et non affectable <br />0&#160;: non affectée <br />n&#160;: suivant légende </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p><b>TOTTYP1<br />TOTTYP2<br />TOTTYP3<br />TOTTYP4<br />TOTTYP5<br />TOTTYP6<br />TOTTYP7<br />TOTTYP8</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p />
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>Totalisation par activité.&#160;Le programme teste leur présence et les charge en fonction du nombre de jour correspondant aux valeurs 1 à n du menu local associé au champ TYPDAY </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Si l’on souhaite fonctionner avec le programme d’interaction standard <b>AMAJPLAN</b>, les noms de champs suivants sont imposés car ils sont en dur dans le programme. Il est possible d’appeler les champs autrement en définissant un autre programme d’interaction. </p><a id="MIS_20_35"></a>
+                                                            <h3 class="g1">Les options du composant XSL</h3>
+                                                            <p>Le composant XSL planning mensuel <b>APLANM</b> propose&#160;les options suivantes :&#160;</p>
+                                                            <ul>
+                                                                <li><b>NBMONT&#160;</b>: Nombre de mois affichés simultanément (valeur de 1 à 12). </li>
+                                                                <li><b>MENACT</b>&#160;: Menu local type d’activité (par défaut, 9837 avec 5 valeurs en standard ). Les éléments de ce menu local sont modifiables. Ce paramètre, donne la possibilité de faire appel à un autre menu local.&#160;25 activités sont autorisées si on ne personnalise leur couleur par le paramètre <b>MENCOL</b>. </li>
+                                                                <li><b>MENCOL</b> : Menu local couleur d’activité. facultatif.&#160;Ce menu local doit être en concordance avec le menu local des types d'activité.&#160;</li>
+                                                                <li><b>SDATA</b>&#160;: Remise à jour du graphique suite au retour d’interaction. Valeur&#160;1 ou 2.&#160;Laisser la valeur par défaut Non (1), car ce XSL prend en charge la mise à jour du graphe.</li>
+                                                                <li><b>PINTER</b>&#160;: Programme d’interaction. Par défaut, on appelle le programme <b>AMAJPLAN</b>, cependant, il est possible d’en appeler un autre, ce qui permet de nommer les champs autrement et d’intervenir sur les règles d’acceptation, d’interaction ou de cumul.</li>
+                                                            </ul><a id="MIS_20_40"></a>
+                                                            <h3 class="g1">Le traitement d'interaction</h3>
+                                                            <p><u>Ces trois menus locaux</u> sont livrés en standard, et associés à un code dans le paramétrage de l'XSL&#160;:</p>
+                                                            <ul>
+                                                                <li>9001 : <b>MONTH</b> - Libellé des mois</li>
+                                                                <li>9833 : <b>DAY</b> - Libellé des jours</li>
+                                                                <li>9834 : <b>ABRDAY</b> - Libellé abrégé des jours</li>
+                                                            </ul>
+                                                            <p>On a éventuellement la possibilité d'affecter d'autres menus locaux à ces codes qui eux sont fixes. </p>
+                                                            <p><u>Interactions </u>
+                                                            </p>
+                                                            <p>Elles sont définies et modélisées via un sous-programme standard <b>MAJPLAN</b> From <b>AMAJPLAN</b> auquel on passe en paramètre&#160;: </p>
+                                                            <p />
+                                                            <table width="100%" border="1" style="HEIGHT: 260px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;Code</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;Intitulé</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Type</b>&#160;<b>&#160;</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Type d'argument</b>&#160;<b>&#160;</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>&#160;Longueu</b>r </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>LDEB</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Ligne du tableau début d’interaction </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Integer</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;<b>PLAGED</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Plage début (1 à 4 selon nombre de plages journées) </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Integer</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>LFIN</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Ligne fin </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Integer</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;PLAGEF</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Plage fin (1 à 4)</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Integer </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>ETAT</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Type d’activité </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Integer </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;<b>MESSAGE</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Message de retour</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Char </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Par adresse</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;100</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;<b>CODRET</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;Code retour (1 = OK)</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;Integer </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;Par adresse</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Le composant attend 365 ou 366 lignes dans le tableau, représentant 12 mois successifs qui peuvent s’étendre sur 2 années. </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Planningannuel" data-magellan-target="Planningannuel">Planning annuel</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_30_30">Le tableau X3 associé</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_35">Les options du composant XSL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_40">Le traitement d'interaction</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Graphe associé à un tableau X3, permettant de visualiser et de modifier un planning en présentation annuel. Le contexte est identique au planning mensuel.</p><a id="MIS_30_30"></a>
+                                                            <h3 class="g1">Le tableau X3 associé</h3>
+                                                            <p />
+                                                            <h5>
+                                                                <p>idem planning mensuel.</p>
+                                                            </h5><a id="MIS_30_35"></a>
+                                                            <h3 class="g1">Les options du composant XSL</h3>
+                                                            <p />
+                                                            <h5>Le composant XSL planning annuel <b>APLANY</b> propose&#160;les options suivantes :&#160;</h5>
+                                                            <ul>
+                                                                <li><b>MENACT</b>&#160;: Menu local type d’activité (par défaut, 9837 avec 5 valeurs en standard ). Les éléments de ce menu local sont modifiables. Ce paramètre, donne la possibilité de faire appel à un autre menu local.&#160;25 activités sont autorisées si on ne personnalise leur couleur par le paramètre <b>MENCOL</b>. </li>
+                                                                <li><b>MENCOL</b> : Menu local couleur d’activité. facultatif.&#160;Ce menu local doit être en concordance avec le menu local des types d'activité.&#160;</li>
+                                                                <li><b>SDATA</b>&#160;: Remise à jour du graphique suite au retour d’interaction. Valeur&#160;1 ou 2.&#160;Laisser la valeur par défaut Non (1), car ce XSL prend en charge la mise à jour du graphe.</li>
+                                                                <li><b>PINTER</b>&#160;: Programme d’interaction. Par défaut, on appelle le programme <b>AMAJPLAN</b>, cependant, il est possible d’en appeler un autre, ce qui permet de nommer les champs autrement et d’intervenir sur les règles d’acceptation, d’interaction ou de cumul.</li>
+                                                            </ul><a id="MIS_30_40"></a>
+                                                            <h3 class="g1">Le traitement d'interaction</h3>
+                                                            <p>idem planning mensuel</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Radar" data-magellan-target="Radar">Radar</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_13">Utilisation du composant</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_30">Le tableau X3 associé</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_35">Les options du composant XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualisation d'un tableau avec une représentation graphique sous forme de radar sur lequel :</p>
+                                                            <ul>
+                                                                <li>chaque couleur représente une ligne du tableau.</li>
+                                                                <li>chaque axe représente une colonne de valeur du tableau.</li>
+                                                            </ul>
+                                                            <p>Les possibilités liées à ce radar :</p>
+                                                            <ul>
+                                                                <li>Graphe en visualisation uniquement</li>
+                                                                <li>Bouton possible sur variable de bas de tableau accessible, sur le graphe, par click droit sur chaque couleur</li>
+                                                                <li>Possibilité d'afficher un repère de valeur maximum</li>
+                                                                <li>Possibilité d'afficher une échelle</li>
+                                                                <li>Plusieurs éléments visualisables (ligne tableau).&#160;se limiter à un nombre raisonable, pour la clarté du graphe.&#160;</li>
+                                                                <li>Plusieurs axes visualisables&#160;(colonne tableau).&#160;3 minimum et se limiter à un nombre raisonnable,&#160; pour la clarté du graphe.&#160;</li>
+                                                            </ul><a id="MIS_40_13"></a>
+                                                            <h3 class="g1">Utilisation du composant</h3>
+                                                            <p>Survol d'une zone: </p>
+                                                            <ul>
+                                                                <li>Augmente l'opacité de la zone </li>
+                                                                <li>Info bulle libellé </li>
+                                                            </ul>
+                                                            <p>Click sur zone: </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement au serveur (ligne de tableau correspondante) </li>
+                                                            </ul>
+                                                            <p>Click-droit sur zone&#160;: </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement (ligne de tableau correspondante) </li>
+                                                                <li>Bouton du Menu contextuel (ligne de tableau correspondante) </li>
+                                                            </ul>
+                                                            <p>Click sur couleur légende: </p>
+                                                            <ul>
+                                                                <li>Passe au premier plan la zone correspondante </li>
+                                                                <li>Augmente l'opacité </li>
+                                                            </ul>
+                                                            <p>Click sur "oeil" légende: </p>
+                                                            <ul>
+                                                                <li>Masque la zone correspondante </li>
+                                                            </ul>
+                                                            <p>Le composant XSL radar besoin pour fonctionner d’identifier les informations suivantes, qui sont portées par le tableau associé et par le paramétrage de l’XSL. </p><a id="MIS_40_30"></a>
+                                                            <h3 class="g1">Le tableau X3 associé</h3>
+                                                            <p />
+                                                            <h5>
+                                                                <p>Le composant XSL planning a besoin pour fonctionner d'un tableau X3. Chaque ligne de tableau permet de calculer une "surface". </p>
+                                                                <p><u>Définition des colonnes :</u>
+                                                                </p>
+                                                                <ul>
+                                                                    <li>La première colonne visible du tableau doit être un identifiant.</li>
+                                                                    <li>La seconde colonne visible du tableau doit être le libellé ; celui-ci sera accessible dans la palette. </li>
+                                                                    <li>Toutes les autres colonnes sont considérées comme autant d'axes d'analyses.&#160;Elles doivent être numériques (entier/décimal), et avoir un titre. Le tableau doit comporté au moins 3 axes.</li>
+                                                                </ul>
+                                                                <p>Lorsqu'on ne renseigne pas&#160;le titre d'une colonne numérique, cela permet de faire disparaitre l'axe correspondant. </p>
+                                                                <p>Ces colonnes doivent donc être typées par la rubrique "Paramétrage" sur l'onglet champ. </p>
+                                                                <p><u>Typage des colonnes :</u>
+                                                                </p>
+                                                                <p>Le type indique au processeur XSL le mode d'utilisation de la colonne. Le tableau doit donc contenir les champs typés suivants :</p>
+                                                                <h5>
+                                                                    <p />
+                                                                    <table width="100%" border="1" style="HEIGHT: 200px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                        <tbody>
+                                                                            <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                    <p><b>Type&#160;</b>
+                                                                                    </p>
+                                                                                </td>
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                    <p><b>Description&#160;</b>
+                                                                                    </p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                    <p>&#160;</p>
+                                                                                </td>
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>&#160;Obligatoire. Variable bas de tableau&#160;</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                    <p>Clé</p>
+                                                                                </td>
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                    <p>&#160;Obligatoire. doit contenir un identifiant unique.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                    <p>Libellé</p>
+                                                                                </td>
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Obligatoire. doit contenir l'intitulé de l'identifiant.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                                    <p>Valeur</p>
+                                                                                </td>
+                                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                                    <p>Un champ par axe d'analyse dont le titre est précisé dans l'intitulé. Ces champs doivent être de type entier ou décimal.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </h5>
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                                <p />
+                                                            </h5><a id="MIS_40_35"></a>
+                                                            <h3 class="g1">Les options du composant XSL</h3>
+                                                            <p>Le composant XSL planning radar <b>ARADAR</b> propose&#160;3 options : </p>
+                                                            <ul>
+                                                                <li><b>SCALE</b>&#160;: permet de fixer une échelle de représentation (par défaut 0). Si cette échelle est à 0, le composant adapte son échelle à la plus grande valeur à représenter trouvée, sinon les valeurs sont rapportées à l’échelle. </li>
+                                                                <li><b>MENSCA</b>&#160;: Menu échelle. Il permet de définir une légende pour les différentes valeurs de l’échelle. Cette information doit être un numéro de menu local. Si la valeur est à 0 (défaut), il n’y a pas d’échelle affichée.</li>
+                                                                <li><b>SDATA</b>&#160;: Remise à jour du graphique suite au retour d’interaction depuis le graphe. Valeur&#160;1 ou 2.&#160;Aucune incidence, puisque ce graphe est en lecture uniquement.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Nomenclaturehorizontale" data-magellan-target="Nomenclaturehorizontale">Nomenclature horizontale</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_50_13">Utilisation du composant</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_50_30">Le tableau X3 associé</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_50_35">Les options du composant XSL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_50_40">Le paramétrage XSL</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualisation d'un tableau avec une représentation graphique sous forme d'organigramme sur lequel :</p>
+                                                            <ul>
+                                                                <li>chaque élément&#160;représente une ligne du tableau.</li>
+                                                            </ul>
+                                                            <p>Les possibilités liées à la nomenclature horizontale&#160;:</p>
+                                                            <ul>
+                                                                <li>possibilité de déplacer un élément et tout ce qui lui est rattaché (soumis à paramétrage)</li>
+                                                                <li>possibilité d'afficher une image ou différentes lignes de texte dans les cadres (soumis à paramétrage)</li>
+                                                                <li>possibilité d'affecter un style pour mise en page des textes&#160; (soumis à paramétrage)</li>
+                                                                <li>possibilité d'avoir un menu contextuel pour chaque élément (suppression élément par action bouton)&#160;&#160;</li>
+                                                                <li>Possibilité d'exécuter un traitement associé au double-clic (soumis à paramétrage)</li>
+                                                            </ul><a id="MIS_50_13"></a>
+                                                            <h3 class="g1">Utilisation du composant</h3>
+                                                            <p>Survol d'une zone: </p>
+                                                            <ul>
+                                                                <li>Info bulle libellé long </li>
+                                                            </ul>
+                                                            <p><u>Click sur zone:</u> </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement au serveur (ligne de tableau correspondante) </li>
+                                                            </ul>
+                                                            <p><u>Click-droit sur zone&#160;:</u> </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement (ligne de tableau correspondante) </li>
+                                                                <li>Demande menu contextuel au serveur (ligne de tableau correspondante) </li>
+                                                            </ul><a id="MIS_50_30"></a>
+                                                            <h3 class="g1">Le tableau X3 associé</h3>
+                                                            <p />
+                                                            <h5>
+                                                                <h5>Champs du tableau</h5>
+                                                                <p>Le tableau X3&#160;doit être constitué d' une ligne par élément de la nomenclature.</p>
+                                                                <p>Le composant XSL nomenclature a besoin pour fonctionner d’identifier les colonnes du tableau X3; celles-ci doivent donc être typées par la rubrique "Paramétrage" sur l'onglet champ. </p>
+                                                                <p><u>Typage des colonnes :</u>
+                                                                </p>
+                                                                <p>Le type indique au processeur XSL le mode d'utilisation de la colonne. Le tableau doit donc contenir les champs typés suivants :</p>
+                                                                <p />
+                                                                <table width="100%" border="1" style="HEIGHT: 512px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>&#160;Champ</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>Type&#160;</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p><b>Description&#160;</b>
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>&#160;<b>NBCMP</b> </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>&#160;</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Variable bas de tableau. Obligatoire.&#160;&#160;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>&#160;<b>PARENT</b></p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Clé du père</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>clé du père de l'enregistrement courant. Vide, s'il s'agit de la tête de nomenclature, sinon obligatoire.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p><b>KEYC</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>Clé</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>clé de l'enregistrement courant. Obligatoire.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>LIBSHORT</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Libellé court</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>Affiché dans le cadre de l'élément. Facultatif.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p><b>INF</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>Information</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Plusieurs champs peuvent être de ce type. Ces informations sont affichées à la suite du libellé court, dans l'ordre de déclaration des champs dans le tableau.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>LIBL1</b>&#160;</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Libellé long&#160;</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>Info-bulle en survol de l'élément. Facultatif.&#160;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                                <p><b>IMG</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                                <p>Image</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                                <p>image affichée dans les cadres de l'organigramme. L'image doit être localisée dans le répertoire des ressources par dossier (/X3_PUB/dossier/RES). L'image est redimensionnée en fonction du paramètre SIZEB. Facultatif.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p>Si l’on souhaite fonctionner avec le programme d’interaction standard <b>AMAJHIER</b>, les noms de champs suivants sont imposés car ils sont en dur dans le programme. Il est possible d’appeler les champs autrement en définissant un autre programme d’interaction. </p>
+                                                            </h5><a id="MIS_50_35"></a>
+                                                            <h3 class="g1">Les options du composant XSL</h3>
+                                                            <p>
+Le composant XSL nomenclature horizontale <b>ANOMH</b> propose&#160;5 options :&#160; </p>
+                                                            <ul>
+                                                                <li><b>MODHIE</b> : Autoriser le déplacement d'un élément et tout ce qui lui est rattaché. Valeur :&#160;1 non /&#160;2 oui.&#160;Par défaut Oui(2). </li>
+                                                                <li><b>SIZEB </b>: Taille du cadre de chaque élément en pixels exprimée en hauteur,largeur de la boite, hauteur du texte dans cette boite. (taille par défaut : 100,100). Si la&#160;taille texte&#160;n'est pas précisée, 20px sont réservés. </li>
+                                                                <li><b>SDATA&#160;:</b> Remise à jour du graphique suite au retour d’interaction. Valeur :&#160;1 non /&#160;2 oui.&#160;Par défaut OUI (2). Le graphique est recalculé, chaque fois que des données sont modifiées quelque soit l'origine (tableau ou graphe). Positionné à&#160;NON, le graphe n'est&#160;pas recalculé,&#160;suite à une interaction de l'utilisateur&#160;sur le graphe lui-même (par contre, recalculé suite à une mise à jour du tableau).&#160;&#160;&#160;</li>
+                                                                <li><b>PINTER</b>&#160;: Programme d’interaction. Par défaut on appelle le programme <b>AMAJHIER</b>, il est possible d’en appeler un autre, ce qui permet d’appeler les champs autrement et d’intervenir sur les règles d’acceptation d’interaction.</li>
+                                                                <li><b>EXECFL</b> : Autoriser l'appel d'un sous-programme sur double-click sur élément de dernier niveau.</li>
+                                                            </ul><a id="MIS_50_40"></a>
+                                                            <h3 class="g1">Le paramétrage XSL</h3>
+                                                            <p><u>Interactions </u>
+                                                            </p>
+                                                            <p>Elles sont définies et modélisées via un sous-programme standard <b>MAJHIER</b> From <b>AMAJHIER</b> auquel on passe en paramètre&#160;: </p>
+                                                            <p />
+                                                            <table width="100%" border="1" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;Code</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>&#160;Intitulé</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Type</b>&#160;<b>&#160;</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Type d'argument</b>&#160;<b>&#160;</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>&#160;Longueu</b>r </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>CODACT</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>code action<br />D delete / M Modify / E Execute</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Char</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;1</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;<b>NLI</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>N° de ligne du composant à traiter<br />(1 à n)</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Integer</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>FATHVAL</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>N°&#160;ligne de l'élément de&#160;rattachement. père si RANGNIV=0,&#160;<br />frère si RANGNIV=1 ou -1</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Integer</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;<b>RANGNIV </b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Type de rattachement.<br />0 dessous, 1 à droite, -1 à gauche</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Integer </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Par valeur </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;<b>MESSAGE</b></p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Message de retour</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Char </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Par adresse</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;100</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;<b>CODRET</b> </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;Code retour (1 = OK)</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;Integer </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;Par adresse</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Pour supprimer un élément, on utilisera une action bouton sur la variable de bas de tableau, et on écrira :</p>
+                                                            <p>Local Char MESSAGE(100)<br />Local Integer CODRET <br />Call MAJHIER("D",nolign,"",0,MESSAGE,CODRET) From AMAJHIER <br />If CODRET&lt;&gt;1<br />&#160;&#160;&#160;Call ERREUR(MESSAGE) From GESECRAN<br />Endif</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Nomenclatureverticale" data-magellan-target="Nomenclatureverticale">Nomenclature verticale</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_60_13">Utilisation du composant</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_30">Le tableau X3 associé</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_35">Les options du composant XSL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_40">Le paramétrage XSL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_60_50">Les icônes disponibles</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Visualisation d'un tableau avec une représentation graphique sous forme d'organigramme sur lequel :</p>
+                                                            <ul>
+                                                                <li>chaque élément&#160;représente une ligne du tableau.</li>
+                                                            </ul>
+                                                            <p>Les possibilités liées à la nomenclature horizontale&#160;:</p>
+                                                            <ul>
+                                                                <li>plier - déplier un élément (clic)</li>
+                                                                <li>déplacer un élément et tout ce qui lui est rattaché (soumis à paramétrage)</li>
+                                                                <li>supprimer un élément et tout ce qui lui est rattaché (clic droit)</li>
+                                                                <li>exécuter un traitement sur double clic sur dernier élément (soumis à paramétrage)</li>
+                                                            </ul>
+                                                            <p /><a id="MIS_60_13"></a>
+                                                            <h3 class="g1">Utilisation du composant</h3>
+                                                            <p><u>Survol d'une zone:</u> </p>
+                                                            <ul>
+                                                                <li>Info bulle libellé court </li>
+                                                                <li>Modification de la couleur et soulignement du texte survolé </li>
+                                                            </ul>
+                                                            <p><u>Click sur zone:</u> </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement au serveur (ligne de tableau correspondante) </li>
+                                                                <li>Inverse vidéo sur texte </li>
+                                                            </ul>
+                                                            <p><u>Click-droit sur zone&#160;:</u> </p>
+                                                            <ul>
+                                                                <li>Demande de positionnement (ligne de tableau correspondante) </li>
+                                                                <li>Demande menu contextuel au serveur (ligne de tableau correspondante) </li>
+                                                                <li>Inverse vidéo sur texte </li>
+                                                            </ul>
+                                                            <p /><a id="MIS_60_30"></a>
+                                                            <h3 class="g1">Le tableau X3 associé</h3>
+                                                            <p />
+                                                            <h5>
+                                                                <p>Le tableau X3 doit être constitué d' une ligne par élément de la nomenclature. </p>
+                                                                <p>Le composant XSL nomenclature verticale a besoin pour fonctionner d’identifier les colonnes du tableau X3; celles-ci doivent donc être typées par la rubrique "Paramétrage" sur l'onglet champ. </p>
+                                                                <p><u>Typage des colonnes :</u>
+                                                                </p>
+                                                                <p>Le type indique au processeur XSL le mode d'utilisation de la colonne. Le tableau doit donc contenir les champs typés suivants :</p>
+                                                                <p>Le type indique au processeur XSL le mode d'utilisation de la colonne. Le tableau doit donc contenir les champs typés suivants :</p>
+                                                                <p />
+                                                                <table width="100%" border="1" style="HEIGHT: 641px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>&#160;Champ</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>Type&#160;</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p><b>Description&#160;</b>
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>&#160;<b>NBCMP</b> </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>&#160;</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Variable bas de tableau. Obligatoire.&#160;&#160;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>PARENT</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Clé du père</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>clé du père de l'enregistrement courant. Vide, s'il s'agit de la tête de nomenclature, sinon obligatoire.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p><b>KEYC</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>Clé</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>clé de l'enregistrement courant. Obligatoire.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>LIBL1</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Libellé long&#160;</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>Libellé&#160;de l'élément. Obligatoire.&#160;</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p><b>INF</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>Information</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Plusieurs champs peuvent être de ce type. Ces informations sont affichées à la suite du libellé long, dans l'ordre de déclaration des champs dans le tableau.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p><b>LIBSHORT</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                <p>Libellé court</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                <p>Affiché en info bulle. Facultatif.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p><b>ICO</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                <p>Icône</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Icône affiché en début de ligne. L'icône doit être localisée dans le répertoire des ressources&#160; standard (/X3_PUB/X3_PUB/RESSTD/IMG). Facultatif.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                                <p><b>EXP</b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                                <p>plié/déplié</p>
+                                                                            </td>
+                                                                            <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                                <p>flag permettant de forcer le dépliage d'une branche. (menu local 1)</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <p>Si l’on souhaite fonctionner avec le programme d’interaction standard <b>AMAJHIER</b>, les noms de champs suivants sont imposés car ils sont en dur dans le programme. Il est possible d’appeler les champs autrement en définissant un autre programme d’interaction.</p>
+                                                            </h5><a id="MIS_60_35"></a>
+                                                            <h3 class="g1">Les options du composant XSL</h3>
+                                                            <p />
+                                                            <h5>Le composant XSL nomenclature verticale <b>ANOMV</b> propose&#160;5 options :&#160;</h5>
+                                                            <ul>
+                                                                <li><b>MODHIE</b> : Autoriser le déplacement d'un élément et tout ce qui lui est rattaché. Valeur :&#160;1 non /&#160;2 oui.&#160;Par défaut Oui(2). </li>
+                                                                <li><b>SDATA&#160;:</b> Remise à jour du graphique suite au retour d’interaction. Valeur :&#160;1 non /&#160;2 oui.&#160;Par défaut OUI (2). Le graphique est recalculé, chaque fois que des données sont modifiées quelque soit l'origine (tableau ou graphe). Positionné à&#160;NON, le graphe n'est&#160;pas recalculé,&#160;suite à une interaction de l'utilisateur&#160;sur le graphe lui-même (par contre, recalculé suite à une mise à jour du tableau).&#160;&#160;&#160;</li>
+                                                                <li><b>PINTER</b>&#160;: Programme d’interaction. Par défaut on appelle le programme <b>AMAJHIER</b>, il est possible d’en appeler un autre, ce qui permet d’appeler les champs autrement et d’intervenir sur les règles d’acceptation d’interaction.</li>
+                                                                <li><b>EXECFL</b> : Autoriser l'appel d'un sous-programme sur double-click sur élément de dernier niveau.</li>
+                                                                <li><b>TYPPRE</b> : Type de présentatation. Valeur : </li>
+                                                                <ul>
+                                                                    <li>1 non colonné, </li>
+                                                                    <li>2 non colonné nouveau design, </li>
+                                                                    <li>3 une colonne pour le libellé, une autre pour les informations complémentaires</li>
+                                                                    <li>4 une colonne pour le libellé, une colonne pour chaque information</li>
+                                                                </ul>
+                                                            </ul><a id="MIS_60_40"></a>
+                                                            <h3 class="g1">Le paramétrage XSL</h3>
+                                                            <p>Idem nomenclature horizontale</p>
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                            <p />
+                                                            <p /><a id="MIS_60_50"></a>
+                                                            <h3 class="g1">Les icônes disponibles</h3>
+                                                            <p>On trouvera ci-dessous la liste des icônes disponibles dans le répertoire standard qui peuvent donc être utilisées par ce composant.</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/AUR_XSL_img01.gif" alt="AUR_XSL_img01.gif" keeps="true" realloc="AUR_XSL_img01.gif" />
+                                                            </p>
+                                                            <p>
+                                                                <img src="../Resources/Images/AUR_XSL_img02.gif" alt="AUR_XSL_img02.gif" keeps="true" realloc="AUR_XSL_img02.gif" />
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#LescomposantsXSL">Les composants XSL</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Planningmensuel">Planning mensuel</a>
+                                                        </li>
+                                                        <li><a href="#Planningannuel">Planning annuel</a>
+                                                        </li>
+                                                        <li><a href="#Radar">Radar</a>
+                                                        </li>
+                                                        <li><a href="#Nomenclaturehorizontale">Nomenclature horizontale</a>
+                                                        </li>
+                                                        <li><a href="#Nomenclatureverticale">Nomenclature verticale</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

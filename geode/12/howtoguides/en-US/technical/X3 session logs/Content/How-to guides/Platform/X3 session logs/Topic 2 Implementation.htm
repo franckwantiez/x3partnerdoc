@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="X3 session logs" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Implementation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Topic 1 X3 session logs.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__X3_session_logs.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Implementation</h1>
+                                            <p class="location" data-mc-autonum="Open: "><span class="autonumber"><span class="noteformat">Open: </span></span>Administration &gt; Usage &gt; Logs &gt; <span class="mc-variable Sage-Product.ProductName variable">X3</span> session logs</p>
+                                            <p>This function allows administrators to define a logging session along with the desired parameters to:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Identify logging sessions using tags and descriptions</p>
+                                                </li>
+                                                <li>
+                                                    <p>Filter out undesired sessions and focus on desired users and functions</p>
+                                                </li>
+                                                <li>
+                                                    <p>Set up the relevant log levels and log details as needed</p>
+                                                </li>
+                                                <li>
+                                                    <p>Enable or disable logging for the current session</p>
+                                                </li>
+                                            </ul>
+                                            <p>You can see a list of initially existing log sessions, including the following information. Select the <span class="reference">New <span class="mc-variable Sage-Product.ProductName variable">X3</span> session log</span> action or the <span class="reference">Edit</span> button on the existing log records to access the details.</p>
+                                            <h2>Files: Label, description, and maximum log time</h2>
+                                            <p>The first elements you set up identify your log settings and define how the files will behave:</p>
+                                            <ul>
+                                                <li>
+                                                    <p><span class="reference">Label</span>: This helps you identify your log settings and is included in the file name. You can easily match the file with the log settings.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="reference">Description</span>: A user-friendly description for your log file sets.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="reference">Max log time</span>: The maximum time in minutes after which logging is stopped and the log setting disabled. This allows you to avoid logging sessions indefinitely which can expose users to a drop in performance.</p>
+                                                </li>
+                                            </ul>
+                                            <h2>Target: Set up what you want to log</h2>
+                                            <p>Define what you need to log in the <span class="reference">Target</span> section.</p>
+                                            <p>The <span class="reference">Type</span> allows you to focus on different areas of the solution:</p>
+                                            <p><span class="reference">Batch administration</span>
+                                            </p>
+                                            <p>This logs administration actions related to the <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> batch server, such as starting or stopping the batch server. You will be prompted to select which batch server to monitor.</p>
+                                            <p><span class="reference">Batch query</span>
+                                            </p>
+                                            <p>This selection logs all operations performed by a batch job session.</p>
+                                            <p><span class="reference">Web service</span>
+                                            </p>
+                                            <p>This covers web service sessions and their execution.</p>
+                                            <p><span class="reference">Representation</span>
+                                            </p>
+                                            <p>This logs all operations performed by representation sessions (for example, sessions using hybrid class/representation objects).</p>
+                                            <p><span class="reference">Function (Classic)</span>
+                                            </p>
+                                            <p>This allows you to target classic (object) functions of <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span>.</p>
+                                            <p>When this is specified, <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> will create a log file each time a classic function is accessed if it meets the filtering criteria:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>The selected endpoint (mandatory)</p>
+                                                </li>
+                                                <li>
+                                                    <p>The specified function code (for example, <span class="reference">GESITM</span>, <span class="reference">GESSOH</span>, and so on). The function code can be located by:</p>
+                                                    <ul>
+                                                        <li>
+                                                            <p>Hovering over the function menu:</p>
+                                                            <p>
+                                                                <img src="../../../Resources/Images/X3 session logs/function hover.png" style="max-width: 800px;max-height: auto;mc-thumbnail: none;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>Looking up the function in the <span class="reference">Function dictionary</span> (<span class="reference">Development &gt; Script dictionary &gt; Functions</span>).</p>
+                                                        </li>
+                                                    </ul>
+                                                    <p>If no function is specified, all classic functions will be logged.</p>
+                                                </li>
+                                            </ul>
+                                            <p>You can also select the user to focus logs on a single <span class="mc-variable Sage_X3.SageX3 variable">Sage X3</span> user.</p>
+                                            <div class="note-info">When a user accesses a classic function that is covered by a log setting, a new session is created even if existing classic runtime sessions are available for that user. A new log file is created each time the user accesses a classic function or navigates from one function to the other.</div>
+                                            <h2>Log levels: Define the details to log</h2>
+                                            <p>You can select log levels from a list. Log levels depend on the type of entity (<span class="reference">Type</span>) that you selected.</p>
+                                            <p>Here is a list of the most common log levels available:</p>
+                                            <table class="TableStyle-Normal" style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" style="width: 17px;" />
+                                                <col class="TableStyle-Normal-Column-Column1" style="width: 17px;" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-Normal-Head-Header1">
+                                                        <th class="TableStyle-Normal-HeadE-Column1-Header1">Log level</th>
+                                                        <th class="TableStyle-Normal-HeadE-Column1-Header1">Details</th>
+                                                        <th class="TableStyle-Normal-HeadD-Column1-Header1">Logged data / Examples</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_TRT0</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Function calls with timing</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs 4GL calls to functions or labels (<span class="reference">Gosub</span>/<span class="reference">Call</span>/<span class="reference">func</span>) and produces timing statements for performance analysis. It does not show the details of the lines that are run within the subprograms or labels.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_TRT1</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">All 4GL statements</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs all 4GL statements run, with timing information attached whenever there is a call to a subprogram or label, similar to the previous level. Only the first instruction displays when the source code is not available.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_SQL0</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">SQL <span class="reference">Read</span> and <span class="reference">For</span></td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs database SQL queries triggered by 4GL <span class="reference">For</span> and <span class="reference">Read</span> statements.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_SQL1</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1"><span class="reference">sadora</span> and<span class="reference"> sadoss</span></td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Covers specific <span class="reference">sadoss</span> and <span class="reference">sadora</span> service operations.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_JSON</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">JSON exchanges</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs all JSON exchanges with the runtime.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_CLNT</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Classic mode exchanges</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs protocol streams between the runtime and the client part of the application (front-end web page) for classic objects.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_LDAP</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LDAP requests</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Covers all LDAP protocol exchanges (LDAP management service).</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_OPAD</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1"><span class="reference">opadxd</span> exchanges</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Traces explicit <span class="reference">opadxd</span> operations. For example, socket operations with other runtime instances.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_STRT</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Runtime initialization</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Logs data exchanges, variable and memory initializations, and so on.</p>
+                                                            <p>Done by the runtime when a session is started. For example, when a user accesses a classic function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_DBUG</td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Standard debug trace</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Replicates the standard debug log file generated when running 4GL code, which lists all 4GL instructions executed by the runtime. </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_SYSC </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Security checks</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs security transactions (Sandbox, runtime configuration security).</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_X3SM </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">Session management</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Covers application and database sessions creation/deletion.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">LOG_FILES </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">File access</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">Logs all file access operations done by the runtime.</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">LOG_MEMORY</td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">Memory usage</td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">Adds memory usage information to the log.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p>You can select as many log levels as needed. The selected log levels result in a unique compounded number displayed in the <span class="reference">Levels digest</span> field along with the list of selected log levels.</p>
+                                            <p>
+                                                <img src="../../../Resources/Images/X3 session logs/levels.png" style="max-width: 800px;max-height: auto;mc-thumbnail: none;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                            </p>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Navigate previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navigate previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Navigate next" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navigate next">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">26 October 2021</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

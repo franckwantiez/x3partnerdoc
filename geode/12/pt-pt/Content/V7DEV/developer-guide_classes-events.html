@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Classes events" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Classes events
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="Classesevents" data-magellan-target="Classesevents"> Classes events
+</h1>
+                                                <p><strong>The events are calls made automatically by the supervisor to handle various events and change the default standard behavior of the supervisor layers through additional lines of code.</strong> </p>
+                                                <p><strong>This document describes how events are called and their context.</strong>
+                                                </p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                            <img src="../Resources/Images/images_warning.jpg" /><b><p>Take care that in V11, the labels and variables used in the scripts associated to the class and representation events have been changed in order to clarify and simplify their management. The label <code>$METHODS</code> has been split in three labels :</p><ul><li><code>$EVENTS</code> is now used for all the standard events. The associated variable is <code>[L]AEVENT</code> (the scope remains <code>[L]CURPTH</code>).</li><li><code>$METHODS</code> is now used for the additional methods. The associated variable is <code>[L]AMETHOD</code>. The method can be implemented only in the scripts associated to the corresponding class (and therefore <code>[L]CURPTH</code> is no more usable). <code>[L]ARETVALUE</code> continues to return the result.</li><li><code>$OPERATIONS</code> is now used for the additional operations. The associated variable is <code>[L]AOPERATION</code>. The method can be implemented only in the scripts associated to the corresponding class (and therefore <code>[L]CURPTH</code> is no more usable).<code>[L]ARETVALUE</code> continues to return the result.</li><li><code>$PROPERTIES</code> is still used for the rules associated to the properties. The path of the property is still defined by <code>[L]CURPRO</code>, and the variable containing the rule is now <code>[L]ARULE</code>.</li></ul><p>FOR COMPATIBILITY REASONS, THE PREVIOUS LABELS ($PROPERTIES and $ACTION) ARE STILL USABLE IN U10, BUT THEY WILL BE DEPRECATED IN V12.</p><p>IT IS THEREFORE RECOMMENDED TO MODIFY THE SCRIPTS QUICKLY.</p></b>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#scripts">Scripts Files and Event Implementation</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#scriptsnorm">Scripts Files Name Normalization</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#stdevents">Events with Standard CRUD Code</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#propevent">Variables, Properties, and Methods in Events</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#nestedevents">Event Execution on Nested Classes</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1"><a href="#uievents">Event Execution when UI is Involved</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#eventexample">Sage X3 Script Managing Events Example</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="1ScriptsFilesandEventImplementation" data-magellan-target="1ScriptsFilesandEventImplementation"><a id="scripts">1.</a> Scripts Files and Event Implementation</h1>
+                                                <p>In the Scripts section of the class dictionary, the development partner can define a list of ordered scripts (standard, vertical, or specific). In every script, four labels called <code>$EVENTS</code>, <code>$METHODS</code><code>$OPERATIONS</code> and <code>$PROPERTIES</code> must exist:</p>
+                                                <ul>
+                                                    <li>In <code>$PROPERTIES</code>, we manage the events linked to properties methods (rules).</li>
+                                                    <li>In <code>$EVENTS</code>, we manage the global events associated to the class standard methods?</li>
+                                                    <li>In <code>$METHODS</code>, we manage the additional methods defined.</li>
+                                                    <li>In <code>$OPERATIONS</code>, we manage the additional operations defined.</li>
+                                                </ul>
+                                                <p><strong>Note: the previous labels $ACTION and PROPERTIES that made the triage to rules, methods or operations is now obolete.</strong>
+                                                </p>
+                                                <p>When the control is given to one of these labels through a <code>Gosub</code> instruction, some variables are available to define the calling context:</p>
+                                                <ul>
+                                                    <li><code>ARULE</code> is a character string that provides the rule executed.</li>
+                                                    <li><code>AMETHOD</code> and <code>AOPERATION</code> are character strings used respectively for defining the method and operation requested.</li>
+                                                    <li><code>CURPTH</code> is a character string that provides the class path used for child class, which is explained later in this document (only for standard events).</li>
+                                                    <li><code>CURPRO</code> is a character string variable that provides the property concerned (only for rules).</li>
+                                                </ul>
+                                                <p>The <code>ARULE</code> value is used for properties and can be one of the following:<br />* <code>INIT</code>, <code>GET</code>, <code>CONTROL</code>, <code>PROPAGATE</code> for the rules.</p>
+                                                <p>The <code>AEVENT</code> value is used for standard events and can have the following values:<br />* <code>AINSERT</code>, <code>AREAD</code>, <code>AUPDATE</code>, <code>ADELETE</code> only for the persistent class if the standard corresponding CRUD operation is not generated.<br />* Other codes such as <code>AINSERT_CONTROL_BEFORE</code>, corresponding to events allowing a development partner to add code at a given step of the standard CRUD operations. These event have a name that start systematically with a A.</p>
+                                                <p>When a standard event is called for an instance of a child class, it is called as many times as the level is nested. For instance, it is called two times with a single level of nesting:</p>
+                                                <ul>
+                                                    <li>In the first step, it is called for the child class.</li>
+                                                    <li>In the second step, it is called for the main class (<code>CURPTH</code> identifying the complete path to the child class element) thus allowing to complete the event.</li>
+                                                </ul>
+                                                <p>When a rule is called for an instance of a child class, it is also called as many times as the level is nested; but in this case, <code>CURPTH</code> is not used : the path is given in <code>CURPRO</code> depending on the current level. For example, in the header script, <code>CURPRO</code> will be equal to "LINES.PROPERTY", while in the line script, <code>CURPRO</code> will be equal to "PROPERTY".</p>
+                                                <p>In the code associated to <code>$PROPERTIES</code>, <code>$EVENTS</code>, <code>$METHODS</code> and <code>$OPERATIONS</code> labels, the development partner has access to different properties. Some of them are defined at calling time by the supervisor, and others are defined as additional properties in the class that are not defined in the class dictionary.</p>
+                                                <p>Be aware that this code is called through a <code>Call</code> instruction FOLLOWED BY A <code>Gosub</code>. Thus, the scope of the local variables declared in an event code is limited to the event where it is called. For example, when a sub-program is called by the <code>$PROPERTIES</code> event, a local variable declared in that event is not visible for the next one:</p><pre xml:space="preserve"><code>$PROPERTIES
+Case [L]ARULE
+   When "INIT"
+      ...
+   When "CONTROL"
+      Local Integer MY_VARIABLE
+      ...
+   When "PROPAGATE"
+      # Even if PROPAGATE rule is called once the CONTROL is successful, MY_VARIABLE is not visible here
+   When "GET"
+      ...
+Endcase
+Return</code></pre>
+                                                <br />The same rule applies for tables on line: at the end of any event, the tables are closed and have to be declared at the beginning of each event execution.
+<h1 id="2ScriptsFilesNameNormalization" data-magellan-target="2ScriptsFilesNameNormalization"><a id="scriptsnorm">2.</a> Scripts Files Name Normalization</h1><p>A normalization exists for the Sage X3 script files names declared in a class:</p><ul><li>A default standard script called <strong>CLASSNAME_CSTD</strong> is defined with rank 1000.</li><li>The ranks in multiple of 1000 are reserved for standard extensions.</li><li>Specific and vertical script file names should start with X, Y, or Z and can use other ranks.</li><li>The ranks are not significant. Only the relative order is considered and can be easily changed if a 
+conflict exists (for example, two scripts cannot have the same rank).</li></ul><h1 id="3EventsAssociatedwithStandardCRUDCode" data-magellan-target="3EventsAssociatedwithStandardCRUDCode"><a id="stdevents">3.</a> Events Associated with Standard CRUD Code</h1><p>This section describes the different events available in standard CRUD operation performed on a persistent class.</p><p>These events are called on the methods previously defined through an <code>Fmet</code> instruction, followed by <code>Gosub</code> calls on every script associated to the classes and/or representations in the dictionary, in the order where they are defined. Depending on the type of event, a different label is called:</p><ul><li>the <code>$EVENTS</code> label is called for the standard events associated to standard methods</li><li>the <code>$METHODS</code>and <code>$OPERATION</code> labels are called for methods and operations defined at class or representation level.</li><li>the <code>$PROPERTIES</code> label is called for the rules defined on the properties of classes or representations.</li></ul><p>Usually, a script containing the code of the event looks like this:</p><pre xml:space="preserve"><code>##########################################################################################################
+# EVENTS
+##########################################################################################################
+$EVENTS
+Case CURPTH
+  When ""
+   Case AEVENT
+      When "event_name"
+        Gosub METHOD_LABEL : # "event_name" is the standard event to be handled, and METHOD_LABEL the corresponding label
+    Endcase
+  Endcase
+Return
+##########################################################################################################
+# RULES
+##########################################################################################################
+$PROPERTIES
+Case [L]CURPRO
+     When "property_path"
+        Gosub PROP_LABEL : # "property_path" is the property path to be handled, and PROP_LABEL the corresponding label
+Endcase
+Return
+# Example of rules handling (only the rules used are usually defined)
+$PROP_LABEL
+Case [L]ARULE
+     When "INIT" : # Init method
+     ...
+     When "CONTROL" : # Control method
+     ...
+     When "PROPAGATE" : # Propagatin method
+     ...
+     When "GET" : # Get method
+     ...
+     When "AINIT" : # Init method
+     ...
+     When "AINIT" : # Init method
+     ...
+##########################################################################################################
+# METHODS
+##########################################################################################################
+$METHODS
+Case [L]AMETHOD
+    When "method_name"
+        Gosub METHOD_LABEL : # "method_name" is the method to be handled, and METHOD_LABEL the corresponding label
+...
+    Endcase
+  Endcase
+Return
+##########################################################################################################
+# OPERATIONS
+##########################################################################################################
+$OPERATIONS
+Case AOPERATION
+      When "operation_name"
+        Gosub OPERATION_LABEL : # "operation_name" is the operation to be handled, and OPERATION_LABEL the corresponding label
+    Endcase
+  Endcase
+Return</code></pre><br />The following tables summarizes the events called during CRUD operation.
+<h2 id="GlobaleventsEVENTS" data-magellan-target="GlobaleventsEVENTS">Global events ($EVENTS)</h2><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th width="15%" class="TableStyle-NormalRows-BodyE-Column1-Body2">Type of events</th><th width="25%" class="TableStyle-NormalRows-BodyE-Column1-Body2">Calling conditions</th><th width="60%" class="TableStyle-NormalRows-BodyD-Column1-Body2">Details</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Global AINIT event</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Global event that is called at the end of the AINIT method (all the INIT rules associated to the different properties have already been called).</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">This event is called by the supervisor:<ul><li>when a creation is performed through a representation using the <i>Create</i> link.</li><li>when a line is inserted in a grid by using the <i>Insert</i> link (on the child instance).</li><li>when a line is inserted in a collection by using the ADDLINE method.</li></ul><br />If the developer creates a line in a script, the AINIT method must be called manually after the class instantiation. This calls performs all the init rules on the properties (ARULE has a value equal to <a href="developer-guide_event-init.html">INIT</a>), and ends with the event AINIT (AEVENT as a value equal to AINIT).</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Global ACONTROL event</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Global event that is called after all the CONTROL rules associated to the different properties have been called.</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">This event is called by the supervisor before an insert or an update:
+<ul><li>After the <a href="developer-guide_event-ainsert_control_before.html">AINSERT_CONTROL_BEFORE</a> and <a href="developer-guide_event-aupdate_control_before.html">AUPDATE_CONTROL_BEFORE</a> events that depends on what has been modified.</li><li>Before the <a href="developer-guide_event-ainsert_control_after.html">AINSERT_CONTROL_AFTER</a> and <a href="developer-guide_event-aupdate_control_after.html">AUPDATE_CONTROL_AFTER</a> events.</li><li>When the class embeds collection of children instances, the control is first done on the children instances in AORDER order (CURPTH being the collection name) and then on the class (CURPTH being empty).
+</li></ul></td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD operation events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Called by the corresponding standard methods (AINSERT, AREAD, ADELETE, AUPDATE) on a class when the check boxes associated to the CRUD methods are not set in the class dictionary. The code of the event has to store or retrieve the data. If the boxes are set, the code that updates the database is generated at class validation and the event is not called. </td><td class="TableStyle-NormalRows-BodyD-Column1-Body1"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of aevent</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert.html">AINSERT</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Creation method.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aread.html">AREAD</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Read method.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aupdate.html">AUPDATE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Update method.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-adelete.html">ADELETE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Delete method.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">CRUD control events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Called when a CRUD operation is performed (AINSERT, ADELETE, AUPDATE).<br />The CRUD methods can be called: <ul><li>automatically by the supervisor when standard CRUD links are triggered from the UI.</li><li>manually by the developer if such a CRUD operation is triggered from a script.</li></ul><b>No database transaction is in progress when these events are executed, and no data update has to be done in these events.</b></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert_control_before.html">AINSERT_CONTROL_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the insertion of a line in the database, and before the controls on the fields. Can be used to assign default values on properties.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-ainsert_control_after.html">AINSERT_CONTROL_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After all the controls have been performed and before the database insert operation.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-adelete_control_before.html">ADELETE_CONTROL_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the deletion of a line and the automated consistency control of the referential integrity based on the dictionary definition.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-adelete_control_after.html">ADELETE_CONTROL_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After all the consistency controls have been performed and before the database line deletion.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aupdate_control_before.html">AUPDATE_CONTROL_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the controls of the properties and before the update of a line. Can be used to assign default values.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aupdate_control_after.html">AUPDATE_CONTROL_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the controls of the properties and before the update of a line. Can be used to perform additional consistency controls.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD update events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Called when a CRUD operation is performed (AINSERT, ADELETE, AUPDATE).<br /><br />The CRUD methods can be called: <ul><li>automatically by the supervisor when standard CRUD links are triggered from the UI.</li><li>manually by the developer if such a CRUD operation is triggered from a script.</li></ul> <br /><b>A database transaction is in progress to update the data when these events are executed. Setting an error will abort the transaction and trigger the rollback events.</b></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert_before.html">AINSERT_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">After all the controls have been performed, but before the database insertion.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-ainsert_after.html">AINSERT_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the database insertion has been successfully performed.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-adelete_before.html">ADELETE_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the deletion of a line and after the automated consistency control of the referential integrity have been performed.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-adelete_after.html">ADELETE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the successful deletion of a line.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aupdate_before.html">AUPDATE_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Called before the updates and after all controls of the properties have been performed.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aupdate_after.html">AUPDATE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Called after the successful database line update.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">CRUD error handling events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Called only when errors occur during the transaction execution. A rollback is performed, and then the control is given to the event to perform additional operations if necessary.</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-ainsert_rollback.html">AINSERT_ROLLBACK</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">A database insertion failed.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-adelete_rollback.html">ADELETE_ROLLBACK</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">A database deletion failed.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aupdate_rollback.html">AUPDATE_ROLLBACK</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">A database update failed.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">CRUD collection handling events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Called on the management of lines in collections (when the ADDLINE or ADELLINE standard methods are called). These methods can be called:<ul><li>automatically by the supervisor when the user updates a collection through links presents on a version 7 native page.</li><li>manually by the developer if the methods are called in a script to automate a collection.</li></ul></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-addline_before.html">ADDLINE_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the line insertion in a (1,N) or (0,N) collection.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-addline_after.html">ADDLINE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the line insertion in a (1,N) or (0,N) collection.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-adelline_before.html">ADELLINE_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the line deletion in a (1,N) or (0,N) collection.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-adelline_after.html">ADELLINE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the line deletion in a (1,N) or (0,N) collection.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">CRUD read events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Called when the read method is called (in a script, or automatically from a version 7 native page).</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aread_before.html">AREAD_BEFORE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Before the database is read.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aread_after.html">AREAD_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">After the database is read.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Query events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Called during queries (no working copy is available; therefore, "This" is not available). The query is defined in the calling order. These events are useful when an interface class is used. In this case, no request is generated in the database to extract data.<br /><br /><b>These events are called only for representations.</b></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aquery_decode_criteria_after.html">AQUERY_DECODE_CRITERIA_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Used to define the columns present in the query.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aquery_primarykeys_after.html">AQUERY_PRIMARYKEYS_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Used to define the link key to be read (database table, other pseudo-table, or link opened with [LNK]abbreviation).</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aquery_open_after.html">AQUERY_OPEN_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Called after the decoding of the query URL. Provides access to data and parameter of the query.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aquery_criteria_after.html">AQUERY_CRITERIA_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Used to define the query criteria.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aquery_join_after.html">AQUERY_JOIN_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Used to define the "Link" that is used to retrieve the data.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-aquery_trans_after.html">AQUERY_TRANS_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Executed on an instance ("This" is available). Values of the lines in the query grid can be assigned.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-aquery_close_after.html">AQUERY_CLOSE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Used when the query is closed.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Search events</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><b>Called when a query is performed by the search engine to feed the search indexes.</b></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2"><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of AEVENT</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Definition</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-asearch_open_after.html">ASEARCH_OPEN_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Used at the beginning of the execution, just after the tables of the query have been opened.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-asearch_join_after.html">ASEARCH_JOIN_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Used just after a Link has been done to execute the query.</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-asearch_close_after.html">ASEARCH_CLOSE_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Called at the end of the query execution.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-asearch_trans_after.html">ASEARCH_TRANS_AFTER</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Used every time a record has been found during the search extraction.</td></tr></table></td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Methods or operations</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">A method or an operation <code>XXXX</code> where <code>XXXX</code> is the code of the method or the operation</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Any operation or method that is described in the Method tabs of the class, and any operation that is described in the Operation tab of the representation will trigger an event that the name of the operation or method, in the $METHODS or $OPERATION label. The context is slightly different when we run an operation or a method:
+    <ul><li>A method is stateful; <i><b>this</b></i> represents the current instance of the class; additional parameters that might have been added are declared as local variables (class [L]) with their declaration name.</li><li>An operation is stateless; <i><b>this</b></i> is a class instance pointer that is not filled at all. Additional parameters that should have been added are declared as local variables (class [L]) with their declaration name. The can be used to fill the instance and trigger stateful methods if needed. But at the end of the execution of the event, the instance will be destroyed (we are in stateless mode). Note that an operation can run in synchronous or asynchronous mode. More information about the asynchronous mode can be found <a href="developer-guide_managing-asynchronous-operations.html">here</a>.</li></ul></td></tr></table><h2 id="PropertyeventsassociatedtorulesPROPERTIES" data-magellan-target="PropertyeventsassociatedtorulesPROPERTIES">Property events associated to rules ($PROPERTIES)</h2><p>These events are called through $PROPERTIES for every property on the operations associated with it. <code>CURPRO</code> contains the name of the property concerned, and "This" gives access to the current instance where the property is managed.</p><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th width="25%" class="TableStyle-NormalRows-BodyE-Column1-Body2">Value of ARULE</th><th width="75%" class="TableStyle-NormalRows-BodyD-Column1-Body2">Details</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-init.html">INIT</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">This method is called by the supervisor:<ul><li>when a creation is performed through a representation using the <i>Create</i> link.</li><li>when a line is inserted in a grid by using the <i>Insert</i> link (on the child instance).</li><li>when a line is inserted in a collection by using the ADDLINE method</li></ul><br />If the developer creates a line in a script directly, the AINIT method must be called manually after the class instantiation.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-get.html">GET</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Called when accessing a property value (for example, in a formula that needs the value to perform a control or make an assignment on another property). This rule is called only if the <i>Get accessor</i> checkbox is set for the given property in the class definition. This event should not be activated on too many properties, for performance considerations.
+    </td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="developer-guide_event-control.html">CONTROL</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">Called every time an assignment is performed on a property of an instance, except when the assignment is performed in the AREAD_AFTER event. It is also called in the final control of a class before an insertion or an update, after verification that the field is not empty if mandatory, and after the control of format consistency.</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="developer-guide_event-propagate.html">PROPAGATE</a></td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">Called after the <b>CONTROL</b> rule when a modification has been performed (when the modification is accepted and the field modified).</td></tr></table><h1 id="4VariablesPropertiesandMethodsinEvents" data-magellan-target="4VariablesPropertiesandMethodsinEvents"><a id="propevent">4.</a> Variables, Properties, and Methods in Events</h1><p>At event execution time, development partners have access to:</p><ul><li>Some supervisor variables describing the context call of the event (for example, <code>[L]ARULE</code>).</li><li>Properties of the class in which the call is performed when a working copy exists. These properties are accessed through the current class instance available through the <code>This</code> keyword. Some additional technical properties such as context description and access to parents are also available as properties.</li><li>Methods that can be called through <code>Fmet</code> on a class instance (usually <code>This</code>).</li></ul><p>The most important variables, properties, and methods are described as follows:</p><h2 id="Variablesavailableinevents" data-magellan-target="Variablesavailableinevents">Variables available in events</h2><p>The following variables are local:</p><h2 id="ARULE" data-magellan-target="ARULE">ARULE</h2><p>The <code>ARULE</code> string defines the rule called. The different values this string can have will be defined in the next pages.</p><h2 id="AEVENT" data-magellan-target="AEVENT">AEVENT</h2><p>The <code>AEVENT</code> string defines the standard event code called. The different values this string can have will be defined in the next pages.</p><h2 id="AMETHOD" data-magellan-target="AMETHOD">AMETHOD</h2><p>The <code>AMETHOD</code> string defines the method code called. The values of this string correspond to the method names defined at the class level.</p><h2 id="AOPERATION" data-magellan-target="AOPERATION">AOPERATION</h2><p>The <code>AOPERATION</code> string defines the operation code called. The values of this string correspond to the operation names defined at the class level.</p><h2 id="CURPRO" data-magellan-target="CURPRO">CURPRO</h2><p>The <code>CURPRO</code> string variable defines the property in which the event has been called (through <code>$PROPERTIES</code>label):</p><ul><li>If a rule defined on a child class property is defined in the script associated to the main class instance, then the path including the child instance is provided.</li></ul><h2 id="CURPTH" data-magellan-target="CURPTH">CURPTH</h2><p>The <code>CURPTH</code> string defines the class scope relatively to the script where te event is called.</p><p>Example of a <code>SALESORDER</code> class having a child class <code>SORDERLINE</code>:</p><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Type of method</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Level where the script is called</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">ARULE value</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">CURPRO value</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">CURPTH value</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Operating on</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Rule ($PROPERTIES) associated with a DISCOUNT property (GET, CONTROL, INIT, PROPAGATE) on MYORDER.LINE(3)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">SALESORDER</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">GET, CONTROL, INIT, or PROPAGATE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">LINE.DISCOUNT</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">empty</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">this.DISCOUNT (the property) </td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Rule ($PROPERTIES) associated with a DISCOUNT property (GET, CONTROL, INIT, PROPAGATE) on MYORDER.LINE(3)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">SORDERLINE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">GET, CONTROL, INIT, or PROPAGATE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">DISCOUNT</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">empty</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">this.DISCOUNT (the property) </td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Standard event ($EVENTS) associated with a CRUD operation (such as AINSERT_CONTROL_BEFORE)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">SORDER</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">AINSERT_CONTROL_BEFORE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">empty</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">empty</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">this (SORDER instance)</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">Standard event ($EVENTS) associated with a CRUD operation (such as AINSERT_CONTROL_BEFORE)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">SORDERLINE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">AINSERT_CONTROL_BEFORE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">empty</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">empty</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">this (SORDERLINE instance)</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Method ($METHODS) or operations ($OPERATIONS) defined in SORDER class (for example, VALIDATE)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">SORDER (1)</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">VALIDATE</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">empty</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">empty</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">this (SORDER instance)</td></tr></table><p>(1) A method or operation will call only the label in the scripts associated with the class in which it has been defined and <strong>not the scripts attached to child classes</strong>.</p><h2 id="This" data-magellan-target="This">This</h2><p>Gives access to the class instance in which the event has been called. Any property of the current class instance can be called through <code>this.PROPERTY</code> syntax.</p><h2 id="PropertiesofThisavailableinevents" data-magellan-target="PropertiesofThisavailableinevents">Properties of <code>This</code> available in events</h2><h2 id="ASTALIN" data-magellan-target="ASTALIN">ASTALIN</h2><p><code>this.ASTALIN</code> is an integer defined by the supervisor as an additional property when a persistent class is created. The value defines which operations have been performed during a CRUD session. They are useful for child instances collection to identify which lines have been inserted, modified, or deleted in an update operation. They are defined by the following constants:</p><ul><li><code>[V]CST_ALL</code>: Associated with an instance where no modification has been performed.</li><li><code>[V]CST_ANEW</code>: Identifies a new class instance that must be inserted at CRUD completion.</li><li><code>[V]CST_AUPD</code>: Associated with a modified instance where an update must be performed at CRUD completion.</li><li><code>[V]CST_ADEL</code>: Identifies an instance in which a deletion is requested.</li><li><code>[V]CST_ANEWDEL</code>: Identifies a new instance in which a deletion is requested. Nothing will be performed at CRUD completion.</li></ul><h2 id="APARENT" data-magellan-target="APARENT">APARENT</h2><p><code>this.APARENT</code> property of a child instance gives access to the parent instance. This can be useful when a nested structure is used and if the event located on a line level needs to access to header values.</p><h2 id="snapshot" data-magellan-target="snapshot">snapshot</h2><p><code>this.snapshot</code> is a reference to the original value of the properties in a class when an insertion or an update is in progress. If <code>this.PROPERTY</code> is the current value (for example, in the CONTROL event), <code>this.snapshot.PROPERTY</code> gives the value that was in the property at the beginning of the operation. The following example illustrates a modification in progress on a document with HEADER and LINE classes.</p><ul><li>On the update events called on the header, <code>this</code> is the reference to the current header instance and <code>this.snapshot</code> is the reference to the header values after the read operation.</li><li>On the update events called on a line, <code>this</code> is the reference to the current line instance and <code>this.snapshot</code> is the reference to the line values after the read operation.</li><li>On the update events called on a line, <code>this.APARENT</code> is the reference to the header instance and <code>this.APARENT.snapshot</code> is the reference to the structure storing the previous values of the header instance.</li><li>If the modification that was made on the document consists of an insertion on a line, the insert events will be called for the line. On these events, <code>this</code> is the reference to the current line instance and <code>this.snapshot</code> is the reference to the line values that are empty.</li></ul><h2 id="ACTX" data-magellan-target="ACTX">ACTX</h2><p><code>this.ACTX</code> property gives access to the current instance of the <code>ACONTEXT</code> class. This class stores information related to the current context, especially in the following properties:</p><ul><li><code>USER</code> provides the connected user code.</li><li><code>AFOLDER</code> provides the folder name attached to the resource.</li><li><code>LAN</code> and <code>LANISO</code> provide the language code, currently for three characters, and the ISO language code for five characters.</li><li><code>LOGIN</code> provides the login information for 30 characters.
+Additional information is stored in the context. For more information, see <a href="workbench-reference_context-dictionary.html">Workbench reference Context Dictionary</a>.</li></ul><p>The use of global variables is strongly discouraged. The ACTX class (and its methods) has been performed to allow a fast access to parameters as well as global values.</p><h2 id="UPDTICK" data-magellan-target="UPDTICK">UPDTICK</h2><p><code>this.UPDTICK</code> is an integer property attached to a persistent class instance and stored in the database. It represents the current version of the line in the database. If a line has not been created, this property has a value of 0. At creation time, a database trigger fills this property with 1, and the value is returned in the class instance. In every successful modification, this property is incremented by 1 by a database trigger. When a modification attempt is performed, the instruction <code>RewriteByKey</code> updates the line only if the <code>UPDTICK</code> value in the database is still the value that has been read when the user loaded the data for modification. If this is not the case, an error will occur because the record was modified by another user.</p><h2 id="ALLOCGRP" data-magellan-target="ALLOCGRP">ALLOCGRP</h2>
+`this.ALLOCGRP` is a property attached to a persistent class instance that defines the allocation group used when declaring this instance. All the instances sharing the same allocation group are freed together. The following syntax is used to ensure that a DETAIL instance shares the same allocation group as a HEADER instance:<pre xml:space="preserve"><code>this.DETAILS(I)=NewInstance C_DETAIL AllocGroup this</code></pre><h2 id="ANUMLIN" data-magellan-target="ANUMLIN">ANUMLIN</h2><ul><li>Deprecated, to be replaced by methods.</li></ul><p><code>this.CHILD(index).ANUMLIN</code> property is present on all child classes managed as a collection. This is a line number dynamically assigned at the read operation that will not change if an insertion or deletion is made. The new line inserted will receive a new number equal to the maximum number assigned plus 1. Retrieving a child instance with the line number <code>LINENUM</code> can be performed by using the following method of the parent class:</p><pre xml:space="preserve"><code>I=Fmet this.AGETINDBYLINE("CHILD", LINENUM)</code></pre><br />The result can then be used to access the instance by the syntax <code>this.CHILD(I)</code>.
+<h2 id="AORDER" data-magellan-target="AORDER">AORDER</h2><p><code>this.CHILD(index).AORDER</code> property is present on all child classes managed as a collection. This is a line number that defines the display order if the property is published in a representation. This value is usually assigned when the instance is filled at the read operation. Any change on this property will change the order in which the lines are presented. Thus, inserting a line in the array can be performed by adding a new instance at the end of a child instance array when the AORDER properties have been changed so the line inserted appears in the right position.</p><h2 id="Otherparametersavailableinevents" data-magellan-target="Otherparametersavailableinevents">Other parameters available in events</h2><h2 id="Parametersofoperations" data-magellan-target="Parametersofoperations">Parameters of operations</h2><p>An operation handles key values that allows to find the current instance on which the operation is executed, and possibly additional parameters that are identified by a code. All these parameters are sent when the operation is called with the name used in the class dictionary on the parameter values. For the key segments, the name are the column names of the key elements in the main table associated to the class; but the other elements can be defined freely.</p><h2 id="Example" data-magellan-target="Example">Example</h2>
+Let's imagine that an operation has been defined to change a value on the customer record. This method has been called SET_MYPROP. The first argument identifies the customer. As the main table is BPCUSTOMER, and as the key used for the operation is BPC0, that has a unique segment based on the column BPCNUM, the first argument will always be BPCNUM. The second argument can be called freely (for instance NEWVALUE). In the event, the developer will test AMETHOD and if AMETHOD is equal to "SET_MYPROP", code such as the following one can be written:<pre xml:space="preserve"><code>$METHOD_SET_MYPROP
+ Local Integer OK
+ OK = Fmet This.AREAD([L]BPCNUM)
+ If OK=[V]CST_AOK
+   This.MYPROP=[L]NEWVALUE
+   OK = Fmet This.AUPDATE
+   ...</code></pre><h2 id="MethodsavailableforThis" data-magellan-target="MethodsavailableforThis">Methods available for <code>This</code></h2><h2 id="ASETERRORPROMESNUM" data-magellan-target="ASETERRORPROMESNUM"><a id="aseterror"></a>ASETERROR(PRO,MES,NUM)</h2><p>The <code>this.ASETERROR</code> method is used to set an error during a control.</p><ul><li><code>PRO</code> is a string identifying the context (for example, <code>CURPRO</code>).</li><li><code>MES</code> is a string containing the message in the right language.</li><li><code>NUM</code> is a numeric value (for example, an http error code).
+This method is used to set an error stored in a dedicated data structure which is available through the following property.</li></ul><h2 id="AGETMAXERRORPROPERTYNAME" data-magellan-target="AGETMAXERRORPROPERTYNAME">AGETMAXERROR(PROPERTY_NAME)</h2><p>This method returns the highest error code found in the error classes for a given property. PROPERTY_NAME is a string containing the property for which the error is requested. If the property is empty, the error relates to the errors found during class methods execution.</p><h2 id="ADELETEERRORPROPERTYNAME" data-magellan-target="ADELETEERRORPROPERTYNAME">ADELETEERROR(PROPERTY_NAME)</h2><p>This method cancels the errors associated with a given property. PROPERTY_NAME is a string containing the property for which the error has to be cancelled. If the property is empty, the errors found globally for the class will be cancelled.</p><h2 id="ASETATTRIBUTEPROPERTYNAMEATTRIBUTENAMEVALUE" data-magellan-target="ASETATTRIBUTEPROPERTYNAMEATTRIBUTENAMEVALUE">ASETATTRIBUTE(PROPERTY_NAME, ATTRIBUTE_NAME, VALUE)</h2><p>This method is used to change attributes values associated with properties. On classes, only some attributes are used, but other attributes related to the user interface can be set up for class properties embedded in representations.</p><p>The available attributes are described below. If they are not assigned by this method, the value defined in the class dictionary is used.</p><table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0"><tr class="TableStyle-NormalRows-Body-Body2"><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Code</th><th class="TableStyle-NormalRows-BodyE-Column1-Body2">Attribute</th><th class="TableStyle-NormalRows-BodyD-Column1-Body2">Possible values</th></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">$isMandatory</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">Mandatory property. This attribute is set at class level.</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">true, false</td></tr><tr class="TableStyle-NormalRows-Body-Body2"><td class="TableStyle-NormalRows-BodyE-Column1-Body2">$isDisabled</td><td class="TableStyle-NormalRows-BodyE-Column1-Body2">The property cannot be inputted. This attribute is valid only for properties in a representation.</td><td class="TableStyle-NormalRows-BodyD-Column1-Body2">true, false</td></tr><tr class="TableStyle-NormalRows-Body-Body1"><td class="TableStyle-NormalRows-BodyE-Column1-Body1">$isHidden</td><td class="TableStyle-NormalRows-BodyE-Column1-Body1">The property is not displayed. This attribute is valid only for properties in a representation.</td><td class="TableStyle-NormalRows-BodyD-Column1-Body1">true, false</td></tr></table><p>Some other attributes are managed by the supervisor and depend only from the meta data defined in the representation dictionary. Thus they cannot be changed dynamically. For instance:</p><ul><li>a field defined as <b>Technical</b> for a facet in the representation will never appear on the page, and will also not be visible in personalization mode.</li><li>a field with the <i>Enterable</i> check box not set for the Edit facet can be only displayed with no input possibility in any case.</li></ul><p>For the fields having the <i>Enterable</i> check box set for the Edit facet, their state can be dynamically changed in a script by using the <i>ASETATTRIBUTE</i> method with the <i><b>$isDisabled</b></i> attribute. They can also be hidden by using the <i>ASETATTRIBUTE</i> method with the <i><b>$isHidden</b></i> attribute.</p><p>The fields defined with an <i>Initial state</i> equal to <b>Visible</b> (resp. <b>Invisible</b>) for a given facet will be visible (resp. invisible) by default on the facet. But this state can be changed dynamically in a script by using the <i>ASETATTRIBUTE</i> method with the <i><b>$isHidden</b></i> attribute.</p><p>Of course, any visible field can be hidden by personalization, and any hidden (not technical) field can be made visible by personalization.</p><h1 id="5EventExecutiononNestedClasses" data-magellan-target="5EventExecutiononNestedClasses"><a id="nestedevents">5.</a> Event Execution on Nested Classes</h1><p>There are many events available due to the complex hierarchy of classes that exists for the management of a complex entity. For example, we can have a <code>MYDOC</code> instance of a <code>DOCUMENT</code> class that has a collection of <code>LINE</code> class called <code>DOCLINE</code>, which has a collection of <code>SUBLINES</code> named <code>DETAIL</code>.</p><h2 id="Exampleofinsertion" data-magellan-target="Exampleofinsertion">Example of insertion</h2><p>In this example, let's consider inserting new data using the 'AINSERT_CONTROL_BEFORE' event. The description of the event calls nesting is relevant if the complete CRUD execution code is generated at the <code>DOCUMENT</code> level (if the Class management check box is not set on the <em>Mapping</em> section in the class dictionary). In that case, the events are called with the following logic:</p><pre xml:space="preserve"><code>AINSERT_CONTROL_BEFORE
+  called in the files associated with DOCUMENT class:
+   - on class DOCUMENT
+   - for the document instance
+   - this is the MYDOC class instance
+   - CURPTH is empty (the control is done for the current class)
+  For every LINE instance in the document (loop on I):
+  |   AINSERT_CONTROL_BEFORE called in the files associated with LINE class:
+  |    - on class LINE for the current line DOCLINE instance
+  |    - this is the MYDOC.DOCLINE(I) class instance
+  |    - CURPTH is empty (the control is done for the current class)
+  |   AINSERT_CONTROL_BEFORE called in the files associated with DOCUMENT class:
+  |    - on class DOCUMENT for the MYDOC.DOCLINE(I) instance
+  |    - this is the MYDOC class instance
+  |    - CURPTH is "DOCLINE" (the control is done for the child class)
+  |   For every SUBLINE in the line instance (loop on J):
+  |   |  AINSERT_CONTROL_BEFORE called in the files associated with SUBLINE class:
+  |   |   - on class SUBLINE
+  |   |   - for the current SUBLINE instance
+  |   |   - this is the MYDOC.DOCLINE(I).DETAIL(J) class instance
+  |   |   - CURPTH is empty (the control is done for the current class)
+  |   |  AINSERT_CONTROL_BEFORE called in the files associated with LINE class:
+  |   |   - on class LINE
+  |   |   - for the current LINE instance
+  |   |   - this is the MYDOC.DOCLINE(I) class instance
+  |   |   - CURPTH is "DETAIL" (the control is done for the child class)
+  |   |  AINSERT_CONTROL_BEFORE called in the files associated with DOCUMENT class:
+  |   |   - on class DOCUMENT
+  |   |   - for the current DOCUMENT instance
+  |   |   - this is the MYDOC class instance
+  |   |   - CURPTH is "DOCLINE.DETAIL" (the control is done for the grand child class)
+  |   Next SUBLINE instance (loop on J)
+  Next LINE instance (loop on J)</code></pre><br />This allows adding code, in the events available on classes, that will be executed in addition to the class code when the class instance is a child of another class. In such cases, parent classes can be accessed through <code>APARENT</code>. For instance, a property <code>PROP1</code> of the <code>DOCUMENT</code> class can be accessed in the code attached to <code>SUBLINE</code> through the following syntax: <code>this.APARENT.APARENT.PROP1</code>.
+<p>This principle of code nesting exists on all the other events listed above, but on the 'AINSERT_AFTER', the event is performed on the nesting level after the events on the sub-level have been performed. This means that the order is as follows:</p><ol><li value="1">Perform the events on all the sub-lines associated with the first line.</li><li value="2">Perform the event on the first line.</li><li value="3">Continue to the other lines with the same logic, and after all lines have been managed, perform the event for the document.</li></ol><h2 id="Exampleofacomplexupdate" data-magellan-target="Exampleofacomplexupdate">Example of a complex update</h2><p>The previous example (Insertion) works when an insertion of a new instance of a class is performed.</p><p>On updates, when child class collections exist on a class, an update operation on a complex document can consist of inserting lines, deleting lines, or modifying lines. You must consider that a modification of a document will call the events defined for deletion, insertion, or modification on the child classes, depending on the modification encountered.</p><p>In fact, it will depend on the <code>this.ASTALIN</code> property for a given instance at a given level:</p><ul><li>If the value <code>[V]CST_ALL</code> or <code>[V]CST_ANEWDEL</code> is found, nothing will be called. The line has not been modified, or has been temporarily inserted and then deleted.</li><li>If the value <code>[V]CST_ANEW</code> is found, the events associated with an insertion will be performed.</li><li>If the value <code>[V]CST_AUPD</code> is found, the events associated with an update will be performed.</li><li>If the value <code>[V]CST_ADEL</code> is found, the events associated with a deletion will be performed.</li></ul><p>If a modification is done, the modification events will be performed at the document level.</p><p>The loop nesting principles are anyways the same, the 'BEFORE' operations are nested in descending level, while the 'AFTER' operation is performed on the lowest level of a collection of child class instances before performing it on the class including the collection.</p><h2 id="Notes" data-magellan-target="Notes">Notes:</h2><ol><li value="1"><p>This works also if a class has two child classes that are not nested. In this case, the loops are performed on the two child class instances independently.</p></li><li value="2"><p>When nested classes are declared, the calls on the CRUD events are performed at the different level as described above. <strong>On other class methods, the call is performed only on the scripts declared in the corresponding class and not on the child classes</strong>.</p></li></ol><h1 id="6EventExecutionwhenUIisInvolved" data-magellan-target="6EventExecutionwhenUIisInvolved"><a id="uievents">6.</a> Event Execution when UI is Involved</h1><h2 id="Events" data-magellan-target="Events">Events</h2><p>When the code associated with events is executed in service mode, no UI event interferes with the methods described previously, and the description of the nested event calls that has been done in the previous section is complete.</p><p>When a UI is involved in the process, there is a parent class associated with the main class (representation).</p><p>An additional level of event will be executed because the representation instance that can include additional properties dedicated only to the UI will also include a reference to the main class. The complete path of a sub-line property would then be in the representation event:</p><p><code>REPRESENTATION.DOCUMENT.LINE.SUBLINE.FINAL_PROPERTY</code>, and the event on the different events would also be called from the files associated with the representation using <code>CURPRO="MYREP.MYDOC.LINE.SUBLINE"</code> where<br /><code>`this</code> would be equal to <code>MYREP.MYDOC.LINE(I).SUBLINE(J)</code>.</p><p>Some additional events dedicated to UI methods and operation also exist. They are documented in the representation description.</p><h2 id="DedicatedUImethods" data-magellan-target="DedicatedUImethods">Dedicated UI methods</h2><h2 id="Linksenablementordisablement" data-magellan-target="Linksenablementordisablement">Links enablement or disablement</h2><p>Dedicated methods exist to enable or disable links associated to the page level and to the record level.</p><p><strong>They work only in <em>Details</em> facet (not in <em>Edit</em> mode).</strong></p><p>These methods are the following:</p><ul><li><strong>ASETLINKDISABLE</strong> disables a link.</li><li><strong>ASETLINKENABLE</strong> enables a link.</li></ul><p>The parameters are, in both cases:<br />* <strong>CODLNK</strong> : a string that contains the code of the link<br />* <strong>AFFLNK</strong> : a local menu that can have one of the two following constant values: CST_AFFLNKREC and CST_AFFLNKPAG.</p><h2 id="Exampleofuse" data-magellan-target="Exampleofuse">Example of use:</h2><pre xml:space="preserve"><code># After reading a record, we might disable links according to the content of the class
+$AREAD_AFTER
+If this.MYCLASS.MYPROP="A1"
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("AEDIT",[V]CST_AFFLNKREC)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("TEST",[V]CST_AFFLNKPAG)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("ADELETE",[V]CST_AFFLNKREC)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("ENR",[V]CST_AFFLNKREC) 
+Elsif this.MYCLASS.MYPROP="A2"
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("AQUERY",[V]CST_AFFLNKPAG)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("ACREATE",[V]CST_AFFLNKPAG)
+    [L]ASTATUS = fmet this.ASETLINKENABLE("ENR",[V]CST_AFFLNKPAG)
+Else
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("AEDIT ",[V]CST_AFFLNKPAG)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("ADELETE ",[V]CST_AFFLNKPAG)
+    [L]ASTATUS = fmet this.ASETLINKDISABLE("AQUERY",[V]CST_AFFLNKPAG)
+Endif</code></pre><h1 id="7SageX3ScriptManagingEventsExample" data-magellan-target="7SageX3ScriptManagingEventsExample"><a id="eventexample">7.</a> Sage X3 Script Managing Events Example</h1><p>This example illustrates a 'SORDER' class having a 'SORDERLINE' child class. It is the of a script declared in 'SORDER' class, which calls separate subprograms.</p><pre xml:space="preserve"><code>###############
+# CLASS SORDER
+###############
+# EVENTS
+###############
+$EVENTS
+Case CURPTH
+   When ""         
+     Case AEVENT
+       When "AINSERT_CONTROL_AFTER"        : Gosub AINSERT_CONTROL_AFTER : # Standard CRUD method
+       When "AUPDATE_CONTROL_AFTER"        : Gosub AUPDATE_CONTROL_AFTER : # Standard CRUD method
+       When "AINSERT_BEFORE"               : Gosub AINSERT_BEFORE        : # Standard CRUD method
+       When "AUPDATE_BEFORE"               : Gosub AUPDATE_BEFORE        : # Standard CRUD method
+     Endcase
+   When "LINE"
+     Case AEVENT
+       When "AINSERT_CONTROL_AFTER"   : Gosub LINE_AINSERT_CONTROL_AFTER : # Standard CRUD operation on line
+       When "AUPDATE_CONTROL_AFTER"   : Gosub LINE_AUPDATE_CONTROL_AFTER : # Standard CRUD operation on line
+       When "AINSERT_BEFORE"          : Gosub LINE_AINSERT_BEFORE : # Standard CRUD operation on line
+     Endcase
+Endcase
+###############
+# METHODS
+###############
+$METHODS
+Case AMETHOD
+   When "VALID"                        : Gosub VALID                 : # Class method
+Endcase
+Return
+###############
+# OPERATIONS
+###############
+$OPERATIONS
+Case AOPERATION
+   When "POST"                        : Gosub POST                 : # Class operation
+Endcase
+Return
+#############
+# RULES
+#############
+$PROPERTIES
+Case CURPRO
+  When "PROP1"       : Gosub PROP1 : # Methods attached to property PROP1
+  When "PROP2"       : Gosub PROP2 : # Methods attached to property PROP2
+  When "LINES.PROP3" : Gosub PROP3 : # Methods attached to property PROP3 of a LINE child instance
+Endcase
+Return
+#######
+$PROP1
+Case ARULE
+   When "INIT"      : Gosub PROP1_INIT      : # Init rule attached to PROP1
+   When "CONTROL"   : Gosub PROP1_CONTROL   : # Control rule attached to PROP1
+   When "PROPAGATE" : Gosub PROP1_PROPAGATE : # Propagate rule attached to PROP1
+   When "GET"       : Gosub PROP1_GET       : # Get rule attached to PROP1  
+Endcase
+Return
+#######
+$PROP2
+Case RULE
+   When "INIT"      : Gosub PROP2_INIT      : # Init rule attached to PROP2
+   When "CONTROL"   : Gosub PROP2_CONTROL   : # Control rule attached to PROP2
+   When "PROPAGATE" : Gosub PROP2_PROPAGATE : # Propagate rule attached to PROP2
+   When "GET"       : Gosub PROP2_GET       : # Get rule attached to PROP2
+Endcase
+#######
+$PROP3
+# As the rule is attached to a line instance
+# "this" is here the line instance and this.PROP3 the property on the current line
+Case ACTION
+   When "INIT"      : Gosub PROP3_INIT      : # Init rule attached to PROP3
+   When "CONTROL"   : Gosub PROP3_CONTROL   : # Control rule attached to PROP3
+   When "PROPAGATE" : Gosub PROP3_PROPAGATE : # Propagate rule attached to PROP3
+   When "GET"       : Gosub PROP3_GET       : # Get rule attached to PROP3
+Endcase
+Return</code></pre><br /></div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Classesevents"> Classes events
+</a>
+                                                    </li>
+                                                    <li><a href="#1ScriptsFilesandEventImplementation">1. Scripts Files and Event Implementation</a>
+                                                    </li>
+                                                    <li><a href="#2ScriptsFilesNameNormalization">2. Scripts Files Name Normalization</a>
+                                                    </li>
+                                                    <li><a href="#3EventsAssociatedwithStandardCRUDCode">3. Events Associated with Standard CRUD Code</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#GlobaleventsEVENTS">Global events ($EVENTS)</a>
+                                                        </li>
+                                                        <li><a href="#PropertyeventsassociatedtorulesPROPERTIES">Property events associated to rules ($PROPERTIES)</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#4VariablesPropertiesandMethodsinEvents">4. Variables, Properties, and Methods in Events</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Variablesavailableinevents">Variables available in events</a>
+                                                        </li>
+                                                        <li><a href="#ARULE">ARULE</a>
+                                                        </li>
+                                                        <li><a href="#AEVENT">AEVENT</a>
+                                                        </li>
+                                                        <li><a href="#AMETHOD">AMETHOD</a>
+                                                        </li>
+                                                        <li><a href="#AOPERATION">AOPERATION</a>
+                                                        </li>
+                                                        <li><a href="#CURPRO">CURPRO</a>
+                                                        </li>
+                                                        <li><a href="#CURPTH">CURPTH</a>
+                                                        </li>
+                                                        <li><a href="#This">This</a>
+                                                        </li>
+                                                        <li><a href="#PropertiesofThisavailableinevents">Properties of This available in events</a>
+                                                        </li>
+                                                        <li><a href="#ASTALIN">ASTALIN</a>
+                                                        </li>
+                                                        <li><a href="#APARENT">APARENT</a>
+                                                        </li>
+                                                        <li><a href="#snapshot">snapshot</a>
+                                                        </li>
+                                                        <li><a href="#ACTX">ACTX</a>
+                                                        </li>
+                                                        <li><a href="#UPDTICK">UPDTICK</a>
+                                                        </li>
+                                                        <li><a href="#ALLOCGRP">ALLOCGRP</a>
+                                                        </li>
+                                                        <li><a href="#ANUMLIN">ANUMLIN</a>
+                                                        </li>
+                                                        <li><a href="#AORDER">AORDER</a>
+                                                        </li>
+                                                        <li><a href="#Otherparametersavailableinevents">Other parameters available in events</a>
+                                                        </li>
+                                                        <li><a href="#Parametersofoperations">Parameters of operations</a>
+                                                        </li>
+                                                        <li><a href="#Example">Example</a>
+                                                        </li>
+                                                        <li><a href="#MethodsavailableforThis">Methods available for This</a>
+                                                        </li>
+                                                        <li><a href="#ASETERRORPROMESNUM">ASETERROR(PRO,MES,NUM)</a>
+                                                        </li>
+                                                        <li><a href="#AGETMAXERRORPROPERTYNAME">AGETMAXERROR(PROPERTY_NAME)</a>
+                                                        </li>
+                                                        <li><a href="#ADELETEERRORPROPERTYNAME">ADELETEERROR(PROPERTY_NAME)</a>
+                                                        </li>
+                                                        <li><a href="#ASETATTRIBUTEPROPERTYNAMEATTRIBUTENAMEVALUE">ASETATTRIBUTE(PROPERTY_NAME, ATTRIBUTE_NAME, VALUE)</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#5EventExecutiononNestedClasses">5. Event Execution on Nested Classes</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Exampleofinsertion">Example of insertion</a>
+                                                        </li>
+                                                        <li><a href="#Exampleofacomplexupdate">Example of a complex update</a>
+                                                        </li>
+                                                        <li><a href="#Notes">Notes:</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#6EventExecutionwhenUIisInvolved">6. Event Execution when UI is Involved</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Events">Events</a>
+                                                        </li>
+                                                        <li><a href="#DedicatedUImethods">Dedicated UI methods</a>
+                                                        </li>
+                                                        <li><a href="#Linksenablementordisablement">Links enablement or disablement</a>
+                                                        </li>
+                                                        <li><a href="#Exampleofuse">Example of use:</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#7SageX3ScriptManagingEventsExample">7. Sage X3 Script Managing Events Example</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 fevereiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,355 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.Master,Other.MasterTopNav" />*/
+
+/* This stylesheet contains styles that are specific to the 'word' medium, used for the Word target. */
+
+@media word
+{
+	body,
+	table,
+	pre,
+	p.TOC1,
+	p.TOC2,
+	p.TOC3,
+	p.TOC4,
+	p.TOC5,
+	p.TOC6	/* set standard font sizes for Word */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 10pt;
+	}
+
+	body,
+	table,
+	pre,
+	p,
+	li,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6	/* prevent hyphenation  */
+	{
+		mc-hyphenate: never;
+	}
+
+	li,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6	/* avoid page breaks inside */
+	{
+		page-break-inside: avoid;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	MadCap|relationshipsHeading,
+	span.boxTitle,
+	p.boxHeading	/* Set font to Arial */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	MadCap|xref
+	{
+		mc-format: '{para} on page {page}';
+	}
+
+	p.linkDemo	/* hide in Word output */
+	{
+		display: none;
+	}
+
+	div.linksBox,
+	div.linksBoxRight,
+	div.stepsBox,
+	div.stepsBoxRight
+	{
+		display: none;
+	}
+
+	h1
+	{
+		mc-heading-level: 1;
+		page-break-before: always;
+		page-break-after: avoid;
+	}
+
+	h1.chapter	/* heading with chapter number prefix */
+	{
+		mc-auto-number-format: '{chapnum} | ';
+		mc-auto-number-class: chapter;
+	}
+
+	span.chapter	/* hide chapter number prefix in Word text (appears in TOC only) */
+	{
+		display: none;
+	}
+
+	h1.NotTOC	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: always;
+		page-break-after: avoid;
+	}
+
+	h1.TOC2
+	{
+		mc-heading-level: 2;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h1.TOC3
+	{
+		mc-heading-level: 3;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h1.TOC4
+	{
+		mc-heading-level: 4;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h2	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h3	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h4	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h5	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h6	/* Don't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	img	/* img: set max width for images in Word */
+	{
+		max-width: 16cm;
+	}
+
+	img.mobileBB
+	{
+		width: 6cm;
+		height: 4cm;
+	}
+
+	img.mobileIP
+	{
+		width: 4cm;
+		height: 6cm;
+	}
+
+	p.guideTitle	/* p.guideTitle: main guide title */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		line-height: 150%;
+		color: #007f64;
+		font-size: 5em;
+	}
+
+	p.guideTitleSub	/* p.guideTitle: guide title sub-heading */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		line-height: 150%;
+		color: #41A940;
+		font-size: 5em;
+	}
+
+	p.sectionHeading	/* p.sectionHeading: headings for contents and index master pages */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: right;
+		color: #41A940;
+		font-size: 3.2em;
+	}
+
+	MadCap|dropDownBody
+	{
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		background-image: none;
+		orphans: 2;
+	}
+
+	MadCap|dropDownHead
+	{
+		font-weight: bold;
+		page-break-before: auto;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		mc-hyphenate: never;
+	}
+
+	MadCap|dropDownHead.heading
+	{
+		font-weight: inherit;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	MadCap|toggler
+	{
+		font-weight: bold;
+	}
+
+	MadCap|toggler.heading
+	{
+		font-weight: inherit;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	MadCap|footnotesBlock
+	{
+		border-top: 2px dotted #e4ecea;
+	}
+
+	MadCap|footnote
+	{
+		font-size: 0.8em;
+	}
+
+	MadCap|tocProxy
+	{
+		padding-left: 0px;
+		border-top-style: none;
+		border-top-width: 0px;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		border-top-width: 0px;
+		word-wrap: True;
+	}
+
+	p.IndexHeading	/* p.IndexHeading: index letter title (used by index proxy) */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		color: #41A940;
+		text-align: left;
+		font-size: 1.72em;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		mc-output-support: all-print;
+		mc-index-headings: true;
+		mc-column-count: 2;
+		mc-reference-separator: ', ';
+	}
+
+	div.sectionBlock	/* div.sectionBlock: section container (page layouts only) */
+	{
+		border-right-color: #41A940;
+		border-right-style: solid;
+		border-right-width: 6pt;
+		padding-right: 12pt;
+	}
+
+	p.chapter	/* p.chapter: chapter number (page layouts only) */
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		text-align: right;
+		color: #41A940;
+		font-size: 7.0em;
+		line-height: 100%;
+	}
+
+	p.header
+	{
+		font-size: 0.8em;
+	}
+
+	p	/* paragraph widows and orphans */
+	{
+		widows: 2;
+		orphans: 2;
+	}
+
+	p.TOC2	/* margin for contents items */
+	{
+		margin-left: 25pt;
+	}
+
+	p.TOC3	/* margin for contents items */
+	{
+		margin-left: 35pt;
+	}
+
+	p.TOC4	/* margin for contents items */
+	{
+		margin-left: 45pt;
+	}
+
+	p.TOC5	/* margin for contents items */
+	{
+		margin-left: 55pt;
+	}
+
+	p.TOC6	/* margin for contents items */
+	{
+		margin-left: 65pt;
+	}
+
+	div.onLeft,
+	div.onRight
+	{
+		page-break-inside: avoid;
+	}
+
+	.boxHeading
+	{
+		page-break-after: avoid;
+	}
+
+	div.highlightBox .boxHeading,
+	div.highlightBoxRight .boxHeading	/* .boxHeading: don't use block green heading in PDF */
+	{
+		margin: inherit;
+		padding: inherit;
+		color: #007F64;
+		background-color: inherit;
+	}
+}

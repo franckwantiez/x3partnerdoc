@@ -1,0 +1,168 @@
+﻿/*<meta conditions="Other.MasterTopNavOptional" />*/
+
+/* This stylesheet is used to format the Tripane skin */
+/* The styles below modify the base styles set in the skin file */
+
+@import url('fonts.css');
+
+body
+{
+	font-family: "Sage UI", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.5em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	color: rgba(0,0,0,0.9); /* Can't use CSS variable */
+}
+
+#header,
+#body
+{
+	/* header bar and body styles */
+	/* reset background colour */
+	background: #000000;
+	background-image: none;
+}
+
+#body
+{
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.search-bar
+{
+    margin-top: 20px; /* vertically centre search in header */
+}
+
+.search-field::placeholder /* Override placeholder colour set by skin to match search input (rebrand 2-2023) */
+{
+	color: #737373 !important; /* CSS variable IE 11 support */
+}
+
+.search-filter
+{
+	line-height: 40px; /* Fix to vertically centre search filter text. Set to 40px to match search bar height, and override skin fixed height of 28px. */
+}
+
+.search-filter-content
+{
+	
+}
+
+.tabs-panel
+{
+	/* set background colour for tab body to grey */
+	background-color: #F2F5F6;
+}
+
+.tabs-panel-search
+{
+	border: 1px solid #e1e1e1; /* replace fixed border on tab search box */
+	font-weight: 400; /* set font weight on search input */
+}
+
+#search-field-sidebar
+{
+	font-weight: 400; /* set font weight on search input */
+}
+
+.tabs-nav li
+{
+	margin-top: 0; /* remove fixed margin */
+}
+
+#header-content
+{
+	/* set position of header container */
+	position: absolute;
+	left: 85px;
+	top: 34px;
+	margin-top: -15px;
+	/* height: 28px; */
+}
+
+#header-title
+{
+	/* set header title style */
+	color: #ffffff;
+	font-size: 1.125em;
+	font-family: "Sage UI", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+#header-title::before /* divider between logo and product name */
+{
+	content: "";
+	display: inline-block;
+	height: 24px; /* set height to same as logo */
+	position: relative;
+	top: 6px; /* align with logo */
+	border-left: 2px solid #262626;
+	margin: 0 1em 0 1em;
+}
+
+#navigation
+{
+	
+}
+
+#navigationResizeBar
+{
+	
+}
+
+#show-hide-navigation 
+{
+    background-color: #007E45; /* background on show/hide navigation button */
+}
+	
+html.left-layout #contentBody
+{
+
+}
+
+html.right-layout #contentBody
+{
+
+}
+
+.tabs-nav li,
+.tabs-nav li.tabs-nav-inactive
+{
+	/* remove fixed box shadow */
+	box-shadow: none;
+}
+
+.tab .tabs-panel {
+     border-radius: 0 8px 0 0; /* tabs panel rounded corners - rebrand 2022 phase 2 - radius */
+}
+
+.search-filter-content
+{
+	/* set border and shadow on search filter drop down menu */
+	border: 1px solid #e1e1e1;
+	box-shadow:0 10px 10px 0 rgb(0 20 30 / 10%), 0 5px 5px 0 rgb(0 20 30 / 20%);
+}
+
+.link-list-popup ul li:hover
+{
+	/* hover colour for popup lists, e.g. multiple index terms */
+	background-color: #007E45; /* Can't use CSS variable */
+	color: #ffffff;
+}
+
+.tree-node div
+{
+	border-radius: 8px; /* menu item rounded corners - rebrand 2022 phase 2 - radius */
+}
+
+.link-list-popup,
+.search-bar,
+.search-filter-content,
+.tabs-nav,
+.tabs-panel,
+.tabs-panel-search
+{
+	mc-disabled: true;
+}

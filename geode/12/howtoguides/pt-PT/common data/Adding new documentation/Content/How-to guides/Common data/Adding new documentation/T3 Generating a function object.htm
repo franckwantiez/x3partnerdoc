@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedHeader%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Generating a function/object documentation </title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="T1 Introduction.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__Adding_new_documentation.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Trilhos" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Você está aqui: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Generating a function/object documentation </h1>
+                                            <h2>How to generate the structure of the documentation</h2>
+                                            <p class="SAGE_BodyText">The structure of the documentation is automatically created in the <span class="reference">ADOCUMENT</span> table, based on the information in the dictionary.</p>
+                                            <p class="SAGE_BodyText">To generate the documentation structure:</p>
+                                            <ol class="ul_1">
+                                                <li class="SAGE_Bullet1_1" value="1">
+                                                    <p>Go to <span class="reference">Development &gt; Data and parameters &gt; Documentation &gt; Documentation</span>.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="2">
+                                                    <p class="SAGE_Bullet1_1">Populate the <span class="reference">Language</span> field, the <span class="reference">Type of documentation</span> field and the <span class="reference">Code</span> field with the language code for the documentation, the type of documentation and the code of the documentation respectively.</p>
+                                                    <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                        <div class="MCDropDownBody dropDownBody">
+                                                            <p class="SAGE_Bullet1_1">The code of the documentation is the code of the function or parameter to be documented.</p>
+                                                        </div>
+                                                    </div>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Adding new documentation/T3 Generating a function object.PNG"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="860" data-mc-height="233" src="../../../Resources/Images/Adding new documentation/T3 Generating a function object_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="3">
+                                                    <p class="SAGE_Bullet1_1">Click <span class="reference">Generation</span> in the <span class="reference">Action</span> panel. The <span class="reference">Doc generation</span> window (ADOCUMENT) opens.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="4">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Selection</span> block: Populate the <span class="reference">Language</span> field, the <span class="reference">Type</span> field and the <span class="reference">Documentation codes</span> fields (function or parameter to be documented, for example).</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="5">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Generate ADOCUMENT</span> block: Select the <span class="reference">All</span> check box to automatically generate the documentation structure with all the paragraphs.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="6">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Generate final document</span> block: Select the <span class="reference">Complete</span> check box and the <span class="reference">Field helps linked to documentations</span> check box.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="7">
+                                                    <p class="SAGE_Bullet1_1">Click <span class="reference">OK</span>. The generated paragraphs are displayed automatically in the <span class="reference">Selection</span> panel in the <span class="reference">Current documentation</span> list in the <span class="reference">Documentation</span> function (GESADO).</p>
+                                                </li>
+                                            </ol>
+                                            <h2>How to generate the documentation in HTM format</h2>
+                                            <p class="SAGE_BodyText">Documentation in HTM format can be generated from two locations:</p>
+                                            <ol start="1" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="1">
+                                                    <p class="SAGE_NumberedList">From the function dictionary:</p>
+                                                    <ol class="ul_3" style="list-style-type: lower-alpha;">
+                                                        <li class="SAGE_Bullet2_1" value="1">
+                                                            <p>Go to <span class="reference">Development &gt; Script dictionary &gt; Functions</span>.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1" value="2">
+                                                            <p class="SAGE_Bullet2_1">In the <span class="reference">Action</span> panel, go to <span class="reference">Documentation &gt; Paragraphs</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <ol start="2" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="2">
+                                                    <p class="SAGE_NumberedList">From the documentation menu:</p>
+                                                    <ol class="ul_2" style="list-style-type: lower-alpha;">
+                                                        <li class="SAGE_Bullet2_1" value="1">
+                                                            <p>Go to <span class="reference">Development &gt; Data and parameters &gt; Documentation &gt; Documentation</span>.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1" value="2">
+                                                            <p class="SAGE_Bullet2_1">Enter the <span class="reference">Language</span> field, the <span class="reference">Type of documentation</span> field and the <span class="reference">Code</span> field (function or parameter to be documented, for example).</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <p class="SAGE_BodyText">Generate the final documentation in HTM format as follows:</p>
+                                            <ol class="ul_1">
+                                                <li class="SAGE_Bullet1_1" value="1">
+                                                    <p class="SAGE_Bullet1_1">Click <span class="reference">Generation</span> in the <span class="reference">Action</span> panel. The <span class="reference">Doc generation</span> window (ADOCUMENT) opens.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="2">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Selection</span> block: Populate the <span class="reference">Language</span> field, the <span class="reference">Type</span> field and the <span class="reference">Documentation codes</span> fields (function or parameter to be documented, for example).</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="3">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Generate ADOCUMENT</span> block: Select the <span class="reference">All</span> check box to automatically generate the documentation structure with all the paragraphs.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="4">
+                                                    <p class="SAGE_Bullet1_1"><span class="reference">Generate final document</span> block: Select the <span class="reference">Complete</span> check box and the <span class="reference">Field helps linked to documentations</span> check box.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="5">
+                                                    <p class="SAGE_Bullet1_1">Click <span class="reference">OK</span>. The HTM files are generated in the following folders:</p>
+                                                    <ul class="ul_2">
+                                                        <li class="SAGE_Bullet2_1">
+                                                            <p class="SAGE_Bullet2_1"><span class="reference">FCT</span>: HTM pages for functions.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1">
+                                                            <p class="SAGE_Bullet2_1"><span class="reference">OBJ</span>: HTM pages for other objects such as parameters.</p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                            <h2>Table of documentation links</h2>
+                                            <p class="SAGE_BodyText">You can access the <span class="reference">Documentation links</span>  function (GESADF) from the following locations:</p>
+                                            <ol start="1" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="1">
+                                                    <p class="SAGE_NumberedList">Whilst entering a documentation, go to <span class="reference">Option &gt; Links &gt; Documentation links</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <ol start="2" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="2">
+                                                    <p class="SAGE_NumberedList">From the function dictionary:</p>
+                                                    <ol class="ul_2" style="list-style-type: lower-alpha;">
+                                                        <li class="SAGE_Bullet2_1" value="1">
+                                                            <p> Go to <span class="reference">Development &gt; Script dictionary &gt; Functions</span>.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1" value="2">
+                                                            <p class="SAGE_Bullet2_1">Enter the function code.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1" value="3">
+                                                            <p class="SAGE_Bullet2_1">In the <span class="reference">Action</span> panel, go to <span class="reference">Documentation &gt; Links</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                            <ol start="3" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="3">
+                                                    <p class="SAGE_NumberedList">From your dashboard, go to <span class="reference">Development &gt; Data and parameters &gt; Documentation &gt; Documentation links</span>.</p>
+                                                </li>
+                                            </ol>
+                                            <h3>How to create documentation links</h3>
+                                            <p class="SAGE_BodyText">You create or amend documentation links as follows:</p>
+                                            <ol class="ul_1">
+                                                <li class="SAGE_Bullet1_1" value="1">
+                                                    <p class="SAGE_Bullet1_1">Enter the type of documentation (<span class="reference">ADP</span>, <span class="reference">ADI</span>, <span class="reference">AML</span>, etc.), the module and the function code in the header.</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="2">
+                                                    <p class="SAGE_Bullet1_1">Populate the table.</p>
+                                                </li>
+                                            </ol>
+                                            <div class="note-info">To navigate through the table, tabulate. To exit the table, press the <span class="reference">ESC</span> key.</div>
+                                            <p class="SAGE_BodyText">
+                                                <br />The documentation in the links table will display in the correct paragraph of the help. </p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="SAGE_BodyText">In the documentation structure related to a function the paragraph <span class="reference">PRD - Miscellaneous prerequisites (level 30/90)</span> is mandatory. The documentation links will display in this paragraph in the final HTM file.</p>
+                                                </div>
+                                            </div>
+                                            <h2>Entering documentation</h2>
+                                            <p class="SAGE_BodyText">You can access the entry function of the <span class="reference">Documentation</span> function (GESADO) from two locations:</p>
+                                            <ol start="1" class="ol_1">
+                                                <li class="SAGE_NumberedList" value="1">
+                                                    <p class="SAGE_NumberedList">From the function dictionary:</p>
+                                                    <ol class="ul_3" style="list-style-type: lower-alpha;">
+                                                        <li class="SAGE_Bullet2_1" value="1">
+                                                            <p>Go to <span class="reference">Development &gt; Script dictionary &gt; Functions</span>.</p>
+                                                        </li>
+                                                        <li class="SAGE_Bullet2_1" value="2">
+                                                            <p class="SAGE_Bullet2_1">In the <span class="reference">Action</span> panel, go to <span class="reference">Documentation &gt; Paragraphs</span>.</p>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                                <li class="SAGE_NumberedList" value="2">From your dashboard: <ol class="ul_2" style="list-style-type: lower-alpha;"><li class="SAGE_Bullet2_1" value="1"><p>Go to <span class="reference">Development &gt; Data and parameters &gt; Documentation &gt; Documentation</span>. </p></li><li class="SAGE_Bullet2_1" value="2"><p class="SAGE_Bullet2_1">Enter the <span class="reference">Language</span> code, the <span class="reference">Type</span> of documentation (<span class="reference">AFC</span>, <span class="reference">ADP</span>, etc.) and the <span class="reference">Documentation code</span> fields. </p><div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span><div class="MCDropDownBody dropDownBody"><p class="SAGE_Bullet2_1">Function or parameter to be documented.</p></div></div></li><li class="SAGE_Bullet2_1" value="3"><p class="SAGE_Bullet2_1">Go to the <span class="reference">Current documentation</span> list in the <span class="reference">Selection</span> panel.</p></li></ol></li>
+                                            </ol>
+                                            <p class="SAGE_BodyText">The <span class="reference">Current documentation</span> list displays all paragraphs for the current documentation. The paragraphs are organized by level and sublevel.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p class="SAGE_BodyText"> The introduction paragraphs (<span class="reference">Title</span> and <span class="reference">Presentation</span> paragraphs) are level <span class="reference">10</span>. The <span class="reference">Title</span> paragraph is sublevel <span class="reference">10</span>, and the <span class="reference">Presentation</span> paragraph is sublevel <span class="reference">20</span>, and so on.</p>
+                                                </div>
+                                            </div>
+                                            <p class="SAGE_BodyText">You can add paragraphs as long as they comply with the given structure of the dedicated documentation.</p>
+                                            <p class="SAGE_BodyText">Enter content as follows:</p>
+                                            <ol class="ul_1">
+                                                <li class="SAGE_Bullet1_1" value="1">
+                                                    <p class="SAGE_Bullet1_1">Enter the help text in the free-format <span class="reference">Text</span> area.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Adding new documentation/T3 Generating a function object_1.PNG"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="839" data-mc-height="541" src="../../../Resources/Images/Adding new documentation/T3 Generating a function object_1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="2">
+                                                    <p class="SAGE_Bullet1_1">Save your modifications (to activate the <span class="reference">Save</span> action, tabulate or click a different part of the screen).</p>
+                                                </li>
+                                                <li class="SAGE_Bullet1_1" value="3">
+                                                    <p class="SAGE_Bullet1_1">Generate the documentation (the final HTM page) to view the final result.</p>
+                                                </li>
+                                            </ol>
+                                            <h2>Paragraph types and levels</h2>
+                                            <p class="SAGE_BodyText">Some paragraphs are automatically generated and others can be added manually.</p>
+                                            <p class="SAGE_BodyText">This table list the type of paragraphs, their corresponding level and sublevels, and how to use each paragraph.</p>
+                                            <table class="TableStyle-Normal" style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" cellspacing="0">
+                                                <thead>
+                                                    <tr class="TableStyle-Normal-Head-Header1">
+                                                        <th class="TableStyle-Normal-HeadE-Column1-Header1">
+                                                            <p class="p_3">Paragraph</p>
+                                                        </th>
+                                                        <th class="TableStyle-Normal-HeadE-Column1-Header1">
+                                                            <p>Description</p>
+                                                        </th>
+                                                        <th class="TableStyle-Normal-HeadE-Column1-Header1">
+                                                            <p>Level/<br />Sublevel</p>
+                                                        </th>
+                                                        <th class="TableStyle-Normal-HeadD-Column1-Header1">
+                                                            <p>Content and function</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">TIT</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Title</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">10/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p class="SAGE_TableText">If the content is automatically generated, leave the generated text. Otherwise type in a heading.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">PRE</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Presentation</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">10/20</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p class="SAGE_TableText">Type in an introduction to the function, parameter etc.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">PRQ</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Prerequisites</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>What should be known before using the function.</p>
+                                                            <p class="SAGE_TableText">If text has been manually added to the paragraph, a <span class="reference">Prerequisites</span> subparagraph is automatically created.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ACV</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Activity codes</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/20</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p class="SAGE_TableText">This paragraph is inserted automatically if activity codes are used in the function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ADP</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Parameters concerned</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/30</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if parameters have been added to the table in the <span class="reference">Documentation links</span> function (GESADF).</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ANM</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Counters</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/40</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if a sequence number counter has been defined and assigned to manage the numbering of the documents associated with the management of the managed object.</p>
+                                                            <p>The links point to the <span class="reference">Sequence number definition</span> function (GESANM) and the <span class="reference">Sequence number assignment</span> function (GESTCA).</p>
+                                                            <p><span class="reference">Do not</span> insert documentation links for the predefined sequence number counters (they are different from one directory to another and specific to each legislation).</p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p><span class="reference">Miscellaneous receipts</span> function (GESSMR)</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">GAU</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Automatic journals</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/50</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if automatic journals are associated with the function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">CDE</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Default dimensions</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/60</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if default dimensions can be defined.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">HAB</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Authorizations</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/70</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if authorizations are associated with the function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">TRS</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Entry transactions</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/80</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if the function is managed by entry transactions. This transaction code must be entered in the table of links.</p>
+                                                            <p>Add a generic paragraph <span class="reference">INC_30_85</span> next to it (written in the <span class="reference">Subcontract material returns</span> function (GESSRS)).</p>
+                                                            <p>It briefly summarizes the usefulness of entry transactions. In the <span class="reference">ECR</span> paragraph (<span class="reference">Screens</span>), introduce the entry transaction with a hyperlink to the TRS paragraph.</p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p><span class="reference">Miscellaneous receipts</span> function (GESSMR)</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">PRD</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Miscellaneous prerequisites</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/90</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if prerequisites have been added to the table of documentation links. They can be:</p>
+                                                            <ul>
+                                                                <li>Miscellaneous tables: <span class="reference">ADI</span></li>
+                                                                <li>Local menus: <span class="reference">AML</span></li>
+                                                                <li>Implemented tables (other than those automatically generated from the dictionary): <span class="reference">ATB</span></li>
+                                                                <li>Prerequisite tables: <span class="reference">AT2</span></li>
+                                                            </ul>
+                                                            <p>This paragraph contains as many subparagraphs as existing links types. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">AWA</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Workflow event</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">30/100</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if there are workflow rules associated with the function.</p>
+                                                            <p>Currently, it is not possible to insert these rules as documentation links. They are inserted manually in the body of the paragraph.</p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p> <span class="reference">Open orders</span> function (GESPOC)</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ECR</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Screens</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">40/50</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>How the different fields of the screen work. Enter only elements which provide useful information. <span class="reference">Do not</span> simply describe what the user can see on the screen. </p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ENT</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Header</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">40/100</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>What the header information is used for.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ON (1/2/3…)</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">
+                                                                <MadCap:conditionalText data-mc-conditions="Sage_X3.V12,Sage_X3.CLOUD">Section</MadCap:conditionalText>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>40/200</p>
+                                                            <p class="SAGE_TableText">+200 etc.</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p data-mc-conditions="Sage_X3.CLOUD,Sage_X3.V12">What each section is used for.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">BOT</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Context menu</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>40/previous+5</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Description of the action accessed from the <span class="reference">Actions</span> icon on a line in a table.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ARP</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Reports</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>50/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if reports are associated with the function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ABT</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Batch task</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>60/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph automatically generated based on information in the dictionary or can be created manually.</p>
+                                                            <p>This paragraph is inserted automatically if batch tasks are associated with the function.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">BOU</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Action (button)</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>70/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>In general, there is no content.</p>
+                                                            <p>Displayed in the functions in which there are actions in the <span class="reference">Action</span> panel.</p>
+                                                            <p>This paragraph is followed by as many <span class="reference">BME</span> subparagraphs as there are actions accessible from the <span class="reference">Action</span> panel.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">BME</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Menu bar</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>80/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>In general, there is no content. Add a description of the action (accessed from the corresponding action in the <span class="reference">Action</span> panel).</p>
+                                                            <p>Displayed in the functions in which there are functions/actions accessible from the <span class="reference">Action</span> panel.</p>
+                                                            <p>This paragraph is followed by as many <span class="reference">BME</span> subparagraphs as there are actions accessible from the existing <span class="reference">Action</span> panel. </p>
+                                                            <p>In these subparagraphs, describe the corresponding function/action.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ERR</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Error messages</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>90/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p><span class="reference">Do not</span> directly enter the error messages in the paragraph, enter their code (number). </p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p> mess(00040,00075,1).</p>
+                                                                </div>
+                                                            </div>
+                                                            <p>To search for a code, go to <span class="reference">Development &gt; Utilities &gt; Searches &gt; Message</span> and search by key word in the <span class="reference">Title</span> column.</p>
+                                                            <p>Add an explanation of the message after the message number.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">ATB</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">Table dictionary</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>100/10</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph generated automatically.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">INC</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Include paragraph</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>&#160;</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>This paragraph is used to insert a link to a paragraph of another function, whose content is displayed directly in the final documentation. An <span class="reference">INC</span> paragraph, therefore, only contains a link to the paragraph of another function. </p>
+                                                            <p>The syntax of the link is <span class="reference">type of documentation of the function being referenced/code of that function/level of the paragraph which is being referenced in that function/sublevel of that paragraph</span>.</p>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <p>AFC/GESACL/70/20. This link displays the content of the paragraph of level 70 and sublevel 20 of the <span class="reference">Control tables</span> function (GESACL) in the final HTM page of the function in which it has been inserted.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p class="SAGE_TableText">MIS</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>Miscellaneous</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyE-Column1-Body1">
+                                                            <p>&#160;</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Paragraph added manually.</p>
+                                                            <p>The paragraph title displays in the table of contents at the top left of the final HTM page.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p class="SAGE_TableText_1">MIN</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p class="p_2">Non listed miscellaneous</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">
+                                                            <p class="p_2">&#160;</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p class="p_2">Paragraph added manually.</p>
+                                                            <p class="p_2">The paragraph title does not display in the table of contents of the final HTM page.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="SAGE_BodyText">&#160;</p>
+                                            <div class="note-warning">The levels and sublevels predefined for the paragraphs must be complied with when adding a new paragraph.</div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Navegar para anterior" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navegar para anterior">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Navegar para seguinte" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Navegar para seguinte">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Wise Links</h5>
+                                                <p><a href="https://my.sage.pt/" target="_blank" class="external">Sage Services Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/pt/sage-x3-portugal/" class="external" target="_blank" title="Clique para acessar a comunidade de clientes e especialistas da Sage." alt="Clique para acessar a comunidade de clientes e especialistas da Sage.">Comunidade Sage City</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Informações sobre a página</h5>
+                                                <p>Data de publicação: <span class="mc-variable Dates.DateProjectBuilt variable">25 novembro 2021</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a> <a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a> <a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

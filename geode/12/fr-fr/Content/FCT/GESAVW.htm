@@ -1,0 +1,942 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Vues, Objet" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Vues" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Vues</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Vues" data-magellan-target="Vues"><span>Vues</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <body>
+                                                                <p>Cette fonction permet de créer et de modifier des vues, en décrivant ses caractéristiques dans le dictionnaire de données du dossier. Vous pouvez créer des vues sur des tables de différents dossiers.</p>
+                                                                <p>La validation de cette description permet alors de créer la vue dans la base de données, ou d'en modifier les caractéristiques.</p>
+                                                                <p>Une vue est ensuite utilisable en lecture seulement. La programmation autour d'une vue est similaire à celle d'une table. Elle aura sa propre classe <b>[F]</b>. Les instructions suivantes sont disponibles pour les vues :</p>
+                                                                <ul>
+                                                                    <li><b>(local) File</b>,</li>
+                                                                    <li><b>close (local) File</b>,</li>
+                                                                    <li><b>Filter</b>,</li>
+                                                                    <li><b>For ... Next</b>,</li>
+                                                                    <li><b>Read</b>,</li>
+                                                                    <li><b>Columns</b>,</li>
+                                                                    <li><b>Link</b>.</li>
+                                                                </ul>
+                                                                <p>Une vue est accessible par Crystal Reports et par l'éditeur de formule.</p>
+                                                                <p>La restauration ou la validation d'une table détruit les vues basées sur cette table. Lors de la restauration, les vues et les déclencheurs sont regénérés automatiquement par le superviseur. En revanche, suite à la validation forcée d'une table, vous devez lancer la validation des vues du dossier courant et des autres dossiers portant sur cette table.</p>
+                                                                <p>Une vue permet par exemple :</p>
+                                                                <ul>
+                                                                    <li>d'éviter d'ouvrir explicitement une table d'un autre dossier. Par exemple, pour les dossiers historisés. Une vue est créée pour chaque table non historisée. De cette manière, les fonctions de consultation ainsi que les états fonctionnent indifféremment sur le dossier principal ou le dossier historisé.</li>
+                                                                    <li>de développer des états accédant à des données de plusieurs dossiers,</li>
+                                                                    <li>d'accéder à des fonctionnalités SQL jusqu'alors inaccessibles : <b>union</b>, <b>group by</b>, fonctions SQL.</li>
+                                                                </ul>
+                                                            </body>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Pré-requis</h2>
+                                                            <div class="links">
+                                                            </div>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_GESAVW.htm#PRQ">Mise en oeuvre</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#ENT">En-tête</a>
+                                                                        </li>
+                                                                        <li><a href="#ON1">Onglet Requête</a>
+                                                                        </li>
+                                                                        <li><a href="#ON2">Onglet Champs</a>
+                                                                        </li>
+                                                                        <li><a href="#ON3">Onglet Clés</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p>
+                                                                </p>
+                                                                <body>
+                                                                    <p>La définition d'une vue se fait à l'aide de trois onglets :</p>
+                                                                    <ul>
+                                                                        <li>l'onglet de définition de la requête,</li>
+                                                                        <li>l'onglet de définition des champs,</li>
+                                                                        <li>l'onglet de définition des clés.</li>
+                                                                    </ul>
+                                                                </body><a id="ENT"></a>
+                                                                <h3 class="g1">En-tête</h3>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="ent" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code vue (<a href="#" class="selected">champ CODVUE</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Le code de la vue doit être composé de 1 à 10 caractères (lettres ou chiffres mais commençant obligatoirement par une lettre). C'est un identificateur unique pour l'ensemble des vues du dictionnaire des données. Une vue ne peut pas porter le même nom qu'une table du dictionnaire, puisqu'à la validation, le superviseur génère les fichiers *.srf et *.fde. les mots réservés d'adonix sont interdits. </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Abréviation (champ ABRVUE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+L'abréviation de la vue doit être composée de 1 à 3 caractères (lettres ou chiffres mais commençant obligatoirement par une lettre). Cet identificateur peut ne pas être unique pour l'ensemble des abréviations des vues du dictionnaire de données. Les mots réservés d'Adonix sont interdits. 
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé (champ INTITSAI)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <body data-new-gr-c-s-check-loaded="14.1039.0" data-gr-ext-installed="">
+                                                                                        <p>Saisissez la description de la fiche concernée.</p>
+                                                                                        <p>Cet intitulé long est utilisé en titre dans les écrans et les états.</p>
+                                                                                    </body>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Actif (champ ENAFLG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON1"></a>
+                                                                <h3 class="g1">Onglet Requête</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>Cet onglet permet d'écrire la requête.</p>
+                                                                    <p>La requête doit être écrite au minimum dans le langage de la base de données courante du dossier. Mais pour toute vue standard livrée, un script est livré pour chaque base. Au moment de la validation de la vue, le fichier <b>*.viw</b> est créé avec le script adapté à la base de données du dossier courant. Celui-ci est créé dans le répertoire <b>FIL</b>, sur le serveur de données.</p>
+                                                                    <p>Si vous voulez préciser dans la requête des champs soumis à un code activité, de même qu'un nom de dossier, il est recommandé d'utiliser une formule. En effet, il est préférable de ne pas mettre le dossier "en dur" dans la requête, afin de permettre le fonctionnement dans un autre dossier, suite à une copie de cette vue.</p>
+                                                                    <p>Exemple : code activité dimensionné de 1 à 3 pour le champ <b>LIEN</b>, et formule sur dossier :</p>
+                                                                    <p>Select CLENUM1_0, CLENUM2_0, LIEN_0<br />%string$(find(func AFNC.ACTIV("ZZM"),2,3)&lt;&gt;0,", LIEN_1")%<br />%string$(find(func AFNC.ACTIV("ZZM"),3)&lt;&gt;0,", LIEN_2")%<br />From %nomap+"."%ZZMB</p>
+                                                                    <p>Pour plus de renseignements sur les règles d'écriture de la requête, vous pourrez lire l'aide du champ.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Caractéristiques</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code activité (<a href="GESACV.htm">champ CODACT</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Le code activité et le module permettent de savoir si la vue décrite dans le dictionnaire doit effectivement être créée dans la base de données du dossier. Elle l'est si les deux conditions ci-dessous sont réalisées simultanément : </p>
+                                                                                            <ul>
+                                                                                                <li>le champ code activité est vide, ou bien le code activité (défini dans la vue correspondante) est effectivement activé,</li>
+                                                                                                <li>le module auquel la vue est rattachée a été déclaré actif pour le dossier.</li>
+                                                                                            </ul>
+                                                                                            <p>Une vue affectée d'un code activité commençant par <b>X</b>, <b>Y</b>, ou <b>Z</b>, est spécifique et ne sera en aucun cas affectée par un changement de version (ces codes activités peuvent être mis au niveau des lignes).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Accès non sécurisé (champ SECURE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Cette case à cocher permet de restreindre l'accès à la table de données au seul dossier propriétaire de la table et à certains dossiers autorisés. Cette notion est identique pour la vue. Une modification de ce champ nécessite une revalidation de la table, pour être pris en compte dans la base de donnée.</p>
+                                                                                            <ul>
+                                                                                                <li><b><i>non sécurisé</i></b> : tous les dossiers de la solution peuvent accéder à la table&#160;pour lire ou écrire&#160;des données de cette table. C'est le cas :</li>
+                                                                                                <ul>
+                                                                                                    <li>des tables système, </li>
+                                                                                                    <li>des tables dictionnaire,</li>
+                                                                                                    <li>de certaines tables superviseur,</li>
+                                                                                                </ul>
+                                                                                                <li><b><i>sécurisé</i></b> : l'accès à cette table se fait en fonction des droits du dossier d'appel. Un dossier peut être :</li>
+                                                                                                <ul>
+                                                                                                    <li>non habilité, </li>
+                                                                                                    <li>habilité en lecture, </li>
+                                                                                                    <li>habilité en lecture écriture.&#160;C'est le cas des tables fonctionnelles et de la plupart des tables superviseur.</li>
+                                                                                                </ul>
+                                                                                            </ul>
+                                                                                            <p>Les dossiers habilités sont :</p>
+                                                                                            <ul>
+                                                                                                <li>le dossier dans lequel la table est définie (les tables système étant dans le dossier de référence de la solution : dans le cas de Sage X3, ce dossier s'appelle X3),</li>
+                                                                                                <li>les dossiers parents du dossier,</li>
+                                                                                                <li>un dossier habilité (via la fonction <a href="GESADS.htm#ON8">Gestion des dossiers</a>, onglet "Liens", bloc "Dossiers de la solution").</li>
+                                                                                                <li>les dossiers d'autres solutions ayant un accès par liens (via la même fonction).</li>
+                                                                                            </ul>
+                                                                                            <p>
+                                                                                                <img src="../Resources/Images/SEEINFO.png" alt="SEEINFO" keeps="true" realloc="SEEINFO" /><span style="color: #bf7f00;">La politique de sécurité pour la table étant considérée comme du paramétrage, cette case à cocher n'est pas mise à jour&#160;par patch.&#160;A la validation de la table, le fait que cette case soit cochée provoque la création d'un fichier de configuration (d'extension ".cfg") avec le code suivant :</span>
+                                                                                            </p>
+                                                                                            <blockquote style="MARGIN-RIGHT: 0px;">
+                                                                                                <p><span style="color: #bf7f00;">$SECURITY<br />{&#160; "LEVEL0" }<br />End</span>
+                                                                                                </p>
+                                                                                            </blockquote>
+                                                                                            <p style="MARGIN-RIGHT: 0px;">Si d'autres directives manuelles existent dans le fichier de configuration, elles sont&#160;respectées. Des directives peuvent en effet être ajoutées par mise à jour du bloc "Fichier de configuration"<b><i></i></b>dans l'onglet correspondant de la <a href="GESATB.htm#ON3">Gestion des tables</a>).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Module (champ MODULE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Le code activité et le module permettent de savoir si la vue décrite dans le dictionnaire doit effectivement être créée dans la base de données du dossier. Elle l'est si les deux conditions ci-dessous sont réalisées simultanément : </p>
+                                                                                            <ul>
+                                                                                                <li>le champ code activité est vide, ou bien le code activité (défini dans la vue correspondante) est effectivement activé,</li>
+                                                                                                <li>le module auquel la vue est rattachée a été déclaré actif pour le dossier.</li>
+                                                                                            </ul>
+                                                                                            <p>Une vue affectée d'un code activité commençant par <b>X</b>, <b>Y</b>, ou <b>Z</b>, est spécifique et ne sera en aucun cas affectée par un changement de version (ces codes activités peuvent être mis au niveau des lignes).</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Groupe validation (champ GRUCFM)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Tableau</a><i> Tables et vues utilisées</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code (champ OBCCOD)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type (<a href="GESATY.htm">champ OBCTYP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Oracle</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ TEX1</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b>Sql Server</b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ TEX2</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div><a id="ON2"></a>
+                                                                <h3 class="g1">Onglet Champs</h3>
+                                                                <div id="desc_on2" class="ddesc" style="display: block;">
+                                                                    <p>
+                                                                    </p>
+                                                                    <body>
+                                                                        <p>Cet onglet permet de définir l'ensemble des champs de la vue dans un tableau déroulant. Il doit y avoir entière compatibilité entre la description des champs dans la requête et dans cet onglet (nombre, ordre, et type des champs). Ce contrôle est effectué lors de la validation de la vue. Ces champs peuvent exister dans le dictionnaire des tables. Ce n'est toutefois pas une obligation.</p>
+                                                                    </body>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on2" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <h4 class="bloctitle">
+                                                                                    <p><b><a href="TBL_MGT.htm">Tableau</a><i> Champs</i></b>
+                                                                                    </p>
+                                                                                </h4>
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Champs (champ FLDVUE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>On définit dans cette colonne le nom de zone de la vue telle qu'elle sera définie dans le progiciel (un champ de nom NOMCHAMP défini dans une vue d'abréviation ABV pourra être accédé par la syntaxe [F:ABV]NOMCHAMP).</p>
+                                                                                            <p>Pour les champs créés en spécifique, le nom de zone doit commencer par X_, Y_ ou Z_.</p>
+                                                                                            <p>Pour un champ dimensionné (NOMCHAMP_0, NOMCHAMP_1, NOMCHAMP_2…), on ne définit qu'une seule zone NOMCHAMP.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Typ (<a href="GESATY.htm">champ CODTYP</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Vous devez définir ici le type de la zone. Les principaux types sont : </p>
+                                                                                            <p>A : Alphanumérique<br />C : Entier court<br />L : Entier long<br />DCB : Décimal<br />D : Date<br />M : Menu local<br />MM : Menu local avec filtre<br />ACB : clob<br />ABB : blob<br /><br />&#160;D'autres types prédéfinis existent. Ils font généralement référence à une table annexe (devise, section,...). La touche F12 vous permet d'en obtenir la liste. </p>
+                                                                                            <p>Il n'est pas possible d'utiliser ici, les types de donnés relatifs aux textes traduits : AX1, AX2, AX3.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Menu (champ NOLIB)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Définit le numéro de menu local associée au champ défini sur la ligne.</p>
+                                                                                            <p>Lorsqu'un champ est de type menu local, il est stocké sous la forme d'une valeur numérique (de 1 à 255) correspondant au rang d'un intitulé dans une table appelée <a href="TXT.htm">menu local</a>, stockée dans la table des messages <a href="../MCD/APLSTD.htm">APLSTD</a>.</p>
+                                                                                            <p>En saisie ou en affichage, on voit, selon les choix&#160;faits sur l'interface utilisateur :</p>
+                                                                                            <ul>
+                                                                                                <li>soit un intitulé pouvant être choisi dans une liste déroulante communément appelée <strong><em>combo box</em></strong></li>
+                                                                                                <li>soit une liste de boutons de choix.</li>
+                                                                                            </ul>
+                                                                                            <p>L'intérêt de ce type de saisie est que la liste des choix est présentée dans la langue de connexion de l'utilisateur.</p>
+                                                                                            <p>Chaque numéro de menu local caractérise la liste des intitulés possibles. Par exemple, le menu local 1 correspond au choix <strong><em>Non</em></strong> / <strong><em>Oui</em></strong> dans cet ordre. Dans ce cas particulier, l'interface utilisateur peut aussi être la case à cocher.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Long (champ LNG)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Permet de définir la longueur d'un champ lorsque ce champ utilise un type de données générique dont la longueur n'est pas fixée. C'est le cas notamment pour les types A et DCB.</p>
+                                                                                            <p>Pour les blob, comme pour les clob, il faut saisir la longueur qui sera une longueur maximale de stockage. La codification est la suivante&#160;: </p>
+                                                                                            <table width="567" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                                                <tbody>
+                                                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>Longueur</p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>Taille mémoire</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                            <p>Caractères maximum</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                            <p>&#160;0</p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                            <p>&#160;1020</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                            <p>&#160;510</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>&#160;1</p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>&#160;2044</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                            <p>&#160;1022</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                            <p>&#160;2 </p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                            <p>&#160;4092</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                            <p>&#160;2046</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>&#160;3</p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                            <p>&#160;8188</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                            <p>&#160;4094</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                                        <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                                                            <p>&#160;n</p>
+                                                                                                        </td>
+                                                                                                        <td width="15%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                                                            <p>&#160;1024*(2^n) - 4</p>
+                                                                                                        </td>
+                                                                                                        <td width="45%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                                                            <p>&#160;512*(2^n) - 2</p>
+                                                                                                        </td>
+                                                                                                    </tr>
+                                                                                                </tbody>
+                                                                                            </table>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Act (<a href="GESACV.htm">champ FLDACT</a>)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Un code activité vous permet de&#160;:</p>
+                                                                                            <ul>
+                                                                                                <li>rendre optionnel un élément du dictionnaire si la valeur associée au code activité est nulle,</li>
+                                                                                                <li>signer les éléments spécifiques dès lors qu'ils sont marqués par un code commençant par X, Y ou Z,</li>
+                                                                                                <li>dimensionner un nombre de lignes maximum lorsque le code activité marque des éléments d'un tableau,</li>
+                                                                                            </ul>
+                                                                                            <p>Si le code activité est désactivé&#160;:</p>
+                                                                                            <ul>
+                                                                                                <li>l'élément marqué n'est pas utilisable,</li>
+                                                                                                <li>le code associé n'est pas généré ou activé.</li>
+                                                                                            </ul>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Dim (champ DIME)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>
+Dimension de la zone dans la vue. La dimension peut également être affectée en fonction du code activité.
+                </p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé (champ FLDINTSAI)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <body data-new-gr-c-s-check-loaded="14.1039.0" data-gr-ext-installed="">
+                                                                                        <p>Saisissez la description de la fiche concernée.</p>
+                                                                                        <p>Cet intitulé long est utilisé en titre dans les écrans et les états.</p>
+                                                                                    </body>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Options (champ OPTION)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                            <p>Ces options sont matérialisées par des caractères qui peuvent se concaténer lorsque plusieurs options sont nécessaires. Il est possible de choisir ces options grâce à une fenêtre de sélection. On trouvera une description détaillée de toutes les <span style="color: #0000ff;"><a href="DEF_OPT.htm">options</a></span> possibles.</p>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Icône Actions</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Ajout</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div><a id="ON3"></a>
+                                                            <h3 class="g1">Onglet Clés</h3>
+                                                            <div id="desc_on3" class="ddesc" style="display: block;">
+                                                                <p>Cet onglet permet de définir l'ensemble des clés disponibles pour un code <b>Order By</b> sur la vue.</p>
+                                                                <p><b>Attention</b> : Il n'y a pas de création d'index pour la vue.</p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="on3" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b><a href="TBL_MGT.htm">Tableau</a><i> Clés</i></b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>No (champ NUMLIG)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code clé (champ CODCLE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Ce champ correspond au nom sous lequel la clé est connu dans l'ordre Order By. Une norme est utilisée dans toutes les vues de l'applicatif&#160;: elle consiste à nommer les clés en utilisant l'abréviation de la vue, suivi de 0 pour la première clé , de 1 pour la deuxième clé, etc.…Pour le spécifique, faites commencer ce code par l'une des trois lettres : X,Y ou Z.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Descripteur clé (champ DESCLE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>On saisit ici la liste des champs composant l'index, séparé par un '+' s'il y a plusieurs champs. <br />Un champ trié en descendant est précédé du signe "-".<br />Le premier champ composant un index est sans signe et est forcément ascendant.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Homonymes (champ KEYDUP)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Ce champ est par défaut initialisé à Oui. Il est possible de le mettre à Non. Dans ce cas, un message d'avertissement prévient qu'il ne doit pas y avoir de clés en double sur l'index de cette vue. Si c'était le cas, il n'y aurait pas d'erreur mais une simple boucle For ne détecterait pas les homonymes.</p>
+                                                                                        <p>Il est donc recommandé de le laisser à Oui sauf dans des cas très particuliers où l'option Non permet de supporter&#160;les instructions "Read Next/Prev" sur des vues.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code activité (<a href="GESACV.htm">champ CLEACT</a>)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Un code activité vous permet de&#160;:</p>
+                                                                                        <ul>
+                                                                                            <li>rendre optionnel un élément du dictionnaire si la valeur associée au code activité est nulle,</li>
+                                                                                            <li>signer les éléments spécifiques dès lors qu'ils sont marqués par un code commençant par X, Y ou Z,</li>
+                                                                                            <li>dimensionner un nombre de lignes maximum lorsque le code activité marque des éléments d'un tableau,</li>
+                                                                                        </ul>
+                                                                                        <p>Si le code activité est désactivé&#160;:</p>
+                                                                                        <ul>
+                                                                                            <li>l'élément marqué n'est pas utilisable,</li>
+                                                                                            <li>le code associé n'est pas généré ou activé.</li>
+                                                                                        </ul>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Fichier de configuration</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ FICCFG</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>On peut saisir dans ce bloc un texte décrivant la configuration technique de vue dans la base de données. Ce texte est enregistré dans un fichier "nom de vue.cfg" dans le répertoire FIL de l'application. Ce fichier est utilisé par l'instruction "valfil". On consultera <a href="CFG_FILE.htm">l'annexe technique dédiée</a> pour plus d'informations.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                            <h2 class="g1" id="Boutonsspécifiques" data-magellan-target="Boutonsspécifiques">Boutons spécifiques</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#BOU_70_20">Validation</a>
+                                                                    </li>
+                                                                    <li><a href="#BOU_70_30">Copie</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="BOU_70_20"></a>
+                                                                        <p><b>Validation </b>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Ce bouton crée ou met à jour la vue dans la base de données à partir du dictionnaire, par l'instruction <b>create view</b>. Un contrôle syntaxique de la requête est effectué par rapport à la base de données du dossier.</p>
+                                                                        <p>Les fichiers créés dans le répertoire <b>FIL</b> sont :</p>
+                                                                        <ul>
+                                                                            <li><b>*.srf</b> contient la liste des champs. un indicateur <b>#V</b> est positionné en ligne 3 pour distinguer les vues des tables.</li>
+                                                                            <li><b>*.fde</b> : généré par <b>valfil -n</b>.</li>
+                                                                            <li><b>*.viw</b> : contient la description de la requête avec le script correspondant à la base de données du dossier.</li>
+                                                                            <li><b>*.cfg</b> : fichier de configuration, généré si le clob associé est renseigné ou si l'accès est sécurisé.</li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a id="BOU_70_30"></a>
+                                                                        <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Copie</a></span>
+                                                                            <div class="MCDropDownBody dropDownBody">
+                                                                                <p xmlns="http://www.w3.org/1999/xhtml">Ce bouton permet de recopier la structure de la vue <a href="COP_DOS.htm">vers un autre dossier</a>.</p>
+                                                                                <p xmlns="http://www.w3.org/1999/xhtml"><b>Attention</b> : Seule la description de la vue dans le dictionnaire est recopiée. La vue n'est pas créée dans le dossier destinataire. Il faudra valider cette description pour que la vue soit créée.</p>
+                                                                                <div id="bou_70_30" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                    <h4 class="bloctitle">
+                                                                                        <p><b>Bloc numéro 1</b>
+                                                                                        </p>
+                                                                                    </h4>
+                                                                                    <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ OBJET</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ CLES</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                    <h4 class="bloctitle">
+                                                                                        <p><b>Bloc numéro 2</b>
+                                                                                        </p>
+                                                                                    </h4>
+                                                                                    <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Depuis le dossier (champ DOSORG)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>﻿Ce champ permet de définir le dossier à partir duquel la fiche va être copiée. Les syntaxes possibles sont décrites dans <a href="COP_DOS.htm">l'annexe dédiée</a>.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Tous dossiers (champ TOUDOS)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>Cette option permet de copier la fiche&#160;vers tous les dossiers définis dans le dictionnaire (table <a href="../MCD/ADOSSIER.htm">ADOSSIER</a> de la solution courante).</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Vers le dossier (champ DOSDES)</b>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                <p>﻿Ce champ permet de définir le dossier dans lequel la fiche&#160;va être copiée. Les syntaxes possibles sont décrites dans <a href="COP_DOS.htm">l'annexe dédiée</a>.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Vues">Vues</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Pré-requis</a>
+                                                        </li>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#Boutonssp%C3%A9cifiques">Boutons spécifiques</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

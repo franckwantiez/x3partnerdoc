@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Ejecucion,Consultas" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Ejecución de Consultas" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Ejecución de Consultas</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="EjecucióndeConsultas" data-magellan-target="EjecucióndeConsultas"><span>Ejecución de Consultas</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Esta función permite visualizar el resultado de las consultas parametrizadas por la función correspondiente de  <a href="GESALH.htm">consultas</a>, o de <a href="GESALQ.htm">consultas SQL</a> y ejecutadas anteriormente, o ejecutarlas de nuevo modificando los criterios de ejecución antes de visualizarlas. A partir de los resultados de esta consulta, presentados a nivel descripción detallada, será posible efectuar un zoom en los objetos asociados, agrupar las líneas consultadas en función de los campos de ruptura definidos en la consulta, activar la visualización de un gráfico. </p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prerequisitos" data-magellan-target="Prerequisitos">Prerequisitos</h2>
+                                                            <div class="links">
+                                                            </div>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Consulta la documentación de  <a href="PRQ_AFC_EXEALH.htm#PRQ">Puesta en marcha</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="GestióndePantalla" data-magellan-target="GestióndePantalla">Gestión de Pantalla</h2><a id="ON1"></a>
+                                                                <h3 class="g1">Pantalla de captura</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>Sí se entra en la función sin haber solicitado una consulta determinada, se podrá elegir en una pantalla de introducción preliminar. Aparece una pantalla con una sola pestaña, en la que se encuentran una serie de columnas con los datos de la consulta (son almacenados en la talbla <a href="../mcd/X3TABLE/ALISTER.htm">ALISTER</a>). En la cabecera se encuentra la fecha y la hora de la última generación, así como el código usuario que lo haya generado (este es el código del propio usuario salvo que la consulta se comparta). Si la consulta no se ha realizado nunca, los campos situados después de la Última generación están vacíos y los campos de Líneas y Tiempos están a 0.</p>
+                                                                    <p>La ejecución puede ser realizado pulasando <object classid="CLSID:D7053240-CE69-11CD-A777-00DD01143C57" name="CommandButton3" id="CommandButton3" width="34" height="33"><param name="VariousPropertyBits" value="268435483" /><param name="Caption" value="F5" /><param name="Size" value="900;873" /><param name="FontName" value="Arial" /><param name="FontHeight" value="225" /><param name="FontCharSet" value="0" /><param name="FontPitchAndFamily" value="2" /><param name="ParagraphAlign" value="3" /></object>, que permite lanzar una actualización de manera general (también utilizada en las listas izquierda) o por <i>Fichero/Actualizar</i>. También se puede hacer introduciendo criterios con ayuda del botón conveniente.</p>
+                                                                    <p>Para que una ejecución pueda hacerse, es necesario que el usuario esté habilitado (esto permite, cuando las peticiones se compartan, la autorización de consultas ya hechas).</p>
+                                                                    <p>Una vez ejecutada la consulta, aparecen en cabecera los siguientes datos:</p>
+                                                                    <p>
+                                                                        <img border="0" width="7" height="7" id="_x0000_i1037" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; El número de líneas creadas en la consulta y el tiempo (en segundos) empleado en la ejecución.</p>
+                                                                    <p>
+                                                                        <img border="0" width="7" height="7" id="_x0000_i1038" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; Un número de página y el número máximo de páginas en las que se visualiza la consulta. Esto depende del número máximo de líneas visualizadas en la pantalla parametrizada en la definición de la consulta.</p>
+                                                                    <p>
+                                                                        <img border="0" width="7" height="7" id="_x0000_i1039" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; El nivel actual de descripción y el número máximo de niveles (al principio, nivel superior: por ejemplo, se visualiza <i>4/4</i> si el número máximo de niveles es 4). Los botones de gestión de niveles permiten, una vez ejecutada la consulta, navegar de un nivel a otro).</p>
+                                                                    <p>
+                                                                        <img border="0" width="7" height="7" id="_x0000_i1040" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; La fecha, la hora a la cual se realizó la consulta por última vez así como el usuario que la hizo.</p>
+                                                                    <p>En la tabla que aparece a continuación se visualizan las columnas, fruto de la consulta, con las líneas descriptivas. Posicionando el cursor en una líneas, será posible con un clic derecho, llevar a cabo un zoom en los registros relativos a los datos con claves visualizadas en la línea. Por ejemplo, en una consulta por país, luego por cliente y a continuación por línea de pedido (descripción de los artículos y las cantidades correspondientes), se podrá efectuar un zoom en la ficha cliente de la línea, en la ficha país, artículo, etc... (no en el pedido, si el número de pedido no aparece en la línea).</p>
+                                                                    <p>Se puede navegar por las páginas mediante los botones de selección de registro situados en la barra del menú superior o utilizar los siguientes botones a pie de página:</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div id="on1" class="dfields">
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Bloque Número 1</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Código (<a href="GESALH.htm">campo COD</a>)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">campo DES</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>
+Título asociado al código anterior.  
+                </p>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Tiempos (campo TEMPO)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Nivel (campo NIVP)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Última generación (campo DAT)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">campo TIM</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">campo USR</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Líneas (campo LIG)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Página (campo PAGP)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b><a href="TBL_MGT.htm">Tabla</a><i></i></b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1" />
+                                                                    </div>
+                                                                    <div id="fct_on1" class="ddesc"><a id="BOT_40_205"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_245"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_250"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_255"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_260"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_265"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_270"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_275"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6><a id="BOT_40_280"></a>
+                                                                        <h6 class="g1">Gestión objetos de base</h6>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                                    <h2 class="g1" id="BarradeMenú" data-magellan-target="BarradeMenú">Barra de Menú</h2>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="#BOU_70_20">Código</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_30">Búsqueda</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_40">Criterios</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_50">Nivel +</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_60">Nivel -</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_70">Export.</a>
+                                                                            </li>
+                                                                            <li><a href="#BOU_70_80"></a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_20"></a>
+                                                                                <p><b>Código </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite cambiar de consulta</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_30"></a>
+                                                                                <p><b>Búsqueda </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite relanzar la ejecución (es equivalente a una actualización).</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_40"></a>
+                                                                                <p><b>Criterios </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite modificar los criterios de consulta. Validando estos criterios, se ejecuta la consulta y a continuación se visualiza el resultado.<br /></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_50"></a>
+                                                                                <p><b>Nivel + </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite, cuando se navega de un nivel dado a un nivel inferior por el botón Nivel -, realizar la operación opuesta (desciende a un nivel más detallado). Es importante señalar que, cuando se navega de nivel a nivel, la línea en curso se utiliza para definir la página en curso. Imaginemos por ejemplo: que una consulta genera 10.000 líneas, 100 por página (habrá 100 páginas de consulta). Si se ha subido al nivel de zoom más elevado (por código país) y si se posiciona en la línea 15∨df; (no se necesita navegar por las páginas ya que a este nivel sólo se visualiza una línea por país). El hecho de descender, cambiando el nivel de detalle, llevará al usuario al primer artículo pedido por el primer cliente país (se puede encontrar en la página 45 de la consulta. Esta paginación es automática).<br /></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_60"></a>
+                                                                                <p><b>Nivel - </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>&#160;permite subir a un nivel de descripción más detallado, agregando líneas al último criterio con el indicador <i>Grupo</i> en  <i>Sí</i>, y a continuación en los siguientes, si la operación es repetida. Aparecen en la tabla únicamente los datos válidos. Los campos para los que se ha solicitado un acumulado aparecen acumulados. En consultas SQL no se puede navegar por niveles.</p>
+                                                                                <p>Por ejemplo, si se ha solicitado una consulta:</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1050" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; por código país (campo con atributo <i>Grupo</i> igual a <i>Sí)</i></p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1051" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; visualizando después el nombre del país (en el grupo 1)</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1052" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; más tarde por cliente pedido, extraido de cabecera de pedido (campo con atributo <i>Grupo</i> igual a <i>Sí)</i></p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1053" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; visualizando después el nombre del país (en el grupo 2)</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1054" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; a continuación por artículo, extraido de la línea de de pedido (campo con atributo <i>Grupo</i> igual a <i>Sí)</i></p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1055" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; visualizando el número del pedido, una cantidad y un precio extraídos de la línea de pedido (en el gurpo 4, estos dos últimos campos en acumulado)</p>
+                                                                                <p>Se obtendrán las siguientes visualizaciones:</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1056" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; Primero se visualizará la descripción de las líneas, el nivel visualizado es <i>4/4</i>.</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1057" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; Subiendo un nivel, se visualiza una línea por artículo y otra por cliente. Los campos código país, nombre país, código cliente, nombre cliente y artículo permanecen visibles. El número de pedido estará vacío y los datos cantidad y precio acumulados en todas las líneas de pedido de artículo y cliente. El nivel visualizado será igual a <i>3/4</i>.</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1058" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; Subiendo otro nivel, se visualiza una línea por cliente. Los campos código país, nombre país, código cliente y nombre cliente permanecen visibles. Los campos artículo y número de pedido no son visualizados. Los acumulados estarán relacionados con la líneas pedido cliente. Nivel visualizado <i>2/4</i>.</p>
+                                                                                <p>
+                                                                                    <img border="0" width="7" height="7" id="_x0000_i1059" src="../Resources/Images/bullet_brique.gif" alt="*" />&#160;&#160;&#160; Subiendo otro nivel, se visualiza una línea por país. Permanecen visibles únicamente los campos código país y nombre país (los acumulados cantidad y precio son iguales al acumulado por país). El nivel visualizado será igual a <i>1/4</i>.<br /></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_70"></a>
+                                                                                <p><b>Export. </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite visualizar un gráfico (posibilidad de seleccionarlo), el número de la columna numérica que define el valor que va a ser representado gráficamente (por defecto, el primer valor numérico de la tabla), el número de la columna que facilitará el campo asociado a cada valor (el primero, por defecto) y el número de valores a considerar.<br /></p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_80"></a>
+                                                                                <input type="button" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>permite crear, sobre el puesto cliente, un fichero en formato csv (explotado por tabla) Se da el camino del fichero (sin precisar el camino red, el puesto cliente será el utilizado por defecto). Se puede crear el fichero en un servidor en línea (siempre y cuando este servidor esté integrado con el run-time Adonix), mediante la sintaxis <b>serveur@chemin</b>. El formato del fichero creado se define por los valores de parámetro <a href="../OBJ/ADP_SUP_RQTFMT.htm">RQTFMT</a> y <a href="../OBJ/ADP_SUP_RQTSEP.htm">RQTSEP</a>.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ERR"></a>
+                                                                    <h2 class="g1" id="MensajesdeError" data-magellan-target="MensajesdeError">Mensajes de Error</h2>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="ERR_GEN.htm">Mensajes genéricos</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <p>Además de los mensajes genéricos, los mensajes siguientes de error pueden aparecer durante la captura :</p><b>Error de escritura</b>
+                                                                    <p>La tentativa de creación de un fichero en formato csv falló.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ATB"></a>
+                                                                    <h2 class="g1" id="Tablasenejecución" data-magellan-target="Tablasenejecución">Tablas en ejecución</h2>
+                                                                    <p>
+                                                                        <img src="../Resources/Images/SEEREFERTTO" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Consulta la documentación de  <a href="PRQ_AFC_EXEALH.htm#ATB">Puesta en marcha</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Ejecuci%C3%B3ndeConsultas">Ejecución de Consultas</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisitos">Prerequisitos</a>
+                                                        </li>
+                                                        <li><a href="#Gesti%C3%B3ndePantalla">Gestión de Pantalla</a>
+                                                        </li>
+                                                        <li><a href="#BarradeMen%C3%BA">Barra de Menú</a>
+                                                        </li>
+                                                        <li><a href="#MensajesdeError">Mensajes de Error</a>
+                                                        </li>
+                                                        <li><a href="#Tablasenejecuci%C3%B3n">Tablas en ejecución</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 enero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

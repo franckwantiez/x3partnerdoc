@@ -1,0 +1,1 @@
+define({'/Content/How-to guides/Common data/Installing a data patch/T1 Installing a data patch Introduction.htm':{i:[0],t:['Installing a data patch'],b:['']},'/Content/How-to guides/Common data/Installing a data patch/T2 Installation procedure.htm':{i:[1],t:['Installation procedure'],b:['']}});

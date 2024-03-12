@@ -1,0 +1,597 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Estadísticas, Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Estadísticas SQL Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Estadísticas SQL Server</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="EstadísticasSQLServer" data-magellan-target="EstadísticasSQLServer"><span>Estadísticas SQL Server</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Esta función permite visualizar las estadísticas generadas en la base de datos cuando la base de datos utilizada es SQL Server™.</p>
+                                                            <p>También permite actualizar las estadísticas.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="INC_15_10"></a>
+                                                            <h2 class="g1" id="Avisoimportante" data-magellan-target="Avisoimportante">Aviso importante</h2>
+                                                            <p><strong>Atención, este tipo de función </strong><strong>facilita, mediante una interfaz de usuario homogénea con el sistema, el lanzamiento de procedimientos de explotación devueltos a un administrador de bases de datos. Está concebida para ser lanzada por un administrador concreto (denominado normalmente <em>DBA</em>).</strong>
+                                                            </p>
+                                                            <p><strong>Para que su uso resulte de provecho, hay que tener un conocimiento previo del funcionamiento de las bases de datos y su optimización. </strong>
+                                                            </p>
+                                                            <p><strong>Un uso inapropiado puede suponer serios problemas de rendimiento y poner en peligro la seguridad de la explotación del sistema. </strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ECR"></a>
+                                                            <h2 class="g1" id="Gestióndepantalla" data-magellan-target="Gestióndepantalla">Gestión de pantalla</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#INC_40_200">Pestaña Índice</a>
+                                                                    </li>
+                                                                    <li><a href="#ON2">Pestaña Base</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Esta función permite visualizar y generar las estadísticas en la base de datos.<br />Estos elementos se presentan en dos pestañas: la primera pestaña ofrece la lista de índices y el informe de estadísticas para cada uno de ellos, mientras que la segunda ofrece la lista de los parámetros de la base de datos vinculados a la generación de las estadísticas.</p><a id="INC_40_200"></a>
+                                                            <h3 class="g1">Pestaña Índice</h3>
+                                                            <div id="desc_inc_40_200" class="ddesc" style="display: block;">
+                                                                <p>Esta pestaña presenta la lista de índices y el estado de las estadísticas para cada uno de ellos. </p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div id="inc_40_200" class="dfields">
+                                                                    <h4 class="bloctitle"><a href="TBL_MGT.htm">Tabla</a>
+                                                                    </h4>
+                                                                    <table class="fld1">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Por procesar (campo PROFLG)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Permite definir si la línea debe tratarse en el momento de la generación de estadísticas, mediante el botón de la parte inferior de la pantalla.  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Tabla (campo TAB)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Nombre de la tabla de la base de datos  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Índice (campo INDEX)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Nombre del índice de la base de datos  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">N.º líneas (campo NBRLIN)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Número de líneas de la tabla correspondiente al índice (count)  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Estadísticas automáticas (campo STTAUT)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>Indica si las estadísticas se generan de forma automática por el índice.</p>
+                                                                            <p>Corresponde al parámetro de base de datos UPDATE STATISTICS automático para el índice.</p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Estadísticas generadas (campo STTFLG)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Indica si se han generado estadísticas validas en base de datos  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">Fecha último análisis (campo STTDAT)</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Fecha del último análisis de las estadísticas  
+                </p>
+                                                                        </td>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <ul>
+                                                                                    <li class="fld">campo STTHOU</li>
+                                                                                </ul>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <td>
+                                                                            <p>
+Hora del último análisis de las estadísticas  
+                </p>
+                                                                        </td>
+                                                                    </table>
+                                                                </div><a id="MIN_40_201"></a>
+                                                                <p>Es posible generar estadísticas:</p>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>para un índice haciendo clic con el botón derecho,</li>
+                                                                        <li>para todos los índices o una parte de los índices seleccionando las líneas deseadas antes de desencadenar la acción mediante el botón de la parte inferior de la pantalla.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <div id="fct_on2" class="ddesc"><a id="INC_40_205"></a>
+                                                                    <h6 class="g1">Sí a todo lo demás</h6>
+                                                                    <p>Cuando hay una tabla de introducción de múltiples opciones con una opción de respuesta <em>Sí / No </em>en cada línea, esta función permite responder <em>Sí</em> para todas las líneas a partir de la línea actual.</p><a id="INC_40_210"></a>
+                                                                    <h6 class="g1">No a todo lo demás</h6>
+                                                                    <p>Cuando hay una tabla de introducción de múltiples opciones con una opción de respuesta <em>Sí / No </em>en cada línea, esta función permite responder <em>No</em> para todas las líneas a partir de la línea actual.</p><a id="INC_40_215"></a>
+                                                                    <h6 class="g1">Actualizar la línea</h6>
+                                                                    <p>
+Permite refrescar la visualización de la línea actual del cuadro
+        </p><a id="INC_40_220"></a>
+                                                                    <h6 class="g1">Generar para la línea</h6>
+                                                                    <p>
+Permite generar estadísticas para la línea actual del cuadro
+        </p>
+                                                                </div><a id="ON2"></a>
+                                                                <h3 class="g1">Pestaña Base</h3>
+                                                                <div id="desc_on2" class="ddesc" style="display: block;">
+                                                                    <p>Esta pestaña presenta la lista de los parámetros de la base de datos vinculados a la generación automática de estadísticas.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div id="on2" class="dfields">
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b><a href="TBL_MGT.htm">Tabla</a><i> Parámetros de las estadísticas</i></b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Parámetro (campo PAR)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>Muestra las opciones posicionadas en la base de datos para la generación automática de las estadísticas.</p>
+                                                                                <p>Las opciones son las siguientes</p>
+                                                                                <p />
+                                                                                <table width="587" border="1" cellpadding="2">
+                                                                                    <tbody>
+                                                                                        <tr valign="top">
+                                                                                            <th width="31%" colspan="1" rowspan="1">
+                                                                                                <p>Opción </p>
+                                                                                            </th>
+                                                                                            <th width="69%" colspan="1" rowspan="1">
+                                                                                                <p>DescripciÃ³n</p>
+                                                                                            </th>
+                                                                                        </tr>
+                                                                                        <tr valign="top">
+                                                                                            <td width="31%" colspan="1" rowspan="1">
+                                                                                                <p><b>auto create statistics</b>
+                                                                                                </p>
+                                                                                            </td>
+                                                                                            <td width="69%" colspan="1" rowspan="1">
+                                                                                                <p>Si es verdadero, las estadísticas que faltan, necesarias para la optimización, se crean automáticamente durante la optimización.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr valign="top">
+                                                                                            <td width="31%" colspan="1" rowspan="1">
+                                                                                                <p><b>auto update statistics</b>
+                                                                                                </p>
+                                                                                            </td>
+                                                                                            <td width="69%" colspan="1" rowspan="1">
+                                                                                                <p>Si es verdadero, las estadísticas no actualizadas, necesarias por petición para la optimización, se crean automáticamente durante la optimización.</p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Valor (campo PARVAL)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                        </table>
+                                                                    </div><a id="MIN_40_601"></a>
+                                                                    <p>No es posible modificar estos valores. </p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                                    <h2 class="g1" id="Botonesespecíficos" data-magellan-target="Botonesespecíficos">Botones específicos </h2>
+                                                                    <table>
+                                                                        <tr>
+                                                                            <td valign="top"><a id="BOU_70_30"></a>
+                                                                                <p><b>Generar </b>
+                                                                                </p>
+                                                                            </td>
+                                                                            <td>
+                                                                                <p>
+Permite generar las estadísticas para todas las líneas seleccionadas en la tabla de la pestaña "Índice".
+        </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="MIS_80_50"></a>
+                                                                    <h2 class="g1" id="ExplicacionessobrelasestadísticasSqlServer" data-magellan-target="ExplicacionessobrelasestadísticasSqlServer">Explicaciones sobre las estadísticas Sql Server</h2>
+                                                                    <p />
+                                                                    <h4>¿Cuándo deben actualizarse las estadísticas?</h4>
+                                                                    <p>SQL Server conserva las estadísticas de distribución de los valores de clave en cada índice y utiliza estas estadísticas para determinar los índices a utilizar en el proceso de consultas. </p>
+                                                                    <p>Así pues, puede ser útil actualizar las estadísticas:</p>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <li>si se aportan importantes modificaciones a los valores de clave del índice,</li>
+                                                                            <li>si se ha añadido, modificado o suprimido una gran parte de los datos de una columna indexada (en otras palabras, si se cree que la distribución de los valores de clave ha cambiado)<br /></li>
+                                                                        </ul>
+                                                                    </ul>
+                                                                    <h4>¿Por qué?</h4>
+                                                                    <p>Microsoft® SQL Server™&#160;permite crear informaciones estadísticas sobre la distribución de valores en una columna que debe ser creada. Estas estadísticas pueden ser explotadas por el procesador de consultas para determinar la estrategia óptima de evaluación de una consulta. Cuando se crea un índice, SQL Server almacena automáticamente las informaciones estadísticas relativas a la distribución de valores en la columna o columnas indexadas. El optimizador de consultas de SQL Server utiliza estas estadísticas para calcular el coste de la utilización del índice para una consulta. Por otra parte, si la opción de la base de datos AUTO_CREATE_STATISTICS está activada (ON), lo que ocurre por defecto, SQL Server crea automáticamente estadísticas para los columnas sin índice utilizadas en un predicado. </p>
+                                                                    <p>Si los datos de una columna cambian, las estadísticas de índice y de columna corren el riesgo de quedarse obsoletas y de llevar al optimizador de consultas a tomar decisiones poco juiciosas sobre la manera de procesar una consulta. Por ejemplo, si se crea una tabla con una columna indexada y 1.000 líneas de datos, todas ellas con valores únicos en la columna indexada, el optimizador de consultas considera que la columna indexada constituye una "buena" solución para recoger los datos para una consulta. Si se actualizan los datos de una columna creando numerosos valores duplicados, la columna deja de ser un candidato ideal para ser utilizado en una consulta. Sin embargo, el optimizador de consultas la considera siempre un candidato apropiado conforme a las estadísticas de distribución obsoletas del índice, que estaban basadas en los datos anteriores a la actualización.</p>
+                                                                    <p>Por consiguiente, SQL Server actualiza automáticamente las informaciones estadísticas de manera regular, a medida que se modifican los datos de las tablas. El muestreo se realiza de forma aleatoria entre las páginas de datos y procede de la tabla o del índice más pequeño no ordenado en clústeres en las columnas necesarias para las estadísticas. Tras la lectura de una página de datos a partir del disco, todas las líneas de la página se utilizan para actualizar las informaciones estadísticas. La frecuencia de actualización de estas últimas depende del volumen de datos presentes en la columna o el índice y de la cantidad de datos variables.</p>
+                                                                    <p>SQL Server garantiza siempre el muestreo de un número mínimo de líneas. Las tablas de tamaño inferior a 8 Mb siempre son objeto de un análisis completo con el objetivo de elaborar estadísticas.</p>
+                                                                    <p>El coste de esta actualización automática de las estadísticas se minimiza a causa del muestreo de datos, ya que no se analizan todos los datos. </p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="MIS_85_60"></a>
+                                                                    <h2 class="g1" id="Informacionestécnicas" data-magellan-target="Informacionestécnicas">Informaciones técnicas</h2>
+                                                                    <p>Todas las informaciones de las tablas, índices y estadísticas se leen directamente en la base de datos a partir de las tablas y vistas Sql Server:</p>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <li>sysusers</li>
+                                                                            <li>sysobjects</li>
+                                                                            <li>sysindexes</li>
+                                                                        </ul>
+                                                                    </ul>
+                                                                    <p />
+                                                                    <p>Las fechas de las estadísticas se obtienen con la ayuda de la función STATS_DATE.</p>
+                                                                    <p>Las informaciones sobre la generación automática de estadísticas en los índices se obtienen mediante el procedimiento sp_autostats.</p>
+                                                                    <p>Las informaciones sobre la gestión automática de estadísticas en la base de datos se obtienen mediante el procedimiento sp_dboption.</p>
+                                                                    <p>Las estadísticas se actualizan con la instrucción UPDATE STATISTICS.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ERR"></a>
+                                                                    <h2 class="g1" id="Mensajesdeerror" data-magellan-target="Mensajesdeerror">Mensajes de error</h2>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="ERR_GEN.htm">Mensajes genéricos</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <p>No hay ningún mensaje de error aparte de los mensajes de error genéricos.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ATB"></a>
+                                                                    <h2 class="g1" id="Tablasutilizadas" data-magellan-target="Tablasutilizadas">Tablas utilizadas</h2>
+                                                                    <p>
+                                                                        <img src="../Resources/Images/SEEREFERTTO" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Consulta la documentación de  <a href="PRQ_AFC_SQLSTA.htm#ATB">Puesta en marcha</a></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Estad%C3%ADsticasSQLServer">Estadísticas SQL Server</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Avisoimportante">Aviso importante</a>
+                                                        </li>
+                                                        <li><a href="#Gesti%C3%B3ndepantalla">Gestión de pantalla</a>
+                                                        </li>
+                                                        <li><a href="#Botonesespec%C3%ADficos">Botones específicos </a>
+                                                        </li>
+                                                        <li><a href="#Explicacionessobrelasestad%C3%ADsticasSqlServer">Explicaciones sobre las estadísticas Sql Server</a>
+                                                        </li>
+                                                        <li><a href="#Informacionest%C3%A9cnicas">Informaciones técnicas</a>
+                                                        </li>
+                                                        <li><a href="#Mensajesdeerror">Mensajes de error</a>
+                                                        </li>
+                                                        <li><a href="#Tablasutilizadas">Tablas utilizadas</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 enero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

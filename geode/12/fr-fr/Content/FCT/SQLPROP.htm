@@ -1,0 +1,916 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Proprietes,Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Propriétés Sql Server" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Propriétés Sql Server</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="PropriétésSqlServer" data-magellan-target="PropriétésSqlServer"><span>Propriétés Sql Server</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Cette fonction permet de visualiser les principales propriétés de la base de données lorsque la base de données utilisée est SQL Server™.</p>
+                                                            <p>Les données ici présentées ne sont pas modifiables.<br />Leur modification doit se faire par les outils d'administration propres à la base de données utilisée.<br /></p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="INC_15_10"></a>
+                                                            <h2 class="g1" id="Avertissement" data-magellan-target="Avertissement">Avertissement</h2>
+                                                            <p><strong>Cette fonction permet, par des requêtes sur des tables et vues du système, de donner des informations techniques sur la base de données. L'interprétation des résultats donnés par cette fonction est du ressort d'un administrateur de bases de données, et peut dépendre de la version de base de données utilisée. </strong>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ECR"></a>
+                                                            <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#INC_40_100">En-tête</a>
+                                                                    </li>
+                                                                    <li><a href="#ON1">Onglet Serveur</a>
+                                                                    </li>
+                                                                    <li><a href="#ON2">Onglet Base</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Cette fonction permet de visualiser les&#160;propriétés de&#160;la base de données.<br />Ces éléments sont présentés sur&#160;deux onglets : le premier donne les caractéristiques générales du serveur, le deuxième donne caractéristiques de la base de données ainsi que la liste des paramètres et options positionnés pour la base de données.</p><a id="INC_40_100"></a>
+                                                            <h3 class="g1">En-tête</h3>
+                                                            <div id="desc_inc_40_100" class="ddesc" style="display: block;">
+                                                                <p>Permet de connaître les caractéristiques de la base de données utilisée.</p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="inc_40_100" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Base de données (champ BDDNAM)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Nom de la base de données</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Version (champ VER)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Numéro de&#160;version de la base de données</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ VERDES</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Description de la version de la base de données</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><a id="ON1"></a>
+                                                            <h3 class="g1">Onglet Serveur</h3>
+                                                            <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                <p>Le premier onglet&#160;présente les&#160;propriétés générales du serveur hébergeant&#160;la base de données.</p>
+                                                                <p>Ce premier bloc donne des&#160;informations sur l'instance de Sql Server.&#160;</p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Machine (champ SRVMAC)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Nom du serveur sur lequel est démarrée la base de données.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Instance (champ SRVINS)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Nom de l'instance de Microsoft® SQL Server™.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Classement par défaut (champ SRVTRI)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Type de classement utilisé par l'instance de SQL Server.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Version (champ VER)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Description de la version de la base de données</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><a id="ON2"></a>
+                                                            <h3 class="g1">Onglet Base</h3>
+                                                            <div id="desc_on2" class="ddesc" style="display: block;">
+                                                                <p>Sur le deuxième onglet, on voit les propriétés de la base de données</p>
+                                                                <p>Cet écran est constitué de&#160;trois blocs.</p>
+                                                                <h4>Base de données</h4>
+                                                                <p>Ce bloc contient&#160;les principales caractéristiques de la base de données.&#160;</p>
+                                                                <h4>Dernière sauvegarde</h4>
+                                                                <p>Ce bloc permet de&#160;visualiser les&#160;dates des dernières sauvegardes effectuées sur la base de données.</p>
+                                                                <h4>Options</h4>
+                                                                <p>Ce bloc&#160;liste les&#160;options de base de données et leurs valeurs. </p>
+                                                                <p>Il existe cinq catégories d'options de base de données : </p>
+                                                                <ul type="disc">
+                                                                    <ul>
+                                                                        <li>options automatiques ;</li>
+                                                                        <li>options de curseur ;</li>
+                                                                        <li>options de récupération ;</li>
+                                                                        <li>options SQL ;</li>
+                                                                        <li>options d'état.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <p />
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="on2" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Base de données</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Propriétaire (champ OWN)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Utilisateur propriétaire de la base de données </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date création (champ CREDAT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Date et heure de création de la base de données</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ CREHOU</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Nombre d'utilisateurs (champ NBRUSR)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Nombre d'utilisateurs définis dans la base de données.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Nombre de connexions actives (champ NBRPRO)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Nombre de connexions actives sur la base de données.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Taille de la base (champ TAILBASE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Taille totale de la base de données courante, tous dossiers confondus. Cette taille inclut tous les fichiers de données et les fichiers journaux.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ MB1</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Espace non alloué (champ ESPACE)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Espace de la base de données qui n'a pas été réservé pour des objets de base de données.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ MB2</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Classement (champ BDDTRI)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Type de classement utilisé par la base de données.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Modèle de récupération (champ RPCTPL)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Spécifie le type de modèle de récupération de la base de données</p>
+                                                                                        <p>Les modèles de récupération suivants sont disponibles : </p>
+                                                                                        <ul>
+                                                                                            <ul>
+                                                                                                <li>Récupération simple <br />La récupération simple permet la récupération de la base de données à l'aide de la sauvegarde la plus récente.</li>
+                                                                                                <li>Récupération complète <br />La récupération complète permet la récupération de la base de données à partir du moment de l'échec.</li>
+                                                                                                <li>Récupération journalisée en bloc <br />La récupération journalisée en bloc permet des opérations de journalisation en bloc.</li>
+                                                                                            </ul>
+                                                                                        </ul>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Niveau de compatibilité (champ LEV)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>
+Indique le niveau de compatibilité de la base de données.
+                </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b><a href="TBL_MGT.htm">Tableau</a><i> Options</i></b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Option (champ OPT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Options de base de données.</p>
+                                                                                        <p>Voici une liste des options que l'on peut trouver :</p>
+                                                                                        <p />
+                                                                                        <table width="587" border="1" cellpadding="2" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                                            <tbody>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <th width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p>Option</p>
+                                                                                                    </th>
+                                                                                                    <th width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Description</p>
+                                                                                                    </th>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>auto create statistics</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), les statistiques manquantes, requises par une requête pour l'optimisation, sont créées automatiquement durant l'optimisation.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>auto update statistics</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), les statistiques non mises à jour, requises par une requête pour l'optimisation, sont créées automatiquement durant l'optimisation. </p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>autoclose</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), la base de données est arrêtée proprement et ses ressources sont libérées dès que le dernier utilisateur s'est déconnecté.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>autoshrink</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), les fichiers de base de données sont candidats à un compactage automatique périodique. </p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>ANSI null default</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), CREATE TABLE suit les règles SQL-92 afin de déterminer si une colonne autorise les valeurs NULL.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>valeurs ANSI NULL</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), toutes les comparaisons à une valeur NULL sont évaluées à inconnu (UNKNOWN). Si faux (<b>false</b>), les comparaisons de valeurs non UNICODE à une valeur NULL sont évaluées à vrai (TRUE) si les deux valeurs sont NULL.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>ANSI warnings</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), des erreurs ou avertissements sont émis si des conditions telles que « division par zéro » sont vérifiées. </p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>arithabort</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), un dépassement de capacité ou une division par zéro provoquent l'arrêt du traitement de la requête ou du lot d'instructions. Si l'erreur se produit dans une transaction, cette dernière est annulée (roll back). Si faux (<b>false</b>), un message d'avertissement s'affiche, mais le traitement de la requête, du lot d'instructions ou de la transaction se poursuit, comme s'il n'y avait pas d'erreur.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>concat null yields null</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), le résultat est NULL si l'un des deux opérandes de l'opération de concaténation est NULL.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>c</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), tout curseur ouvert au moment où une transaction est engagée ou restaurée est fermé. Si faux (<b>false</b>), ces curseurs restent ouverts lorsqu'une transaction est engagée, et la restauration d'une transaction ferme tout curseur à l'exception de ceux qui sont définis avec le mot-clé INSENSITIVE ou STATIC.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>dbo use only</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), seul le propriétaire de la base de données peut utiliser celle-ci.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>default to local cursor</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), les déclarations de curseur ont pour valeur par défaut LOCAL.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>publication de fusion</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), la base de données peut être publiée pour une réplication de fusion.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>numeric roundabort</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), une erreur est générée lorsqu'une perte de précision survient dans une expression. Si faux (<b>false</b>), les pertes de précision ne génèrent pas de messages d'erreur et le résultat est arrondi en fonction de la précision de la colonne ou de la variable contenant le résultat.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>offline</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), la base de données est hors ligne.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>published</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), la base de données peut être publiée pour la réplication.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>identicateur entre guillemets</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), vous pouvez encadrer de guillemets doubles les identificateurs délimités.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>readonly</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), les utilisateurs sont uniquement autorisés à lire les données de la base de données, et non à les modifier. La base de données ne peut pas être en cours d'utilisation lorsque vous spécifiez une nouvelle <i>value</i> pour l'option <b>read only</b>. La base de données <b>master</b> fait exception à cette règle, et seul l'administrateur système peut l'utiliser pendant le paramétrage de l'option <b>read only</b>.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>recursive triggers</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), permet l'activation récursive de déclencheurs. Si faux (<b>false</b>), empêche uniquement la récurrence directe. Pour désactiver la récurrence indirecte, affectez la valeur 0 à l'option de serveur <b>nested triggers</b> à l'aide de <b>sp_configure</b>.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>select into /bulkcopy</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), l'instruction SELECT INTO et les copies en bloc rapides sont autorisées.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>single user</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), la base de données ne peut être utilisée que par un seul utilisateur à la fois.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                                                        <p><b>subscribed</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                                                        <p>Si la valeur est <b>true</b>, la base de données peut être abonnée à une publication.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body1">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                                                        <p><b>torn page detection</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                                        <p>Si vrai (<b>true</b>), les pages incomplètes peuvent être détectées.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                                <tr valign="top" class="TableStyle-NormalRows-Body-Body2">
+                                                                                                    <td width="31%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                                                        <p><b>trunc. log on chkpt</b>
+                                                                                                        </p>
+                                                                                                    </td>
+                                                                                                    <td width="69%" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                                                        <p>Si vrai (<b>true</b>), un point de contrôle vide la partie inactive du journal lorsque la base de données est dans le mode troncature de journal. Il s'agit de la seule option autorisée pour la base de données <b>master</b>.</p>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <p>
+                                                                                            <br />
+                                                                                        </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Valeur (champ OPTVAL)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Dernière sauvegarde</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Base de données - complète (champ SAVBDDDAT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>
+Affiche la date et l'heure de la dernière sauvegarde de la base de données.
+                </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ SAVBDDHOU</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Base de données - différentielle (champ SAVDBDDDAT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>
+Affiche la date et l'heure de la dernière sauvegarde différentielle de la base de données.
+                </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ SAVDBDDHOU</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Journal des transactions (champ SAVLOGDAT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>
+Affiche la date et l'heure de la dernière sauvegarde du journal des transactions.
+                </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ SAVLOGHOU</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="BOU_70_10"></a>
+                                                            <h2 class="g1" id="Boutonsspécifiques" data-magellan-target="Boutonsspécifiques">Boutons spécifiques</h2>
+                                                            <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a id="INC_70_20"></a>
+                                                                        <p><b>Actualiser </b>
+                                                                        </p>
+                                                                    </td>
+                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Ce bouton, également accessible par le raccourci &#160;<input type="button" value="F5" />, permet de rafraîchir l'affichage des onglets.</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ERR"></a>
+                                                            <h2 class="g1" id="Messagesderreur" data-magellan-target="Messagesderreur">Messages d'erreur</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="ERR_GEN.htm">Messages génériques</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Il n'y a pas de message d'erreur autre que les messages d'erreur génériques.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="ATB"></a>
+                                                            <h2 class="g1" id="Tablesmisesenoeuvre" data-magellan-target="Tablesmisesenoeuvre">Tables mises en oeuvre</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_SQLPROP.htm#ATB">Mise en oeuvre</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Propri%C3%A9t%C3%A9sSqlServer">Propriétés Sql Server</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Avertissement">Avertissement</a>
+                                                        </li>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#Boutonssp%C3%A9cifiques">Boutons spécifiques</a>
+                                                        </li>
+                                                        <li><a href="#Messagesderreur">Messages d'erreur</a>
+                                                        </li>
+                                                        <li><a href="#Tablesmisesenoeuvre">Tables mises en oeuvre</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

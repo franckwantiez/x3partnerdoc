@@ -1,0 +1,1 @@
+﻿define({data:[{code:'en-us', full:'English (United States)‎', target:'en-us/Default.htm'},{code:'fr-fr', full:'Français (France)‎', target:'fr-fr/Default.htm'},{code:'es-es', full:'Español (España)‎', target:'es-es/Default.htm'},{code:'pt-pt', full:'Português (Portugal)‎', target:'pt-pt/Default.htm'}]});

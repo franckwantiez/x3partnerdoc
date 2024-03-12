@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Web_outputs__Installing_a_data_patch_Chunk',chunkstart:['/Content/How-to guides/Common data/Installing a data patch/T1 Installing a data patch Introduction.htm'],tree:{n:[{i:0,c:0,n:[{i:1,c:0}]}]}});

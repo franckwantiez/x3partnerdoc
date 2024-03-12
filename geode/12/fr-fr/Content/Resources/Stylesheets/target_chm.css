@@ -1,0 +1,59 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.MasterTopNav" />*/
+
+/* This stylesheet contains styles that are specific to the 'chm' medium, used for the HTML Help target. */
+
+@media chm
+{
+	hr
+	{
+		width: 100%;
+	}
+
+	MadCap|dropDown	/* MadCap|dropDown: Drop downs */
+	{
+		mc-open-image: url('../Images/expand-collapse-up.png');
+		mc-open-image-alt-text: Close this section;
+		mc-closed-image: url('../Images/expand-collapse-down.png');
+		mc-closed-image-alt-text: Open this section;
+		mc-image-position: right;
+		mc-image-spacing: 8px;
+	}
+
+	MadCap|toggler	/* MadCap|toggler: togglers */
+	{
+		mc-open-image: url('../Images/expand-collapse-up.png');
+		mc-open-image-alt-text: Close this section;
+		mc-closed-image: url('../Images/expand-collapse-down.png');
+		mc-closed-image-alt-text: Open this section;
+		mc-image-position: right;
+		mc-image-spacing: 8px;
+	}
+
+	MadCap|expanding	/* MadCap|expanding: expanding text */
+	{
+		mc-image-spacing: 3px;
+		mc-open-image: url('../Images/expand-text-left.png');
+		mc-closed-image: url('../Images/expand-text-right.png');
+	}
+	
+	:focus /* remove the focus outline */
+	{
+		outline: none;
+	}
+	
+	a.MCDropDownHotSpot_0:hover,
+	a.MCDropDownHotSpot_0:focus,
+	a.MCXref_0:hover,
+	a.MCXref_0:focus
+	{
+		text-decoration: underline; /* fix to force underline on hover focus */
+	}
+	
+	span.MCTextPopupBody_0  /* fix to add missing background colour on text/glossary popups */
+	{
+		background-color: #F2F5F6; 	/* CSS variable IE 11 support */
+		background-color: var(--col-action-minor-50);
+	}
+
+}

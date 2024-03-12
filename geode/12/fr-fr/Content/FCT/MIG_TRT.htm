@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="procédure, migration, version" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Ecriture d'une procédure de migration spécifique" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Ecriture d'une procédure de migration spécifique</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Ecritureduneprocéduredemigrationspécifique" data-magellan-target="Ecritureduneprocéduredemigrationspécifique"><span>Ecriture d'une procédure de migration spécifique</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>A partir de la version 6.4. de Sage X3, la migration d'une version antérieure vers la version 6 s'appuie sur un moniteur d'enchaînement lançant des procédures de migration unitaires de façon automatisée.</p>
+                                                            <p>Il est possible d'ajouter des procédures de migration spécifiques, en suivant les préconisations données dans cette annexe technique.</p>
+                                                            <p>En l'occurrence, rajouter des procédures de migrations spécifiques se fera en :</p>
+                                                            <ul>
+                                                                <li>écrivant un traitement de migration dont la description détaillée et les règles de nommage sont précisées ci-dessous.</li>
+                                                                <li>référençant ce traitement comme une procédure de migration dans le dossier superviseur par la <a href="GESAM3.htm">fonction correspondante</a>, ce avant toute création d'un plan de migration et tout lancement de revalidation d'un dossier.</li>
+                                                            </ul>
+                                                            <p>Cette documentation décrit en détail la structure d'un tel traitement de migration, mais on pourra aussi, si nécessaire, se référer au traitement UUMGTRTPUR01, qui réalise la migration des demandes d'achat, et dont le source est fourni à titre d'exemple (sa modification - au risque de rendre la procédure de migration inopérante - est bien entendu prohibée).</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Principesdebase" data-magellan-target="Principesdebase">Principes de base</h2>
+                                                            <p>Lors de la validation de dossier:</p>
+                                                            <ul>
+                                                                <li>chaque table de flux est renommée (par défaut en faisant précéder son nom par la lettre U). On leur affecte le code activité MIG (ce qui permettra de les identifier lors de la suppression finale des tables temporaire, une fois que la migration aura été validée).</li>
+                                                                <li>son contenu est bien entendu gardé identique à la table de flux d'origine</li>
+                                                                <li>ses index sont supprimés (à l'exception du premier d'entre eux et éventuellement d'un index supplémentaire&#160;qui serait utile pour accélérer le traitement de migration).</li>
+                                                                <li>une ou des nouvelle(s) table(s) de flux sont créées vides conformément au dictionnaire de la nouvelle version (en y intégrant bien entendu les champs spécifiques ou les modifications spécifiques de champs standard faites sur la table d'origine). Souvent, la table vide porte le même nom que la table d'origine, mais ce n'est pas forcément le cas (cette table peut ne plus exister dans la nouvelle version, par exemple parce que les données qu'elles contenait ont été transférées dans une nouvelle table).</li>
+                                                            </ul>
+                                                            <p>Il est possible de gérer des migrations de tables spécifiques avec le même mécanisme. Ceci est décrit dans le paragraphe <a href="#MIS_40_70">ci-dessous</a>.</p>
+                                                            <p>Le sous-programme suivant permet de connaître le nom de la table telle qu'elle a été renommée :<br />&#160;&#160;&#160;&#160; # FOLDER = code du dossier<br />&#160;&#160;&#160;&#160; # PTABLE = nom de la table de mouvement avant migration<br />&#160;&#160;&#160;&#160; # MTABLE = nom de la table de mouvement renommée<br />&#160;&#160;&#160;&#160;&#160;# Si ERR&gt;0&#160; : une erreur s'est produite (le traitement devra s'arrêter)<br />&#160;&#160;&#160;&#160; Call MIGTABNAME(FOLDER,PTABLE,&#160;MTABLE, ERR) From TRTMIG</p>
+                                                            <p>La règle de base de renommage (mais elle a des exceptions, notamment si&#160;le nom de la table excède 12 caractères) consiste à renommer la table <i>XXX</i> en la préfixant par un "U".&#160;Ainsi, une table nommée ZMYTABLE sera renommée en UZMYTABLE. Le point d'entrée TABNAME dans TRTMIG permet d'affecter MTABLE en connaissant PTABLE avec une règle éventuellement différente.</p>
+                                                            <p>Chaque procédure unitaire est définie par un programme migrant une ou plusieurs tables de la base. Ce traitement doit s'appeler UUMGSPE<i>xxxnn</i>, <i>xxx</i> étant une racine identifiant la table a migrer et <i>nn</i> étant deux chiffres (pour permettre de disposer si nécessaire de plusieurs traitements). Son principe de fonctionnement est le suivant :</p>
+                                                            <ul>
+                                                                <li>Il va lire la ou les tables d'origine (en trouvant leur nom grâce au sous-programme ci-dessus), mais pas les mettre à jour.</li>
+                                                                <li>Il doit écrire dans la ou les table(s) finale(s), les données modifiées, complétées ou transcodées. Ces tables finales ont été décrites dans le dictionnaire de la nouvelle version. Elles existent, mais elles sont réputées être vides au début de la migration.</li>
+                                                                <li>Il est le plus "unitaire" possible, afin de permettre, lorsque c'est possible, une décomposition de la migration en procédures parallélisables.</li>
+                                                            </ul>
+                                                            <p>Afin d'obtenir les meilleures performances possibles :</p>
+                                                            <ul>
+                                                                <li>la table finale est livrée vide au départ, et elle est indexée a minima (un seul index). Les autres index seront créés à la fin de la procédure unitaire.</li>
+                                                                <li>on permettra de réaliser le traitement partiel des informations de départ (par exemple en ne migrant que les 2 derniers exercices), et en permettant le traitement ultérieur des données non migrées.</li>
+                                                                <li>l'écriture dans cette table se fera de préférence en mode groupé (en utilisant les syntaxes <i>Writeb</i>), en faisant des <i>Commit</i> sur la table à chaque paquet de N écritures <i>(N</i> étant fixé à une valeur raisonnable)<i>.</i></li>
+                                                                <li>la trace de migration sera mise à jour de façon optimisée.</li>
+                                                            </ul>
+                                                            <p>Afin de permettre une reprise et une interruption aisée des procédures unitaires :</p>
+                                                            <ul>
+                                                                <li>on écrira dans une table dédiée, à chaque <i>Commit</i>, un pointeur indiquant quelles sont les données déjà traitées, ainsi que des informations complémentaires.</li>
+                                                                <li>on testera, à chaque <i>Commit</i>, si une demande d'interruption a été faite.</li>
+                                                                <li>on écrira la procédure de telle façon qu'elle puisse être réexécutée en repartant de tables destination vides.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Descriptiondutraitementdemigration" data-magellan-target="Descriptiondutraitementdemigration">Description du traitement de migration</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_20">Les lignes préliminaires</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_30">Le sous-programme de remise à zéro</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_40">Le sous-programme de mise à jour</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_50">Le sous-programme PATCH</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_60">Le sous-programme UTI_MOUL</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_70">Le point d'entrée MIGTAB</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_80">Les points d'entrée des traitements de migration standard</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Dans le traitement de migration, on trouvera les éléments suivants :</p>
+                                                            <ul>
+                                                                <li>Au début, des lignes permettant le déclenchement direct de la procédure.</li>
+                                                                <li>Un sous-programme&#160;RAZ_UUMGSPExxxnn qui servira à remettre la situation initiale afin de pouvoir. relancer la procédure.</li>
+                                                                <li>Un sous-programme MAJ_UUMGSPExxxnn contenant la procédure de migration.</li>
+                                                                <li>Un sous-programme PATCH.</li>
+                                                                <li>Un sous-programme UTI_MOUL.</li>
+                                                            </ul>
+                                                            <p>Ces sous-programmes sont décrits ci-dessous.</p>
+                                                            <p>On supposera dans les exemples donnés que le traitement UUMGTRTZMY01 correspond à la phase de migration unitaire d'une table unique, qui s'appelle ZMYTABLE. La phase préliminaire de revalidation de dossier a fait les choses suivantes :</p>
+                                                            <ul>
+                                                                <li>elle a renommé ZMYTABLE conformément à la règle définie ci-dessus (la table remplie avec les valeurs avant migration s'appelle par défaut UZMYTABLE).</li>
+                                                                <li>Elle a créé la nouvelle table ZMYTABLE avec la nouvelle structure, mais cette table est vide.</li>
+                                                            </ul>
+                                                            <p>La procédure de migration va s'attacher à remplir la table ZMYTABLE à partir des informations de la table UZMYTABLE.</p><a id="MIS_40_20"></a>
+                                                            <h2 class="g1" id="Leslignespréliminaires" data-magellan-target="Leslignespréliminaires">Les lignes préliminaires</h2>
+                                                            <p>Les lignes préliminaires permettent de lancer le traitement directement depuis l'éditeur, par la fonction <i>Exécution</i>. On y trouve normalement les lignes suivantes :</p>
+                                                            <p># Définition du dossier courant, et lecture de la table des dossiers<br />Local Char FOLDER(30) : FOLDER = nomap<br /># Nom de la procédure de migration<br />Local Char PROG(20) : PROG="UUMGTRTZMY01" <br />If !GSERVEUR<br />&#160; Call SAIDOS(FOLDER,"") From SAIDOS<br />Endif<br />If FOLDER&lt;&gt; ""<br />&#160; If clalev([F:ADS])=0&#160; : Local File ADOSSIER [ADS] : Endif<br />&#160; Read [ADS] DOSSIER=[L]FOLDER : If fstat : Raz [F:ADS] : Endif<br />&#160; #&#160;Ouverture de la trace et affichage d'une fenêtre&#160;de temporisation<br />&#160; If !GSERVEUR<br />&#160;&#160;&#160; Call TEMPON("O") From GESECRAN<br />&#160;&#160;&#160; Call OUVRE_TRACE(PROG) From LECFIC<br />&#160; Endif<br />&#160; # Lancement de la procédure<br />&#160; Call MAJ_UUMGSPEZMA00(FOLDER) <br />&#160; # Fermeture trace<br />&#160; If !GSERVEUR<br />&#160;&#160;&#160; Call TEMPOFF&#160;&#160;&#160;&#160; From GESECRAN<br />&#160;&#160;&#160; Call FERME_TRACE From LECFIC<br />&#160;&#160;&#160; Call LEC_TRACE From LECFIC<br />&#160; Endif<br />Endif<br />End</p><a id="MIS_40_30"></a>
+                                                            <h2 class="g1" id="Lesousprogrammederemiseàzéro" data-magellan-target="Lesousprogrammederemiseàzéro">Le sous-programme de remise à zéro</h2>
+                                                            <p>Le&#160;sous-programme&#160;déclaré par<br />&#160;&#160;&#160;&#160;&#160; Subprog RAZ_UUMGTRTZMY01(FOLDER)<br />sert à se remettre dans la situation initiale si nécessaire, afin de pouvoir relancer la procédure. </p>
+                                                            <p>Il&#160;doit suivre au minimum les étapes de base suivantes :</p>
+                                                            <ul>
+                                                                <li>Vérifier que les tables d'origine et de destination existent bien, par exemple avec les lignes suivantes :<br />&#160;&#160;&#160;&#160;&#160; #&#160;Trouver la table d'origine&#160;pour la table à remplir (ici UZMYTABLE)<br />&#160;&#160;&#160;&#160;&#160;&#160;Call MIGTABNAME(FOLDER,"ZMYTABLE",OLDTABLE,ERR) From TRTMIG<br />&#160;&#160;&#160;&#160;&#160; If ERR : End : Endif<br />&#160;&#160;&#160;&#160;&#160;&#160;# La table d'origine existe-t-elle bien ?<br />&#160;&#160;&#160;&#160;&#160;&#160;If filinfo(filpath("FIL",OLDTABLE,"fde",[F:ADS]DOSSIER),0)&lt;0<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; End<br />&#160;&#160;&#160;&#160;&#160;&#160;Endif</li>
+                                                                <li>Ne faire des traces que pour les erreurs (aucun message d’avancement ou avertissement)</li>
+                                                                <li>Vider la ou les tables dans lesquelles la procédure MAJ insère les données. Pour ce faire, on dispose du sous-programme suivant:<br />&#160;&#160;&#160;&#160;&#160; # Vidage brutal et irréversible de la table ZMYTABLE<br />&#160;&#160;&#160;&#160;&#160; Call MIGTABRAZ(FOLDER,"ZMYTABLE",ERR)<br />&#160;&#160;&#160;&#160;&#160; If ERR : End : Endif</li>
+                                                                <li>Si des tables communes à plusieurs traitement doivent être partiellement purgées, on utilisera des transactions classiques du type :<br />&#160;&#160;&#160;&#160;&#160;&#160; Trbegin [...] : Delete [...] Where ... : Commit</li>
+                                                                <li>Remettre à zéro les informations sur le flux déjà migré pour cette table, par le sous-programme suivant :<br />&#160;&#160;&#160;&#160;&#160; # Pas de lignes migrées à cet instant<br />&#160;&#160;&#160;&#160;&#160; Call MIGRAZKEY(FOLDER,"UUMGTRTZMY01",ERR) From TRTMIG</li>
+                                                            </ul><a id="MIS_40_40"></a>
+                                                            <h2 class="g1" id="Lesousprogrammedemiseàjour" data-magellan-target="Lesousprogrammedemiseàjour">Le sous-programme de mise à jour</h2>
+                                                            <p>Le&#160;sous-programme&#160;MAJ_UUMGTRTZMY01, servant à transcoder le contenu de la table UZMYTABLE pour remplir la table ZMYTABLE, doit réaliser les tâches suivantes :</p>
+                                                            <ul>
+                                                                <li>Le nom de la procédure de migration doit être défini au départ<br />Local Char PROG(20) : PROG="UUMGTRTZMY01"</li>
+                                                                <li>On mettra à jour le statut de la procédure avec le sous-programme suivant (y compris si une condition préliminaire rend le lancement inutile, par exemple s'il n'y a rien à traiter : il faut alors que le statut soit <i>Terminé</i> pour que la procédure soit considérée comme faite et que les suivantes puissent s'enchaîner). Sinon, on mettra le statut à <i>En cours</i> :<br />&#160;&#160;&#160;&#160;&#160; # CURSTAT variable <i>Integer </i>gérant le statut (menu local 21)<br />&#160;&#160;&#160;&#160;&#160; # Les valeurs possibles étant <i>Attente, En cours, Terminée...</i><br />&#160;&#160;&#160;&#160;&#160; # Si la procédure est lancée, on aura CURSTAT=2<br />&#160;&#160;&#160;&#160;&#160; # Si elle est terminée, on utilisera CURSTAT=3<br />&#160;&#160;&#160;&#160;&#160;&#160;# En cas d'erreur, il faudra la positionner à 7<br />&#160;&#160;&#160;&#160;&#160; # Dans la suite,&#160;la variable PROG contient le nom&#160;du&#160;de la procédure<br />&#160;&#160;&#160;&#160;&#160; #&#160; (UUMGTRTZMY01 par exemple)<br />&#160;&#160;&#160;&#160;&#160; Call MIGSTKENDFLG (DOSSIER,PROG,CURSTAT,ERR) From TRTMIG</li>
+                                                                <li>On testera la présence des tables et des tables antérieures en utilisant le sous-programme MIGTABNAME à l'instar de ce qui est fait dans le sous-programme d'initialisation. En cas d'erreur, il ne faut pas oublier de mettre le statut de la tâche à la bonne valeur (7) avec le sous-programme MIGSTKENDFLG.</li>
+                                                                <li>On ouvrira ensuite les tables nécessaires à la migration. L'ouverture des tables internes de la procédure de migration se fait par :<br />&#160;&#160;&#160;&#160;&#160;&#160;Call MIG_OUVRE From TRTMIG</li>
+                                                                <li>Les traces seront utilisées avec parcimonie (inutile d'en mettre une sur chaque ligne, on a vu des migrations s'arrêter faute de place disque pour écrire les traces). Il est par contre utile de mettre une trace commençant par un message de type "Démarrage de la phase mettant à jour xxx", ainsi qu'une ligne d'horodatage avec un message tel que "Début du processus à :". Ces traces utiliseront les sous-programmes suivants&#160;:<br />&#160;&#160;&#160;&#160;&#160; # Ligne de trace si ERR=0, ligne d'erreur sinon<br />&#160;&#160;&#160;&#160;&#160; Call ECR_TRACE("message",ERR) From GESECRAN<br />&#160;&#160;&#160;&#160;&#160;&#160;# Ligne de trace horodatée<br />&#160;&#160;&#160;&#160;&#160; Call ECR_TIME("message") From DOSSUB</li>
+                                                                <li>
+                                                                    <p>Afin d’améliorer le temps d’insertion dans les tables, on supprime les index en ne laissant que le premier actif en début de procédure et on les recrée en fin de procédure, par les sous-programmes :<br />&#160;&#160;&#160;&#160;&#160; Call MIGTABINIT(FOLDER,"ZMYTABLE",ERR)&#160;From TRTMIG<br />Mais cela impose que la procédure soit la seule à travailler sur la table au moment où elle s’exécute. Aucune autre procédure ne doit lire, modifier ou insérer dans la table durant l’exécution de la procédure. Si la table doit être accédée par plusieurs procédures, il ne faut pas utiliser ce sous-programme.</p>
+                                                                </li>
+                                                                <li>On retrouvera alors la première clé à traiter dans la boucle de traitement. En effet, si on reprend la migration après une interruption, cette clé n'est pas vide. On la retrouvera par le sous-programme décrit ci-dessous :<br /><br />&#160;&#160;&#160;&#160;&#160;&#160; # TBMKEY(1..NBMKEY) est un tableau des valeurs de clés<br />&#160;&#160;&#160;&#160;&#160;&#160; #&#160;&#160; où reprendre la lecture. On retrouve au minimum les composants<br />&#160;&#160;&#160;&#160;&#160;&#160; #&#160;&#160; de la dernière valeur de clé traitée, mais on peut y rajouter<br />&#160;&#160;&#160;&#160;&#160;&#160; #&#160;&#160; un segment qui pourra&#160;indiquer le niveau de rupture atteint<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;#&#160;&#160; sur une clé multiple. TBMKEY doit être vide avant l'appel<br />&#160;&#160;&#160;&#160;&#160;&#160; #&#160;&#160; S'il est vide&#160;au retour,&#160;aucune valeur de clé&#160;courante n'existait<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;#&#160;&#160; (on démarre alors la procédure&#160;au début).<br />&#160;&#160;&#160;&#160;&#160;&#160; # NBMKEY permet de définir le nombre de valeurs&#160;que l'on attend<br />&#160;&#160;&#160;&#160;&#160;&#160; # NBL et NBUP comptent les lignes lues et mises à jour jusque là<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;Call MIGGETKEY (FOLDER,PROG,NBMKEY,TBMKEY,NBL,NBUP,ERR)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&amp;&#160;&#160;&#160; From TRTMIG</li>
+                                                                <li>On pourra alors entrer dans la boucle de lecture de la table ou des tables d'origine et d'écriture des tables de destination. Pour des raisons de performance, il est préférable de bannir les ordres de lecture isolés sur des tables et privilégier les instructions Link, de préférence avec des jointures strictes (syntaxe Where CLE~=... ). Si une lecture doit être faite sur une "petite" table pour des raisons d'initialisation ou de contrôle (par "petite", on entend moins de 1000 lignes), il est souvent préférable de stocker le contenu utile de cette table dans des variables en mémoire avant de commencer la boucle.</li>
+                                                                <li>Afin d'éviter des erreurs liées à l'écriture d'un trop grand nombre de lignes, on comptera le nombre de lignes écrites et on interrompra la boucle toutes les N lignes (N pouvant être fixé à 50.000 par exemple, par l'intermédiaire de la variable globale GMAXUPDTRS).</li>
+                                                                <li>Pour des raisons de performance, on utilisera aussi de préférence l'instruction Writeb (qui a été introduite à partir du moteur utilisé en version 6.4). Cette instruction groupe les écritures et améliore les performances, notamment mais pas uniquement sur une architecture multi-tiers. Cette instruction n'est utilisable que si on ne relit pas la table dans la boucle (ex : relecture pour savoir si enreg existe déjà). Elle suppose de fixer le facteur de groupage par une variable système nommée adxwrb (10 semble une bonne valeur). Il faut alors empiler les valeurs de clés écrites pour pouvoir restituer l'ensemble des clés en cours en cas d'erreur (cette erreur se produit alors sur l'instruction <i>Flush</i> et non pas sur <i>Writeb</i>). Le sous-programme suivant peut être utilisé :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; # Empilement des clés.<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; #&#160;KEY_ARRAY est un tableau alphanumérique déclaré par<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; # Local Char KEY_ARRAY(<i>N</i>)(adxwrb)&#160; en début de traitement<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; # (la taille&#160;<i>N</i> dépend de la taille des valeurs de clés)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; # NUMBER une variable <i>Shortint </i>indiquant le nombre de clés empilées<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; # KEY_VALUE valeur de clé encodée si&#160;la clé est en plusieurs parties<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; Call STK (KEY_ARRAY, NUMBER,KEY_VALUE) From TRTMIG</li>
+                                                                <li>En cas de sortie de boucle (après N boucles, ou parce que le traitement est terminé), on fera un <i>Flush </i>sur la table (si <i>Writeb </i>est utilisé) en gérant une éventuelle erreur. Si une erreur s'est produite,&#160;et si <i>adxwrb </i>est supérieur à 1, on pourra retrouver les clés sur lesquelles l'erreur a pu se produire dans le tableau KEY_ARRAY, sur les <i>adxwrb </i>premiers indices : on fera un <i>Rollback</i> avant de mettre la procédure en l'état <i>Terminé avec erreurs</i> et de terminer le traitement.</li>
+                                                                <li>Si tout s'est bien passé, on mettra à jour le nombre de lignes lues et mises à jour par l'appel suivant:<br />&#160;&#160;&#160;&#160;&#160;Call MIGSTKKEY (FOLDER,PROG,NBMKEY,TBMKEY,NBL,NBUP,ERR)<br />&#160;&#160;&#160;&#160; &amp;&#160;&#160;&#160; From TRTMIG<br />On fera ensuite un <i>Commit</i>.</li>
+                                                                <li>On pourra ensuite tester si une demande d'arrêt a été faite. Si ce n'est pas le cas, et si toutes les lignes n'ont&#160;pas été traitées, on recommencera une boucle sur N lignes. Le test d'arrêt se fait par le sous-programme suivant :<br />&#160;&#160;&#160;&#160;&#160; # La variable STOP revient égale à 0 si une demande d'arrêt a été faite<br />&#160;&#160;&#160;&#160;&#160; Call MIGSTKPROGRESS (FOLDER,PROG,STOP,ERR) From TRTMIG</li>
+                                                                <li>Si une demande d'arrêt a été faite (ou si le traitement est terminé), on fera les opérations suivantes :<br />&#160;&#160;&#160;&#160;&#160; # Indexation de la ou des tables traitées<br />&#160;&#160;&#160;&#160;&#160; # (uniquement si MIGTABINIT a été utilisé)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Call MIGTABEND(FOLDER,"ZMYTABLE",ERR) From TRTMIG<br />&#160;&#160;&#160;&#160;&#160; # Signaler au moniteur la fin du traitement<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Call MIGTRTEND(FOLDER,PROG) From TRTMIG<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; Call ECR_TIME(PROG+" : Tâche terminée") From DOSSUB</li>
+                                                            </ul>
+                                                            <p>On pourra ensuite fermer les tables et libérer des ressources si on en a, puis arrêter le sous-programme par l'instruction <i>End</i>.</p><a id="MIS_40_50"></a>
+                                                            <h2 class="g1" id="LesousprogrammePATCH" data-magellan-target="LesousprogrammePATCH">Le sous-programme PATCH</h2>
+                                                            <p>Ce sous-programme permet un lancement par patch. Il doit simplement s'assurer que la table ADOSSIER est ouverte, lire l'enregistrement correspondant au dossier à traiter, puis lancer la procédure de migration. Il pourrait, par exemple, être écrit comme suit :</p>
+                                                            <p>Subprog PATCH(FOLDER)<br />Value Char&#160;FOLDER<br /># Pas de lancement sur le dossier superviseur<br />If FOLDER=GDOSX3 : End : Endif <br /><br />#Chargement de la classe&#160;[F:ADS]<br />If clalev([F:ADS])=0&#160; Local File ADOSSIER [ADS] : Endif<br />Read [ADS] DOSSIER=FOLDER : If fstat : Raz [F:ADS] : Endif<br /># Lancement de la procédure<br />Call MAJ_UUMGTRTZMY01(FOLDER)<br />End</p>
+                                                            <p>
+                                                                <br />
+                                                            </p><a id="MIS_40_60"></a>
+                                                            <h2 class="g1" id="LesousprogrammeUTIMOUL" data-magellan-target="LesousprogrammeUTIMOUL">Le sous-programme UTI_MOUL</h2>
+                                                            <p>Ce sous-programme permet un lancement lors de la validation de dossier. Il est assez similaire au sous-programme PATCH, mais n'a pas besoin de s'assurer que la table ADOSSIER est ouverte, ni de lire l'enregistrement correspondant au dossier à traiter, puisque ceci est assuré par le traitement appelant. Sa seule tâche est donc de&#160;lancer la procédure correspondante. Il pourrait, par exemple, être écrit comme suit :</p>
+                                                            <p>Subprog UTIL_MOUL(FOLDER)<br />Value Char&#160;FOLDER<br /># Pas de lancement sur le dossier superviseur<br />If FOLDER=GDOSX3 : End : Endif <br /><br /># Lancement de la procédure<br />Call MAJ_UUMGTRTZMY01(FOLDER)<br />End</p>
+                                                            <p>
+                                                                <br />
+                                                            </p><a id="MIS_40_70"></a>
+                                                            <h2 class="g1" id="LepointdentréeMIGTAB" data-magellan-target="LepointdentréeMIGTAB">Le point d'entrée MIGTAB</h2>
+                                                            <p>Si on désire que des tables de flux spécifiques soient gérées par le traitement de migration d'une façon analogue (c'est-à-dire renommées de la même façon dans le début de la validation de dossier, puis créées avec la nouvelle structure), les étapes suivantes sont à faire :</p>
+                                                            <ul>
+                                                                <li>il faut utiliser le point d'entrée MIGTAB pour indiquer qu'une table de flux spécifique devra être traitée de la même façon que les tables standard dans la première phase (renommage et suppression des index superfétatoires).</li>
+                                                                <li>Il&#160; faut créer dans le dossier superviseur (ou dans le dossier de référence si on est dans une architecture à 3 niveaux) la description des tables spécifiques dont la structure change lors du changement de version, sinon les nouvelles tables de flux ne seront pas créées vides avec la nouvelle structure.</li>
+                                                                <li><u>Ceci est une exception un peu particulière à la règle qui indique que, normalement on ne crée pas de table spécifique dans le dossier superviseur</u>. La raison en est simple : on a bien besoin de disposer d'un dictionnaire "de référence" dans ce cas particulier. Or le seul dont on dispose, si on est dans une architecture à deux niveaux (cas le plus fréquent) est celui du dossier "superviseur" (X3 dans le cas de Sage X3). Il est d'ailleurs à noter que ces tables spécifiques créées dans le dossier superviseur peuvent être écrasées sans préavis si on installe une nouvelle version du dossier superviseur. Il faut donc considérer que la présence de tables spécifiques dans X3 est temporaire et qu'une sauvegarde de la description de ces tables doit exister ailleurs.</li>
+                                                                <li>Une table spécifique pouvant être utilisée pour alimenter des champs spécifiques d'une table standard, il n'est pas forcément nécessaire de créer une nouvelle table spécifique lors du changement de version. Dans ce cas, on renommera la table spécifique en utilisant le point d'entrée MIGTAB, et on utilisera des points d'entrée dans les procédures standard ou des procédures complémentaires pour faire les mises à jour qui manqueraient sans créer de table nouvelles dans le dictionnaire d'arrivée.</li>
+                                                            </ul>
+                                                            <p>Si ce point d'entrée n'est pas utilisé, les tables spécifiques, protégées par un code activité spécifique, ne seront absolument pas touchées. On les retrouvera dans l'état d'origine, ce qui correspondra souvent à ce qui doit être fait par défaut si le changement de version n'a pas d'incidence sur la structure des tables spécifiques.</p>
+                                                            <p>De même tout champ spécifique présent dans une table de flux standard et dont le contenu devrait être transféré à l'identique ne nécessite aucune précaution particulière : les traitements standard de migration utilisent des affectations de classes pour réaliser les copies de données.</p>
+                                                            <p>Le nom du traitement où se trouve le point d'entrée MIGTAB dépend du progiciel basé sur SAFE X3. Dans le cas de Sage X3, ce point d'entrée MIGTAB se trouve dans le traitement TRTMIGTABX3.</p>
+                                                            <p>On y ajoutera dans ce traitement des lignes de ce type :<br />&#160;&#160;&#160; Call MIGTABTABADD(DOSSIER,"ZMYTABLE","ZMY","index",<br />&amp;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; NBTAB,WTABLE,WTABLEJ,WABRJ,WTABIDX,ERR) From TRTMIG</p>
+                                                            <p>En sachant que les noms de variables donnés ci-dessus sont pour la plupart fixes :</p>
+                                                            <ul>
+                                                                <li>DOSSIER est le code du dossier.</li>
+                                                                <li>le nom de la table à migrer donné comme exemple ici est "ZMYTABLE".</li>
+                                                                <li>"ZMY" correspond à l'abréviation de la table d'origine après qu'elle ait été renommée. Si cette valeur est vide, une abréviation temporaire est déterminé, sous la forme&#160;U## ou W##, où&#160;## est un nombre.<br />Dans tous les cas cette abréviation n’est pas utilisée dans les traitements: Dans les procédures, on utilisera une autre abréviation temporaire comme [XXXM] où XXX est l’abréviation de la table migrée.</li>
+                                                                <li>NBTAB est la variable contenant le nombre de table de flux définies comme devant être migrées (chaque appel à TRTMIG incrémente cette variable).</li>
+                                                                <li>WTABLE, WTABLEJ, WABRJ, WTABIDX sont des tableaux contenant l'ensemble des éléments liés aux tables de flux déjà déclarées.</li>
+                                                                <li>ERR renvoie une valeur non nulle en cas d'erreur.</li>
+                                                            </ul><a id="MIS_40_80"></a>
+                                                            <h2 class="g1" id="Lespointsdentréedestraitementsdemigrationstandard" data-magellan-target="Lespointsdentréedestraitementsdemigrationstandard">Les points d'entrée des traitements de migration standard</h2>
+                                                            <p>Chaque procédure de migration standard dispose par ailleurs de points d'entrée permettant d'interagir avec la logique de basculement des tables standard. Ces points d'entrée sont les suivants :</p>
+                                                            <ul>
+                                                                <li>CRITSEL permet d'alimenter la variable CRITERESPE pour filtrer les données à traiter. Le détail du contexte utilisable est défini dans l'<a href="TRTMIG_X3.htm#MIS_100_10">annexe</a> décrivant les procédures de migration.</li>
+                                                                <li>VERIFSEL permet de recalculer des zones de la table d'origine en cours de lecture durant le traitement, et éventuellement d'exclure un enregistrement qui ne sera donc pas réécrit en mettant ISVALID à 0. Le détail du contexte utilisable est défini dans l'<a href="../FCT/TRTMIG_X3.htm#MIS_110_10">annexe</a> décrivant les procédures de migration.</li>
+                                                            </ul>
+                                                            <p />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Ecritureduneproc%C3%A9duredemigrationsp%C3%A9cifique">Ecriture d'une procédure de migration spécifique</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Principesdebase">Principes de base</a>
+                                                        </li>
+                                                        <li><a href="#Descriptiondutraitementdemigration">Description du traitement de migration</a>
+                                                        </li>
+                                                        <li><a href="#Leslignespr%C3%A9liminaires">Les lignes préliminaires</a>
+                                                        </li>
+                                                        <li><a href="#Lesousprogrammederemise%C3%A0z%C3%A9ro">Le sous-programme de remise à zéro</a>
+                                                        </li>
+                                                        <li><a href="#Lesousprogrammedemise%C3%A0jour">Le sous-programme de mise à jour</a>
+                                                        </li>
+                                                        <li><a href="#LesousprogrammePATCH">Le sous-programme PATCH</a>
+                                                        </li>
+                                                        <li><a href="#LesousprogrammeUTIMOUL">Le sous-programme UTI_MOUL</a>
+                                                        </li>
+                                                        <li><a href="#Lepointdentr%C3%A9eMIGTAB">Le point d'entrée MIGTAB</a>
+                                                        </li>
+                                                        <li><a href="#Lespointsdentr%C3%A9edestraitementsdemigrationstandard">Les points d'entrée des traitements de migration standard</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

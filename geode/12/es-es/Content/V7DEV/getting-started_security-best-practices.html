@@ -1,0 +1,627 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Security Best Practices" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Security Best Practices
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="SecurityBestPractices" data-magellan-target="SecurityBestPractices"> Security Best Practices
+</h1>
+                                                <!-- Public -->
+                                                <p>Security represents a strong focus in the design and development of Sage X3. The solution has been audited and certified by an external authority for safe operation in the Cloud.</p>
+                                                <p>A security policy is always compromised by its weakest link. It is therefore critical to pay attention to the security of your systems and implementation. Use all available tools for this.</p>
+                                                <p>This document summarizes what you should pay attention to when implementing Sage X3.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td colspan="4" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#SecurityGuidelines">General security guidelines</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#Securing">Securing on-premise architecture is not optional</a>
+                                                        </td>
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#GeneralGuidelines">General guidelines</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#DeploymentArchitecture">Recommended on-premises deployment architecture</a>
+                                                        </td>
+                                                        <td colspan="1" align="center" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#Network">Network security</a>
+                                                        </td>
+                                                        <td colspan="1" align="center"><a href="#Databases">Databases security</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td colspan="4" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#Platform">Platform Security</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#System">System security</a>
+                                                        </td>
+                                                        <td colspan="1" align="center" class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#Authentication">Authentication</a>
+                                                        </td>
+                                                        <td colspan="1" align="center"><a href="#Authorization">Authorizations</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#Development">Development security considerations</a>
+                                                        </td>
+                                                        <td colspan="2" align="center" class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#Audit">Audit</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="Generalsecurityguidelines" data-magellan-target="Generalsecurityguidelines"><a id="SecurityGuidelines"></a>General security guidelines</h1>
+                                                <h2 id="SecuringSageX3onpremisearchitectureisnotoptional" data-magellan-target="SecuringSageX3onpremisearchitectureisnotoptional"><a id="Securing"></a>Securing Sage X3 on-premise architecture is not optional</h2>
+                                                <p>Customer details, financial records, staff information – you will store sensitive data using your business software. It might be stored on your servers if you have in-house systems or outside your business, if you use cloud computing services.</p>
+                                                <p>You get maximum security for your data without any action if you use Sage X3 Cloud. However, if you choose to install Sage X3 as an on-premise instance, or if you host it with a non-Sage managed cloud provider, there are a few rules to follow.</p>
+                                                <p>Wherever your data is, you must take a multi-layered, industry-proven approach to keep your data where it belongs and as secure as possible. This document reviews the main controls you should implement to secure your data.</p>
+                                                <h2 id="Generalguidelines" data-magellan-target="Generalguidelines"><a id="GeneralGuidelines"></a>General guidelines</h2>
+                                                <p>Sage recommends following the general guidelines below to ensure security.</p>
+                                                <h2 id="UseHTTPSforproductioninstances" data-magellan-target="UseHTTPSforproductioninstances">Use HTTPS for production instances</h2>
+                                                <p>Sage X3 is a web application that must be accessed using an HTTPS connection.</p>
+                                                <h2 id="Keepyoursystemsuptodate" data-magellan-target="Keepyoursystemsuptodate">Keep your systems up to date</h2>
+                                                <p>Always apply the latest system and software fixes. This includes the latest Sage X3 patches. Our updates can provide enhancements to security, performance, and functionality.</p>
+                                                <h2 id="Usenetworklayercontrols" data-magellan-target="Usenetworklayercontrols">Use network layer controls</h2>
+                                                <p>Use local firewalls on your Sage X3 servers or network layer controls to lock any IP port that is not needed for Sage X3 operation or user access. Typically for the non-production deployments, if all Sage X3 components are installed on a single server, Sage X3 only needs the HTTPS ports to function. For multiple-server installations, you need to open the ports (or ranges of ports) that Sage X3 components use to communicate with each other.</p>
+                                                <h2 id="Recommendedonpremisesdeploymentarchitecture" data-magellan-target="Recommendedonpremisesdeploymentarchitecture"><a id="DeploymentArchitecture">Recommended on-premises deployment architecture</a>
+                                                </h2>
+                                                <p>In the on-premises deployment scenario, the customer is responsible for network and operating system security. The safety of an on-premises installation depends on the security measures that are in place within your network. Sage has achieved excellent results in realizing optimally secure infrastructure for Sage X3 applications in cooperation with the in-house IT specialists concerned.</p>
+                                                <p>Sage recommends the following deployment architecture, which is quite similar to the cloud deployment architecture.</p>
+                                                <p>The Sage X3 ERP is accessed via a web server that routes the traffic to the relevant environment whereby the web server is responsible for the TLS connections. We also recommend implementing a relevant security perimeter in front of the web server in case the application(s) built in Sage X3 are exposed to external users.</p>
+                                                <p>We recommend configuring the database for dedicated use by Sage X3. For supported versions of web servers, operating systems, and databases, see the system requirements for the latest Sage X3 release as described in the release Reference Guide.</p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_network-infra.jpg" />
+                                                </p>
+                                                <p>The architecture you implement is key to your security, especially if your system can be accessed from the public Internet. To connect your systems and make them available from the Internet, you have to configure network layer controls before enabling internet access.</p>
+                                                <h2 id="Networklayercontrol" data-magellan-target="Networklayercontrol">Network layer control</h2>
+                                                <p>Any secure deployment requires some measure of network access control. Sage recommends a three-tier architecture for Sage X3 production deployments, which includes appropriate network layer controls. The goal of network access control is to restrict communication to the application systems and Other communication attempts are blocked.</p>
+                                                <p>We recommend to logically segment the subnets and restrict the communication between the tiers. Best practices for logical segmentation include:</p>
+                                                <ul>
+                                                    <li>Don't assign allow rules with broad ranges</li>
+                                                    <li>Segment the larger address space into subnets</li>
+                                                    <li>Create network access controls between subnets</li>
+                                                    <li>Restrict Internet connectivity directly to the web server</li>
+                                                </ul>
+                                                <p>Sage X3 uses several components that communicate together through IP ports. The only port that actually needs to be accessed by users for Sage X3 to operate is the HTTPS port (443 by default). All other ports can (and must) be protected from external access, especially if the server is accessible from the Internet. The MongoDB port (27017 by default) and the Elasticsearch port (9200 by default) are examples of ports that should not be available. </p>
+                                                <p>The servers on which Elasticsearch is installed must not be exposed over the network. It should only be accessible from the node.js servers. The Sage X3 platform sends the query to Elasticsearch with additional security filters, based on the privileges of the user. When you access the Elasticsearch server directly, you can bypass these security filters: this compromises security by returning all the relevant indexed data.</p>
+                                                <p>In addition to the above network layer controls, we recommend configuring a proxy layer with all the protection mechanisms mentioned below: </p>
+                                                <ul>
+                                                    <li>A DDOS attacks prevention system</li>
+                                                    <li>A web application firewall (WAF) for the web component preventing application-level attacks</li>
+                                                    <li>Reverse proxy in place to offload communication directly from internet</li>
+                                                </ul>
+                                                <p>Please refer the ports/services table for creating necessary access rules between the logical segments.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><b>Component</b>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><b>Open port</b>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><b>Accessed by</b>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Port Access</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">AdxAdmin</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1895 (formerly 1818)</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">X3 Console</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Strictly localhost only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">X3 server runtime</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">20100, 20101, .. (formerly 1801, 1802, …)</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Node web server, Print Server, Other X3 server runtime if any</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Print server</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1890</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Node web server, X3 server runtime</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Node web server</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">443</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Browser</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Refer to the recommendations provided</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Node web server</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">8124</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Node web server</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Node web server (debug proxy)</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">9514</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Node web server,X3 server runtime</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Development environment only with restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">MongoDB</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">27017</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Node web server</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">RDB</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1521 (Oracle), 1433 (MSSQL)</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">X3 server runtime, X3 services component</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">ElasticSearch</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">9200</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Node web server</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Restricted access to necessary services only</td>
+                                                    </tr>
+                                                </table>
+                                                <p><b>Important!</b>
+                                                </p>
+                                                <p><b>The AdxAdmin service running on port 1895 (formerly 1818) should not be exposed to the network and should be limited only to localhost.</b>
+                                                </p>
+                                                <h2 id="Networksecurity" data-magellan-target="Networksecurity"><a id="Network"></a>Network security</h2>
+                                                <ul>
+                                                    <li>Only open access to the servers on the ports that are necessary for normal use. For example, only open the HTTPS (443 by default) port on the server running <b>node.js</b>.
+<b>Note:</b> Make sure that the first port in the host setup (<b>Administration</b> &gt; <b>Administration</b> &gt; <b>Servers</b> &gt; <b>Hosts</b>) is not used for SSL connection.</li>
+                                                    <li>Don't set port 443 on the first line of the connection grid.</li>
+                                                    <li>Install and set up network layer controls.</li>
+                                                    <li>Client connections must always use HTTPS.</li>
+                                                    <li>In order to secure the connection between different environments, Sage X3 uses certificates, which are generated during installation with a master certificate. The private key of this master certificate must be kept safe on a computer with restricted access. Refer to <a href="getting-started_certificate-installation.html">Certificate Installation</a> for more information on certificates.</li>
+                                                    <li>Ensure enabling TLS 1.2 or above and strong cipher suites at the web layer.</li>
+                                                </ul>
+                                                <h2 id="Databasesecurity" data-magellan-target="Databasesecurity"><a id="Databases"></a>Database security</h2>
+                                                <p>Databases must be secured following the principles listed below.</p>
+                                                <h2 id="Relationaldatabase" data-magellan-target="Relationaldatabase">Relational database</h2>
+                                                <p>The server on which the relational database is installed must not be exposed over the network.</p>
+                                                <p>Only the SAFE X3 server (application/run-time) and the report server can access RDBMS. Execution servers and report servers are proxies that get the data requested by external services.<br />Never set up the database connection to the platform with the database administrator account. This account is only required for some configuration steps, and it can be changed afterward.</p>
+                                                <h2 id="MongoDBdatabase" data-magellan-target="MongoDBdatabase">MongoDB database</h2>
+                                                <p>The servers on which the document database is installed must not be exposed over the network. Only the node web server needs access to the MongoDB database.</p>
+                                                <p>Please follow the official guide on <a href="https://docs.mongodb.com/manual/security/">Mongo DB security</a>.</p>
+                                                <p><b>Consider getting the enterprise version of MongoDB for additional security.</b>
+                                                </p>
+                                                <h1 id="PlatformSecurity" data-magellan-target="PlatformSecurity"><a id="Platform"></a>Platform Security</h1>
+                                                <h2 id="Secureyourserverswithtightuseraccessrights" data-magellan-target="Secureyourserverswithtightuseraccessrights">Secure your servers with tight user access rights</h2>
+                                                <p>The servers that host Sage X3 components contain configuration files and other data vulnerable to inside threats. Administrators should be the only roles allowed to log in to the servers. Make sure that you set up users for Sage X3 Administration with the appropriate rights to the relevant directories.</p>
+                                                <p><b>Caution:</b> Do not mix Server Administrators with Sage X3 Administrators.</p>
+                                                <p>Sage X3 servers should be built using industry-standard guidelines (such as the <a href="https://benchmarks.cisecurity.org/">Center for Internet Security benchmarks</a>) which are freely available. It is also possible to use the CIS approved images for the installations to meet the security standards.</p>
+                                                <h2 id="Stopordisableservicesthatarenotrequired" data-magellan-target="Stopordisableservicesthatarenotrequired">Stop or disable services that are not required</h2>
+                                                <p>Sage recommends using CIS benchmark controls for operating system hardening.</p>
+                                                <p>Be sure to not have running services you do not need. A good practice is to put the start mode of those services to <b>Disabled</b> or <b>Manual</b> if you think you may need it at some point.</p>
+                                                <p><b>Important!</b>
+                                                    <br />The Sage X3 Adxmin service is required only when configuring the solution and thus can be put to <b>Manual</b> start mode.</p>
+                                                <h2 id="Systemsecurity" data-magellan-target="Systemsecurity"><a id="System"></a>System security</h2>
+                                                <p>The filesystem security of the different servers should be implemented with the relevant tools (antivirus, network access security, etc.) at the right level. Make sure these tools do not cause performance issues. For example, avoid running a continuous antivirus scan on a database server.</p>
+                                                <p>On application and process servers, the SAFE X3 engine runs in a sandbox. This allows you to control the system commands that are launched, and the location where files can be read, created, modified, or deleted. This prevents malicious code written for the execution engine from running operating system commands (by using System instructions).</p>
+                                                <p>Setting up the sandbox is recommended, especially if you operate in a Cloud, or if the SAFE X3 code is supplied by external vendors.</p>
+                                                <p>Please, refer to the <a href="getting-started_sandbox-configuration-file.html">Sandbox configuration file</a> documentation to ajust it according to your needs.</p>
+                                                <h2 id="Authentication" data-magellan-target="Authentication"><a id="Authentication"></a>Authentication</h2>
+                                                <h2 id="Useadvancedauthentication" data-magellan-target="Useadvancedauthentication">Use advanced authentication</h2>
+                                                <p>Sage X3 supports several identity providers, such as:</p>
+                                                <ul>
+                                                    <li>Sage ID</li>
+                                                    <li><a href="administration-reference_oauth2.html">OAuth2</a> (with a <a href="how-to_how-to-set-up-gmail-account-sso.html">Gmail account</a> or a <a href="how-to_how-to-set-up-microsoft-account-sso.html">Microsoft account</a>)</li>
+                                                    <li><a href="administration-reference_saml2.html">Saml2</a>
+                                                    </li>
+                                                    <li><a href="administration-reference_ldap.html">LDAPS</a> (for on-premise installations only)</li>
+                                                </ul>
+                                                <p>This improves security by offloading the management of user credentials that do not transit through the ERP (when integrated with Oauth2 identity providers or with Sage ID). It also improves the user experience by providing a Single Sign-On (SSO) experience.</p>
+                                                <p><b>Note:</b> You can securely store the credentials you generate in password managers. You can use any of the authentication methods described above, but you should never <b>use the basic authentication in production</b>, as it is only intended for demos.</p>
+                                                <p><b>Caution:</b> A user account should never be shared to ensure traceability of user actions.</p>
+                                                <h2 id="Usestrongpasswords" data-magellan-target="Usestrongpasswords">Use strong passwords</h2>
+                                                <p>Make sure you change the default Sage X3 Administrator password to a strong password after the application setup. Please consider the following recommendation as a minimum:</p>
+                                                <ul>
+                                                    <li>Contain 12 characters minimum (the longer the password is, the stronger it is)</li>
+                                                    <li>Use a combination of digits, uppercase and lowercase letters, and symbols (such as @ # $ % ! ? &amp;, etc.)</li>
+                                                    <li>Not contain words that can be found in dictionaries or that are part of the username</li>
+                                                    <li>Not contain a keyboard pattern such as <b>qwerty</b></li>
+                                                    <li>Not contain your date of birth</li>
+                                                </ul>
+                                                <h2 id="Authorization" data-magellan-target="Authorization"><a id="Authorization"></a>Authorization</h2>
+                                                <h2 id="Onthewebplatform" data-magellan-target="Onthewebplatform">On the web platform</h2>
+                                                <p>Once authenticated, users are connected to the platform with a user login account. Each user belongs to at least one group, and each group is associated with a role.</p>
+                                                <p>When logging in, the user can select the role to use among the list of authorized roles. This role is linked to a security profile which is associated with a level (0 to 99, 0 being the most powerful).</p>
+                                                <p>The security profile defines the privileges a user has on platform operations. Make sure you assign a set of roles with appropriate security profiles to each user. As the platform administrator, you can define as many roles and security profiles as necessary.</p>
+                                                <p><b>Always apply the least privilege principle when designing your roles.</b>
+                                                </p>
+                                                <p>A security profile can grant twelve different privileges, of which the following are critical for security:</p>
+                                                <ul>
+                                                    <li><b>myProfile</b> allows users to modify information related to their own identification (name, password, email address, photo). It also grants them read access to their own context (sessions they opened, endpoints they have access to, etc.). This access can be granted to most users.</li>
+                                                    <li><b>users</b> allows the definition of new users and should be granted only to platform administrators. However, modification rights can be granted to some key users. They will then be able to modify the information associated to users with lower security profiles.</li>
+                                                    <li><b>technicalSettings</b> allows access to the technical configuration (endpoints, Sage X3 solutions, etc.). It should only be granted to the persons in charge of the platform technical administration.</li>
+                                                    <li><b>Development</b> allows access to resources for users working on extending the standard by bespoke or vertical developments.</li>
+                                                </ul>
+                                                <p><b>Note</b>: <b>technicalSettings</b> is typically a privilege that should be assigned to a single <b>ADMIN</b> role.</p>
+                                                <h2 id="Onthefolders" data-magellan-target="Onthefolders">On the folders</h2>
+                                                <p>What we call a folder is the repository that contains business data related to one or more companies having one or more sites (each company is linked to a legislation code). A folder is identified as an endpoint on the platform. Groups specify the endpoints a user is allowed to connect to. This list is critical for security.</p>
+                                                <p><b>Caution:</b> Make sure each user is only granted access to the appropriate list of folders.</p>
+                                                <p>A user who connects to the platform is identified by a user code in each folder. By default, the user code and the user login account are the same. However, it is possible to redefine the user code for each endpoint on the user administration page.</p>
+                                                <p>In each folder, it is possible to define access to the information at a very detailed level:</p>
+                                                <ul>
+                                                    <li>A user has a function profile, and can have read, write, delete, and execute access on every function. If the function manages data associated with companies or sites, the authorizations can be set up differently for each company and/or site.</li>
+                                                    <li>Row level permissions filter data on any property. For example, you can grant access to only a list of customers for the sales order to a customer.</li>
+                                                    <li>Access codes restrict the access to records or properties so that only selected users can see and edit them.</li>
+                                                    <li>Access to reports can be filtered with access codes for each user and report. However, it is simpler to manage them by groups, and grant rights for each group.</li>
+                                                </ul>
+                                                <p>Thanks to these features, you can set up access to critical data differently on each folder for a given user.</p>
+                                                <p><b>Caution:</b> Make sure you maintain these rules over time. Keep them as simple as possible, without compromising the security policy you need to enforce.</p>
+                                                <p>For each folder, there is a main administrator user code. It is <b>ADMIN</b> by default, but you can change it by setting up the <b>ADMUSR</b> parameter. Only use this user code for tasks that require it.</p>
+                                                <p><b>Note:</b> It is recommended to use <b>ADMCA</b> instead of <b>ADMIN</b> according to the principle of least privilege. <b>ADMCA</b> is an admin user with a restricted set of functions.</p>
+                                                <h2 id="Webserverconfiguration" data-magellan-target="Webserverconfiguration">Web server configuration</h2>
+                                                <p>The security of the web server is configurable through the <b>nodelocal.js</b> file, we recommend to:</p>
+                                                <ul>
+                                                    <li>Set <code>adminUserRestrict</code> to <code>true</code>, to restrict the use of the X3 <b>ADMIN</b> user code to the <b>admin</b> login.</li>
+                                                    <li>Set <code>upload.allowedTypes</code> to a value that restricts the media types that can be uploaded to the server. We recommend the value: <code>/^(application(?!(\/x-(msdownload|dosexec)))|image|text\/(plain|rtf))(\/|;|$)/</code></li>
+                                                </ul>
+                                                <p>See the <a href="getting-started_configuration-file-nodelocal.html">nodelocal</a> configuration file for more details on these parameters and how to set them.</p>
+                                                <h2 id="Developmentsecurityconsiderations" data-magellan-target="Developmentsecurityconsiderations"><a id="Development"></a>Development security considerations</h2>
+                                                <p>Sage X3 is supplied with a developer workbench that allows bespoke development. This can bring additional security threats that you can address with the following best practices:</p>
+                                                <h2 id="Disabledevelopmentcapabilitiesinproduction" data-magellan-target="Disabledevelopmentcapabilitiesinproduction">Disable development capabilities in production</h2>
+                                                <p>Development mode is intended to be used in a dedicated environment with no access to any production servers.</p>
+                                                <ul>
+                                                    <li>Disable the <b>development</b> privilege of the security profile of all roles.</li>
+                                                    <li>Remove the access to the <b>ADOTRT</b> function in all X3 function profiles.</li>
+                                                </ul>
+                                                <h2 id="SQLinjection" data-magellan-target="SQLinjection">SQL injection</h2>
+                                                <p>The SAFE X3 language includes ExecSQL and SQL functions with an argument that can be evaluated. All data used to build SQL statements must be properly escaped.</p>
+                                                <h2 id="HTMLinjection" data-magellan-target="HTMLinjection">HTML injection</h2>
+                                                <p>This security issue can only happen when additional graphical components are added to the user interface. At the moment, the extensibility tool is only available for early adopters. Detailed security guidelines will be given to developers, but they are out of the scope of this document. A dedicated security audit will be done on additional components supplied by external providers to prevent this risk.</p>
+                                                <h2 id="Audit" data-magellan-target="Audit"><a id="Audit"></a>Audit</h2>
+                                                <p>Sage X3 includes a set of tools that might be activated in production. This is a best practice after a period of operation, especially with the following tools:</p>
+                                                <ul>
+                                                    <li>An audit trail of all the operations. The parameter that activates this audit trail is called TABTRA. According to its value, you can set up a recording on all the operations, or only on the deletion/renaming operations. It can be set up at the user level, or more globally.</li>
+                                                    <li>An audit collection (from version 12) can be set-up on administrative data in MongoDB.</li>
+                                                    <li>Database triggers. They can be set on tables to store previous and new values of given columns, based on simple conditions.</li>
+                                                    <li>A workflow engine. It can store any information related to triggering events that can be set up with various conditions in a history table.</li>
+                                                </ul>
+                                                <p><b>Caution:</b> Using some of these tools (especially the first two) can significantly impact performance. It is therefore recommended to use them only for a short period of time, and for a limited number of users, when applicable.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SecurityBestPractices"> Security Best Practices
+</a>
+                                                    </li>
+                                                    <li><a href="#Generalsecurityguidelines">General security guidelines</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#SecuringSageX3onpremisearchitectureisnotoptional">Securing Sage X3 on-premise architecture is not optional</a>
+                                                        </li>
+                                                        <li><a href="#Generalguidelines">General guidelines</a>
+                                                        </li>
+                                                        <li><a href="#UseHTTPSforproductioninstances">Use HTTPS for production instances</a>
+                                                        </li>
+                                                        <li><a href="#Keepyoursystemsuptodate">Keep your systems up to date</a>
+                                                        </li>
+                                                        <li><a href="#Usenetworklayercontrols">Use network layer controls</a>
+                                                        </li>
+                                                        <li><a href="#Recommendedonpremisesdeploymentarchitecture">Recommended on-premises deployment architecture</a>
+                                                        </li>
+                                                        <li><a href="#Networklayercontrol">Network layer control</a>
+                                                        </li>
+                                                        <li><a href="#Networksecurity">Network security</a>
+                                                        </li>
+                                                        <li><a href="#Databasesecurity">Database security</a>
+                                                        </li>
+                                                        <li><a href="#Relationaldatabase">Relational database</a>
+                                                        </li>
+                                                        <li><a href="#MongoDBdatabase">MongoDB database</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#PlatformSecurity">Platform Security</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Secureyourserverswithtightuseraccessrights">Secure your servers with tight user access rights</a>
+                                                        </li>
+                                                        <li><a href="#Stopordisableservicesthatarenotrequired">Stop or disable services that are not required</a>
+                                                        </li>
+                                                        <li><a href="#Systemsecurity">System security</a>
+                                                        </li>
+                                                        <li><a href="#Authentication">Authentication</a>
+                                                        </li>
+                                                        <li><a href="#Useadvancedauthentication">Use advanced authentication</a>
+                                                        </li>
+                                                        <li><a href="#Usestrongpasswords">Use strong passwords</a>
+                                                        </li>
+                                                        <li><a href="#Authorization">Authorization</a>
+                                                        </li>
+                                                        <li><a href="#Onthewebplatform">On the web platform</a>
+                                                        </li>
+                                                        <li><a href="#Onthefolders">On the folders</a>
+                                                        </li>
+                                                        <li><a href="#Webserverconfiguration">Web server configuration</a>
+                                                        </li>
+                                                        <li><a href="#Developmentsecurityconsiderations">Development security considerations</a>
+                                                        </li>
+                                                        <li><a href="#Disabledevelopmentcapabilitiesinproduction">Disable development capabilities in production</a>
+                                                        </li>
+                                                        <li><a href="#SQLinjection">SQL injection</a>
+                                                        </li>
+                                                        <li><a href="#HTMLinjection">HTML injection</a>
+                                                        </li>
+                                                        <li><a href="#Audit">Audit</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 febrero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

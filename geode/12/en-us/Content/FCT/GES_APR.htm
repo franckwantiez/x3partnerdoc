@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Addition of graphic libraries for the process generator</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>The graphic <a href="../AFC/GESAPR.htm"><span style="color: #0000ff;">process editor</span></a>&#160;aims to define interactive processes used in the portal. This editor is a flash component capable of creating pages that include texts, images and animated components so as to display the user's business processes in a graphic manner.</p>
+                                                            <p>These graphic components can feature links pointing to functions of the software package, other processes or help pages. They can also trigger animation processes (display or disappearance of parts of the process, for instance).</p>
+                                                            <p>The editor can be used to select a range of images in a library given by default. This library is called 'Standard Sage'. It is the first item of a scroll-down list that can be found in the selection window of the graphic components:</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GES_APR_libraries.jpg" alt="./GES_APR_libraries.jpg" keeps="true" realloc="./GES_APR_libraries.jpg" />
+                                                            </p>
+                                                            <p>As shown in this screenshot, the available images are organized as follows:</p>
+                                                            <ul>
+                                                                <li>libraries (here, Sage standard and Custom vol 1)</li>
+                                                                <li>these libraries include groups (e.g. Vector shapes, Logos, Theme, Buttons, ... )</li>
+                                                                <li>these groups include themes (Basic shapes, Stars), i.e. collections of images displayed in a thumbnail browser.</li>
+                                                            </ul>
+                                                            <p>It is possible to add other libraries, groups and themes. They will be displayed in the <i>libraries</i> window shown above.</p>
+                                                            <p>This requires to perform some operations manually on the application server:</p>
+                                                            <ul>
+                                                                <li>create directories and sub-directories for the libraries, groups and themes.</li>
+                                                                <li>upload images in the themes' directories.</li>
+                                                                <li>create configuration files (written in JSON); these files describe the tree structures of the libraries (<b>_param.txt</b>), groups (<b>sgx_libsinfo.txt</b>), and themes (<b>list.txt</b>).</li>
+                                                            </ul>
+                                                            <p>This documentation's purpose is to describe how to proceed.</p>
+                                                            <p><b>NB: </b>
+                                                            </p>
+                                                            <ul>
+                                                                <li><b>It should be noted that the manual configuration phase requires to write in JSON code, it is therefore advised to turn to someone familiar with JSON or JAVASCRIPT. Otherwise, it is advised to use an editor capable of indenting JSON code in order to see a clearer structure.</b>
+                                                                </li>
+                                                                <li><b>It is important to carefully respect cases (upper/lower) of files' names as defined above.</b>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_10_10"></a>
+                                                            <h2 class="g1" id="Additionofgraphiclibrariesfortheprocessgenerator" data-magellan-target="Additionofgraphiclibrariesfortheprocessgenerator">Addition of graphic libraries for the process generator</h2>
+                                                            <p>
+Process, Graphics, Annex, Technique
+        </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="JSONnotation" data-magellan-target="JSONnotation">JSON notation</h2>
+                                                            <p>JSON notation, i.e. the notation used to define structures in Javascript, uses the following syntaxes:</p>
+                                                            <ul>
+                                                                <li>a structure is composed of properties and their values, between curly brackets and looks as such:</li>
+                                                            </ul>
+                                                            <p>{ "prop1" : "value 1" , "prop2" : "value2", "prop3" : 25 }</p>
+                                                            <p>Here, the structure has 3 properties called respectively prop1, prop2 and prop3, alphanumerical values called value1 and value2 and a numerical value (25).</p>
+                                                            <ul>
+                                                                <li>a grid is written between square brackets:</li>
+                                                            </ul>
+                                                            <p>[ "indice_0", "indice_1", "indice_2, "indice_3" ] being a grid composed of 4 elements.</p>
+                                                            <ul>
+                                                                <li>The two notations can naturally be merged as follows:</li>
+                                                            </ul>
+                                                            <p>{ [ { "age": 25, "name" : "Martin" },&#160;&#160;{ "age": 67, "name" : "Emile" } ], "number" : 2 }</p>
+                                                            <p>being a structure composed of a grid that has 2 structures and another value ('number'). Here, each sub-structure has two fields: 'age' and 'name'.</p>
+                                                            <p>It should be noted that, in JSON, a string should never be cut by a line break (carriage return).</p>
+                                                            <p>As a result, the following synthax:</p>
+                                                            <h5>{ "name" :</h5>
+                                                            <h5>"Martin" }</h5>
+                                                            <p>is correct. Whereas the following:</p>
+                                                            <h5>{ "name" : "Mar</h5>
+                                                            <h5>tin" }</h5>
+                                                            <p>is not.</p>
+                                                            <p>Moreover, it is important to respect cases (upper/lower) for the properties' names, as they have great importance (properties <b>"Name"</b> and <b>"name"</b> are not the same).</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Basedirectory" data-magellan-target="Basedirectory">Base directory</h2>
+                                                            <p>The base directory is a sub-directory of the X3_PUB directory. It contains the specific librairies and the configuration files. The X3_PUB directory can be found using the calculator via the following expression:</p>
+                                                            <p>filpath("","","","X3_PUB")</p>
+                                                            <p>From there, the sub-directory can be found:</p>
+                                                            <p>X3_ROOT\X3CLI\XBLOCK\&#160;&#160;&#160;&#160;&#160; (on Windows)</p>
+                                                            <p>X3_ROOT/X3CLI/XBLOCK/&#160;&#160;&#160;&#160;&#160; (on Unix or Linux)</p>
+                                                            <p>This directory has a FLASH sub-directory which contains the standard graphic components. The specific components will be created in a directory called FLASH_CUSTOM, located at the same level (in the XBLOCK directory). It this directory does not exist yet, it must be created.</p>
+                                                            <p><b>NB: there is a FLASH_CUSTOMREF directory in the sub-directory FLASH. If FLASH_CUSTOM does not exist, it is advised to copy FLASH_CUSTOMREF in th XBLOCK directory and rename it. This way, the user will have examples of configuration files as described in the following paragraph.</b>
+                                                            </p>
+                                                            <p>Here, FLASH_CUSTOM is considered as the components' base directory which contents shall be described.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Subdirectoriesandcontents" data-magellan-target="Subdirectoriesandcontents">Sub-directories and contents</h2>
+                                                            <p>FLASH_CUSTOM's sub-directories are the following:</p>
+                                                            <ul>
+                                                                <li>a directory called <b>_params</b> has the configuration file <b>_param_main.txt</b> which shall be left as such.</li>
+                                                                <li>an other directory called <b>FlowCharting</b> with 3 sub-directories:</li>
+                                                                <ul>
+                                                                    <li>sub-directories <b>PadDev</b> and <b>PadPlayer</b>. Each of these two directories have a configuration file called <b><i>_params.txt</i></b>. Eventhough these two files might be technically different, it is advised to configurate them the same way. Their contents, written in JSON, give the name and location of the user's libraries (NB: each library is a folder located in the <b>libraries_custom</b> folder).</li>
+                                                                    <li>the sub-directory <b>libraries_custom</b> contains the graphic libraries.</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>The directory <b>libraries_custom</b> contains a sub-directory for each graphic library. This sub-directory contains a sub-directory for each group (a group being a themes list) and a sub-directory per theme (a theme being a collection of images). The images can be found in this last directory. These files can have the following extensions: .jpg, .gif, .png. This directory also contains a configuration filed called <b>list.txt</b> which gives the list of image files in the directory.</p>
+                                                            <p>The following presentation give the example of the use of this software for a group of companies. Such as:</p>
+                                                            <ul>
+                                                                <li>a library per company: <i>MYCORP</i>, <i>MASOC...</i><i>MEINGMBH</i></li>
+                                                                <li>a group list in each library: <i>pictures</i>, <i>images</i>, <i>backgrounds</i>, <i>logos </i>for instance</li>
+                                                                <li>and themes in each group. For the <i>pictures</i> group, there could be a <i>Sites</i> theme with pictures from different sites of the company, a <i>People</i> theme with pictures of different persons from the company, a <i>Products</i> theme with pictures of products and so on.</li>
+                                                            </ul>
+                                                            <p>The tree structure should be as follows:</p>
+                                                            <p />
+                                                            <table width="614" border="0" style="WIDTH: 614px;HEIGHT: 513px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;MYCORP</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p />
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>pictures</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p />
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>People</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;MARTIN.jpg</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>HENRY.png</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>DAVID.gif</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Sites</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>PARIS.gif</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>LONDON.jpg</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;images</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>schemes</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>MAP.png</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>MASOC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Fichierparamstxt" data-magellan-target="Fichierparamstxt">Fichier _params.txt</h2>
+                                                            <p>This file is in two directories: <b>PadDev</b> and <b>PadPlayer</b>. It contains the names and locations of the user's libraries, as shown in the following example:</p>
+                                                            <p>{</p>
+                                                            <p>&#160; "bibOriginsInfo" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MYCORP"},</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA" , "label" : "Société MYCORP"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MYCORP Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MYCORP",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_1"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MASOC"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MASOC Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MASOC",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_2"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },</p>
+                                                            <p>...</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MEINGMBH"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MEINGMBH Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MEINGMBH",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_M"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "r" : 0,</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "v" : 1</p>
+                                                            <p>}</p><a id="MIN_70_10"></a>
+                                                            <p>In the previous file:</p>
+                                                            <ul>
+                                                                <li>"<b>bibOriginsInfo</b>" is a reference to a grid which elements (between curly brackets) each contain the characteristics of a library. As for every grid element written in JSON, these are separated by commas (NB: there is no comma after the last element).</li>
+                                                                <li>a library can be characterized by the following information:</li>
+                                                                <ul>
+                                                                    <li>"<b>labels</b>" - the titles that will be displayed by the process editor: the editor itself is a grid of structures (one element per connexion language code, the language code is itself followed by the entitled element)</li>
+                                                                    <li>"<b>originSubpath</b>" - the path of the sub-directory where the library is stored</li>
+                                                                    <li>"<b>id</b>" - a free yet unique user name</li>
+                                                                    <li>"<b>r</b>" and "<b>v</b>" - two parameters that should not me modified.</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>This way, in the previous file, the base directories of the libraries are MYCORP, MASOC, MEINGMBH.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Fichiersgxlibsinfotxt" data-magellan-target="Fichiersgxlibsinfotxt">Fichier sgx_libsinfo.txt</h2>
+                                                            <p>This file is located in the base directory of the library (<b>MYCORP </b> in the previous example), and contains a description -written in JSON- of the library structure. Proceeding on the same example, the contents would be as follows:</p>
+                                                            <p>{&#160; "libsinfo" :<br />&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "biblist" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"bibid" : "mycorp_1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "people",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "People" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Personnes" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "lang" : "GER", "label" : "Leute"}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />....&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "bibid" : "mycorp_N",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "sites",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":30,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":40,&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "Sites" },<br />...<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "lang" : "GER", "label" : "Standorte"}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [ <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "Pictures" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Photos" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER", "label" : "Fotos" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familysubpath":"pictures",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familyid":"pic_mycorp"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "biblist" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "bibid" : "mycorp_2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "schemas",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "Schemes" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Schemas" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" : <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "Images" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Images" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER", "label" : "Bilder" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familysubpath":"images",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familyid":"img_mycorp"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160; "oid" : "mycorp",<br />&#160;&#160; "r" : 0,<br />&#160;&#160; "v" : 1<br />}</p><a id="MIN_90_10"></a>
+                                                            <p>In the previous file:</p>
+                                                            <ul>
+                                                                <li>"<b>libsinfo</b>" is a reference to a grid which elements each contain the characteristics of a group. As for every grid element written in JSON, these are separated by commas (NB: there is no comma after the last element).</li>
+                                                                <li>a group can be characterized by the following information:</li>
+                                                                <ul>
+                                                                    <li>a list of themes that can be identified by "<b>bibid</b>" (the sub-directory of the theme is stored in <b>"catsubpath"</b>), characteristics <b>"h"</b> and <b>"w"</b> about the thumbnails' sizing, a library type called <b>"type"</b> that contains <b>"file"</b> if a list of graphic files is described in the theme's directory (NB: an other value <b>"swf"</b> is possible if a list of swf files is described), and a grid of labels per language in ordre to name the theme.</li>
+                                                                    <li>a grid of descriptions per language in order to name the group.</li>
+                                                                    <li>a path for the group ("<b>familysubpath</b>" - corresponds to the sub-directory path where the group is stored).</li>
+                                                                    <li>"<b>familyid</b>" - a free yet unique user name</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Finally, the last parameters of the file</p>
+                                                            <ul>
+                                                                <li>"<b>r</b>" and "<b>v</b>" - two parameters that should not me modified.</li>
+                                                                <li>"<b>oid</b>" - unique reference to the library.</li>
+                                                            </ul>
+                                                            <p>This way, in the example, there are the <i>pictures</i> group (with the themes <i>personnes</i> and <i>sites</i>) and the <i>images</i> group (with the theme <i>schémas</i>).</p>
+                                                            <p>Parameters <b>"h"</b> and <b>"v"</b> define the thumbnails' size in pixel that will be displayed in the image browser for a particular theme. NB: their default value is 40.</p>
+                                                            <p>For instance, a thumbnail list looks as follows:</p>
+                                                            <ul>
+                                                                <li>40x40 size:</li>
+                                                            </ul>
+                                                            <p>&#160;<img src="../Resources/Images/GES_APR_img4040.jpg" alt="./GES_APR_img4040.jpg" keeps="true" realloc="./GES_APR_img4040.jpg" /></p>
+                                                            <ul>
+                                                                <li>size 180x60:</li>
+                                                            </ul>
+                                                            <p>&#160;<img src="../Resources/Images/GES_APR_img18060.jpg" alt="./GES_APR_img18060.jpg" keeps="true" realloc="./GES_APR_img18060.jpg" /></p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_100_10"></a>
+                                                            <h2 class="g1" id="Fichierlisttxt" data-magellan-target="Fichierlisttxt">Fichier list.txt</h2>
+                                                            <p>This file is located in the base directory of a theme. It contains a list of the images. Its structure is quite simple:</p>
+                                                            <p>{&#160; "files" :<br />&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "name" : "MARTIN.jpg" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "name" : "HENRY.png" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "name" : "DAVID.gif" }<br />&#160;&#160;&#160;&#160;&#160;&#160;]&#160;<br />}</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_110_10"></a>
+                                                            <h2 class="g1" id="Creationofsupplementarylevelsinthehierarchy" data-magellan-target="Creationofsupplementarylevelsinthehierarchy">Creation of supplementary levels in the hierarchy</h2>
+                                                            <p>It is possible to add other levels in the hierarchy structure of the library, group or theme so as to have a structure with more than two levels. </p>
+                                                            <p>For instance, based on the previous hierarchy, a Map directory could be added. This directory itself could have sub-directories for countries, regions or states, departments or counties, towns and different maps of a same town in each folder. The folders would be organized as such:</p>
+                                                            <p>MYCORP/images/map/USA/tenessee/hamilton/chattanooga (with different maps of the town)</p>
+                                                            <p>To achieve this, the user has to:</p>
+                                                            <ul>
+                                                                <li>create the corresponding folder hierarchy structures </li>
+                                                                <li>modify the two files <b>sgx_libinfo.txt </b> so as to modify the definition of the sub-folders and their corresponding titles:</li>
+                                                                <ul>
+                                                                    <li>"catsubpath":"images/map/USA/tenessee/hamilton/chattanooga"</li>
+                                                                    <li>"label":"images;map;USA;tennessee;hamilton;chattanooga" </li>
+                                                                    <li>"label":"Images;Maps;US Country;Tennesse State;Hamilton County;City of Chattanooga"</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>It should be noted that, eventhough the user wants to multiply the number of sub-folders this way, they ought to be described them in full length in the list which could be tedious. Moreover, only the last level of the list can contain files (and the corresponding <b>list.txt</b> file).</p>
+                                                            <p>Nevertheless, it is possible to have different levels of hierarchy structure per branch. This way, for instance, it is possible to have both the hierarchy structure above and the following:</p>
+                                                            <p>MYCORP/pictures/animals/mammals/cows (the folder contains pictures of cows)</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_120_10"></a>
+                                                            <h2 class="g1" id="Archivegeneration" data-magellan-target="Archivegeneration">Archive generation</h2>
+                                                            <p>Once the previous modifications have been operated, it is possible to use the libraries that have been created directly on the server tree structure without any restrictions in web mode.</p>
+                                                            <p>Nevertheless, in order to use them in client-server mode, it is necessary to create an archive file (named XCLI.tar) with all the files located in the FLASH_CUSTOM directory. </p>
+                                                            <p>This is done for a <a href="ARCHFLASH.htm"><span style="color: #0000ff;">dedicated</span></a> utility.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Additionofgraphiclibrariesfortheprocessgenerator">Addition of graphic libraries for the process generator</a>
+                                                    </li>
+                                                    <li><a href="#JSONnotation">JSON notation</a>
+                                                    </li>
+                                                    <li><a href="#Basedirectory">Base directory</a>
+                                                    </li>
+                                                    <li><a href="#Subdirectoriesandcontents">Sub-directories and contents</a>
+                                                    </li>
+                                                    <li><a href="#Fichierparamstxt">Fichier _params.txt</a>
+                                                    </li>
+                                                    <li><a href="#Fichiersgxlibsinfotxt">Fichier sgx_libsinfo.txt</a>
+                                                    </li>
+                                                    <li><a href="#Fichierlisttxt">Fichier list.txt</a>
+                                                    </li>
+                                                    <li><a href="#Creationofsupplementarylevelsinthehierarchy">Creation of supplementary levels in the hierarchy</a>
+                                                    </li>
+                                                    <li><a href="#Archivegeneration">Archive generation</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

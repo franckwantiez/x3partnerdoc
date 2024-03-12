@@ -1,0 +1,786 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="[Supervisor]" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Acréscimo de livrarias gráficas para o gerador de processo</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p><a href="../AFC/GESAPR.htm"><span style="color: #0000ff;">O editor de processo</span></a>&#160;gráfico permite definir os processos interativos utilizados no portal. Este editor é um componente "flash" a mesmo de criar as páginas dos textos, das imagens, dos componentes animados, afim de apresentar graficamente os processos ofício de um utilizador.</p>
+                                                            <p>Estes componentes gráficos podem integrar as relações versus as funções do software, versus outros processos, versus as páginas de ajuda...assim que desencadear os processos de animação (aparição / desaparição de uma parte do processo por exemplo).</p>
+                                                            <p>O editor permite selecionar um conjunto de imagens numa biblioteca fornecida por defeito. Esta biblioteca se chama "Standard Sage" É o primeiro item de uma lista deslisante que está afixada na caixa de escolhas dos componentes gráficos :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/GES_APR_libraries.jpg" alt="./GES_APR_libraries.jpg" keeps="true" realloc="./GES_APR_libraries.jpg" />
+                                                            </p>
+                                                            <p>Assim que se vê sobre esta cópia de ecrã, as imagens disponíveis são organizados sob a forma de :</p>
+                                                            <ul>
+                                                                <li>bibliotecas (aqui, Sage standard e "Custom vol 1)</li>
+                                                                <li>contendo os grupos (Vetor sombras, Logos, Temas, Botões ...)</li>
+                                                                <li>eles mesmos contêm os temas (Basic shapes, Stars) que são coleções de imagens se afixando num navegador de vinhetas.</li>
+                                                            </ul>
+                                                            <p>É possível de reacrescentar outras bibliotecas, de outros grupos nestas bibliotecas, e de outros temas que serão visíveis na janela <i>bibliotecas</i> presentes em cima.</p>
+                                                            <p>Isto requer as operações a realizar manualmnte sobre o servidor de aplicação :</p>
+                                                            <ul>
+                                                                <li>criaação dos diretórios e sub-diretórios para as bibliotecas, os grupos e os temas.</li>
+                                                                <li>registo das imagens nos diretórios dos temas</li>
+                                                                <li>criação de ficheiros de configuração (escritos em JSON) que descrevem as arborescência de bibliotecas (<b>_param.txt</b>), de grupos(<b>sgx_libsinfo.txt</b>), e de temas (<b>list.txt</b>).</li>
+                                                            </ul>
+                                                            <p>Esta documentação tem por objetivo descrever a maneira de proceder.</p>
+                                                            <p><b>Notas : </b>
+                                                            </p>
+                                                            <ul>
+                                                                <li><b>Na medida onde esta fase de configuração manual requere a escrita de código JSON, é aconselhado de se endereçar a algum tendo as noções de JSON ou de JAVASCRIPT ou ao menos, por defeito, de utilizar um editor permitindo indentar o código JSON de maneira à fazer claramnte aparecerá a estrutura.</b>
+                                                                </li>
+                                                                <li><b>É importante de respeitar escrupolosamente a caixa (maiúscula/minúscula) dos nomes de ficheiros tais que são definidos no documento a seguir.</b>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_10_10"></a>
+                                                            <h2 class="g1" id="Acréscimodelivrariasgráficasparaogeradordeprocesso" data-magellan-target="Acréscimodelivrariasgráficasparaogeradordeprocesso">Acréscimo de livrarias gráficas para o gerador de processo</h2>
+                                                            <p>
+Processo, Gráficos, Anexo, Técnico.
+        </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="NotaçãoJSON" data-magellan-target="NotaçãoJSON">Notação JSON</h2>
+                                                            <p>A notação JSON, que é a notação permitindo definir as estruturas em javascript, utiliza as sintaxes seguintes :</p>
+                                                            <ul>
+                                                                <li>uma estrutura está apresentada ente chavetas, e contém as propriedades seguidas do seu valor, sob a forma seguinte :</li>
+                                                            </ul>
+                                                            <p>{ "prop1" : "valor 1" , "prop2" : "valor2", "prop3" : 25 }</p>
+                                                            <p>Aqui, descreve-se uma estrutura com 3 propriedades nomeadas sucessivamente prop1, prop2, prop3, com os valores alfanuméricos valor1 e valor2, e um valor numérico (25).</p>
+                                                            <ul>
+                                                                <li>um quadro está apresentado entre parenteses retos:</li>
+                                                            </ul>
+                                                            <p>[ "indice_0", "indice_1", "indice_2, "indice_3" ] representa um quadro contendo 4 elementos.</p>
+                                                            <ul>
+                                                                <li>As duas notações podem bem entendido se em redor, por exemplo :</li>
+                                                            </ul>
+                                                            <p>{ [ { "age": 25, "nome" : "Martin" },&#160;&#160;{ "age": 67, "nome" : "Emile" } ], "número" : 2 }</p>
+                                                            <p>representa uma estrutura contendo um quadro de 2 estruturas, seguidas por um outro valor ("número"). Cada sub-estrutura contém aqui dois campos, "idade" e "nome".</p>
+                                                            <p>Falta referir que em JSON, não falta nunca cortar uma cadeia por um salto de linha (devolução carruagem)</p>
+                                                            <p>Assim, por exemplo, tanto a sintaxe :</p>
+                                                            <h5>{ "nom" :</h5>
+                                                            <h5>"Martin" }</h5>
+                                                            <p>está correcto, a sintaxe :</p>
+                                                            <h5>{ "nom" : "Mar</h5>
+                                                            <h5>tin" }</h5>
+                                                            <p>não o é.</p>
+                                                            <p>Por outro lado, é importante respeitar a caixa (maiúscula/minúscula) dados por nomes de propriedades, porque são significativos (as propriedades <b>"Nome"</b> e <b>"nome"</b> não são os mesmos)</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Diretóriodebase" data-magellan-target="Diretóriodebase">Diretório de base</h2>
+                                                            <p>O diretório de base no qual se encontra as bicliotecas específicas e os ficheiros de configuração é um sub-directório do directório X3_PUB. O diretório X3_PUB pode ser encontrado, em utilizando a calculadora, e em calculando a expressão seguinte :</p>
+                                                            <p>filpath("","","","X3_PUB")</p>
+                                                            <p>A partir deste diretório, pesquisar-se-á o sub-directório :</p>
+                                                            <p>X3_ROOT\X3CLI\XBLOCK\&#160;&#160;&#160;&#160;&#160; (sob Windows)</p>
+                                                            <p>X3_ROOT/X3CLI/XBLOCK/&#160;&#160;&#160;&#160;&#160; (sob Unix ou Linux)</p>
+                                                            <p>Este diretório contém um sub-directório FLASH, que contém os componentes gráficos standard. Os componentes especificos serão criados numdiretório nomeado FLASH_CUSTOM, situado ao mesmo nível (logo que no diretório XBLOCK). Falta começar para criar este diretório se não existente </p>
+                                                            <p><b>Nota : um diretório FLASH_CUSTOMREF existe num sub-diretório FLASH. Se o diretório FLASH_CUSTOM não existe, é aconselhado de copiar FLASH_CUSTOMREF no directório XBLOCK, depois o renomear. Ter-se-á assim um diretório com os exemplos de ficheiros de configuração tais que o parágrafo seguinte vai os descrever.</b>
+                                                            </p>
+                                                            <p>Considera-se este directório FLASH_CUSTOM como o diretório de base dos componentes, e se descrirá ao presente o conteúdo.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Subdirectórioeconteúdo" data-magellan-target="Subdirectórioeconteúdo">Sub-directório e conteúdo</h2>
+                                                            <p>Os sub-directórios de FLASH_CUSTOM são os seguintes :</p>
+                                                            <ul>
+                                                                <li>um primeiro diretório nomeado <b>_params</b>, no qual se encontra um ficheiro de configuração <b>_param_main.txt</b>, que se deixará em lista. </li>
+                                                                <li>um segundo diretório, nomeado <b>FlowCharting</b>, no qual se encontram 3 sub-directórios :</li>
+                                                                <ul>
+                                                                    <li>os subdiretórios  <b>PadDev</b> e <b>PadPlayer</b>. Estes dois diretórios contém cada um um ficheiro de configuração nomeado <b><i>_params.txt</i></b>. Mesmo se estes dois ficheiros podem tecnicamente ser diferentes, é desaconselhado de os configurar da mesma maneira. O seu conteúdo, escrito em JSON, dá o nome e acondicionamento das suas bibliotecas (nota : cada uma das suas bibliotecas está um dossier num dossier <b>libraries_custom</b>).</li>
+                                                                    <li>o sub-diretório <b>libraries_custom</b> contém as bibliotecas gráficas. </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>o directório <b>libraries_custom</b> contém na sua volta um sub-directório por biblioteca gráfica, e no sub directório, vai-se encontrar um subdiretório por grupo (um grupo sendo uma lista de temas) depois um sub-direcório por tema (um tema sendo uma coleção de imagens) É neste caso o último diretório que se encontra estas imagens, que são ficheiros podem ter uma das extenções seguintes : .jpg, .gif, .png. Encontraremos também um último ficheiro de configuração nomeado <b>list.txt</b>, que dá a lista dos ficheiros imagem presentes no directório.</p>
+                                                            <p>Imaginemos, por exemplo, que o software seja instalado num grupo de sociedades. Poder-se-á então ter :</p>
+                                                            <ul>
+                                                                <li>uma biblioteca por sociedade : <i>MYCORP</i>, <i>MASOC...</i> <i>MEINGMBH</i></li>
+                                                                <li>no caso de biblioteca, uma lista de grupos : <i>fotografias</i>, <i>imagens</i>, <i>backgrounds</i>, <i>logos </i>par exemple</li>
+                                                                <li>em cada grupo, os temas Para o grupo <i>fotografias</i>, poder-se-á dispor de um tema <i>Estabeleicmentos</i>, que contém as fotos dos diferentes estabeleicimentos da sociedade, de um tema <i>"People"</i>, que contém fotos das pessoas da sociedade, de um tema <i>Produtos</i>, que contêmn as fotos dos produtos, etc.</li>
+                                                            </ul>
+                                                            <p>Ter-se-á então uma hierarquia do tipo seguinte :</p>
+                                                            <p />
+                                                            <table width="614" border="0" style="WIDTH: 614px;HEIGHT: 513px;">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;MYCORP</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p />
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>fotografias</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p />
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Pessoal</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;MARTIN.jpg</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>HENRY.png</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>DAVID.gif</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>Estabelecimentos :</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>PARIS.gif</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>LONDON.jpg</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;imagens</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>esquemas</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;list.txt</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>MAP.png</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>MASOC</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>...</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Fichierparamstxt" data-magellan-target="Fichierparamstxt">Fichier _params.txt</h2>
+                                                            <p>Este ficheiro se encontra os dois diretório <b>PadDev</b> e <b>PadPlayer</b>, e dá o nome e acondicionamento das suas bibliotecas, como o mostra o exemplo seguinte :</p>
+                                                            <p>{</p>
+                                                            <p>&#160; "bibOriginsInfo" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MYCORP"},</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA" , "label" : "Société MYCORP"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MYCORP Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MYCORP",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_1"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MASOC"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MASOC Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MASOC",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_2"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },</p>
+                                                            <p>...</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160;&#160;&#160;&#160; {"labels" : </p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Company MEINGMBH"},</p>
+                                                            <p>....</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER" , "label" : "MEINGMBH Gesellschaft" }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"originSubpath" : "../FLASH_CUSTOM/FlowCharting/libraries_custom/MEINGMBH",</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "id" : "identificateur_M"</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;],</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "r" : 0,</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "v" : 1</p>
+                                                            <p>}</p><a id="MIN_70_10"></a>
+                                                            <p>No ficheiro que precede :</p>
+                                                            <ul>
+                                                                <li>"<b>bibOriginsInfo</b>" referência um quadro cujo cada elemento (entre chavetas) contém as características de uma biblioteca. Como todos os elementos de quadro em JSON, estes elementos são separados por uma vírgula (não existem para além do último elemento).</li>
+                                                                <li>uma biblioteca está caracterizada pelas informações :</li>
+                                                                <ul>
+                                                                    <li>"<b>labels</b>", que corresponde ao intitulado a afixar por editor de processo, e que é ele mesmo um quadro de estruturas (um elemento por código de conexão, o código língua sendo seguido do elemento intitulado)</li>
+                                                                    <li>"<b>originSubpath</b>", que corresponde ao caminho do sub-diretório onde se encontra guardada a biblioteca.</li>
+                                                                    <li>"<b>id</b>", que corresponde a um identificador livre mas único.</li>
+                                                                    <li>"<b>r</b>" e "<b>v</b>", que são dois parêmetros a não modificar.</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Assim, no ficheiro precedente, observar-se-á que os directórios de base das bibliotecas são respectivamente MYCORP, MASOC, MEINGMBH.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Fichiersgxlibsinfotxt" data-magellan-target="Fichiersgxlibsinfotxt">Fichier sgx_libsinfo.txt</h2>
+                                                            <p>ESte ficheiro se encontra no diretório de base da biblioteca (<b>MYCORP </b> no exemplo precedente), e contém uma descrição ao formato JSON da estrutura da biblioteca. Em se inspirando do exemplo precedente, ter-se-á um conteúdo tal que este:</p>
+                                                            <p>{&#160; "libsinfo" :<br />&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "biblist" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"bibid" : "mycorp_1",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "people",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "People" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Pessoas" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "lang" : "GER", "label" : "Leute"}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />....&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "bibid" : "mycorp_N",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "sites",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":30,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":40,&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [&#160;&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Estabeleicmentos" },<br />...<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "lang" : "GER", "label" : "Standorte"}<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [ <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Fotografias" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Fotos" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER", "label" : "Fotos" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familysubpath":"pictures",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familyid":"pic_mycorp"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "biblist" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "bibid" : "mycorp_2",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "catsubpath" : "esquemas",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "h":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "w":70,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "type":"file",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" :<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG" , "label" : "Esquemas" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Schemas" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ]<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; },&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],&#160; <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "labels" : <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "ENG", "label" : "Imagens" },<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "FRA", "label" : "Imagens" },<br />....<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; {"lang" : "GER", "label" : "Bilder" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familysubpath":"images",<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "familyid":"img_mycorp"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160; ],<br />&#160;&#160; "oid" : "mycorp",<br />&#160;&#160; "r" : 0,<br />&#160;&#160; "v" : 1<br />}</p><a id="MIN_90_10"></a>
+                                                            <p>No ficheiro que precede :</p>
+                                                            <ul>
+                                                                <li>"<b>libsinfo</b>" referência um quadro cujo cada elemento contém as características de um grupo. Como todos os elementos de quadro em JSON, estes elementos são separados por uma vírgula (não existem para além do último elemento).</li>
+                                                                <li>um grupo está caracterizado pelas informações :</li>
+                                                                <ul>
+                                                                    <li>uma lista de temas num quadro, identificados por "<b>bibid</b>", que guarda o subdiretório do tema em <b>"catsubpath"</b>, das características <b>"h"</b> e <b>"w"</b> de dimensionamento de vinhetas, um tipo de biblioteca nomeado <b>"tipo"</b> que contém <b>"ficheiro"</b> se se descreve uma lista de ficheiros gráficos no diretório do tema (um outro valor possível está <b>"swf"</b> se se descreve uma lista de ficheiros swf), e um quadro de intitulados por língua para nomear o tema.</li>
+                                                                    <li>um quadro de designações por língua que permite dar um nome ao grupo.</li>
+                                                                    <li>um caminho pelo grupo ("<b>familysubpath</b>", que corresponde ao caminho do sub-diretório onde se encontra guardado o grupo).</li>
+                                                                    <li>"<b>familyid</b>", que corresponde a um identificador livre mas único.</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Enfim, encontram-se os últimos parâmetros do ficheiro.</p>
+                                                            <ul>
+                                                                <li>"<b>r</b>" e "<b>v</b>", que são dois parêmetros a não modificar.</li>
+                                                                <li>"<b>oid</b>", que referencia de maneira única a biblioteca.</li>
+                                                            </ul>
+                                                            <p>Assim, neste exemplo, vê-se aaprecer os grupos <i>fotografias</i>(com os temas <i>pessoas</i>, e <i>estabelecimetos</i>) e <i>imagens</i> com o tema <i>esquemas</i>). </p>
+                                                            <p>Os parâmetros <b>"h"</b> e <b>"v"</b>, que definem o tamanho das vinhetas em pixeis aparacem em explorador de imagens para um tema dado, tomando o valor 40 cada um se não estão registados. </p>
+                                                            <p>A título de exemplo, eis que se dá uma lista de vinhetas :</p>
+                                                            <ul>
+                                                                <li>em dimensão 40x40 :</li>
+                                                            </ul>
+                                                            <p>&#160;<img src="../Resources/Images/GES_APR_img4040.jpg" alt="./GES_APR_img4040.jpg" keeps="true" realloc="./GES_APR_img4040.jpg" /></p>
+                                                            <ul>
+                                                                <li>em dimensão 180x60</li>
+                                                            </ul>
+                                                            <p>&#160;<img src="../Resources/Images/GES_APR_img18060.jpg" alt="./GES_APR_img18060.jpg" keeps="true" realloc="./GES_APR_img18060.jpg" /></p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_100_10"></a>
+                                                            <h2 class="g1" id="Ficheirolisttxt" data-magellan-target="Ficheirolisttxt">Ficheiro list.txt</h2>
+                                                            <p>Este ficheiro se encontra no directório de base de um tema, a lista dos ficheiros de imagens que se encontram. Deste facto, a sua estrutura é simples, e toma a forma seguinte :</p>
+                                                            <p>{&#160; "files" :<br />&#160;&#160;&#160;&#160;&#160; [<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "nome" : "MARTIN.jpg" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "nome" : "HENRY.png" }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; { "nome" : "DAVID.gif" }<br />&#160;&#160;&#160;&#160;&#160;&#160;]&#160;<br />}</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_110_10"></a>
+                                                            <h2 class="g1" id="Criaçãodeníveissuplementaresnahierarquia" data-magellan-target="Criaçãodeníveissuplementaresnahierarquia">Criação de níveis suplementares na hierarquia</h2>
+                                                            <p>É possível de reacrescentar os níveis suplemetares na hierarquia das bibliotecas / grupo / tema, afim de ter uma herarquia a mais de dois níveis. </p>
+                                                            <p>Imaginemos por exemplo que, na hierarquia prexcedente, tem-se definido as hierarquias que, a partir das imagens,propõe um diretório de cartas (mapa) nas quais se encontram uma hierarquia país, região ou lista, departamento ou condado, cidade, com diferentes cartas de uma sociedade ao interior de cada dossier. Teremos entõa dossirs tais que :</p>
+                                                            <p>MYCORP/images/map/USA/tenessee/hamilton/chattanooga (contendo dieferentes planos da cidade)</p>
+                                                            <p>Para realizar isto, falta :</p>
+                                                            <ul>
+                                                                <li>criar as hierarquias de dossier correspondentes</li>
+                                                                <li>modificar os dois ficheiros <b>sgx_libinfo.txt </b> afim de modificar a definição dos sub-dossiers assim que os intitulados correspondentes : </li>
+                                                                <ul>
+                                                                    <li>"catsubpath":"images/map/USA/tenessee/hamilton/chattanooga"</li>
+                                                                    <li>"label":"images;map;USA;tennessee;hamilton;chattanooga" </li>
+                                                                    <li>"label":"Images;Maps;US Country;Tennesse State;Hamilton County;City of Chattanooga"</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>É necessário notar que, mesmo se pretenda multiplicar o número de sub-dossiers da sorte, falta os descrever em extenso na lista, o que pode ser fastidicioso. Por outro lado, apenas um nível terminal da lista pode conter os ficheiros (e o ficheiro <b>list.txt</b>correspondente).  </p>
+                                                            <p>É por contra, possível de ter um número de níveis hierarquicos diferem por ramificações. Assim, por exemplo, simultaneamente na hierarquia apresentada em cima, pode-se ter uma hierarquia tal que :</p>
+                                                            <p>MYCORP/pictures/animals/mammals/cows (o dossier em questão contendo as fotos de vacas)</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_120_10"></a>
+                                                            <h2 class="g1" id="Geraçãoarquivo" data-magellan-target="Geraçãoarquivo">Geração arquivo</h2>
+                                                            <p>Uma vez as manipulações precendentes criados, é possível de utilizar diretamente as bibliotecas criadas sobre a arborescência servidor sem nenhuma restrição em modo web.</p>
+                                                            <p>Para os utilizar em modo cliente-servidor, é necessário de criar um arquivo (de nome XCLI.tar( contendo o conjunto dos ficheiros encontrados no diretório FLASH_CUSTOM.</p>
+                                                            <p>Isto é realizado por um utilitário <a href="ARCHFLASH.htm"><span style="color: #0000ff;">dedicado</span></a>.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Acr%C3%A9scimodelivrariasgr%C3%A1ficasparaogeradordeprocesso">Acréscimo de livrarias gráficas para o gerador de processo</a>
+                                                    </li>
+                                                    <li><a href="#Nota%C3%A7%C3%A3oJSON">Notação JSON</a>
+                                                    </li>
+                                                    <li><a href="#Diret%C3%B3riodebase">Diretório de base</a>
+                                                    </li>
+                                                    <li><a href="#Subdirect%C3%B3rioeconte%C3%BAdo">Sub-directório e conteúdo</a>
+                                                    </li>
+                                                    <li><a href="#Fichierparamstxt">Fichier _params.txt</a>
+                                                    </li>
+                                                    <li><a href="#Fichiersgxlibsinfotxt">Fichier sgx_libsinfo.txt</a>
+                                                    </li>
+                                                    <li><a href="#Ficheirolisttxt">Ficheiro list.txt</a>
+                                                    </li>
+                                                    <li><a href="#Cria%C3%A7%C3%A3oden%C3%ADveissuplementaresnahierarquia">Criação de níveis suplementares na hierarquia</a>
+                                                    </li>
+                                                    <li><a href="#Gera%C3%A7%C3%A3oarquivo">Geração arquivo</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janeiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

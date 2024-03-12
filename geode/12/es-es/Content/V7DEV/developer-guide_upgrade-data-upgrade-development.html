@@ -1,0 +1,701 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Upgrade - data upgrade process - development side" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Upgrade - data upgrade process - development side 
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="Upgradedataupgradeprocessdevelopmentside" data-magellan-target="Upgradedataupgradeprocessdevelopmentside"> Upgrade - data upgrade process - development side 
+</h1>
+                                                <p>There are 2 types of data upgrade:</p>
+                                                <ul>
+                                                    <li>Upgrade for tables with small volumes: DOSMAJ.AMAJ and MAJ subprog </li>
+                                                    <li>Transactions table upgrade: UUMGxxxYYNN procedures</li>
+                                                </ul>
+                                                <p><b>Table of contents</b>
+                                                </p>
+                                                <p><b><a><a href="#structure1">1 - Upgrade for tables with small volumes </a></a></b>
+                                                </p><b></b>
+                                                <p><b><a><a href="#structure2">2 - Transactions table upgrade </a></a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure21">2 -1 - Control procedures</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure22">2 -2 - Pre-upgrade procedures</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure23">2 -3 - Temporary tables creation</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure24">2 -4 - Transactions table upgrade processing</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure241">2 -4 -1 - Upgrade plan</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure242">2 -4 -2 - Upgrade procedures</a></b>
+                                                </p><b></b>
+                                                <p><b><a href="#structure243">2 -4 -3 - Upgrade procedure development</a></b>
+                                                </p><b></b>
+                                                <p><a href="#structure2431">2 -4 -3 -1 - Preliminary lines</a>
+                                                </p>
+                                                <p><a href="#structure2432">2 -4 -3 -2 -Reset to zero subprogram</a>
+                                                </p>
+                                                <p><a href="#structure2433">2 -4 -3 -3 -Update subprogram</a>
+                                                </p>
+                                                <h1 id="" data-magellan-target=""><a id="structure1"></a>
+                                                </h1>
+                                                <p><strong>1 - Upgrade for tables with small volumes: DOSMAJ.AMAJ and MAJ subprog</strong> </p>
+                                                <p>The correspondance between upgrade version variables (GMIGX3VERxx) and release is done in TRTMIGTABX3 -$DEF_VERSIONSX3</p>
+                                                <p>Remark: Control procedures and pre-upgrade procedures executed on the source folder before upgrading don't work on these tables.</p>
+                                                <p>1) The structure of these tables is updated with the new fields. The new index and the removed fields are saved in this phase: MAJDIC from SUPMAJxx</p>
+                                                <p>2) Some fields in Supervisor and in the application tables are updated depending on the gap between two successive versions. If a column of a table needs to be removed between two releases and the corresponding data is required to be calculated or to be updated data in another column, then the corresponding update has to be done in this step because the columns will be removed before the second step of updates (MAJ subprog).</p>
+                                                <ul>
+                                                    <li>AMAJ from SUPMAJxx process </li>
+                                                    <li>ATRCMAJxx from TRCMAJxx process (common data)</li>
+                                                    <li>AxxxMAJxx from xxxMAJxx process (for each module)</li>
+                                                </ul>
+                                                <p>If you upgrade from V5 to Update 9, each AMAJ procedure from DOSMAJ30 to DOSMAJ60 is executed sequentially:<br />DOSMAJ30.AMAJ then DOSMAJ31.AMAJ ...</p>
+                                                <p>If the folder validated is an historical folder, the upgrade is done only if the table is an historical table. This set up is done in the normal folder: APARHIS using the ISHISTFOLD function from DOSSUB to check. If the folder is an historical one, use the ISVIEW function from DOSVUE to check if the table is an historical table.</p>
+                                                <p>Therefore, there are two situations:</p>
+                                                <ul>
+                                                    <li>The table can't be an historical table. In the historical folder, it's a view pointing on the table in the historised folder (test with ISVIEW function from DOSVUE process). The table upgrade can only be done if the folder is not an historical table.</li>
+                                                    <li>The table is an historised table. In most cases the upgrade update will be the same as for a non historical folder.</li>
+                                                </ul>
+                                                <p>You can refer to the AMAJ procedure in FASMAJ60 process. AMAJ_BUI_604 is never called when the folder to be upgraded is an historical folder whereas AMAJ_LOCATION is called in both cases. But the LOCALIZAT table in historical folder is upgraded only if it is not a view.</p><pre xml:space="preserve"><code> # FASMAJ60 process
+ Subprog AMAJ
+ #** Called from DOSMAJ60
+ #*!
+ Local Shortint IS_HISTO_FOLDER : IS_HISTO_FOLDER = func DOSSUB.ISHISTFOLD([F:ADS]DOSSIER) : # FQ108289
+ Call ECR_TRACE("Start AMAJ from FASMAJ60 on" - [F:ADS]DOSSIER, 0) From GESECRAN
+ If !IS_HISTO_FOLDER : # FQ108289
+ # Not to perform in an archive folder (settings data)
+ # Change ATBDIV 604 (building) in an object BUI
+  Gosub AMAJ_BUI_604
+  .....
+ Endif
+ # Change the name of the table LOCALIZAT to PHYLCT
+ Gosub AMAJ_LOCATION
+ $AMAJ_LOCATION
+ .....
+ If (IS_HISTO_FOLDER) and (func DOSVUE.ISVIEW([F:ADS]DOSSIER,"LOCALIZAT")) : 
+     Call ECR_TRACE("LOCALIZAT is a view. Nothing to do",0) From GESECRAN
+ Else
+     If (IS_HISTO_FOLDER) : # FQ108289
+     # In an archive folder, if LOCALIZAT is a table and not a view, we must create the PHYLCT table and upgrade it
+          Call CRE_HISTAB([F:ADS]DOSREF, [F:ADS]DOSSIER, [F:ADS]TYPDBA, "PHYLCT") From CREHISTO
+ Endif
+</code></pre>
+                                                <p>3) The table dictionary is updated in the folder to be upgraded according to the new table dictionary definition in the reference folder. Therefore, if a column has been removed in the target version, it is removed in the folder in this step. </p>
+                                                <p>4) Post upgrade data updates: Each MAJ subprog launches (basic structure):<br />- MAJ from SUPMAJxx process<br />- TRCMAJ30 from TRCMAJxx process (common data)<br />- xxxMAJxx from xxxMAJxx process (for each module)</p>
+                                                <p>The MAJ and xxxMAJxx processes can, for example, populate a new column with the content of an old column that might disappear at the next step, or populate a new table with the content of an old table that might disappear in the next step.</p>
+                                                <p>The phases 1 and 3 are managed by the Supervisor and do not require any change when delivering a new version (except if the upgrade process evolves). </p>
+                                                <h1 id="1" data-magellan-target="1"><a id="structure2"></a>
+                                                </h1>
+                                                <p><strong>2 - Transactions table upgrade: UUMGxxxYYNN procedures</strong>
+                                                </p>
+                                                <p>This part describes the different steps of the data upgrade for large/transactions tables.<br />The transactions table upgrade involves 5 steps:</p>
+                                                <ol>
+                                                    <li value="1">Upgrade control: Check folder consistency, executed on the source folder before upgrading (several weeks before the upgrade), procedures delivered by patches in the versions in production.</li>
+                                                    <li value="2">Pre-upgrade: Prepare the folder,executed on the source folder before upgrading (several weeks before the upgrade), procedures delivered by patches in the versions in production</li>
+                                                    <li value="3">Temporary creation tables: Create the U* tables during the envelope upgrade</li>
+                                                    <li value="4">Transactions table upgrade: Data upgrade for the large/transactions tables according to an upgrade plan</li>
+                                                    <li value="5">Post-upgrade: Data upgrade of data that can be upgraded in a second step, while the folder is being used</li>
+                                                </ol>
+                                                <p>These steps launch procedures that respects a standard naming convention. </p>
+                                                <h2 id="Proceduresnaming" data-magellan-target="Proceduresnaming">Procedures naming</h2>
+                                                <p>The transactions table upgrade processing launches UUMGTRTxxxNN procedures via the sequencial processing.</p>
+                                                <p>Naming standards for control upgrade, pre-upgrade, transactions table upgrade and post upgrade procedures is 12 caracters: UUMGZZZxxxNN with:</p>
+                                                <ul>
+                                                    <li>UU: meaning tool</li>
+                                                    <li>MG: migration (upgrade)</li>
+                                                    <li>ZZZ: procedure type</li>
+                                                    <li>xxx: module code</li>
+                                                    <li>NN: sequential number </li>
+                                                </ul>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a>Procedure type</a> </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a>Name</a> </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a>Control procedure </a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">UUMGCTLxxxNN </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a>Pre-upgrade procedure </a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">UUMGPRExxxNN </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a>Upgrade procedure </a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">UUMGTRTxxxNN </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a>Post-upgrade procedure </a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">UUMGPOSxxxNN </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="2" data-magellan-target="2"><a id="structure21"></a>
+                                                </h1>
+                                                <p><strong>2 -1 - Control procedures</strong>
+                                                </p>
+                                                <p>The control procedures are launched in the source environment and can be spread out over a period of time, before the actual upgrade. The procedures check that the data to upgrade is consistent. They are delivered in a patch in the versions in production when a change is done for a new version.</p>
+                                                <p>The procedure launched is UUMGCTLX3. It launches accounting, purchases, sales and common data procedures.</p>
+                                                <h1 id="3" data-magellan-target="3"><a id="structure22"></a>
+                                                </h1>
+                                                <p><strong>2 -2 - Pre-upgrade procedures</strong>
+                                                </p>
+                                                <p>The pre-upgrade procedures are launched in the source environment and they can take place over a period of time, before the actual upgrade. For example, these can be procedures to compute V6 information in V5 tables which shortens the main upgrade time. They are also delivered in a patch in the versions in production.</p>
+                                                <p>The procedure launched is UUMGPREX3.</p>
+                                                <h1 id="4" data-magellan-target="4"><a id="structure23"></a>
+                                                </h1>
+                                                <p><strong>2 -3 - Temporary tables creation</strong>
+                                                </p>
+                                                <p>Temporary tables are created during folder validation in TRTMIGTABX3 - Subprog TRTMIGTABX3.<br /> </p>
+                                                <p>For each table to be upgraded in transactions tables upgrade, TRTMIGTABX3 calls TRTMIGTABTABADD Subprog from TRTMIG treatment.</p>
+                                                <p>For example: Call MIGTABTABADD (DOSSIER,"BUD","","CPY+BUD+ACCNUM",NBTAB,WTABLE,WTABLEJ,WABRJ,WTABIDX,ERR) From TRTMIG<br />Note that the index is chosen by the developer according to performance aspects.</p>
+                                                <p>TRTMIGTABTABADD Subprog fills an array (WTABLEJ) with each temporary table to be created and after all the calls to TRTMIGTABTABADD, the call to TRTMIGTAB_TRT from TRTMIG process creates the tables listed in WTABLEJ in the database. </p>
+                                                <p><i>See the global upgrade documentation for a description of upgrade steps</i>
+                                                </p>
+                                                <p>A temporary table is created only if an upgrade procedure will update columns and depending on the version from which you upgrade. Some tables are not impacted by upgrade procedures. For example, for some of these tables, this is done only if the source folder is earlier than V6 (for example upgrade from V5 to current version). First, these temporary tables are created in the database. Then the data is copied from the source tables to the temporary tables (sometimes the index is modified), and finally the source tables are truncated.</p>
+                                                <ul>
+                                                    <li>Each transactions table is renamed (by default with the letter U before its name). The activity code MIG is assigned to each table. This makes it possible to identify the transactions tables when the temporary tables are deleted and once the upgrade has been validated. </li>
+                                                    <li>The content of these transactions tables is kept strictly identical to the transactions tables of the source. </li>
+                                                    <li>Their indices are deleted except for the first index and possibly one additional index that could prove useful to speed up the upgrade process. The other indices will be created at the end of the unit procedure (main transactions table upgrade). </li>
+                                                    <li>One or more transactions table(s) are created empty according to the dictionary of the new version and include the specific fields or the specific modifications to standard fields made in the source table. The empty table often has the same name as the source table, but not always. It is possible that these tables no longe exists in the new version. For example, the data they contained was transferred to another table. </li>
+                                                </ul>
+                                                <p>The basic renaming rule is to rename the table XXX by putting a "U" before its name. As an example, a table named ZMYTABLE will be renamed as UZMYTABLE. There can be exceptions, especially if the name of the table exceeds 12 characters.</p>
+                                                <p>The following subprogram determines the name of the table after it has been renamed:</p><pre xml:space="preserve"><code> # FOLDER = code of folder
+ # PTABLE = name of the movement table before upgrade
+ # PTABLE = name of the renamed movement table
+ # If ERR&gt;0: an error has been generated (the processing will be interrupted)
+ Call MIGTABNAME(FOLDER,PTABLE, MTABLE, ERR) From TRTMIG
+</code></pre>
+                                                <p>An abbreviation is defined for the temporary table.</p>
+                                                <h1 id="5" data-magellan-target="5"><a id="structure24"></a>
+                                                </h1>
+                                                <p><strong>2 -4 - Transactions table upgrade processing</strong>
+                                                </p>
+                                                <p>The folder validation calls the sequencing monitor after the envelope validation (dictionary validation, small tables upgrade, etc ...).<br />The sequencing monitor launches upgrade procedures according to a plan defined in the "Sequencing Monitor" function (see below). This plan is delivered in Standard but can be updated by the customer before the upgrade. </p>
+                                                <h1 id="6" data-magellan-target="6"><a id="structure241"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -1 - Upgrade plan</strong>
+                                                </p>
+                                                <p>The upgrade plan includes 4 steps:</p>
+                                                <ul>
+                                                    <li>Initialization</li>
+                                                    <li>Common data </li>
+                                                    <li>Module</li>
+                                                    <li>Post-upgrade</li>
+                                                </ul>
+                                                <p>These steps are executed sequentially: If the procedures of a step are not completed, the procedures of the following step cannot be launched.</p>
+                                                <p>In each step, there are phases that are also executed sequentially. The procedures for Phase 2 are not started until the procedures for Phase 1 are completed. Note that all phases of common data need to be completed before starting procedures of Phase 1 for modules. But the procedures for Phase 1 of any module are executed in parrallel. For example, procedures for Phase 1 in the Accounting module will run in the same time as procedures for Phase 1 in the Sales module.</p>
+                                                <p>In each phase, there are ranks that determine the launching order.</p>
+                                                <p>The sequencing monitor function (in Usage/Upgrade/Sequencing monitor - AMOULIN) advances the progress.<br />The procedures are launched by batch via the batch server.<br />The parrallelisation depends on the process numbers and when creating a plan the user can update some parameters (impacted folder, number of procedures that can be run in parallel, task sequencing policy, running status).</p>
+                                                <p>
+                                                    <img src="../Resources/Images/MigrationPhases.jpg" /> </p>
+                                                <p>For each procedure, it is possible to:</p>
+                                                <ul>
+                                                    <li><b>Visualize</b>: the track of the execution of the procedure.</li>
+                                                    <li><b>Restart </b>: launch a procedure that has stopped, beginning with the first record not yet processed by the procedure.</li>
+                                                    <li><b>Stop</b>: stop the execution of a procedure.</li>
+                                                    <li><b>Block</b>: block a procedure not yet launched including any other steps or phases not yet executed.</li>
+                                                    <li><b>Unblock</b>: unblock a blocked procedure.</li>
+                                                    <li><b>Relaunch with new filters</b>: relaunch the execution of a procedure from the beginning with an empty target table and relaunch the procedures for all data to be upgraded.</li>
+                                                    <li><b>Disengage</b>: when a procedure is completed with errors, this action allows you to continue. This action is not recommended.</li>
+                                                </ul>
+                                                <p>The graphical query: AMOUL3 (in GX3APP and X3DEV) lists the transactions table upgrade procedures with the phase, rank and tables used.</p>
+                                                <p>Each team has to update the GESAM3 function in order to have a list up to date with the order and the tables impacted.</p>
+                                                <p>
+                                                    <img src="../Resources/Images/AMOUL3_Query.PNG" /> </p>
+                                                <p>When a new procedure is created or updated, the developer needs to take into account the order of the procedures executed (steps/phases). Situations to be taken into account:</p>
+                                                <ul>
+                                                    <li>The annex tables need to be updated before reading them. For example, the upgrade of the ORDER table needs to read ITMMASTER and BOM tables. Because the table ITMMASTER is updated during Phase 1 of common data step, the ORDER table can only be upgraded from Phase 2 of common data.</li>
+                                                    <li>The procedure working on the same main table can not be executed at same time. They need to belong to two different phases. For example: Invoices in A/R Accounting module (UUMGTRTTRS01) and Invoices in Sales module (UUMGTRTSAL08).</li>
+                                                    <li>On the contrary, two procedures inserting data in the same table can belong to the same phase.<br />
+For example, quotes upgrade in Sales module: UUMGTRTSAL01 and Sales orders UUMGTRTSAL02 updated both SVCRVAT and SVCRFOOT.</li>
+                                                </ul>
+                                                <p>
+                                                    <img src="../Resources/Images/Mig_Procedures.jpg" />
+                                                </p>
+                                                <h1 id="7" data-magellan-target="7"><a id="structure242"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -2 - Upgrade procedures</strong>
+                                                </p>
+                                                <p>The upgrade procedures are defined in the Upgrade process function (in Usage/Upgrade/Upgrade process - GESAM3).</p>
+                                                <p>
+                                                    <img src="../Resources/Images/MigProcFunction.jpg" />
+                                                </p>
+                                                <p>The developer defines in which step/phase/module, the procedure belongs to.</p>
+                                                <h1 id="8" data-magellan-target="8"><a id="structure243"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -3 - Upgrade Procedure development</strong>
+                                                </p>
+                                                <p>The following elements are contained in the upgrade process:</p>
+                                                <ul>
+                                                    <li>At the beginning, lines will enable the direct triggering of the procedure.</li>
+                                                    <li>An RAZ_UUMGTRTxxxnn subprogram will make it possible to go back to the initial situation in order to restart the procedure.</li>
+                                                    <li>A MAJ_UUMGTRTxxxnn subprogram contains the upgrade procedure.</li>
+                                                </ul>
+                                                <p>These subprograms are described below.</p>
+                                                <p>A skeleton for upgrade procedures exists: "UUMGTRTXXX00" (module XXX) and as example you can use UUMGTRTPUR01.</p>
+                                                <h1 id="9" data-magellan-target="9"><a id="structure2431"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -3 -1 - Preliminary lines</strong>
+                                                </p>
+                                                <p>The following lines are executed when the procedure is executed from the parent folder (X3). For example, when testing the procedure. </p><pre xml:space="preserve"><code>Preliminary lines
+The preliminary lines directly start the processing from the editor, using the Execution function. The following lines are found:
+# Definition of the current folder, and read of the folder table
+Local Char DOSSIER(30) : DOSSIER = nomap
+If !GSERVEUR
+  Call SAIDOSHIS(DOSSIER,"") From SAIDOSHIS
+Endif
+If DOSSIER &lt;&gt; ""
+  If clalev([F:ADS])=0  Local File ADOSSIER [ADS] : Endif
+  If func DOSSUB.FILL_ADS([L]DOSSIER)=0 : End : Endif
+  #Call ACTIVE From TIMING
+      # Opening of the log and display of a timing window
+  If !GSERVEUR
+    Call TEMPON("O") From GESECRAN
+    Call OUVRE_TRACE("UUMGTRTXXX00") From LECFIC
+  Endif
+      # Launching of the procedure
+  #Call RAZ_UUMGTRTXXX00(DOSSIER)
+  Call MAJ_UUMGTRTXXX00(DOSSIER)
+      # Closing the log
+  If !GSERVEUR
+    Call TEMPOFF     From GESECRAN
+    Call FERME_TRACE From LECFIC
+    Call LEC_TRACE From LECFIC
+  Endif
+  #Call ARRET From TIMING
+Endif
+End
+</code></pre>
+                                                <h1 id="10" data-magellan-target="10"><a id="structure2432"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -3 -2 - Reset the subprogram to zero</strong>
+                                                </p>
+                                                <p>The subprogram is declared by Subprog RAZ_UUMGTRTXXX00(DOSSIER). It is used to return to the initial situation and to relaunch the procedure, if necessary. This subprogram is called when the user from the sequencing monitor function (AMOULIN) executes the 'Relaunch' action from the procedure (contextual action).</p>
+                                                <p>The subprogram must at least include the following basic phases:</p><pre xml:space="preserve"><code>  Subprog RAZ_UUMGTRTXXX00(DOSSIER)
+  Value Char DOSSIER
+  Local Integer ERR
+  ##1 - verifications
+  #Check that the source and target tables do exist, for example, by means of the following lines
+  ####################
+  If [F:ADS]MODULE(N)&lt;&gt;2 : End : Endif          : # N= no module
+  #MIGTABNAME gives the temporary table name (WNAMXXXM) , W = "U" usually    
+  Local Char WNAMXXXM,WNAMXXDM
+  Call MIGTABNAME (DOSSIER,"XXXXXX",WNAMXXXM,ERR) From TRTMIG
+  Call MIGTABNAME (DOSSIER,"XXXXXXD",WNAMXXDM,ERR) From TRTMIG
+  If ERR : End : Endif
+  #-----test the presence of the renamed files ...  -----#
+  If filinfo(filpath("FIL",WNAMXXXM,"fde",[F:ADS]DOSSIER),0) &lt; 0 :  End : Endif
+  If filinfo(filpath("FIL",WNAMXXDM,"fde",[F:ADS]DOSSIER),0) &lt; 0 :  End : Endif
+  ##2 - emptying tables depending on the case
+  #######################################
+  # If common tables with several processing routines must be partly purged, standard transactions will be used, of type 
+  Local File =DOSSIER+".XXXXXX"  [XXX]
+  Trbegin [XXX]
+  Delete [XXX] Where ORIMOD&lt;&gt;3
+  Commit
+  #Empty the table(s) where the update procedure inserts data. For that purpose, the following subprogram is available:
+  Call MIGTABRAZ (DOSSIER,"XXXXXXD",ERR) From TRTMIG
+  ##3 -  emptying AMIGKEY for the transactions table
+  ####################
+  #Reset to zero of the indicators of progress of proceedings on the already upgraded transactions for this table
+  Call MIGRAZKEY (DOSSIER,"UUMGTRTXXX00",ERR) From TRTMIG
+  End
+</code></pre>
+                                                <p>Note: Logs should only be generated for errors (no progress or warning message). The subprog is executed in interactive.</p>
+                                                <h1 id="11" data-magellan-target="11"><a id="structure2433"></a>
+                                                </h1>
+                                                <p><strong>2 -4 -3 -3 -Update subprogram</strong>
+                                                </p>
+                                                <p>Subprogram MAJ_UUMGTRTXXX01 is used to transcodify the content of tables "XXXXXX" and "XXXXXXD" to populate table WNAMXXXM and WNAMXXXDM (see UUMGTRTXXX00 process). To create your own MAJ_UUMGTRTXXX01 subprog, first copy the UUMGTRTXXX00.MAJ_UUMGTRTXXX01 subprog in your process and refer to the following steps. The update subprogram must perform the following tasks:</p>
+                                                <p><strong>Update subprogram - First phase:</strong>
+                                                    <br />Controls, variables declaration, tables initialisation, dialog with sequencing monitor and reprise management (TABMIGKEY table)</p>
+                                                <p>1) The status of the procedure will be updated using the following subprogram (also if a preliminary condition makes the launching not necessary. For example, if there is nothing to process: the status then needs to be Completed for the procedure to be considered to be run and for the next procedures to follow). Otherwise, the status will be set to In progress:</p><pre xml:space="preserve"><code>      #CURSTAT variable Integer managing the status (local menu 21)
+      #The possible values are Pending, In progress, Completed...
+      #If the procedure is launched, CURSTAT=2
+      #If it is over, CURSTAT=3
+      #In case of error, it will need to be set to 7
+      #Variable PROG contains the name of the procedure
+      #(for example, UUMGTRTZMY01)
+      #Call MIGSTKENDFLG (DOSSIER,"UUMGTRTXXX00",CURSTAT,ERR) From TRTMIG</code></pre>
+                                                <br />2) The presence of tables and prior tables will be tested using subprogram MIGTABNAME, similar to what is done in the initialization sub-program. In case of an error, the status of the task needs to be set to the correct value (7) with the MIGSTKENDFLG subprogram.<br />These tables necessary for the upgrade will then be opened: variables initialisations and buffer sizes (adxftl,adxwrb) for record numbers written with writeb instruction. The internal tables of the upgrade procedure are opened via: 
+<pre xml:space="preserve"><code>    Call MIG_OUVRE From TRTMIG
+</code></pre><p>3) A test if the module is activated is done (otherwise the procedure ends):</p><pre xml:space="preserve"><code>   If [F:ADS]MODULE(N)&lt;&gt;2 : : # N= no module
+    Call MIGSTKENDFLG (DOSSIER,"UUMGTRTXXX00",3,ERR) From TRTMIG : #3=Terminée
+    Endif
+</code></pre><p>4) Logs will be kept to a minimum (no need to add one on each line, there are examples where upgrades were interrupted because there was not enough disk space to write the logs). It is, on the other hand, useful to create a log starting with a message like "Start of the phase updating xxx", and a time stamp line with a message like "Process started at": These logs will use the following subprograms:</p><pre xml:space="preserve"><code>      #Log line if ERR=0, else, error line
+      Call ECR_TRACE("message",ERR) From GESECRAN
+      #Time stamped log line
+      Call ECR_TIME("message") From DOSSUB</code></pre><br />5) To improve the insert time into tables, indices are deleted. Only the first active index is kept at the beginning of the procedure. The indices are created again at the end of the procedure, using the following subprogram:
+<pre xml:space="preserve"><code>   Call MIGTABINIT(FOLDER,"ZMYTABLE",ERR) From TRTMIG
+</code></pre><p>This requires the procedure to be the only one operating in the table when it is run. No other procedure must be read, modified, or inserted in the table while this procedure is running. If the table must be accessed by several procedures, this subprogram must not be used.</p><p><strong>Update subprogram - Second phase:</strong><br />Reading source tables </p><p>6) The first key to be processed will be found in the processing loop. This key is not empty when the upgrade starts again after having been interrupted. The subprogram described below helps find it:</p><pre xml:space="preserve"><code>   # TABMIGKEY(1..NBMKEY) is a table containing the key values
+   #   where to resume the read. At a minimum, the components
+   #   of the last processed key value are included, but the following can be added
+   #   a segment to determine the break level reached
+   #   on a multiple key. TABMIGKEY must be empty before the call
+   #   If it is returned empty, it means that there was no current key value
+   #   (the procedure is then started at the beginning).
+   # NBMIGKEY is used to define the number of expected values
+   # NBLUS and NBCOMMIT count the number of lines read and updated so far.
+```
+</code></pre><p>CODECODE CODECall MIGGETKEY(DOSSIER,"UUMGTRTXXX00",NBMIGKEY,TABMIGKEY,NBLUS,NBCOMMIT,ERR) From TRTMIG<br />      STOP=val(TABMIGKEY(NBMIGKEY))```</p><p>7) <strong>Reading/writting methods</strong> It will be possible to enter the read loop of the source table(s) and the write loop of the target tables. For performance reasons, it is recommended to avoid the use of isolated read orders on tables and <strong>use Link instructions</strong> instead, preferably with strict joins (syntax Where CLE~=... ). If a "small" table must be read for initialization or control reasons , it is often better to store the useful content of this table in variables in memory before stating the loop. "Small" means that it contains less than 1,000 lines.</p><p>To avoid errors due to the writing of a large number of lines, the number of written lines will be counted and the loop will be interrupted every N lines. For example, N can be set to 50.000, using the global variable GMAXUPDTRS.</p><p>For performance reasons, the upgrade procedures use the Writeb instruction. This instruction groups the records and improves the performance, especially but not only in a multitier architecture. This instruction can only be used if the table is not reread in the loop (e.g.: reread to know if a record already exists). It implies that the grouping factor is set using a variable named adxwrb (10 seems to be an appropriate value). It is then necessary to stack the values of the written keys to be able to retrieve all the keys being currently used (this error is generated with the Flush instruction and not the Writeb instruction).</p><p>The following subprogram can be used:</p><pre xml:space="preserve"><code>    # Stacking of keys.
+    # WTAB_XXX is an alphanumerical array declared by
+    # Local Char WTAB_XXX(N)(adxwrb) at the beginning of the processing
+    # (sizeN is dependent on the size of the key values)
+    # WCPT_XXX a variable Shortint that determines the number of stacked keys
+    # [F:XXX]NUM encoded key value if the key is subdivided into several parts
+    Call STK (WTAB_XXX, WCPT_XXX,[F:XXX]NUM) From TRTMIG
+    WriteB [XXX]
+</code></pre><p>8) Between the read of the source tables (Link instruction) and the write to target tables, for a new version, you need to add two labels/subprog: reset to zero of new columns for the new version if needed: RAZYY_XXX, data upgrade for the new version (for headers and lines)</p><pre xml:space="preserve"><code>    #Raz [F:XXX]
+    # version &lt; V6, raz des champs v6
+    If val(VERSION)&lt;GMIGX3VER60
+      Gosub RAZV6_XXX
+    Endif
+    # version &lt; V7, raz des champs v7
+    If val(VERSION)&lt;GMIGX3VER70
+        Gosub RAZV7_XXX
+    Endif
+    [F:XXX] = [F:XXXM]
+    #Appel proc de mise à jour sur entete
+    # Passage en V6
+          If val(VERSION)&lt;GMIGX3VER60
+      Gosub MAJV6_XXX
+      If GOK&lt;1 : Break : Endif
+    Endif
+    # Passage en V7
+    If val(VERSION)&lt;GMIGX3VER70
+      Gosub MAJV7_XXX
+      If GOK&lt;1 : Break : Endif
+    Endif
+</code></pre><p>9) If the loop is exited (after N loops, or because the processing is completed), a Flush is performed on the table if Writeb is used. The flush writes the buffered records into the table. If an error has been generated and adxwrb is larger than 1, then the keys that have caused the error can be found in the TABMIGKEY array, on the first adxwrb indices. A Rollback is then ran before setting the procedure status to "Completed with errors" and ending the processing.<br />If everything goes smoothly, the number of lines read and updated will be updated in TABMIGKEY using the following call:</p><pre xml:space="preserve"><code>   Call MIGSTKKEY (DOSSIER,"UUMGTRTXXX00",NBMIGKEY,TABMIGKEY,NBLUS,NBCOMMIT+NB,ERR) From TRTMIG
+</code></pre><p>A Commit is then performed. An interruption request test can then be carried out. In the absence of such a request, and if all the lines have not been processed, a loop is started again on N lines. The interruption test is carried out using the following subprogram:</p><pre xml:space="preserve"><code>  # The STOP variable is equal to 0 if an interruption request has been made
+  Call MIGSTKPROGRESS (DOSSIER,"UUMGTRTXXX00",STOP,ERR) From TRTMIG
+</code></pre><p>At the end of the update subprog or if an interruption request has been made (or if the processing is completed), the following operations will be conducted:</p><pre xml:space="preserve"><code>  # Indexing of the processed table(s)
+  # (only if MIGTABINIT has been used)
+  # add LOGGING attribute to tables
+     Call MIGTABEND (DOSSIER,"XXXXXX",ERR) From TRTMIG
+     Call MIGTABEND (DOSSIER,"XXXXXXD",ERR) From TRTMIG
+  # Alert the monitor of the processing end
+     Call MIGTRTEND (DOSSIER,"UUMGTRTXXX00") From TRTMIG
+     Call ECR_TIME("UUMGTRTXXX00 : "+num$(NBLUS)+" records read,"-num$(NBCOMMIT)+" records processed.") From DOSSUB
+</code></pre><p>It will then be possible to close the tables and free resources if any, and then stop the subprogram using the End instruction.</p><p>10) For an historical folder: in TRTMIGTABX3, the MIGTABTABADD function tests if the table is a view, therefore the historical folders are taken into account. </p><p>Specific to historical folder: <br />- If you need to use data from the ADOSSIER table, use the FILL_ADS function from the DOSSUB process: there are no records for an historical folder in the ADOSSIER table. <br />- If you need to test the version or release, use the RELEASE/VERSION function from the DOSSUB process.<br />- If you need to remove or empty a table use the ANNULE/VIDE function from DOSTAB.</p><p>Remark: The purge parameters are set in the APARHIS function.</p><br /></div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Upgradedataupgradeprocessdevelopmentside"> Upgrade - data upgrade process - development side 
+</a>
+                                                    </li>
+                                                    <li><a href="#"></a>
+                                                    </li>
+                                                    <li><a href="#1"></a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Proceduresnaming">Procedures naming</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#2"></a>
+                                                    </li>
+                                                    <li><a href="#3"></a>
+                                                    </li>
+                                                    <li><a href="#4"></a>
+                                                    </li>
+                                                    <li><a href="#5"></a>
+                                                    </li>
+                                                    <li><a href="#6"></a>
+                                                    </li>
+                                                    <li><a href="#7"></a>
+                                                    </li>
+                                                    <li><a href="#8"></a>
+                                                    </li>
+                                                    <li><a href="#9"></a>
+                                                    </li>
+                                                    <li><a href="#10"></a>
+                                                    </li>
+                                                    <li><a href="#11"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 febrero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

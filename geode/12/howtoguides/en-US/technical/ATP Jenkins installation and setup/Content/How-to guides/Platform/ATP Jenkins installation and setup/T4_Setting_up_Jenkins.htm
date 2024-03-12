@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Setting up Jenkins</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="T1_ATP_Jenkins_Installation.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__ATP_Jenkins_installation_and_setup.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Setting up Jenkins</h1>
+                                            <h2>Installing plugins for <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span></h2>
+                                            <h3>Part 1: Installing the plugins</h3>
+                                            <ol>
+                                                <li value="1">Go to the URL that you use to connect to <strong>Jenkins</strong>. For example, <a href="http://myjenkinsserver:8080/" class="Hyperlink" target="_blank">http://myjenkinsserver:8080</a>.
+            </li>
+                                                <li value="2">
+                If you are not already logged in, enter your <strong>administrator user</strong> credentials.</li>
+                                                <li value="3">
+                Click <span class="reference">Manage Jenkins</span>.
+            </li>
+                                                <li value="4">
+                Click <span class="reference">Manage Plugins</span>.
+            </li>
+                                                <li value="5">
+                Click the <span class="reference">Installed</span> tab.
+            <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="6">
+                Check the following default plugins are installed:</li>
+                                                <div class="note-tip">Use the <span class="reference">filter</span> search to find them.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div>
+                                                <ol>
+                                                    <li value="1"><span class="reference">Pipeline</span>
+                                                    </li>
+                                                    <p>Click <span class="reference">Pipeline</span> to open a web page. <a href="https://plugins.jenkins.io/workflow-aggregator/" target="_blank"><span class="Hyperlink">workflow-aggregator</span></a> must be included in the URL displayed.</p>
+                                                    <p class="image">
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                    </p>
+                                                    <li value="2"><span class="reference">Workspace Cleanup Plugin</span>
+                                                    </li>
+                                                    <p>Click <span class="reference">Workspace Cleanup Plugin</span> to open a web page. <a href="https://plugins.jenkins.io/ws-cleanup/" target="_blank"><span class="Hyperlink">ws-cleanup</span></a> must be included in the URL displayed.</p>
+                                                    <p class="image">
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-4.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                    </p>
+                                                </ol>
+                                                <li value="7">Click the <span class="reference">Available</span> tab.</li>
+                                                <li value="8">
+                Install the following plugins:<ol><li value="1"><span class="reference">Pipeline Utility Steps</span></li><p>Click <span class="reference">Pipeline Utility Steps</span> to open a web page. <a href="https://plugins.jenkins.io/pipeline-utility-steps/" target="_blank"><span class="Hyperlink">pipeline-utility-steps</span></a> must be included in the URL displayed. 
+            </p><p>
+                Select the <span class="reference">Install</span> check box.
+					</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-5.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p><li value="2"><span class="reference">Allure</span></li><p>Click <span class="reference">Allure</span> to open a web page. <a href="https://plugins.jenkins.io/allure-jenkins-plugin/" target="_blank"><span class="Hyperlink">allure-jenkins-plugin</span></a> must be included in the URL displayed.</p><p>
+							Select the <span class="reference">Install</span> check box.
+			</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-6.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p><li value="3"><span class="reference">Role-based Authorization Strategy</span></li><p>Click <span class="reference">Role-based Authorization Strategy</span> to open a web page. <a href="https://plugins.jenkins.io/role-strategy/" target="_blank"><span class="Hyperlink">role-strategy</span></a> must be included in the URL displayed.
+            </p><p>
+                Select the <span class="reference">Install</span> checkbox.
+            </p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-7.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></ol></li>
+                                                <li value="9">
+                Click <span class="reference">Download now and install after restart</span>.
+            </li>
+                                                <li value="10">
+                Click <span class="reference">Restart Jenkins when installation is complete and no jobs are running</span>.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-8.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="11">Click <span class="reference">Go back to the top page</span>.</li>
+                                            </ol>
+                                            <div class="note-success">
+                You have been disconnected from <strong>Jenkins</strong>.
+            </div>
+                                            <h3>Part 2: Checking the plugins installation</h3>
+                                            <ol>
+                                                <li value="1">Go to the URL that you use to connect to <strong>Jenkins</strong>. For example, <a href="http://myjenkinsserver:8080/" class="Hyperlink" target="_blank">http://myjenkinsserver:8080</a>.
+            </li>
+                                                <li value="2">Enter your <strong>administrator user</strong> credentials.</li>
+                                                <li value="3">
+                Click <span class="reference">Manage Jenkins</span>.
+            </li>
+                                                <li value="4">
+                Click <span class="reference">Manage Plugins</span>.
+            </li>
+                                                <li value="5">
+                Click the <span class="reference">Installed</span> tab.
+            <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="6">
+                Check the following plugins are installed correctly:</li>
+                                                <div class="note-tip">Use the <span class="reference">filter</span> search to find them.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div>
+                                                <ol>
+                                                    <li value="1"><span class="reference">Pipeline Utility Steps</span>
+                                                    </li>
+                                                    <p>Click <span class="reference">Pipeline Utility Steps</span> to open a web page. <a href="https://plugins.jenkins.io/pipeline-utility-steps/" target="_blank"><span class="Hyperlink">pipeline-utility-steps</span></a> must be included in the URL displayed. 
+            </p>
+                                                    <p class="image">
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-9.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                    </p>
+                                                    <li value="2"><span class="reference">Allure Jenkins Plugin</span>
+                                                    </li>
+                                                    <p>Click <span class="reference">Allure Jenkins Plugin</span> to open a web page. <a href="https://plugins.jenkins.io/allure-jenkins-plugin/" target="_blank"><span class="Hyperlink">allure-jenkins-plugin</span></a> must be included in the URL displayed.</p>
+                                                    <p class="image">
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-10.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                    </p>
+                                                    <li value="3"><span class="reference">Role-based Authorization Strategy</span>
+                                                    </li>
+                                                    <p>Click <span class="reference">Role-based Authorization Strategy</span> to open a web page. <a href="https://plugins.jenkins.io/role-strategy/" target="_blank"><span class="Hyperlink">role-strategy</span></a> must be included in the URL displayed.
+            </p>
+                                                    <p class="image">
+                                                        <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_ATP_plugin-7.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                    </p>
+                                                </ol>
+                                            </ol>
+                                            <h2>Setting up allure</h2>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.
+            </li>
+                                                <li value="3">
+                Click <span class="reference">Global Tool Configuration</span>.
+            </li>
+                                                <li value="4">
+                Go to the <span class="reference">Allure Commandline</span> section and click the <span class="reference">Add Allure Commandline</span> tab.</li>
+                                                <li value="5"><span class="reference">Name</span>: Type <span class="reference">Allure</span>. </li>
+                                                <li value="6">Click <span class="reference">Apply</span>, then <span class="reference">Save</span>.
+            </li>
+                                            </ol>
+                                            <p class="image">
+                                                <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Allure-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                            </p>
+                                            <h2>Setting up Git</h2>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.
+            </li>
+                                                <li value="3">
+                Click <span class="reference">Global Tool Configuration</span>.
+            </li>
+                                                <li value="4">
+                Go to the <span class="reference">Git</span> section.</li>
+                                                <li value="5"><span class="reference">Path to Git executable</span>: Set to the path where <strong>Git</strong> is installed on your system.
+           </li>
+                                                <p>For example:</p>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Git-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                            </ol>
+                                            <h2>Setting up Jenkins accounts and credentials</h2>
+                                            <p>User accounts and credentials are required to use a <strong>Jenkins Pipeline</strong>. </p>
+                                            <div class="note-info">This guide will now refer to your Jenkins <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> Pipeline as your <span class="reference">ATP-RunAutomatedTests</span> Pipeline.</div>
+                                            <ul>
+                                                <li>
+                User accounts: These are used by individual users to connect to <strong>Jenkins check</strong> or to execute the <strong>Jenkins Pipeline</strong>.
+            </li>
+                                                <li><strong>Nexus</strong> repository credentials: This user is required for your <span class="reference">ATP-RunAutomatedTests</span> Pipeline to connect to the <strong>Nexus npm</strong> repository in order to download the latest version of the <span class="mc-variable Sage_X3.Sage_X3_Automated_Test_Platform variable">Sage X3 Automated Test Platform</span> library.
+            </li>
+                                                <li><strong>GitHub</strong> credentials (optional): This account is required if your <span class="reference">ATP-RunAutomatedTests</span> Pipeline should download your automated features and test scripts from your <strong>GitHub</strong> account.
+            </li>
+                                            </ul>
+                                            <h3>Setting up a Jenkins user account</h3>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.</li>
+                                                <li value="3">
+                Click <span class="reference">Manage Users</span>.</li>
+                                                <li value="4">
+                Click <span class="reference">Create User</span></li>
+                                                <li value="5">Complete the new user fields, then click <span class="reference">Create User</span>.</li>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Create_User-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="6">
+                Repeat these steps for each user you want to set up to use <strong>Jenkins</strong>.</li>
+                                            </ol>
+                                            <h3>Configuring global role-based security</h3>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.</li>
+                                                <li value="3">
+                Click <span class="reference">Configure Global Security</span>.</li>
+                                                <li value="4">
+                Go to <span class="reference">Authorization</span>.</li>
+                                                <li value="5">
+                Select <span class="reference">Role-Based Strategy</span>.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Global_Security-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="6">
+                Click <span class="reference">Apply</span>, then <span class="reference">Save</span>.</li>
+                                            </ol>
+                                            <h3>Setting up Quality Tester roles</h3>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.</li>
+                                                <li value="3">
+                Click <span class="reference">Manage and Assign Roles</span>.</li>
+                                                <li value="4">
+                Click <span class="reference">Manage Roles</span>.</li>
+                                            </ol>
+                                            <p>
+                                                <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Quality_Tester-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                            </p>
+                                            <ol data-mc-continue="true">
+                                                <li value="5">
+                Add a new role <span class="reference">QualityTesters</span>.</li>
+                                                <li value="6">
+                Select <span class="reference">Global roles</span>.</li>
+                                                <li value="7"><span class="reference">Role to add</span>: <span class="reference">QualityTesters</span>.</li>
+                                                <li value="8">
+                Click <span class="reference">Add</span>.</li>
+                                                <li value="9">To add rights to the <span class="reference">QualityTesters</span> role select the following check boxes:</li>
+                                                <p><span class="reference">Overall</span>: <span class="reference">Read</span>.</p>
+                                                <p><span class="reference">Job</span>: <span class="reference">Build</span>. <span class="reference">Cancel</span>. <span class="reference">Read</span>. <span class="reference">Workspace</span>.</p>
+                                                <p><span class="reference">Run</span>: <span class="reference">Delete</span>. <span class="reference">Replay</span>. <span class="reference">Update</span>.</p>
+                                                <p><span class="reference">View</span>: <span class="reference">Read</span>. </p>
+                                                <p class="image">
+                                                    <img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Quality_Tester-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" />
+                                                </p>
+                                                <li value="10">
+                Click <span class="reference">Apply</span>, then <span class="reference">Save</span>.</li>
+                                            </ol>
+                                            <h3>Assigning Quality Tester roles</h3>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.</li>
+                                                <li value="3">
+                Click <span class="reference">Manage and Assign Roles</span>.</li>
+                                                <li value="4">
+                Click <span class="reference">Assign Roles</span>.</li>
+                                                <li value="5"><span class="reference">User/group to add</span>: Type in a user name.</li>
+                                                <li value="6">Select the  <span class="reference">QualityTesters</span> check box for this user name.
+            <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Quality_Tester-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                            </ol>
+                                            <ol data-mc-continue="true">
+                                                <li value="7">
+                Repeat these steps for each user you want to assign to a Quality Tester role.</li>
+                                                <li value="8">
+                Click <span class="reference">Apply</span>, then <span class="reference">Save</span>.</li>
+                                            </ol>
+                                            <h3>Setting up Nexus repository credentials</h3>
+                                            <ol>
+                                                <li value="1">
+                Go to the <strong>Jenkins</strong> home page.
+            </li>
+                                                <li value="2">
+                Click <span class="reference">Manage Jenkins</span>.
+            </li>
+                                                <li value="3">
+                Click <span class="reference">Manage credentials</span>.
+            </li>
+                                                <li value="4">Click <span class="reference">global</span> (<span class="reference">Domains</span> column).
+            <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Nexus-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="5">Click <span class="reference">adding some credentials</span> ("This credential domain is empty. How about..." sentence).
+            <p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Nexus-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="6">Complete the following fields:
+            <p><span class="reference">Kind</span>: <span class="reference">Username with password</span>.
+            </p><p><span class="reference">Scope</span>: <span class="reference">Global</span>.
+            </p><p><span class="reference">Username</span>: The <strong>Nexus</strong> account login provided by <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>.
+            </p><p><span class="reference">Password</span>: The <strong>Nexus</strong> account password provided by <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>.
+            </p><p><span class="reference">ID</span>: <span class="reference">ATP_Repository</span> (default).</p><div class="note-danger">Do not change the <span class="reference">ID</span>&#160;value.</div><p><span class="reference">Description</span>: <span class="reference">ATP_Repository</span>.</p><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_Nexus-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="7">Click <span class="reference">OK</span>.</li>
+                                            </ol>
+                                            <h3>Setting up GitHub credentials</h3>
+                                            <div class="note-info">This stage is optional. You only need to complete this stage if you want <strong>Jenkins</strong> to connect with your <strong>GitHub</strong> account that contains the automated tests that you want to execute.</div>
+                                            <ol>
+                                                <li value="1">
+                Go to the URL that you use to connect to <strong>Jenkins</strong>. For example, <a href="http://myjenkinsserver:8080/" class="Hyperlink" target="_blank">http://myjenkinsserver:8080</a>.
+            </li>
+                                                <li value="2">Click <span class="reference">Add Credentials</span>.<p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_GitHub-1.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="3">Complete the following fields:
+            <p><span class="reference">Kind</span>: <span class="reference">Username with password</span>.
+            </p><p><span class="reference">Scope</span>: <span class="reference">Global</span>.
+            </p><p><span class="reference">Username</span>: Your <strong>GitHub</strong> username.<![CDATA[
+            ]]></p><p><span class="reference">Password</span>: Your <strong>GitHub</strong> access token. Refer to the <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank">Creating a personal access token</a> GitHub documentation to know how to create an access token.</p><p><span class="reference">ID</span>: <span class="reference">GitUser</span> (default).</p><div class="note-danger">Do not change the <span class="reference">ID</span>&#160;value.</div><p><span class="reference">Description</span>: <span class="reference">GitUser</span>.</p><p><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_GitHub-2.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></li>
+                                                <li value="4">Click <span class="reference">OK</span>.</li>
+                                            </ol>
+                                            <div class="note-success">
+                The <span class="reference">ATP_Repository</span> and <span class="reference">GitUser</span> credentials have now been added to <strong>Jenkins</strong>.<br /><br /><p class="image"><img src="../../../Resources/Images/ATP Jenkins installation and setup/T4_GitHub-3.png" style="max-width: 800px;max-height: auto;border-left-style: solid;border-left-width: 1px;border-right-style: solid;border-right-width: 1px;border-top-style: solid;border-top-width: 1px;border-bottom-style: solid;border-bottom-width: 1px;" /></p></div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Previous</span>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Next">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Next</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">17 November 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

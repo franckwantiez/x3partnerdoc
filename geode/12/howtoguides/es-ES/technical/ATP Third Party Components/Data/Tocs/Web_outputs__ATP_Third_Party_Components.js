@@ -1,0 +1,1 @@
+﻿define({numchunks:1,prefix:'Web_outputs__ATP_Third_Party_Components_Chunk',chunkstart:['/Content/How-to guides/Platform/ATP_ThirdPartyComponents/T1 ATP_ThirdPartyComponents.htm'],tree:{n:[{i:0,c:0,n:[{i:1,c:0}]}]}});

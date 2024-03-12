@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>UI component state verification</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="T1_ATP_StepDefinitionsGuide.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__ATP_Step_definitions_guide.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>UI component state verification</h1>
+                                            <h2>Text field</h2>
+                                            <p>The following step definitions are available to control the state of a text field:</p>
+                                            <p>the selected text field should be enabled</p>
+                                            <p>the selected text field should be disabled</p>
+                                            <p>the text field with name: "(.*)" is displayed</p>
+                                            <p>the text field with name: "(.*)" is hidden</p>
+                                            <p>the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check the state of a text field</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314A-TextFieldStateVerification</span></p>
+                                                    <p><span style="color: #008000;">#Text&#160;field:&#160;verification&#160;that the&#160;text&#160;field&#160;is&#160;disabled</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;user&#160;clicks&#160;the&#160;<span style="color: #b22222;">"Identity"</span>&#160;tab&#160;selected&#160;by&#160;title</p>
+                                                    <p><span style="color: #0000ff;">Given</span>&#160;the&#160;user&#160;selects&#160;the&#160;text&#160;field&#160;with&#160;name&#160;<span style="color: #b22222;">"Site"</span></p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;text&#160;field&#160;should&#160;be&#160;disabled</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Text&#160;field:&#160;verification&#160;that the&#160;text&#160;field&#160;is&#160;enabled</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">When&#160;</span>the&#160;user&#160;selects&#160;the&#160;check box&#160;with&#160;name&#160;<span style="color: #b22222;">"Intersite"</span></p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;user&#160;clicks&#160;the&#160;selected&#160;check box</p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;text&#160;field&#160;should&#160;be&#160;enabled</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if a text field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314A-TextFieldStateVerification</span>.</p>
+                                                    <p><span style="color: #008000;">#Text field: verify that a text field with a name is displayed</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with name: <span style="color: #b22222;">"Category"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Text field: verify that a text field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BPC0_BCGCOD"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text field: verify that a text field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text field: verify that a text field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BPC0_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Date field</h2>
+                                            <p>The following step definitions are available to control the state of a date field:</p>
+                                            <p>the date field with name: "(.*)" is displayed</p>
+                                            <p>the date field with name: "(.*)" is hidden</p>
+                                            <p>the date field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the date field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a date field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314B-DateFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Date field: verify that the date field with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the date field with name: <span style="color: #b22222;">"Accounting date"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Date field: verify that the date field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the date field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BIC0_ACCDAT"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Date field: verify that the date field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the date field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Date field: verify that the date field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the date field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BIC0_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Check box field</h2>
+                                            <p>The following step definitions are available to control the state of a checkbox field:</p>
+                                            <p>the selected check box is disabled</p>
+                                            <p>the selected check box is enabled</p>
+                                            <p>the check box field with name: "(.*)" is displayed</p>
+                                            <p>the check box field with name: "(.*)" is hidden</p>
+                                            <p>the check box field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the check box field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Confirm the state of a check box field</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314C-CheckboxFieldStateVerification</span></p>
+                                                    <p><span class="span_9" style="color: #008000;">#Check box&#160;field:&#160;verifying&#160;the&#160;check box&#160;is&#160;disabled</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Given&#160;</span>the&#160;user&#160;selects&#160;the&#160;check box&#160;with&#160;name:&#160;<span style="color: #b22222;">"Miscellaneous&#160;BP"</span></p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;check box&#160;is&#160;disabled</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Check box&#160;field:&#160;verifying&#160;the&#160;check box&#160;is&#160;enabled</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Given&#160;</span>the&#160;user&#160;selects&#160;the&#160;check box&#160;with&#160;name:&#160;<span style="color: #b22222;">"Service&#160;supplier"</span></p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;check box&#160;is&#160;enabled</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if a checkbox field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314C-CheckboxFieldStateVerification</span>.</p>
+                                                    <p><span style="color: #008000;">#Checkbox field: verify that the checkbox field with a name is displayed</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> the check box field with name: <span style="color: #b22222;">"Miscellaneous BP"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Checkbox field: verify that the checkbox field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the check box field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BPRBPC_BPRACC"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Checkbox field: verify that the checkbox field with a name is hidden</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> the check box field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Checkbox field: verify that the checkbox field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the check box field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"BPRBPC_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Radio button field</h2>
+                                            <p>The following step definitions are available to control the state of a radio button field:</p>
+                                            <p>the radio button "(.*)" of the selected radio buttons group is disabled</p>
+                                            <p>the radio button "(.*)" of the selected radio buttons group is enabled</p>
+                                            <p>the radio buttons group with name: "(.*)" is displayed</p>
+                                            <p>the radio buttons group with name: "(.*)" is hidden</p>
+                                            <p>the radio buttons group with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the radio buttons group with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check the state of a radio button field</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314D-RadiobuttonFieldStateVerification</span>.</p>
+                                                    <p><span style="color: #008000;">#Radio button field: select the radio button and control its states and the value selected</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user selects the radio buttons group with name: <span style="color: #b22222;">"Generation type"</span></p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio button <span style="color: #b22222;">"Actual"</span> of the selected radio buttons group is enabled</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user clicks on <span style="color: #b22222;">"Active simulation"</span> radio button of the selected radio buttons group</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Radio button field: verify that the radio button is deactivated</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user selects the radio buttons group with name: <span style="color: #b22222;">"Entry status"</span></p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio button <span style="color: #b22222;">"Temporary"</span> of the selected radio buttons group is disabled</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if a radio button field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314D-RadiobuttonFieldStateVerification</span>.</p>
+                                                    <p><span style="color: #008000;">#Radio button field: verify that the radio button field with a name is displayed</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio buttons group with name: <span style="color: #b22222;">"Generation type"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Radio button field: verify that the radio button field with an <span style="color: #008000;" class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio buttons group with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"CPTSVC_TYP"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Radio button field: verify that the radio button field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio buttons group with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Radio button field: verify that the radio button field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the radio buttons group with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"CPTSVC_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Drop-down list field</h2>
+                                            <p>The following step definitions are available to control the state of a drop-down list field:</p>
+                                            <p>the drop down list with name: "(.*)" is displayed</p>
+                                            <p>the drop down list with name: "(.*)" is hidden</p>
+                                            <p>the drop down list with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the drop down list with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <p>the "(.*)" value of the selected drop down list is displayed</p>
+                                            <p>the "(.*)" value of the selected drop down list is hidden</p>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if a drop-down list field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314E-DropdownListFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Drop-down list field: verify that the drop-down list field with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the drop down list with name: <span style="color: #b22222;">"Product status"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Drop-down list field: verify that the drop-down list field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the drop down list with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"ITM0_ITMSTA"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Drop-down list field: verify that the drop-down list field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the drop down list with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Drop-down list field: verify that the drop-down list field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the drop down list with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"ITM0_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Verify that a drop-down list value is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314E-DropdownListFieldStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Suggestion type.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="240" data-mc-height="144" src="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Suggestion type_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><span style="color: #008000;">#Drop-down list field: verify that the value of the selected drop-down list is displayed or hidden</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the drop down list with name: <span style="color: #b22222;">"Suggestion type"</span></p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"No suggestion"</span> value of the selected drop down list is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Purchase"</span> value of the selected drop down list is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Manufacturing"</span> value of the selected drop down list is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Intersite"</span> value of the selected drop down list is displayed</p>
+                                                </div>
+                                            </div>
+                                            <h2>Icon field</h2>
+                                            <p>The following step definitions are available to control the state of an icon field:</p>
+                                            <p>the icon field with name: "(.*)" is displayed</p>
+                                            <p>the icon field with name: "(.*)" is hidden</p>
+                                            <p>the icon field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the icon field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if an icon field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314F-IconFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Icon field: verify that the icon field with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the icon field with name: <span style="color: #b22222;">"PLM history"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Icon field: verify that the icon field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the icon field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"ITM1_BUTHISURL"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Icon field: verify that the icon field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the icon field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Icon field: verify that the icon field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the icon field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"ITM1_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Link field</h2>
+                                            <p>The following step definitions are available to control the state of a link field:</p>
+                                            <p>the link field with name: "(.*)" is displayed</p>
+                                            <p>the link field with name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a link field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314G-LinkFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Link field: verify that the link field with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the link field with name: <span style="color: #b22222;">"Country"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Link field: verify that the link field with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the link field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Text area field</h2>
+                                            <p>The following step definitions are available to control the state of a text area field:</p>
+                                            <p>the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a text area field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314H-TextAreaFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Text area field: verify that the text area field with an<span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"PJMEVEN_COMMEVEN"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text area field: verify that the text area field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"PJMEVEN_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <div class="note-info">Text area fields use the same step definitions as text fields.</div>
+                                            <h2>Text editor field</h2>
+                                            <p>The following step definitions are available to control the state of text editor fields using RTF or CKEditor 5 components:</p>
+                                            <p>the text editor field of section: "(.*)" is displayed</p>
+                                            <p>the text editor field of section: "(.*)" is hidden</p>
+                                            <p>the text editor field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is displayed</p>
+                                            <p>the text editor field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a text editor field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314I-TextEditorFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Text editor field: verify that the text editor field of a section is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text editor field of section: <span style="color: #b22222;">"Header text"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text editor field: verify that the text editor field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text editor field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"FPT1_TXT2"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text editor field: verify that the text editor field of a section is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text editor field of section: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Text editor field: verify that the text editor field with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name (ScreenCode_FieldName) is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the text editor field with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"FPT1_HDFIELD"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Password field</h2>
+                                            <p>The following step definitions are available to control the state of a password field:</p>
+                                            <p>the password field with name: "(.*)" is displayed</p>
+                                            <p>the password field with name: "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a password field is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314J-PasswordFieldStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Password field: verify that the password field is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the password field with name: <span style="color: #b22222;">"New password"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Password field: verify that the password field is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the password field with name: <span style="color: #b22222;">"Hiddenfield"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Data table</h2>
+                                            <p>The following step definitions are available to control the state of a data table cell:</p>
+                                            <p>the selected cell is enabled</p>
+                                            <p>the selected cell is disabled</p>
+                                            <p>the user selects the disabled cell with column header: "(.*)" and row number: (.*)</p>
+                                            <p>&#160;</p>
+                                            <p>The following step definitions are available to control the state of a data table column header:</p>
+                                            <p>the column header with name "(.*)" of the selected data table is displayed</p>
+                                            <p>the column header with name "(.*)" of the selected data table is hidden</p>
+                                            <p>the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name "(.*)" of the selected data table is displayed</p>
+                                            <p>the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name "(.*)" of the selected data table is hidden</p>
+                                            <p>the "(.*)" choice of the selected cell is displayed</p>
+                                            <p>the "(.*)" choice of the selected cell is hidden</p>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Confirm the state of the selected cell</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314K-DataTableCellStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Data&#160;table:&#160;select&#160;data&#160;table&#160;of&#160;the&#160;required&#160;section</p>
+                                                    <p><span style="color: #0000ff;">Given&#160;</span>the&#160;user&#160;selects&#160;the&#160;data&#160;table&#160;of&#160;section:&#160;<span style="color: #b22222;">"Variance&#160;accounts"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Data&#160;table:&#160;check&#160;the&#160;selected&#160;cell&#160;is&#160;disabled</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">When&#160;</span>the&#160;user&#160;selects&#160;cell&#160;with&#160;column&#160;header:&#160;<span style="color: #b22222;">"Account"</span>&#160;and&#160;row&#160;number:&#160;2</p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;cell&#160;is&#160;disabled</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data&#160;table:&#160;check&#160;the&#160;selected&#160;cell&#160;is&#160;enabled</p>
+                                                    <p><span style="color: #0000ff;">When&#160;</span>the&#160;user&#160;selects&#160;cell&#160;with&#160;column&#160;header:&#160;<span style="color: #b22222;">"Account"</span>&#160;and&#160;row&#160;number:&#160;7</p>
+                                                    <p><span style="color: #0000ff;">Then&#160;</span>the&#160;selected&#160;cell&#160;is&#160;enabled</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Data&#160;table:&#160;select&#160;a&#160;disabled&#160;cell</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">When&#160;</span>the&#160;user&#160;selects&#160;the&#160;disabled&#160;cell&#160;with&#160;column&#160;header:&#160;<span style="color: #b22222;">"Account"</span>&#160;and&#160;row&#160;number:&#160;2</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if a data table column header is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314K-DataTableCellStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/Data table example.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="65" src="../../../Resources/Images/ATP StepDefinitionsGuide/Data table example_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the fixed data table for <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name: <span style="color: #b22222;">"WMAC2STDSP_ARRAY_NBLIG"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Fixed part of the data table</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with name <span style="color: #b22222;">"Site"</span> of the selected data table is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name <span style="color: #b22222;">"WMAC2STDSP_FCYLIN"</span> of the selected data table is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with name <span style="color: #b22222;">"Ctrl."</span> of the selected data table is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name <span style="color: #b22222;">"WMAC2STDSP_SAC1"</span> of the selected data table is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#None-fixed part of the data table</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with a name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with name <span style="color: #b22222;">"BP"</span> of the selected data table is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name <span style="color: #b22222;">"WMAC2STDSP_BPR"</span> of the selected data table is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with a name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with name <span style="color: #b22222;">"Tax"</span> of the selected data table is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Data table - Verify that the column header with an <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the column header with <span class="mc-variable Sage-Product.ProductName variable">X3</span> field name <span style="color: #b22222;">"WMAC2STDSP_TAX"</span> of the selected data table is hidden</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Verify that the value of the choice of the selected cell is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314K-DataTableCellStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Lines.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="201" src="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Lines_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><span style="color: #008000;">#Set sales order lines information</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the fixed data table of section: <span style="color: #b22222;">"Lines"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Data table: verify that the value of the choice of the selected cell is displayed or hidden</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects last editable cell with column header: <span style="color: #b22222;">"Product source"</span></p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Normal"</span> choice of the selected cell is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"PO - Receive and ship"</span> choice of the selected cell is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Work order"</span> choice of the selected cell is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"PO - Direct to customer"</span> choice of the selected cell is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Tab</h2>
+                                            <p>The following step definitions are available to control the state of a tab:</p>
+                                            <p>the tab with title "(.*)" is displayed</p>
+                                            <p>the tab with title "(.*)" is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a tab is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314L-TabStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/Tab example.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="471" data-mc-height="167" src="../../../Resources/Images/ATP StepDefinitionsGuide/Tab example_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p style="color: #008000;">#Tab: Check if the tab with a title is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the tab with title <span style="color: #b22222;">"Main"</span> is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Tab: Check if the tab with a title is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the tab with title <span style="color: #b22222;">"Concession"</span> is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Function and entity</h2>
+                                            <p>The following step definitions are available to control the state of a function or entity in the site map:</p>
+                                            <p>the function "(.*)" in the site map is displayed</p>
+                                            <p>the function "(.*)" in the site map is hidden</p>
+                                            <p>the entity "(.*)" in the site map is displayed</p>
+                                            <p>the entity "(.*)" in the site map is hidden</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if a function or entity is displayed or hidden</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314M-FunctionEntityStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Function: check if a function is displayed using its function code</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the function <span style="color: #b22222;">"GESSOH"</span> in the site map is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the function <span style="color: #b22222;">"BSIIMP"</span> in the site map is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Function: check if a function is hidden using its function code</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the function <span style="color: #b22222;">"YHDFCT"</span> in the site map is hidden</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Entity: check if an entity is displayed</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the entity <span style="color: #b22222;">"Bank transactions management"</span> in the site map is displayed</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Entity: check if an entity is hidden</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the entity <span style="color: #b22222;">"HiddenEntity"</span> in the site map is hidden</p>
+                                                </div>
+                                            </div>
+                                            <h2>Right panel</h2>
+                                            <h3>Main actions</h3>
+                                            <p>The following step definitions are available to control the state of the right panel's main actions:</p>
+                                            <p>the "(.*)" main action button on the right panel is disabled</p>
+                                            <p>the "(.*)" main action button on the right panel is enabled</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if the right panel's main action is enabled or disabled</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314N-RightPanelMainActionStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Right panel action: example to enter in creation mode</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user clicks the <span style="color: #b22222;">"New"</span> main action button on the right panel</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the main action is enabled</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Create"</span> main action button on the right panel is enabled</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the main action is disabled</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Save"</span> main action button on the right panel is disabled</p>
+                                                </div>
+                                            </div>
+                                            <h3>Secondary actions</h3>
+                                            <p>The following step definitions are available to control the state of the right panel's secondary actions:</p>
+                                            <p>the "(.*)" secondary action button is disabled</p>
+                                            <p>the "(.*)" secondary action button is enabled</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if the right panel's secondary action is enabled or disabled</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314O-RightPanelSecondaryActionStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the secondary action is enabled</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the <span style="color: #b22222;">"Post"</span> secondary action button is enabled</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: click on the secondary action</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user clicks the <span style="color: #b22222;">"Post"</span> secondary action button on the right panel</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user clicks the <span style="color: #b22222;">"Yes"</span> option in the alert box</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the secondary action is disabled</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Post"</span> secondary action button is disabled</p>
+                                                </div>
+                                            </div>
+                                            <h3>Header drop-down</h3>
+                                            <p>The following step definitions are available to control the state of the right panel header drop-down's actions:</p>
+                                            <p>the "(.*)" action button on the header drop down is disabled</p>
+                                            <p>the "(.*)" action button on the header drop down is enabled</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if the header drop-down's action is enabled or disabled</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314P-RightPanelHeaderDropdownStateVerification</span>.</p>
+                                                    <p style="color: #008000;">#Right panel action: open the header drop-down</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user opens the header drop down</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: open the required section of the header drop-down</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user opens the <span style="color: #b22222;">"Zooms"</span> section on the right panel</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the action of the header drop-down is enabled</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Accounting document"</span> action button on the header drop down is enabled</p>
+                                                    <p>&#160;</p>
+                                                    <p style="color: #008000;">#Right panel action: check if the action of the header drop-down is disabled</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the <span style="color: #b22222;">"Withholdings on payment"</span> action button on the header drop down is disabled</p>
+                                                </div>
+                                            </div>
+                                            <h2>Left panel</h2>
+                                            <h3>Left list</h3>
+                                            <p>The following step definition is available to control the state of the left list and to check if it is empty:</p>
+                                            <p>the selected data table of the left panel is empty</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example: Check if the data table of the left panel returns no data</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314Q-LeftPanelStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/left list example.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="245" data-mc-height="143" src="../../../Resources/Images/ATP StepDefinitionsGuide/left list example_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p style="color: #008000;">#Left panel: check if the data table of the left panel is empty</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user clicks the <span style="color: #b22222;">"Deliveries"</span> link on the left panel</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user selects the data table of left panel</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects search cell with header: <span style="color: #b22222;">"Delivery no."</span></p>
+                                                    <p><span style="color: #0000ff;">And</span> the user adds the text <span style="color: #b22222;">"NotExistingValue"</span> in selected cell and hits enter key</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the selected data table of the left panel is empty</p>
+                                                </div>
+                                            </div>
+                                            <h3>Picking list</h3>
+                                            <p>The following step definition is available to control the state of the picking list and to check if it is empty:</p>
+                                            <p>the selected picking list of the left panel is empty</p>
+                                            <h4>Examples</h4>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if the data table picking list of the left panel is empty</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314R-PickingListStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/Picking list example.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="263" data-mc-height="156" src="../../../Resources/Images/ATP StepDefinitionsGuide/Picking list example_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p style="color: #008000;">#Left panel: check if the data table picking list of the left panel is empty</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user clicks the <span style="color: #b22222;">"Pick ticket selection"</span> link on the left panel</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user selects the data table of left panel</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects search cell with header: <span style="color: #b22222;">"Pick ticket"</span></p>
+                                                    <p><span style="color: #0000ff;">And</span> the user adds the text <span style="color: #b22222;">"NotExistingValue"</span> in selected cell and hits enter key</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the selected data table of the left panel is empty</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check if the hierarchical picking list of the left panel is empty</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314R-PickingListStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/Picking list 2 example.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="261" data-mc-height="110" src="../../../Resources/Images/ATP StepDefinitionsGuide/Picking list 2 example_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p style="color: #008000;">#Left panel: check if the hierarchical picking list of the left panel is empty</p>
+                                                    <p><span style="color: #0000ff;">Given</span> the user clicks the <span style="color: #b22222;">"Order selection"</span> link on the left panel</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user selects the main picking list panel of the screen</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the selected picking list of the left panel is empty</p>
+                                                </div>
+                                            </div>
+                                            <h2>Quick selection</h2>
+                                            <h3>Examples</h3>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check that the required value exists in the data table</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314S-QuickSelectionStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Selection sites.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="605" data-mc-height="166" src="../../../Resources/Images/ATP StepDefinitionsGuide/T11 Selection sites_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><span style="color: #008000;">#Quick selection: Open the text field's quick selection</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">When</span> the user clicks the <span style="color: #b22222;">"Selection"</span> button of the selected text field</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Quick selection: Search for the required value and check if the value exists</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the data table in the popup</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects search cell with header: <span style="color: #b22222;">"Site"</span></p>
+                                                    <p><span style="color: #0000ff;">And</span> the user adds the text <span style="color: #b22222;">"NA011"</span> in selected cell and hits enter key</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects cell that matches exact with the text: <span style="color: #b22222;">"NA011"</span> and column header: <span style="color: #b22222;">"Site"</span></p>
+                                                    <p><span style="color: #0000ff;">Then</span> the value of the selected cell is <span style="color: #b22222;">"NA011"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p>Alternatively, this solution is possible too:</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects cell with column header: <span style="color: #b22222;">"Site"</span> and row number: 1</p>
+                                                    <p><span style="color: #0000ff;">Then</span> the value of the selected cell is <span style="color: #b22222;">"NA011"</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Check that the required value doesn’t exist in the data table</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Extract from sample: <span class="reference">0314S-QuickSelectionStateVerification</span>.</p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/quick selection 1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="366" data-mc-height="174" src="../../../Resources/Images/ATP StepDefinitionsGuide/quick selection 1_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/ATP StepDefinitionsGuide/QUIck selection 2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="370" data-mc-height="118" src="../../../Resources/Images/ATP StepDefinitionsGuide/QUIck selection 2_thumb_150_0.png" style="max-width: 800px;max-height: auto;mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the text field with name: <span style="color: #b22222;">"Site"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Quick selection: open the text field's quick selection</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">When</span> the user clicks the <span style="color: #b22222;">"Selection"</span> button of the selected text field</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Quick selection: search for the required value that shouldn't be found</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects the data table in the popup</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user selects search cell with header: <span style="color: #b22222;">"Site"</span></p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #0000ff;">When</span> the user adds the text <span style="color: #b22222;">"NEX01"</span> in selected cell and hits enter key</p>
+                                                    <p>&#160;</p>
+                                                    <p><span style="color: #008000;">#Check that the required value is not found</span>
+                                                    </p>
+                                                    <p><span style="color: #0000ff;">Then</span> an alert box with the text containing <span style="color: #b22222;">"No Records Selected"</span> appears</p>
+                                                    <p><span style="color: #0000ff;">And</span> the user clicks the <span style="color: #b22222;">"Ok"</span> option in the alert box</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Previous" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Previous">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Previous</span>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Next" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Next">
+                                                            <div class="button-icon"> </div>
+                                                        </div><span class="button-text">Next</span>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">17 November 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1710 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Creation,Automatique,Patch" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Création automatique de patch" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Création automatique de patch</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Créationautomatiquedepatch" data-magellan-target="Créationautomatiquedepatch"><span>Création automatique de patch</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Cette fonction permet de créer un fichier de <a href="APATCH.htm">patch</a> intégrant tous les éléments créés ou modifiés entre deux dates, le cas échéant marqués par un code activité.</p>
+                                                            <p>On peut définir le type d'éléments que l'on souhaite patcher, et procéder de deux façons différentes :</p>
+                                                            <ul>
+                                                                <li>soit par une génération directe du fichier (le nombre d'éléments présents par type étant listés).</li>
+                                                                <li>soit par la génération d'un fichier de patch ne contenant que la liste des éléments. Dans ce cas, on relira ce fichier dans la fonction de patch pour charger la liste complète des éléments concernés et permettre sa modification si nécessaire.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="ECR"></a>
+                                                            <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_40_200">Fenêtre de sélection préliminaire</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_300">Fenêtre de validation</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_305">Fonctions accessibles par clic droit sur tableau</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_40_310">Détail</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><a id="MIS_40_200"></a>
+                                                            <h3 class="g1">Fenêtre de sélection préliminaire</h3>
+                                                            <div id="desc_mis_40_200" class="ddesc" style="display: block;">
+                                                                <p>En entrant dans la fonction, on retrouve une première fenêtre, qui permet de définir les critères de recherche des éléments à patcher.</p>
+                                                            </div>
+                                                            <div class="bfields">
+                                                                <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                    <div class="MCDropDownBody dropDownBody">
+                                                                        <div id="mis_40_200" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Critères</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date début (champ DATDEB1)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Permet de définir un intervalle de date pour sélectionner les éléments à patcher. La date de dernière modification est utilisée pour les éléments modifiés, et la date de création est utilisée pour les éléments nouvellement créés.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date fin (champ DATFIN1)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Utilisateur (<a href="GESAUS.htm">champ USR</a>)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b>Bloc numéro 3</b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Script à exécuter (champ TRT)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Si un traitement est mentionné ici, il sera ajouté, sous forme de demande d'exécution (<em>EXE)</em> dans le fichier de patch créé. Ainsi, à l'intégration du patch, le traitement en question sera exécuté sur chaque dossier à patcher.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b><a href="TBL_MGT.htm">Tableau</a><i> Objets</i></b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code (champ CODE1)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Définit les différents types d'éléments susceptibles d'être intégrés au fichier de patch.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé objet (champ LIBEL1)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Intitulé associé au code précédent</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>O/N (champ PATCH1)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>La recherche du nombre d'objets à patcher se fera uniquement pour les éléments pour lesquels ce champ sera positionné à <em>Oui</em>.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b><a href="TBL_MGT.htm">Tableau numéro</a><i> 2</i></b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Langue (<a href="GESTLA.htm">champ LANGUE</a>)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Ce champ permet de définir la langue que l'on désire patcher. Si elle est renseignée, seuls les textes de cette langue seront extraits à la génération du patch.</p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                            <h4 class="bloctitle">
+                                                                                <p><b><a href="TBL_MGT.htm">Tableau numéro</a><i> 3</i></b>
+                                                                                </p>
+                                                                            </h4>
+                                                                            <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code activité (<a href="GESACV.htm">champ CODACT</a>)</b>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                    <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                        <p>Si un code d'activité est saisi, il est utilisé comme filtre pour rechercher les éléments à patcher. </p>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Icône Actions</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Oui à tout le reste</b>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Lorsqu'on a un tableau de saisie de choix multiples avec un choix de&#160;réponse <em>Oui / Non </em>sur chaque ligne, cette fonction permet de répondre <em>Oui</em> à toutes les lignes à partir de la ligne courante.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Non à tout le reste</b>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <p>Lorsqu'on a un tableau de saisie de choix multiples avec un choix de&#160;réponse <em>Oui / Non </em>sur chaque ligne, cette fonction permet de répondre&#160;<em>Non</em> à toutes les lignes à partir de la ligne courante.</p>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Action de déroutement STANDARD</b>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Action de déroutement STANDARD</b>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Fenêtre de validation</b>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                            <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                <div id="desc_mis_40_300" class="ddesc" style="display: block;">
+                                                                                    <p>Une fois la première fenêtre saisie et validée, le traitement de sélection s'exécute (une fenêtre de progression affiche la sélection en cours), et au bout de quelques instants, une deuxième fenêtre s'ouvre. Dans cette fenêtre, on retrouve les informations relatives au résultat de la recherche et on peut compléter cette saisie pour créer directement le fichier de patch.</p>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bfields">
+                                                            <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                <div class="MCDropDownBody dropDownBody">
+                                                                    <div id="mis_40_300" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Type de patch</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type de patch (champ TYPPTC)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Le type de patch peut prendre les valeurs suivantes :<span style="font-size: 12pt;"></span></p>
+                                                                                    <ul>
+                                                                                        <li><span style="font-weight: bold;">Standard</span>
+                                                                                            <br />C'est un patch qui est susceptible d'être installé sur 
+une liste de dossiers qui sera donnée à l'intégration, cette liste intégrant en 
+principe le dossier superviseur. Dans la plupart des cas (y compris pour des 
+développements spécifiques et verticaux), c'est le type de patch à utiliser. En 
+effet, la livraison de développements spécifiques ou verticaux n'est pas 
+conditionnée par le type de patch, mais par la liste des codes activités qui 
+sont données dans le tableau correspondant.</li>
+                                                                                        <li><span style="font-weight: bold;">Superviseur </span>
+                                                                                            <br />C'est un patch qui sera intégré uniquement dans le 
+dossier superviseur. Ce type est utilisé quand on veut intégrer des éléments de 
+pré-paramétrage comme les modèles d'import/export, pièces automatiques, règles 
+de Workflow, qui peuvent avoir été modifiés dans les différents dossiers. Pour 
+éviter d'écraser les modifications faites, on ne met alors à jour que le dossier 
+superviseur. Ceci permet d'avoir des valeurs de paramétrage à jour en cas de 
+création d'un nouveau dossier, et aussi de permettre des mises à jour manuelles 
+par copie dans chaque dossier après avoir utilisé les utilitaires de comparaison 
+existants.</li>
+                                                                                        <li><span style="font-weight: bold;">Spécifique </span>
+                                                                                            <br />C'est un patch identique au patch standard, mais il 
+permet, lorsqu'un écran est patché, de supprimer les actions spécifiques 
+(<span style="font-style: italic;">SPE</span>) non présentes dans le patch. Vous devez utiliser cette valeur pour 
+modifier le nom d'un traitement spécifique pour une action de dictionnaire sur 
+les écrans. Cela s'applique aussi aux écrans, objets, états, formules et 
+consultations. <br /><img src="../Resources/Images/SEEREFERTTO.png" /> Pour plus d'informations, reportez-vous à l'<a href="TECH_PATCH.htm">annexe 
+technique</a><a href="file:///C:/ProgramData/Sage/Safe%20X3%20Client/V1/Data/_AdxSols/SOL_SUPDVLP/ALL/XBLOCK/FCT/TECH_PATCH.htm"></a>détaillée.</li>
+                                                                                        <li><span style="font-weight: bold;">Vertical </span>
+                                                                                            <br />C'est un patch identique au patch standard, mais il 
+permet, lorsqu'un écran est patché, de supprimer les actions verticales 
+(<span style="font-style: italic;">SPV</span>) non présentes dans le patch. Vous devez utiliser cette valeur pour 
+modifier le nom d'un script vertical pour une action de dictionnaire sur les 
+écrans. Cela s'applique aussi aux écrans, objets, états, formules et 
+consultations. <br /><img src="../Resources/Images/SEEREFERTTO.png" /> Pour plus d'informations, reportez-vous à l'<a href="TECH_PATCH.htm">annexe 
+technique</a> détaillée.</li>
+                                                                                        <li><span style="font-weight: bold;">Add-on</span> <br />C'est un patch dédié aux add-on. Il permet de conserver 
+les actions sur champ verticales (<span style="font-style: italic;">SPV</span>) et les actions spécifiques 
+(<span style="font-style: italic;">SPE</span>).</li>
+                                                                                    </ul>
+                                                                                    <p />
+                                                                                    <p>
+                                                                                        <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" /> <span style="color: rgb(191, 127, 0);">Les patches contenant des éléments de documentation sont traités 
+de façon un peu particulière, décrite dans l'<a href="file:///C:/ProgramData/Sage/Safe%20X3%20Client/V1/Data/_AdxSols/SOL_SUPDVLP/ALL/XBLOCK/FCT/APATCH.htm#MIS_46_50">annexe</a> correspondante.</span></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Fichier</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>champ AW</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Type de destination (champ TYPEXP)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Patch (champ VOLFIL)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Génération directe (champ FLAGPAT)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Si la case est cochée, l'extraction va se faire sur la liste des éléments restés sélectionnés sans autre filtre possible. Si cette case n'est pas cochée, le fichier de patch qui va être créé ne contiendra qu'un en-tête avec la liste des éléments à patcher. Il suffira, pour générer effectivement le fichier avec son contenu, de rappeler ce fichier en <a href="APATCH.htm">création manuelle de patch</a>. La question <i>Chargement d'objet</i> sera alors posée. En répondant <i>Oui</i> à cette question, on rechargera l'intégralité de l'en-tête du patch. Il sera alors possible de modifier manuellement la liste détaillée des objets à patcher, de la compléter, et de lancer finalement l'extraction des éléments du patch pour réécrire le fichier de patch avec à la fois l'en-tête listant les éléments et leur contenu.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Bloc numéro 3</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date début (champ DATDEB)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Permet de définir un intervalle de date pour sélectionner les éléments à patcher. La date de dernière modification est utilisée pour les éléments modifiés, et la date de création est utilisée pour les éléments nouvellement créés.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Date fin (champ DATFIN)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Version minimum (champ VERSION)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Ce code version minimum permet d'éviter d'intégrer le patch dans une application de version inférieure.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b><a href="TBL_MGT.htm">Tableau</a><i> Objets</i></b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Code (champ CODE)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Définit les codes des types d'éléments susceptibles d'être écrits dans le fichier de patch.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Intitulé objet (champ LIBEL)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Intitulé associé au code précédent</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Nombre (champ NB)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>Indique le nombre d'élément de chaque type trouvés lors de la recherche préliminaire des éléments à patcher. On peut en voir le détail par clic droit sur la ligne.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>O/N (champ PATCH)</b>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                <td class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                                    <p>&#160;</p>
+                                                                                    <p>Dernière possibilité de refuser ou de sélectionner les OBJets à
+patcher.</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div><a id="MIS_40_305"></a>
+                                                        <h4 class="g1">Fonctions accessibles par clic droit sur tableau</h4><a id="MIS_40_310"></a>
+                                                        <h6 class="g1">Détail</h6>
+                                                        <p>Permet de visualiser la liste détaillée des éléments patchés sur la ligne, dont seul le nombre est donné.</p><a id="INC_40_315"></a>
+                                                        <h6 class="g1">Oui à tout le reste</h6>
+                                                        <p>Lorsqu'on a un tableau de saisie de choix multiples avec un choix de&#160;réponse <em>Oui / Non </em>sur chaque ligne, cette fonction permet de répondre <em>Oui</em> à toutes les lignes à partir de la ligne courante.</p><a id="INC_40_320"></a>
+                                                        <h6 class="g1">Non à tout le reste</h6>
+                                                        <p>Lorsqu'on a un tableau de saisie de choix multiples avec un choix de&#160;réponse <em>Oui / Non </em>sur chaque ligne, cette fonction permet de répondre&#160;<em>Non</em> à toutes les lignes à partir de la ligne courante.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="stdBloc" xmlns="http://www.w3.org/1999/xhtml"><a id="MIS_45_10"></a>
+                                                    <h2 class="g1" id="Listedesélémentspossiblesenpatchautomatique" data-magellan-target="Listedesélémentspossiblesenpatchautomatique">Liste des éléments possibles en patch automatique</h2>
+                                                    <p>Tous les éléments susceptibles d'être patchés peuvent l'être en patch automatique. Le tableau ci-dessous en donne la liste :</p><a id="MIN_44_20"></a>
+                                                    <p />
+                                                    <table width="588" border="1" cellspacing="0" cellpadding="0" style="HEIGHT: 2505px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                        <tbody>
+                                                            <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><b>Code</b>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><b>Signification</b>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><b>Nom</b>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p><b>Rang</b>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AAA</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>&#160;Lignes issues d'un modèle de paramétrage</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Format particulier, cf. paragraphe correspondant</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>100&#160;</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ABA</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESABA.htm">Abonnement batch</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de l'abonnement</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>46</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>&#160;ABF</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESABF.htm">Table de fait</a>&#160;BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la table</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>54</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ABG</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESABG.htm">Groupes de tâches</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code du groupe</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>47</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ABI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESABI.htm">Dimension</a> BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la dimension</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>55</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ABM</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESABM.htm">Datamart</a> BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code du datamart</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>56</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ABO</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESABO.htm">Etat</a> Business Objects</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de l'état</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>58</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ABT</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESABT.htm">Tâche batch</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de la tâche</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>45</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ABV</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESABI.htm">Règle de synchronisation</a> BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la règle</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>57</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ACL</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESACL.htm">Table de contrôle</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de la table</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>18</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ACN</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESACN.htm">Consultation</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la consultation</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>36</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ACS</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESACS.htm">Codes d'accès</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Traité sous forme de condition (CODACS="valeur")</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>14</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ACT</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESACT.htm">Action</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code&#160;de l'action</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>16</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ACV</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Définition d'un <a href="GESACV.htm">code activité</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code activité</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>1</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ADC</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Description d'un traitement (<a href="GESADC.htm">dictionnaire</a>)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Nom&#160;du traitement</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>9</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ADF</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESADF.htm">Liens de documentation</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Type ~ Code de l'élément</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>50</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ADI</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Contenu d'une <a href="GESADI.htm">table diverse</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Numéro de la table</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>24</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ADO</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESADO.htm">Aide fonctionnelle</a> (tous les paragraphes)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Type ~ Code de l'aide</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>49</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ADP</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESADP.htm">Paramètre</a> (à la fois sa définition et sa valeur s'il en existe au niveau général)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code du paramètre</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>32</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ADV</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Paramétrage d'une <a href="GESADI.htm">table diverse</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Numéro de la table</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>23</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ADX</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Traitement (uniquement sous forme compilée)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Nom du traitement</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>11</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ADZ</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESADZ.htm">Aide sur champ</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de l'aide</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>48</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AEN</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAEN.htm">Enchaînement d'import export</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Traité sous forme de condition (CODE="valeur")</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>35</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AFC</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAFC.htm">Fonction</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;de la fonction</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>17</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AGB</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAGB.htm">Variable globale</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Nom de la variable</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>20</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AHH</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAHH.htm">Hiérarchie</a> BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code hiérarchie</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>59</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AHI</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAHI.htm">Formules d'épuration</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la formule</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>7</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AII</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAII.htm">Condition préféfinie</a> BI</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code condition</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>60</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ALH</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESALH.htm">Requêteur</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la requête</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>51</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ALQ</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESALQ.htm">Requêteur SQL</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de la requête SQL</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>52</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ALT</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESALT.htm">Requêteur graphique</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la requête</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>53</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AMK</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAMK.htm">Ecran</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;de l'écran</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>28</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AML</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="TXT.htm">Menu local</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Numéro du menu local</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>2</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ANG</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESANG.htm">Navigation</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de la navigation</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>10</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ANM</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Définition d'un <a href="GESANM.htm">compteur</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code du compteur</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>15</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ANT</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESANT.htm">Paramétrage widget Netvibes</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code objet pour widget</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>65</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AOB</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Définition d'<a href="GESAOB.htm">objet</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de l'objet</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>30</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AOE</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAOE.htm">Modèle d'import/export</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;du modèle</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>34</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AOP</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Propriétés d'<a href="GESAOP.htm">objet</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de l'objet</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>31</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>APH</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAPH.htm">Modèles de paramétrage</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code du modèle</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>100</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>APR</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAPR.htm">Processus graphique</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code processus</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>63</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ARP</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Définition d'<a href="GESARP.htm">état</a> dans le dictionnaire</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code de l'état</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>29</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ASL</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESASL.htm">Style conditionnel</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Traité sous forme de condition (COD="valeur")</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>19</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ASU</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Description d'un <a href="GESASU.htm">sous-programme</a> dans le dictionnaire</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Nom du sous-programme</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>21</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ASY</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESASY.htm">Style de présentation</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code du style</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>61</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ATB</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Définition d'une table (le contenu n'est pas transféré, la mise à jour de la structure est faite sans perdre les données communes)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;de la table</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>25</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ATN</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Transactions</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la transaction</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>8</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ATY</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESATY.htm">Type de données</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;du type</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>22</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AUR</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESATY.htm">URL</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de l'URL</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>27</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AVW</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAWV.htm">Vue</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;de la vue</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>26</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AWA</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAWA.htm">Règle Workflow</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la règle Workflow</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>43</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AWE</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAWE.htm">Web service</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Nom de publication</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>64</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AWI</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Définition de <a href="GESAWI.htm">fenêtre</a></p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code&#160;de la fenêtre</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>33</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AWM</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESAWM.htm">Modèle de données</a> Workflow</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code modèle</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>41</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>AWR</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESAWR.htm">Règle d'affectation</a> Workflow</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la règle d'affectation</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>42</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>AWW</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Paramétrage du <a href="GESAWW.htm">plan de travail</a> Workflow</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code du plan de travail</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>44</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>BIA</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>&#160;Objets BIAR</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>&#160;Code objet</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>4</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>ELT</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Elément de l'interface cliente (xsl, image, fichier divers)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Chemin du fichier</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>3</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>ETA</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Etat Crystal Reports (fichier d'extension rpt)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Nom de l'état</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>13</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>EXE</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Demande d'exécution d'un traitement</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Nom&#160;du traitement</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>6</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>GAU</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESGAU.htm">Pièces automatiques</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code de la pièce</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>40</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>PS1</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p><a href="GESPS1.htm">Déclencheur statistique</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code du déclencheur</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>37</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>PS2</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESPS2.htm">Code statistique</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code statistique</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>38</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>TAB</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Structure et contenu complet d'une table (sa définition «&#160;dictionnaire&#160;» exclue). <br />Le patch global d'une table est une sauvegarde à plat de ce fichier : comme un .dat d'une sauvegarde de table dans le répertoire SVG. Tous les liens sur cette table ne sont pas pris en compte et en particulier les textes traduisibles contenus dans la table ATEXTRA.</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Code&#160;de la table</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>39</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>TFO</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p><a href="GESTFO.htm">Table des formules</a>
+                                                                    </p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Code formule</p>
+                                                                </td>
+                                                                <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>62</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>TRT</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Source d'un traitement (le traitement sera compilé à l'installation du patch)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                    <p>Nom du traitement</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                    <p>12</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>TXT</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Fichier texte (dans le répertoire TXT)</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                    <p>Nom du texte</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                    <p>5</p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                <td width="20%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                    <p>Abréviation d'une table</p>
+                                                                </td>
+                                                                <td width="40%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                    <p>Contenu partiel de la table</p>
+                                                                </td>
+                                                                <td width="30%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                    <p>Condition d'extraction (exprimée sous la forme d'une clause Where)</p>
+                                                                </td>
+                                                                <td width="10%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                    <p>100</p>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="stdBloc" xmlns="http://www.w3.org/1999/xhtml"><a id="ERR"></a>
+                                                    <h2 class="g1" id="Messagesderreur" data-magellan-target="Messagesderreur">Messages d'erreur</h2>
+                                                    <div class="links">
+                                                        <ul>
+                                                            <li><a href="ERR_GEN.htm">Messages génériques</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <p>Il n'y a pas de message d'erreur autre que les messages d'erreur génériques.</p>
+                                                </div>
+                                                <div class="stdBloc" xmlns="http://www.w3.org/1999/xhtml"><a id="ATB"></a>
+                                                    <h2 class="g1" id="Tablesmisesenoeuvre" data-magellan-target="Tablesmisesenoeuvre">Tables mises en oeuvre</h2>
+                                                    <p>
+                                                        <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_APATCHA.htm#ATB">Mise en oeuvre</a></p>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Cr%C3%A9ationautomatiquedepatch">Création automatique de patch</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#Listedes%C3%A9l%C3%A9mentspossiblesenpatchautomatique">Liste des éléments possibles en patch automatique</a>
+                                                        </li>
+                                                        <li><a href="#Messagesderreur">Messages d'erreur</a>
+                                                        </li>
+                                                        <li><a href="#Tablesmisesenoeuvre">Tables mises en oeuvre</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

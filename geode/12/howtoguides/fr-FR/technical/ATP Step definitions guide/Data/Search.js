@@ -1,0 +1,1 @@
+﻿define({r:0.5,st:'Stem',n:1,t:[0],m:[0,1],u:['../Content/About.htm'],s:['+','hotspot','unic'],p:[['+',5],['and',22],['clicks',7],['dialog',8],['field',13],['in',5],['login',6],['opinion',8],['run',17],['stored',22],['the',6],['then',12],['value',6]]});

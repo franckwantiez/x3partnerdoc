@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Folder validation: technical annex" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Folder validation: technical annex</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Foldervalidationtechnicalannex" data-magellan-target="Foldervalidationtechnicalannex"><span>Folder validation: technical annex</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                            <p>The folder validation operation is an operation launched from folder management in the reference folder. <br />It can be launched in batch mode. Its aim is to perform the operations to bring the folder in a usable state, i.e. a state where connection and normal operations are possible on the corresponding endpoint.</p>
+                                                            <p>The folder validation is a complex process that handles several cases:</p>
+                                                            <ul>
+                                                                <li>complete creation of the folder if it does not exist,</li>
+                                                                <li>structure changes of a folder that already exists, when:</li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <li>upgrading the reference folder,</li>
+                                                                            <li>changing the activity codes configuration,</li>
+                                                                            <li>setting up new languages,</li>
+                                                                            <li>activating new modules,</li>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                                <li>updating an history folder...</li>
+                                                            </ul>
+                                                            <p>The creation of an history folder is done from the <a href="CREHISTO.htm">Creation of Purge folder</a>&#160;function. </p>
+                                                            <p>The process description has several steps, and these steps are described here.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Processsteps" data-magellan-target="Processsteps">Process steps</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_30_20">1 - Pre-requisite for history folders</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_30">2 - Preliminary controls</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_40">3 - Preliminary step of validation</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_50">4 - Directory / Database creation</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_60">5 - Data transfer and purge</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_70">6 - Table migration</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_80">7 - Dictionary updates and structure changes</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_90">8 - Deliverables and kit management</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_100">9 - Dictionary update</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_110">10 - Parameter updates and data copy</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_120">11 - Dictionary generation</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_130">12 - Post upgrade data updates</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_140">13 - Classes and representation synchronization</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_150">14 - Final dictionary operations</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_160">15 - Additional step for migration if plans are selected</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div><a id="MIS_30_20"></a>
+                                                            <h3 class="g1">1 - Pre-requisite for history folders</h3>
+                                                            <p>If a history folder exists for a given folder, its revalidation is done in a second step, and can even be done much later (if for instance the environment where the history folder is installed remains as a stand-alone environment). But a history folder can only be migrated after migration of the folder it is attached to.</p>
+                                                            <p>The history folder revalidation is only available for a migration that goes from version 150, version 6, version7, or upgrade 8 to upgrade 9 or later. Beware that this requires a minimum level of patches or maintenances depending on the version.</p>
+                                                            <p>The following list gives the prerequisites:</p>
+                                                            <p />
+                                                            <table width="100%" border="1" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Product&#160;</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Version or upgrades</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>Minimum patch list or maintenance</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Sage X3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Version 5</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;Maintenances 7401 and 7402 must be installed</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Sage X3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Version 6.x</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;Patch list &gt;= 33</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Sage X3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Version 7</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;Patch list &gt;= 10</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Sage X3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Upgrade 8</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;Patch list &gt;= 2</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Sage HRM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;Version 5</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;Maintenances 2211 and 2212 must be installed</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Sage HRM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;Version 6</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>&#160;Patch list &gt;= 29</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;Sage HRM</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>&#160;Version 7</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>&#160;Patch list &gt;= 3</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table><a id="MIS_30_30"></a>
+                                                            <h3 class="g1">2 - Preliminary controls</h3>
+                                                            <p>The folder validation first tests the parameter of the validation, with the following actions:</p>
+                                                            <ul>
+                                                                <li>If a history folder is validated, the reference folder is set to the associated exploitation folder.</li>
+                                                                <li>The reference folder is checked (it must be at the current version level).</li>
+                                                                <li>If the folder already exists, we are in a revalidation process, if not, we are in a validation process.</li>
+                                                                <li>The activity code values are controlled:<br />- if an activity code is not set in the reference folder, it is deactivated,<br />- in case of a revalidation, the list of activity codes that have been changed is updated,<br />- the list of legislation activity codes updated is managed separately (some set-up updates are linked to legislations),<br />- the evaluated activity code values (through dependency formulas) are computed,<br />- the specific activity codes present are identified and checked.</li>
+                                                                <li>Additional functional controls are done (for instance, the value of some parameters).</li>
+                                                                <li>For history folder revalidation, check some pre-requisites (the view ADOVALHIS must be present in the reference folder: this is the case if the right preliminary patch has been installed on versions 150, 6, 7 and 8).</li>
+                                                                <li>The length of miscellaneous tables is checked (datatype ADI).</li>
+                                                                <li>The version of the engine is checked in order to ensure that optimized upgrade (migration plans) can be executed. </li>
+                                                            </ul>
+                                                            <p>If some of the preliminary checks fail, the revalidation process will stop and the log file will give the reasons for this failure. </p><a id="MIS_30_40"></a>
+                                                            <h3 class="g1">3 - Preliminary step of validation</h3>
+                                                            <p>If the folder is revalidated, the folder is first switched to mono-connection mode (no user can connect to the folder during the revalidation). This is of course only possible if no other user is already connected, otherwise the revalidation fails.</p>
+                                                            <p>Flags defining if elements in dictionaries will have to be validated. By default, the revalidation is set to <b>No</b> except if we are in folder creation. In the next steps, the flag can be set to <b>Yes</b> by one of the upgrade procedures. </p><a id="MIS_30_50"></a>
+                                                            <h3 class="g1">4 - Directory / Database creation</h3>
+                                                            <p>If the folder is created, a set of directories will be created in the application folder, and the scripts that create the database user with the corresponding tablespaces are run as well. </p>
+                                                            <p>If the folder is revalidated, a check is done and the additional directories can be created (for instance when a language is added or if a new directory has been defined in the reference folder).</p>
+                                                            <p>If the validated or revalidated folder is an history folder, the local dictionary elements (local table description) are created according to the data already stored, the dedicated menu files and text files used for the user interface are generated.</p><a id="MIS_30_60"></a>
+                                                            <h3 class="g1">5 - Data transfer and purge</h3>
+                                                            <p>If the migration plans have been enabled:</p>
+                                                            <ul>
+                                                                <li>The list of temporary tables is set:<br />- every module returns a list of tables to be purged,<br />- some of them are temporary and can be purged without any problem (ALISTER, AWRKLOG, ATMPTRA for supervisor for instance, or PWRKSTT,PWRKORDERS for the purchase module),<br />- some of them are purged but will be reconstructed later. This includes tables such as BALANCE, BALANA, GLCONSO for the accounting module.</li>
+                                                                <li>The list of movement tables is set as well.</li>
+                                                                <li>An entry point allows specific developments to add their own tables to the list.</li>
+                                                                <li>The temporary tables are purged.</li>
+                                                                <li>The movement tables are copied by direct SQL transfer to the dedicated U* migration tables.</li>
+                                                                <li>The movement tables are then purged.</li>
+                                                            </ul><a id="MIS_30_70"></a>
+                                                            <h3 class="g1">6 - Table migration</h3>
+                                                            <p>The tables are now updated using the AMAJ routine located in the DOSMAJ scripts. The principles are the following:</p>
+                                                            <ul>
+                                                                <li>The indexes and the triggers are deleted.</li>
+                                                                <li>The columns to be added are added to the tables.</li>
+                                                                <li>The new tables added to the new version are created.</li>
+                                                                <li>The AMAJ routine in DOSMAJ* scripts are run, in the right order: for every release gap, a dedicated DOSMAJ* can run. For instance, to go from release X1 to Xn, the intermediate DOSMAJ that might exist to go from X1 to X2, from X2 to X3... from Xn-1 to Xn will run successively. This processes can, for instance, fill a new column with the content of an old column that might disappear at the next step, or fill a new table with the content of an old table that might disappear at the next step.</li>
+                                                            </ul><a id="MIS_30_80"></a>
+                                                            <h3 class="g1">7 - Dictionary updates and structure changes</h3>
+                                                            <p>The table dictionary is now updated and the revalidation of all the modified tables will occur. This will drop the standard columns that are no longer present in the version and reindex the existing tables.</p>
+                                                            <p>The movement tables transformation is also managed by this step. But if the migration plans have been used, the movement tables will be empty and the update will be performed later.</p><a id="MIS_30_90"></a>
+                                                            <h3 class="g1">8 - Deliverables and kit management</h3>
+                                                            <p>
+If deliverables or kits have been added, they are copied from the reference folder (this step is not performed on a history folder).
+        </p><a id="MIS_30_100"></a>
+                                                            <h3 class="g1">9 - Dictionary update</h3>
+                                                            <p>When revalidating a normal folder, the dictionary content is updated for all the elements. This includes tables, views, actions, screens, objects, windows, data types, action parameters, functions, reports, activity codes, general parameters, miscellaneous tables, purge formulas, system transactions, inquiries, navigations, transactions, memo codes, type prototypes, global variables, constants, context variables, sub-programs, formula assistant contexts, URLs, documentations, data models, classes, representations, help keywords, entry points, business object related dictionaries.</p>
+                                                            <p>The update takes into account the changes that have been made (especially new activity codes, new legislations).</p>
+                                                            <p>The tables are now revalidated according to the new dictionary definition: columns that are no longer present are deleted, indexes are recomputed.</p><a id="MIS_30_110"></a>
+                                                            <h3 class="g1">10 - Parameter updates and data copy</h3>
+                                                            <p>If we are updating a non history folder, depending on the changes in the setup, some data might be copied from the reference folder (for instance if a language code has been added, if new setups are delivered in a table and copied). The possible operations are the following:</p>
+                                                            <ul>
+                                                                <li>The new parameters created in the release are copied and initialized if necessary.</li>
+                                                                <li>The new miscellaneous tables are copied and initialized.</li>
+                                                                <li>The content of new tables that are delivered with automatic copy or conditional copy (if the copy has been set) is copied from the reference folder in the folder.</li>
+                                                                <li>The data related to kits that have been enabled is copied from the reference folder.</li>
+                                                            </ul>
+                                                            <p>At this step, a link control procedure is executed on all the table except the movement tables if the migration plans are used.</p><a id="MIS_30_120"></a>
+                                                            <h3 class="g1">11 - Dictionary generation</h3>
+                                                            <p>Still for non history folder on this step, the dictionary elements are validated:</p>
+                                                            <ul>
+                                                                <li>The views are generated.</li>
+                                                                <li>The local menu files are generated.</li>
+                                                                <li>The screens, objects, windows, inquiries are validated.</li>
+                                                                <li>The vocabulary elements are validated.</li>
+                                                            </ul>
+                                                            <p>For history folder updates, only the tables and views are generated and validated (all the other dictionary elements are inherited from the main folder).</p><a id="MIS_30_130"></a>
+                                                            <h3 class="g1">12 - Post upgrade data updates</h3>
+                                                            <p>
+If the we are in an upgrade process for non history folders, the MAJ routine in DOSMAJ* scripts are run, in the right order: for every release gap, a dedicated DOSMAJ* can run. <br />For instance, to go from release X1 to Xn, the intermediate DOSMAJ that might exist to go from X1 to X2, from X2 to X3... from Xn-1 to Xn will run successively. <br />This process can, for instance, perform additional updates. This step runs for both history folders and normal folders, but the scripts executed can of course be different.
+        </p><a id="MIS_30_140"></a>
+                                                            <h3 class="g1">13 - Classes and representation synchronization</h3>
+                                                            <p>
+If we are upgrading a non history folder, the classes and representation links are updated and the validation flag is set to trigger the validation later.
+        </p><a id="MIS_30_150"></a>
+                                                            <h3 class="g1">14 - Final dictionary operations</h3>
+                                                            <p>Still on a non history folder validation, the following operations are performed:</p>
+                                                            <ul>
+                                                                <li>The transactions are generated.</li>
+                                                                <li>If we create a mono-legislation folder, additional mass changes are done on some key linked to multi-legislation.</li>
+                                                                <li>If the folder has been created by the validation, default parameter values are filled according to the reference folder, default periods and fiscal year values are set.</li>
+                                                                <li>Menu files are generated from menu profiles.</li>
+                                                                <li>Triggers are generated on the tables.</li>
+                                                                <li>The update flags on the dictionary elements are reset.</li>
+                                                                <li>The BI parameter and code generation are done.</li>
+                                                                <li>The index files of compiled scripts are regenerated.</li>
+                                                                <li>Miscellaneous status flags are updated.</li>
+                                                                <li>The current version number is updated.</li>
+                                                                <li>Finally, the folder is switched back to multi-user mode.</li>
+                                                            </ul><a id="MIS_30_160"></a>
+                                                            <h3 class="g1">15 - Additional step for migration if plans are selected</h3>
+                                                            <p>This step is relevant only if we are in an upgrade process and if the migration plans have been selected (otherwise, the folder validation is finished).</p>
+                                                            <p>At this step, all the main parameters and dictionary tables are up to date, but all the movement tables are empty, and the corresponding data is located in the U* tables.</p>
+                                                            <p>Running the migration plan steps will transfer the data by massive insertion into the final movement tables. This can be done with several steps in parallel, and is defined by the migration plan setup.</p>
+                                                            <p>When finally this step is finished, the folder is again ready for normal operation. The U* table remain with the movement data image before the migration. They can be purged later (for instance after a given period of normal operation, to be able to analyze further data inconsistencies that were not detected).</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEINFO.png" alt="SEEINFO" keeps="true" realloc="SEEINFO" />&#160;<span style="color: #bf7f00;">They need to be purged before the next upgrade will be done. This is done with the function TRTMIGDEL.</span></p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Additionalcommentsregardinghistoryfolderupgrade" data-magellan-target="Additionalcommentsregardinghistoryfolderupgrade">Additional comments regarding history folder upgrade</h2>
+                                                            <p>The following limitations apply to application table upgrade in history folders:</p>
+                                                            <ul>
+                                                                <li>Only the table having a standard history rule are migrated.</li>
+                                                                <li>The post-migration process (step 12 above) are not executed on history folder, except for balance resynchronization.</li>
+                                                            </ul>
+                                                            <p>The consequence is that the following V6 fields will remain empty on the historized data:</p>
+                                                            <ul>
+                                                                <li>FIY and PER on BUD, GCOMMIT, SINVOICE (Sales/AR), PINVOICE (Purchase/AP) and PAYMENTH tables.</li>
+                                                                <li>UOM in GCOMMIT and BUD tables.</li>
+                                                            </ul>
+                                                            <p>You should also remind that the accounting cumulated tables (BALANCE, BALANA, BLACMM, BLAQTY) are erased in V6. The migration procedure resynchronizes the balance table. If you want to use balance historized data, the GACCENTRY* and GCOMMIT* tables must also have been historized.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Foldervalidationtechnicalannex">Folder validation: technical annex</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introduction">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#Processsteps">Process steps</a>
+                                                        </li>
+                                                        <li><a href="#Additionalcommentsregardinghistoryfolderupgrade">Additional comments regarding history folder upgrade</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Configuration, Base, Données" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Fichiers de configuration des tables de la base" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Fichiers de configuration des tables de la base</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Fichiersdeconfigurationdestablesdelabase" data-magellan-target="Fichiersdeconfigurationdestablesdelabase"><span>Fichiers de configuration des tables de la base</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                            <p>La création d'une table est faite, dans le progiciel, par l'intermédiaire d'un outil nommé <i>valfil</i>. Cet outil est appelé directement par l'environnement de développement intégré à ADONIX, dans différents cas&#160;: création d'une table depuis l'<a href="GESATB.htm">éditeur des tables</a>, modification d'une table depuis la même fonction, <a href="DOSEXTRA.htm">extraction</a> ou <a href="DOSINTEG.htm">intégration</a> de données, intégration d'un <a href="PATCH.htm">patch</a> conduisant au changement de structure d'une table de la base.</p>
+                                                            <p>A la base, une table est définie par des fichiers physiques se trouvant dans le répertoire <i>FIL</i> du dossier, et par une table de la base de données. Les fichiers physiques sont les suivants :</p>
+                                                            <ul>
+                                                                <li>un fichier <i>XXX.srf</i>, qui contient la description de la structure du fichier (sous un format «&#160;ascii&#160;»décrit ci-dessous).</li>
+                                                                <li>un fichier <i>XXX.fde</i>, qui contient la description de la structure du fichier (sous forme compilée utilisable directement par le moteur adonix).</li>
+                                                            </ul>
+                                                            <p>Lorsque la table n'est pas stockée dans la base, mais a été déchargée sous forme d'un fichier transportable, on trouvera ses données sous la forme de deux ou trois fichiers supplémentaires&#160;:</p>
+                                                            <ul>
+                                                                <li>un fichier <i>XXX.dat</i>, qui contient les données sous la forme d'un fichier constitué d'enregistrements en longueur fixe.</li>
+                                                                <li>un fichier <i>XXX.seq</i>, qui contient le prochain numéro de séquence associé à la table. Cette information est importante dans la mesure où chaque table est associée à un numéro de séquence qui permet de créer des numéros uniques (cela correspond à la fonction adonix <i>uniqid([abv])</i>, où <i>abv</i> est l'abréviation de la table correspondante).</li>
+                                                                <li>un fichier <em>XXX.blb</em>, qui contient les données longues (blobs et clobs) s'il en existe dans la table.</li>
+                                                            </ul>
+                                                            <p>Les informations contenues dans ces différents fichiers permettent la création d'une table avec des options «&#160;a minima&#160;» qui sont les suivantes&#160;:</p>
+                                                            <ul>
+                                                                <li>le dimensionnement de la table (taille prévue, le cas échéant - pour oracle - sous la forme de segment initial et de taille d'<i>extents</i>) est défini dans le fichier d'extension .srf (le calcul étant fait à partir du nombre prévu de lignes dans la table, défini par des variables et formules de dimensionnement).</li>
+                                                                <li>le dimensionnement des index est défini par prorata à partir de la taille de la table (on multiplie la taille du segment initial par le rapport entre la longueur de clé et la longueur de la ligne de table, puis on impose le <i>next extent</i> à la même taille que l'<i>initial</i>).</li>
+                                                                <li>les groupes de fichiers (sous SQL server) sont ceux définis dans le fichier .adxodbc s'il existe. Si le fichier n'existe pas, on prend les groupes de fichiers <i>DOSSIER_DAT</i> et <i>DOSSIER_IDX</i> s'ils existent, <i>DOSSIER</i> étant le nom du dossier. A défaut, on prend le groupe par défaut défini pour la base.</li>
+                                                                <li>les tablespaces de stockage (pour oracle) sont ceux définis dans le fichier .adxora s'il existe. Si le fichier n'existe pas, on prend le tablespace associé par défaut à <i>l'user DOSSIER</i> pour les données, le tablespace <i>DOSSIER_IDX</i> pour les index.</li>
+                                                            </ul>
+                                                            <p>Il peut être intéressant de définir des informations complémentaires utilisées lors de la création de la table et à chacune de ses mises à jour, pour modifier ces règles de dimensionnement ou de localisation, en tenant compte des particularités des différentes bases de données et ainsi obtenir de meilleures performances. Mais ceci suppose de stocker ces éléments hors de la base, afin que l'outil <i>valfil</i> puisse les appliquer à chaque fois qu'une validation ou une revalidation de la table sera faite. C'est pourquoi, il est possible de créer un fichier d'extension cfg dans le répertoire <i>FIL</i>. Ce fichier permet d'enregistrer un ensemble de directives optionnelles qui complèteront l'ordre SQL <i>Create table</i> ou <i>Create Index</i> qui sera réalisé par <i>valfil</i>. Tout comme les fichiers d'extension <i>.srf</i>, il est en format «&#160;ascii&#160;» (décrit ci-dessous).</p>
+                                                            <p>Le contenu de ce fichier de configuration apparaît en bas de l'onglet de définition des index, en <a href="GESATB.htm#ON03">gestion des tables</a>. La suite de ce document décrit la syntaxe d'écriture de ce fichier de configuration.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Syntaxedécriture" data-magellan-target="Syntaxedécriture">Syntaxe d'écriture</h2>
+                                                            <p>Ce fichier est composé de lignes de texte formant des sections. Chaque section commence par une étiquette préfixée par le caractère <b><i>$</i></b>, suivi d'un code indiquant pour quelle base de donnée est faite cette section (c'est soit <b><i>ORACLE</i></b>, soit <b><i>MSSQL</i></b>), suivi d'un caractère de soulignement et du nom de la table ou d'un index.</p>
+                                                            <p>On y trouve ensuite des clauses encadrées par les caractères <b><i>{"</i></b> (accolade ouvrante suivie d'une double quote) et <b><i>"}</i></b> (accolade fermante précédée d'une double quote). Ces clauses seront passées telles quelles à la base de données lors de la création ou la modification de la table ou de l'index. S'il en existe plusieurs, elles sont passées les unes après les autres, séparées par une fin de ligne. Le nombre de caractères d'une clause est limitée à 256.</p>
+                                                            <p>On y trouve ensuite le mot-clé <b><i>End</i></b>, qui termine une section.</p>
+                                                            <p>Des commentaires peuvent être insérés dans le fichier de configuration, sous la forme de textes libres préfixés par le caractère <b><i>#</i></b> (dièse). Un commentaire ne peut se trouver qu'en début de ligne.</p>
+                                                            <p>Dès lors qu'une section non vide (avec au moins une clause) existe, toutes les règles de dimensionnement ou de stockage par défaut de l'élément (table ou index) décrit sont ignorées au profit des clauses passées.</p>
+                                                            <p>Une section correspondant à un élément inexistant, ou relative à une base de donnée qui n'est pas la base de données courante, est purement et simplement ignorée.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Exemplesdesyntaxesoracle" data-magellan-target="Exemplesdesyntaxesoracle">Exemples de syntaxes oracle</h2>
+                                                            <p>Les clauses de stockage peuvent être, par exemple :</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" width="852" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="209" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Tablespace imposé</p>
+                                                                        </td>
+                                                                        <td width="634" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>{" Tablespace ts1 "}</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="209" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Dimensionnement des extents de la table</p>
+                                                                        </td>
+                                                                        <td width="634" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>{" Storage (Initial 100K Next 50K Maxextents 10 Pctincrease 20) "}</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="209" valign="top" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Partitionnement d'une table sur plusieurs tablespaces selon la valeur d'un champ</p>
+                                                                        </td>
+                                                                        <td width="634" valign="top" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>{" partition by range (DHIDAT_0) (partition p1 values less than ('01-APR-1999') tablespace ts1, "}<br />{" partition p2 values less than ('01-APR-2001') tablespace ts2, "}<br />{" partition p3 values less than (maxvalue) tablespace ts4) "}</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="ExemplesdesyntaxesSQLserver" data-magellan-target="ExemplesdesyntaxesSQLserver">Exemples de syntaxes SQL server</h2>
+                                                            <p>La seule clause de stockage possible est :</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" width="852" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="209" valign="top" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Volume imposé</p>
+                                                                        </td>
+                                                                        <td width="634" valign="top" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>{" On volume1 "}</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>A partir de la version 6.4, il est également possible de définir que le premier index (et lui seul) est "clustered", c'est-à-dire que les données de la table dont physiquement rangées dans l'ordre de cette clé. Ceci peut être utilisé à des fins d'optimisation, le principe étant alors d'ajouter la section suivante (XXXX étant le nom de l'index en question) :</p>
+                                                            <p>$CLUSTERED<br />{ "XXXX" }<br />End</p>
+                                                            <p>Il est important, pour que cette directive soit prise en compte, de revalider la table en mode forcé après avoir modifié le fichier de configuration.</p>
+                                                            <p>Attention : cette syntaxe pour définir l'index "clustered" est temporaire. En effet, dans la prochaine version majeure, la définition des index de ce type sera défini de façon plus naturelle dans le dictionnaire.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Exempledefichier" data-magellan-target="Exempledefichier">Exemple de fichier</h2>
+                                                            <p>On trouvera ci-dessous un exemple de fichier de configuration. On notera qu'ici une partie seulement des directives seront utilisées (selon la base utilisée, puisque seules celles s'appliquant à la base de données réellement utilisée seront mises en œuvre).</p>
+                                                            <p>Il est à noter que la fourniture standard du progiciel ne comporte aucun fichier de configuration, et qu'une mise à jour respecte les fichiers de configuration existants. En effet, les fichiers de configuration sont considérés comme des éléments d'implémentation et sont forcément liés à une installation donnée et pas à un standard quelconque.</p>
+                                                            <p />
+                                                            <table width="852" border="0" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="53" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="790" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p><em>#--- &#160;Règle pour Oracle :&#160;Fichier des factures<br /></em>$ORACLE_SINVOICE<br /><em>#--- On impose un tablespace différent</em><br />{" Tablespace DEMO_DAT2 "}<br /><em>#--- Règles de dimensionnement obligatoires dès lors qu'on a imposé quelque chose</em><br />{" Storage (Initial 100M &#160;Next 50M Pctincrease 20) "}<br />End</p>
+                                                                            <p><em>#--- &#160;Règle pour Sql Server<br /></em>$MSSQL_SINVOICE<br />{" On DEMO_DAT2 "}<br />End</p>
+                                                                            <p><em>#--- Premier index&#160;sous Oracle</em> (Pas de règle pour les autres index)<br />$ORACLE_SIH0<br />{" Tablespace DEMO_IDX2 "}<br />{" Storage (Initial 5M Next 2M Pctincrease 30) "}<br />End</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                            <h2 class="g1" id="AnnexelesfichiersasciiutilisésaveclemoteurADONIX" data-magellan-target="AnnexelesfichiersasciiutilisésaveclemoteurADONIX">Annexe&#160;: les fichiers ascii utilisés avec le moteur ADONIX</h2>
+                                                            <p>Le moteur ADONIX utilise des fichiers ascii de type «&#160;Unix&#160;», c'est-à-dire que le séparateur de ligne est le Line Feed (caractère de code 10), et non par Carriage Return, Line Feed (caractères 13, puis 10) comme pour les fichiers textes Windows™. Il est donc fondamental de ne pas éditer de tels textes sous <i>notepad</i> (ou du moins de ne pas les réécrire avec notepad), faute de quoi le moteur adonix serait en peine de les réexploiter. Par contre, sous UNIX, l'éditeur <i>vi</i> est utilisable. Les éditeur adonix gèrent tout à fait correctement ces fichiers.</p>
+                                                            <p>Il est par ailleurs à noter que le format utilisé par ces fichiers est en réalité le format UTF8 (qui est un format permettant de traiter les caractères UNICODE - chinois par exemple - de façon totalement transparente. Il s'agit donc en réalité d'un codage sur 1 à 4 octets pour un seul caractère. Le format UTF8 correspond à l'ASCII pour tous les caractères non accentués, mais dès que le bit de poids le plus fort est1, le caractère est codé sur plus d'un octet. Ceci signifie que les caractères accentués français ne sont pas visualisés correctement avec les éditeurs «&#160;classiques&#160;» (mais les éditeurs adonix traitent tout à fait correctement ce transcodage).</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Annexelesrèglesdedimensionnementpardéfautdestables" data-magellan-target="Annexelesrèglesdedimensionnementpardéfautdestables">Annexe&#160;: les règles de dimensionnement&#160; par défaut des tables</h2>
+                                                            <p>En l'absence de fichier de configuration, l'algorithme de dimensionnement utilisé pour tailler les tables oracle est le suivant&#160;:</p>
+                                                            <ul>
+                                                                <li>on détermine d'abord le nombre de lignes susceptibles d'être stockées dans la table. Ce nombre de lignes est calculé par le biais des <a href="GESAFO.htm">formules de dimensionnement</a>, elles-mêmes calculées à partir d'<a href="GESADM.htm">éléments de dimensionnement</a>. Ce nombre de lignes est comparé avec le nombre de lignes données dans la rubrique <i>Nombre de fiches</i> situées dans le premier onglet du <a href="GESATB.htm#ON01">dictionnaire des tables</a>. C'est le maximum des deux nombres qui est retenu.</li>
+                                                                <li>on calcule ensuite la taille d'une ligne de la table en nombre d'octets. On considère pour ce faire le type interne associé à chacun des <a href="GESATY.htm">types de données</a> des champs de la table. Un champ de type <i>libellé</i> prend 1 octet, un champ de type <i>entier</i> 2 octets, un champ de type <i>entier long</i> 4 octets, un champ de type <i>décimal</i> 8 octets. Les champs de type alphanumériques et de longueur maximale L prennent L+1 octets, multiplié par un coefficient multiplicateur qui vaut 1 si la base est en ASCII, et qui vaut la valeur de la variable d'environnement <u>STUSIZE</u> si la base est UNICODE (en l'absence de valeur, on prend 2). Il est à noter que cette taille peut être obtenue par la fonction <i>Option / Informations</i> accessible en <a href="GESATB.htm#ME01">gestion des tables</a>.</li>
+                                                                <li>on calcule de même la longueur (en octets) de chaque index, en appliquant les mêmes règles de dimensionnement pour les champs qui le composent.</li>
+                                                                <li>on calcule la taille globale de la table en multipliant le nombre de lignes par la taille d'une ligne, et en appliquant un coefficient pour tenir compte du fait que le remplissage n'est jamais maximal (ce coefficient vaut 0,5 par défaut).</li>
+                                                                <li>dans le cas de la base de données oracle, on définit la taille du segment initial en prenant la taille de la table si elle est inférieure à 10 Mo. Sinon, on limite le segment initial à une valeur donnée par la variable d'environnement <u>ADXEXTSIZE</u> (exprimée en K-octets). Cette valeur ne peut en aucun cas être supérieure à 1,5 Goctets.&#160;</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Fichiersdeconfigurationdestablesdelabase">Fichiers de configuration des tables de la base</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introduction">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#Syntaxed%C3%A9criture">Syntaxe d'écriture</a>
+                                                        </li>
+                                                        <li><a href="#Exemplesdesyntaxesoracle">Exemples de syntaxes oracle</a>
+                                                        </li>
+                                                        <li><a href="#ExemplesdesyntaxesSQLserver">Exemples de syntaxes SQL server</a>
+                                                        </li>
+                                                        <li><a href="#Exempledefichier">Exemple de fichier</a>
+                                                        </li>
+                                                        <li><a href="#Annexelesfichiersasciiutilis%C3%A9saveclemoteurADONIX">Annexe&#160;: les fichiers ascii utilisés avec le moteur ADONIX</a>
+                                                        </li>
+                                                        <li><a href="#Annexelesr%C3%A8glesdedimensionnementpard%C3%A9fautdestables">Annexe&#160;: les règles de dimensionnement&#160; par défaut des tables</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

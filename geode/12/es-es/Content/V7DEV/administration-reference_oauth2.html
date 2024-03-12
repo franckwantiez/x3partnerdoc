@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="OAuth2" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> OAuth2
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="OAuth2" data-magellan-target="OAuth2"> OAuth2
+</h1>
+                                                <!-- Public -->
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="workbench-reference_launching-url.html#native">Administration Page</a>
+                                                        </th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Application/Contract</th>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Syracuse/Collaboration</td>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">class</th>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><i>oauth2s</i>
+                                                        </td>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Representation</th>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><i>oauth2</i>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <p>When starting the application, users are granted access, or not, depending on their identity. In many cases (database or LDAP authentication), the application handles the authentication process on its own. However, it is also possible to go through an authentication server first: users have to successfully connect to the authentication server for the application to grant them access.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#principles">Principles of OAuth2 authentication</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#restrictions">Restrictions</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#definition">OAuth2 server definition</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#batch">Batch authentication for Web services</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#config">OAuth2 configuration</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="PrinciplesofOAuth2authentication" data-magellan-target="PrinciplesofOAuth2authentication"><a id="principles"></a>Principles of OAuth2 authentication</h1>
+                                                <p>With the OAuth2 authentication method, an application can obtain confidential information about a user. However, you first have to register the application with the OAuth2 server to gain access. To do this, you must specify a redirect URI (described below), and the data the application will obtain from the server. This only has to be done once. The OAuth2 server will then provide you with a client ID and a client secret.</p>
+                                                <p>Assuming the application has been registered, the following process unfolds when a user logs in:</p>
+                                                <ol>
+                                                    <li value="1">The application redirects the user to the OAuth2 server, and provides them with the client ID obtained during the registration.</li>
+                                                    <li value="2">The OAuth2 authorization server asks the user to log in, unless they are already logged in to the OAuth2 server.</li>
+                                                    <li value="3">The OAuth2 authorization server asks if data can be shared with the application.</li>
+                                                    <li value="4">If the user says yes, the OAuth2 authorization server sends an authorization code to the redirect URI that was registered before. This authorizes the application to share the user's data.</li>
+                                                    <li value="5">The application authenticates by sending the authorization code, together with the client ID and the client secret, to the OAuth2 authorization server.</li>
+                                                    <li value="6">If the data is correct, the OAuth2 authorization server replies with an access token that allows the application to obtain confidential data (for example the user name). This step is transparent to the user.</li>
+                                                </ol>
+                                                <p>The user can then start using the application, as long as their corresponding user entity is marked for OAuth2 authentication with this particular server.</p>
+                                                <h1 id="Globalconfiguration" data-magellan-target="Globalconfiguration">Global configuration</h1>
+                                                <p>The configurations below are necessary for the authentication.</p>
+                                                <h2 id="Restrictions" data-magellan-target="Restrictions"><a id="restrictions"></a>Restrictions</h2>
+                                                <p>If you want to perform OAuth2 authentication <a href="how-to_how-to-set-up-gmail-account-sso.html">with a Google account</a>, the server needs to have a public IP address (and not a local IP address on a local area network).</p>
+                                                <h2 id="OAuth2serverdefinition" data-magellan-target="OAuth2serverdefinition"><a id="definition">OAuth2 server definition</a>
+                                                </h2>
+                                                <h2 id="Name" data-magellan-target="Name"><a id="name"></a>Name</h2>
+                                                <p>Name used to reference the OAuth2 setup.</p>
+                                                <h2 id="Displayname" data-magellan-target="Displayname"><a id="displayName"></a>Display name</h2>
+                                                <p>User-friendly description.</p>
+                                                <h2 id="Active" data-magellan-target="Active"><a id="active"></a>Active</h2>
+                                                <p>If the check box is cleared, the server is considered as inactive, and no additional login is possible using this setup.</p>
+                                                <h2 id="OAuth2serverURLwithoutpath" data-magellan-target="OAuth2serverURLwithoutpath"><a id="baseSite"></a>OAuth2 server URL without path</h2>
+                                                <p>Defines the protocol, server name, and port of the OAuth2 authorization server. This property is automatically set based on the value of "accessTokenUrl" (described below).</p>
+                                                <h2 id="URLforauthorization" data-magellan-target="URLforauthorization"><a id="authorizeUrl"></a>URL for authorization</h2>
+                                                <p>URL used for redirection to the OAuth2 authorization server to allow the user to log in.</p>
+                                                <h2 id="URLtogetaccesstoken" data-magellan-target="URLtogetaccesstoken"><a id="accessTokenURL"></a>URL to get access token</h2>
+                                                <p>URL used to contact the OAuth2 server to get the access token.</p>
+                                                <h2 id="OAuth2ClientId" data-magellan-target="OAuth2ClientId"><a id="clientId"></a>OAuth2 Client Id</h2>
+                                                <p>Client ID obtained during the application registration.</p>
+                                                <h2 id="OAuth2Clientsecret" data-magellan-target="OAuth2Clientsecret"><a id="clientSecret"></a>OAuth2 Client secret</h2>
+                                                <p>Client secret obtained during the application registration.</p>
+                                                <h2 id="ScopeforOAuth2requests" data-magellan-target="ScopeforOAuth2requests"><a id="scope"></a>Scope for OAuth2 requests</h2>
+                                                <p>Data the application wants to obtain from the OAuth2 server (defined during the application registration).</p>
+                                                <h2 id="Batchauthentication" data-magellan-target="Batchauthentication"><a id="batchAuthentication"></a>Batch authentication</h2>
+                                                <p>Refer to <a href="#batch">Batch authentication for Web services</a>.</p>
+                                                <h2 id="RedirectpathforOAuth2server" data-magellan-target="RedirectpathforOAuth2server"><a id="redirectPath"></a>Redirect path for OAuth2 server</h2>
+                                                <p>Redirection URI used by the OAuth2 server to send the authorization code to the application server. Note that it contains the name of the OAuth2 server.</p>
+                                                <h2 id="URLforrequestinguserdata" data-magellan-target="URLforrequestinguserdata"><a id="dataRequestUrl"></a>URL for requesting user data</h2>
+                                                <p>URL used to request data from the OAuth2 resource server using the access token.</p>
+                                                <h2 id="Userfieldinusernameanswer" data-magellan-target="Userfieldinusernameanswer"><a id="userField"></a>User field in user name answer</h2>
+                                                <p>Name of the field within the JSON structure that contains the user name (if JSON is the URL requesting user data). The default value is "user". The "login" attribute (or the "email" attribute) of the corresponding user entity must match exactly the value of the field entered here (not the "authentication name" attribute).</p>
+                                                <h2 id="URLforlogout" data-magellan-target="URLforlogout"><a id="logoutUrl"></a>URL for logout</h2>
+                                                <p>This field stores the OAuth2 URL called when the user logs out from his session. It also allows changing your account when logging back on Sage X3.</p>
+                                                <p>For example, if using Sage ID: <a href="https://id.sage.com/v2/logout">https://id.sage.com/v2/logout</a>.</p>
+                                                <p>You can set the exact page on which you want to log back in by adding values at the end of the URL. Enter the following link in the field:<br /><a href="https://id.sage.com/v2/logout?returnTo{login-page}&amp;client_id={client-id}">https://id.sage.com/v2/logout?returnTo{login-page}&amp;client_id={client-id}</a>, where:</p>
+                                                <ul>
+                                                    <li><b>{login-page}</b> is the Syracuse login page URL</li>
+                                                    <li><b>{client-id}</b> is the OAuth2 client ID</li>
+                                                </ul>
+                                                <h2 id="URLforuseraccountmanagement" data-magellan-target="URLforuseraccountmanagement"><a id="userAccountUrl"></a>URL for user account management</h2>
+                                                <p>This URL allows you to manage your user account. From your user profile page, you can click the <b>Manage account</b> link to access your OAuth2 user account settings.</p>
+                                                <h2 id="BatchauthenticationforWebservices" data-magellan-target="BatchauthenticationforWebservices"><a id="batch"></a>Batch authentication for Web services</h2>
+                                                <p>No interaction is possible when a Web service uses OAuth2 authentication. The Web service can send an access token directly in the <b>Authorize</b> header of the request (example: "Bearer xyzabc123456"). The request must contain an "oauth2" parameter whose value is the name of the OAuth2 instance. The <a href="#batchAuthentication">batch authentication</a> flag also has to be set. The server is then given the access token.</p>
+                                                <p><b>Note:</b> In the <i>nodelocal.js</i> configuration file, the "auth" field of the "session" section must contain the "bearer" authentication method. An error is triggered if the access token has expired.</p>
+                                                <p>When the OAuth2 server instance is only necessary for batch authentication (SageId server), only the <a href="#dataRequestUrl">URL for requesting user data</a> and the <a href="#userField">User field in user name answer</a> are relevant. Other fields can be arbitrary.</p>
+                                                <h2 id="OAuth2configuration" data-magellan-target="OAuth2configuration"><a id="config"></a>OAuth2 configuration</h2>
+                                                <p>In most cases, all users authenticate in the same way. A global settings function defines the type of standard authentication, namely:</p>
+                                                <ul>
+                                                    <li>Using a database, if no line has been defined in this setup.</li>
+                                                    <li>Using an OAuth2 server, if there is an entry giving the OAuth2 server code.</li>
+                                                </ul>
+                                                <p>For each user, the authentication rule can be specified as an exception in the users definition, and the <b>Authentication</b> field can have the following values:</p>
+                                                <ul>
+                                                    <li>Standard authentication, which uses the default value defined in the global settings</li>
+                                                    <li>Using an OAuth2 server, if you enter the OAuth2 server data</li>
+                                                </ul>
+                                                <p>In any case, the user has to select the correct authentication method from the login screen.</p>
+                                                <p>Refer to <a href="how-to_how-to-set-up-microsoft-account-sso.html">Setting Up a Microsoft Account SSO for OAuth2</a> and <a href="how-to_how-to-set-up-gmail-account-sso.html">Setting Up a Google Account SSO for OAuth2</a> for more information.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#OAuth2"> OAuth2
+</a>
+                                                    </li>
+                                                    <li><a href="#PrinciplesofOAuth2authentication">Principles of OAuth2 authentication</a>
+                                                    </li>
+                                                    <li><a href="#Globalconfiguration">Global configuration</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Restrictions">Restrictions</a>
+                                                        </li>
+                                                        <li><a href="#OAuth2serverdefinition">OAuth2 server definition</a>
+                                                        </li>
+                                                        <li><a href="#Name">Name</a>
+                                                        </li>
+                                                        <li><a href="#Displayname">Display name</a>
+                                                        </li>
+                                                        <li><a href="#Active">Active</a>
+                                                        </li>
+                                                        <li><a href="#OAuth2serverURLwithoutpath">OAuth2 server URL without path</a>
+                                                        </li>
+                                                        <li><a href="#URLforauthorization">URL for authorization</a>
+                                                        </li>
+                                                        <li><a href="#URLtogetaccesstoken">URL to get access token</a>
+                                                        </li>
+                                                        <li><a href="#OAuth2ClientId">OAuth2 Client Id</a>
+                                                        </li>
+                                                        <li><a href="#OAuth2Clientsecret">OAuth2 Client secret</a>
+                                                        </li>
+                                                        <li><a href="#ScopeforOAuth2requests">Scope for OAuth2 requests</a>
+                                                        </li>
+                                                        <li><a href="#Batchauthentication">Batch authentication</a>
+                                                        </li>
+                                                        <li><a href="#RedirectpathforOAuth2server">Redirect path for OAuth2 server</a>
+                                                        </li>
+                                                        <li><a href="#URLforrequestinguserdata">URL for requesting user data</a>
+                                                        </li>
+                                                        <li><a href="#Userfieldinusernameanswer">User field in user name answer</a>
+                                                        </li>
+                                                        <li><a href="#URLforlogout">URL for logout</a>
+                                                        </li>
+                                                        <li><a href="#URLforuseraccountmanagement">URL for user account management</a>
+                                                        </li>
+                                                        <li><a href="#BatchauthenticationforWebservices">Batch authentication for Web services</a>
+                                                        </li>
+                                                        <li><a href="#OAuth2configuration">OAuth2 configuration</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 febrero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-es" xml:lang="es-es" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="SOAP Web services implementation" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> SOAP Web services implementation
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Cambiar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Cambiar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="SOAPWebservicesimplementation" data-magellan-target="SOAPWebservicesimplementation"> SOAP Web services implementation
+</h1>
+                                                <p>The SOAP Web service implementation process is the same as the one that was available through the GESAWE function in V6.</p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_SOAP-WebService-04.png" />
+                                                </p>
+                                                <p>You will be able to call the Web service after you publish it. Use the <b>Publication</b> function to do so.</p>
+                                                <p>Sage X3 Web services work in a remote procedure call (RPC)/encoded style (versus Document/Literal). Each Web service is paired to a Sage X3 program or subprogram with its own description.</p>
+                                                <p>Our <code>/soap-wsdl/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC?wsdl</code> schema only describes the main actions available and the generic ones: CRUD actions and descriptions.</p>
+                                                <p>Sage X3 uses RPC/encoded style to be able to consume published objects and subprograms from the supervisor as Web services. Web services are tightly linked to the application code.</p>
+                                                <h1 id="SyracuseWebservicesdefinition" data-magellan-target="SyracuseWebservicesdefinition">Syracuse Web services definition</h1>
+                                                <h2 id="Important" data-magellan-target="Important">Important</h2>
+                                                <p>Generic SOAP Web services are based on the use of classic clients. Calling Web services will consume legacy X3 objects and subprograms exactly like in V6.</p>
+                                                <p>A <a href="administration-reference_soap-generic.html">soapGeneric</a> entity provides a description of the generic Web service.</p>
+                                                <h1 id="Pooldefinition" data-magellan-target="Pooldefinition">Pool definition</h1>
+                                                <p>The pools are defined in the <a href="administration-reference_soapClassicPool.html">SOAP classic pool administration function</a>, managed by the Syracuse administration framework.</p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_SOAP-WebService-03.png" />
+                                                </p>
+                                                <p>The size of each pool (number of channels) is no longer controlled by the license. Users can create as many channels as they want. Server sizing considerations need to be taken into account to size the pool. The license only controls the size of data exchanges. Read our <a href="#licensing-control" target="_parent">Licensing control</a> chapter.</p>
+                                                <h1 id="Loadbalancer" data-magellan-target="Loadbalancer">Load balancer</h1>
+                                                <p>Web services can work with the Syracuse load balancer mode.</p>
+                                                <p>A new property in the <a href="administration-reference_host.html">host definition</a> entity allows you to define how many Web services dedicated processes should be set on a Syracuse environment (Number of Web services children). By default this property is set to 0, so it is necessary to configure it. Otherwise, each Web service call will generate the <b>HTTP 500 error</b> with the specific <b>No Web services accepted</b> message.</p>
+                                                <p>As explained in the <a href="administration-reference_soapClassicPool.html">pool definition</a> document, each pool configuration is duplicated for each Web services child process host.</p>
+                                                <p><a name="licensing-control"></a>
+                                                </p>
+                                                <h1 id="Licensingcontrol" data-magellan-target="Licensingcontrol">Licensing control</h1>
+                                                <p>The licensing system does not limit the number of clients defined on pool configuration. The SOAP Web service implementation performed in the administration platform controls the data volume consumed by third party application consumers (in and out).</p>
+                                                <p>The license parameter is defined in <a href="administration-reference_license-management.html">this document</a>.</p>
+                                                <p>Four variables are defined through the license: <b><code>WSSIZELIMIT</code></b>, <b><code>WSPERIOD</code></b>, <b><code>WSGRACELIMIT</code></b> and <b><code>WSGRACESLOWDOWN</code></b>.</p>
+                                                <ul>
+                                                    <li><b><code>WSSIZELIMIT</code></b>: indicates the size (in Megabytes) of data that can be exchanged in incoming SOAP Web services (in and out)</li>
+                                                    <li><b><code>WSPERIOD</code></b>: (a string that can be DAY, MONTH or YEAR) determines the period on which the size limitation applies</li>
+                                                    <li><b><code>WSGRACELIMIT</code></b>: (as a percentage) defines the oversize percentage allowed (typically 10%). If the maximum size is fixed at 1 MB/day, then: 
+<ul><li>1 MB per day is possible without decreasing the speed of the Web services</li><li>The next 10% (100Kb) is possible at a lower speed</li><li>The service does not respond when the 1.1 MB limit is reached</li></ul></li>
+                                                    <li><b><code>WSGRACESLOWDOWN</code></b>: indicates the rate used to decrease the speed of the Web services when the grace limit is reached. Taking into account the value of the above variables <code>WSSIZELIMIT</code> and <code>WSGRACELIMIT</code>, if for example, <code>WSPERIOD</code> is equal to DAY and the value of <code>WSGRACESLOWDOWN</code> is 5, then: 
+<ul><li>When the 1 MB limit is reached on a given day, the speed is divided by 5 until the end of the day</li><li>Speed slowdown continues until the 1.1 MB limit is reached</li><li>After that, the service stops</li></ul></li>
+                                                </ul>
+                                                <h1 id="Webservicescalls" data-magellan-target="Webservicescalls">Web services calls</h1>
+                                                <h2 id="Requests" data-magellan-target="Requests">Requests</h2>
+                                                <p>When you do a request to the <code><a href="../">http://[SYRACUSESERVER]:[PORT]/soap-generic/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC</a> </code> URL, the general web service definition is available at this address: <code><a href="?wsdl" class="selected">http://[SYRACUSESERVER]:[PORT]/soap-wsdl/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC?wsdl</a></code>.</p>
+                                                <p>This schema defines the available actions to get a description on a specific:</p>
+                                                <ul>
+                                                    <li>method</li>
+                                                    <li>read data</li>
+                                                    <li>run program</li>
+                                                    <li>insert data</li>
+                                                    <li>save data</li>
+                                                    <li>delete data</li>
+                                                </ul>
+                                                <p>Details and schema of each program are available when you interrogate the <b>getDesciption</b> method on the Web service and a specific program.<br />Web services call X3 programs that must be specifically published as Web services to be available.<br /></p>
+                                                <h2 id="Schemaexcerpt" data-magellan-target="Schemaexcerpt">Schema excerpt</h2>
+                                                <p><code>/soap-wsdl/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC?wsdl</code>
+                                                    <br />
+                                                </p><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;wsdl:definitions xmlns:apachesoap="<a href="http://xml.apache.org/xml-soap">http://xml.apache.org/xml-soap</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>" xmlns:intf="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>" xmlns:soapenc="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" xmlns:wsdl="<a href="http://schemas.xmlsoap.org/wsdl/">http://schemas.xmlsoap.org/wsdl/</a>" xmlns:wsdlsoap="<a href="http://schemas.xmlsoap.org/wsdl/soap/">http://schemas.xmlsoap.org/wsdl/soap/</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" targetNamespace="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>"&gt;
+&lt;script id="tinyhippos-injected"/&gt;
+&lt;wsdl:types&gt;
+&lt;schema xmlns="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" targetNamespace="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>"&gt;
+&lt;import namespace="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"/&gt;
+&lt;complexType name="CAdxCallContext"&gt;
+&lt;sequence&gt;
+&lt;element name="codeLang" nillable="true" type="xsd:string"/&gt;
+&lt;element name="poolAlias" nillable="true" type="xsd:string"/&gt;
+&lt;element name="poolId" nillable="true" type="xsd:string"/&gt;
+&lt;element name="requestConfig" nillable="true" type="xsd:string"/&gt;
+&lt;/sequence&gt;
+&lt;/complexType&gt;
+&lt;complexType name="CAdxTechnicalInfos"&gt;
+&lt;sequence&gt;
+&lt;element name="busy" type="xsd:boolean"/&gt;
+&lt;element name="changeLanguage" type="xsd:boolean"/&gt;
+&lt;element name="changeUserId" type="xsd:boolean"/&gt;
+&lt;element name="flushAdx" type="xsd:boolean"/&gt;
+&lt;element name="loadWebsDuration" type="xsd:double"/&gt;
+&lt;element name="nbDistributionCycle" type="xsd:int"/&gt;
+&lt;element name="poolDistribDuration" type="xsd:double"/&gt;
+&lt;element name="poolEntryIdx" type="xsd:int"/&gt;
+&lt;element name="poolExecDuration" type="xsd:double"/&gt;
+&lt;element name="poolRequestDuration" type="xsd:double"/&gt;
+&lt;element name="poolWaitDuration" type="xsd:double"/&gt;
+&lt;element name="processReport" nillable="true" type="xsd:string"/&gt;
+&lt;element name="processReportSize" type="xsd:int"/&gt;
+&lt;element name="reloadWebs" type="xsd:boolean"/&gt;
+&lt;element name="resumitAfterDBOpen" type="xsd:boolean"/&gt;
+&lt;element name="rowInDistribStack" type="xsd:int"/&gt;
+&lt;element name="totalDuration" type="xsd:double"/&gt;
+&lt;element name="traceRequest" nillable="true" type="xsd:string"/&gt;
+&lt;element name="traceRequestSize" type="xsd:int"/&gt;
+&lt;/sequence&gt;
+&lt;/complexType&gt;
+&lt;complexType name="CAdxResultXml"&gt;
+&lt;sequence&gt;
+&lt;element name="messages" nillable="true" type="wss:ArrayOfCAdxMessage"/&gt;
+&lt;element name="resultXml" nillable="true" type="xsd:string"/&gt;
+&lt;element name="status" type="xsd:int"/&gt;
+&lt;element name="technicalInfos" nillable="true" type="wss:CAdxTechnicalInfos"/&gt;
+&lt;/sequence&gt;
+&lt;/complexType&gt;
+&lt;/schema&gt;
+&lt;/wsdl:types&gt;
+&lt;wsdl:service name="CAdxWebServiceXmlCCService"&gt;
+&lt;wsdl:port binding="wss:CAdxWebServiceXmlCCSoapBinding" name="CAdxWebServiceXmlCC"&gt;
+&lt;wsdlsoap:address location="<a href="http://po027493:8126/soap-generic/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC">http://po027493:8126/soap-generic/syracuse/collaboration/syracuse/CAdxWebServiceXmlCC</a>"/&gt;
+&lt;/wsdl:port&gt;
+&lt;wsdl:documentation&gt;
+This SOAP Web service allows to call X3 subprograms and/or to manipulate X3 objects through CRUD and specifics methods
+&lt;/wsdl:documentation&gt;
+&lt;/wsdl:service&gt;
+&lt;/wsdl:definitions&gt;</code></pre>
+                                                <br />All the operations listed in the <a href="administration-reference_soap-generic.html#webServiceTester">Tester forms</a> section of the generic SOAP Web service documentation take several parameters.
+<p><a name="common-SOAP-parameters"></a></p><h2 id="CommonSOAPparameters" data-magellan-target="CommonSOAPparameters">Common SOAP parameters</h2><ul><li><b><code>callContext</code></b>: this is a group of parameters where you need to define the following:
+<ul><li><code>codeLang</code> (can be optional if HTTP header <i>accept-language</i> is used, otherwise, it is mandatory): this parameter can take X3 language format (FRA, ENG, BRI...). If a user decides to use <i>accept-language</i> HTTP header, then ISO format is necessary (fr-FR, en-US, en-GB...).</li><li><code>codeUser</code> is deprecated and no longer used: The Sage X3 user is determined by the Administration user endpoint login map.</li><li><code>password</code> is deprecated as well.</li><li><code>poolAlias</code> is mandatory, it corresponds to the <code>Alias</code> defined in the pool configuration.</li><li><code>poolId</code> is optional; it allows you to force a specific client through a pool definition list. If no <code>poolId</code> is set here, the client selection is done with an intelligent pool distributor algorithm (Read our <a href="#client-selection-algorithm" target="_parent">Client selection algorithm</a> chapter).</li></ul><p /></li><br /><li><b><code>requestConfig</code></b>: a set of configurations separated by the <b>&amp;</b> character: 
+<ul><li><code>adxwss.trace.on</code>: value <b>on</b> to be activated. This returns a detailed trace of your call in the http response obtained when invoking the SOAP Web services.</li><li><code>adxwss.optreturn</code>: Can be <b>XML</b> or <b>JSON</b>. The default value is <b>XML</b>.</li><li><code><!-- <icodeadxwss.beautify --></code>: Can be <b>true</b> or <b>false</b>. The response flow is formatted to be more readable when set to <b>true</b>.</li></ul><p /></li> <br /><br /></ul><b><code>callContext</code> example</b><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;callContext xsi:type="wss:CAdxCallContext"&gt;
+   &lt;codeLang xsi:type="xsd:string"&gt;FRA&lt;/codeLang&gt;
+   &lt;poolAlias xsi:type="xsd:string"&gt;SEED&lt;/poolAlias&gt;
+   &lt;poolId xsi:type="xsd:string"&gt;&lt;/poolId&gt;
+   &lt;requestConfig xsi:type="xsd:string"&gt;&lt;![CDATA[adxwss.trace.on=on&amp;adxwss.optreturn=JSON&amp;adxwss.beautify=true]]&gt;&lt;/requestConfig&gt;
+&lt;/callContext&gt;</code></pre><ul><li><b><code>publicName</code></b> (mandatory) corresponds to the public name declaration done in GESAWE X3 function.
+</li></ul><p><b><code>publicName</code> example </b></p><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;publicName xsi:type="xsd:string"&gt;WSBPC&lt;/publicName&gt;</code></pre><br /><b><code>requestConfig</code> values</b><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;requestConfig xsi:type="xsd:string"&gt;&lt;![CDATA[adxwss.trace.on=on&amp;adxwss.optreturn=JSON&amp;adxwss.beautify=true]]&gt;&lt;/requestConfig&gt;</code></pre><br /><code>adxwss.trace.on= [on/off] (default : off) </code> <br /><br />Verbose traces can be switch to on if you want to debug you webservice during development. <br /><p><code>adxwss.optreturn= [JSON/XML] </code></p><b>XML resultXml sample</b><pre xml:space="preserve"><code>CODECODE CODExml
+ &lt;resultXml xsi:type="xsd:string"&gt;&lt;![CDATA[
+
+&lt;RESULT DIM="10000" SIZE="30"&gt;
+    &lt;LIN NUM="1"&gt;
+        &lt;FLD NAME="USR" TYPE="Char"&gt;0037&lt;/FLD&gt;
+        &lt;FLD NAME="C2" TYPE="Char"/&gt;
+        &lt;FLD NAME="LOGIN" TYPE="Char"&gt;0037&lt;/FLD&gt;
+        &lt;FLD NAME="ADDEML" TYPE="Char"/&gt;
+        &lt;FLD NAME="TELEP" TYPE="Char"/&gt;
+    &lt;/LIN&gt;
+    &lt;LIN NUM="2"&gt;
+       &lt;FLD NAME="USR" TYPE="Char"&gt;ACCL&lt;/FLD&gt;
+        &lt;FLD NAME="C2" TYPE="Char"/&gt;
+        &lt;FLD NAME="LOGIN" TYPE="Char"&gt;ACCL&lt;/FLD&gt;
+        &lt;FLD NAME="ADDEML" TYPE="Char"&gt;<a href="mailto:Christophe.Test@sage.com">Christophe.Test@sage.com</a>&lt;/FLD&gt;
+        &lt;FLD NAME="TELEP" TYPE="Char"/&gt;
+    &lt;/LIN&gt;
+&lt;/RESULT&gt;
+]]&gt;&lt;/resultXml&gt;</code></pre><b>JSON resultXml sample</b><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;resultXml xsi:type="xsd:string"&gt;[
+    {
+        "USR": "0037",
+        "C2": "",
+        "LOGIN": "0037",
+        "ADDEML": "",
+        "TELEP": ""
+    },
+    {
+        "USR": "ACCL",
+        "C2": "",
+        "LOGIN": "ACCL",
+        "ADDEML": "<a href="mailto:Christophe.Test@sage.com">Christophe.Test@sage.com</a>",
+        "TELEP": ""
+    },
+    {
+        "USR": "ADHAD",
+        "C2": "",
+        "LOGIN": "ADHAD",
+        "ADDEML": "<a href="mailto:Ariel.Dupont@sage.com">Ariel.Dupont@sage.com</a>",
+        "TELEP": ""
+    }
+]&lt;/resultXml&gt;</code></pre><b>Get Sage X3 Web service description</b>
+You can request the decription of a Web service published on Sage X3. <br />
+This example launches a request to get the description of the SIH object previously published: <br /><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;soapenv:Envelope xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" xmlns:soapenv="<a href="http://schemas.xmlsoap.org/soap/envelope/">http://schemas.xmlsoap.org/soap/envelope/</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;wss:getDescription soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+         &lt;callContext xsi:type="wss:CAdxCallContext"&gt;
+            &lt;codeLang xsi:type="xsd:string"&gt;ENG&lt;/codeLang&gt;
+            &lt;poolAlias xsi:type="xsd:string"&gt;AWS&lt;/poolAlias&gt;
+            &lt;poolId xsi:type="xsd:string"&gt;&lt;/poolId&gt;
+            &lt;requestConfig xsi:type="xsd:string"&gt;xsd:string"&gt;adxwss.optreturn=JSON&amp;adxwss.beautify=true&lt;/requestConfig&gt;
+         &lt;/callContext&gt;
+         &lt;publicName xsi:type="xsd:string"&gt;SIH&lt;/publicName&gt;
+      &lt;/wss:getDescription&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre>
+Result: <br /><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;soapenv:Envelope xmlns:soapenv="<a href="http://schemas.xmlsoap.org/soap/envelope/">http://schemas.xmlsoap.org/soap/envelope/</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xmlns:soapenc="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>"&gt;
+   &lt;soapenv:Body&gt;
+      &lt;wss:getDescriptionResponse soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+         &lt;getDescriptionReturn xsi:type="wss:CAdxResultXml"&gt;
+            &lt;messages xsi:type="soapenc:Array" soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" soapenc:arrayType="wss:CAdxMessage[0]"/&gt;
+            &lt;resultXml xsi:type="xsd:string"&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;ADXDOC PNA="SIH" NAM="WOSIHSTD" TIM="20190315093115" OBJ="SIH" TRA="STD" FOL="REPOSX3" SOL="REPOSX3" 
+WRP="WJSIH" USER="ADMIN" VER="6.30" HEAD="1"&gt;
+ &lt;ADXDATA&gt;
+&lt;GRP NAM="SIH0_1" TYB="List" DIM="1"&gt;
+&lt;FLD NAM="SALFCY" X3BLORIG="SIH0_1" X3FLORIG="SALFCY" IDX="1" TYP="Char" MOD="Input" LEN="5" 
+C_FRA="Site vente" C_ENG="Sales site"/&gt;
+&lt;FLD NAM="SIVTYP" X3BLORIG="SIH0_1" X3FLORIG="SIVTYP" IDX="3" TYP="Char" MOD="Input" LEN="5" 
+C_FRA="Type" C_ENG="Type"/&gt;
+&lt;FLD NAM="ZSIVTYP" X3BLORIG="SIH0_1" X3FLORIG="ZSIVTYP" IDX="4" TYP="Char" MOD="Display" LEN="10"/&gt;
+&lt;FLD NAM="NUM" X3BLORIG="SIH0_1" X3FLORIG="NUM" IDX="5" TYP="Char" MOD="Input" LEN="20" 
+C_FRA="N° facture" C_ENG="Invoice no.  "/&gt;
+&lt;FLD NAM="INVREF" X3BLORIG="SIH0_1" X3FLORIG="INVREF" IDX="6" TYP="Char" MOD="Input" LEN="30" 
+C_FRA="Référence" C_ENG="Reference"/&gt;
+&lt;FLD NAM="INVDAT" X3BLORIG="SIH0_1" X3FLORIG="INVDAT" IDX="7" TYP="Date" MOD="Input" LEN="30" 
+C_FRA="Date" C_ENG="Date"/&gt;
+&lt;FLD NAM="BPCINV" X3BLORIG="SIH0_1" X3FLORIG="BPCINV" IDX="8" TYP="Char" MOD="Input" LEN="15" 
+C_FRA="Client facture" C_ENG="Bill-to customer"/&gt;
+&lt;FLD NAM="CUR" X3BLORIG="SIH0_1" X3FLORIG="CUR" IDX="10" TYP="Char" MOD="Display" LEN="3" C_FRA="Devise" 
+C_ENG="Currency"/&gt;
+&lt;/GRP&gt;
+&lt;GRP NAM="SIH1_4" TYB="List" DIM="1"&gt;
+&lt;FLD NAM="PERDEB" X3BLORIG="SIH1_4" X3FLORIG="PERDEB" IDX="13" TYP="Date" MOD="Input" LEN="30" 
+C_FRA="Période du" C_ENG="Period start date"/&gt;
+&lt;FLD NAM="PERFIN" X3BLORIG="SIH1_4" X3FLORIG="PERFIN" IDX="14" TYP="Date" MOD="Input" LEN="30" 
+C_FRA="Date fin période" C_ENG="Period end date"/&gt;
+&lt;FLD NAM="BELVCS" X3BLORIG="SIH1_4" X3FLORIG="BELVCS" IDX="15" TYP="Char" MOD="Input" LEN="12" 
+C_FRA="Numéro VCS" C_ENG="VCS number"/&gt;
+&lt;/GRP&gt;
+&lt;GRP NAM="ADXTEC" TYB="List" DIM="1"&gt;
+&lt;FLD NAM="WW_MODSTAMP" TYP="Char" MOD="Input" LEN="20" IDX="121"/&gt;
+&lt;FLD NAM="WW_MODUSER" TYP="Char" MOD="Display" LEN="20" IDX="122"/&gt;
+&lt;/GRP&gt;
+ &lt;/ADXDATA&gt;
+ &lt;ADXKEY&gt;
+&lt;GRP NAM="LEFTLIST" DIM="10000"&gt;
+&lt;FLD NAM="NUM" MOD="Display" TYP="Char" LEN="20" C_FRA="No facture" C_ENG="Invoice no."/&gt;
+&lt;FLD NAM="BPCINV" MOD="Display" TYP="Char" LEN="15" C_FRA="Client facture" C_ENG="Bill-to customer"/&gt;
+&lt;FLD NAM="INVDAT" MOD="Display" TYP="Char" LEN="30" C_FRA="Date facture" C_ENG="Invoice date"/&gt;
+&lt;/GRP&gt;
+ &lt;/ADXKEY&gt;
+ &lt;ADXMEN&gt;
+&lt;MNU NO="1"&gt;
+&lt;VAL IND="1" C_FRA="Non" C_ENG="No"/&gt;
+&lt;VAL IND="2" C_FRA="Oui" C_ENG="Yes"/&gt;
+&lt;/MNU&gt;
+&lt;MNU NO="439"&gt;
+&lt;VAL IND="1" C_FRA="Non" C_ENG="No"/&gt;
+&lt;VAL IND="2" C_FRA="Origine" C_ENG="Source"/&gt;
+&lt;VAL IND="3" C_FRA="Oui" C_ENG="Yes"/&gt;
+&lt;/MNU&gt;
+ &lt;/ADXMEN&gt;
+ &lt;ADXSER&gt;
+&lt;MET ID="READ" C_FRA="Lire" C_ENG="Read"/&gt;
+&lt;MET ID="CREATE" C_FRA="Créer" C_ENG="Create"/&gt;
+&lt;MET ID="MODIFY" C_FRA="Modifier" C_ENG="Modify"/&gt;
+&lt;MET ID="DELETE" C_FRA="Supprimer" C_ENG="Delete"/&gt;
+&lt;MET ID="LIST" C_FRA="Liste" C_ENG="List"/&gt;
+ &lt;/ADXSER&gt;
+&lt;ADXREAD TAB="SINVOICEV"&gt;&lt;GRP DIM="1" NAM="KEYS"&gt;
+&lt;FLD NAM="NUM" TYP="Char" MOD="Input" LEN="20" C_FRA="No facture" C_ENG="Invoice no."/&gt;
+ &lt;/GRP&gt;&lt;/ADXREAD&gt;
+&lt;/ADXDOC&gt;]]&gt;&lt;/resultXml&gt;
+            &lt;status xsi:type="xsd:int"&gt;1&lt;/status&gt;
+            &lt;technicalInfos&gt;
+               &lt;busy xsi:type="xsd:boolean"&gt;false&lt;/busy&gt;
+               &lt;changeLanguage xsi:type="xsd:boolean"&gt;false&lt;/changeLanguage&gt;
+               &lt;changeUserId xsi:type="xsd:boolean"&gt;false&lt;/changeUserId&gt;
+               &lt;flushAdx xsi:type="xsd:boolean"&gt;false&lt;/flushAdx&gt;
+               &lt;loadWebsDuration xsi:type="xsd:double"&gt;98&lt;/loadWebsDuration&gt;
+               &lt;nbDistributionCycle xsi:type="xsd:int"&gt;-1&lt;/nbDistributionCycle&gt;
+               &lt;poolDistribDuration xsi:type="xsd:double"&gt;1&lt;/poolDistribDuration&gt;
+               &lt;poolEntryIdx xsi:type="xsd:int"&gt;25&lt;/poolEntryIdx&gt;
+               &lt;poolExecDuration xsi:type="xsd:double"&gt;22&lt;/poolExecDuration&gt;
+               &lt;poolRequestDuration xsi:type="xsd:double"&gt;-1&lt;/poolRequestDuration&gt;
+               &lt;poolWaitDuration xsi:type="xsd:double"&gt;0&lt;/poolWaitDuration&gt;
+               &lt;processReport xsi:type="xsd:string" xsi:nil="true"/&gt;
+               &lt;processReportSize xsi:type="xsd:int"&gt;-1&lt;/processReportSize&gt;
+               &lt;reloadWebs xsi:type="xsd:boolean"&gt;false&lt;/reloadWebs&gt;
+               &lt;resumitAfterDBOpen xsi:type="xsd:boolean"&gt;false&lt;/resumitAfterDBOpen&gt;
+               &lt;rowInDistribStack xsi:type="xsd:int" xsi:nil="true"/&gt;
+               &lt;totalDuration xsi:type="xsd:double"&gt;140&lt;/totalDuration&gt;
+               &lt;traceRequest xsi:type="xsd:string"/&gt;
+               &lt;traceRequestSize xsi:type="xsd:int"&gt;0&lt;/traceRequestSize&gt;
+            &lt;/technicalInfos&gt;
+         &lt;/getDescriptionReturn&gt;
+      &lt;/wss:getDescriptionResponse&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre><h2 id="CRUDactions" data-magellan-target="CRUDactions">CRUD actions</h2><p>You can launch CRUD actions depending of the enveloppe you send:</p><ul><li>read data with queries</li><li>run program</li><li>insert data</li><li>save data</li><li>delete data</li></ul><p><img src="../Resources/Images/images_SOAP-WebService-05.png" /></p><p>The <b>CAdxWebServiceXmlCC</b> schema is the visual mode available with SOAPUI. It is easy with this UI to create some SOAP requests and test results.</p><p>For example, if you want to create a new invoice: <br /><br />- First, you need to publish the SIH object as a Web service. <br /><br />- After the <b>Publication</b>, you can do this request with SOAPUI - for example to create a new SIH object. <br /></p>
+This example shows how to save an SIH entity:<pre xml:space="preserve"><code>CODECODE CODExml
+&lt;soapenv:Envelope xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" xmlns:soapenv="<a href="http://schemas.xmlsoap.org/soap/envelope/">http://schemas.xmlsoap.org/soap/envelope/</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>" xmlns:soapenc="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;wss:save soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+         &lt;callContext xsi:type="wss:CAdxCallContext"&gt;
+            &lt;codeLang xsi:type="xsd:string"&gt;ENG&lt;/codeLang&gt;
+            &lt;poolAlias xsi:type="xsd:string"&gt;AWS&lt;/poolAlias&gt;
+            &lt;poolId xsi:type="xsd:string"&gt;&lt;/poolId&gt;
+            &lt;requestConfig xsi:type="xsd:string"&gt;adxwss.optreturn=JSON&amp;adxwss.beautify=true&lt;/requestConfig&gt;
+         &lt;/callContext&gt;
+         &lt;publicName xsi:type="xsd:string"&gt;SIH&lt;/publicName&gt;
+         &lt;objectXml xsi:type="xsd:string"&gt;
+&lt;![CDATA[&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;PARAM&gt;
+&lt;FLD NAME="SALFCY" &gt;GB013&lt;/FLD&gt;
+&lt;FLD NAME="BPCINV" &gt;GB002&lt;/FLD&gt;
+&lt;FLD NAME="INVDAT" &gt;20330127&lt;/FLD&gt;
+&lt;TAB DIM="300" ID="SIH4_1" SIZE="1"&gt;
+&lt;LIN NUM="1" &gt;
+&lt;FLD NAME="ITMREF" &gt;SER013&lt;/FLD&gt;
+&lt;FLD NAME="QTY" &gt;2&lt;/FLD&gt;
+&lt;/LIN&gt;
+&lt;/TAB&gt;
+&lt;/PARAM&gt;]]&gt;       
+&lt;/objectXml&gt;
+      &lt;/wss:save&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre><h2 id="SpecificSOAPparameters" data-magellan-target="SpecificSOAPparameters">Specific SOAP parameters</h2><p>They are the same as for V6. Please refer to V6 documentation.</p><p><a name="client-selection-algorithm"></a></p><h2 id="Clientselectionalgorithm" data-magellan-target="Clientselectionalgorithm">Client selection algorithm</h2><p>As explained in the <a href="#common-SOAP-parameters" target="_parent">Common SOAP parameters</a> section, the <code>poolId</code> parameter allows you to force a specific client usage. This can be really useful when a developer wants to debug 4GL code putting breakpoints into Eclipse after he attached to a specific process ID --&gt; the same as <code>poolId</code>.</p><p>If:</p><ul><li>no <code>poolId</code> parameter is provided</li><li>or the required client is not free</li><li>or the required process ID doesn't exist</li></ul><p>Then an algorithm selects consumers with free clients to be served following these rules:</p><pre xml:space="preserve"><code>Are there free clients ?
+   y --&gt; Are there clients with same language and same user ?
+         y --&gt; Select (set busy) and use one of these clients as is.
+         n --&gt; Are there clients with the same user only ?
+               y --&gt; Select (set busy) and use one of these clients, then change language set.
+               n --&gt; Are there clients with the same language only ?
+                     y --&gt; Select (set busy) and use one of these clients, then change user set.
+                     n --&gt; Select the first client from those available and change context (language and user).
+   n --&gt; wait for next free client (no context preferences (language and user) will be taken into account.
+         Context change applies)</code></pre><br />If:
+<ul><li>the pool is not started</li><li>the maximum size is greater than 0</li><li>and no clients are available</li></ul><p>Then any Web service call will initialize a client automatically until the number of created clients is the same as maximum size number.</p><h2 id="Response" data-magellan-target="Response">Response</h2><h2 id="Httpstatus" data-magellan-target="Httpstatus">Http status</h2><p><a href="#200" target="_parent">200: Success</a><br /><br /><a href="#401" target="_parent">401: Unauthorized</a><br /></p><p><a id="200"></a></p><h2 id="200Success" data-magellan-target="200Success">200: Success</h2><p>If the status is <b>200</b>, the http request has been correctly executed, the authentication and parameters sent are correct. <br />Nevertheless, the status included in the response body indicates if the operation was executed without any business error.</p><ul><li>status = 1: the web function correctly runned without any error</li><li>status = 0: some errors occurred</li></ul><h3>Example</h3><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;status xsi:type="xsd:int"&gt;1&lt;/status&gt;</code></pre><h3>Request and body result example</h3><p>SOAP UI:</p><ul><li><code>codeLang FRA</code>: language in which the answer is expected</li><li><code>poolAlias AWS</code>: Pool to use defined in Syracuse in the following section: Administration &gt; Web Services &gt; List of soapClassicPools</li><li><code>publicName=OAUS</code>: Web Service to call</li><li><code>listSize 10</code>: maximum number of received results</li></ul><p><img src="../Resources/Images/images_SOAP-WebService-01.png" /></p>
+Request raw body: query action<br /><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;soapenv:Envelope xmlns:soapenv="<a href="http://schemas.xmlsoap.org/soap/envelope/">http://schemas.xmlsoap.org/soap/envelope/</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>"&gt;
+    &lt;soapenv:Header/&gt;
+    &lt;soapenv:Body&gt;
+        &lt;wss:query soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+            &lt;callContext xsi:type="wss:CAdxCallContext"&gt;
+                &lt;codeLang xsi:type="xsd:string"&gt;ENG&lt;/codeLang&gt;
+                &lt;poolAlias xsi:type="xsd:string"&gt;AWS&lt;/poolAlias&gt;
+                &lt;poolId xsi:type="xsd:string"/&gt;
+                &lt;requestConfig xsi:type="xsd:string"&gt;
+                    &lt;![CDATA[adxwss.optreturn=JSON&amp;adxwss.beautify=true]]&gt;
+                &lt;/requestConfig&gt;
+            &lt;/callContext&gt;
+            &lt;publicName xsi:type="xsd:string"&gt;OAUS&lt;/publicName&gt;
+            &lt;listSize xsi:type="xsd:int"&gt;10&lt;/listSize&gt;
+            &lt;inputXml xsi:type="xsd:string"&gt;
+                &lt;![CDATA[{
+                    }
+                }]]&gt;
+            &lt;/inputXml&gt;
+        &lt;/wss:query&gt;
+    &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre>
+Body response: <br /><pre xml:space="preserve"><code>CODECODE CODExml
+
+&lt;soapenv:Envelope xmlns:soapenv="<a href="http://schemas.xmlsoap.org/soap/envelope/">http://schemas.xmlsoap.org/soap/envelope/</a>" xmlns:xsd="<a href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>" xmlns:xsi="<a href="http://www.w3.org/2001/XMLSchema-instance">http://www.w3.org/2001/XMLSchema-instance</a>" xmlns:soapenc="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" xmlns:wss="<a href="http://www.adonix.com/WSS">http://www.adonix.com/WSS</a>"&gt;
+    &lt;soapenv:Body&gt;
+        &lt;wss:queryResponse soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>"&gt;
+            &lt;queryReturn xsi:type="wss:CAdxResultXml"&gt;
+                &lt;messages xsi:type="soapenc:Array" soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" soapenc:arrayType="wss:CAdxMessage[0]"&gt;&lt;/messages&gt;
+                &lt;resultXml xsi:type="xsd:string"&gt;
+                    &lt;![CDATA[[
+    {
+        "USR": "0037",
+        "C2": "",
+        "LOGIN": "0037",
+        "ADDEML": "",
+        "TELEP": ""
+    },
+    {
+        "USR": "ADMIN",
+        "C2": "System Administrator",
+        "LOGIN": "ADMIN",
+        "ADDEML": "",
+        "TELEP": ""
+    },
+    {
+        "USR": "AGKHA",
+        "C2": "",
+        "LOGIN": "AGKHA",
+        "ADDEML": "<a href="mailto:agnes.khalifa@sage.com">agnes.khalifa@sage.com</a>",
+        "TELEP": ""
+    },
+    {
+        "USR": "AICEN",
+        "C2": "",
+        "LOGIN": "AICEN",
+        "ADDEML": "<a href="mailto:Anton.Gregolec@sage.de">Anton.Gregolec@sage.de</a>",
+        "TELEP": ""
+    }
+]]]&gt;
+                &lt;/resultXml&gt;
+                &lt;status xsi:type="xsd:int"&gt;1&lt;/status&gt;
+                &lt;technicalInfos&gt;
+                    &lt;busy xsi:type="xsd:boolean"&gt;false&lt;/busy&gt;
+                    &lt;changeLanguage xsi:type="xsd:boolean"&gt;false&lt;/changeLanguage&gt;
+                    &lt;changeUserId xsi:type="xsd:boolean"&gt;false&lt;/changeUserId&gt;
+                    &lt;flushAdx xsi:type="xsd:boolean"&gt;false&lt;/flushAdx&gt;
+                    &lt;loadWebsDuration xsi:type="xsd:double"&gt;11&lt;/loadWebsDuration&gt;
+                    &lt;nbDistributionCycle xsi:type="xsd:int"&gt;-1&lt;/nbDistributionCycle&gt;
+                    &lt;poolDistribDuration xsi:type="xsd:double"&gt;0&lt;/poolDistribDuration&gt;
+                    &lt;poolEntryIdx xsi:type="xsd:int"&gt;5747&lt;/poolEntryIdx&gt;
+                    &lt;poolExecDuration xsi:type="xsd:double"&gt;160&lt;/poolExecDuration&gt;
+                    &lt;poolRequestDuration xsi:type="xsd:double"&gt;-1&lt;/poolRequestDuration&gt;
+                    &lt;poolWaitDuration xsi:type="xsd:double"&gt;0&lt;/poolWaitDuration&gt;
+                    &lt;processReport xsi:type="xsd:string" xsi:nil="true"/&gt;
+                    &lt;processReportSize xsi:type="xsd:int"&gt;-1&lt;/processReportSize&gt;
+                    &lt;reloadWebs xsi:type="xsd:boolean"&gt;false&lt;/reloadWebs&gt;
+                    &lt;resumitAfterDBOpen xsi:type="xsd:boolean"&gt;false&lt;/resumitAfterDBOpen&gt;
+                    &lt;rowInDistribStack xsi:type="xsd:int" xsi:nil="true"/&gt;
+                    &lt;totalDuration xsi:type="xsd:double"&gt;191&lt;/totalDuration&gt;
+                    &lt;traceRequest xsi:type="xsd:string"/&gt;
+                    &lt;traceRequestSize xsi:type="xsd:int"&gt;0&lt;/traceRequestSize&gt;
+                &lt;/technicalInfos&gt;
+            &lt;/queryReturn&gt;
+        &lt;/wss:queryResponse&gt;
+    &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;</code></pre>
+For example, if you indicate a poolAlias that doesn't exist, you will received an http status equal to 200. However, that body status will be equal to 0 in the body.<br /><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;status xsi:type="xsd:int"&gt;0&lt;/status&gt;</code></pre><pre xml:space="preserve"><code>CODECODE CODExml
+&lt;multiRef id="id0" soapenc:root="0" soapenv:encodingStyle="<a href="http://schemas.xmlsoap.org/soap/encoding/">http://schemas.xmlsoap.org/soap/encoding/</a>" xsi:type="wss:CAdxMessage"&gt;
+         &lt;type&gt;4&lt;/type&gt;
+         &lt;message&gt;No classic web service pool match to 'AWS2'&lt;/message&gt;
+&lt;/multiRef&gt;</code></pre><a id="401"></a><h2 id="401Unauthorized" data-magellan-target="401Unauthorized">401: Unauthorized</h2><p>The authentication failed: a wrong password or wrong login was sent in the request Auth data.<br /></p><h3>Example with Postman</h3><p><img src="../Resources/Images/images_SOAP-WebService-02.png" /></p><p>The http status is 401. <br />The following explanation is received in the body: </p><pre xml:space="preserve">
+Authentication failed, please verify username and password and try again.
+</pre><h4>Other example with Bearer Token authentication and a wrong token<br /></h4><h4>Http status:</h4><pre xml:space="preserve">
+Status 401 Unauthorized 
+</pre><h4>Body:</h4><pre xml:space="preserve">
+Error 30: Invalid token
+</pre><br /></div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SOAPWebservicesimplementation"> SOAP Web services implementation
+</a>
+                                                    </li>
+                                                    <li><a href="#SyracuseWebservicesdefinition">Syracuse Web services definition</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Important">Important</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Pooldefinition">Pool definition</a>
+                                                    </li>
+                                                    <li><a href="#Loadbalancer">Load balancer</a>
+                                                    </li>
+                                                    <li><a href="#Licensingcontrol">Licensing control</a>
+                                                    </li>
+                                                    <li><a href="#Webservicescalls">Web services calls</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Requests">Requests</a>
+                                                        </li>
+                                                        <li><a href="#Schemaexcerpt">Schema excerpt</a>
+                                                        </li>
+                                                        <li><a href="#CommonSOAPparameters">Common SOAP parameters</a>
+                                                        </li>
+                                                        <li><a href="#CRUDactions">CRUD actions</a>
+                                                        </li>
+                                                        <li><a href="#SpecificSOAPparameters">Specific SOAP parameters</a>
+                                                        </li>
+                                                        <li><a href="#Clientselectionalgorithm">Client selection algorithm</a>
+                                                        </li>
+                                                        <li><a href="#Response">Response</a>
+                                                        </li>
+                                                        <li><a href="#Httpstatus">Http status</a>
+                                                        </li>
+                                                        <li><a href="#200Success">200: Success</a>
+                                                        </li>
+                                                        <li><a href="#401Unauthorized">401: Unauthorized</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 febrero 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

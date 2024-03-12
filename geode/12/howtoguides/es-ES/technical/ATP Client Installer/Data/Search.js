@@ -1,0 +1,1 @@
+﻿define({r:0.5,st:'Stem',n:1,t:[0],m:[0,1],u:['../Content/About.htm'],s:['+','ornar'],p:[['+',4],['choose',1],['files',3],['list',1],['previous',2],['tests',4],['waiting',5]]});

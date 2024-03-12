@@ -1,0 +1,481 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Scripting serveur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Scripting serveur</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Scriptingserveur" data-magellan-target="Scriptingserveur"><span>Scripting serveur</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                            <p>Le serveur XTEND dispose d'une fonction de <b>Scripting qui permet d'exécuter des scripts JavaScript sur le serveur</b> pour construire dynamiquement des pages HTML de la même manière qu'un script PHP.</p>
+                                                            <p>Nous recommandons d'utiliser le scripting lorsque le code HTML que l'on souhaite générer ne peut pas être traité par l'insertion de tokens.</p>
+                                                            <p>Les scripts serveurs peuvent être aussi exécutés par des requêtes <b>AJAX</b> émises à partir du navigateur.</p>
+                                                            <h4>Insertion du script</h4>
+                                                            <p>Le script doit être inséré dans la page HTML à l'intérieur d'un tag &lt;script&gt; à l'endroit où l'on souhaite générer le code HTML.</p>
+                                                            <p>Pour identifier un script serveur on doit placer un <b>token champs</b> dans le tag <span style="font-family: 'Courier new';">&lt;script adx="MyTokenField"&gt;&lt;/script&gt;.</span></p>
+                                                            <p>L'exemple ci dessous affiche une page avec le texte <b>Texte généré par un script serveur</b>.</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;html&gt;&lt;body&gt;<br />&lt;script adx="TestScript1"&gt; <br />&#160;&#160;&#160; print("&lt;b&gt;Texte généré par un script serveur&lt;/b&gt;");<br />&lt;/script&gt;<br />&lt;/body&gt;&lt;/html&gt;</span>
+                                                            </p>
+                                                            <h4>Utilisation de libraries</h4>
+                                                            <p>Le moteur de scripting XTEND permet d'inclure des librairies (fichier JavaScript) dans le code via l'instruction <span style="font-family: 'Courier new';"><b>#include 'pathLib'</b></span>.</p>
+                                                            <p><b>pathLib</b> est le chemin d'accès du fichier libraire par rapport au <b>répertoire racine des scripts serveur</b> défini dans la fiche de paramétrage du <a href="GESAYS.htm">site</a>.</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;script adx="TestScript2"&gt;<br />&#160;&#160;&#160; #include 'libs\xtdWsvc.js''<br />&lt;/script&gt;</span>
+                                                            </p>
+                                                            <h5>Librarie livrées en standard</h5>
+                                                            <p>Les libraries de scripting sont disponibles sous le répertoire ci-dessous:</p>
+                                                            <p><span style="font-family: 'Courier new';"><b>WebTools\TOOLS\XTEND\HTMRSRC\LIB\SCRIPTING</b></span>
+                                                                <br /><span style="font-family: 'Courier new';">WebTools</span> est le répertoire Tools d'installation du serveur X3WEB</p>
+                                                            <p><b>xtdPrototype.js</b>
+                                                            </p>
+                                                            <p>Cette librairie est une adaptation de la librairie prototype.js version 1.6.0.2 dépouillée des fonctions de manipulation des objets graphiques (DOM).</p>
+                                                            <p>Elle met à disposition du dévelopeur un ensemble de fonctions et classes très utiles comme la gestion de classes avec héritage, la gestion de tableaux et HashMaps...</p>
+                                                            <p><b>xtdWsvc.js</b>
+                                                            </p>
+                                                            <p>Propose des fonctions utilitaires pour l'appel de web services XTEND et la manipulation des données JSON (paramètres et résultat).</p>
+                                                            <p>Pour utiliser ces librairies il suffit de les copier sous le <b>répertoire des scrcipts serveur du site</b> et de les inclure dans le code JavaScript via l'instruction <span style="font-family: 'Courier new';">#include.</span><br /></p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Programmation" data-magellan-target="Programmation">Programmation</h2>
+                                                            <p />
+                                                            <h4>Construction du HTML</h4>
+                                                            <p>Le principe du scripting consiste à construire dynamiquement du texte HTML par exécution d'instructions JavaScript.</p>
+                                                            <p>La fonction <b>print()</b> permet d'envoyer le HTML vers le navigateur.</p>
+                                                            <p>En réalité la fonction <b>print</b> permet de remplir un buffer texte qui sera inséré, après exécution du code, dans la page HTML à l'emplacement du script.</p>
+                                                            <h4>Accès au contexte du moteur XTEND</h4>
+                                                            <p>L'objet de scope globale <b>XTD_CTX</b> donne accès au contexte du moteur XTEND au travers d'un ensemble de méthodes.</p>
+                                                            <p><span style="font-family: 'Courier new';">//Informations&#160; sur le compte utilisateur<br />public boolean <b>userLogged</b>();<br />public String <b>userCode</b>();<br />public String <b>userProfile</b>();<br />public String <b>userLang</b>();<br /></span><span style="font-family: 'Courier new';">//Renvoie un block <br />//Le token block doit être inséré dans la page pour le déclarer<br />//sans forcément ajouter de fils &lt;!adx="monBlock"&gt;&lt;!adx="monBlock"&gt;<br />public IXtdJsTokenBlock <b>getTokenBlock</b>(String aBlockId);<br />//Renvoie une entité Action ou Session<br />public IXtdJsActEntity <b>getActionEntity</b>(String aId);<br />//Renvoie l'url de la servlet courante en mode sécurisé (https) ou non<br />public String <b>getServletUrl</b>(boolean aSecured);<br />//Renvoie l'url complète pour accéder à une page<br />public String <b>getPageUrl</b>(String aPage);<br />//Renvoie l'url complète pour exécuter un lien dynamique en méthode GET<br />public String <b>getDlkUrl</b>(String aDynLink);<br />//Renvoie le tag &lt;a href='' onclick='xtdDoDlk(..)'&gt; associé au lien dynamique<br />//Le tag &lt;/a&gt; doit être ajouté en scripting<br />public String <b>getDlkAnchor</b>(String aDynLink,String aClass);<br />//Renvoie le tag input &lt;input type='button' onclick='xtdDoDlk(..)'&gt;<br />//associé au lien dynamique<br />public String <b>getDlkButton</b>(String aDynLink,String aValue,String aClass);<br />//Renvoie les fonctions JS générés par Xtend pour le traitement des<br />//liens dynamiques<br />public String <b>getDlkOnclick</b>(String aDynLink, boolean aIsInputTag);<br />public String <b>getDlkOnSubmit</b>(String aDynLink);<br />//Permet la prise en compte en Javascript des tags input de type checkbox<br />//utilisés dans les action<br />//Xtend génère un input hidden pour les checkboxes non cochées<br />public void <b>checkBoxAdd</b>(String aInputName); <br />public void <b>checkBoxAdd</b>(String aInputName,String aUncheckedValue);</span>
+                                                            </p>
+                                                            <h5>Exemple</h5>
+                                                            <p>Il s'agit d'un exemple où le sous-programme de LOGIN renvoie un champ "SITES" qui est stocké dans la session (informations du compte) et qui contient une liste de sites autorisés pour l'utilisateur.</p>
+                                                            <p>La liste des sites est renvoyée sous la forme d'une query string de type <span style="font-family: 'Courier new';">Clé1=valeur&amp;Clé2=valeur</span>.</p>
+                                                            <p>Le script a pour but de créer un tag select à partir des données du champ SITES.</p>
+                                                            <p>Ce genre d'opération ne peut pas être effectuée via un token et nécessite l'emploi d'un script serveur.<br />On peut aussi&#160;réaliser l'opération de décodage via un script JavaScript client mais on n'a pas accès au contexte de données de la session XTEND.</p>
+                                                            <p><b>Script</b>
+                                                            </p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;div id="testscript"&gt;<br />&lt;script adx="UserSites"&gt;<br />//Teste si l'utilisateur est signé<br />if (XTD_CTX.userLogged())<br />{<br />&#160;&#160;&#160; //Librairie utilitaires<br />&#160;&#160;&#160; #include 'libs\xtdWsvc.js'<br />&#160;&#160;&#160; <br />&#160;&#160;&#160; //Lit le champ SITES qui contient la query string<br />&#160;&#160;&#160; //-&gt; "site1=S1&amp;site2=S2&amp;site3=S3"<br />&#160;&#160;&#160; var wQs=new String(XTD_CTX.getField("SITES"));<br />&#160;&#160;&#160; <br />&#160;&#160;&#160; //Parse la String pour créer un objet JavaScript(voir prototype.js)<br />&#160;&#160;&#160; //-&gt; {site1:"S1",site2:"S2",site3:"S3"}<br />&#160;&#160;&#160; var wObj=wQs.parseQuery();<br />&#160;&#160;&#160; <br />&#160;&#160;&#160; //Objet utilitaire pour constituer le HTML qui sera inséré dans la page<br />&#160;&#160;&#160; //-&gt; Librairie xtdWsvc.js<br />&#160;&#160;&#160; var wHtml=new XTENDWSVC.classHTMLBuffer();<br />&#160;&#160;&#160; //Le HTML est un tag select <br />&#160;&#160;&#160; wHtml.select(["value","SITES","class","xtendInput"]);<br />&#160;&#160;&#160; <br />&#160;&#160;&#160; //Tableau des valeurs(voir prototype.js)<br />&#160;&#160;&#160; var wValues=Object.values(wObj);<br />&#160;&#160;&#160; //Tableau des clés(voir prototype.js)<br />&#160;&#160;&#160; var wKeys=Object.keys(wObj);<br />&#160;&#160;&#160; //Ajout des options<br />&#160;&#160;&#160; for (i=0;i&lt;wKeys.length;i++)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; wHtml.option(wValues[i],wKeys[i]);<br />&#160;&#160;&#160; wHtml.endSelect();<br />&#160;&#160;&#160; <br />&#160;&#160;&#160; //Ecriture de la réponse HTML<br />&#160;&#160;&#160; print(wHtml.html());<br />&lt;/script&gt;<br />&lt;/div&gt;</span>
+                                                            </p>
+                                                            <p><b>Résultat</b>
+                                                            </p>
+                                                            <p>Résultat avec pour la valeur du champ SITES:<br /><span style="font-family: 'Courier new';">Site Grenoble=FCYGRE&amp;Site Paris=FCYPAR&amp;Site Lyon=FCYLY&amp;Site Rouen=FCYROU</span></p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;div id="testscript"&gt;<br />&#160;&#160;&#160; &lt;select class="xtendInput" value="SITES"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;option value="FCYGRE"&gt;Site Grenoble&lt;/option&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;option value="FCYLY"&gt;Site Lyon&lt;/option&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;option value="FCYROU"&gt;Site Rouen&lt;/option&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;option value="FCYPAR"&gt;Site Paris&lt;/option&gt;<br />&#160;&#160;&#160; &lt;/select&gt;<br />&lt;/div&gt;</span>
+                                                            </p>
+                                                            <h4>Accès aux blocs de la page</h4>
+                                                            <p>La fonction <b>XTD_CTX.getTokenBlock(BlockID)</b> renvoie une interface <b>IXtdJsTokenBlock</b> qui permet d'accéder aux méthodes et propriétés d'un token bloc inséré dans la page HTML.</p>
+                                                            <p>Le token block doit être inséré dans la page pour le déclarer sans forcément ajouter de fils <span style="font-family: 'Courier new';">&lt;!adx="BlockId"&gt;&lt;!adx="BlockId"&gt;</span></p>
+                                                            <h5>Interface</h5>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsTokenBlock extends IXtdJsData<br />{ <br />&#160;&#160;&#160; // Renvoie un itérateur sur les lignes du bloc<br />&#160;&#160;&#160; public IXtdJsDataIterator <b>getLines</b>();<br />}</span>
+                                                            </p>
+                                                            <p>L'interface <b>IXtdJsTokenBlock</b> pointe sur le bloc et permet d'accéder aux champs du bloc.</p>
+                                                            <p>L'interface <b>IXtdJsDataIterator</b> permet d'effectuer une itération sur les lignes d'un bloc.</p>
+                                                            <h5>Exemple</h5>
+                                                            <p><span style="font-family: 'Courier new';">&lt;Html&gt;&lt;body&gt;<br />&lt;!--Déclaration du bloc--&gt;<br />&lt;!adx="MyBlock"&gt;&lt;!adx="MyBlock"&gt;<br />&lt;!--Affichage des lignes du bloc--&gt;<br />&lt;script adx="TestScript"&gt;<br />&#160;&#160;&#160; var wBlock=XTD_CTX.getTokenBlock("MyBlock");<br />&#160;&#160;&#160; var wLines=wBlock.getLines();<br />&#160;&#160;&#160; print ("Nombre de page="+wBlock.getField("APAGENB")+"&lt;br&gt;");<br />&#160;&#160;&#160; print ("Nombre de lignes="+wBlock.getField("ABLKNBLINES")+"&lt;br&gt;");<br />&#160;&#160;&#160; while(wLines.hasNext()){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wLine=wLines.next();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;tr&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getField("PRIX")+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getField("STOCK")+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;/tr&gt;");<br />&#160;&#160;&#160; }<br />&lt;/script&gt;<br />&lt;/body&gt;&lt;/html&gt;</span>
+                                                            </p>
+                                                            <h4>Accès aux entités action</h4>
+                                                            <p>La fonction <b>XTD_CTX.getActionEntity(EntityID)</b> renvoie une interface <b>IXtdJsActEntity</b> qui permet d'accéder aux méthodes et propriétés de l'entité.</p>
+                                                            <p>Seules les entités de type session ou action sont accessibles directement (sans passer par un token bloc) car elle sont stockées dans la session utilisateur (persistantes).</p>
+                                                            <p><b>Les entités de type Accès données ne sont pas accessibles directement mais seulement au travers d'un token bloc.</b>
+                                                            </p>
+                                                            <h5>Interface</h5>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsActEntity<br />{<br />&#160;&#160;&#160; // Renvoie le code de l'entité<br />&#160;&#160;&#160; public String <b>getCode</b>();<br />&#160;&#160;&#160; // Renvoie un itérateur sur les entités<br />&#160;&#160;&#160; public IXtdJsDataIterator&lt;IXtdJsActEntityData&gt; <b>getIterator</b>();<br />&#160;&#160;&#160; // Ajoute une entité et renvoie l'interface sur cette entité<br />&#160;&#160;&#160; // --&gt; Il faut ensuite ajouter les champs<br />&#160;&#160;&#160; public IXtdJsActEntityData <b>addData</b>(); <br />&#160;&#160;&#160; // Supprime l'entité d'identifiant aId<br />&#160;&#160;&#160; public IXtdJsActEntityData <b>removeData</b>(String aId); <br />&#160;&#160;&#160; // Renvoie l'entité d'identifiant aId<br />&#160;&#160;&#160; public IXtdJsActEntityData <b>getData</b>(String aId); <br />}<br />public interface IXtdJsActEntityData extends IXtdJsData<br />{<br />&#160;&#160;&#160; //Donnée d'un entité qui ajoute la méthode getID<br />&#160;&#160;&#160; //à l'interface standard IXtdJsData<br />&#160;&#160;&#160; public String <b>getId</b>();&#160;&#160; <br />}</span>
+                                                            </p>
+                                                            <p>L'interface <b>IXtdJsTokenBlock</b> pointe sur le bloc et permet d'accéder aux champs du bloc.</p>
+                                                            <p>L'interface <b>IXtdJsDataIterator</b> permet d'effectuer une itération sur les lignes d'un bloc.</p>
+                                                            <h5>Exemple</h5>
+                                                            <p><span style="font-family: 'Courier new';">&lt;Html&gt;&lt;body&gt;<br />&lt;!--Déclaration du bloc--&gt;<br />&lt;!adx="MyBlock"&gt;&lt;!adx="MyBlock"&gt;<br />&lt;!--Affichage des lignes du bloc--&gt;<br />&lt;script adx="TestScript"&gt;<br />&#160;&#160;&#160; var wEntities=XTD_CTX.getActionEntity("XTDLOGINV");<br />&#160;&#160;&#160; var wIterator=wEntities.getIterator();<br />&#160;&#160;&#160; print("Size="+wIterator.size() + " - Code="+ wEntities.getCode());&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160; print("&lt;table&gt;&lt;br&gt;");<br />&#160;&#160;&#160; while(wIterator.hasNext()){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wLine=wIterator.next();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;tr&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getId()+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getField("INVADR1")+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getField("INVCITY")+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;/tr&gt;");<br />&#160;&#160;&#160; }<br />&#160;&#160;&#160; print("&lt;/table&gt;");<br />&lt;/script&gt;<br />&lt;/body&gt;&lt;/html&gt;</span>
+                                                            </p>
+                                                            <h4>Itération sur les lignes d'un bloc ou entités action</h4>
+                                                            <p>L'interface <b>IXtdJsDataIterator</b> permet d'effectuer une itération sur les lignes d'un bloc ou entités action.</p>
+                                                            <h5>Interface</h5>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsDataIterator<br />{<br />&#160;&#160;&#160; // Renvoie le nombre de données<br />&#160;&#160;&#160; public int <b>size</b>();<br />&#160;&#160;&#160; // True si l'itérateur contient des données<br />&#160;&#160;&#160; public boolean <b>hasNext</b>();<br />&#160;&#160;&#160; // Renvoie la donnée courante et incrémente <br />&#160;&#160;&#160; public IXtdJsData <b>next</b>();<br />&#160;&#160;&#160; // Renvoie l'itérateur au format JSON<br />&#160;&#160;&#160; public String <b>toJSON</b>();<br />}</span>
+                                                            </p>
+                                                            <h5>Exemple</h5>
+                                                            <p><span style="font-family: 'Courier new';">var wEntities=XTD_CTX.getActionEntity("XTDLOGINV");<br />var wIterator=wEntities.getIterator();<br />while(wIterator.hasNext()){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wLine=wIterator.next();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;tr&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getId()+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;td&gt;"+wLine.getField("INVADR1")+"&lt;/td&gt;");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;/tr&gt;");<br />}</span>
+                                                            </p>
+                                                            <h4>Itération sur les lignes d'un bloc ou entités action</h4>
+                                                            <h5>Interface</h5>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsDataIterator&lt;ClassData extends IXtdJsData&gt;<br />{<br />&#160;&#160;&#160; public boolean <b>hasNext</b>();<br />&#160;&#160;&#160; public ClassData <b>next</b>();<br />&#160;&#160;&#160; public String <b>toJSON</b>();<br />}<br />public interface IXtdJsData<br />{<br />&#160;&#160;&#160; public void <b>removeField</b>(String aFieldName);<br />&#160;&#160;&#160; public void <b>setField</b>(String aFieldName, String aValue);<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName);<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName, boolean aFormated);<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName, String aFormat);<br />&#160;&#160;&#160; public String <b>getMenuLabel</b>(String aFieldName);<br />&#160;&#160;&#160; public String <b>getFieldJSON</b>(String aFieldName);<br />&#160;&#160;&#160; public String <b>toJSON</b>();&#160;&#160; <br />}<br />public interface IXtdJsTokenBlock extends IXtdJsData<br />{ <br />&#160;&#160;&#160; public IXtdJsDataIterator <b>getLines</b>();<br />}</span>
+                                                            </p>
+                                                            <h4>Accès aux champs d'une ligne d'un bloc ou d'une entité</h4>
+                                                            <p>L'interface IXtdJsData permet d'accéder aux champs d'un bloc ou d'une entité.</p>
+                                                            <h5>Interface</h5>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsData<br />{<br />&#160;&#160;&#160; // Supprime le champ aFieldName<br />&#160;&#160;&#160; public void <b>removeField</b>(String aFieldName);<br />&#160;&#160;&#160; // Valorise le champ aFieldName avec aValue<br />&#160;&#160;&#160; public void <b>setField</b>(String aFieldName, String aValue);<br />&#160;&#160;&#160; // Renvoie la valeur X3 du champ aFieldName<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName);<br />&#160;&#160;&#160; // Renvoie la valeur formatée du champ aFieldName<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName, boolean aFormated);<br />&#160;&#160;&#160; // Renvoie la valeur du champ aFieldName formatée avec aFormat<br />&#160;&#160;&#160; public String <b>getField</b>(String aFieldName, String aFormat);<br />&#160;&#160;&#160; // Renvoie le label d'un champ MenuLocal aFieldName<br />&#160;&#160;&#160; public String <b>getMenuLabel</b>(String aFieldName);<br />&#160;&#160;&#160; // Renvoie le champ aFieldName au format JSON<br />&#160;&#160;&#160; public String <b>getFieldJSON</b>(String aFieldName);<br />&#160;&#160;&#160; // Renvoie le bloc de données au format AJSON<br />&#160;&#160;&#160; public String <b>toJSON</b>(); <br />} </span>
+                                                            </p>
+                                                            <h5>Exemple</h5>
+                                                            <p>&#160;&#160;&#160;<span style="font-family: 'Courier new';"> var wItems=XTD_CTX.getTokenBlock("BlkItems");<br />&#160;&#160;&#160;print(wItems.getField("PRIX")+"&lt;br&gt;");&#160;&#160;&#160;&#160;<br />&#160;&#160;&#160;print(wItems.getField("PRIX",true)+"&lt;br&gt;");</span></p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Appeldunwebservice" data-magellan-target="Appeldunwebservice">Appel d'un web service</h2>
+                                                            <p>L'interface <b>IXtdJsWsvcCall</b> permet d'appeler un web service X3 en scripting serveur.</p>
+                                                            <p><b>Le web service doit être au préalable déclaré comme une interface XTEND.</b>
+                                                            </p>
+                                                            <p>Les méthodes de cette interface transmettent des données <b>JSON</b> aux web services X3.</p>
+                                                            <p>Les web services X3 acceptent les deux types de données XML ou JSON pour le paramètre 'data' mais le format JSON est beaucoup plus facile à manipuler en JavaScript que le format XML car il correspond à la représentation String des objets JavaScript (Object literals).</p>
+                                                            <h4>Interface d'appel</h4>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdJsWsvcCall<br />{<br />&#160;&#160;&#160; /*------------ Paramètres ------------*/<br />&#160;&#160;&#160; // aInterface&#160;&#160; : le code de l'interface à appeler<br />&#160;&#160;&#160; // aJSONData&#160;&#160;&#160; : Données JSON<br />&#160;&#160;&#160; // aFailOnX3Err : True pour générer un exception si <br />&#160;&#160;&#160; //&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; un message d'erreur est renvoyé par X3<br />&#160;&#160;&#160; /*------------ Sous-programme ------------*/<br />&#160;&#160;&#160; // Renvoie les paramètres standards PARCOD/PARVAL pour l'appel d'un sous-programme<br />&#160;&#160;&#160; public String[][] <b>callSpgGetAXPAR</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Appel d'un web service sous-programme<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callSpgRun</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aJSONData,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ) throws Exception;<br />&#160;&#160;&#160; /*------------ Objet X3 ------------*/<br />&#160;&#160;&#160; // Méthode Create<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjCreate</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aJSONData,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ) throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Méthode Read<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjRead</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aQsKeys,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; )throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Méthode Update<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjUpdate</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aQsKeys,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aJSONData,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; ) throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Méthode Delete<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjDelete</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aQsKeys,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; )throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Autre méthode (aMethod) avec une clé comme paramètre<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjActionKey</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aMethod,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aQsKeys,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; )throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Autre méthode (aMethod) avec des données objat XML comme paramètre<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjActionData</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aMethod,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aJSONData,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; )throws Exception;<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Appel liste-gauche<br />&#160;&#160;&#160; public IXtdAjaxResult <b>callObjQuery</b>(<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aInterface,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; String aQsKeys,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; boolean aFailOnX3Err<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; )throws Exception;<br />&#160;&#160;&#160; /*------------ Trace ------------*/<br />&#160;&#160;&#160; // Trace XTEND accessible via le navigateur <br />&#160;&#160;&#160; // True si trace activée<br />&#160;&#160;&#160; public boolean <b>traceOn</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Début d'un bloc de trace<br />&#160;&#160;&#160; public void <b>traceBeginStep</b>(String aTrace);<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Trace<br />&#160;&#160;&#160; public void traceWrite(String aTrace);<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; // Fin d'un bloc de trace<br />&#160;&#160;&#160; public void <b>traceEndStep</b>();<br />&#160;&#160;&#160; /*------------ Divers ------------*/<br />&#160;&#160;&#160; // Renvoie l'url d'accès à la web aplication XTEND<br />&#160;&#160;&#160; // </span><span style="font-family: 'Courier new';">http://host:port/xtend</span><span style="font-family: 'Courier new';"> - ou </span><span style="font-family: 'Courier new';">https://host:portssl/xtend</span>
+                                                                <br /><span style="font-family: 'Courier new';">&#160;&#160;&#160; public String <b>getWebApplicationUrl</b>(boolean aSecure);<br />}</span>
+                                                            </p>
+                                                            <h4>Interface résultat</h4>
+                                                            <p><span style="font-family: 'Courier new';">public interface IXtdAjaxResult<br />{<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Données JSON renvoyées par le web service<br />&#160;&#160;&#160; public String <b>getResponseBody</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Longueur des données JSON<br />&#160;&#160;&#160; public int <b>getResponseBodyLength</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //True si message X3<br />&#160;&#160;&#160; public boolean <b>hasMessage</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //True si message erreur X3<br />&#160;&#160;&#160; public boolean <b>hasMsgErr</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //True si message warning X3<br />&#160;&#160;&#160; public boolean <b>hasMsgWarn</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //True si message information X3<br />&#160;&#160;&#160; public boolean <b>hasMsgInfo</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Liste des messages d'erreur X3<br />&#160;&#160;&#160; public String[] <b>getMsgErrLst</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Liste des messages warning X3<br />&#160;&#160;&#160; public String[] <b>getMsgWarnLst</b>();<br />&#160;&#160;&#160; // ------------------------------------------<br />&#160;&#160;&#160; //Liste des messages d'information X3<br />&#160;&#160;&#160; public String[] <b>getMsgInfoLst</b>();<br />}</span>
+                                                            </p>
+                                                            <h4>Librairie xtdWsvc.js</h4>
+                                                            <p>Cette librairie propose des utilitaires pour manipuler :</p>
+                                                            <ul>
+                                                                <li>les paramètres d'appel des web services</li>
+                                                                <li>le résulat JSON d'appel d'un web service</li>
+                                                                <li>le HTML généré </li>
+                                                            </ul>
+                                                            <p>Cette librairie utilise la librairie <b>xtdPrototype.js</b>.</p>
+                                                            <h5>Gestion paramètres et résultat</h5>
+                                                            <p><span style="font-family: 'Courier new';">/*------------------ INCLUDE ------------------*/<br />//Toujours inclure la librairie xtdPrototype.js<br />#include "xtdPrototype.js"</span>
+                                                            </p>
+                                                            <p><span style="font-family: 'Courier new';">/*------------------ OBJETS JAVA/JAVASCRIPT -------------------*/<br />//Renvoie true si l'objet aObj est un objet JAVA<br />//Renvoie false si c'est un objet JavaScript<br />Object.<b>xtdIsJava</b>(aObj);<br />//-----------------------------------------------<br />//Permet de convertir un objet Java ou JavaScript en String<br />Object.<b>xtdToString</b>(aObj);</span>
+                                                            </p>
+                                                            <p><span style="font-family: 'Courier new';">/*------------------ PARAMETRES ------------------*/<br />//Renvoie les paramètres pour l'appel d'un web service<br />//Classe XTENDWSVC.classParam<br />//aOptionsJson sont les options JSON (Classe XTENDWSVC.classJsonOpt)<br />XTENDWSVC.<b>newParam</b>(aOptionsJson);<br />//-----------------------------------------------<br />//Renvoie les paramètres pour l'appel d'un web service OBJET X3<br />//Classe XTENDWSVC.classParamObject<br />//-&gt;aTimeStampX3 est une String qui contient le TimeStamp de l'ojet X3<br />//-&gt;aTimeStampX3 ="" si pas de TimeStamp <br />XTENDWSVC.<b>newParamXtdObject</b>(aTimeStampX3,aOptionsJson);<br />//-----------------------------------------------<br />//Renvoie les paramètres pour l'appel d'un web service Sous-Programme<br />//Classe XTENDWSVC.classParamXtdSpg<br />XTENDWSVC.<b>newParamXtdSpg</b>(aOptionsJson);<br />//-----------------------------------------------<br />//Renvoie les paramètres pour l'appel d'un web service Sous-Programme<br />//de type&#160; 'Accès données'. Ajoute les paramètres spécifiques<br />//Classe XTENDWSVC.classParamXtdSpgAccess<br />//-&gt;aNbLines est le nombre de lignes à renvoyer<br />//-&gt;aStartAt est le rang de la ligne de départ (pagination)<br />XTENDWSVC.<b>newParamXtdSpgAccess</b>(aNbLines,aStartAt,aOptionsJson);</span>
+                                                            </p>
+                                                            <p><span style="font-family: 'Courier new';">/*------------------ RESULTAT ------------------*/<br />//Evalue la chaine de caractères aJSON résultat d'un web service X3<br />//Renvoie un objet JavaScript<br />XTENDWSVC.<b>evalResult</b>(aJSON);<br />//-----------------------------------------------<br />//Evalue le résultat d'un sous-programme<br />//Ajoute des méthodes spécifique au type de résultat<br />//Méthodes XTENDWSVC.methodsResultSpg<br />XTENDWSVC.<b>evalResultSpg</b>(aJSON);<br />//-----------------------------------------------<br />//Evalue le résultat d'un sous-programme 'Accès données'<br />//Ajoute des méthodes spécifique au type de résultat<br />//Méthodes XTENDWSVC.methodsResultSpg<br />XTENDWSVC.<b>evalResultSpgAccess</b>(aJSON);<br />//-----------------------------------------------<br />//Evalue le résultat d'un web service Objet<br />//Ajoute des méthodes spécifique au type de résultat<br />//Méthodes XTENDWSVC.methodsResultObject<br />XTENDWSVC.<b>evalResultObject</b>(aJSON);</span>
+                                                            </p>
+                                                            <p><span style="font-family: 'Courier new';">/*------------------ CLASSES PARAMETRE -------------------*/<br />XTENDWSVC.<b>classParam</b>=Class.create({<br />&#160;&#160;&#160; //Renvoie les options JSON<br />&#160;&#160;&#160; <b>options</b>:function();<br />&#160;&#160;&#160; //Ajoute le paramètre aCode avec la valeur aValue<br />&#160;&#160;&#160; <b>add</b>:function(aCode,aValue);<br />});<br />//-----------------------------------------------<br />XTENDWSVC.<b>classParamXtdSpg</b>=Class.create(XTENDWSVC.classParam,{<br />&#160;&#160;&#160; //Ajoute un paramètre aCode/aValue au groupe AXPAR<br />&#160;&#160;&#160; <b>addAXPAR</b>:function(aCode,aValue);&#160;&#160;&#160; <br />});</span>
+                                                            </p>
+                                                            <p>
+                                                                <br /><span style="font-family: 'Courier new';">/*------------------ OBJET RESULTAT -------------------*/<br />//Résultat appel sous-programme<br /><b>methodsResultSpg</b>:{<br />&#160;&#160;&#160; //Renvoie la valeur String du paramètre aCode du groupe AXPAR<br />&#160;&#160;&#160; <b>AXPAR</b>:function(aCode);<br />&#160;&#160;&#160; //Renvoie la valeur Integer du paramètre aCode du groupe AXPAR<br />&#160;&#160;&#160; //aDefValue est la valeur si paramètre non trouvé<br />&#160;&#160;&#160; <b>AXPARInt</b>:function(aCode,aDefValue);<br />}<br />//-----------------------------------------------<br />//Résultat appel sous-programme de type 'Accès données'<br />//Les méthodes permettent de gérer la pagination<br /><b>methodsResultSpgAccess</b>:{<br />&#160;&#160;&#160; //Nombre de records demandés<br />&#160;&#160;&#160; <b>askedRecords</b>:function();<br />&#160;&#160;&#160; //Nombre de records total<br />&#160;&#160;&#160; <b>totalRecords</b>:function();<br />&#160;&#160;&#160; //Nombre de records renvoyés<br />&#160;&#160;&#160; <b>returnedRecords</b>:function();<br />&#160;&#160;&#160; //Rang de départ<br />&#160;&#160;&#160; <b>startRank</b>:function();<br />&#160;&#160;&#160; //True si il existe des enregistrements suivants<br />&#160;&#160;&#160; <b>hasNext</b>:function();<br />}<br />//-----------------------------------------------<br />//Résultat appel sous-programme de type 'Objet X3'<br />//Les méthodes permettent d'accéder aux informations de dernière modification<br /><b>methodsResultObject</b>:{<br />&#160;&#160;&#160; //Renvoie la valeur du champ aField pour le groupe ADXTEC<br />&#160;&#160;&#160; <b>adxADXTEC</b>:function(aField);<br />&#160;&#160;&#160; //Renvoie le TimeStamp<br />&#160;&#160;&#160; <b>adxTimeStamp</b>:function();<br />&#160;&#160;&#160; //Renvoie le dernier code utilisateur X3 qui a modifié l'objet<br />&#160;&#160;&#160; <b>adxUser</b>:function();<br />}</span>
+                                                            </p>
+                                                            <h5>Options JSON</h5>
+                                                            <p><span style="font-family: 'Courier new';">XTENDWSVC.<b>classJsonOpt</b>=Class.create({<br />&#160;&#160;&#160; //Pas de groupes de publication en retour<br />&#160;&#160;&#160; //Chaque paramètre est un tableau de String<br />&#160;&#160;&#160; <b>noGroups</b>:function();<br />&#160;&#160;&#160; //Pas de lignes dans les tableaux avec dim&gt;1<br />&#160;&#160;&#160; //Chaque paramètre est un tableau de String<br />&#160;&#160;&#160; <b>noRows</b>:function();&#160;&#160;&#160; <br />&#160;&#160;&#160; //Pas de labels pour les menus locaux<br />&#160;&#160;&#160; <b>noLabels</b>:function();<br />&#160;&#160;&#160; //Les champs clob ne sont pas renvoyés<br />&#160;&#160;&#160; <b>noClobs</b>:function();<br />&#160;&#160;&#160; //Exclut les groupes contenus dans aValue<br />&#160;&#160;&#160; //aValue est une String or Array of string<br />&#160;&#160;&#160; <b>excludeGrp</b>:function(aValue);<br />&#160;&#160;&#160; //Inclut les groupes contenus dans aValue<br />&#160;&#160;&#160; <b>includeGrp</b>:function(aValue);<br />&#160;&#160;&#160; //Exclut les champs contenus dans aValue<br />&#160;&#160;&#160; //aValue est une String or Array of string<br />&#160;&#160;&#160; <b>excludeFld</b>:function(aValue);<br />&#160;&#160;&#160; //Inclut les champs contenus dans aValue<br />&#160;&#160;&#160; <b>includeFld</b>:function(aValue);<br />});</span>
+                                                            </p>
+                                                            <p><b>Exemple :</b> </p>
+                                                            <p><span style="font-family: 'Courier new';">// Options JSON<span style="font-family: 'Courier new';"><br /></span></span><span style="font-family: 'Courier new';">var wJsonOpt=new XTENDWSVC.classJsonOpt().noRoups().noRows().excludeGrp(["GRP1","GRP2");<br /><br />// Créatio</span><span style="font-family: 'Courier new';">n paramètre appel sous-programme<br />var wParams=XTENDWSVC.newParamXtdSpg();<br /></span><span style="font-family: 'Courier new';">wParams.add("AXUSERCODE",wInput.P1);<br />wParams.add("AXPWD",wInput.P2);<br />wParams.options().noGroups().includeGrp(["AXLOG_X3"]</span>
+                                                            </p>
+                                                            <h5>Construction du HTML</h5>
+                                                            <p>La librairie inclut une classe <b>XTENDWSVC.classHTMLBuffer</b> qui permet de construire une réponse HTML à envoyer vers le client.</p>
+                                                            <p><b>Exemple d'appel d'un sous-programme</b>
+                                                            </p>
+                                                            <p>Cet exemple appel l'interface AXTDLOGIN (sous-programme de login) :</p>
+                                                            <ul>
+                                                                <li>crée les paramètre</li>
+                                                                <li>appelle le sous-programme</li>
+                                                                <li>traite le résultat</li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Affiche les erreurs</li>
+                                                                        <li>Affiche un tableau HTML avec les informations de login X3 renvoyées par le sous-programme </li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>
+                                                                <img src="../Resources/Images/GESAY_ADV_SCRIPTING_1.jpg" alt="GESAY_ADV_SCRIPTING_1.jpg" keeps="true" realloc="GESAY_ADV_SCRIPTING_1.jpg" />
+                                                            </p>
+                                                            <p>Il s'agit d'un exemple sachant qu'il est beaucoup plus simple dans ce cas d'utiliser les tokens.</p>
+                                                            <p><span style="font-family: 'Courier new';">#include 'libs\xtdWsvc.js'<br />function callXTDLogin(){<br />&#160;&#160;&#160; //Paramètres user/password&#160; <br />&#160;&#160;&#160; var wInput={P1:'dis001',P2:'adonix'};<br />&#160;&#160;&#160; //Trace activée ?<br />&#160;&#160;&#160; var wTraceOn=XTD_CTX.traceOn();<br />&#160;&#160;&#160; if(wTraceOn){<br />&#160;&#160;&#160; //Début du bloc de trace des paramètres<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; XTD_CTX.traceBeginStep("Build WSVC params");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; XTD_CTX.traceWrite("P1="+wInput.P1+ " - P2="+wInput.P2);<br />&#160;&#160;&#160; }<br />&#160;&#160;&#160; //Création objet paramètre sous-programme<br />&#160;&#160;&#160; var wParams=XTENDWSVC.newParamXtdSpg();<br />&#160;&#160;&#160; //Valorisation des paramètres<br />&#160;&#160;&#160; //AXUSERCODE et APWD sont les noms des paramètres utilisés<br />&#160;&#160;&#160; //pour transmettre le user/password<br />&#160;&#160;&#160; wParams.add("AXUSERCODE",wInput.P1);<br />&#160;&#160;&#160; wParams.add("AXPWD",wInput.P2);<br />&#160;&#160;&#160; //Ajout des options JSON pour l'appel du sous-programme<br />&#160;&#160;&#160; wParams.options().noGroups().includeGrp(["AXLOG_X3"]);<br />&#160;&#160;&#160; // Paramètres JSON passés au web service (comme les paramètres XML)<br />&#160;&#160;&#160; wParams=Object.toJSON(wParams);<br />&#160;&#160;&#160; if(wTraceOn){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Fin du bloc de trace des paramètres<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; XTD_CTX.traceWrite(wParams);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; XTD_CTX.traceEndStep();<br />&#160;&#160;&#160; }<br />&#160;&#160;&#160; //Début du bloc de trace de l'appel<br />&#160;&#160;&#160; if(wTraceOn)XTD_CTX.traceBeginStep("Call spg");<br />&#160;&#160;&#160; //Appel du sous-programme<br />&#160;&#160;&#160; //-&gt;false pour traiter les erreurs X3 par programme<br />&#160;&#160;&#160; var wResult=XTD_CTX.callSpgRun("AXTDLOGIN",wParams,false); <br />&#160;&#160;&#160; if (wResult.hasMsgErr()){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Traitement des erreurs<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if(wTraceOn) XTD_CTX.traceWrite("Error message");<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wLst=$A(wResult.getMsgErrLst());<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; print("&lt;span class='intUserMsg'&gt;"+wLst.join('\n')+"&lt;/span&gt;");<br />&#160;&#160;&#160; }else{<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Traitement du résultat<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Evaluation des données JSON<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wJSON=XTENDWSVC.evalResultSpg(wResult.getResponseBody());<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Trace<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if(wTraceOn) XTD_CTX.traceWrite(Object.toJSON(wJSON));<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Construction de la réponse HTML<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; //-&gt;Tableau des codes d'accès aux différents dossiers X3<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wHtml=new XTENDWSVC.classHTMLBuffer;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; wHtml.table(["border","0","class","intLine"]);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; wHtml.trFill(["SolutionX3","DossierX3","LangX3","UserX3"],<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ["class","intRowTitle"]);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if (wJSON.AX3SOL){<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; var wLen=wJSON.AX3SOL.length;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; for(var i=0;i&lt;wLen;i++)<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; //Gestion des styles par ligne alternés<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; wHtml.trFill([wJSON.AX3SOL[i], wJSON.AX3FLDR[i], wJSON.AX3LANG[i], <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; wJSON.AX3USER[i]],["class",i%2==0?"intEvenLine":"intOddLine"]);<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; wHtml.endTable();<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; print(wHtml.html());<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; }<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; if(wTraceOn) XTD_CTX.traceEndStep();<br />&#160;&#160;&#160; }<br />}<br /></span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="AppeldunscriptviaAJAX" data-magellan-target="AppeldunscriptviaAJAX">Appel d'un script via AJAX</h2>
+                                                            <p>L'interface <b>IXtdAjaxScriptContext</b> est disponible via l'objet <b>XTD_CTX</b> pour les scripts qui sont appelés par des requêtes AJAX.</p>
+                                                            <p>Cet interface permet :</p>
+                                                            <ul>
+                                                                <li>d'appeler des web services (interface IXtdJsWsvcCall)</li>
+                                                                <li>d'accéder au contexte session</li>
+                                                                <li>de lire le contenu (body) et parametres de la requête HTTP</li>
+                                                                <li>de mettre à jour le ContentType du résultat </li>
+                                                            </ul>
+                                                            <p>L'instruction <b>print</b> écrit les données dans un buffer caractères qui sera renvoyé vers le client avec le <b>ContentType</b> précisé par la méthode <b>setHttpContenType</b>.</p>
+                                                            <p><span style="font-family: 'Courier new';">// Hérite de l'interface d'appel des web service IXtdJsWsvcCall<br />public interface IXtdAjaxScriptContext extends IXtdJsWsvcCall<br />{<br />&#160;&#160;&#160; //Contenu {{body}} au format TEXTE de la requête HTTP<br />&#160;&#160;&#160; public String <b>getHttpBody</b>();<br />&#160;&#160;&#160; //Array JSON qui contient le tableau des paramètres (clé/valeur) de la requête<br />&#160;&#160;&#160; //Utile si le format est application/x-www-form-urlencoded<br />&#160;&#160;&#160; public String <b>getHttpParams</b>();<br />&#160;&#160;&#160; //Met à jour le ContentTYpe de la réponse<br />&#160;&#160;&#160; public void <b>setHttpContenType</b>(String aStr);<br />&#160;&#160;&#160; // Login utilisateur<br />&#160;&#160;&#160; public boolean <b>userLogged</b>();<br />&#160;&#160;&#160; public String <b>userCode</b>();<br />&#160;&#160;&#160; public String <b>userProfile</b>();<br />&#160;&#160;&#160; public String <b>userLang</b>();<br />&#160;&#160;&#160; // Accès aux champs de la session<br />&#160;&#160;&#160; public Object <b>getSessField</b>(String aFieldName);<br />&#160;&#160;&#160; public Object <b>getSessField</b>(String aFieldName, boolean aFormated);<br />&#160;&#160;&#160; public void <b>setSessField</b>(String aFieldName, String aValue);<br />&#160;&#160;&#160; // Renvoie les données utilisateur<br />&#160;&#160;&#160; public IXtdJsData <b>getUserInfo</b>();<br />&#160;&#160;&#160; // Renvoie les variables utilisateurs<br />&#160;&#160;&#160; public IXtdJsData <b>getUserVariables</b>();<br />&#160;&#160;&#160; // Renvoie une entité action<br />&#160;&#160;&#160; public IXtdJsActEntity <b>getActionEntity</b>(String aEntityCode, boolean aCreate);<br />&#160;&#160;&#160; // Suprimme une entité action<br />&#160;&#160;&#160; public void <b>removeActionEntity</b>(String aEntityCode);<br />&#160;&#160;&#160; // Gestion des messages pour la réponse<br />&#160;&#160;&#160; void <b>addMsgErr</b>(String aMsg);<br />&#160;&#160;&#160; void <b>addMsgWarn</b>(String aMsg);<br />&#160;&#160;&#160; void <b>addMsgInfo</b>(String aMsg);<br />}</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Scriptingserveur">Scripting serveur</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introduction">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#Programmation">Programmation</a>
+                                                        </li>
+                                                        <li><a href="#Appeldunwebservice">Appel d'un web service</a>
+                                                        </li>
+                                                        <li><a href="#AppeldunscriptviaAJAX">Appel d'un script via AJAX</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

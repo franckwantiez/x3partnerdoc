@@ -1,0 +1,733 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Managing CRUD Combined Objects" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Managing CRUD Combined Objects
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="ManagingCRUDCombinedObjects" data-magellan-target="ManagingCRUDCombinedObjects"> Managing CRUD Combined Objects
+</h1>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#intro">Introduction</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#table">Table description</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#main">Main principles</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#class1">YCOMBD class definition</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#class2">YCOMB class definition</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#rep">YCOMB representation</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#script1">YCOMB_CSTD script</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1"><a href="#script2">YCOMB_RSTD script</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="Introduction" data-magellan-target="Introduction"><a id="intro">Introduction</a>
+                                                </h1>
+                                                <p>A combined object is made of a unique table containing a key with two components. This table has multiple records that are associated with a given value of the first key component.</p>
+                                                <p>In this mode:</p>
+                                                <ul>
+                                                    <li>The header includes the first component of the key, as well as additional fields with the same value for all records.</li>
+                                                    <li>The grid displays a row for each record with the same first key value.</li>
+                                                </ul>
+                                                <p>While the generation of the CRUD code for this type of object is not automated, objects can be created using the supervisor.</p>
+                                                <h1 id="Tabledescription" data-magellan-target="Tabledescription"><a id="table">Table description</a>
+                                                </h1>
+                                                <p>Table "YCOMB [YCO]" has the following structure (technical columns are not listed):</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Column</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Type</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Description</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Place</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">YGRP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Character 10</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Group</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Header</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">YNAM</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Character 80</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Group description</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Header</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">YSGRP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Character 5</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Group member</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Line</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">YTEXT</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Character 40</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Member text</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Line</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">YDATE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Date</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Member Date</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Line</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">YNUM</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Decimal 9.2</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Member value</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Line</td>
+                                                    </tr>
+                                                </table>
+                                                <p>"YCO0" is the unique key of the table. It has no duplicates and it is made of two components: YGRP+YSGRP.</p>
+                                                <h1 id="Mainprinciples" data-magellan-target="Mainprinciples"><a id="main">Main principles</a>
+                                                </h1>
+                                                <ul>
+                                                    <li>The CRUD methods are defined in the table. A class called "YCOMBD" was created for this purpose. Any business rule associated with updating the table is defined with no direct attached representation.</li>
+                                                    <li>An interface class named "YCOMB" and its representation were created to manage the user interface. They run:
+<ul><li>The query based on a list of the first key component.</li><li>A collection of "YCOMBD" instances, each instance being a line attached to a given header value.</li></ul></li>
+                                                    <li>The AREAD, AINSERT, AUPDATE, and ADELETE methods in the interface class invoke the CRUD methods of the "YCOMBD" class within a loop that runs through all the records.</li>
+                                                </ul>
+                                                <h1 id="YCOMBDclassdefinition" data-magellan-target="YCOMBDclassdefinition"><a id="class1">"YCOMBD" class definition</a>
+                                                </h1>
+                                                <p>This class has the following characteristics:</p>
+                                                <ul>
+                                                    <li>It is persistent, based on the "YCOMB" table.</li>
+                                                    <li>The class index is "YCO0" (YGRP+YSGRP).</li>
+                                                    <li>The Creation, Read, Update, and Deletion standard methods are available.</li>
+                                                    <li>The following properties are present: YGRP, YNAM, YSGRP, YTEXT, YDATE, YNUM, CREDATTIM, UPDDATTIM, AUUID, CREUSR, and UPDUSR.</li>
+                                                    <li>In the <b><i>Mapping</i></b> tab, all the CRUD check boxes are selected.</li>
+                                                </ul>
+                                                <p>As there are no particular controls on this class, there is no script associated with it. However, you can add one if necessary.</p>
+                                                <h1 id="YCOMBclassdefinition" data-magellan-target="YCOMBclassdefinition"><a id="class2">"YCOMB" class definition</a>
+                                                </h1>
+                                                <p>This class has the following characteristics:</p>
+                                                <ul>
+                                                    <li>It is interface-typed, with a key named "YGRP".</li>
+                                                    <li>A collection named "YCOMBD" was declared with the following characteristics:
+<ul><li>Minimum=0 and Maximum=0</li><li>Insertion, Deletion, Sorting, and Addition check boxes selected.</li></ul></li>
+                                                    <li>A script named "YCOMB_CSTD" was added.</li>
+                                                    <li>The Creation, Read, Update, and Deletion standard methods are available.</li>
+                                                    <li>The following fields are present on the <b><i>Properties</i></b> tab: 
+<ul><li>"YGRP" and "YNAM" are available in the header.</li><li>"YCOMBD", which is an instance of the "YCOMBD" collection, is part of this collection.</li></ul></li>
+                                                </ul>
+                                                <h1 id="YCOMBrepresentation" data-magellan-target="YCOMBrepresentation"><a id="rep">"YCOMB" representation</a>
+                                                </h1>
+                                                <p>This representation has the following characteristics:</p>
+                                                <ul>
+                                                    <li>It is associated with the "YCOMB" class, with "YCOMB" as an instance name.</li>
+                                                    <li>Managed behaviors are Creation, Modification, and Deletion.</li>
+                                                    <li>A script named "YCOMB_RSTD" was defined.</li>
+                                                    <li>No properties or methods were added.</li>
+                                                    <li>The page organization is based on two sections: HEADER and LINES. Each section contains two blocks called HEADER and LINES.</li>
+                                                    <li>The properties are: 
+<ul><li>In the HEADER block:
+<ul><li>"YCOMB.YGRP" with the alias "YGRP"</li><li>"YCOMB.YNAM" with the alias "YNAM"</li></ul><p>Both can be found on all facets and can be entered.</p></li><p /><li>In the LINES block:
+<ul><li>"YCOMB.YCOMBD.YSGRP" with the alias "YGRP"</li><li>"YCOMB.YCOMBD.YTEXTE" with the alias "YTEXTE"</li><li>"YCOMB.YCOMD.YSDATE" with the alias "YDATE" </li><li>"YCOMB.YCOMBD.YNUM" with the alias "YNUM". </li></ul><p>All can be found on facets Detail and Edit, and can be entered.</p></li><br /></ul></li>
+                                                    <br />
+                                                </ul>
+                                                <h1 id="YCOMBCSTDscript" data-magellan-target="YCOMBCSTDscript"><a id="script1">"YCOMB_CSTD" script</a>
+                                                </h1>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#header">Header</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#read">Read method</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#insert">Insertion method</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#update">Update method</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#delete">Delete method</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#subpro">Subprograms</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#collevent">Events on collection</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1"><a href="#proevent">Events on properties</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <p>The script implements the CRUD method for the combined object. The "YCOMB" class is not persistent, therefore, the AREAD, AINSERT, AUPDATE, and ADELETE events are used. They are located in the script, right after the <code>$METHOD</code> label in case "CURPTH" is empty.</p>
+                                                <p>Additionally, events AREAD_AFTER and ADDLINE_AFTER have to be handled on every "YCOMBD" record. When this happens, "CURPTH" is equal to "YCOMBD".</p>
+                                                <h2 id="Header" data-magellan-target="Header"><a id="header">Header</a>
+                                                </h2>
+                                                <p>The beginning of the script is as follows:</p><pre xml:space="preserve">sh
+###############
+# METHODS
+###############
+$METHODS
+Case CURPTH
+    When ""
+        Case ACTION
+            When "AREAD"                  : Gosub AREAD
+            When "AINSERT"                : Gosub AINSERT
+            When "AUPDATE"                : Gosub AUPDATE
+            When "ADELETE"                : Gosub ADELETE
+        Endcase
+    When "YCOMBD"
+        Case ACTION
+            When "AREAD_AFTER"   : Gosub YCOMBD_AREAD_AFTER
+            When "ADDLINE_AFTER" : Gosub YCOMBD_ADDLINE_AFTER
+        Endcase
+Endcase
+Return</pre>
+                                                <h2 id="Readmethod" data-magellan-target="Readmethod"><a id="read">Read method</a>
+                                                </h2>
+                                                <p>The AREAD method performs a reading loop on the "YCOMBD" table. For every existing record, the ADDLINE method is invoked on the "YCOMBD" collection to add a line at the end of the table. The standard AREAD method is then used on the line instance to fill the record. The loop process stops if any error is found. This corresponds to the following code:</p><pre xml:space="preserve">sh
+$AREAD
+Local File YCOMB [YCO]
+Local Integer ILINE
+  For [YCO] Where YGRP=this.YGRP
+    ILINE = fmet this.ADDLINE("YCOMBD",CST_ALASTPOS)
+    [L]ASTATUS = fmet this.YCOMBD(ILINE).AREAD([F:YCO]YGRP,[F:YCO]YSGRP)
+    # The syntax Break condition means that if condition is true (ie 1), a Break 1 is done (Break 0 does nothing)
+    Break [L]ASTATUS&gt;=[V]CST_AERROR
+  Next
+Return</pre>
+                                                <h2 id="Insertionmethod" data-magellan-target="Insertionmethod"><a id="insert">Insertion method</a>
+                                                </h2>
+                                                <p>Consistency checks must be performed on the insertion method:</p>
+                                                <ul>
+                                                    <li>At least one line must exist.</li>
+                                                    <li>No duplicate value of lines is allowed.</li>
+                                                </ul>
+                                                <p>The corresponding sub-program is CTL_CONSISTENCY.</p>
+                                                <p>A loop is performed to insert all of the lines with "CST_ANEW" as the line status. While in insertion mode, the only other status that can be encountered is "CST_ANEWDEL".</p>
+                                                <p>In this case, there is no need to make sure <code>this.YCOMBD(ILINE)</code> is not null because the instance collection was created by only adding lines at the end of the table, and because the deletion is exclusively logical.</p>
+                                                <p>The code is as follows:</p><pre xml:space="preserve">sh
+$AINSERT
+Local Integer ILINE
+# Consistency controls
+  Gosub CTL_CONSISTENCY : If [L]ASTATUS&gt;=[V]CST_AERROR : Return : Endif
+# Loop on every line that has to be created
+  For ILINE=1 To maxtab(this.YCOMBD)
+    If this.YCOMBD(ILINE)&lt;&gt;null
+      If this.YCOMBD(ILINE).ASTALIN = CST_ANEW
+        [L]ASTATUS = fmet this.YCOMBD(ILINE).AINSERT()
+        Break ([L]ASTATUS&gt;=[V]CST_AERROR)
+      Endif
+    Endif
+  Next
+Return</pre>
+                                                <h2 id="Updatemethod" data-magellan-target="Updatemethod"><a id="update">Update method</a>
+                                                </h2>
+                                                <p>The same initial control is performed on the update method.</p>
+                                                <p>Three loops handle the different modifications that are made on the lines:</p>
+                                                <ul>
+                                                    <li>The first loop deletes the lines where "ASTALIN" equals "CST_ADEL".</li>
+                                                    <li>The second loop updates the lines where "ASTALIN" equals "CST_AUPD".</li>
+                                                    <li>The third loop updates the lines where "ASTALIN" equals "CST_ANEW".</li>
+                                                </ul>
+                                                <p>The code is as follows:</p><pre xml:space="preserve">sh
+$AUPDATE
+Local Integer ILINE
+  Gosub CTL_CONSISTENCY : If [L]ASTATUS&gt;=[V]CST_AERROR : Return : Endif
+# Delete the lines
+  For ILINE= 1 To maxtab(this.YCOMBD)
+    If this.YVOMB(ILINE)&lt;&gt;null
+      If this.YCOMBD(ILINE).ASTALIN = [V]CST_ADEL
+        [L]ASTATUS = fmet this.YCOMBD(ILINE).ADELETE()
+        If [L]ASTATUS&gt;=[V]CST_AERROR : Return : Endif
+      Endif
+    Endif
+  Next
+# Update the lines
+  For ILINE= 1 To maxtab(this.YCOMBD)
+    If this.YCOMBD(ILINE)&lt;&gt;null
+      If this.YCOMBD(ILINE).ASTALIN = [V]CST_AUPD
+        [L]ASTATUS = fmet this.YCOMB(ILINE).AUPDATE()
+        If [L]ASTATUS&gt;=[V]CST_AERROR : Return : Endif
+      Endif
+    Endif
+  Next
+# Insert the lines
+  For ILINE= 1 To maxtab(this.YCOMBD)
+    If this.YCOMBD(ILINE)&lt;&gt;null
+      If this.YCOMBD(ILINE).ASTALIN = [V]CST_ANEW
+        [L]ASTATUS = fmet this.YCOMBD(ILINE).AINSERT()
+        Break [L]ASTATUS&gt;=[V]CST_AERROR
+      Endif
+    Endif
+  Next
+Return</pre>
+                                                <h2 id="Deletemethod" data-magellan-target="Deletemethod"><a id="delete">Delete method</a>
+                                                </h2>
+                                                <p>A loop is initiated on every line that invokes the DELETE method. The loop stops when an error occurs.</p>
+                                                <p>The code is as follows:</p><pre xml:space="preserve">sh
+$ADELETE
+Local Integer ILINE
+  For ILINE= 1 To maxtab(this.YCOMBD)
+    If this.YCOMBD(ILINE)&lt;&gt;null
+      [L]ASTATUS = fmet this.YCOMBD(ILINE).ADELETE()
+      Break [L]ASTATUS&gt;=[V]CST_AERROR
+    Endif
+  Next
+Return</pre>
+                                                <h2 id="CTLCONSISTENCYsubprogram" data-magellan-target="CTLCONSISTENCYsubprogram"><a id="subpro">"CTL_CONSISTENCY" subprogram</a>
+                                                </h2>
+                                                <p>This subprogram performs a loop on the "YCOMBD" collection. If at least one line is found, "LINE_FOUND" is set to 1. A second loop, concatenated with the first one, checks whether the same "YGRP" value has been used on another line. If this is the case, an error is invoked and the loop is stopped.</p>
+                                                <p>The code is as follows:</p><pre xml:space="preserve">sh
+# Check the consistency
+$CTL_CONSISTENCY
+Local Shortint LINE_FOUND
+Local Integer IL, JL
+  For IL=1 To maxtab(this.YCOMBD)
+    If this.YCOMB(IL)&lt;&gt;null
+      If find(this.YCOMB(IL).ASTALIN,[V]CST_ADEL,[V]CST_ANEWDEL)=0
+        LINE_FOUND=1
+        For JL= IL+1 To maxtab(this.YCOMBD)
+          If this.YCOMB(JL)&lt;&gt;null
+            If find(this.YCOMB(JL).ASTALIN,[V]CST_ADEL,[V]CST_ANEWDEL)=0
+              If this.YCOMB(IL).YSGRP= this.YCOMB(JL).YSGRP
+                [L]ASTATUS = fmet this.ASETERROR("YGRP", this.YCOMB(IL).YSGRP -":"-mess(94,139,1),[V]CST_AERROR)
+                Break 2
+              Endif
+            Endif
+          Endif
+        Next JL
+      Endif
+    Endif
+  Next IL
+  If LINE_FOUND=0
+    [L]ASTATUS = fmet this.ASETERROR("",mess(178,123,1),[V]CST_AERROR)
+  Endif
+Return</pre>
+                                                <h2 id="EventsontheYCOMBcollection" data-magellan-target="EventsontheYCOMBcollection"><a id="collevent">Events on the "YCOMB" collection</a>
+                                                </h2>
+                                                <p>Two events are necessary to properly manage the collection:</p>
+                                                <ul>
+                                                    <li>The reading loop adds lines to the grid and assigns the "CST_ANEW" status to each of them. They should be considered as existing lines. For this reason, "ASTALIN" has to be assigned to "[v]CST_ALL".</li>
+                                                    <li>Every time a line is added to the grid, it is necessary to apply the header properties on the new line (YGRP and YNAM).</li>
+                                                </ul>
+                                                <p>This provides the following code:</p><pre xml:space="preserve">sh
+$YCOMB_AREAD_AFTER
+# Assign ASTALIN to CST_ALL (they have the value 'CST_ANEW' just after AREAD method)
+this.ASTALIN = [V]CST_ALL
+Return
+$YCOMB_ADDLINE_AFTER
+# To initialize properties of the header
+this.YGRP = this.APARENT.YGRP
+this.YNAM = this.APARENT.YNAM
+Return</pre>
+                                                <h2 id="Eventscalledontheproperties" data-magellan-target="Eventscalledontheproperties"><a id="proevent">Events called on the properties</a>
+                                                </h2>
+                                                <p>The following additional controls must be performed on the properties (after the <code>$PROPERTIES</code> label in the script below):</p>
+                                                <ul>
+                                                    <li>If the "YGRP" or "YNAM" properties are modified in the header, the modification should also apply to the lines.</li>
+                                                    <li>When a member is added to the group, no duplicate values are allowed in the grid. This control is performed at another level.</li>
+                                                </ul>
+                                                <p>This provides the following code:</p><pre xml:space="preserve">sh
+$PROPERTIES
+  # If YGRP or YNAM have been modified, perform a loop to update all the lines
+  Case CURPRO
+    When "YGRP"
+      Case ACTION
+        When 'PROPAGATE'
+          Local Integer IL
+          For IL= 1 To maxtab(this.YCOMBD)
+            If this.YCOMBD(IL)&lt;&gt;null
+              this.YCOMBD(IL).YGRP = this.YGRP
+            Endif
+          Next IL
+      Endcase
+    When "YNAM"
+      Case ACTION
+        When 'PROPAGATE'
+          Local Integer IL
+          For IL= 1 To maxtab(this.YCOMBD)
+            If this.YCOMBD(IL)&lt;&gt;null
+              this.YCOMBD(IL).YGRP = this.YGRP
+            Endif
+          Next IL
+      Endcase
+  Endcase
+Return</pre>
+                                                <h1 id="ScriptassociatedwiththeYCOMBrepresentation" data-magellan-target="ScriptassociatedwiththeYCOMBrepresentation"><a id="script2">Script associated with the "YCOMB" representation</a>
+                                                </h1>
+                                                <p>This script manages the list of codes by using a table in memory. The code is as follows:</p><pre xml:space="preserve">sh
+#########################
+# Representation YCOMB
+#########################
+###############
+# METHODS
+###############
+$METHODS
+Case CURPTH
+   When ""
+     Case ACTION
+       When "AQUERY_DECODE_CRITERIA_AFTER" : Gosub AQUERY_DECODE_CRITERIA_AFTER
+       When "AQUERY_PRIMARYKEYS_AFTER"     : Gosub AQUERY_PRIMARYKEYS_AFTER
+       When "AQUERY_OPEN_AFTER"            : Gosub AQUERY_OPEN_AFTER
+       When "AQUERY_TRANS_AFTER"           : Gosub AQUERY_TRANS_AFTER
+       When "AQUERY_CLOSE_AFTER"           : Gosub AQUERY_CLOSE_AFTER
+     Endcase
+Endcase
+Return
+#################### Standard Query Events #########################
+$AQUERY_DECODE_CRITERIA_AFTER
+Raz NBPRO
+NBPRO += 1
+TBPRO(NBPRO) = "YGRP" : TBTYP(NBPRO) = 7 : TBPTH(NBPRO) = "YCOMBH.YGRP" : TBFIL(NBPRO) = "[LNK_]YGRP"
+NBPRO += 1
+TBPRO(NBPRO) = "YNAM" : TBTYP(NBPRO) = 7 : TBPTH(NBPRO) = "YCOMBH.YNAM" : TBFIL(NBPRO) = "[LNK_]YNAM"
+Return
+$AQUERY_PRIMARYKEYS_AFTER
+ASTDKEY = "[LNK_]YGRP"
+Return
+$AQUERY_OPEN_AFTER
+Local File YCOMB [QRY_YC]
+Local Integer I : I=0
+Local Char TYGRP(12)(1..), TYNAM(40)(1..)
+For [QRY_YC]YCO0(1)
+ I+=1
+ TYGRP(I) = [F:QRY_YC]YGRP
+ TYNAM(I) = [F:QRY_YC]YNAM
+Next
+# A test must be done on I (this will be fixed later)
+# On empty arrays, for behaves as if 32,768 lines were here!
+If I&lt;&gt;0
+  Local File (Char YGRP(100),Char YNAM(100)) From Variable TYGRP,TYNAM As [LNK_]
+Else
+  Local File YCOMB [LNK_]
+Endif
+Return
+$AQUERY_TRANS_AFTER
+this.YCOMB.YGRP = [LNK_]YGRP
+this.YCOMB.YNAM = [LNK_]YNAM
+Return
+$AQUERY_CLOSE_AFTER
+Close Local File [LNK_]
+Return</pre>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#ManagingCRUDCombinedObjects"> Managing CRUD Combined Objects
+</a>
+                                                    </li>
+                                                    <li><a href="#Introduction">Introduction</a>
+                                                    </li>
+                                                    <li><a href="#Tabledescription">Table description</a>
+                                                    </li>
+                                                    <li><a href="#Mainprinciples">Main principles</a>
+                                                    </li>
+                                                    <li><a href="#YCOMBDclassdefinition">"YCOMBD" class definition</a>
+                                                    </li>
+                                                    <li><a href="#YCOMBclassdefinition">"YCOMB" class definition</a>
+                                                    </li>
+                                                    <li><a href="#YCOMBrepresentation">"YCOMB" representation</a>
+                                                    </li>
+                                                    <li><a href="#YCOMBCSTDscript">"YCOMB_CSTD" script</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Header">Header</a>
+                                                        </li>
+                                                        <li><a href="#Readmethod">Read method</a>
+                                                        </li>
+                                                        <li><a href="#Insertionmethod">Insertion method</a>
+                                                        </li>
+                                                        <li><a href="#Updatemethod">Update method</a>
+                                                        </li>
+                                                        <li><a href="#Deletemethod">Delete method</a>
+                                                        </li>
+                                                        <li><a href="#CTLCONSISTENCYsubprogram">"CTL_CONSISTENCY" subprogram</a>
+                                                        </li>
+                                                        <li><a href="#EventsontheYCOMBcollection">Events on the "YCOMB" collection</a>
+                                                        </li>
+                                                        <li><a href="#Eventscalledontheproperties">Events called on the properties</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#ScriptassociatedwiththeYCOMBrepresentation">Script associated with the "YCOMB" representation</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 fevereiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1117 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Serveur,Batch,Requete,Fichier" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Soumission de requêtes par l'intermédiaire de fichiers" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Soumission de requêtes par l'intermédiaire de fichiers</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Soumissionderequêtesparlintermédiairedefichiers" data-magellan-target="Soumissionderequêtesparlintermédiairedefichiers"><span>Soumission de requêtes par l'intermédiaire de fichiers</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Le lancement de requêtes adonix via le serveur batch peut être piloté depuis une fonction adonix dédiée : le <a href="EXERQT.htm">lancement de requêtes</a>. Mais il est aussi possible de piloter le lancement de requêtes batch par le serveur en déposant des fichiers ascii contenant la définition de la requête dans un répertoire défini dans les paramètres du serveur. Ceci permet ainsi de déclencher des requêtes batch à partir de progiciels de supervision externes. Ce document décrit en détail les fichiers à mettre en place, ainsi que la cinématique d’exécution de ces requêtes.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Pré-requis</h2>
+                                                            <p>Pour que le lancement de requêtes batch puisse être fait par l’intermédiaire de fichiers, il est nécessaire&#160;:</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" alt="*" width="7" height="7" border="0" />&#160;&#160;&#160; Que le paramètre général <i>Utilisation des fichiers batch</i> soit égal à <i>Oui</i> dans les <a href="ABATPAR.htm">paramètres du serveur batch</a>.</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/bullet_brique.GIF" alt="*" width="7" height="7" border="0" />&#160;&#160;&#160; Que le paramètre <a href="../OBJ/ADP_SUP_EXTBATCH.htm">EXTBATCH</a> soit égal à <i>Oui</i>. Ce paramètre, qui appartient au groupe <i>SUP</i>, peut être défini au niveau dossier et utilisateur. Il est ainsi possible d’interdire globalement le lancement de requêtes batch de cette façon pour un dossier donné, en accordant si nécessaire une exception à des utilisateurs désignés.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Lesfichiersderequêteextensionreq" data-magellan-target="Lesfichiersderequêteextensionreq">Les fichiers de requête (extension req)</h2>
+                                                            <p>Le lancement d’une requête batch peut être réalisé par le dépôt d’un fichier d’extension <b><i>.job</i></b> dans le répertoire dédié à ces fichiers. Ce fichier doit être de type ascii, structuré en ligne terminées par &lt;CR&gt; ou &lt;CR&gt;&lt;LF&gt;, chaque ligne définissant la valeur d’un paramètre sous la forme&#160;:</p>
+                                                            <p>PARAMETRE=VALEUR</p>
+                                                            <p>Certains paramètres sont obligatoires et identifient le contexte d’exécution de la requête. D’autres paramètres dépendent de la requête à lancer&#160;; leur nom correspond au nom des paramètres définis dans l’écran associé au lancement de la requête. Dans certains cas, un tableau de paramètres est défini dans l’écran&#160;; la syntaxe est alors PARAMETRE(<i>indice)</i>=VALEUR, <i>indice</i> étant une valeur numérique.</p>
+                                                            <p>Afin de faciliter la création d’un tel fichier, il est possible de lancer la requête depuis le progiciel, en cochant la case <i>modèle</i> dans l’écran de <a href="EXERQT.htm">lancement des requêtes</a>. Si ceci est fait, un fichier contenant la liste complète des paramètres de lancement et leur valeur sera créé dans le répertoire de lancement. Ce fichier est créé avec le nom de la requête et l’extension <b><i>.mod</i></b>. </p>
+                                                            <p>On trouvera dans le tableau ci-dessous le nom des paramètres obligatoires et leur définition.</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>PARAMETRE</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>DEFINITION</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>DOSSIER</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Le code du dossier sur lequel la requête doit être lancée</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>UTIL</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Le code de l’utilisateur de connexion au dossier</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>PASSE</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Le mot de passe crypté de l’utilisateur</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>GRP</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Le groupe de requêtes (si un groupe est lancé)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>TACHE</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>La requête (si une requête est lancée)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>DATE</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>La date de lancement (au format <i>AAAAMMJJ</i>)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="128" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>HEURE</p>
+                                                                        </td>
+                                                                        <td width="524" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>L’heure de lancement (au format <i>HHMM</i>)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Il est à noter que les valeurs du paramètre sont données sans séparateur d’aucune sorte, et qu’il est possible de mettre des lignes de commentaires préfixées par le caractère <b><i>#</i></b>. Ainsi, on pourra mettre dans le fichier de requêtes :</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; # Paramètres obligatoires</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; DOSSIER=DEMO</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; DATE=20020614</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; …</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160; # Paramètres complémentaires</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160; PARAM(1)=TEST</p>
+                                                            <p>&#160;&#160;&#160;&#160;&#160;&#160;&#160; PARAM(2)=ABC</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Cinématiquedetraitementdesfichiersderequête" data-magellan-target="Cinématiquedetraitementdesfichiersderequête">Cinématique de traitement des fichiers de requête</h2>
+                                                            <p>Le serveur batch inspecte à intervalles réguliers le contenu du répertoire dédié aux fichiers de requête. Lors de l’inspection, il lit les fichiers présents dans le répertoire en les prenant dans l’ordre de classement ascii. Ainsi, il est conseillé de nommer ces fichiers avec une racine fixe et un numéro séquentiel sur une longueur fixe. On pourrait par exemple les nommer <b><i>REQ000001.req</i></b>, <b><i>REQ0000002.req</i></b>…</p>
+                                                            <p>Lors du traitement de chaque fichier, des fichiers sont créés successivement dans les différents répertoires définis par les <a href="GIMPEXPPAR.htm">paramètres du serveur batch</a>.&#160; Ces fichiers sont définis ci-dessous&#160;:</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>ETAPE DE TRAITEMENT</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>FICHIERS MIS A JOUR</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Dépose d’une demande de traitement batch</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Création du fichier <i>xxxxx.job</i> par un processus externe, dans le répertoire dédié.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Le serveur batch prend en compte la demande et met à jour sa table de requêtes à lancer</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Le fichier <i>xxxxx.job</i>&#160; est renommé en <i>xxxxx.req</i> (et déplacé si les répertoires ne sont pas les mêmes)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Le serveur détecte une erreur dans le fichier de paramètres (mot de passe incorrect, code tâche inconnu…)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Le fichier <i>xxxxx.job</i>&#160; est renommé en <i>xxxxx.old</i> (et déplacé si les répertoires ne sont pas les mêmes). Un fichier <i>xxxxx.sta</i> est créé dans le répertoire dédié. Il contient un code d’erreur permettant de savoir que le fichier d’entrée était incorrect (cf. format du fichier ci-dessous).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>La requête est en cours d’exécution, le serveur batch l’ayant lancé</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Le fichier <i>xxxxx.req</i> est renommé en <i>xxxxx.old</i> (et déplacé si les répertoires ne sont pas les mêmes). Un fichier nommé <i>xxxxx.run</i>&#160; est créé dans le répertoire dédié.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>La requête est terminée (correctement ou avec une erreur)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Le fichier <i>xxxxx.run</i> est effacé, et un fichier <i>xxxxx.sta</i> est créé dans le répertoire dédié&#160;: ce fichier contient un statut de retour (cf.&#160; format du fichier ci dessous).</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Dépose d’une demande d’interruption de requête batch (en attente de lancement ou déjà lancée)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Création du fichier <i>xxxxx.kil</i> par un processus externe dans le répertoire dédié</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Prise en compte de la demande d’interruption (si la requête n’est pas encore lancée)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Le fichier <i>xxxxx.req</i> (ou le fichier <i>xxxxx.job</i> s’il n’avait pas encore été pris en compte) est renommé en <i>xxxxx.old</i>. Le fichier <i>xxxxx.sta</i> est créé dans le répertoire dédié. Il contient un code erreur permettant de savoir que la requête a été interrompue sans avoir été lancée. Le fichier <i>xxxxx.kil </i>est effacé.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Prise en compte de la demande d’interruption (si la requête est déjà lancée et pas encore terminée)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>La requête est interrompue par <i>killadx</i>, puis le fichier <i>xxxxx.sta</i> est créé dans le répertoire dédié, avec un code erreur permettant de savoir que la requête a été interrompue. Les fichiers <i>xxxxx.kil </i>et <i>xxxxx.run </i>sont effacés.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="320" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>Compte tenu des priorités d’exécution ou de l’arrêt du serveur batch, la requête n’a pas pu être lancée dans les délais prévus (requête hors délai)</p>
+                                                                        </td>
+                                                                        <td width="392" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>La requête n’est pas lancée, mais le fichier <i>xxxxx.req</i> (le fichier <i>xxxxx.job</i> le cas échéant) est renommé en <i>xxxx.old </i>et déplacé si nécessaire. Un fichier <i>xxxxx.sta</i> est créé dans le répertoire dédié. Il contient un code erreur permettant de savoir que la requête n’a pas pu être lancée.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Il est à noter que le fait qu’un fichier <i>xxxxx.run</i> existe ne signifie pas nécessairement que la requête en question tourne. En effet, si le serveur batch a été arrêté sans que les requêtes qui tournaient encore n’aient été arrêtées, les fichiers <i>xxxxx.run</i> correspondants existeront toujours même lorsque la requête aura terminé son traitement. Dans ce cas, le fichier <i>xxxxx.sta</i> ne sera pas non plus créé. Par contre, lorsque le serveur batch sera à nouveau lancé, le fichier <i>xxxxx.run</i> sera effacé, un fichier <i>xxxxx.sta </i>contenant un statut particulier étant alors créé.</p>
+                                                            <p>Le nombre de requêtes batch en cours de traitement ne peut donc pas forcément se déduire du nombre de fichiers <i>xxxxx.run</i> présents dans le répertoire dédié.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="DescriptiondesfichiersXXXstaXXXrunXXXkil" data-magellan-target="DescriptiondesfichiersXXXstaXXXrunXXXkil">Description des fichiers XXX.sta, XXX.run, XXX.kil</h2>
+                                                            <p>Ces fichiers sont des fichiers ascii, codés en ascii 8 bits, présents dans différents répertoires, selon le paramétrage&#160;:</p>
+                                                            <ul>
+                                                                <li>Le fichier .kil peut être vide, ou contenir un commentaire qui sera repris dans le fichier d’extension .sta</li>
+                                                                <li>Le fichier .run contient une ligne conforme à la structure définie ci-dessous, les informations renseignées étant le numéro de la requête, la date et l’heure de début, et le code de la tâche (les autres informations sont remplies avec des 0 ou des espaces)</li>
+                                                                <li>Le fichier .sta contient une ligne dont le format est défini ci-dessous, tous les champs étant renseignés.</li>
+                                                            </ul>
+                                                            <p>La structure de la ligne unique contenue dans les fichiers <i>.run</i> et <i>.sta</i> est la suivante&#160;:</p>
+                                                            <ul>
+                                                                <li>La ligne est composée de 8 champs de longueur fixe, avec des séparateurs (le caractère deux-points ‘&#160;:’).</li>
+                                                                <li>La longueur totale est de &#160;154 ou 155 caractères</li>
+                                                            </ul>
+                                                            <p>Le schéma exact est le suivant :</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>No statut</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>No requête</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Date et heure début</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Date et heure fin</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Code dossier</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Code utilisateur</p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Code de la tâche</p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Message en clair</p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Fin de ligne</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>NNNNN</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>NNNNNNNN</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>AAAAMMJJHHMMSS</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>AAAAMMJJHHMMSS</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><i>DDDDDDDDDD</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><i>UUUUU</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><i>TTTTTTTTTT</i>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>XXXXXXXXXXXXXXXXXX</p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&lt;CR&gt; <br />ou &lt;CR&gt;&lt;LF&gt;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="70" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>5 chiffres</p>
+                                                                        </td>
+                                                                        <td width="83" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(8 chiffres)</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(14 chiffres)</p>
+                                                                        </td>
+                                                                        <td width="141" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(14 chiffres)</p>
+                                                                        </td>
+                                                                        <td width="76" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(10 caractères)</p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(5 caractères)</p>
+                                                                        </td>
+                                                                        <td width="109" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(10 caractères)</p>
+                                                                        </td>
+                                                                        <td width="172" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>(80 caractères)</p>
+                                                                        </td>
+                                                                        <td width="125" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>(1 ou 2 octets)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>La zone message permet d’expliciter le code erreur si nécessaire. Elle est stockée en longueur fixe sur 80 caractères (le message étant complété par des espaces si nécessaire).</p>
+                                                            <p>Le numéro de requête est stocké sur 8 caractères, préfixé par des zéros si nécessaire. Ce numéro permet de connaître le nom du fichier de trace généré à l’exécution de la requête. En effet, ce fichier s’appelle RQT<i>NNNNNNNN</i>.tra (<i>NNNNNNNN</i> étant le numéro de requête sur 8 caractères). On le trouve dans le sous-répertoire TRA du dossier SERVX3. Il est à noter que ce numéro peut être nul dans certains cas d’erreur, lorsque aucune requête n’a pu être lancée.</p>
+                                                            <p>Le code de la tâche correspond à la tâche ou à l’enchaînement de tâches lancé, tel qu’il est connu dans la table des tâches ou des enchaînements.</p>
+                                                            <p>Le code statut, sur 5 caractères numériques, permet de connaître le résultat de l’exécution. Le premier chiffre détermine le résultat globale de l’exécution, les chiffres suivants donnant des informations complémentaires. Lorsque la requête s’est terminée sans erreur et sans avertissement, on a un code erreur égal à 00000. Le détail des codes est donné ci-dessous&#160;:</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="548" valign="top" colspan="4" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Valeur du code erreur sur 5 chiffres</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>Message en clair</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="79" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Premier chiffre</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Signification</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Complément</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Signification</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="79" valign="top" colspan="1" rowspan="2" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>0</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="2" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Fin normale de traitement</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Sans avertissement</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>REQUETE TERMINEE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b><i>NNNN</i></b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Avec <b><i>NNNN </i></b>avertissements dans la trace (9999 si 9999 ou plus) </p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>REQUETE TERMINEE &#160;AVEC AVERTISSEMENTS</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="79" valign="top" colspan="1" rowspan="5" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>1</b>
+                                                                            </p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="5" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Fin de traitement sur erreur</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Erreur non spécifiée (par exemple si GOK=-1 et pas d’informations supplémentaires)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>REQUETE TERMINEE AVEC ERREUR INCONNUE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;1<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Erreur no <b><i>NNNN </i></b>du moteur adonix (message <b><i>M</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>FIN SUR ERREUR ADONIX&#160;: <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Erreur de verrouillage (GOK=0)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ERREUR DE VERROUILLAGE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="2" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;3<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Erreur logique de traitement avec&#160;: <b><i>NNN</i></b><i> = </i>valeur variable GERRBATCH,<br /><b><i>M</i></b> = valeur variable GMESSBATCH</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>REQUETE TERMINEE AVEC ERREUR <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="585" valign="top" colspan="2" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>Note importantes</b>&#160;:</p>
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <p>les variables GERRBATCH et GMESSBATCH permettent à un développeur de qualifier de façon, précise des conditions d’erreur, et ceci est possible à la fois sur une tâche spécifique, mais aussi sur une tâche standard par le biais de points d’entrée.</p>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <p>La valeur de la variable GERRBATCH influe sur la suite du traitement, lorsque celui-ci est intégré dans un groupe de tâches. En effet, si la variable GERRBATCH est strictement inférieure à 100, la tâche qui suit va être lancée malgré l’erreur. Si par contre GERRBATCH a une valeur supérieure ou égale, les tâches suivantes dans le groupe ne sont pas lancées.</p>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="79" valign="top" colspan="1" rowspan="10" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>2</b>
+                                                                            </p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="10" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Traitement non lancé</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>1000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>La tâche a été programmée à une heure donnée, mais n’a pas pu être lancée dans les délais prévus.</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>DELAI DEPASSE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Tâche inexistante</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b><i>TTT </i></b>TACHE INEXISTANTE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>3000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Habilitation (non spécifié)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>TRAITEMENT NON LANCE CAR PROBLEME D’HABILITATION NON SPECIFIE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;3100</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Habilitation (utilisateur <b><i>U</i></b> inconnu)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>UTILISATEUR <b><i>U</i> </b>INCONNU</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;3200</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Habilitation (mot de passe incorrect pour utilisateur <b><i>U</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>MOT DE PASSE INCORRECT POUR L’UTILISATEUR <b><i>U</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>&#160;3300</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Habilitation (refus par point d’entrée)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>TRAITEMENT NON LANCE CAR DROITS REFUSES PAR POINT D’ENTREE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>3400</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Habilitation (niveau <b><i>N</i></b> de la tâche interdit à l’utilisateur <b><i>U </i></b>insuffisant)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>NIVEAU D’ACCES <b><i>N</i> </b>NON AUTORISE A L’UTILISATEUR <b><i>U</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>3500</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Habilitation (fonction <b><i>F </i></b>non autorisée à l’utilisateur <b><i>U</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b><i>F</i></b> FONCTION NON AUTORISEE A l’UTILISATEUR <b><i>U</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>4<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Passage en mode mono impossible (<b><i>NNN</i> </b>utilisateurs en cours)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>PASSAGE EN MODE MONO&#160;IMPOSSIBLE CAR <b><i>NNN</i> </b>UTILISATEURS CONNECTES</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>5000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Traitement <b><i>T</i> </b>inexistant</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>TRAITEMENT <b><i>T </i></b>INEXISTANT</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="79" valign="top" colspan="1" rowspan="5" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>3</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="111" valign="top" colspan="1" rowspan="5" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Arrêt du traitement</p>
+                                                                        </td>
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>0000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Arrêt du traitement, raison inconnue (par exemple si un processus autre que le serveur batch a tué la requête)</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>REQUETE INTERROMPUE (RAISON INCONNUE)</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="2" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>1000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Par fichier d’extension .kil, contenant le message <b><i>M</i></b></p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>REQUETE INTERROMPUE PAR <b><i>U</i></b> POUR LE MOTIF <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="585" valign="top" colspan="2" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Note&#160;: dans le cas d’un kill par &#160;fichier, le code utilisateur peut être vide. En effet, le système essaie de retrouver, à partir de l’identifié de l’utilisateur ayant créé le fichier, si un code utilisateur adonix correspond ou pas. Cette recherche peut ne pas fonctionner selon les systèmes d’exploitation utilisés.</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>2000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Par la gestion des tâches&#160;et l’utilisateur <b><i>U </i></b>: le message saisi est <b><i>M</i></b></p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>REQUETE INTERROMPUE PAR <b><i>U</i></b> POUR LE MOTIF <b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="93" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>3000</p>
+                                                                        </td>
+                                                                        <td width="256" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>Par le serveur batch car time-out</p>
+                                                                        </td>
+                                                                        <td width="326" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>TRAITEMENT INTERROMPU PAR LE SERVEUR RAISON=DEPASSEMENT DU TEMPS ACCORDE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                            <h2 class="g1" id="Remarques" data-magellan-target="Remarques">Remarques</h2>
+                                                            <p>Il est à noter que, dans le cadre de la modélisation des tâches batch (modèle GTRAITE), l’utilisateur dispose des variables suivantes, accessibles dans des tâches spécifiques, ou dans des tâches standard par le biais de points d’entrée&#160;:</p>
+                                                            <ul>
+                                                                <li>La variable GOK est un statut mis à jour dès le lancement de la tâche. Elle vaut 1 s'il n'y a pas de problème, 0 en cas d’erreur de verrouillage, -1 sur une erreur grave autre, et 2 sur une erreur grave de cohérence du serveur. Cette variable est gérée par les tâches standard : si elle ne vaut pas 1 en fin d'un traitement batch, la tâche apparaît en statut <i>Erreur</i> en surveillance des tâches; dans ce cas, si la tâche fait partie d'un groupe de tâches, les tâches suivantes sont bloquées et ne seront jamais lancées.</li>
+                                                                <li>La variable GERREUR n'est mise à une valeur non nulle qu'en cas d'erreur à l'exécution d'une instruction (c'est le numéro d'erreur correspondant à une exception traitée par l'instruction <b><i>Onerrgo</i></b>). Si cette variable est non nulle en fin de tâche, l'état de la tâche est mis à <i>Avorté</i> en surveillance des tâches, et les tâches qui suivent, si la tâche fait partie d'un groupe, sont bloquées.</li>
+                                                                <li>La variable GERRTRACE permet de compter le nombre de lignes de trace d’erreur créées par la tâche. Elle est également gérée par les tâches standard. Le fait qu'elle soit positive met la tâche en <i>Erreur</i> dans la tâche de surveillance, sans pour autant bloquer l'enchaînement des tâches suivantes dans un groupe. Il s'agit en fait du décompte d'un nombre de lignes d'erreur supposées bénignes.</li>
+                                                                <li>La variable GERRBATCH est une variable numérique supplémentaire, qui permet de donner un code d’erreur dépendant de la tâche si on considère que la tâche ne s’est pas bien terminée (ce indépendamment du fait que des lignes de trace d’erreur ont été ou pas générées). Si la valeur de GERRBATCH est strictement inférieure à 100, on considère qu'il s'agit d'un statut d'erreur bénin. Si par contre la valeur de GERRBATCH est supérieure ou égale à 100, le statut de la tâche dans la fonction de surveillance des tâches passe à <i>Erreur</i> en fin d'exécution, et si la tâche fait partie d'un groupe, l'enchaînement des tâches suivantes s’interrompt. Cette variable a été créée pour permettre une gestion d'erreur spécifique par le biais d'un point d'entrée<strong>.</strong></li>
+                                                                <li>La variable GMESSBATCH est une variable alphanumérique permet de donner un message d’erreur complémentaire. Ce message est inséré dans le contenu du fichier d’extension <b><i>.sta</i></b> si une erreur se produit.</li>
+                                                            </ul>
+                                                            <p><b>Sauf erreur de cohérence au lancement, les tâches batch standard du progiciel considèrent dans tous les cas que les erreurs rencontrées sont bénignes et mettent simplement à jour la trace en incrémentant GERRTRACE. Ceci signifie que toute erreur grave devant interrompre le traitement doit être traitée de façon spécifique, par le biais de points d'entrée, en donnant à <i>GERRBATCH</i> une valeur supérieure à 100.</b>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Descriptiondufichierserveurtra" data-magellan-target="Descriptiondufichierserveurtra">Description du fichier serveur.tra</h2>
+                                                            <p>Ce fichier, présent dans le sous-répertoire TRA du répertoire SERVX3, contient la trace du serveur. La structure des lignes est conforme à celle d’un fichier de trace classique (en-tête normalisé, et statuts numériques sur 5 caractères). Chaque ligne est composée d’un texte éventuellement préfixé par un numéro (ce numéro est lui-même précédé par le caractère &lt; si on considère qu’il s’agit d’une erreur, par = s’il s’agit d’un avertissement).</p>
+                                                            <p>Les numéros de statuts suivants existent&#160;(ils sont préfixés par 4 et 5 pour des raisons de continuité de numérotation avec les statuts précédents). Il est à remarquer que les statuts commençant par 4 sont des statuts graves qui ne devraient pas survenir dans une exploitation normale (problèmes de mise à jour, de gestion des tâches, de verrouillage du serveur batch), et peuvent venir soit de problèmes système, soit d’une mauvaise installation, soit encore de spécifiques. Les statuts commençant par 5 sont, quant à eux, des statuts normaux de l’activité du serveur batch :</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="691" valign="top" colspan="3" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>ERREURS GRAVES DE COHERENCE DU SERVEUR</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Statut</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><b>Explication</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p><b>Texte</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>41000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Désynchronisation tâche</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ERREUR DESYNCHRONISATION TACHE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>42000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Problème d’accès à la table des tâches</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>ERREUR D’ACCES A LA TABLE DES TACHES</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>43000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Numéro de requête inexistant</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ERREUR REQUETE INEXISTANTE</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>44000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p>Problèmes d’accès à la table des paramètres batch</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>&#160;</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="691" valign="top" colspan="3" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>MESSAGES D’EXPLOITATION NORMAUX DU SERVEUR</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>50000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Démarrage du serveur</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>DEMARRAGE SERVEUR BATCH</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>51000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Activation requête (process id <b><i>P</i></b><i>)</i></p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ACTIVATION REQUETE PID=<b><i>P</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>52<b><i>NNN</i></b></p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Erreur adonix <b><i>NNN</i> </b>au démarrage serveur (message d’erreur = <b><i>M</i></b>)</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>ERREUR AU DEMARRAGE DU SERVEUR&#160;<b><i>M</i></b></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>53000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>Erreur autre au démarrage du serveur</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>ERREUR INDETERMINEE AU DEMARRAGE DU SERVEUR</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>54000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>Lancement serveur alors qu’il est déjà actif</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>LE SERVEUR EST DEJA ACTIF</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="92" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>55000</p>
+                                                                        </td>
+                                                                        <td width="261" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>Désactivation serveur</p>
+                                                                        </td>
+                                                                        <td width="332" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>&#160;</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_90_10"></a>
+                                                            <h2 class="g1" id="DescriptiondesfichiersRQTNNNNNNNNtra" data-magellan-target="DescriptiondesfichiersRQTNNNNNNNNtra">Description des fichiers RQTNNNNNNNN.tra</h2>
+                                                            <p>Ces fichiers, présent dans le sous-répertoire TRA du répertoire SERVX3, contiennent la trace associée à la requête elle-même. La structure des lignes est conforme à celle d’un fichier de trace classique (en-tête normalisé, et statuts numériques sur 5 caractères). Chaque ligne est composée d’un texte éventuellement préfixé par un numéro (ce numéro est lui-même précédé par le caractère &lt; si on considère qu’il s’agit d’une erreur ou d’un avertissement). Ces fichiers peuvent être lus directement depuis le gestionnaire de requêtes par le biais d’un clic droit / <i>Lecture trace</i>.</p>
+                                                            <p>Passée la ligne d’en-tête, la première ligne d’un tel fichier se présente sous la forme d’une ligne au format suivant&#160;(elle intègre le statut <i>Activation requête </i>défini ci-dessus) :</p>
+                                                            <p>=51000 <b><i>NNNNNNNN</i></b><i> <b>JJ/MM/AA hh&#160;:mm&#160;:ss Activation requête (51000)</b></i></p>
+                                                            <p>(<b><i>NNNNNNNN </i></b>représentant ici le numéro de tâche)</p>
+                                                            <p>Les lignes de trace classique de la tâche suivent cette première ligne (si le traitement en question n’est pas lancé en batch, ces lignes seraient écrites dans un fichier de trace classique <i>F<b>NNNNN</b>.tra</i> dans le répertoire TRA du dossier de lancement). Puis, sauf dans le cas où la tâche a été arrêtée brutalement (par un <i>killadx</i>, par exemple), on trouvera une ligne finale de structure identique, mais dont le numéro est conforme au statut de fin correcte (00000) ou d’erreur (1<b><i>NNNN</i></b>)décrit ci-dessus.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_100_10"></a>
+                                                            <h2 class="g1" id="Tablesmisesenoeuvre" data-magellan-target="Tablesmisesenoeuvre">Tables mises en oeuvre</h2>
+                                                            <p>Les tables mises en oeuvre par la fonction sont les suivantes :</p>
+                                                            <ul>
+                                                                <li><a href="../MCD/ABATRQT.htm">Table ABATRQT</a>
+                                                                </li>
+                                                                <li><a href="../MCD/ABATTAC.htm">Table ABATTAC</a>
+                                                                </li>
+                                                                <li><a href="../MCD/ABATGRP.htm">Table ABATGRP</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Soumissionderequ%C3%AAtesparlinterm%C3%A9diairedefichiers">Soumission de requêtes par l'intermédiaire de fichiers</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Pré-requis</a>
+                                                        </li>
+                                                        <li><a href="#Lesfichiersderequ%C3%AAteextensionreq">Les fichiers de requête (extension req)</a>
+                                                        </li>
+                                                        <li><a href="#Cin%C3%A9matiquedetraitementdesfichiersderequ%C3%AAte">Cinématique de traitement des fichiers de requête</a>
+                                                        </li>
+                                                        <li><a href="#DescriptiondesfichiersXXXstaXXXrunXXXkil">Description des fichiers XXX.sta, XXX.run, XXX.kil</a>
+                                                        </li>
+                                                        <li><a href="#Remarques">Remarques</a>
+                                                        </li>
+                                                        <li><a href="#Descriptiondufichierserveurtra">Description du fichier serveur.tra</a>
+                                                        </li>
+                                                        <li><a href="#DescriptiondesfichiersRQTNNNNNNNNtra">Description des fichiers RQTNNNNNNNN.tra</a>
+                                                        </li>
+                                                        <li><a href="#Tablesmisesenoeuvre">Tables mises en oeuvre</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

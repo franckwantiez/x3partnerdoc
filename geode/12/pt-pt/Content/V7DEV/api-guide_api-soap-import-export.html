@@ -1,0 +1,675 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Import export SOAP web service" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Import export SOAP web service
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="ImportexportSOAPwebservice" data-magellan-target="ImportexportSOAPwebservice"> Import export SOAP web service
+</h1>
+                                                <p><b><br />In the cloud, importing and exporting files with an import/export template on a local workstation is possible, but you need to manually drag and drop files.</b>
+                                                </p>
+                                                <p>You can completely automate these operations with an API for external tools:</p>
+                                                <ul>
+                                                    <li>To send data files to be integrated with an import template</li>
+                                                    <li>To get data in a file obtained by an extraction associated with an export template</li>
+                                                </ul>
+                                                <p><b>Because an extraction or integration can take time, the API must also be able to handle batch operations.</b>
+                                                    <br />
+                                                </p>
+                                                <h2 id="Webservicesavailable" data-magellan-target="Webservicesavailable">Web services available</h2>
+                                                <p>Standard SOAP web services are supplied to manage these operations. These web services use the standard SOAP web service connection pools and can be called from any program able to:</p>
+                                                <ul>
+                                                    <li>Connect to the SOAP web service server integrated in the Sage X3 platform</li>
+                                                    <li>Authenticate with the available authentication methods</li>
+                                                    <li>Send a normalized SOAP message as indicated in the SOAP web service documentation and receive the answer</li>
+                                                </ul>
+                                                <p>The SOAP web services used are subprograms associated with web services. Their names are the following:</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Service name</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Subprogram</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Description</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#export" target="_parent">AOWSEXPORT</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">AOWSEXPORT.EXPORT</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Export data associated with a template and parameters</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#import" target="_parent">AOWSIMPORT</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">AOWSIMPORT.IMPORT</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Import data based on an import template</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#get" target="_parent">AOWSBATGET</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">AOWSGETBATCH.GET</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Get information about a batch import/export request</td>
+                                                    </tr>
+                                                </table>
+                                                <p>These SOAP web services can be called from any program able to perform a SOAP web service in the correct format as described in web service management. You can, for example, write in Java, PHP, JavaScript, .NET, C…</p>
+                                                <h2 id="Exportwebservice" data-magellan-target="Exportwebservice"><a id="export"></a>Export web service</h2>
+                                                <p>The export web service contains the following arguments:</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Group</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Level</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Code</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Description</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter type</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Dim</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Argument type</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_MODEXP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Template</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">I_CHRONO</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Sequence no.</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP2</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_TCRITERE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Criteria</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">10</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">I_EXEC</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Execution type</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_RECORDSEP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Record separator</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_FILE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Data file</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Clbfile</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_REQNUM</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Query</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_STATUS</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Status</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP3</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_MESSA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Message</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                </table>
+                                                <p>The parameters sent are:</p>
+                                                <ul>
+                                                    <li>The template code (<i><b>BPC</b></i> for example)</li>
+                                                    <li>A chrono flag (<i><b>YES</b></i> or <i><b>NO</b></i>) to trigger an export with chrono management</li>
+                                                    <li>An array of criteria (filters expressed in X3 language such as: <i><b>[F:BPC]BPCSTA=1</b></i>)</li>
+                                                    <li>An execution flag (<i><b>REALTIME</b></i> or <i><b>BATCH</b></i>)</li>
+                                                    <li>A character used as record separator in the returned data feed</li>
+                                                </ul>
+                                                <p>The SOAP parameters returned are:</p>
+                                                <ul>
+                                                    <li>The status (1=OK, 0=errors)</li>
+                                                    <li>The log file produced by the export as an array of a structure containing a status (1=warning, 3=error) and the corresponding text message</li>
+                                                </ul>
+                                                <p>The values returned are:</p>
+                                                <ul>
+                                                    <li>clob containing the file produced by the export if the execution is in realtime</li>
+                                                    <li>An integer containing the request ID if a batch execution was requested. This value is used later as a parameter to indicate the status of the batch request.</li>
+                                                    <li>The web service status (0=OK, otherwise it is an error)</li>
+                                                    <li>A message if an error occurred</li>
+                                                </ul>
+                                                <h2 id="Importwebservice" data-magellan-target="Importwebservice"><a id="import"></a>Import web service</h2>
+                                                <p>The import web service contains the following arguments:</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Group</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Level</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Code</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Description</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter type</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Argument type</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_MODIMP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Template</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">I_AOWSTA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Import/export temporary storage</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_EXEC</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Execution type</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">I_RECORDSEP</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Record separator</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_FILE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">File</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Clbfile</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_REQNUM</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Query</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_STATUS</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Status</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_MESSA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Message</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                </table>
+                                                <p>The parameters sent are:</p>
+                                                <ul>
+                                                    <li>The template code (<i><b>BPC</b></i> for example)</li>
+                                                    <li>An import/export temporary storage flag (<i><b>YES</b></i> or <i><b>NO</b></i>) to send the erroneous lines in the temporary import/export storage space</li>
+                                                    <li>An execution flag (<i><b>REALTIME</b></i> or <i><b>BATCH</b></i>)</li>
+                                                    <li>A character used as a record separator in the returned data feed</li>
+                                                    <li>A clob containing the file to be imported. This file must end with the characters <i><b>END</b></i>.</li>
+                                                </ul>
+                                                <p>For example, if you import 2 lines with a string, a date, and a numeric value, and if the record separator is |, the correct clob contents would be:<br />STRING1;20170203;1| STRING2;20160512;33|END</p>
+                                                <p>The SOAP parameters returned are:</p>
+                                                <ul>
+                                                    <li>The status (1=OK, 0=errors).</li>
+                                                    <li>The log file produced by the export as an array of a structure containing a status (1=warning, 3=error) and the corresponding text message.</li>
+                                                </ul>
+                                                <p>The values returned are:</p>
+                                                <ul>
+                                                    <li>An integer containing the request ID if a batch execution was requested. This value is used later as a parameter to indicate the status of the batch request.</li>
+                                                    <li>The web service status (0=OK, otherwise it is an error)</li>
+                                                    <li>A message if an error occurred</li>
+                                                </ul>
+                                                <h2 id="Getinformationaboutimportexportbatchtask" data-magellan-target="Getinformationaboutimportexportbatchtask"><a id="get"></a>Get information about import/export batch task</h2>
+                                                <p>This web service contains the following arguments:</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Group</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Level</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Code</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Description</th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Parameter type</th>
+                                                        <th class="TableStyle-NormalRows-BodyD-Column1-Body2">Argument type</th>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_TACHE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Batch task</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">I_REQNUM</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Query</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">I_GETTRA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Log</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Sent</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_STAREQ</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Status</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_MESREQ</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Message</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_FILE</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">File</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Clbfile</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_FILETRA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">File</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Clbfile</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">O_STATUS</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Status</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Integer</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2">Returned</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">GRP1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">1</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">O_MESSA</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Message</td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1">Char</td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1">Returned</td>
+                                                    </tr>
+                                                </table>
+                                                <p>The parameters sent are:</p>
+                                                <ul>
+                                                    <li>The type of batch task (<i><b>IMPORT</b></i> or <i><b>EXPORT</b></i>)</li>
+                                                    <li>The request ID returned by the batch import or export web service (12345 for example)</li>
+                                                    <li>A flag (<i><b>YES</b></i> or <i><b>NO</b></i>) to get the log file returned</li>
+                                                </ul>
+                                                <p>The SOAP parameters returned are:</p>
+                                                <ul>
+                                                    <li>The status (1=OK, 0=errors)</li>
+                                                    <li>The log file produced by the export as an array of a structure containing a status (1=warning, 3=error) and the corresponding text message</li>
+                                                </ul>
+                                                <p>The values returned are:</p>
+                                                <ul>
+                                                    <li>A numeric value containing the status of the task with the following values:
+<ul><li>1 - Standby</li><li>2 - In progress</li><li>3 - Finished</li><li>4 - On Hold</li><li>5 - Killed</li><li>6 - Canceled</li><li>7 - Error</li><li>8 - Overdue</li><li>9 - Warning</li></ul></li>
+                                                    <li>A text containing the corresponding message (standby, in progress…)</li>
+                                                    <li>A clob containing the file returned if the type is EXPORT and if the task is finished with or without errors or warnings</li>
+                                                    <li>A clob containing the trace file if it was requested</li>
+                                                    <li>The web service status (0=OK, otherwise it is an error)</li>
+                                                    <li>A message if an error occurred</li>
+                                                </ul>
+                                                <h3>See also :  <br /></h3>
+                                                <ul>
+                                                    <li><a href="api-guide_api-soap-import-export-example.html">SOAP Web services import/export example</a>
+                                                    </li>
+                                                    <li><a href="api-guide_soap-web-services.html">SOAP Web services implementation</a>
+                                                    </li>
+                                                </ul>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#ImportexportSOAPwebservice"> Import export SOAP web service
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Webservicesavailable">Web services available</a>
+                                                        </li>
+                                                        <li><a href="#Exportwebservice">Export web service</a>
+                                                        </li>
+                                                        <li><a href="#Importwebservice">Import web service</a>
+                                                        </li>
+                                                        <li><a href="#Getinformationaboutimportexportbatchtask">Get information about import/export batch task</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 fevereiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

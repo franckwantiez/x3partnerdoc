@@ -1,0 +1,612 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Log,Trace,Support" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Génération de log à destination de l'équipe de support" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Génération de log à destination de l'équipe de support</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Générationdelogàdestinationdeléquipedesupport" data-magellan-target="Générationdelogàdestinationdeléquipedesupport"><span>Génération de log à destination de l'équipe de support</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Utilisez cette fonction pour créer un fichier de trace correspondant à un incident créé par le service support, ou déclaré au support. </p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" /> <span style="color: rgb(191, 127, 0);">Vous pouvez utiliser cette fonction pour créer un fichier de trace directement, ou en utilisant une tâche batch (ALOGSUP) démarrée depuis un événement de workflow.</span></p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequis" data-magellan-target="Prérequis">Prérequis</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_ALOGSUP.htm#PRQ">Mise en oeuvre</a></p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Gestiondelécran" data-magellan-target="Gestiondelécran">Gestion de l'écran</h2><a id="ON1"></a>
+                                                                <h3 class="g1">Onglet Écran de saisie</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>Utilisez cet écran pour définir les détails du fichier trace demandé.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div class="MCDropDown MCDropDown_Closed dropDown" xmlns=""><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Descriptions des champs</a></span>
+                                                                        <div class="MCDropDownBody dropDownBody">
+                                                                            <div id="on1" class="dfields" xmlns="http://www.w3.org/1999/xhtml">
+                                                                                <table class="TableStyle-NormalRows" xmlns="http://www.w3.org/1999/xhtml" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" cellspacing="0">
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Numéro incident (champ INCIDENT)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><b>Adresse e-mail (champ MAILSAGE)</b>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body1" />
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="ABT"></a>
+                                                                <h2 class="g1" id="Tâchebatch" data-magellan-target="Tâchebatch">Tâche batch</h2>
+                                                                <p>Cette fonction peut être lancée en batch, mais il n'existe pas de tâche standard dédiée à son lancement.</p>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="ERR"></a>
+                                                                <h2 class="g1" id="Messagesderreur" data-magellan-target="Messagesderreur">Messages d'erreur</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="ERR_GEN.htm">Messages génériques</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p>Il n'y a pas de message d'erreur autre que les messages d'erreur génériques.</p>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="ATB"></a>
+                                                                <h2 class="g1" id="Tablesmisesenœuvre" data-magellan-target="Tablesmisesenœuvre">Tables mises en œuvre</h2>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SEEREFERTTO.png" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> Reportez-vous à la documentation de  <a href="PRQ_AFC_ALOGSUP.htm#ATB">Mise en oeuvre</a></p>
+                                                            </div>
+                                                            <div class="stdBloc"><a id="MIS_150_10"></a>
+                                                                <h2 class="g1" id="Informationsdelatrace" data-magellan-target="Informationsdelatrace">Informations de la trace</h2>
+                                                                <div class="links">
+                                                                    <ul>
+                                                                        <li><a href="#MIS_150_20">Contenu de la section INFOS</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_30">Contenu de la section CLIENT</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_40">Contenu de la section FOLDERS.xml</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_50">Contenu de la section solution.xml</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_55">Contenu de la balise DATABASE</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_60">Contenu de la section WEBSERVERCONF</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_70">Contenu de la section EDTSERVERCONF</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_80">Contenu de la section FOLDER</a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_90"></a>
+                                                                        </li>
+                                                                        <li><a href="#MIS_150_170">Contenu de la section DATABASE</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <p>Le fichier de trace est un fichier au format <span style="font-weight: bold;">XML</span> (Extensible Markup Language).</p>
+                                                                <p>Le fichier XML contient une balise <span style="font-weight: bold;">&lt;LOGFILE VERSION="n"&gt;</span>. Les détails de la trace sont indiqués dans des balises groupées individuelles à l'intérieur de la balise <span style="font-weight: bold;">&lt;LOGFILE VERSION="n"&gt;</span>. Ces balises individuelles sont les suivantes :</p>
+                                                                <ul>
+                                                                    <li><a href="#MIS_150_20">&lt;INFOS&gt;</a>. Le contenu de cette balise fournit des informations générales, telles que la date à laquelle la trace a été générée.</li>
+                                                                    <li><a href="#MIS_150_30">&lt;CLIENT&gt;</a>. Le contenu de cette balise fournit des informations concernant le client (si la trace a été générée depuis le client-serveur).</li>
+                                                                    <li><a href="#MIS_150_40">&lt;CONF_FILE NAME="FOLDERS.xml"&gt;</a>. Le contenu de cette balise résume la configuration des dossiers dans le fichier <span style="font-weight: bold;">FOLDERS.xml</span>.</li>
+                                                                    <li><a href="#MIS_150_50">&lt;CONF_FILE NAME="solution.xml"&gt;</a>. Le contenu de cette balise résume la configuration de la solution dans le fichier <span style="font-weight: bold;">solution.xml</span>.</li>
+                                                                    <li><a href="#MIS_150_55">&lt;DATABASE&gt;</a>. Le contenu de cette balise fournit les caractéristiques de la base de données courante.</li>
+                                                                    <li><a href="#MIS_150_60">&lt;WEBSERVERCONF&gt;</a>. Le contenu de cette balise fournit des informations sur les serveurs web accessibles depuis la solution.</li>
+                                                                    <li><a href="#MIS_150_70">&lt;EDTSERVERCONF&gt;</a>. Le contenu de cette balise fournit des informations sur les serveurs d'impression accessibles depuis la solution.</li>
+                                                                    <li><a href="#MIS_150_80">&lt;FOLDER CODE="FOLDER"&gt;</a>. Cette balise est incluse pour chaque dossier. Le contenu de cette balise décrit les caractéristiques du dossier 'FOLDER' (<span style="font-weight: bold;">FOLDER</span> = nom du dossier). Tous les dossiers présents sont listés, mais les caractéristiques sont uniquement fournies pour : le dossier de lancement (toutes informations), le dossier parent du dossier courant si différent (informations sélectionnées), et le dossier racine ('X3') de la solution (informations sélectionnées uniquement).</li>
+                                                                </ul>
+                                                                <p>Les sous-sections suivantes décrivent le contenu de chaque balise.</p><a id="MIS_150_20"></a>
+                                                                <h2 class="g1" id="ContenudelasectionINFOS" data-magellan-target="ContenudelasectionINFOS">Contenu de la section INFOS</h2>
+                                                                <p>Le contenu entre les balises <span style="font-weight: bold;">&lt;INFOS&gt;</span> et <span style="font-weight: bold;">&lt;/INFOS&gt; </span> est le suivant :</p>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;DATE&gt;</span>. Date et heure de départ de la fonction.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;FOLD&gt;</span>. Dossier depuis lequel la fonction est lancée.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;USER&gt;</span>. Code de l'utilisateur ayant lancé la fonction.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;RUNTIME&gt;</span>. Version du client et numéro de licence, défini par ver$(0).</li>
+                                                                    <li><span style="font-weight: bold;">&lt;SOFTWARE_VERSION&gt;</span>. Le numéro de version de l'application (par exemple, 11.0.12).</li>
+                                                                    <li><span style="font-weight: bold;">&lt;PATCHLIST&gt;</span>. Le dernier patch réalisé.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;PATCHDATE&gt;</span>. La date du dernier patch réalisé.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;INCIDENT_ID&gt;</span>. Le numéro d'incident saisi au lancement de la fonction. En principe, le numéro d'incident est fourni par le service support.</li>
+                                                                </ul><a id="MIS_150_30"></a>
+                                                                <h2 class="g1" id="ContenudelasectionCLIENT" data-magellan-target="ContenudelasectionCLIENT">Contenu de la section CLIENT</h2>
+                                                                <p>Le contenu entre les balises <span style="font-weight: bold;">&lt;CLIENT&gt;</span> et <span style="font-weight: bold;">&lt;/CLIENT&gt; </span> est le suivant :</p>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;X3VERSION&gt;</span>. Numéro de version de l'application correspondant au client (par exemple, 001.12.2019).</li>
+                                                                    <li><span style="font-weight: bold;">&lt;X3FILEVERSION&gt;</span>. Numéro de version technique (par exemple, 15c.06).</li>
+                                                                    <li><span style="font-weight: bold;">&lt;X3CLTVERSION&gt;</span>. Numéro de version complémentaire (uniquement utilisé pour le client 107).</li>
+                                                                </ul><a id="MIS_150_40"></a>
+                                                                <h2 class="g1" id="ContenudelasectionFOLDERSxml" data-magellan-target="ContenudelasectionFOLDERSxml">Contenu de la section FOLDERS.xml</h2>
+                                                                <p>Le contenu entre les balises <span style="font-weight: bold;">&lt;CONF_FILE NAME="FOLDERS.xml"&gt;</span> et <span style="font-weight: bold;">&lt;/CONF_FILE&gt;</span> correspond au contenu du fichier <span style="font-weight: bold;">FOLDERS.xml</span> :</p>
+                                                                <ul>
+                                                                    <li>Balise <span style="font-weight: bold;">&lt;INFOFOLDERS versolsup="version"&gt;</span>.<br />Le contenu de cette balise fournit des informations sur la solution :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;ACTUAL&gt;</span>. Liste des dossier (une section &lt;FOLDER&gt; par dossier).</li>
+                                                                        <li><span style="font-weight: bold;">&lt;DEFLIC&gt;</span>. Définition de la licence (numéro, date d'expiration, textes partenaire/client, nombre de sessions, options). </li>
+                                                                    </ul>
+                                                                </ul><a id="MIS_150_50"></a>
+                                                                <h2 class="g1" id="Contenudelasectionsolutionxml" data-magellan-target="Contenudelasectionsolutionxml">Contenu de la section solution.xml</h2>
+                                                                <p>Le contenu entre les balises <span style="font-weight: bold;">&lt;CONF_FILE NAME="solution.xml"&gt;</span> et <span style="font-weight: bold;">&lt;/CONF_FILE&gt;</span> correspond au contenu du fichier <span style="font-weight: bold;">solution.xml</span> :</p>
+                                                                <ul>
+                                                                    <li>Une balise <span style="font-weight: bold;">&lt;solution name="name" mainport="port_number"&gt;</span> fournit des informations sur les composants techniques de la solution ("<span style="font-weight: bold;">name</span>") définie sur le port IP ("<span style="font-weight: bold;">port_number</span>") :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="APPLICATION" type="X3"&gt;</span>. Informations sur le serveur d'application.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="RUNTIME" type="MAIN"&gt;</span>. Informations sur le runtime.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="DOC" type="X3"&gt;</span>. Informations sur le serveur de documentation.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="WEB" type=""&gt;</span>. Informations sur le serveur web.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="BOXIRn" family="BUSOBJ" type=""&gt;</span>. Informations sur le serveur Business Objects, où 'n' est le numéro de version de Business Objects (par exemple, 'BOXIR3').</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="REPORT" type=""&gt;</span>. Informations sur le serveur d'impression.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="DATABASE" type="database"&gt;</span>. Informations sur le serveur de base de données, où le 'type' est la base de données (par exemple, 'ORACLE)'.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="SAGE_SEARCH" family="EXALEAD" type="MASTER"&gt;</span>. Informations sur le serveur de recherche.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;module name="name" family="SERVERJAVA" type=""&gt;</span>. Informations sur le serveur Java.</li>
+                                                                    </ul>
+                                                                </ul><a id="MIS_150_55"></a>
+                                                                <h4 class="g1">Contenu de la balise DATABASE</h4>
+                                                                <p>Le contenu entre les balises <span style="font-weight: bold;">&lt;DATABASE TYPE="database_type"&gt;</span> et <span style="font-weight: bold;">&lt;/DATABASE&gt;</span> est le suivant :</p>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;NAME&gt;</span>. Nom de la base de données.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;VERSION&gt;</span>. Numéro de version.</li>
+                                                                    <li><span style="font-weight: bold;">&lt;VERSION_DESC&gt;</span>. Description détaillée de la base de données et du numéro de version.</li>
+                                                                </ul><a id="MIS_150_60"></a>
+                                                                <h2 class="g1" id="ContenudelasectionWEBSERVERCONF" data-magellan-target="ContenudelasectionWEBSERVERCONF">Contenu de la section WEBSERVERCONF</h2>
+                                                                <p>Le balises <span style="font-weight: bold;">&lt;WEBSERVERCONF&gt;</span> et <span style="font-weight: bold;">&lt;/WEBSERVERCONF&gt;</span>contiennent une balise <span style="font-weight: bold;">&lt;WEBSERVER_ID name="name"&gt;</span> par serveur web accessible. Les balises qui décrivent chaque serveur web proviennent du fichier <span style="font-weight: bold;">config.ini</span>. Les informations sont indiquées de la façon suivante :</p>
+                                                                <ul>
+                                                                    <li>Les balises <span style="font-weight: bold;">&lt;SERVER_NAME&gt;</span> et <span style="font-weight: bold;">&lt;SERVER_PATH&gt;</span> indiquent l'emplacement des fichiers de configuration.</li>
+                                                                    <li>La hiérarchie du fichier <span style="font-weight: bold;">config.ini</span> décrit la configuration web en détails :<br /><br /><span style="font-family: 'Courier New';">&lt;ALL&gt;<br />     &lt;APACHE&gt;<br />          &lt;APACHEDOCS/&gt;<br />          &lt;APACHEPORT/&gt;<br />          ...<br />     &lt;/APACHE&gt;<br />     &lt;CONTROL&gt;<br />          &lt;DOCONFIG/&gt;<br />          &lt;EMBEDEDSOFTS/&gt;<br />          ...<br />     &lt;/CONTROL&gt;<br />     &lt;CONTROL&gt;<br />...</span></li>
+                                                                </ul>
+                                                                <p>Le nombre de sections et de sous-sections est important. Ces détails ne sont pas fournis ici. L'interprétation des valeurs est la responsabilité de l'équipe de développement.</p>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" /> <span style="color: rgb(191, 127, 0);">Si, pour quelque raison que ce soit, le fichier de configuration web est introuvable, une section <span style="font-weight: bold;">&lt;STATUS&gt;</span> peut s'afficher à la place des détails du fichier de configuration. Si la valeur de cette balise n'est pas accessible, cela signifie que le fichier de configuration est introuvable.</span></p><a id="MIS_150_70"></a>
+                                                                <h2 class="g1" id="ContenudelasectionEDTSERVERCONF" data-magellan-target="ContenudelasectionEDTSERVERCONF">Contenu de la section EDTSERVERCONF</h2>
+                                                                <p>Les balises <span style="font-weight: bold;">&lt;EDTSERVERCONF&gt;</span> et <span style="font-weight: bold;">&lt;/EDTSERVERCONF&gt;</span> contiennent une balise <span style="font-weight: bold;">&lt;EDTSERVER_ID name="name"&gt;</span> par serveur d'impression publié disponible. Les balises qui décrivent chaque serveur d'impression proviennent du fichier <span style="font-weight: bold;">adxeditionserverconfig.ini</span>, qui se situe dans les répertoires du serveur d'impression. Les informations sont indiquées de la façon suivante :</p>
+                                                                <p><span style="font-family: 'Courier New';">&lt;AdxSrvImp&gt;<br />     &lt;cap config="" id=""&gt; <br />          &lt;general adxsolprf="" lang="" log="" port="" restartrpts="" /&gt;<br />          &lt;log number="" size="" /&gt;<br />          &lt;jobs max="" purgetime="" vpalloc="" /&gt; <br />          &lt;processes killtime="" max="" min="" /&gt; <br />     &lt;/config&gt; <br />&lt;/AdxSrvImp&gt;</span>
+                                                                </p>
+                                                                <p>L'interprétation des valeurs est la responsabilité de l'équipe de développement.</p>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SEEINFO.png" style="font-size: 12pt;" /> <span style="color: rgb(191, 127, 0);">Si, pour quelque raison que ce soit, le fichier de configuration du serveur d'impression est introuvable, une section <span style="font-weight: bold;">&lt;STATUS&gt;</span> peut s'afficher à la place des détails du fichier de configuration.</span></p>
+                                                                <ul>
+                                                                    <li><span style="color: rgb(191, 127, 0);">Si la valeur de cette balise n'est pas accessible, cela signifie que le fichier de configuration est introuvable.</span>
+                                                                    </li>
+                                                                    <li><span style="color: rgb(191, 127, 0);">Si la valeur de cette balise n'est pas accessible, cela signifie que le serveur d'impression est introuvable (pas de réponse à la demande de connexion).</span>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SEEWARNING.png" style="font-size: 12pt;" /> <span style="color: rgb(127, 0, 0);">Cette erreur peut se produire si le traitement de balayage se connecte au port d'administration <span style="font-weight: bold;">1818</span>. Il s'agit du port utilisé par défaut pour les installations du logiciel. Si ce port n'est pas utilisé, vous devez le redéfinir en créant une variable globale nommée <span style="font-weight: bold;">GADMINPORT</span> de type 'Integer'. Cela vous permettra d'obtenir la valeur adéquate.</span></p><a id="MIS_150_80"></a>
+                                                                <h2 class="g1" id="ContenudelasectionFOLDER" data-magellan-target="ContenudelasectionFOLDER">Contenu de la section FOLDER</h2>
+                                                                <p>Le contenu des balises <span style="font-weight: bold;">&lt;FOLDER CODE="folder_code"&gt;</span> et <span style="font-weight: bold;">&lt;/FOLDER&gt;</span> est le suivant :</p>
+                                                                <p>
+                                                                    <img src="../Resources/Images/SEEINFO.png" /> <span style="color: rgb(191, 127, 0);">Une section différente par dossier.</span></p>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;HEADER&gt;</span>. Informations liées aux caractéristiques générales du dossier <span style="font-weight: bold;">"folder_code"</span>. L'en-tête inclut les balises suivantes :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;NAME&gt;</span>. Nom du dossier.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;REFFOLDER&gt;</span>. Nom du dossier de référence.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;TESFOLDER&gt;</span>. Indicateur pour les dossiers 'test'.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;SPEFOLDER&gt;</span>. Indicateur pour les dossiers 'spécifiques'.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;DATABASE&gt;</span>. Nom de la base de données.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;LANGUAGE&gt;</span>. Liste des langues définies sur le dossier.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;DEFLANGUAGE&gt;</span>. Langue par défaut.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;MODULES&gt;</span>. Liste des modules actifs.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;STARTDATE&gt;</span>. Date de début.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;RPTCURRENCY&gt;</span>. Devise de reporting.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;DEFCOUNTRY&gt;</span>. Code pays par défaut.</li>
+                                                                        <li>Informations du fichier <span style="font-weight: bold;">APL.ini</span>. Ces informations sont définies dans une balise <span style="font-weight: bold;">&lt;APL_INI&gt;</span>, où chaque variable possède sa propre balise dont le nom est le nom de la variable en majuscules. Lors du dimensionnement de la variable, les parenthèses sont remplacées par un tiret bas ('_'). Par exemple, elle peut inclure les balises suivantes : <span style="font-weight: bold;">&lt;ADXMOTHER_0_0&gt;</span>, <span style="font-weight: bold;">&lt;ADXMOTHER_1_0&gt;</span>, <span style="font-weight: bold;">&lt;ADXMSO&gt;</span>, <span style="font-weight: bold;">&lt;ADXMTO&gt;</span>, <span style="font-weight: bold;">&lt;ADXMPR&gt;</span>, <span style="font-weight: bold;">&lt;ADXMUA&gt;</span>, <span style="font-weight: bold;">&lt;MAXMEM&gt;</span>, <span style="font-weight: bold;">&lt;SADMEM&gt;</span>, <span style="font-weight: bold;">&lt;ADXTCT&gt;</span>, <span style="font-weight: bold;">&lt;ADXTLK&gt;</span>, <span style="font-weight: bold;">&lt;ADXTMS&gt;</span>, <span style="font-weight: bold;">&lt;MAXHEAP&gt;</span>.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;ACTIVITY_CODES&gt;</span>. Les valeurs des codes d'activité. Cette section comprend trois sous-sections : <span style="font-weight: bold;">&lt;FUNCTIONAL&gt;</span>; <span style="font-weight: bold;">&lt;SIZING&gt;</span>; <span style="font-weight: bold;">&lt;LOCALIZATION&gt;</span>.<br />Dans chaque sous-section, il existe une sous-section supplémentaire par module nommée <span style="font-weight: bold;">&lt;MODULE NAME="module_name"&gt;</span> contenant les informations suivantes :</li>
+                                                                    <ul>
+                                                                        <li>Une section <span style="font-weight: bold;">&lt;ACTIVITY_CODE CODE="activity_code"&gt;</span> avec les sous-sections <span style="font-weight: bold;">&lt;ACTIVE&gt;</span> définies sur 'Oui' ou 'Non' ; <span style="font-weight: bold;">&lt;DIMENSION&gt;</span>; <span style="font-weight: bold;">&lt;DIM_MIN&gt;</span>; <span style="font-weight: bold;">&lt;DIM_MAX&gt;</span> pour les codes de type <span style="font-weight: bold;">&lt;SIZING&gt;</span> (dimensionnement).</li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;ENTRY_POINTS&gt;</span>. Les points d'entrée et, pour chaque point d'entrée, une sous-balise <span style="font-weight: bold;">&lt;STD_TRT NAME="standard_entry point_name"&gt;</span> contenant les sections <span style="font-weight: bold;">&lt;SPE_TRT&gt;</span> et <span style="font-weight: bold;">&lt;ACV_CODE&gt;</span>.</li>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;CPYLIST&gt;</span>. Liste des sociétés et, pour chaque société, une sou-balise <span style="font-weight: bold;">&lt;COMPANY CODE="company code"&gt;</span>, qui contient les informations suivantes :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;NAME&gt;</span>.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;LEGISLATION&gt;</span>.</li>
+                                                                        <li><span style="font-weight: bold;">&lt;SITLIST&gt;</span>. Une liste des sites associés et, pour chaque site, une sous-balise <span style="font-weight: bold;">&lt;SITE NAME="code"&gt;</span>, qui contient le code du site financier associé dans une section <span style="font-weight: bold;">&lt;FINANCIAL&gt;</span>.</li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;PARAMVALUES&gt;</span>. Les valeurs des paramètres. Les groupes de paramètres sont délimités par une balise <span style="font-weight: bold;">&lt;PARAMGRP NAME="group_code"&gt;</span> avec une sous-section <span style="font-weight: bold;">&lt;PARAM NAME="parameter_code"&gt;</span> par paramètre. Chaque sous-section contient une balise <span style="font-weight: bold;">&lt;VALUES&gt;</span>, qui contient les informations suivantes :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;FOLDERVALUE&gt;</span>. La valeur du dossier. Si aucune valeur n'est indiquée, la balise contient  <span style="font-weight: bold;">&lt;LEG NAME="legislation_code"&gt;</span>, qui contient :</li>
+                                                                        <ul>
+                                                                            <li><span style="font-weight: bold;">&lt;LEGVALUE&gt;</span>. La valeur indiquée au niveau de la législation, si applicable (optionnel). Cela inclut les valeurs paramètres définies par exception sur les niveaux inférieurs (sociétés liées à la législation, sites qui dépendent de ces sociétés).</li>
+                                                                            <li><span style="font-weight: bold;">&lt;CPY name="company_code"&gt;</span>. Défini s'il existe une valeur paramètre de niveau société, ou au moins un des sites associés à la société. Cette balise contient alors les sous-sections suivantes :</li>
+                                                                            <ul>
+                                                                                <li><span style="font-weight: bold;">&lt;CPYVALUE&gt;</span>. Valeur liée à la société, si applicable.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;FCY NAME="site_code"&gt;</span> qui contient une balise <span style="font-weight: bold;">&lt;FCYVALUE&gt;</span>, si le paramètre est défini au niveau du site.</li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                                <ul>
+                                                                    <li><span style="font-weight: bold;">&lt;USER_VALUES&gt;</span>. Valeurs paramètres associées aux utilisateurs, si applicable. Les valeurs sont contenus dans une sous-balise <span style="font-weight: bold;">&lt;USER CODE="user_code"&gt;</span> qui contient les valeurs suivantes :</li>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;LOCALPRG&gt;</span>. Liste des traitements qui ne correspondent à aucun type spécifique, dont le fichier exécutable est situé sur le dossier de référence (et non sur le dossier test ou de développement).</li>
+                                                                    </ul>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;SPEPRG&gt;</span>. Liste des scripts qui correspondent à un type spécifique de script.<br /></li>
+                                                                        <li><span style="font-weight: bold;">&lt;PATCHES&gt;</span>. Liste des patchs installés sur le dossier, par type. Chaque type constitue un groupe <span style="font-weight: bold;">&lt;TYPE CODE="code_type"&gt;</span>, qui contient une sous-balise <span style="font-weight: bold;">&lt;CURRENT_STATUS&gt;</span> qui contient un groupe par version. Chaque groupe contient les informations suivantes :</li>
+                                                                        <ul>
+                                                                            <li><span style="font-weight: bold;">&lt;VERSION ID="version_number"&gt;</span>. Numéro de version. Cette section contient les informations suivantes :</li>
+                                                                            <ul>
+                                                                                <li><span style="font-weight: bold;">&lt;FIRST NUM="number"&gt;</span>. Premier numéro de patch réalisé (contenant les informations <span style="font-weight: bold;">&lt;COMMENT&gt;</span>, <span style="font-weight: bold;">&lt;FILE&gt;</span>, <span style="font-weight: bold;">&lt;PATCHNUM&gt;</span>).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;LAST NUM="number"&gt;</span>. Dernier numéro de patch réalisé (contenant les informations <span style="font-weight: bold;">&lt;COMMENT&gt;</span>, <span style="font-weight: bold;">&lt;FILE&gt;</span>, <span style="font-weight: bold;">&lt;PATCHNUM&gt;</span>).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;MISSING NUM="number"&gt;</span>. Nombre de patchs manquants, ou integer au format form first_number - last_number. Cette balise est uniquement présente si des éléments manquent dans la numérotation.</li>
+                                                                            </ul>
+                                                                            <li><span style="font-weight: bold;">&lt;INSTALL_HISTORY&gt;</span>. Pour chaque type de patch (balise  <span style="font-weight: bold;">&lt;TYPE CODE="code"&gt;</span>), et pour chaque version majeure (balise <span style="font-weight: bold;">&lt;VERSION ID="xxx"&gt;</span>), une liste de balises <span style="font-weight: bold;"> &lt;PATCHLIST num="number" date="date of installation"&gt;</span> est fournie, qui contient les balises :</li>
+                                                                            <ul>
+                                                                                <li><span style="font-weight: bold;">&lt;USER&gt;</span>. Code de l'utilisateur qui a installé la liste.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;COMMENT&gt;</span>. Commentaire associé au premier patch dans la liste.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;FILE&gt;</span>. Nom de fichier correspondant.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;MAINTENANCE&gt;</span>. Numéro de maintenance.<br /><span style="font-weight: bold;">Remarque :</span> La même liste de patchs est répétée plusieurs fois dans l'historique si elle a été effectuée plusieurs fois (vous pouvez distinguer les listes en regardant le premier numéro d'un patch).</li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                    <ul>
+                                                                        <li><span style="font-weight: bold;">&lt;DATABASE TYPE="database_type"&gt;</span>. Type de base de données. Cette balise contient plusieurs sections :</li>
+                                                                        <ul>
+                                                                            <li><span style="font-weight: bold;">&lt;STATS&gt;</span>. Il s'agit de la première section. Pour chaque table, elle contient la sous-section <span style="font-weight: bold;">&lt;TABLE NAME="table_name"&gt;</span>, qui contient : </li>
+                                                                            <ul>
+                                                                                <li><span style="font-weight: bold;">&lt;LAST_ANALYSIS&gt;</span>. Date du dernier balayage des index effectué.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;NB_ROWS&gt;</span>. Nombre de lignes dans la table.</li>
+                                                                            </ul>
+                                                                            <li><span style="font-weight: bold;">&lt;INDEXES_VERIFICATION&gt;</span>. Il s'agit de la seconde section. Elle constitue une fonction distincte. Ainsi, les résultats de l'analyse des index sont présentés sur des sous-sections individuelles :</li>
+                                                                            <ul>
+                                                                                <li><span style="font-weight: bold;">&lt;INDEXES_MISSING&gt;</span>. Les index manquants (avec, pour chaque index manquant, une section <span style="font-weight: bold;">&lt;INDEX TABLE="table"&gt;</span> qui contient les champs  <span style="font-weight: bold;">&lt;NAME&gt;</span> et <span style="font-weight: bold;">&lt;INDEX&gt;</span>).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;INDEXES_MISSING_ON_INACTIVE_TABLES&gt;</span>. Contient les index manquants sur des tables inactives (avec les mêmes informations).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;OPTIMIZATION_INDEX_MISSING&gt;</span>. Contient les index d'optimisation actifs, mais manquants sur les tables (avec les mêmes informations).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;OPTIMIZATION_INDEX_INACTIVE_ON_TABLES&gt;</span>. Contient les index d'optimisation sur des tables inactives (avec les mêmes informations).</li>
+                                                                                <li><span style="font-weight: bold;">&lt;INTERNAL_INDEXES&gt;</span>. Liste les indexes internes trouvés.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;INDEXES_NOT_DESCRIBED_IN_DICTIONARY&gt;</span>. Fournit la liste des index qui existent dans la base, mais non décrits dans le dictionnaire.</li>
+                                                                                <li><span style="font-weight: bold;">&lt;INDEX_NOT_CONFORMANT&gt;</span>. Liste les index non conformes.</li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                                <p><b>Commentaires</b>
+                                                                </p>
+                                                                <p>Les informations contenues dans les sections délimitées par la balise <span style="font-weight: bold;">&lt;FOLDER CODE="folder_code"&gt;</span> n'existent pas dans tous les dossiers :</p>
+                                                                <ul>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;HEADER&gt;</span> est toujours présente.</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;ACTIVITY_CODES&gt;</span> est toujours présente.</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;ENTRY_POINTS&gt;</span> est toujours présente.</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;CPYLIST&gt;</span> est toujours présente.</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;PARAMVALUES&gt;</span> est uniquement présente pour les dossiers du dossier Superviseur ('X3' pour l'application).</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;LOCALPRG&gt;</span> est uniquement présente pour les dossiers du dossier Superviseur ('X3' pour l'application).</li>
+                                                                    <li>La section <span style="font-weight: bold;">&lt;DATABASE&gt;</span> est uniquement présent pour le dossier depuis lequel l'utilitaire a été lancé. Il est donc important de bien choisir le dossier sur lequel vous souhaitez lancer l'utilitaire.</li>
+                                                                </ul><a id="MIS_150_170"></a>
+                                                                <h2 class="g1" id="ContenudelasectionDATABASE" data-magellan-target="ContenudelasectionDATABASE">Contenu de la section DATABASE</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#G%C3%A9n%C3%A9rationdelog%C3%A0destinationdel%C3%A9quipedesupport">Génération de log à destination de l'équipe de support</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requis">Prérequis</a>
+                                                        </li>
+                                                        <li><a href="#Gestiondel%C3%A9cran">Gestion de l'écran</a>
+                                                        </li>
+                                                        <li><a href="#T%C3%A2chebatch">Tâche batch</a>
+                                                        </li>
+                                                        <li><a href="#Messagesderreur">Messages d'erreur</a>
+                                                        </li>
+                                                        <li><a href="#Tablesmisesen%C5%93uvre">Tables mises en œuvre</a>
+                                                        </li>
+                                                        <li><a href="#Informationsdelatrace">Informations de la trace</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionINFOS">Contenu de la section INFOS</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionCLIENT">Contenu de la section CLIENT</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionFOLDERSxml">Contenu de la section FOLDERS.xml</a>
+                                                        </li>
+                                                        <li><a href="#Contenudelasectionsolutionxml">Contenu de la section solution.xml</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionWEBSERVERCONF">Contenu de la section WEBSERVERCONF</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionEDTSERVERCONF">Contenu de la section EDTSERVERCONF</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionFOLDER">Contenu de la section FOLDER</a>
+                                                        </li>
+                                                        <li><a href="#ContenudelasectionDATABASE">Contenu de la section DATABASE</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="Developing extensions" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Development rules</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/navigate-previous.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: url('../../../../Skins/Default/Stylesheets/Images/navigate-next.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Topic 1 Developing extensions.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__Developing_extensions.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menu: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Development rules</h1>
+                                            <p>Add-ons must respect a set of rules to avoid technical conflicts due to extensions' cohabitation.</p>
+                                            <p>This chapter:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Focuses on the main rules you have to apply</p>
+                                                </li>
+                                                <li>
+                                                    <p>Highlights limitations you have to take care of</p>
+                                                </li>
+                                                <li>
+                                                    <p>Gives you advice on how to design and test your developments</p>
+                                                </li>
+                                            </ul>
+                                            <p>All topics described are available since Version 7.</p>
+                                            <h2>Main development rules to apply</h2>
+                                            <h3>Field actions</h3>
+                                            <p>From the platform, you can define actions on screen fields.</p>
+                                            <p>A feature is available to use a vertical action (<span class="reference">SPV</span>) on each event (initialization, control, etc.) on each field.</p>
+                                            <p>But there can be only one action of this type in each field.</p>
+                                            <p>In the add-on mode, all partners share the dictionary. You need to use dictionary actions to avoid conflicts.</p>
+                                            <p>The screen dictionary vertical script is a unique program and cannot be shared easily by different partners.</p>
+                                            <p>Dictionary action names should start with your identifier. You also need to protect them with an activity code.</p>
+                                            <p>This rule applies to any action that you add in a field on a standard screen.</p>
+                                            <p>If you are alone to work on the vertical script, you can use <span class="reference">SPV</span> actions for your screens that:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Your activity code protects</p>
+                                                </li>
+                                                <li>
+                                                    <p>Have no verticalization on them</p>
+                                                </li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="833" data-mc-height="346" src="../../../Resources/Images/Develop Extensions/Dev rules 1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1025" data-mc-height="327" src="../../../Resources/Images/Develop Extensions/Dev rules 2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Only use dictionary actions for your field actions.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="443" data-mc-height="197" src="../../../Resources/Images/Develop Extensions/Dev rules 3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Do not forget to set an activity code on the action. The activity code's name should begin with your unique identifier.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 4.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="566" data-mc-height="318" src="../../../Resources/Images/Develop Extensions/Dev rules 4_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h3>How to manage the vertical layer with an object model and entry points</h3>
+                                            <p>A separate script manages each of the three layers: <span class="reference">specific</span>, <span class="reference">vertical</span>, and <span class="reference">standard</span>.</p>
+                                            <p>In each script, developers use the entry points provided by the different models on which they are working.</p>
+                                            <p>The source code of the model or object – which is the most used – is not provided.</p>
+                                            <p>The documentation provides the list of available entry points and a set of variables that you can use to interact with the standard.</p>
+                                            <p>There <strong>is only one vertical script</strong> for a function.</p>
+                                            <p>For this reason, different actors could not easily share the script. You had to create and use a manually managed switch program that sequentially called the scripts of the different partners.</p>
+                                            <p>The procedure is:</p>
+                                            <ul>
+                                                <li><strong>Before Update 8</strong>: You needed to manage the switch program manually. This caused a lot of problems in the past.</li>
+                                                <li><strong>Since Update 8</strong>: The supervisor automatically manages the switch program  for objects and entry points. This is a great improvement.</li>
+                                            </ul>
+                                            <h4>Vertical layer with objects</h4>
+                                            <p>Before, the name of the vertical script was defined in the object. The switch program's name was used to authorize multi-vertical calls.</p>
+                                            <p>Today, there is a check box in the object definition. If this check box is selected, there is at least one vertical on the object.</p>
+                                            <p>An <span class="reference">info</span> button gives you the names of all the vertical processes defined for this object.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="803" data-mc-height="451" src="../../../Resources/Images/Develop Extensions/Dev rules 5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="388" data-mc-height="272" src="../../../Resources/Images/Develop Extensions/Dev rules 6_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>The definition of the vertical scripts to use on an object is set in the entry points table.</p>
+                                            <p>The order in which the different scripts should be executed is also defined in this table.</p>
+                                            <p>You should pay attention to the following:</p>
+                                            <ul>
+                                                <li>The <span class="reference">Entry points</span> table is loaded as a set of global variables when you create a classic session. If you modify the entry points list, you should disconnect and reconnect for the modifications to be applied.</li>
+                                                <li>When the table is loaded in memory, there is a control that checks that the adx script defined in the entry points list exists. If not, in the folder or one of its mother folders, it is not added in the memory table and thus not executed even if you add it after creating your session. You need to disconnect and recreate the memory table.</li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="986" data-mc-height="418" src="../../../Resources/Images/Develop Extensions/Dev rules 7_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Understanding the execution order of the different layers</h4>
+                                            <p>The same logic applies to each entry point.</p>
+                                            <p>The model calls the following elements if they exist in this order:</p>
+                                            <ul>
+                                                <li>The specific script</li>
+                                                <li>All the vertical scripts according to their rank order</li>
+                                                <li>The standard script</li>
+                                            </ul>
+                                            <p>Two global variables are used to control the different scripts' execution:</p>
+                                            <ul>
+                                                <li><span class="reference">GPV</span>: Prevents the execution of the vertical layer if set to 1.</li>
+                                                <li><span class="reference">GPE</span>: Prevents the execution of the standard layer if set to 1.</li>
+                                            </ul>
+                                            <p>These two variables are set to 0 by the standard before the execution of the global loop.</p>
+                                            <p>Then:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>If <span class="reference">GPV</span> is set to 1 in the specific script, all the vertical scripts will be skipped and not executed. This behavior should be validated on a case by case basis on a customer site.</p>
+                                                </li>
+                                                <li>
+                                                    <p>If <span class="reference">GPE</span> is set to 1 either in the specific script or in one of the vertical scripts, the standard layer will not be executed. This behavior is exceptional. It is generally adopted when the standard layer must be executed before the vertical or specific layer. Do not skip the standard layer.</p>
+                                                </li>
+                                            </ul>
+                                            <div class="note-warning">When several scripts (for example, a specific script and several vertical ones) are executed, the <span class="reference">GPE</span> variable's value is the last one to be set. In these complex interaction cases, the behavior must be validated on the customer’s site.</div>
+                                            <h4>Complex cases in entry point execution</h4>
+                                            <p>One of the verticals needs the standard layer to be executed first.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Example</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="853" data-mc-height="242" src="../../../Resources/Images/Develop Extensions/Dev rules 8_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Three vertical scripts are defined for the <span class="reference">BPC</span> object.</p>
+                                                    <p>For example, the <span class="reference">XY23BPC2</span> script needs the standard to be executed first in the <span class="reference">PICKE</span> entry point.</p>
+                                                    <p>In this case, the script is:</p><pre class="code">$ACTION<br />Case ACTION<br />When “PICKE” : Gosub ETIQP<br />………<br />Endcase<br />Return<br /><br />$ETIQP<br /># Execute the standard code first<br /><strong>Gosub ACTION From SUBPTH<br></br>GPE=1   :# Avoid to reexecute the standard</strong><br />#  Vertical code<br />……<br />……<br />Return</pre>
+                                                    <p>In this case, you need the third vertical <span class="reference">XX34PH78</span> script to be executed next.</p>
+                                                </div>
+                                            </div>
+                                            <p>On a customer site, the different verticals' execution order must be set according to specific requirements.</p>
+                                            <p>If a vertical requires the standard to be executed first and not the others, this vertical must be executed last, and the execution order needs to be adapted.</p>
+                                            <p>Also check that another vertical:</p>
+                                            <ul>
+                                                <li>Is not setting <span class="reference">GPE</span> to 0 after your script has set it to 1. In this case, standard will be executed twice.</li>
+                                                <li>Is not executed before the standard.</li>
+                                            </ul>
+                                            <div class="note-warning">These are exceptional cases. They need to be checked on a customer site as it is impossible to manage and anticipate all vertical combinations.<br />For rare cases, the order must be different according to the entry point. On the customer site, one of the verticals must be split to meet this specific need because no modeling manages this requirement.</div>
+                                            <h4>Patching Entry points as of Update 8</h4>
+                                            <ul>
+                                                <li><strong>Entry point patching:</strong>
+                                                    <br />The execution order is never modified through a patch. But, when a new entry point is patched, the execution order is set if it has been defined.</li>
+                                                <li><strong>At folder revalidation:</strong>
+                                                    <br />The vertical script, if it exists on an object, is automatically inserted in the entry points table.</li>
+                                            </ul>
+                                            <h3>How to manage the vertical layer with other models: switch program</h3>
+                                            <p>With other models for which the switch program is not created automatically, you need to manage the switch manually.</p>
+                                            <p>You need to do this for:</p>
+                                            <ul>
+                                                <li>Actions</li>
+                                                <li>Inquiries</li>
+                                                <li>Import/export templates</li>
+                                                <li>Reports</li>
+                                            </ul>
+                                            <p>Inquiries, import/export templates, and reports are generally duplicated when you want to customize them. You mainly need to focus on scripts associated with actions.</p>
+                                            <p>For these different items, there is no vertical layer.</p>
+                                            <p>The only available script is the <span class="reference">Specific script</span> that will be used as a switch in all cases.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="752" data-mc-height="379" src="../../../Resources/Images/Develop Extensions/Dev rules 9_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Switch processing and applicative processings</h4>
+                                            <p>Example: The <span class="reference">X1</span> and the <span class="reference">X2</span> add-ons are developed on the CSO Core Inquiry.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 10.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="906" data-mc-height="189" src="../../../Resources/Images/Develop Extensions/Dev rules 10_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>You need to keep a neutral program as a specific script: <span class="reference">CNSCSOSPE</span>,  for example.</p>
+                                            <p>This program will not be patched, but must be delivered separately and managed manually.</p>
+                                            <p>If you need the same call order for each action of the model, use this simple syntax in the switch program.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 11.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1059" data-mc-height="380" src="../../../Resources/Images/Develop Extensions/Dev rules 11_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>If you need to differentiate the order of calls depending on the action, use this syntax:</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 12.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1051" data-mc-height="386" src="../../../Resources/Images/Develop Extensions/Dev rules 12_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>This way, you can manage the call to each vertical and specific script.</p>
+                                            <h4>How to manage the delivery of the switch processing</h4>
+                                            <ul>
+                                                <li>Create a separate patch for all your switch processes.</li>
+                                                <li>In the main patch, add:<ul><li>The <strong>source code</strong>  of the switch processes within a dedicated directory named <span class="reference">ADDSRC</span>.</li><li>In the <strong>Readme</strong> file, a list  of  all the switch processing names and their corresponding core processing name.</li><li>In the <strong>Readme</strong> file, the explanation of  the need to <strong>manually modify</strong> each switch processing looking at the corresponding source code processing delivered in the <span class="reference">ADDSRC</span> directory if other add-ons or assets exist in the vertical layer.</li></ul></li>
+                                            </ul>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">Main patch</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">Separate patch</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader2" data-mc-pattern="5">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader2">
+                                                            <p>X1CNSCSOSPE<br />X1 add-on
+applicative processing</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader2">
+                                                            <p>CNSCSOSPE<br />Switch processing
+</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">This patch will always be integrated.</td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>This patch will be integrated by the customer if they have no other add-on or asset on the same core functions.</p>
+                                                            <p><strong>Otherwise, this patch cannot be integrated to avoid overwriting existing processes. Switch processes must be updated manually.
+</strong>
+                                                            </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Developing reports</h2>
+                                            <p>Standard reports are developed with the Crystal Reports tool.</p>
+                                            <p>Here is some advice on how to develop your reports:</p>
+                                            <ul>
+                                                <li>Use the Crystal Reports reports development charter defined in the online help center.<br />Develop your reports using one of the following report templates: <span class="reference">ATEMPLATE_RPT1</span> or <span class="reference">ATEMPLATE_RPT2</span>.</li>
+                                                <li>
+                                                    <p>The report's name should start with your identifier and have the same name as the dictionary report code.</p>
+                                                </li>
+                                                <li>All reports must be based on an ODBC source.</li>
+                                                <li>You must provide reports in the languages that you manage as a partner. English is mandatory.</li>
+                                                <li>Reports will comply with the management of authorizations development rules.</li>
+                                            </ul>
+                                            <p>Refer to the training support material.</p>
+                                            <h2>Important limitations</h2>
+                                            <p>The technological platform has some known limits. <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> is trying to fix these limitations. </p>
+                                            <p>Pay attention to these points with classic functions:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-ColumnHeader1" data-mc-pattern="7">
+                                                </col>
+                                                <col class="TableStyle-Normal-Column-Column1">
+                                                </col>
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Number of columns in a table </p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Is
+ limited to 512.
+  When working with a standard table close to the limit, create and manage your complement table to avoid problems.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Length of a line in a table</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Is limited
+ to 8 Kb.</p>
+                                                            <p>If the standard table is close to the limit, you can add and
+ manage your own table.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Number of blocks in a mask</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Is limited
+ to 15.</p>
+                                                            <p>You should
+ add a new mask if you add several blocks and approach the limit.</p>
+                                                            <p>The authoring enables you to draw a layout that fits your needs.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-ColumnHeader1-Body1">
+                                                            <p>Number of fields in a mask</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Is limited
+ to 500 in the definition.</p>
+                                                            <p>Is limited
+ to 300 in validation.</p>
+                                                            <p>You should
+ add a new mask if you add several fields and approach the limit.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Interactions with the standard</h2>
+                                            <p>Avoid  making modifications to the functionality of a core element, especially for localizations. These functionalities are intended to co-exist in the same customer folder. It is important to remember that an add-on is a solution to enhance and extend the core functionality and not to bypass it.</p>
+                                            <p>Key points to remember:</p>
+                                            <ul>
+                                                <li>Do not use your activity code to change or delete a core element.</li>
+                                                <li>Do not disable a button, menu, field, etc.</li>
+                                                <li>Do not change the behavior of a button or menu.</li>
+                                                <li>Use only <span class="reference">GPE= 1</span> to call the core directly but not to avoid it.</li>
+                                                <li>Use a menu rather than a button in a core window.</li>
+                                                <li>Use your own screen in a core window or create your own additional pop-up.</li>
+                                                <li>Avoid sharing the same available space on core screens with different add-ons installed within a single customer folder.</li>
+                                                <li>This kind of conflict must be managed by the project implementation team.</li>
+                                            </ul>
+                                            <p>Be careful, when you complete a core function. If the vertical or specific layer  is already being used by an add-on or a vertical asset, <strong>do not override the existing switch processing belonging to this add-on or vertical asset.</strong></p>
+                                            <p>In this situation and for future developments, use the strategy of the switch processing that calls your applicative processing.</p>
+                                            <ul>
+                                                <li><strong>To use an entry point</strong>, use the strategy of the switch processing to help update switch processings.</li>
+                                                <li>Create a separate patch for them. Then put an example of what the source processing should be in a dedicated directory named <span class="reference">ADDSRC</span> that you deliver in your patch.</li>
+                                                <li>Complete the readme file adding the reference of switch processings and the corresponding  core processing.</li>
+                                            </ul>
+                                            <div class="note-warning">Never modify the usage of a core element.</div>
+                                            <h2>Testing</h2>
+                                            <p>To test a core function:</p>
+                                            <ul>
+                                                <li>Verify the <strong>global functionality of the core function</strong> after add-ons or assets have been added.</li>
+                                                <li>Verify the <strong>switch processing</strong> in the vertical layer, in a specific layer for some dictionaries, and in entry points.</li>
+                                                <li>Check that <strong>co-existing field actions</strong> work together in a <strong>core screen</strong>.</li>
+                                                <li>Check that <strong>menus and buttons</strong> work for several add-ons in a <strong>core window</strong>. Avoid having the same menu code for two add-ons in the same core window.</li>
+                                                <li>Check that the <strong>platform capacities</strong> are not exceeded (number of fields in a table, number of tabs in a window, etc.).</li>
+                                            </ul>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Navigate previous">
+                                                    <img alt="Navigate previous" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Navigate next">
+                                                    <img alt="Navigate next" src="../../../../Skins/Default/Stylesheets/Images/transparent.gif" class="invisible-label" />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://www.sage.com/en-us/support/" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/sage-global-solutions/subgrouplist" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Date published: <span class="mc-variable Dates.DateProjectBuilt variable">14 April 2021</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,460 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Explanation of batch server operation" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Supervisor" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Explanation of batch server operation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Explanationofbatchserveroperation" data-magellan-target="Explanationofbatchserveroperation"><span>Explanation of batch server operation</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Presentation" data-magellan-target="Presentation">Presentation</h2>
+                                                            <p>The batch server integrated in the software is used to launch in batch mode on the application server :</p>
+                                                            <ul>
+                                                                <li><a href="GESABT.htm">Tasks</a> defined in the corresponding table. A task can be a standard process in the software (ie. a function whose associated action is of the type <i>Standard process</i>), or a script (Unix or DOS according to the server type on which it is launched). &#160;A specific example of a task of the process type is the launch of a print.</li>
+                                                                <li><a href="GESABG.htm">Groups of tasks</a>. This is several tasks that are executed in sequence, on the condition that the previous task is completed without error.</li>
+                                                                <li>tasks or groups of tasks that happen regularly, by means of <a href="GESABA.htm">recurring tasks</a>.</li>
+                                                            </ul>
+                                                            <p>The start-up of the batch server can be carried out directly from the software, but also by a command directly from the system.</p>
+                                                            <p>A surveillance task is used to view the tasks irrespective of their status (pending, in process, terminated), to modify the launch parameters if they have not started, and to stop those which are running, or to view the log file when the tasks are complete.</p>
+                                                            <p>The submission of tasks for execution via the batch server can be made in different fashions :</p>
+                                                            <ul>
+                                                                <li>directly via <a href="EXERQT.htm">request submission</a> function.</li>
+                                                                <li>by creating a <a href="GESABA.htm">recurring task</a> for the active tasks.</li>
+                                                                <li>by placing request files in a dedicated directory defined in the batch server parameters. This type of submission can be globally deactivated or reserved for certain users as a function of the value of the user setup <a href="../OBJ/ADP_SUP_EXTBATCH.htm">EXTBATCH</a> attached to the <i>SUP</i> group. The detail of the functioning of this type of submission can be found in the <a href="RQT_FILE.htm">technical annex</a>, which can also be executed by means of an automatic operation.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Detailedoperation" data-magellan-target="Detailedoperation">Detailed operation</h2>
+                                                            <p>The structures below describe the batch server functioning cycle. The diamonds figure in the logical tests, the yellow boxes are the simple actions, the green boxes the more complex actions described in another structure. The title of each structure is given in the blue box. Finally the red boxes indicate the terminating action.</p>
+                                                            <p>The server is an ADONIX process functioning in a dedicated SERVX3 folder. It uses a group of tables that are found in the supervisor folder (and because of this are visible to all the folders). A single process server runs at any given moment. The launch of the batch server is made according to the following process :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH1.jpg" width="695" height="523" border="0" />
+                                                            </p>
+                                                            <p>Once the verifications are carried out and the initializations made, the following files are set-up in the sub-directories of the SERVX3&#160; directory:</p>
+                                                            <ul>
+                                                                <li>a run file is set-up in the FIL sub-directory. This file is not sufficient to determine that the server is active (the task having been suddenly interrupted). A polling technique is setup to verify that the server is still running. On the other hand, the fact that the run file is not there indicates that the server is not functioning.</li>
+                                                                <li>a server.pid file, giving the server process number, is created in the tmp directory.</li>
+                                                                <li>The server log is opened in the TRA directory of the folder.</li>
+                                                            </ul>
+                                                            <p>In addition, the number of requests that can be simultaneously launched is verified, as defined in the <a href="ABATPAR.htm">batch server parameters</a>.</p>
+                                                            <p>The principle cycle for the functioning of the batch server is summarized below :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH2.jpg" width="702" height="535" border="0" />
+                                                            </p>
+                                                            <p>It should be noted that the presence of a kill file in the FIL directory of the SERVX3 folder leads to the stopping of the batch task that are currently running, and the presence of a stop file in the same directory leads to the server stopping. If the batch server is to be stopped by stopping all the requests, it will be necessary to place these two files in the directory, starting with the first, but within a time delay of 2 seconds, in order that the server starts by stopping the tasks then stops.</p>
+                                                            <p>the highest priority goes to the oldest, provided the admissible launch delay (defined in hours in the <a href="GESABT.htm">task</a> record) is not exceeded. It should be noted that the time constraints also define a programmed launch time for task. See the chapter concerning the management of time constraints below.</p>
+                                                            <p>It should be noted that a "processing" time delay is used to define a time for which the server will periodically activate the process for the new requests that arrive (a time of between 30 seconds an one minute is usually sufficient, remembering that every 2 seconds a polling process is executed responding to the calls from the processes that interrogate the server to check that it is still active.</p>
+                                                            <p>The launch of a request is made as shown in the diagram below :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH3.jpg" width="706" height="532" border="0" />
+                                                            </p>
+                                                            <p>In the SERVX3 folder, an ADONIX process is launched in the correct folder and the process number is recovered to update the corresponding information. If the request has been submitted by file, the corresponding files are updated.</p>
+                                                            <p>In the target folder, the process execution associated with the request starts by opening the log file, verifies the execution constraints (single user mode, the does the user still have the execution rights ?). Then the process or script is launched and the end of task process is executed :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH4.jpg" width="702" height="510" border="0" />
+                                                            </p>
+                                                            <p>It should be noted that other than the opening of the log file and the updating of the files linked to the launch by file, the end of task activates the next task in a group if there have not been any errors, if not the next tasks have their status set to aborted.</p>
+                                                            <p>The additional process not described above concern firstly the polling (the stat file is deleted in the FIL directory in the SERVX3 folder, if it has been created by a task that tests the server is still active), and the processing of the requests with time-out. It should be noted that a delay that is greater than the first processing delay can be defined to avoid the test on request tests to verify if they have exceeded the given delay. For example, this process being very heavy, a delay in the order of 5 minutes can be proposed (this supposes that it is acceptable to exceed by more than 5 minutes the maximum authorized delay for this task) :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH5.jpg" width="713" height="537" border="0" />
+                                                            </p>
+                                                            <p>The update of the request list can be made using external files (this is the Read the request submission files box shown in the principal server section). This process is described in the diagram below :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH6.jpg" width="717" height="537" border="0" />
+                                                            </p>
+                                                            <p>&#160;Finally, the last process present in the server execution cycle concerns the processing of recurring tasks. This is described below :</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SRV_BATCH7.jpg" width="692" height="531" border="0" />
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Managementoftimeconstraints" data-magellan-target="Managementoftimeconstraints">Management of time constraints</h2>
+                                                            <p>It is possible to define the time constraints for the launching of a task or group of tasks. These constraints are considered unique for the launch of the task. For instance:</p>
+                                                            <ul>
+                                                                <li>a task that can only be executed between 18:00 to 22:00 cannot be launched for execution at 17:00 (18:00 must be defined as the launch time).</li>
+                                                                <li>however, if following the execution of other delayed tasks as as a fact of the limited number of simultaneous tasks, the batch server is not in a position to launch the task until 22:20, it will be launched, except if it has been indicated that a delay greater than 4 hours will prevent the launch of the task in question.</li>
+                                                                <li>similarly, it is possible to indicate a task execution time-out: this time-out delay refers to the effective launch time of the task: it is used to limit the effective duration of the execution.</li>
+                                                                <li>thus, if the previous task must imperatively be terminated at 22:00, and it will not take more than one hour to execute, a maximum of 3 hours delay and 1 hour of timeout will be acceptable. If this task is programmed at 18:00, it will be terminated at 22:00 or it will have been interrupted or never launched.</li>
+                                                            </ul>
+                                                            <p>The <a href="GESABH.htm">time constraints</a> are defined by a dedicated table common to all the folders, and that are used to define the working days and the different times for the bank holidays etc. A time constrain code can be assigned to a task or to a group of tasks. It is important to note the following rules :</p>
+                                                            <ul>
+                                                                <li>the control of the time contraint&#160;for the task launched directly (by request file or by direct submission) is made as a function of the time constraint code assigned to it: the task can only be launch at the first possible time if the day allows it.</li>
+                                                                <li>if a task belongs to a group, the individual time constraints are not tested only that of the group (the group is launched conforming to the time constraint assigned to it, the tasks that it contains are then launched successively following on the successful completion of the previous task with no other time constraint control).</li>
+                                                                <li>if a task (or group of tasks) is triggered from a recurring task, the only constraint verified is the constraint linked to the <a href="GESABC.htm">exclusion calendars</a>. In fact, in this case, an execution time (or frequency) is given directly in the recurring task and no other time constraint control is made in the task or group of tasks that are contained in the recurring task.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Tablesused" data-magellan-target="Tablesused">Tables used</h2>
+                                                            <p>It should be noted that the tables concerned are all located in the supervisor folder and this folder can take various names according to the product installed : for example X3, PAYE, GX. They are therefore common to all the folders.</p>
+                                                            <table border="1" cellspacing="0" cellpadding="0" width="609" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                        <p class="c4">Table</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p class="c4">Table Title</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                        <p><a href="../MCD/ABATABT.htm">ABATABT</a> [ABA]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                        <p>Batch server (recurring tasks) - header</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                        <p><a href="../MCD/ABATABTD.htm">ABATABTD</a> [ABD]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Batch server (recurring tasks) - header</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                        <p><a href="../MCD/ABATCAL.htm">ABATCAL</a> [ABC]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                        <p>Exclusion calendar</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                        <p><a href="../MCD/ABATGRP.htm">ABATGRP</a> [ABG]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Batch server (groups)</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                        <p><a href="../MCD/ABATHOR.htm">ABATHOR</a> [ABH]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                        <p>Time constraints</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                        <p><a href="../MCD/ABATPAR.htm">ABATPAR</a> [ABP]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Batch server parameters</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                        <p><a href="../MCD/ABATRQT.htm">ABATRQT</a> [ABR]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                        <p>Requests for the batch server</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                    <td width="26%" valign="top" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                        <p><a href="../MCD/ABATTAC.htm">ABATTAC</a> [ABT]</p>
+                                                                    </td>
+                                                                    <td width="72%" valign="top" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                        <p>Batch server (tasks)</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Explanationofbatchserveroperation">Explanation of batch server operation</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Presentation">Presentation</a>
+                                                        </li>
+                                                        <li><a href="#Detailedoperation">Detailed operation</a>
+                                                        </li>
+                                                        <li><a href="#Managementoftimeconstraints">Management of time constraints</a>
+                                                        </li>
+                                                        <li><a href="#Tablesused">Tables used</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

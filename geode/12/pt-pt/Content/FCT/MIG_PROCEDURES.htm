@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Procedimento, migração, versão" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Procedimentos de migração automatizadas" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="[Supervisor]" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Procedimentos de migração automatizadas</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Procedimentosdemigraçãoautomatizadas" data-magellan-target="Procedimentosdemigraçãoautomatizadas"><span>Procedimentos de migração automatizadas</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Este documento descreve os procedimentos de migração otimizados colocadas em lugar em Sage X3 a partir da versão 6.4</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_20"></a>
+                                                            <h2 class="g1" id="Introdução" data-magellan-target="Introdução">Introdução</h2>
+                                                            <p>Até agora, o procedimento, também automatizado, lista monolítica, o que significa :</p>
+                                                            <ul>
+                                                                <li>que ela funciona em caixa negra, se lançando a partir da validação do dossier.</li>
+                                                                <li>que ela atualiza os dados das tabelas cuja estrutura foi modificada no momento da migração</li>
+                                                                <li>que ela está sequencial, cada fase sendo encadeada à precedente sem possibilidade de paralelizar certos tratamentos.</li>
+                                                                <li>que em caso de erro, não tem retoma possível, a única alternativa sendo de corrigir os dados errados e de repartir ao início do orçamento, com o risco de dever recomeçar depois o inicio N vezes a cada erro.</li>
+                                                            </ul>
+                                                            <p>O novo procedimento proposto com características seguintes :</p>
+                                                            <ul>
+                                                                <li>Ela está cortada como segue :</li>
+                                                                <ul>
+                                                                    <li>Definem-se as etapas distintas cuja ordem de desenvolvimento sequêncial está imposta (<i>Inicialização</i> de então, depois <i>Tronco Comum</i>, depois <i>Módulos</i>, e enfim <i>Pós-migraçâo</i>). As etapas <i>Módulos</i> são anexados a um módulo funcional. </li>
+                                                                    <li>Em cada etapa, define-se as fases numeradas de 1 a 9, nos quais se lista as operações unitárias de migração, nomeados procedimento (cada procedimento levam um número de ordem)</li>
+                                                                    <li>A ordem de execução dos procedimentos está sequêncial : os procedimetos da fase N na etapa P não podem ser lançados que se todos os procedimemtos anexados às fases 1 a N+1 da etapa P, e todos os procedimentos anexados às etapas 1 a P-1, se existem, são terminadas sem erro.</li>
+                                                                    <li>Os procedimetos anexados a uma mesma etapa e fase são paralelizados. Elas portam um rang único que define a ordem de lançamento (esta informação está modificável), mas em função dos parâmetros de lançamento, várias tarefas de uma mesma etapa e fase são executáveis simultãneamente.</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p />
+                                                            <ul>
+                                                                <li>Ela permite acrescentar os procedimentos específicos e de os sequênciar facilmente Um <a href="MIG_TRT.htm">anexo técnico</a>  descrito como programador de novos procedimentos. </li>
+                                                                <li>Ela trabalha por cópia de dados mais cedo que por atualizações. Isto permite de estar mais eficaz nas operações de base de dados :</li>
+                                                                <ul>
+                                                                    <li>pela criação de uma tabela destino que não será indexada que em fim de cópia, o que é muito mais eficaz.</li>
+                                                                    <li>por utilização de inserções agrupadas mais rápidos.</li>
+                                                                    <li>pela possibilidade de poder recomeçar um procedimento em suprimido os dados já transcodificados em caso de erro na execução.</li>
+                                                                    <li>pela posibilidade de interromper temporáriamente um procedimento em tendo os pontos de retoma para não tratar que os dados restantes. </li>
+                                                                    <li>pela possibilidade de diferir se necessário a cópia de dados antigos cuja ausência não entraverá uma retoma em modo degradado num primeiro tempo.</li>
+                                                                </ul>
+                                                                <li>Ela está baseada sobre um monitor de encadeamento, que permite visualizar as fazes e sua execução.</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Principaisetapasdamigração" data-magellan-target="Principaisetapasdamigração">Principais etapas da migração</h2>
+                                                            <p>As etapas a seguir, quando se deseja migrar um dossier para passar de uma versão maior (a versão 140 ou a versão 5) versus a versão maior 6, são as seguintes : </p>
+                                                            <ul>
+                                                                <li>Os controlos pré-migração no dossier de origem. Estes controlos podem ser realizados sem que exploração de ERP não seja parada.</li>
+                                                                <li>A instalação da versão 6 num ambiente dedicado.</li>
+                                                                <li>A extração dos dados a migrar do dossier de origem, seguimento da reintegração destes dados (a exploração deve então estar parada e retomará quando a migração será terminada). A extração dos dados se fará ao formato "prato" para os pequenos dossiers, e pela utilização de utilitários de extração de dados desde que a volumetria está mais consequente.</li>
+                                                                <li>A revalidação do dossier no ambiente V6. Esta revalidação pode ser segmentada em várias etapas, pelo meio da parametrizaação de planos de migração. Se o dossier não está muito volumoso, a definição de planos de migração não é forçosamente útil. Ela está desde que se deseja paralelizar os tratamentos de arranque (para benefiicar da potência de um servidor multi-processador) e controlar o seu encadeamento em tendo os pontos de retoma.</li>
+                                                                <li>Os controlos pós-migração Trata-se essencialmente da verificação e de adaptação de parametrizações.</li>
+                                                            </ul>
+                                                            <p>A seguida da documentação descrita no conjunto das etapas.</p>
+                                                            <h5>Nota relativa aos dossiers tendo colocado em obra a migração Sage Integral</h5>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEWARNING" alt="SEEWARNING" keeps="true" realloc="SEEWARNING" />&#160;No momento da migração do dossier em versão 6 e seguintes, a opção ao SMI (Migração Integral) será desativada, e as tabelas XI suprimidas.<br />É então imperativo que o processo de migração Integral seja totalmente finalizado em V5 antes de proceder à migração em V6 do seu dossier.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="Etapasprémigração" data-magellan-target="Etapasprémigração">Etapas pré-migração</h2>
+                                                            <p>As etapas de pré-migração são lançadas sobre o ambiente de partida (versão 140 ou versão 5), e podem ser expostas no tempo, tendo a migração a propriamente falar. Elas não necessitam com efeito de paragem de exploração.</p>
+                                                            <p>Elas são decompostas como segue :</p>
+                                                            <ul>
+                                                                <li>verificar-se-á então que o dossier de origem está ao nível de patch mínima necessária para poder empreender uma migração. Este nível, que pode ser afixada via o menu<i>? &gt; A propósito</i>, deve estar ao menos:</li>
+                                                                <ul>
+                                                                    <li>o patch 25 para uma versão 140</li>
+                                                                    <li>o patch 10 para uma versão 5</li>
+                                                                </ul>
+                                                                <li>verificar-se-á em seguida os pré-requisitos funcionais ao tratamento de migração. Estes pré-requisitos são descritos na <a href="../INSTALLATION/ADX_X3_MIGRATION_6X.htm#MIS_30_10">documentação dedicada</a>. </li>
+                                                                <li>Poder-se-á em seguida desencadear os procedimetos automatizados sobre o dossier de origem, pelo meio de tratamemtos cujo nome começa por UU, que se lançará pela <a href="EXETRT.htm"><span style="color: #0066cc;">função dedicada</span></a>. Estes tratamentos são fornecidos a pedido segundo a versão (140 e V5) como um patch particular dedicado à migração. Dois tipos de procedimentos são entregues :</li>
+                                                                <ul>
+                                                                    <li>então, os procedimentos de controlo dos dados no dossier de origem. O resultado deste lançamento pode estar colocado em evidência os erros ou incoerências que falta imperativamente corrigir antes de lançar a migração a propriamente falar. Esta fase de controlo pode ser antecipada várias semanas antes a migração, afim de deixar o tempo de corrigir os dados, mas falta relançar para verificar que tudo está bem correcto justo antes o arranque. Estes procedimentos são listados no <a href="../FCT/TRTMIG_X3.htm#MIS_20_10"><span style="color: #0066cc;">documento correspondente</span></a>. </li>
+                                                                    <li>em seguida, dos procedimentos de alimentação opcionais, que revalidam certas tabelas em lhe acrescentando os campos suplementares, depois os alimentando. Como os procedimentos são independente, elas podem ser tambem planificadas sobre várias semanas antes a migração (a exploração pode retomar desde que reacrescenta os campos está feito). O objetivo destes procedimentos está de acelerar de maneira notável as etapas de migração a propriamente falar. Mas o facto de não lançar não compromete o funcionamento dos procedimentos de migração. Estes procedimentos são listados no <a href="../FCT/TRTMIG_X3.htm#MIS_30_10"><span style="color: #0066cc;">documento correspondente</span></a>. </li>
+                                                                </ul>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_50_10"></a>
+                                                            <h2 class="g1" id="Planodemigração" data-magellan-target="Planodemigração">Plano de migração</h2>
+                                                            <p>A preparação deste ambiente se faz pela instalação da solução V6, depois integração de&#160;todas as patches existentes&#160;no dossier X3.<br /><b><img src="../Resources/Images/SEEWARNING" alt="SEEWARNING" keeps="true" realloc="SEEWARNING" /></b>&#160;<span style="color: #7f0000;">Não se pode e não se deve instalar uma solução V6 sobre uma solução V140 ou V5.</span></p>
+                                                            <p><span style="color: #bf7f00;"></span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_60_10"></a>
+                                                            <h2 class="g1" id="Desenvolvimentodasoperaçõesdeumplanodemigração" data-magellan-target="Desenvolvimentodasoperaçõesdeumplanodemigração">Desenvolvimento das operações de um plano de migração.</h2>
+                                                            <p>A terceira etapa corresponde ao início da troca A este estado, a exploração operacional da solução deve estar parada : ela retomará quando a migração será terminada</p>
+                                                            <p>Pode-se distinguir 4 fases nesta etapa :</p>
+                                                            <ul>
+                                                                <li>extração dos dados do dossier a migrar :</li>
+                                                                <ul>
+                                                                    <li>por extração dos dados ao formato "liso" para os pequenos dossiers. Para tal, utilizar-se-á a função de <a href="DOSEXTRA.htm">extração</a> que cria as fichas no directório SVG por defeito.</li>
+                                                                    <li>por extração de base de dados desde que a volumetria está mais consequente (o formato depende então da base e do utilitário utilizado).</li>
+                                                                </ul>
+                                                                <li>cópia dos ficheiros do dossier a migrar na solução V6,</li>
+                                                                <li>Criação de um dossier cópia da arborescência do dossier no novo ambiente da versão 6, e importa os dados exportados no novo ambiente,</li>
+                                                                <li>criação da ficha dossier no ambiente V6. Se importa pela consola, a ficha dossier está criada automaticamente, mas se importa foi feito pelos utilitários de base de dados, falta criar a ficha dossier manualmente após importação.</li>
+                                                            </ul>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEINFO" alt="SEEINFO" keeps="true" realloc="SEEINFO" />&#160;<span style="color: #bf7f00;">É agora possível de reagrupar estas etapas numa única. Falta para tal utilizar o assitente de </span><a href="../CONSOLE/IMPORT.htm#MIS_40_10"><span style="color: #0066cc;">importação distante</span></a> <span style="color: #bf7f00;">proposta na consola de configuração SAFE X3. </span></p><span style="color: #bf7f00;"><span style="color: #000000;"><p>Se utiliza a função de importação consola, o procedimento é o seguinte :</p><ul><li>lançar a consola,</li><li>se colocar sobre a solução Sage X3 V6 desejada e afixar os ecrãs "Dossiers",</li><li>clicar sobre o botão "import" (na barra de ferramentas de ecrã), uma janela aparece,</li><li>escolher o nome de dossier a importar, o diretório contendo os dados a importar (SVG se este diretório foi utilizado para realizar a extração),preencher os outros campos,</li><li>lançar a importação pelo botão OK.</li></ul></span></span>
+                                                            <p><span style="color: #bf7f00;"><span style="color: #000000;">Se for caso disso, ajustar-se-á em seguida os valores códigos de atividade na ficha dossier, por exemplo para colocar em obra novas funcionalidades controladas por códigos de actividades novos. </span></span><span style="color: #bf7f00;"><span style="color: #000000;">A modificação da ficha dossier, ou a sua criação, se fará em se conectando no dossier "supervisor" (X3 no caso de Sage X3).</span></span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                            <h2 class="g1" id="Expurgofinaldastabelasdemovimento" data-magellan-target="Expurgofinaldastabelasdemovimento">Expurgo final das tabelas de movimento</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_70_20">Grandes etapas da revalidação</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_70_30">Utilização de planos de migração</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_70_40">Desenvolvimento das operações de um plano de migração.</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_70_50">Expurgo final das tabelas de movimento</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_70_60">Exemplo se sequênciamento sobre a migração dos fluxos.</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>A revalidação de dossier vai transformar a estrutura do dicionário X3, depois as tabelas de parametrização, depois as tabelas de dados, da versão 140 ou 5 para conduzir ao nível da V6, em transferindo à passagem os dados. Ela se desencadeia por apoio do botão <i>Validação </i> depois a gestão de dossiers.</p>
+                                                            <p>Ela realiza a migração supervisor e funcionalidade do dossier, em comparando o dicionário da nova versão e o dicionário da versão a migrar.</p><a id="MIS_70_20"></a>
+                                                            <h2 class="g1" id="Grandesetapasdarevalidação" data-magellan-target="Grandesetapasdarevalidação">Grandes etapas da revalidação</h2>
+                                                            <p>A revalidação de dossier encadeia as etapas seguintes sobre o dossier a migrar :</p>
+                                                            <ul>
+                                                                <li>expurgo de certas tabelas temporárias ou de acumulado cuja reconstituição será feita nas etapas posteriores. As tabelas supervisor afetadas por este expurgo são as tabelas seguintes :<br />&#160;&#160;&#160; ALSTRD<br />&#160;&#160;&#160; ALISTER<br />&#160;&#160;&#160; AWRKLOG<br />&#160;&#160;&#160; AWRKLOGIND<br />&#160;&#160;&#160; AWRKLOGMES<br />&#160;&#160;&#160; ATMPTRA<br />Outras tabelas temporárias funcionais são igualmente expurgadas (no caso de Sage X3, as tabelas são : LABELPRN, PRTSCRWRK, BALANCE, BALANA, GLCONSO, BALCONSO, GAJOUSTA, FUP, FUPTOT, BATCH, TMPEXPENSE).</li>
+                                                                <li>migração de cobertura, quer dizer do dicionário de dados e das tabelas do supervisor necessários ao funcionamento de base (conexão, gestão dos utilizadores, ambiente de desenvolvimento e de parametrização mínima). A partir do momento onde esta migração é feita, uma conexão está teoricamente possível, mesmo se as tabelas contendo os dados aplicativos de fluxo são por momentos vazio.</li>
+                                                                <li>migração funcional : Para cada tabela cuja estrutura altera, o procedimento vai proceder às alterações necessárias, se for o caso disso em dando os valores por defeito idóneos, por procedimentos encadeados em etapas e em fases. É a parte longa da migração, aquela que depende do volume de dados a migrar. </li>
+                                                                <li>tratamento de pós-migração (são essencialmente res sincronizações de tabelas de acumulados). Certas destas etapas podem ser diferentes, e exploração retomar, ao preço de funcionamento degradado do software na fase intermédia. Elas deverão ter sido passadas para que a migração seja considerada como terminada.</li>
+                                                                <li>supressão final das tabelas temporárias. Esta fase é manual, poderá, por razões de segurança, ser diferente tanto que não está absolutamente que sobre a totalidade dos dados de fluxo foram corretamente migrados.</li>
+                                                            </ul><a id="MIS_70_30"></a>
+                                                            <h2 class="g1" id="Utilizaçãodeplanosdemigração" data-magellan-target="Utilizaçãodeplanosdemigração">Utilização de planos de migração</h2>
+                                                            <p>Esta migração funcional pode estar muito longa quando o dossier é muito volumoso. Por outro lado, certas tabelas atualizadas são potencialmente independentes, e poderão então ser migradas em paralelo, tirando assim partido das arquitecturas multi-processadores para acelerar esta fase. </p>
+                                                            <p>Para permitir de sequenciar ao melhor esta migração, poder-se-á definir AVANT de lançar a validação de dados um <a href="AMOULIN.htm"><span style="color: #0066cc;">plano de migração</span></a>&#160;personalizada. Este plano de migração está descrito pela função nomeada <a href="GESAM3.htm"><span style="color: #0066cc;">procedimento de migração</span></a>&#160;(que se chamará depois o dossier supervisor). Esta função permite definir as etapas, fases e procedimentos da migração funcional e supervisor. Mais precisamente, um plano de migração corresponde a uma definição dos parâmetros precisos da migração (dossier afetado, número de procedimentos podendo ser paralelizados, política de encadeamento das tarefas, lista de execução). Um plano de migração está criado por recópia de conjunto dos elementos ativos do porcedimento de migração. Este conjunto completo de procedimentos está fornecido em standard, permitindo de encadear de maneira exaustiva os tratamemtos realizados pelo software na fase de migração. A descrição sucinta dos procedimentos está descrita num <a href="../FCT/TRTMIG_X3.htm#MIS_40_10"><span style="color: #0066cc;">documento dedicado</span></a>.</p>
+                                                            <p>É possível , nesta lista, de definir os procedimentos específicos médio no registo de tratamentos complementares conforme à metodologia definida no <a href="MIG_TRT.htm">anexo seguinte</a>. Estes procedimentos específicos serão inseridos entre os procedimetos standard de maneira apropriada.</p>
+                                                            <p>Desde logo que um plano de migração foi definido, pode-se, depois este plano, proceder ao seu lançamento, à sua interrupção temporária, na retoma de sua execução, na visualização do seu estado de avanço.</p>
+                                                            <p>Quando um dossier é um dossier de uma volumetria razoável, cuja migração não necessita de planificação particular, é inútil de criar um plano de migração. Com efeito, na ausência de plano de migração definido, a operação de validação do servidor vai criar automaticamente um plano de migração. Este plano de migração terá por código do dossier, exceto se este código correspone já a um plano de migração que não esteja no estatuto <i>Em espera</i>. Se isso é o caso, o plano será criado com um código pré-definido sob a forma MIG<i>mmdd</i>M<i>##</i>, <i>mm </i>e <i>dd </i> sendo os números do mês e do dia de lançamento,  <i>##</i> sendo um número sequencial.</p>
+                                                            <p>Por contra, se deseja personalizar as opções de encadeamento de migração, poderá criar um plano de migração cujo código corresponde obrigatóriamente ao nome do dossier. Esta criação será feita no dossier supervisor <u>antes lançamento da validação de dossier</u>. Desde logo que um tal plano de migração existe com o estatuto <i>Em espera</i>, será utilizado pela migração funcional do dossier.</p>
+                                                            <p>Nota : Um plano criado com um nome diferente do nome a migrar, não será jamais utilizado pelos automatismos da validação do dossier. Um tal plano está reservado para um lançamento manual. </p><a id="MIS_70_40"></a>
+                                                            <h2 class="g1" id="Desenvolvimentodasoperaçõesdeumplanodemigração1" data-magellan-target="Desenvolvimentodasoperaçõesdeumplanodemigração1">Desenvolvimento das operações de um plano de migração.</h2>
+                                                            <p>Um plano de migração está caracterizado por um código dossier, e 4 parâmetros :</p>
+                                                            <ul>
+                                                                <li>um intitulado indicativo</li>
+                                                                <li>o número de procedimentos susceptíveis de serem lançados simultâneamente Este número constitui um máximo possível Apenas os procedimentos paralelizados serão lançados simultâneamente. Atenção, este número está limitado pelo número de tarefas batch susceptíveis de serem executados simultâneamento (definidos na função de <a href="ABATPAR.htm">parâmetrização do servidor batch</a>),</li>
+                                                                <li>Um indicador especificando se os procedimentos devem ser lançados automaticamente em se encadeando segundo a lógica definida pelo plano. Se não é o caso, o encedeamento dos procedimentos descritos no plano deverá ser feito manualmente.</li>
+                                                                <li>Um indicador assinalando se os procedimentos <i>pós-migração</i> devem ser encadeados na migração ela mesmo. Estas operações são caracterizadas a seguir.</li>
+                                                            </ul>
+                                                            <p>Se o plano de migração está criado por defeito na revalidação do dossier, é criado com os valores :</p>
+                                                            <ul>
+                                                                <li><i>Número de tarefas simultâneas</i>ao valor do parâmetro NBRTACSIM ou (se não existe) a 2<i>,</i></li>
+                                                                <li><i>encadeamento automático</i> a <i>Sim,</i></li>
+                                                                <li><i>Operações pós-migração</i> a <i>Sim</i>. </li>
+                                                            </ul>
+                                                            <p>Será sempre permitido ao utilizador de modificar estes valores depois a função de controlo do plano de migração.</p>
+                                                            <p>No ecrã associado ao plano de migração, encontra-se a lista ordenada dos porcedimentos do plano. Botões lhe permitem de controlar globlamente a execução do plano :</p>
+                                                            <ul>
+                                                                <li>em lançado sua execução.</li>
+                                                                <li>em suspendendo o lançamento de novos procedimentos</li>
+                                                                <li>em interrompendo todos os procedimentos em curso</li>
+                                                                <li>em lançado sua execução.</li>
+                                                            </ul>
+                                                            <p>Cada linha do plano materializado uma etapa de execução, caracterizada por :</p>
+                                                            <ul>
+                                                                <li>O código do procedimento, e seu intitulado.</li>
+                                                                <li>a etapa e a fase cujo faz parte o procedimento.</li>
+                                                                <li>O módulo funcional ao qual está afixado o procedimento.</li>
+                                                                <li>A fila de execução.</li>
+                                                            </ul>
+                                                            <p>As etapas da migração permitem cortar a migração funcional. Tanto que ao menos um procedimemnto ligado a uma dada fase não está terminada, as fases seguintes não podem ser lançadas. As fases são anexadas às etapas seguintes :</p>
+                                                            <ul>
+                                                                <li>A etapa de inicialização é um etapa preliminar que se executa em tudo primeiro. Ela não está utilizada a este dia e permite a procedimentos específicos de se executar antes a migração ela mesmo.</li>
+                                                                <li>A etapa de tronco comum permite de migrar os dados utilizados pelas etapas seguintes.</li>
+                                                                <li>A etapa <i>módulo</i> permite realizar as migrações ligadas a cada módulo funcional. Uma operação desta etapa está associada a um módulo funcional : esta associação está puramente documentário, e não constrange a execução. Assim, das migrações de dados ligados a módulos diferentes podem ser executado em paralelo se eles estão na mesma fase. O seu lançamento se fará na ordem dos módulos, depois as filas de execução.</li>
+                                                                <li>A etapa <i>pós-migração</i> permite realizar as operações de sincronização ou das atualizações secundárias cuja execução não é obrigatória para recomeçar a funcionar em modo menos degradado. Ela pode ser utilizada por exemplo para diferir as migrações de dados antigos. Falta todavia notar que, mesmo se ela não é obrigatória para retomar a exploração, ela deverá mesmo assim ser realizada posteriormente para que a lista de um dossier seja considerado como completamente migrado. Estas operações pós-migração são lançadas por defeito num plano de migração, mas podem ser desengatadas. Elas estão listadas num <a href="../FCT/TRTMIG_X3.htm#MIS_50_10">parágrafo dedicado</a> do anexo descrevendo os procedimentos de migração</li>
+                                                            </ul>
+                                                            <p>Numa etapa, encontram-se os procedimentos unitários organizados em fases e filas :</p>
+                                                            <ul>
+                                                                <li>Dois procedimentos definidos na mesma fase são reputados ser executáveis simultâneamente, e devem então ser independentes. A afetação de um procedimento standard a uma fase dada não pode ser alterada. Tanto que todos os procedimentos de uma fase não são terminadas, a fase seguintes não pode ser lançada.</li>
+                                                                <li>A ordem de fila está simplemente uma ordem preferencial de lançamento, mas pode ser alterado, compreendido por procedimentos standard, no momento da definição do plano.</li>
+                                                            </ul><a id="MIS_70_50"></a>
+                                                            <h2 class="g1" id="Expurgofinaldastabelasdemovimento1" data-magellan-target="Expurgofinaldastabelasdemovimento1">Expurgo final das tabelas de movimento</h2>
+                                                            <p>Esta fase é manual Ela será desencadeada pela execução do tratamento TRTMIGDEL depois a função de execução de tratamento. Sua execução provoca a supressão de todas as tabelas levando o código atividade MIG.</p>
+                                                            <p><u>Como esta fase é irreversível, importa de ser bem assegurada previamente que os tratamentos de migração se são bem desenvolvidos.</u>
+                                                            </p>
+                                                            <p>Na medida onde falta guardar as tabelas temporárias no dossier não constitui em nada um obstáculo a retoma normal de exploração (isto supõe bem entendido de dispor de suficiente espaço em disco), tudo a fazer permitido de guardar estas tabelas em linha durante algumas semanas de exploração. Poderá assim, em caso de problema reencontrado algumas semanas após a migração, dispor dados de origem com fins de comparação ou de análise.</p><a id="MIS_70_60"></a>
+                                                            <h2 class="g1" id="Exemplosesequênciamentosobreamigraçãodosfluxos" data-magellan-target="Exemplosesequênciamentosobreamigraçãodosfluxos">Exemplo se sequênciamento sobre a migração dos fluxos.</h2>
+                                                            <p>Sejam as operações seguuintes :</p>
+                                                            <ul>
+                                                                <li>na etapa inicialização, 7 operações :</li>
+                                                                <ul>
+                                                                    <li>IN1, IN2 na fase 1 (de filas 3 e 7),</li>
+                                                                    <li>IN3 e IN4, IN5 e IN6 na fase 2 (e de filas sucessivas 1 3, 5 9),</li>
+                                                                    <li>IN7 na fase 3,</li>
+                                                                </ul>
+                                                                <li>na etapa tronco comum, 6 operações :</li>
+                                                                <ul>
+                                                                    <li>TC1, TC2, TC3, todas as 3 na fase 1, com as filas 3, 6, 9,</li>
+                                                                    <li>TC4 na fase 2,</li>
+                                                                    <li>TC5 e TC6 na fase 3,</li>
+                                                                </ul>
+                                                                <li>na etapa Módulo, 5 operações :</li>
+                                                                <ul>
+                                                                    <li>a etapa MO1, no módulo <i>Contabilidade, </i> com a fase 2 e a fila 1,</li>
+                                                                    <li>as etapas MO2 e MO3, no módulo <i>Stocks</i>, nas fases respetivas 1 e 2, com as filas respectivas 1 e 2,</li>
+                                                                    <li>as etapas MO4 e MO5 , no módulo <i>Vendas</i>, com as fases respetivas 1 e 2, com filas 1,</li>
+                                                                    <li>as etapas MO6 e MO7 , no módulo <i>Compras</i>, com as fases respetivas 1 e 5, com filas 1,</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>Supomos ao presente que o plano de migração seja lançado com um encadeamento das tarefas, e um número máximo de 2 procedimentos em volta simultâneamente. O encadeamente poderá então ser o seguinte :</p>
+                                                            <ul>
+                                                                <li>Os procedimentos IN1 e IN2 são lançados nesta ordem.</li>
+                                                                <li>Supomos que o procedimento IN2 se termina o primeiro. Tanto que o procedimento IN1 não está terminado, nenhum outro procedimento será lançado, porque os procedimentos estão numa fase onde uma etapa de fila superior.</li>
+                                                                <li>quando o procedimento IN1 será acabado. os procedimentos IN3 e IN4 serão lançados na ordem.</li>
+                                                                <li>Se o procedimento IN4 se termina antes o procedimento IN3, o procedimento IN5 será lançado Se ela termina antes que o procedimento IN3 esteja terminado, o procedimento IN6 será lançado e voltará ao mesmo tempo que o procedimento IN3 continua.</li>
+                                                                <li>Quando os procedimentos IN3 e IN6 serão terminados todos os dois (e apenas a este momento), a etapa de inicialização será terminada.</li>
+                                                                <li>Os procedimentos da primeira fase da etapa <i>Tronco comum</i> poderão então se lançar : Então os procedimentos TC1 e TC2, depois TC3, que se lançará desde que um dos dois procedimentos procedentes terá terminado. Atender-se-á que os três procedimentos TC1, TC2, TC3 sejam todos terminados para lançar TC4, que retornará apenas poisque não há outro nesta fase. Em seguida, lançar-se-á TC5 e TC6 que voltarão em paralelo.</li>
+                                                                <li>Quando os procedimentos TC5 e TC6 serão todos os dois terminados, poder-se-á passar às tarefas da etapa módulos.</li>
+                                                                <li>Lançar-se-á então os procedimentos MO2, depois MO6 (na ordem, estes procedimento girando em paralelo); depois, desde que um dos&#160;procedimentos MO2 e MO6 será terminado,&#160;&#160;o procedimemto MO4, que é o seguinte na ordem fase/módulo/fila, será lançada em paralelo com aqueles dos procedimentos MO2 e MO6 que não está terminada.</li>
+                                                                <li>Entender-se-á em seguida que os procedimentos precedentes sejam finitos, depois lançar-se-á os procedimentos MO1 e MO3, procedimentos da fase 2. Depois enterder-se-á a todas as tarefas precedentes sejam terminadas.</li>
+                                                                <li>Lançar-se-á então MO7, que é a única na fase 5.</li>
+                                                            </ul>
+                                                            <p />
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_80_10"></a>
+                                                            <h2 class="g1" id="Exemplosesequênciamentosobreamigraçãodosfluxos1" data-magellan-target="Exemplosesequênciamentosobreamigraçãodosfluxos1">Exemplo se sequênciamento sobre a migração dos fluxos.</h2>
+                                                            <p>Desde logo que a revalidaação do dossier se está bem terminada, o dossier está acessível sem restrição pela sua utilização (pode estar de maneira restrita se certas operações pós-migração foram deferidas).</p>
+                                                            <p>Resta então a verificar e a adptar certas parametrizações funcionais. Isto está descrito no documento descrevento os  <a href="../INSTALLATION/ADX_X3_MIGRATION_6X.htm#MIS_40_10">pós-requisitos funcionais</a>.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Procedimentosdemigra%C3%A7%C3%A3oautomatizadas">Procedimentos de migração automatizadas</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introdu%C3%A7%C3%A3o">Introdução</a>
+                                                        </li>
+                                                        <li><a href="#Principaisetapasdamigra%C3%A7%C3%A3o">Principais etapas da migração</a>
+                                                        </li>
+                                                        <li><a href="#Etapaspr%C3%A9migra%C3%A7%C3%A3o">Etapas pré-migração</a>
+                                                        </li>
+                                                        <li><a href="#Planodemigra%C3%A7%C3%A3o">Plano de migração</a>
+                                                        </li>
+                                                        <li><a href="#Desenvolvimentodasopera%C3%A7%C3%B5esdeumplanodemigra%C3%A7%C3%A3o">Desenvolvimento das operações de um plano de migração.</a>
+                                                        </li>
+                                                        <li><a href="#Expurgofinaldastabelasdemovimento">Expurgo final das tabelas de movimento</a>
+                                                        </li>
+                                                        <li><a href="#Grandesetapasdarevalida%C3%A7%C3%A3o">Grandes etapas da revalidação</a>
+                                                        </li>
+                                                        <li><a href="#Utiliza%C3%A7%C3%A3odeplanosdemigra%C3%A7%C3%A3o">Utilização de planos de migração</a>
+                                                        </li>
+                                                        <li><a href="#Desenvolvimentodasopera%C3%A7%C3%B5esdeumplanodemigra%C3%A7%C3%A3o1">Desenvolvimento das operações de um plano de migração.</a>
+                                                        </li>
+                                                        <li><a href="#Expurgofinaldastabelasdemovimento1">Expurgo final das tabelas de movimento</a>
+                                                        </li>
+                                                        <li><a href="#Exemplosesequ%C3%AAnciamentosobreamigra%C3%A7%C3%A3odosfluxos">Exemplo se sequênciamento sobre a migração dos fluxos.</a>
+                                                        </li>
+                                                        <li><a href="#Exemplosesequ%C3%AAnciamentosobreamigra%C3%A7%C3%A3odosfluxos1">Exemplo se sequênciamento sobre a migração dos fluxos.</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janeiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

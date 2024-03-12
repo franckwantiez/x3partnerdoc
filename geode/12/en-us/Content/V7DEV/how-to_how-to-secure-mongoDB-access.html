@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Securing MongoDB Access" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Securing MongoDB Access
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/Images/doc.css" rel="stylesheet" type="text/css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript"><![CDATA[
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+]]></script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Change language">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Change language">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="SecuringMongoDBAccess" data-magellan-target="SecuringMongoDBAccess"> Securing MongoDB Access
+</h1>
+                                                <h2 id="Abstract" data-magellan-target="Abstract">Abstract</h2>
+                                                <p>This document describes how to secure MongoDB access when the MongoDB database server is installed on the same host as the Syracuse Web Server. It also explains the principles to secure access through firewalls in case MongoDB and Syracuse are not running on the same host.</p>
+                                                <h2 id="KnownMongoDBaccesssecurityissueinSageX3WarehousingV7andU8" data-magellan-target="KnownMongoDBaccesssecurityissueinSageX3WarehousingV7andU8">Known MongoDB access security issue in Sage X3 Warehousing V7 and U8</h2>
+                                                <p>MongoDB does not use a login/password or a certificate to connect to Syracuse in Sage X3 Warehousing V7/U8. By default, any Mongo client on the network can connect to MongoDB.</p>
+                                                <p>You can secure MongoDB database access using networking tools:</p>
+                                                <ul>
+                                                    <li>By restricting the network interface that binds to the loopback network interface (in case the MongoDB server is installed on the same machine as the Syracuse Web server),</li>
+                                                    <li>By using firewalls (in case MongoDB is installed on a different machine than the Syracuse Web server, or in the case of multiple MongoDB and/or Syracuse instances on multiple machines).</li>
+                                                </ul>
+                                                <p>From U9 onward, you have the option to create a certificate during the installation to secure MongoDB access. Any client (Syracuse, Mongo, Robomongo) has to use this certificate to be able to connect to MongoDB.</p>
+                                                <p>However, you can still use the method described above:</p>
+                                                <ul>
+                                                    <li>If you did not set up a certificate,</li>
+                                                    <li>If you want to add extra security even when a certificate is used.</li>
+                                                </ul>
+                                                <h2 id="BindingMongoDBtotheloopbacknetworkinterfaceSingleserverinstallation" data-magellan-target="BindingMongoDBtotheloopbacknetworkinterfaceSingleserverinstallation">Binding MongoDB to the loopback network interface - Single-server installation</h2>
+                                                <p>This section applies to configurations where MongoDB and Syracuse are hosted on the same physical or virtual machine. This is the case for most Sage X3 Warehousing installations.</p>
+                                                <p>You have to configure the Syracuse Web Server so that all its network connections to the MongoDB server use the loopback pseudo network card. This is done by using "localhost" as the host name or "127.0.0.1" as the IP address.</p>
+                                                <p>Once these parameters have been changed at the Syracuse level, you can change the MongoDB server settings so that the server only listens to the loopback pseudo-NIC, and does not reply to connections coming from any other machine.</p>
+                                                <h2 id="ChangingtheSyracuseconfiguration" data-magellan-target="ChangingtheSyracuseconfiguration">Changing the Syracuse configuration</h2>
+                                                <p>The operations listed below have to be performed before changing the MongoDB configuration.</p>
+                                                <p><b>Note:</b> If you have installed Sage X3 Warehousing (ERP / HRM) V7 or Sage X3 Warehousing ERP U8 using "localhost" as the host name for the MongoDB server, this step is not necessary. Follow the procedure to double-check your configuration.</p>
+                                                <h2 id="SyracuseAdministrationEndpointdatabaseparametersmodification" data-magellan-target="SyracuseAdministrationEndpointdatabaseparametersmodification">Syracuse Administration - Endpoint database parameters modification</h2>
+                                                <p><b>Note:</b> This section applies to V7 and U8.</p>
+                                                <ol>
+                                                    <li value="1">Log in to Sage X3 Warehousing through the Syracuse Web Server from an internet browser.<br />
+Use the account of a member of the Administrators group (for example, "admin").</li>
+                                                    <li value="2">Go to <b>Administration &gt; Endpoints &gt; Endpoints</b>.<br /><img src="../Resources/Images/images_endpoints_list.jpg" /></li>
+                                                    <li value="3">Click the Syracuse administration endpoint to load the record, and click <b>Edit</b>.</li>
+                                                    <li value="4">Make sure <b>Use local database settings</b> is selected. If not, select it.<br /><img src="../Resources/Images/images_local_db_settings.jpg" /><br />
+It tells the Syracuse server to use the nodelocal.js file to retrieve MongoDB access definitions, instead of the host name defined in this record.<br /><b>Note:</b> Alternatively, the <b>Database host</b> field can be updated to "localhost".</li>
+                                                    <li value="5">Save the settings.</li>
+                                                    <li value="6">Close the session.</li>
+                                                </ol>
+                                                <h2 id="ChangingtheSyracuseWebServerconfigurationfilenodelocaljs" data-magellan-target="ChangingtheSyracuseWebServerconfigurationfilenodelocaljs">Changing the Syracuse Web Server configuration file (nodelocal.js)</h2>
+                                                <ol>
+                                                    <li value="1">Browse to the root directory of the Syracuse Web Server.</li>
+                                                    <li value="2">Go to <i>syracuse\bin</i> (Windows) or <i>syracuse/bin</i> (Linux).</li>
+                                                    <li value="3">Locate nodelocal.js, and make a backup copy of it.</li>
+                                                    <li value="4">Edit nodelocal.js, and locate property <code>hostname</code>.</li>
+                                                    <li value="5">Change the current server name to "localhost".<br />
+Before:<br /><img src="../Resources/Images/images_nodelocal_before.jpg" /><br />
+After:<br /><img src="../Resources/Images/images_nodelocal_after.jpg" /></li>
+                                                    <li value="6">Save the changes.<br /><b>Note:</b> On Windows servers, you may have to run the text editor as Administrator.</li>
+                                                </ol>
+                                                <h3><a id="stop-syracuse">Stopping the Syracuse Web Server</a>
+                                                </h3>
+                                                <p>After editing nodelocal.js, you must restart the Syracuse Web Server for your changes to be taken into account. This has to be done within a planned application maintenance window. Sage X3 Warehousing accesses will be stopped for interactive users, but batch tasks will continue to run, as will Web Services using the Classic Java Web Services / ADC server.</p>
+                                                <p>We suggest that you stop the Syracuse Web Server without restarting it immediately. Restart it after updating the MongoDB server configuration.</p>
+                                                <p>To stop the Syracuse Web Server:</p>
+                                                <ol>
+                                                    <li value="1">(On Windows) Using an account belonging to the local Administrators group of the server, stop and restart the "Agent_Sage_Syracuse_-_&lt;<i>NODENAME</i>&gt;" service, where &lt;<i>NODENAME</i>&gt; is the cluster/node name that was set up during the installation ("NODE0" by default). You can do so:
+<ul><li>From the Windows Services console.<br /><img src="../Resources/Images/images_agent_syracuse.jpg" /></li><li>From the command interpreter (cmd).<br /><code>NET STOP Agent_Sage_Syracuse_-_&lt;NODENAME&gt;</code></li></ul></li>
+                                                    <li value="2">(On Linux - RedHat Enterprise Linux 6 or Oracle Enterprise Linux 6):
+<ol style="list-style-type: lower-alpha;"><li value="1">Log in as "root" or get root privileges using <code>su</code> or <code>sudo</code></li><li value="2">Run the following command:
+<pre xml:space="preserve">initctl stop sagesyracuse-agent-&lt;nodename&gt;</pre>
+Where <code>nodename</code> is the cluster/node name of the Syracuse instance that was set up during the installation.<br />
+The default value is "node0". By default, the command would be:
+<pre xml:space="preserve">initctl stop sagesyracuse-agent-node0</pre>
+If you do not remember the cluster/node name, you can get this information by running the following command:
+<pre xml:space="preserve">ls /etc/init/sagesyragent.conf</pre>
+Use the file name found (without the .conf extension) for the <code>initctl</code> command.</li></ol></li>
+                                                </ol>
+                                                <h2 id="ChangingtheMongoDBconfiguration" data-magellan-target="ChangingtheMongoDBconfiguration">Changing the MongoDB configuration</h2>
+                                                <h2 id="OnSageX3WarehousingV7" data-magellan-target="OnSageX3WarehousingV7">On Sage X3 Warehousing V7</h2>
+                                                <p>MongoDB is not packaged on the Sage X3 Warehousing V7 DVD. You have to download version 2.4.x from <a href="https://www.mongodb.com/">www.mongodb.com</a>, and then install and configure it by yourself. Make sure you know the configuration file name and location.</p>
+                                                <p>On Linux, you have to either download it from <a href="https://www.mongodb.com/">www.mongodb.com</a>, or from the MongoDB distribution from the RedHat extensions repository.</p>
+                                                <p>If you do not know where the configuration file is:</p>
+                                                <ul>
+                                                    <li>(On Windows) You can get this information from the arguments passed by the <code>-config</code> option in the command line that starts the MongoDB service:<br /><img src="../Resources/Images/images_mongo_properties.jpg" /><br />
+In the example above, MongoDB 2.4 was installed in <i>C:\Sage\FreeComponents\MongoDB</i>, and the configuration file is in <i>C:\Sage\FreeComponents\MongoDB\mongd.cfg</i>.</li>
+                                                    <li>(On Linux) You can check the <i>/etc/init.d</i> script that starts MongoDB to find the location and name of the configuration file.</li>
+                                                </ul>
+                                                <h3>Modifying the MongoDB 2.4 configuration file</h3>
+                                                <ol>
+                                                    <li value="1">Make a backup copy of the configuration file.</li>
+                                                    <li value="2">(On Windows)
+<ol style="list-style-type: lower-alpha;"><li value="1">Edit the MongoDB configuration file.</li><li value="2">Add the following line:<br /><pre xml:space="preserve">bind_ip=127.0.0.1</pre><img src="../Resources/Images/images_mongo_conf.jpg" /></li><li value="3">Save and exit.</li></ol></li>
+                                                    <li value="3">(On Linux)
+<ol style="list-style-type: lower-alpha;"><li value="1">Edit the MongoDB configuration file.</li><li value="2">Add the following line:<br /><pre xml:space="preserve">bind_ip=127.0.0.1</pre>
+Depending on where MongoDB was sourced, such a line may already exist and would have been commented out. In that case, just uncomment the line.</li><li value="3">Save and exit.</li></ol></li>
+                                                </ol>
+                                                <h3>Restarting MongoDB 2.4</h3>
+                                                <ol>
+                                                    <li value="1">(On Windows) Stop and restart the MongoDB service.<br /><b>Note:</b> The service name may be different as it was manually installed.<br />
+This can be done:
+<ol style="list-style-type: lower-alpha;"><li value="1">Using the Windows Services console plug-in.<br /><img src="../Resources/Images/images_mongodb_start_stop.jpg" /><br />
+Click <b>Stop</b> and then <b>Start</b>.
+</li><li value="2">Using the command line from a cmd window in an elevated privilege:<br /><pre xml:space="preserve">NET STOP &lt;SERVICE_NAME&gt;
+NET START &lt;SERVICE_NAME&gt;</pre></li></ol></li>
+                                                    <li value="2">(On Linux) Stop and restart the mongod process.<br />
+This can be done:
+<ol style="list-style-type: lower-alpha;"><li value="1">Using an <i>init.d</i> script: In that case, use the following command while logged in as <b>root</b> or elevated to <b>root</b>:
+<pre xml:space="preserve">service &lt;service_name&gt; stop
+service &lt;service_name&gt; start</pre></li><li value="2">Using an <i>init</i> script: In that case, use the following command while logged as <b>root</b> or elevated to <b>root</b>:
+<pre xml:space="preserve">initctl stop &lt;service_name&gt;
+initctl start &lt;service_name&gt;</pre></li></ol></li>
+                                                </ol>
+                                                <h2 id="OnSageX3WarehousingU8" data-magellan-target="OnSageX3WarehousingU8">On Sage X3 Warehousing U8</h2>
+                                                <p>MongoDB 2.6 is packaged on the Sage X3 Warehousing U8 DVD, and it is installed and configured through an IZpack java installer.</p>
+                                                <h3>Locating the MongoDB 2.6 configuration file</h3>
+                                                <p>The name and location of the configuration file are pre-set up:</p>
+                                                <ul>
+                                                    <li>On Windows: <code>&lt;MongoDB_Installation_Path&gt;\conf\MongoDB.conf</code></li>
+                                                    <li>On Linux: <code>&lt;MongoDB_Installation_Path&gt;/conf/MongoDB.conf</code></li>
+                                                </ul>
+                                                <p><b>Warning:</b> On Linux, there is also a <code>&lt;MongoDB_Installation_Path&gt;/mongodb.conf</code> which has nothing to do with the MongoDB database configuration file. It is an <i>initctl / systemctl</i> script built during configuration to set up MongoDB as a Linux service.</p>
+                                                <h3>Modifying the MongoDB 2.6 configuration file</h3>
+                                                <ol>
+                                                    <li value="1">Make a backup copy of the configuration file.</li>
+                                                    <li value="2">Edit the <i>MongoDB.conf</i> file.<br /><b>Caution:</b> On MongoDB 2.6, the pre-packaged configuration files use the YAML format. This is different from what was used on MongoDB 2.4.</li>
+                                                    <li value="3">Locate the <b>bindIp:</b> clause of the <b><i>net:</i></b> section of the configuration file.<br /><img src="../Resources/Images/images_win_conf_net.jpg" /><br />
+The <b>bindIp:</b> clause is commented out. Uncomment it.<br /><img src="../Resources/Images/images_win_conf_net1.jpg" /></li>
+                                                    <li value="4">Save and exit.</li>
+                                                </ol>
+                                                <h3>Restarting MongoDB 2.6</h3>
+                                                <ol>
+                                                    <li value="1">(On Windows) Stop and restart the "MongoDB for Sage Syracuse - MONGO01" service.<br /><b>Note:</b> MONGO01 is the default node name. You may have changed it during the installation.<br />
+This can be done:
+<ol style="list-style-type: lower-alpha;"><li value="1">Using the Windows Services console plug-in.<br /><img src="../Resources/Images/images_mongo_service.jpg" /><br />
+Click <b>Stop</b> and then <b>Start</b>.
+</li><li value="2">Using the command line from a cmd window in an elevated privilege:<br /><pre xml:space="preserve">NET STOP "MongoDB for Sage Syracuse - MONGO01"
+NET START "MongoDB for Sage Syracuse - MONGO01"</pre><b>Caution:</b> Make sure you put the service name between double quotes ("") as it contains spaces.</li></ol></li>
+                                                    <li value="2">(On Linux) Stop and restart the mongod process using an <i>init</i> script. By default, it is found in <i>/etc/init/</i> and is named <i>mongodb_for_sage_syracuse_-_mongo01.conf</i>. If you do not remember its name, type <code>ls /etc/init/mongodb*</code>to get the name of the generated <i>init</i> script.<br />
+To perform the stop/start operation, use the following commands:
+<pre xml:space="preserve">initctl stop mongodb_for_sage_syracuse_-_mongo01
+initctl start mongodb_for_sage_syracuse_-_mongo01</pre><b>Note:</b><ul><li>Replace "mongo01" with the proper name, if necessary.</li><li>Remove the .conf extension at the end.</li></ul></li>
+                                                </ol>
+                                                <h2 id="StartingtheSyracuseWebServer" data-magellan-target="StartingtheSyracuseWebServer">Starting the Syracuse Web Server</h2>
+                                                <p>The process to start the Syracuse Web Server is similar to the one described in <a href="#stop-syracuse">Stopping the Syracuse Web Server</a>. Substitute the <code>start</code> command for the <code>stop</code> command.</p>
+                                                <h2 id="Testsandtroubleshooting" data-magellan-target="Testsandtroubleshooting">Tests and troubleshooting</h2>
+                                                <p>After a few seconds, try to connect to Sage X3 Warehousing through Syracuse. If you can connect, everything is fine. If not, refer to the troubleshooting section below. </p>
+                                                <h2 id="Troubleshooting" data-magellan-target="Troubleshooting">Troubleshooting</h2>
+                                                <h3>Potential error #1</h3>
+                                                <p>The following error is displayed when you connect to the usual Syracuse Web Server URL from your browser:<br /><br /><img src="../Resources/Images/images_site_not_reached.jpg" /></p>
+                                                <p>This means that Syracuse was not started.</p>
+                                                <p>Perform the following checks:</p>
+                                                <ol>
+                                                    <li value="1">Make sure the Syracuse service is running. In doubt, start the Syracuse Agent service again.</li>
+                                                    <li value="2">If the error remains, check the Syracuse nodelocal.js configuration file:
+<ul><li>Compare it to the backup copy.<br />
+The only difference should be the host name.</li><li>Pay attention to the quotes before and after the host name.<br />
+If one of them is missing, file parsing may fail.</li></ul></li>
+                                                    <li value="3">Correct and restart. If the error remains, revert to the configuration file backup and ask for assistance.</li>
+                                                </ol>
+                                                <h3>Potential error #2</h3>
+                                                <p>The following error is displayed when you connect:<br /><br /><img src="../Resources/Images/images_error_2.jpg" /></p>
+                                                <p>This means that Syracuse was started but that it cannot connect to MongoDB.</p>
+                                                <p>Perform the following checks:</p>
+                                                <ol>
+                                                    <li value="1">Make sure the MongoDB service is running:
+<ol style="list-style-type: lower-alpha;"><li value="1">If not, launch the service again.</li><li value="2">If the error remains, correct the MongoDB configuration file by referring to the MongoDB log file for more information.<br />
+If no information is available, try to launch mongod from the cmd console with command <code>&lt;MongoDB_binaries_path&gt;\mongod -config &lt;MongoDB_config_file_full_path&gt;</code>. Errors will be displayed on screen.</li><li value="3">Investigate and correct until MongoDB runs again.</li></ol><p /></li>
+                                                    <p />
+                                                    <li value="2">If MongoDB is running but Syracuse cannot connect to MongoDB, it is a network filtering issue:
+<ol style="list-style-type: lower-alpha;"><li value="1">Make sure Syracuse has been restarted. In doubt, stop and restart the Syracuse agent service.</li><li value="2">If the error remains, check for mistakes in the <code>hostname</code> property of the nodelocal.js configuration file.</li></ol></li>
+                                                    <li value="3">Once the error is found and corrected, restart Syracuse and perform tests.</li>
+                                                </ol>
+                                                <h3>Potential error #3</h3>
+                                                <p>The following error is displayed when you connect (even if you try to wait and refresh the page):<br /><br /><img src="../Resources/Images/images_error_3.jpg" /></p>
+                                                <p>This means that the Syracuse server was able to connect to MongoDB, but that it cannot load the Syracuse endpoint definition from the database. This usually happens when the Syracuse administration endpoint is not updated after changing the configuration files for MongoDB or Syracuse (nodelocal.js).</p>
+                                                <p>In that case:</p>
+                                                <ol>
+                                                    <li value="1">Stop Syracuse through the Syracuse Agent service.</li>
+                                                    <li value="2">Stop the MongoDB service.</li>
+                                                    <li value="3">Temporarily revert the changes done in the MongoDB configuration file to re-open the access to all network interfaces.</li>
+                                                    <li value="4">Start the MongoDB service.</li>
+                                                    <li value="5">Start Syracuse through the Syracuse Agent service.</li>
+                                                    <li value="6">Edit the <b>Syracuse administration</b> endpoint entry to select the <b>Use local database settings</b> check box.</li>
+                                                    <li value="7">Stop Syracuse through the Syracuse Agent service.</li>
+                                                    <li value="8">Stop the MongoDB service.</li>
+                                                    <li value="9">Start the MongoDB service.</li>
+                                                    <li value="10">Start Syracuse through the Syracuse Agent service.</li>
+                                                    <li value="11">Test again.</li>
+                                                </ol>
+                                                <p>Alternatively, you can use the <b>robomongo</b> utility installed on the MongoDB server (if any):</p>
+                                                <ul>
+                                                    <li>To change the <b>syracuse</b> record in the <b>EndPoint</b> collection,</li>
+                                                    <li>To set the <b>localDatabase</b> field for this record to "true".</li>
+                                                </ul>
+                                                <p>
+                                                    <img src="../Resources/Images/images_robomongo1.jpg" />
+                                                </p>
+                                                <p>This modification can also be done with the mongo command line from the MongoDB host. In this case, only the following sequence of operations are required:</p>
+                                                <ol>
+                                                    <li value="1">Stop Syracuse.</li>
+                                                    <li value="2">Update the MongoDB record as described above with robomongo (or mongo).</li>
+                                                    <li value="3">Start Syracuse.</li>
+                                                    <li value="4">Test.</li>
+                                                </ol>
+                                                <h2 id="Multiserverinstallation" data-magellan-target="Multiserverinstallation">Multi-server installation</h2>
+                                                <p>This applies to situations where MongoDB and Syracuse are not on the same host, or in the case of multiple MongoDB and/or Syracuse hosts. In these cases, you cannot use the loopback binding method.</p>
+                                                <p>Instead, you have to:</p>
+                                                <ol>
+                                                    <li value="1">Enable a firewall within or outside the MongoDB host.</li>
+                                                    <li value="2">Properly set up all the ports needed for administration (<b>RDP</b> for Windows, or <b>SSH</b> for Linux).</li>
+                                                    <li value="3">Properly set up all the other ports that are needed, depending on the case (Active Directory, Windows shares, Backup agents, etc.).</li>
+                                                    <li value="4">Open TCP port 27017 for incoming requests to the Syracuse hosts IP addresses only.</li>
+                                                </ol>
+                                                <p>You may need assistance from a networking or firewall specialist for these operations.</p>
+                                                <p>If you are using virtual machines within VMware ESX, Microsoft Hyper-V, or any other virtualization platform, and if you do not want to set up a firewall:</p>
+                                                <ol>
+                                                    <li value="1">In the MongoDB and Syracuse VMs, create an additional virtual network within the virtualization platform dedicated to network traffic.</li>
+                                                    <li value="2">Add an additional network card connected to this dedicated virtual network to each MongoDB and Syracuse VM.</li>
+                                                    <li value="3">Assign static IPs within a relevant (unused) Class-C RFC-1918 network to the additional network cards of each MongoDB and Syracuse VM.</li>
+                                                    <li value="4">Locally register the "private" IP addresses of each MongoDB and Syracuse VM with the relevant host names (on <i>C:\Windows\System32\Drivers\etc\hosts</i> for Windows, or on <i>/etc/hosts</i> for Linux).<br /><b>Note:</b> You can keep the same host names but you have to change the network domain to something like "mongodb.lan".</li>
+                                                    <li value="5">Force MongoDB traffic to use the virtual dedicated network:
+<ol style="list-style-type: lower-alpha;"><li value="1">In Syracuse, edit the Syracuse administration endpoint by selecting the <b>Use local database settings</b> check box.</li><li value="2">On the MongoDB hosts, update the <code>bind_ip =</code> or <code>bindIp:</code> clause of the MongoDB configuration file to the IP address of the dedicated network card.</li><li value="3">On the Syracuse hosts, replace the original MongoDB host name by the new "private network" host name for each server in the nodelocal.js file.</li></ol></li>
+                                                </ol>
+                                                <p>You can use the same principles on physical servers if you have an unused network interface card in each server. With two servers (one MongoDB server and one Syracuse server), a cross-over cable could work, but we recommend the use of a switch. This is mandatory if there are more than two servers involved.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#SecuringMongoDBAccess"> Securing MongoDB Access
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Abstract">Abstract</a>
+                                                        </li>
+                                                        <li><a href="#KnownMongoDBaccesssecurityissueinSageX3WarehousingV7andU8">Known MongoDB access security issue in Sage X3 Warehousing V7 and U8</a>
+                                                        </li>
+                                                        <li><a href="#BindingMongoDBtotheloopbacknetworkinterfaceSingleserverinstallation">Binding MongoDB to the loopback network interface - Single-server installation</a>
+                                                        </li>
+                                                        <li><a href="#ChangingtheSyracuseconfiguration">Changing the Syracuse configuration</a>
+                                                        </li>
+                                                        <li><a href="#SyracuseAdministrationEndpointdatabaseparametersmodification">Syracuse Administration - Endpoint database parameters modification</a>
+                                                        </li>
+                                                        <li><a href="#ChangingtheSyracuseWebServerconfigurationfilenodelocaljs">Changing the Syracuse Web Server configuration file (nodelocal.js)</a>
+                                                        </li>
+                                                        <li><a href="#ChangingtheMongoDBconfiguration">Changing the MongoDB configuration</a>
+                                                        </li>
+                                                        <li><a href="#OnSageX3WarehousingV7">On Sage X3 Warehousing V7</a>
+                                                        </li>
+                                                        <li><a href="#OnSageX3WarehousingU8">On Sage X3 Warehousing U8</a>
+                                                        </li>
+                                                        <li><a href="#StartingtheSyracuseWebServer">Starting the Syracuse Web Server</a>
+                                                        </li>
+                                                        <li><a href="#Testsandtroubleshooting">Tests and troubleshooting</a>
+                                                        </li>
+                                                        <li><a href="#Troubleshooting">Troubleshooting</a>
+                                                        </li>
+                                                        <li><a href="#Multiserverinstallation">Multi-server installation</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 January 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

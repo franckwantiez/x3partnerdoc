@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es" xml:lang="es" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Reglas de desarrollo</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Atrás" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Saltar a contenido principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar panel de navegación" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Topic 1 Developing extensions.htm" alt="Logotipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Cuenta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Configuración</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Cerrar sesión</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Campo de búsqueda" placeholder="Buscar" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de búsqueda" title="Todos los archivos" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos los archivos</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Buscar" role="button" tabindex="0"><span class="invisible-label">Enviar búsqueda</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__Developing_extensions.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Rutas de navegación" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Menú: </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Reglas de desarrollo</h1>
+                                            <p>Los add-ons deben seguir un conjunto de reglas para evitar conflictos técnicos debidos a la coexistencia de extensiones.</p>
+                                            <p>En este capítulo:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>se detallan las principales reglas que se deben aplicar;</p>
+                                                </li>
+                                                <li>
+                                                    <p>se destacan las limitaciones que tener en cuenta;</p>
+                                                </li>
+                                                <li>
+                                                    <p>se ofrecen recomendaciones sobre cómo diseñar y probar extensiones.</p>
+                                                </li>
+                                            </ul>
+                                            <p>Todos los elementos descritos están disponibles a partir de la versión 7.</p>
+                                            <h2>Principales reglas de desarrollo que implementar</h2>
+                                            <h3>Acciones de campo</h3>
+                                            <p>Las acciones en los campos de la pantalla se pueden definir desde la plataforma.</p>
+                                            <p>Hay una funcionalidad que permite utilizar una acción vertical (<span class="reference">SPV</span>) en los eventos (inicialización, control, etc.) de cada campo.</p>
+                                            <p>Sin embargo, solo puede haber una acción de este tipo por campo.</p>
+                                            <p>En el modo de add-on, todos los partners comparten el diccionario. Debes utilizar las acciones del diccionario para evitar conflictos.</p>
+                                            <p>El script vertical del diccionario de pantallas es un programa único y no se puede compartir fácilmente entre diferentes partners.</p>
+                                            <p>Los nombres de las acciones del diccionario deben comenzar por tu identificador y estar protegidos con un código de actividad.</p>
+                                            <p>Esta regla se aplica a todas las acciones que se añaden al campo de una pantalla estándar.</p>
+                                            <p>Si trabajas solo en un script vertical, puedes usar las acciones <span class="reference">SPV</span> para las pantallas que:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>están protegidas con un código de actividad;</p>
+                                                </li>
+                                                <li>
+                                                    <p>no incluyen ningún desarrollo vertical.</p>
+                                                </li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="833" data-mc-height="346" src="../../../Resources/Images/Develop Extensions/Dev rules 1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1025" data-mc-height="327" src="../../../Resources/Images/Develop Extensions/Dev rules 2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Utiliza solamente acciones del diccionario para las acciones de los campos.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="443" data-mc-height="197" src="../../../Resources/Images/Develop Extensions/Dev rules 3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>No olvides definir el código de actividad para la acción. El nombre del código de actividad debe comenzar por un identificador único.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 4.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="566" data-mc-height="318" src="../../../Resources/Images/Develop Extensions/Dev rules 4_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h3>Gestionar una capa vertical con un modelo de objeto y puntos de entrada</h3>
+                                            <p>Un script independiente gestiona cada una de las tres capas: <span class="reference">específica</span>, <span class="reference">vertical</span> y <span class="reference">estándar</span>.</p>
+                                            <p>En cada script, los desarrolladores utilizan los puntos de entrada que ofrecen los distintos modelos en los que trabajan.</p>
+                                            <p>El código fuente del modelo u objeto más utilizado no se proporciona.</p>
+                                            <p>En la documentación, se incluye una lista de los puntos de entrada disponibles y un conjunto de variables que se pueden utilizar para interactuar con la estándar.</p>
+                                            <p>Solo hay <strong>un script vertical</strong> por función.</p>
+                                            <p>Este es el motivo por el que diferentes usuarios no pueden compartir un script con facilidad; es necesario crear y utilizar un programa de conmutación gestionado manualmente para ejecutar los scripts de diferentes partners secuencialmente.</p>
+                                            <p>El procedimiento es el siguiente:</p>
+                                            <ul>
+                                                <li><strong>Antes de la actualización 8</strong>, era necesario gestionar el programa de conmutación manualmente, lo que supuso muchos problemas.</li>
+                                                <li><strong>Desde la actualización 8</strong>, el supervisor gestiona automáticamente el programa de conmutación de objetos y puntos de entrada, lo que supuso una gran mejora.</li>
+                                            </ul>
+                                            <h4>Capa vertical con objetos</h4>
+                                            <p>Antes, el nombre del script vertical se definía en el objeto y el nombre del programa de conmutación se utilizaba para autorizar las llamadas de varias capas verticales.</p>
+                                            <p>En la actualidad, hay una casilla en la definición del objeto que, si se marca, le añade al menos un procesamiento vertical.</p>
+                                            <p>Con el botón de información puedes consultar los nombres de todos los procesos verticales definidos para dicho objeto.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="803" data-mc-height="451" src="../../../Resources/Images/Develop Extensions/Dev rules 5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="388" data-mc-height="272" src="../../../Resources/Images/Develop Extensions/Dev rules 6_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>La definición de los scripts verticales que se van a utilizar en el objeto se configura en la tabla de los puntos de entrada.</p>
+                                            <p>El orden en el que se deben ejecutar los diferentes scripts también se define en esta tabla.</p>
+                                            <p>Ten cuenta los siguientes aspectos:</p>
+                                            <ul>
+                                                <li>La tabla <span class="reference">Puntos de entrada</span> se carga como un conjunto de variables globales cuando crea una sesión clásica. Si se modifica la lista de puntos de entrada, hay que desconectar y volver a conectar para que se aplique el cambio.</li>
+                                                <li>Si la tabla está cargada en la memoria, se comprueba si existe el script adx definido en la lista de puntos de entrada. Si no existe en el dossier ni en ninguno de los dossieres principales, no se añade a la tabla de la memoria y, por tanto, no se ejecuta; ni siquiera si se añade después de haber creado la sesión. Desconecta y vuelve a crear la tabla en la memoria.</li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="986" data-mc-height="418" src="../../../Resources/Images/Develop Extensions/Dev rules 7_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Entender el orden de ejecución de las diferentes capas</h4>
+                                            <p>La misma lógica se aplica a cada punto de entrada.</p>
+                                            <p>El modelo llama a los siguientes elementos, si existen, en este orden:</p>
+                                            <ul>
+                                                <li>script específico</li>
+                                                <li>todos los scripts verticales según su prioridad</li>
+                                                <li>script estándar</li>
+                                            </ul>
+                                            <p>Se utilizan dos variables globales para controlar la ejecución de varios scripts:</p>
+                                            <ul>
+                                                <li><span class="reference">GPV</span>: si se establece en 1, impide la ejecución de la capa vertical.</li>
+                                                <li><span class="reference">GPE</span>: si se establece en 1, impide la ejecución de la capa estándar.</li>
+                                            </ul>
+                                            <p>La capa estándar establece estas dos variables en 0 antes de ejecutar el bucle global.</p>
+                                            <p>A continuación:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>Si <span class="reference">GPV</span> se establece en 1 en un script específico, todos los scripts verticales se omiten y no se ejecutan. Este comportamiento se debe validar caso por caso en el entorno del cliente.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Si <span class="reference">GPE</span> se establece en 1 en un script específico o en uno de los scripts verticales, la capa estándar no se ejecuta. Este comportamiento es excepcional; se suele adoptar cuando hay que ejecutar la capa estándar antes que la capa vertical o la específica. No omitas la capa estándar.</p>
+                                                </li>
+                                            </ul>
+                                            <div class="note-warning">Si se ejecutan varios scripts (por ejemplo, un script específico o varios scripts verticales), el valor de la variable <span class="reference">GPE</span> es el último valor que se establece. En estas interacciones complejas, el cliente debe autorizar este comportamiento.</div>
+                                            <h4>Casos complejos durante la ejecución del punto de entrada</h4>
+                                            <p>Una de las capas verticales requiere que la capa estándar se ejecute primero.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Ejemplo</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="853" data-mc-height="242" src="../../../Resources/Images/Develop Extensions/Dev rules 8_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Se definen tres scripts verticales para el objeto <span class="reference">BPC</span>.</p>
+                                                    <p>Por ejemplo, el script <span class="reference">XY23BPC2</span> necesita que la capa estándar se ejecute primero en el punto de entrada <span class="reference">PICKE</span>.</p>
+                                                    <p>En este caso, el script es:</p><pre class="code">$ACTION<br />Case ACTION<br />Done “PICKE”: Gosub ETIQP<br />………<br />Endcase<br />Return<br /><br />$ETIQP<br /># Execute the standard code first<br /><strong>Gosub ACTION From SUBPTH<br></br>GPE=1 :# Avoid to reexecute the standard</strong><br /># Vertical code<br />……<br />……<br />Return</pre>
+                                                    <p>En este caso, hay que ejecutar a continuación el tercer script vertical <span class="reference">XX34PH78</span>.</p>
+                                                </div>
+                                            </div>
+                                            <p>En el entorno del cliente y según sus necesidades, define el orden de ejecución de las diferentes capas verticales.</p>
+                                            <p>Si una capa vertical requiere que la capa estándar se ejecute primero, hay que adaptar la orden de ejecución para que la capa vertical se ejecute al final.</p>
+                                            <p>Comprueba también que ninguna otra capa vertical:</p>
+                                            <ul>
+                                                <li>tenga la variable <span class="reference">GPE</span> establecida en 0 después de que el script la haya definido en 1 (de ser así, la capa estándar se ejecuta dos veces);</li>
+                                                <li>se ejecuta antes que la estándar.</li>
+                                            </ul>
+                                            <div class="note-warning">Estos casos son excepcionales y, como no es posible gestionar y predecir todas las combinaciones verticales, se deben verificar en el entorno del cliente.<br />En casos excepcionales, el orden debe ser diferente según el punto de entrada: en el entorno del cliente, hay que subdividir una de las capas verticales para adaptarla a esta necesidad específica, pues ninguna modelización gestiona este requisito.</div>
+                                            <h4>Parches de puntos de entrada a partir de la actualización 8</h4>
+                                            <ul>
+                                                <li><strong>Parches en los puntos de entrada</strong>:<br />El orden de ejecución nunca se modifica con un parche. Sin embargo, cuando se aplica un parche a un punto de entrada, el orden de ejecución se establece si se ha definido.</li>
+                                                <li><strong>Revalidación en dossier</strong>:<br />Si un objeto tiene un script vertical, este se inserta automáticamente en la tabla de los puntos de entrada.</li>
+                                            </ul>
+                                            <h3>Gestionar la capa vertical con otros modelos (programa de conmutación)</h3>
+                                            <p>En el caso de los modelos para los que el programa de conmutación no se crea automáticamente, la conmutación se debe gestionar manualmente.</p>
+                                            <p>Esto es aplicable a:</p>
+                                            <ul>
+                                                <li>acciones</li>
+                                                <li>consultas</li>
+                                                <li>modelos de importación/exportación</li>
+                                                <li>informes</li>
+                                            </ul>
+                                            <p>Las consultas, los modelos de importación/exportación y los informes se suelen duplicar si hay que personalizarlos, pero el enfoque principal está en los scripts asociados a las acciones.</p>
+                                            <p>Estos elementos no tienen capa vertical.</p>
+                                            <p>El único script disponible es el definido en <span class="reference">Script específico</span>, que se utiliza como conmutador en todos los casos.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="752" data-mc-height="379" src="../../../Resources/Images/Develop Extensions/Dev rules 9_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Procesamiento de conmutación y procesamientos de aplicación</h4>
+                                            <p>Ejemplo: <span class="reference">X1</span> y <span class="reference">X2</span> se han desarrollado en la consulta base CSO.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 10.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="906" data-mc-height="189" src="../../../Resources/Images/Develop Extensions/Dev rules 10_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Mantén un programa neutro como un script específico; por ejemplo, <span class="reference">CNSCSOSPE</span>.</p>
+                                            <p>Este programa no se parchea, pero se debe entregar por separado y gestionar manualmente.</p>
+                                            <p>Si necesitas el mismo orden de llamada para cada acción del modelo, utiliza esta sintaxis simple en el programa de conmutación:</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 11.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1059" data-mc-height="380" src="../../../Resources/Images/Develop Extensions/Dev rules 11_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Para diferenciar el orden de las llamadas según la acción, utiliza esta sintaxis:</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 12.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1051" data-mc-height="386" src="../../../Resources/Images/Develop Extensions/Dev rules 12_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>De esta forma, puedes gestionar la llamada a cada script específico y vertical.</p>
+                                            <h4>Gestionar la entrega de los procesamientos de conmutación</h4>
+                                            <ul>
+                                                <li>Crea un parche para cada uno de los procesamientos de conmutación.</li>
+                                                <li>En el parche principal, añade:<ul><li>el <strong>código fuente</strong> de los procesamientos de conmutación en un directorio llamado <span class="reference">ADDSRC</span>;</li><li>en el fichero <strong>Readme</strong>, una lista de los nombres de todos los procesamientos de conmutación y los nombres de los procesamientos base correspondientes;</li><li>en el fichero <strong>Readme</strong>, una explicación del motivo de la <strong>modificación manual</strong> de cada procesamiento de conmutación a través del procesamiento del código fuente correspondiente entregado en el directorio <span class="reference">ADDSRC</span> si hay otros add-ons o recursos en la capa vertical.</li></ul></li>
+                                            </ul>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">Parche principal</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">Parche independiente</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader2" data-mc-pattern="5">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader2">
+                                                            <p>X1CNSCSOSPE<br />Procesamiento de aplicación del add-on X1</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader2">
+                                                            <p>CNSCSOSPE<br />Procesamiento de conmutación</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">Este parche siempre está integrado.</td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Este parche siempre lo integra el cliente si no tiene ningún otro add-on o recurso en las mismas funciones base.</p>
+                                                            <p><strong>De lo contrario, el parche no se puede integrar para evitar que los procesos existentes se sobrescriban.</strong><strong> Los procesamientos de conmutación se deben actualizar manualmente</strong>.<strong></strong></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Desarrollar informes</h2>
+                                            <p>Los informes estándar se desarrollan en Crystal Reports.</p>
+                                            <p>Estos son algunos consejos para crear informes:</p>
+                                            <ul>
+                                                <li>Sigue las pautas del centro de ayuda en línea para utilizar Crystal Reports.<br />Utiliza uno de estos modelos: <span class="reference">ATEMPLATE_RPT1</span> o <span class="reference">ATEMPLATE_RPT2</span>.</li>
+                                                <li>
+                                                    <p>El nombre del informe debe comenzar por tu identificador y coincidir con el nombre del código de informe del diccionario.</p>
+                                                </li>
+                                                <li>El origen de todos los informes debe ser ODBC.</li>
+                                                <li>Los informes deben estar disponibles en los idiomas con los que trabajas como partner. El inglés es obligatorio.</li>
+                                                <li>Los informes deben cumplir con la gestión de las reglas de desarrollo de autorizaciones.</li>
+                                            </ul>
+                                            <p>Consulta el material formativo relacionado.</p>
+                                            <h2>Limitaciones importantes</h2>
+                                            <p>La plataforma tecnológica tiene algunas limitaciones conocidas que <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> intenta solucionar.</p>
+                                            <p>Ten en cuenta los siguientes puntos sobre las funciones clásicas:</p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-ColumnHeader1" data-mc-pattern="7">
+                                                </col>
+                                                <col class="TableStyle-Normal-Column-Column1">
+                                                </col>
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Número de columnas en una tabla</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Está limitado a 512. Cuando trabajes con tablas estándar que se acerquen a este límite, crea y gestiona una tabla adicional para evitar problemas.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Longitud de fila en una tabla</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Está limitada a 8&#160;KB.</p>
+                                                            <p>Si la tabla estándar se acerca a este límite, puedes añadir y gestionar tu propia tabla.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Número de bloques en una máscara</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>Está limitado a 15.</p>
+                                                            <p>Si te aproximas al límite al añadir varios bloques, añade otra máscara.</p>
+                                                            <p>Con las opciones de personalización puedes crear un diseño de página que se adapte a tus necesidades.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-ColumnHeader1-Body1">
+                                                            <p>Número de campos en una máscara</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Está limitado a 500 en la definición.</p>
+                                                            <p>Está limitado a 300 en la validación.</p>
+                                                            <p>Si te aproximas al límite al añadir varios campos, añade otra máscara.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Interacciones con la capa estándar</h2>
+                                            <p>Evita hacer cambios funcionales en los elementos base, en particular en las ubicaciones. Estas funcionalidades están diseñadas para coexistir en el mismo dossier del cliente. Recuerda que un add-on es una solución que refuerza y amplía la funcionalidad base, no la ignora.</p>
+                                            <p>Puntos clave que recordar:</p>
+                                            <ul>
+                                                <li>No utilices un código de actividad para modificar o suprimir un elemento base.</li>
+                                                <li>No deshabilites un botón, menú, campo, etc.</li>
+                                                <li>No cambies el comportamiento de un botón o menú.</li>
+                                                <li>Utiliza solo <span class="reference">GPE = 1</span> para llamar a la funcionalidad base directamente, no para evitarla.</li>
+                                                <li>Utiliza menú, en lugar de un botón, en una ventana base.</li>
+                                                <li>Utiliza tu propia pantalla en una ventana base o crea tu propia ventana emergente adicional.</li>
+                                                <li>Evita compartir el espacio disponible en las pantallas base con diferentes add-ons instalados en un dossier cliente.</li>
+                                                <li>El equipo de implementación del proyecto se debe encargar de este tipo de conflictos.</li>
+                                            </ul>
+                                            <p>Presta atención al completar una función base: si un add-on o recurso vertical utiliza una capa específica o vertical, <strong>no sobrescribas el procesamiento de conmutación existente de dicho add-on o recurso vertical</strong>.</p>
+                                            <p>En esta situación, y para futuros desarrollos, utiliza el procesamiento de conmutación que llama al procesamiento de aplicación.</p>
+                                            <ul>
+                                                <li><strong>Para usar un punto de entrada</strong>, utiliza el procesamiento de conmutación para agilizar la actualización de los procesamientos de este tipo.</li>
+                                                <li>Crea parches independientes para ellos. A continuación, añade un ejemplo de cómo debería ser el procesamiento de origen en el directorio <span class="reference">ADDSRC</span> incluido en el parche.</li>
+                                                <li>Añade una referencia a los procesamientos de conmutación y a los procesamientos base correspondientes en el fichero Readme.</li>
+                                            </ul>
+                                            <div class="note-warning">Nunca modifiques el uso de un elemento base.</div>
+                                            <h2>Pruebas</h2>
+                                            <p>Para probar una función base, verifica:</p>
+                                            <ul>
+                                                <li>la <strong>funcionalidad global de la función base</strong> después de que los add-ons o recursos se hayan añadido;</li>
+                                                <li>el <strong>procesamiento de conmutación</strong> en la capa vertical, en una capa específica de algunos diccionarios y en los puntos de entrada;</li>
+                                                <li>el correcto funcionamiento de las <strong>acciones de campo coexistentes</strong> en una <strong>pantalla base</strong>;</li>
+                                                <li>que los <strong>menús y botones</strong> funcionan para varios add-ons en una <strong>ventana base</strong> y evita utilizar el mismo código de menú para dos add-ons en la misma ventana base;</li>
+                                                <li>que las <strong>capacidades de la plataforma </strong> no se hayan superado (número de campos en una tabla, número de pestañas en una ventana, etc.).</li>
+                                            </ul>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Ir a anterior" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Ir a anterior">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Ir a siguiente" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Ir a siguiente">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Vínculos de Sage</h5>
+                                                <p><a href="https://www.sage.com/es-es/soporte-actualizacion/" target="_blank" class="external">Soporte y formación de Sage</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/es/subgrouplist" class="external" target="_blank" title="La plataforma donde consultar tus dudas con otros clientes y expertos en Sage." alt="La plataforma donde consultar tus dudas con otros clientes y expertos en Sage.">Sage City</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Información sobre la página</h5>
+                                                <p>Fecha de publicación: <span class="mc-variable Dates.DateProjectBuilt variable">21 febrero 2023</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a> <a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a> <a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

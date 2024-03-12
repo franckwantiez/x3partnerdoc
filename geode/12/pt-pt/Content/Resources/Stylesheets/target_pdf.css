@@ -1,0 +1,558 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta conditions="Other.MasterTopNav" />*/
+
+/* This stylesheet contains styles that are specific to the 'PDF' medium, used for the PDF target. */
+
+@media PDF
+{
+	body,
+	table,
+	pre	/* set standard font sizes for PDF */
+	{
+		font-size: 10pt;
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 400 to get regular */
+		font-weight: 400;
+	}
+
+	body,
+	table,
+	pre,
+	p,
+	li,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6	/* prevent hyphenation  */
+	{
+		mc-hyphenate: never;
+	}
+
+	li,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p.note,
+	div.note,
+	p.tip,
+	div.tip,
+	div.note-settings,
+	div.note-warning,
+	div.note-danger,
+	div.note-info,
+	div.note-success,
+	div.note-error,
+	div.note-tip
+		/* avoid page breaks inside */
+	{
+		page-break-inside: avoid;
+	}
+
+	MadCap|relationshipsHeading,
+	span.boxTitle,
+	p.boxHeading	
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+	}
+
+	MadCap|xref
+	{
+		mc-format: '{para} on page {page}';
+	}
+
+	p.linkDemo	/* hide in PDF output */
+	{
+		display: none;
+	}
+
+	div.linksBox,
+	div.linksBoxRight	/* hide in PDF output */
+	{
+		display: none;
+	}
+
+	h1
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		mc-heading-level: 1;
+		page-break-before: always;
+		page-break-after: avoid;
+	}
+
+	h1.chapter	/* heading for chapter */
+	{
+		mc-auto-number-format: '{chapnum} | ';
+		mc-auto-number-class: chapter;
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-size: 3.2em;
+		font-weight: 700;
+		margin-bottom: 3em;
+		color: #00d639;
+	}
+	
+	span.reference	/* Set font weight to 700, as 600 isn't visible in PDFs */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+	}
+	
+	span.chapter	/* hide chapter number prefix in PDF text (appears in TOC only) */
+	{
+		display: none;
+	}
+	
+	h1.chapterNoNumber	/* heading for chapter without numbering */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-size: 3.2em;
+		font-weight: 700;
+		margin-bottom: 3em;
+		color: #00d639;
+	}
+
+	h1.NotTOC	/* Used for Contents page. Doesn't include heading in TOC */
+	{
+		mc-heading-level: 0;
+		page-break-before: always;
+		page-break-after: avoid;
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-size: 3.2em;
+		font-weight: 700;
+		margin-bottom: 3em;		
+		color: #00d639;
+	}
+
+	h1.TOC2
+	{
+		mc-heading-level: 2;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h1.TOC3
+	{
+		mc-heading-level: 3;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h1.TOC4
+	{
+		mc-heading-level: 4;
+		page-break-before: always;
+		mc-disabled: true;
+	}
+
+	h2	/* Don't include heading in TOC */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 700 to get bold */
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h3	/* Don't include heading in TOC */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 700 to get bold */
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h4	/* Don't include heading in TOC */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 700 to get bold */
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h5	/* Don't include heading in TOC */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 700 to get bold */
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	h6	/* Don't include heading in TOC */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 700 to get bold */
+		mc-heading-level: 0;
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+	
+	hr	/* hr: page divider - doesn't clear floated elements */
+	{
+		width: 100%;
+	}
+
+
+	img	/* img: set max width for images in PDF */
+	{
+		max-width: 14.5cm;
+		/* Page layout frame size is 583px = 15.4cm (1cm = 37.8px). Set to smaller 14.5cm for indented images */
+	}
+	
+	img.thumbnail	/* remove border from thumbnail */
+	{
+		padding: 0em;
+		border: none;
+	}
+	
+	.column-break-before
+	{
+		column-break-before: always;
+	}
+	
+	p.guideTitle	/* p.guideTitle: main guide title - DEPRECATED used in old page layout */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		color: #FFFFFF;
+	}
+
+	p.guideTitleSub	/* p.guideTitle: guide title sub-heading - DEPRECATED used in old page layout */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage UI Medium' at weight 500 to get medium */
+		font-weight: 400;
+		color: #007E45;
+	}
+	p.guideCoverType	/* p.guideCoverType: guide cover type (2019+ rebrand layout) */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-size: 1.5em;
+		font-weight: 700;
+		color: #00d639;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+
+	p.guideCoverHeader	/* p.guideCoverHeader: guide heading (2019+ rebrand layout) */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-size: 2.4em;
+		font-weight: 700;
+		color: #FFFFFF;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+		column-break-after: always;
+		line-height: 1.2em; 
+	}
+
+	p.guideCoverDescription	/* p.guideCoverDescription: guide description (2019 rebrand layout) */
+	{
+		font-family: "Sage Text Medium", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text Medium' at weight 400 to get medium */
+		font-size: 1.5em;
+		font-weight: 400;
+		color: #FFFFFF;
+		margin: 0;
+		padding: 0;
+	}
+	
+	p.guideCoverEnd	/* p.guideCoverEnd: addresses on end page (2019+ rebrand layout) */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		font-size: 1.2em;
+		color: #00d639;
+		padding: 0;
+		margin: 0em 0em 0.5em 0em;
+		line-height: 1.2em;
+	}
+	
+	p.guideCoverCopyright	/* p.guideCoverDescription: guide description (2019+ rebrand layout) */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 400 to get regular */
+		font-weight: 400;
+		font-size: 0.7em;
+		color: #FFFFFF;
+		padding: 0;
+		margin: 0;
+	}
+
+	p.guideFooter	/* p.guideFooter: footer text (2019+ rebrand layout) */
+	{
+		font-size: 0.7em;
+	}
+
+	p.sectionHeading	/* p.sectionHeading: headings for contents and index master pages - DEPRECATED used in old page layout */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		font-size: 3em;
+	}
+
+	MadCap|dropDownBody
+	{
+		border-bottom-style: none;
+		border-bottom-width: 0px;
+		background-image: none;
+		orphans: 2;
+	}
+
+	MadCap|dropDownHead
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		color: inherit; /* Change colour as not link */
+		page-break-before: auto;
+		page-break-after: avoid;
+		page-break-inside: avoid;
+		mc-hyphenate: never;
+	}
+
+	MadCap|dropDownHead.heading
+	{
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	MadCap|toggler
+	{
+		font-weight: 700; /* use weight 700 to get bold */
+		color: inherit; /* Change colour as not link */
+	}
+
+	MadCap|toggler.heading
+	{
+		color: inherit; /* Change colour as not link */
+		page-break-before: auto;
+		page-break-after: avoid;
+	}
+
+	MadCap|footnotesBlock
+	{
+		border-top: 2px dotted #e4ecea;
+	}
+
+	MadCap|footnote
+	{
+		font-size: 0.8em;
+	}
+
+	MadCap|tocProxy
+	{
+		padding-left: 0px;
+		border-top-style: none;
+		border-top-width: 0px;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		border-top-width: 0px;
+		word-wrap: True;
+	}
+
+	p.IndexHeading	/* p.IndexHeading: index letter title (used by index proxy) */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		text-align: left;
+		font-size: 1.72em;
+		font-weight: 700;
+		font-style: 300;
+	}
+
+	MadCap|indexProxy
+	{
+		border-top-style: none;
+		mc-output-support: all-print;
+		mc-index-headings: true;
+		mc-column-count: 2;
+		mc-reference-separator: ', ';
+	}
+
+	p.chapter	/* p.chapter: chapter number (page layouts only) - DEPRECATED used in old page layout */
+	{
+		font-family: "Sage Text", Arial, Helvetica, sans-serif; /* use local installed font name - 'Sage Text' at weight 700 to get bold */
+		font-weight: 700;
+		text-align: right;
+		color: #00d639;
+		font-size: 7.0em;
+		line-height: 100%;
+	}
+
+	p.header
+	{
+		font-size: 0.8em;
+	}
+
+	p	/* paragraph widows and orphans */
+	{
+		widows: 2;
+		orphans: 2;
+	}
+	
+	p.TOC1	/* margin for contents items */
+	{
+
+	}
+	
+	p.TOC2	/* margin for contents items */
+	{
+		margin-left: 1.5em;
+	}
+
+	p.TOC3	/* margin for contents items */
+	{
+		margin-left: 3em;
+	}
+
+	p.TOC4	/* margin for contents items */
+	{
+		margin-left: 4.5em;
+	}
+
+	p.TOC5	/* margin for contents items */
+	{
+		margin-left: 6em;
+	}
+
+	p.TOC6	/* margin for contents items */
+	{
+		margin-left: 7.5em;
+	}
+	
+	div.onLeft,
+	div.onRight
+	{
+		page-break-inside: avoid;
+	}
+
+	.boxHeading
+	{
+		page-break-after: avoid;
+	}
+
+	div.highlightBox .boxHeading,
+	div.highlightBoxRight .boxHeading	/* .boxHeading:  */
+	{
+		margin: inherit;
+		padding: inherit;
+		color: rgba(0,0,0,0.9);
+		background-color: inherit;
+	}
+	
+	
+	ul.prerequisite	/* ul.prerequisite: bullet list for prerequisites */
+	{
+		margin-left: 2em;
+	}
+
+	ul.prerequisite > li:marker /* FontAwesome: fa-check-square-o */
+	{
+		
+  		font-family: "FontAwesome";
+  		content: "\f046";
+	}
+	
+	ul.checklist	/* ul.checklist: bullet list for checklists */
+	{
+		margin-left: 2em;
+	}
+	
+	ul.checklist > li:marker /* FontAwesome: fa-square-o */
+	{		
+  		font-family: "FontAwesome";
+  		content: "\f096";
+	}
+	
+	p.location
+	{
+		display: list-item;
+		list-style-type: none;
+		margin-left: 2em;
+	}
+	
+	p.location:marker	/* PDF link: file-pdf-o */
+	{
+		font-family: "FontAwesome";
+		content: "\f108";
+	}
+	
+	ul.checklist > li:before,
+	ul.prerequisite > li:before,
+	p.location:before
+	{
+		content: "";
+	}
+	
+
+	div.note-settings,
+	div.note-warning,
+	div.note-danger,
+	div.note-info,
+	div.note-success,
+	div.note-error,
+	div.note-tip	/* Define colour bar using a border, as doesn't work using :before style used for HTML5 */
+	{
+		margin: 1em 0em 1em 0em;
+		padding: 0em 0.5em 0em 0.5em;
+		border-style: solid;
+		border-width: 0;
+		border-left-width: 2em;
+		/* width: auto; */
+	}
+	
+	div.note-settings	/* DLS style message - settings */
+	{
+		border-color: #335B70; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-neutral);
+	}
+
+	div.note-warning	/* DLS style message - warning */
+	{
+		border-color: #EF6700; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-caution);
+	}
+	
+	div.note-danger	/* DLS style message - danger */
+	{
+		border-color: #CD384B; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-negative);
+	}
+	
+	div.note-info	/* DLS style message - info */
+	{
+		border-color: #0060A7; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-info);
+	}
+	
+	div.note-tip /* DLS style message - tip */
+	{
+		border-color: #0060A7; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-info);
+	}
+	
+	div.note-success /* DLS style message - success */
+	{
+		border-color: #008A21; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-positive);
+	}
+	
+	div.note-error /* DLS style message - error */
+	{
+		border-color: #CD384B; /* CSS variable IE 11 support */
+		border-color: var(--col-semantic-negative);
+	}
+	
+	.colour-dark-1 a,
+	.colour-dark-2 a,
+	.colour-dark-3 a,
+	.colour-dark-4 a,
+	.colour-dark-5 a,
+	.colour-dark-product-1 a,
+	.colour-dark-product-2 a,
+	.colour-dark-product-3 a	/* set link colour inside coloured boxes */
+	{
+		color: #FFFFFF !important;
+	}
+}

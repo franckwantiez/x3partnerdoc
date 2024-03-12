@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Fonctionnement d'XTEND" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Fonctionnement d'XTEND</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="FonctionnementdXTEND" data-magellan-target="FonctionnementdXTEND"><span>Fonctionnement d'XTEND</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Ledictionnaire" data-magellan-target="Ledictionnaire">Le dictionnaire</h2>
+                                                            <p>Le dictionnaire contient la définition de toutes les fiches de paramétrage XTEND.</p>
+                                                            <p>Il est constitué d'un ensemble de fichiers XML (un par fonction XTEND) qui sont stockés sur le serveur de la solutionX3 dans le répertoire :<br /><span style="font-family: 'Courier new';">X3SOL/dossiers/X3_PUB/X3FOLDER/X_TEND/X_GEN/SITE</span>.</p>
+                                                            <h5>Validation</h5>
+                                                            <p>Lorsque le développeur <b>valide</b> une fiche, <b>un traitement de génération</b> du dictionnaire est activé pour produire le fichier xml.</p>
+                                                            <p>La validation génère une nouveau dictionnaire XML des paramètres XTEND.</p>
+                                                            <p>Le nouveau dictionnaire n'est pris en compte automatiquement sur reload/F5 de la page HTML dans le navigateur que si l'option de la fiche de paramétrage du <a href="GESAYS.htm">site</a>, fonction Sites Web(GESAYS)<span style="font-family: 'Courier new';">'Technique\Vérifier mises à jour\Dictionnaire web'</span> est cochée.</p>
+                                                            <p>Sinon il faut forcer le rechargement du dictionnaire avec l'url :<br /><span style="font-family: 'Courier new';"><b>'http://hostname:port/xtend/svc/SolutionX3/DossierX3/SiteXtend/admin/reposit/reload'</b></span></p>
+                                                            <h5>Après modification des paramètres X3 :</h5>
+                                                            <p>Il est conseillé de valider l'intégralité du site via la fonction afin de reconstruire le dictionnaire du serveur XTEND via la fonction <span style="font-family: 'Courier new';"><a href="AYTFCYGEN.htm">Validation site Web(AYTFCYGEN)</a></span>.</p>
+                                                            <p>Bien vérifier que le site XTEND est publié, c'est à dire le champ 'Publié le site' de la fiche 'Site web' est coché.</p>
+                                                            <h5>Accès aux fichiers X3</h5>
+                                                            <p>Techniquement le serveur XTEND accède aux fichiers X3 via le serveur HTTP (Apache) qui est installé par défaut sur la machine qui héberge le serveur X3 principal.</p>
+                                                            <p>Le répertoire racine est le répertoire <b>X3_PUB</b> de la solution.</p>
+                                                            <p>La détection des mise à jour se fait sur lecture du 'TimeStamp' (date de dernière modification) du ficher.</p>
+                                                            <p>Le serveur XTEND lit les fichiers XML et constitue une base de données en mémoire pour optimiser l'accès aux paramètres.</p>
+                                                            <p>Lors du chargement, XTEND contrôle la cohérence du dictionnaire et génère une exception en cas d'erreur.</p>
+                                                            <h5>En cas d'erreur de lecture du dictionnaire</h5>
+                                                            <ul>
+                                                                <li>Vérifier que les utilisateur anonymes peuvent accéder au répertoire X3_PUB<br />L'url <span style="font-family: 'Courier new';">http://hostX3/Adonix_X3SOL/X3FOLDER/X_TEND/X_GEN/XTENDSITE/ </span>doit renvoyer la liste des fichiers xml</li>
+                                                                <li>Sous UNIX vérifiez les droits d'accès de l'utilisateur </li>
+                                                            </ul>
+                                                            <h5>Optimisation</h5>
+                                                            <p>Par défaut le dictionnaire et les menus locaux sont stockés sur le serveur X3.</p>
+                                                            <p>Les paramètres console <span style="font-family: 'Courier new';">xtend.server.reposit.local=off</span> et <span style="font-family: 'Courier new';">xtend.server.menux3.local=off</span> permettent de définir une localisation des fichier en local du serveur X3WEB (optimisation).</p>
+                                                            <p>Dans cas il faut copier les répertoires dictionnaire et/ou menu locaux sous <span style="font-family: 'Courier new';">\WebData\LOCAL\X3SOLUTION\X3_PUB\</span>.</p>
+                                                            <p>WebData est le répertoire 'Data' défini lors de l'installation du serveur X3WEB. </p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="TraitementduHTML" data-magellan-target="TraitementduHTML">Traitement du HTML</h2>
+                                                            <p />
+                                                            <h4>Lecture</h4>
+                                                            <p>Par défaut les pages et toutes les ressources du projet HTML sont stockées sur le serveur X3 dans le répertoire:<br /><span style="font-family: 'Courier new';">/X3SOL/dossiers/X3_PUB/X3FOLDER/X_TEND/X_HTML/ASAMPLE/LANG/</span> (LANG étant le code langue du site).</p>
+                                                            <p>Le développeur doit penser à 'uploader' les pages HTML sur le serveur X3 avant de les tester dans son navigateur.</p>
+                                                            <p>Sous unix il faut bien vérifier que tous les fichiers du répertoire HTML ont les droits minimum en 'lecture' pour tous les utilisateurs.</p>
+                                                            <p>Le processus de lecture des pages et de détection des modifications est identique à celui du dictionnaire.</p>
+                                                            <p>Un paramètre du <a href="GESAYS.htm">site</a> XTEND permet d'activer/désactiver les vérifications des mises à jour.</p>
+                                                            <p>Si la vérification est désactivée il faut utiliser l'url de rechargement du dictionnaire pour forcer le serveur XTEND à prendre en compte les modifications des pages.</p>
+                                                            <h4>Parsing</h4>
+                                                            <p>Une page web est un fichier texte qui contient des balises HTML dans lequelles le développeur a ajouté les tokens XTEND.</p>
+                                                            <p>Après chargement de la page, le serveur XTEND lit le contenu et interprète le HTML et les tokens (parsing) pour constituer une représentation en mémoire de la page sous la forme d'un arborescente d'objets (DOM).</p>
+                                                            <p>Chaque objet représente un token et implémente une méthode de calcule du HTML (computeHtml).</p>
+                                                            <p>L'arborescence des tokens est visible dans la trace XTEND:<br /><span>++ correspond au niveau - CXtdHtmBuild* est la classe de l'objet</span></p>
+                                                            <p><span style="font-family: 'Courier new';">+CXtdHtmBuildDom - XTEND<br />++CXtdHtmBuildNodeHtml - HTML<br />++CXtdHtmBuildTagHead - &lt;HEAD<br />+++CXtdHtmBuildTagBase - &lt;BASE<br />++CXtdHtmBuildAdxScriptLibrary - ALIBJS<br />++CXtdHtmBuildTagHeadEnd - &lt;/HEAD<br />++CXtdHtmBuildTagBody - &lt;BODY<br />++CXtdHtmBuildTagForm - &lt;FORM<br />++CXtdHtmBuildAdxTagAnchor - AHOME<br />++CXtdHtmBuildAdxTagAnchor - AABOUT<br />++CXtdHtmBuildAdxCND - ADISPUSERLOGGEDIN<br />+++CXtdHtmBuildAdxTagAnchor - AUSERACCOUNT<br />+++CXtdHtmBuildAdxTagAnchor - ADLKLOGOUT<br />++CXtdHtmBuildAdxCND - ADISPUSERLOGGEDIN<br />+++CXtdHtmBuildAdxTagAnchor - ALOGIN<br />...</span>
+                                                            </p>
+                                                            <p>Le parser HTML du serveur XTEND est compatible avec la version <b>HTML 4.01 (DTD HTML 4.01 Transitional).</b></p>
+                                                            <p>La seule contrainte qu'impose XTEND pour le design HTML est de n'utiliser <b>qu'un seul formulaire HTML</b> qui encapsule tout le corps (body) de la page HTML.<br /><span style="font-family: 'Courier new';">&lt;body&gt;&lt;form&gt; Contenu du body &lt;/form&gt;&lt;/body&gt;</span></p>
+                                                            <h4>Construction</h4>
+                                                            <p>Pour calculer dynamiquement le contenu de la page HTML, le serveur XTEND effectue les opération suivantes:</p>
+                                                            <h5>1. Initialise les blocs</h5>
+                                                            <p><u>Pour les interfaces de type Accès données:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>Constitue la requête (sélection) en fonction des paramètres</li>
+                                                                <li>Appel le web service via l'interface associé à l'entité du bloc</li>
+                                                                <li>Crée les entités 'Accès données' en mémoire </li>
+                                                            </ul>
+                                                            <p><u>Pour les interfaces de type Action:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>Lit les entités déjà présentes en mémoire </li>
+                                                            </ul>
+                                                            <h5>2. Parcourt récursivement tous les objets de l'arborescence (DOM) et appelle la méthode <span style="font-family: 'Courier new';">computeHtml</span></h5>
+                                                            <p><u>Si le token est un champ:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>La méthode calcule la valeur du champ </li>
+                                                            </ul>
+                                                            <p><u>Si le token est un lien dynamique:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>La méthode calcule l'url (tag &lt;a&gt;&lt;/a&gt;) ou le JavaScript (tag &lt;imput type="button") </li>
+                                                            </ul>
+                                                            <p><u>Si le token est un bloc:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>La méthode effectue une itérations sur toutes les entités et appelle la méthode de calcul des tokens fils&#160;</li>
+                                                            </ul>
+                                                            <p><u>Si le token est un bloc conditionné:</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>La méthode évalue l'expression booléenne (critères) et appel ou non la méthode de calcul des tokens fils </li>
+                                                            </ul>
+                                                            <h5>3. Le résultat global est la somme du HTML produit par tous les tokens. </h5>
+                                                            <p>La méthode de calcul du HTML dépend du type de token et du tag HTML dans lequel est il est inséré.</p>
+                                                            <h4>Génération du html</h4>
+                                                            <p>Le HTML calculé est fonction du type de token et du tag HTML dans lequel il est inséré.</p>
+                                                            <h5>Token champ dans les tags &lt;td&gt;,&lt;div&gt;, &lt;span&gt;, &lt;p&gt;...</h5>
+                                                            <p>Remplace le contenu du tag par la valeur du champ</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;td adx="myField"&gt;&lt;/td&gt; ---&gt; &lt;td&gt;Valeur&lt;/td&gt;</span>
+                                                            </p>
+                                                            <h5>Token champ dans un tag &lt;select&gt;</h5>
+                                                            <p>Sélectionne l'option qui correspond à la valeur du champ en générant l'attribut selected</p>
+                                                            <p>Exemple si la valeur de myField est FR l'option value="FR" et sélectionnée (attribut selected)</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;select adx="myField"&gt;<br />&#160;&#160;&#160; &lt;option value="AT"&gt;Austria&lt;/option&gt;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160; &lt;option value="FR"&gt;France&lt;/option&gt;<br />&lt;/select&gt;<br />&lt;!--GENERE--&gt;<br />&lt;select adx="myField"&gt;<br />&#160;&#160;&#160; &lt;option value="AT"&gt;Austria&lt;/option&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; <br />&#160;&#160;&#160; &lt;option selected value="FR"&gt;France&lt;/option&gt;<br />&lt;/select&gt;</span>
+                                                            </p>
+                                                            <h5>Token champ dans un tag &lt;img&gt;</h5>
+                                                            <p>Génère l'URL qui permet au navigateur de lire l'image</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;img adx="COUNTRYFLAG"&gt;<br />&lt;!--GENERE--&gt;<br />&lt;img src="/xtend/data/exp(expires,index)/remote/SOL/FLDR/X_TEND/X_HTML/SITE/FRA/FLAGS/BE.gif"/&gt;</span>
+                                                            </p>
+                                                            <h5>Token lien dynamique dans un tag &lt;a&gt;</h5>
+                                                            <p>Si le token n'a pas d'action associée (méthode GET) calcule l'attribut href du tag<br />Sinon (méthode POST) traite le tag comme un bouton (ci-dessous)</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;a adx="MyDynLink"&gt;Logout&lt;/a&gt;<br />&lt;!--GENERE d'URL'--&gt;<br />&lt;a href="</span><span style="font-family: 'Courier new';">http://host:port/xtend/page?DLK=MyDynLink&amp;SOL=SOL..."&gt;Logout&lt;/a</span><span style="font-family: 'Courier new';">&gt;</span>
+                                                            </p>
+                                                            <h5>Token lien dynamique dans un tag &lt;input type="button"&gt;</h5>
+                                                            <p>Calcule la fonction JavaScript xtdDoDlk et l'insère dans l'attribut 'onClick'</p>
+                                                            <p>Les paramètres sont contextuels et sont traités par la librarie XTEND </p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;input type="button" adx="MyDLK" value="Créer"&gt;<br />&lt;!--GENERE L'ATTRIBUT ONCLICK'--&gt;<br />&lt;input type="button"<br />&#160;&#160; onclick="xtdDoDlk(this,'MyDLK',null,null,null,0,null,event,true,'',false,null,true);"<br />&#160;&#160; value="Créer"/&gt;</span>&#160; </p>
+                                                            <h4>Fonction xtdDoDlk</h4>
+                                                            <p>Cette fonction est générée par XTEND dans l'atribut onClick pour les liens dynamiques qui ont une action ou une sélection associée.</p>
+                                                            <p>Elle déclenche le processus JavaScript XTEND de traitement des actions utilisateur.</p>
+                                                            <p>Elle permet aussi de retrouver le contexte de données (aCtxTag,aLineIdx) du lien dynamique en particulier pour les tokens générés dans les lignes des blocs.</p>
+                                                            <p><span style="font-family: 'Courier new';">function xtdDoDlk(aElmt,aDlk,aProtocol,aBlkId,aCtxTag,aLineIdx,aUrlAdd,aEvent,aSubmit,<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; aAutoId,aForceAcceptReload,aForceSelBlock,aCheckWebFields)<br />{/*<br />&#160;aElmt: Object JavaScript sur lequel l'utilisateur a cliqué<br />&#160;aDlk: Code du lien dynamique cliqué<br />&#160;aProtocol: Si !=null force le protocole (https,http) pour ce lien<br />&#160;aBlkId: Code du bloc de référence si adx='MyBlocRefence.MyLink'<br />&#160;aCtxTag: Identifiant du contexte de donnée (si action avec paramètres de type champs XTEND)<br />&#160;aLineIdx: Index de la ligne si le token est placé dans un bloc {{multi}}<br />&#160;aUrlAdd: Contient la valeur du paramètres HTML xanchor adx="MyLink:xanchor=#section"<br />&#160;aEvent: Contient l'objet événement JavaScript<br />&#160;aSubmit: True pour soumettre le formulaire<br />&#160;aAutoId: Id généré par XTEND si adx="MyLink:xautoid"<br />&#160;aForceAcceptReload:True pour accepter le reload (F5)<br />&#160;aForceSelBlock:Id du bloc qui traite la requête si != AMAIN<br />&#160;aCheckWebFields:True pour contôler les champs web<br />*/<br />}</span>&#160;&#160; </p>
+                                                            <p>Le contexte de données de la page est stocké dans la page elle même dans un tag span masqué.<br />Il contient toutes les valeurs des champs (type 'Token champ') utilisés en paramètre des actions des lien dynamiques de la page.<br />Cette méthode permet de gérer très efficacement le retour arrière via la fonction 'Back' du navigateur.</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;span id="xtdctx" style="display: none; clear: both;"&gt;<br />&#160;&#160;&#160; XML qui contient le contexte de la page<br />&lt;/span&gt;</span>
+                                                            </p>
+                                                            <h4>Le contexte de données serveur</h4>
+                                                            <p>Pour bien comprendre le fonctionnement XTEND il est nécessaire de détailler le mécanisme de résolution de la valeur d'un champ par le serveur XTEND.</p>
+                                                            <p>Le serveur XTEND maintient un contexte de données qui est géré dans une pile (ou stack) de blocs de données (entités).</p>
+                                                            <p>Ce contexte de données est constitué:</p>
+                                                            <ul>
+                                                                <li>D'une partie statique, indépendante de la page</li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Constituée des données la session utilisateur c'est à dire des entités de type 'session' et des entités de type 'action' </li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <li>D'une partie dynamique, dépendante des tokens blocs insérés dans la page</li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Constituée des entités de type 'accès données' créées lors du traitement des tokens blocs </li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <h5>Gestion du contexte</h5>
+                                                            <p><b>Etat initial</b>
+                                                            </p>
+                                                            <p>Lorsque la construction de la page démarre, le contexte de données ne contient que les données de la session.</p>
+                                                            <p><b>Traitement des blocs</b>
+                                                            </p>
+                                                            <p>Lorsque le serveur XTEND traite un bloc, il effectue une itération sur toutes les entités sélectionnées.<br />Pour chaque entité il effectue le traitement suivant:</p>
+                                                            <p>1. Empile (push) la donnée (entité) dans le contexte de données<br />--&gt;L'entité est positionnée au sommet de la pile (top) et sera traitée en premier lors de la résolution de la valeur d'un champ </p>
+                                                            <p>2. Appelle la méthode de construction du HTML des tokens fils<br />--&gt;Ce mécanisme est récursif et permet d'empiler les blocs </p>
+                                                            <p>3. Dépile l'entité<br />--&gt;Après avoir traité tous les tokens fils le serveur dépile l'entité avant de traiter la suivante </p>
+                                                            <p>L'entité qui est au sommet de la pile est adressée par le bloc <b>ACURRENT</b>.<br />Par exemple un critère de sélection 'CODE=ACURRENT.CODE' dans un lien dynamique indique qu'il faut sélectionner l'élément de la ligne courante</p>
+                                                            <h5>Résolution</h5>
+                                                            <p>Le principe de résolution de la valeur d'un champ consiste à :</p>
+                                                            <p>1. parcourir la pile des entités du haut (top) vers le bas (bottom)</p>
+                                                            <p>2. s'arrêter lorsque l'entité lue contient un champ de même nom </p>
+                                                            <p>Si un champ a été trouvé XTEND renverra la valeur de ce champ sinon il renverra une valeur vide.</p>
+                                                            <p>L'exemple ci dessous montre l'état de la pile avec un bloc de 'fond' mono-enregistrement (BLOCMONO) deux blocs multi-enregistrements imbriqués (BLOCMULTI1, BLOCMULTI2).</p>
+                                                            <p>Le premier bloc multi est positionné sur la 2eme ligne et le deuxième bloc (BLOC2) est positionné sur la 3eme ligne.</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;!adx="BLOCMONO"&gt;<br />&#160;&#160;&#160; &lt;!adx="BLOCMULTI1"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;!adx="BLOCMULTI2"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;span adx="MyField"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; &lt;!adx="BLOCMULTI2"&gt;<br />&#160;&#160;&#160; &lt;!adx="BLOCMULTI1"&gt;<br />&lt;!adx="BLOCMONO"&gt;</span>
+                                                            </p>
+                                                            <p />
+                                                            <table width="100%" border="2" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                                <tbody>
+                                                                    <tr align="center" style="FONT-WEIGHT: bold;BACKGROUND-COLOR: gainsboro;" class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><b>Pile</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p><b>Ordre</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>&#160;ASESSION</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>3 - Bottom</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p>ENTITE_BLOCMONO</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>2</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p>ENTITE_BLOCMULTI1_LIGNE2</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>1</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p>ENTITE_BLOCMULTI2_LIGNE3</p>
+                                                                        </td>
+                                                                        <td colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>0 - Top</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Pour résoudre la valeur du champ MyField le serveur XTEND va vérifier la présence du champ MyField dans les entités suivant l'ordre ci-dessous:</p>
+                                                            <p>1. ENTITE_BLOCMULTI2_LIGNE3</p>
+                                                            <p>2. ENTITE_BLOCMULTI1_LIGNE2</p>
+                                                            <p>3. ENTITE_BLOCMONO</p>
+                                                            <p>4. ASESSION </p>
+                                                            <p><u>Le principe de résolution de la valeur est le même pour :</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li>Les tokens champs</li>
+                                                                <li>Les paramètres/critères de type 'Token champ' (MonBloc.MonChamp) utilisés dans :</li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Les critères de sélection des blocs et liens dynamiques</li>
+                                                                        <li>Les paramètres des actions web</li>
+                                                                        <li>Les critères des formules des blocs conditionnés </li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p style="MARGIN-RIGHT: 0px;"><u>Pour calculer la valeur d'un champ pour une entité donnée il faut utiliser les syntaxes suivantes :</u>
+                                                            </p>
+                                                            <ul>
+                                                                <li><b>ASESSION.MyField</b>
+                                                                </li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Lit la valeur dans le contexte session </li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <li><b>MyBlock.MyField</b>
+                                                                </li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Si MyBlock est un bloc mono-enregistrement lit la valeur du champ pour ce bloc</li>
+                                                                        <li>Si MyBlock est un bloc multi-enregistrement lit la valeur du champ pour la <a href="GESAYB.htm">ligne sélectionnée</a> </li>
+                                                                    </ul>
+                                                                </ul>
+                                                                <li><b>MyBlock(i).MyField</b>
+                                                                </li>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <li>Lit la valeur du champ pour pour la ieme ligne du bloc (i commence à 1) </li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <h5>Résolution dans le contexte session</h5>
+                                                            <p>Le contexte session est constitué des différents blocs de données ci-dessous.</p>
+                                                            <p>La résolution de la valeur d'un champ est effectuée suivant l'ordre de présentation des blocs dans la liste.</p>
+                                                            <p>1. AUSERINF - Informations utilisateur signé</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Contient les données du compte utilisateur crées lors du login (<a href="GESAY_CONCEPT_ACTION.htm">voir AXLOGCOD/AXLOGVAL</a>) </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. AUSERVAR - Variables utilisateur</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Contient des champs créés via les fonctions JavaScript xtdAjaxSetUserVar et xtdSetUserVar</li>
+                                                                    <li>Utilisé pour sauvegarder des données client sur le serveur </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. ASITE - Document site</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Accès aux valeurs des champs 'Paramètres libre' de la <a href="GESAYS.htm">fiche du site</a></li>
+                                                                    <li><span style="font-family: 'Courier new';">&lt;span adx="ASESSION.MyFreeField"&gt;&lt;/span&gt;</span> affiche la valeur du paramètre libre de code MyFreeField </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>4. AMESS - Messages utilisateur</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Contient les messages renvoyés par X3 </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>5. AUSERCRIT - Critères utilisateur</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Les critères de sélections sont sauvegardés et restaurés via le paramètre HTML xcrit</li>
+                                                                    <li><span style="font-family: 'Courier new';">&lt;input type="text" adx="MyCriteria:xcrit"&gt; </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>6. ASYSVAR - Variables systèmes</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Contient uniquement le champ ATODAY </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>7. ACONST - Tokens champ de type constantes</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Voir les <a href="GESAYF.htm">token champs</a> </li>
+                                                                </ul>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_40_10"></a>
+                                                            <h2 class="g1" id="LetraitementdunerequêteHTTP" data-magellan-target="LetraitementdunerequêteHTTP">Le traitement d'une requête HTTP</h2>
+                                                            <p>Les requête http</p>
+                                                            <p>Dans l'architecture X3WEB qui héberge le serveur XTEND nous avons 3 couches applicatives:</p>
+                                                            <p>1. le serveur frontal Apache HTTP qui traite les requêtes HTTP</p>
+                                                            <p>2. le serveur Apache Tomcat qui héberge les 'applications web'</p>
+                                                            <p>3. l'application web XTEND </p>
+                                                            <p>Les requêtes http à destination de l'application web XTEND sont identifiée par l'URI qui commence par <b>/xtend/*</b>.</p>
+                                                            <p>Le <b>'path'</b> de l'application web XTEND est paramétrable via la console via le paramètre avancé:<br /><span style="font-family: 'Courier new';">xtend.server.virtualpath.context=xtend</span></p>
+                                                            <p>L'application web sait traiter un certain nombre de requêtes (servlets) identifiées par le 2eme paramètre de l'URI <b>/xtend/servlet/</b> :</p>
+                                                            <ul>
+                                                                <li><span style="font-family: 'Courier new';">/xtend/page/*</span> gère la construction de la page HTML</li>
+                                                                <li><span style="font-family: 'Courier new';">/xtend/data/*</span> gère l'accès aux données fichiers (images, fklash, fichier pdf...) sur X3 ou en local</li>
+                                                                <li><span style="font-family: 'Courier new';">/xtend/admin/*</span> gère les requêtes d'administration utiles pour le développeur</li>
+                                                                <li><span style="font-family: 'Courier new';">/xtend/svc/*</span> gère les requêtes d'administration utiles pour le développeur (trace, gestion cache, reload...) </li>
+                                                            </ul>
+                                                            <h5>Méthode GET ou POST</h5>
+                                                            <p>Le protocole HTTP propose différentes méthodes ou commandes qui spécifient le type d'action qu'effectue la requête.</p>
+                                                            <p>Le serveur XTEND ne répond qu'au méthodes GET et POST qui ont la signification suivante:</p>
+                                                            <p>Un lien dynamique utilise par défaut la méthode POST si une sélection ou une action lui est associée.<br />Cette méthode soumet (submit) le formulaire HTML &lt;form&gt;&lt;/form&gt; de la page via l'appel de la fonction JavaScript xtdDoDlk.<br />Cette fonction calcule les paramètres du lien dynamique (xml) et les envoie dans un champ input hidden.<br />Le serveur reçoit toutes les informations dont il a besoin pour traiter l'action ou la sélection associée au lien dynamique sur lequel il a cliqué (données des champs du formulaire et contexte calculé par le client).</p>
+                                                            <p>Un lien dynamique peut utiliser la méthode GET si il effectue seulement un débranchement vers une page ou si il n'a pas de paramètre d'action ou de sélection à calculer.<br />Cette méthode ne soumet pas le formulaire HTML mais débranche le navigateur vers une URL qui ne contient que les paramètres de base (lien, solution, dossier, site, langue).</p>
+                                                            <p><b>Seule la méthode GET est compatible avec les moteurs de recherche (web crawlers).</b>
+                                                            </p>
+                                                            <h4>Utilisation d'un 'reverse proxy'</h4>
+                                                            <p>Pour des raisons de sécurité, l'utilisateur du web peut passer par l'intermédiaire d'un reverse proxy pour accéder aux applications de serveurs internes.</p>
+                                                            <p>L'utilisation d'un reverse proxy permet aussi de masquer aux utilisateur l'adresse réelle d'un serveur et facilite la maintenance d'un site.</p>
+                                                            <p>En cas d'arrêt d'un serveur on pourra rediriger temporairement les requêtes vers un autre serveur de façon transparente pour le client.</p>
+                                                            <p>Pour définir un 'reverse proxy' d'alias <b>proxyxtend</b> dans le serveur Apache du serveur X3WEB <b>hostproxy</b> qui "redirige" les requêtes XTEND vers <b>hostxtend</b> on utilise la configuration suivante.</p>
+                                                            <h5>Fichier Apache2.2\conf\httpd.conf</h5>
+                                                            <p>Créer un 'virtual host' sur le port 80</p>
+                                                            <p><span style="font-family: 'Courier new';">&lt;VirtualHost _default_:80&gt;<br />&#160;&#160;&#160; &lt;Location "/proxyxtend/"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPass&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "http://hostxtend:28980/"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverse&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "http://hostxtend:28980/"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverseCookieDomain "hostxtend"&#160;&#160; "hostproxy"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverseCookiePath&#160;&#160;&#160;&#160;&#160;&#160; "/xtend"&#160;&#160;&#160;&#160;&#160;&#160; "/proxyxtend/xtend"<br />&#160;&#160;&#160; &lt;/Location&gt;<br />&lt;/VirtualHost&gt;</span>
+                                                            </p>
+                                                            <h5>Fichier Apache2.2\conf\extra\httpd-ssl.conf</h5>
+                                                            <p><span style="font-family: 'Courier new';">&lt;VirtualHost _default_:443&gt;<br />...<br />&#160;&#160;&#160; ProxyRequests Off<br />&#160;&#160;&#160; SSLProxyEngine on<br />&#160;&#160;&#160; ProxyPreserveHost On<br />&#160;&#160;&#160; &lt;Location "/proxyxtend/"&gt;<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ProxyPass&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "https://hostxtend:28943/"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverse&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; "https://hostxtend:28943/"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverseCookieDomain "hostxtend"&#160;&#160; "hostproxy"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; ProxyPassReverseCookiePath&#160;&#160;&#160;&#160;&#160;&#160; "/xtend"&#160;&#160;&#160;&#160;&#160; "/proxyxtend/xtend"<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; SSLRequireSSL<br />&#160;&#160;&#160; &lt;/Location&gt;<br />...<br />&lt;/VirtualHost&gt;</span>&#160;&#160; </p>
+                                                            <h5>Configuration XTEND</h5>
+                                                            <p>Lorsque le serveur Apache hostproxy reçoit l'url <span style="font-family: 'Courier new';">http://hostproxy/proxyxtend/xtend/page/</span><span style="font-family: 'Courier new';">*.<br /></span><span style="font-family: 'Courier New';">I</span>l va se comporter comme un mandataire et effectuer pour le client la requête <span style="font-family: 'Courier new';">http://hostxtend/xtend/page/</span><span style="font-family: 'Courier new';">*</span> vers le serveur XTEND.</p>
+                                                            <p>Le serveur XTEND qui va calculer la page HTML à renvoyer vers le client doit prendre en compte le reverse proxy pour générer des URL'S qui soient correctes pour le client final (le navigateur).</p>
+                                                            <p>Dans notre cas, XTEND doit génére des URL's en /<span style="font-family: 'Courier new';">proxyxtend/xtend/*.<br /></span>Il doit donc impérativement tenir compte de la présence du reverse proxy pour calculer l'URL.</p>
+                                                            <p>La méthode utilisée par XTEND est la suivante:</p>
+                                                            <p><b>-1- Déclaration des reverse proxies</b>
+                                                            </p>
+                                                            <p>Déclaration des ports http et https des 'reverse proxies' via la console d'administration en modifiant les paramètres avancés suivants:</p>
+                                                            <p><span style="font-family: 'Courier new';"># Configuration reverse proxies<br />xtend.server.gensetup.proxies.hosts=&#160;&#160;&#160;&#160;&#160; hostproxy1&#160;&#160; hostproxy2<br />xtend.server.gensetup.proxies.portshttp=&#160; 80&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 80<br />xtend.server.gensetup.proxies.portshttps= 443&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; 443</span>
+                                                            </p>
+                                                            <p><b>-2- Lecture du 'Referer' HTTP</b>
+                                                            </p>
+                                                            <p>Le header <b>HTTP Referer</b> contient l'url qui a été utilisée par le <b>client</b> pour joindre le serveur.</p>
+                                                            <p>Le serveur XTEND analyse cette URL et en déduit la présence d'un reverse proxy si /xtend/ est préfixée par une valeur (exemple /proxyxtend/xtend/).</p>
+                                                            <p>La configuration précédente permet de gérer les changement de protocole http-&gt;https ou inversement. Le serveur XTEND doit obligatoirement connaître les ports http et https du reverse proxy.</p>
+                                                            <p>Pour fonctionner correctement avec un reverseproxy le serveur XTEND doit donc obligatoirement connaitre le 'Referer' http et les ports http et https du (premier) reverse proxy.</p>
+                                                            <p>La paramètre de configuration<span style="font-family: 'Courier new';"> xtend.server.gensetup.http.askreferer=on/off</span> (on par défaut) permet d'activer ou désactiver ce mécanisme.</p>
+                                                            <p>Le header http 'Referer' n'est pas toujours présent, en particulier lorsqu'on saisit l'adresse dans la barre dresse du navigateur.</p>
+                                                            <p>Si le header http 'Referer' n'est pas présent dans la requête, le serveur XTEND envoie vers le navigateur un formulaire vide avec réponse automatique (transparent pour l'utilisateur) qui dans la plupart des cas renvoie le 'Referer'.</p>
+                                                            <p>Si la tentative échoue et que le 'Referer' n'est pas renvoyé, le serveur XTEND ne pourra pas prendre en compte la présence d'un reverse proxy.</p>
+                                                            <h4>La session</h4>
+                                                            <p>Le protocole de communication entre le navigateur web et le serveur HTTP est le protocole HTTP qui est <b>"sans état"</b>.<br />Le serveur HTTP ne conserve <b>aucune trace</b> du client après traitement de la requête.<br />Tout se passe comme si la connexion entre le client et le serveur était coupée après chaque requête.</p>
+                                                            <p>Le mode de fonctionnement est complètement différent du mode client/serveur (client X3) qui maintient une connexion active avec le serveur X3 pendant toute la durée de la session.</p>
+                                                            <p>Pour développer des applications web nous avons besoins de faire le lien entre différentes requêtes pour les associer à un même client.<br />Ce lien est effectué via l'utilisation des <b>cookies HTTP</b>.</p>
+                                                            <p><b>Un cookie</b> est créé à l'initiative du serveur lorsque celui-ci envoie au client un instruction 'set cookie' dans l'entête HTTP.<br />Le cookie est ensuite renvoyé par le client dans l'entête HTTP de toutes les requêtes à destination de ce serveur.</p>
+                                                            <p><b>Instruction</b>
+                                                                <br /><span style="font-family: 'Courier new';">Set-Cookie: JSESSIONID=3C9B3EF39FB53069ACB02B6ADA5551A1; Path=/xtend</span>
+                                                                <br /><i>Path permet de filter les cookies à destination du serveur<br />Dans notre cas JSESSIONID sera renvoyé dans toutes les requêtes dont l'URI commence<span style="font-family: 'Courier new';"> /xtend/ (</span></i><span style="font-family: 'Courier new';"><i>http://host:port/xtend/</i></span><span style="font-family: 'Courier new';"><i>....)</i></span>
+                                                            </p>
+                                                            <p>L'identification par cookie (et donc le fonctionnement de l'application web) ne fonctionne que si le navigateur autorise les cookies de type session (non sauvegardés).<br />C'est généralement le réglage par défaut des navigateurs web</p>
+                                                            <p>La notion de 'client' diffère suivant les navigateurs et dépend de la manière dont ils gèrent les cookies.</p>
+                                                            <ul>
+                                                                <li>Pour <b>FireFox</b> les cookies sont partagés entre les instances des navigateurs.<br />Si on se connecte à un même site XTEND sur le même poste avec deux navigateurs FireFox il partageront la même session XTEND.<br />Les navigateurs sont vus côté serveur comme un seul client.</li>
+                                                                <li>Pour <b>IE6</b> les cookies ne sont pas partagés entre les instances des navigateurs.<br />Si on se connecte à un même site XTEND sur le même poste avec deux navigateurs IE6 ils auront chacun une session.<br />Les navigateurs sont vus côté serveur comme deux clients différents.</li>
+                                                                <li>Les onglets au sein d'un même navigateur partagent les mêmes cookies et sont vus comme un seul client.</li>
+                                                            </ul>
+                                                            <h5>Session TOMCAT</h5>
+                                                            <p>La session utilisateur qui permet d'associer un contexte de données spécifique à chaque client est gérée par le serveur TOMCAT via la notion de servlet.</p>
+                                                            <p>Pour identifier les requêtes et les rediriger vers la bonne session utilisateur le serveur TOMCAT gère un <b>cookie session</b> spécifique de code <b>JSESSIONID</b>.</p>
+                                                            <p><b>Cookie géré par le serveur TOMCAT</b>
+                                                                <br /><span style="font-family: 'Courier new';">Set-Cookie: JSESSIONID=3C9B3EF39FB53069ACB02B6ADA5551A1; Path=/xtend<br /></span><i>JSESSIONID est l'identifiant de session TOMCAT</i>
+                                                            </p>
+                                                            <p>Le cookie JSESSIONID n'est pas persistant c'est à dire qu'il n'est pas conservé lorsqu'on ferme le navigateur.<br />L'utilisateur perd donc sa session et donc son contexte de données si il ferme son navigateur.</p>
+                                                            <p>La session est conservée en mémoire pendant une durée paramétrable via le paramètre de configuration console :<br /><span style="font-family: 'Courier new';"><b>xtend.server.gensetup.http.session.timeout</b></span><br />Ce paramètre indique la durée d'inactivité, en minutes, tolérée par le serveur TOMCAT pour une session utilisateur.<br />Si aucune activitée (requête reçue) n'est détectée pendant cette période, la session est supprimée et le contexte de données est perdu.</p>
+                                                            <h5>Mecanisme de reconnexion</h5>
+                                                            <p>Le serveur XTEND gère son propre indentifiant de session via le cookie <b>XADXID</b>.<br />Ce cookie est persistant c'est à dire qu'il est sauvegardé par le navigateur (si autorisé).</p>
+                                                            <p>Lorsque l'utilisateur ouvre son navigateur et se connecte au serveur XTEND, le cookie XADXID est envoyé dans la requête (si il existe) et le serveur essaie de retrouver la session (TOMCAT) de l'utilisateur pour le reconnecter.</p>
+                                                            <p><b>Cookies gérés par le serveur XTEND</b>
+                                                                <br /><span style="font-family: 'Courier new';">Set-Cookie XADXID=123332746651556912893670; Expires=Sat, 30-Jan-2010 14:57:46 GMT; Path=/xtend</span>
+                                                            </p>
+                                                            <p>Le paramètre de configuration console <span style="font-family: 'Courier new';"><b>xtend.server.gensetup.http.cookie.sess.persist=on</b></span> (on par défaut) permet d'activer/désactiver la gestion de la reconnexion suite à la fermeture du navigateur.</p>
+                                                            <p>La page de reconnexion du site (facultative) permet d'informer l'utilisateur que sa session a été restaurée.</p>
+                                                            <h5>Fonctionnement sans les cookies</h5>
+                                                            <p>XTEND propose un mode de fonctionnement sans cookies qui propage l'identificateur de session JSESSIONID dans l'URL.</p>
+                                                            <p>Ce mode peut être soit activé:</p>
+                                                            <ul>
+                                                                <li>Par l'utilisateur via l'action web ASESSSWITCHCOOKIES ou le lien dynamique ADLKSWITCHCOOKIES</li>
+                                                                <li>Par défaut pour toutes les sessions via le paramètre de configuration console<br /><span style="font-family: 'Courier new';">xtend.server.gensetup.http.cookie.disabled=on</span> - off par défaut. </li>
+                                                            </ul>
+                                                            <p>Le mode sans cookies augmente la taille des URL'S en ajoutant un paramètre supplémentaire:<br /><span style="font-family: 'Courier new';">http://ecfdalbopro:28980/xtend/page;jsessionid=E04AEF0615702B3C7E52107ED6C17D8A?DLK=DLKTESTMAPPING</span><span style="font-family: 'Courier new';">...</span></p>
+                                                            <p>Ce mode ne permet pas l'utilisation de liens vers d'autre sites web car l'id session n'est pas propagé et la session utilisateur est perdue.</p>
+                                                            <h4>Traitement serveur</h4>
+                                                            <p>Ce paragraphe décrit le processus de traitement des requêtes HTTP par le serveur XTEND.</p>
+                                                            <h5>Apache HTTP server</h5>
+                                                            <p>1. Réception de la requête HTTP</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Gère le protocole sécurisé HTTPS </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Filtre la requête en fonction de l'URI</p>
+                                                            <ul>
+                                                                <li>Seul les URI'S qui commencent par '/xtend/*' sont traitées par XTEND<br />Paramètre console <span style="font-family: 'Courier new';">xtend.server.virtualpath.context </span></li>
+                                                                <li>C'est le fichier httpd.conf qui contient la configuration du serveur Apache<br />Ce fichier est généré lors de la configuration du serveur X3WEB </li>
+                                                            </ul>
+                                                            <p>3. Transfert la requête vers 'Apache TOMCAT server' via le mod_jk<br /><i>mod_jk : 'module Jakarta' qui est le nom du projet de logiciels libres duquel est issu le projet TOMCAT</i> </p>
+                                                            <p><span style="font-family: 'Courier new';">JkMount xtend/portal* ajp13<br />JkMount xtend/page* ajp13<br />JkMount xtend/err/* ajp13<br />JkMount xtend/ajax/* ajp13<br />JkMount xtend/x3rsrc/* ajp13<br />JkMount xtend/htmrsrc/* ajp13<br />JkMount xtend/x_protect/* ajp13<br />JkMount xtend/data/* ajp13<br />JkMount xtend/svc/* ajp13<br />JkMount xtend/*.jsp ajp13</span>
+                                                            </p>
+                                                            <h5>Apache TOMCAT server</h5>
+                                                            <p>1. Crée une tâche (thread) pour le traitement de la requête</p>
+                                                            <p>2. Retrouve le service (objet servlet) identifiée par l'URI</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li><span style="font-family: 'Courier new';">/xtend/page/*</span> pour le traitement des page HTML </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. Retrouve la session avec le cookie JSESSIONID</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Crée une nouvelle session si non trouvée </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>4. Appelle méthode doPost ou doGet du service</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Un paramètre httpRequest contient les données de la requête http et la session utilisateur</li>
+                                                                    <li>Le traitement de la web application XTEND commence ici </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <h5>Web application XTEND</h5>
+                                                            <p><b>1. Initialisation</b>
+                                                            </p>
+                                                            <p>1. Si nouvelle session TOMCAT</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Traitement reconnexion via le cookie XADXID</li>
+                                                                    <li>Demande http referer (prise en compte des 'reverses proxies') </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Si redirection (chagement de protocole...)</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Traitement de la redirection&#160;d'URL</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. Lectures des paramètres XTEND</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Méthode GET : Paramètres de l'URL</li>
+                                                                    <li>Méthode PUT : Paramètres XML dans le champ XTDXML du formulaire HTML<br /><i>Paramètres : lien dynamique cliqué, page demandée, paramètres de l'action...</i> </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p><b>2. Ouverture session</b>
+                                                            </p>
+                                                            <p>1. Mise en attente si session en cours d'utilisation par une autre requête</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Paramètre console xtend.session.wait.timeout&#160;</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Positionnement du contexte sur le site XTEND</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Le code SolutionX3/DossierX3/SiteXtend est passé en paramètre de chaque requête</li>
+                                                                    <li>Si pas de paramètre ou site inexistant c'est le site par défaut qui est choisit</li>
+                                                                    <li>Paramètres console xtend.server.gensetup.defsite.x3sol,x3fldr,xtdSite&#160;</li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. Vérification des mises à jour du dictionnaire XTEND</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Paramètres techniques du site 'Vérifier mise à jour' </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p><b>3. Contrôles</b>
+                                                            </p>
+                                                            <p>1. Contrôle du protocole</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Si le protocole (http ou https) de la requête n'est pas celui défini pour la page</li>
+                                                                    <ul>
+                                                                        <li>Envoie d'une redirection au client (Http status=302) pour 'switcher' de protocole&#160;</li>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Si utilisateur signé : contrôle durée d'inactivité de la session XTEND</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Paramètre 'Timeout session(mn)' de la fiche site </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. Si la page si page est protégée<br /><i>Paramètre 'Accès protégé' de la fiche page</i>&#160;</p>
+                                                            <p>1. Contrôle des droits d'accès de l'utilisateur</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Contrôle en fonction du profil si utilisateur signé </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Si l'utilisateur n'a pas les droits d'accès</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <li>Redirection vers la page de login définie dans la fiche site</li>
+                                                                    <li>Sauvegarde du contexte (page destination, action) pour restauration après login </li>
+                                                                </ul>
+                                                            </ul>
+                                                            <p><b>4. Traitement de l'action web</b> si une action est associée au lien dynamique</p>
+                                                            <ul>
+                                                                <li>L'action peut modifier la page de destination</li>
+                                                                <li>Par exemple si une erreur se produit on reste sur la page courante et on affiche le message X3 </li>
+                                                            </ul>
+                                                            <p><b>5. Affichage de la page</b>
+                                                            </p>
+                                                            <p>1. Vérification des mises à jour de la page</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <ul>
+                                                                                <li>Paramètres techniques du site 'Vérifier mise à jour' </li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>2. Initialisation des tokens bloc (requêtes)</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <ul>
+                                                                                <li>Appel des web service type Accès donnée </li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p>3. Calcul du HTML</p>
+                                                            <ul>
+                                                                <ul>
+                                                                    <ul>
+                                                                        <ul>
+                                                                            <ul>
+                                                                                <li>Parcours de l'arborescence des tokens</li>
+                                                                                <li>Appel de la méthode computeHtml </li>
+                                                                            </ul>
+                                                                        </ul>
+                                                                    </ul>
+                                                                </ul>
+                                                            </ul>
+                                                            <p><b>6. Envoie de la réponse au navigateur</b> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#FonctionnementdXTEND">Fonctionnement d'XTEND</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Ledictionnaire">Le dictionnaire</a>
+                                                        </li>
+                                                        <li><a href="#TraitementduHTML">Traitement du HTML</a>
+                                                        </li>
+                                                        <li><a href="#Letraitementdunerequ%C3%AAteHTTP">Le traitement d'une requête HTTP</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

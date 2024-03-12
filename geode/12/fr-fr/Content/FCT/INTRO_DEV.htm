@@ -1,0 +1,830 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Paramétrage et développement spécifique" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="Superviseur" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Paramétrage et développement spécifique</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Paramétrageetdéveloppementspécifique" data-magellan-target="Paramétrageetdéveloppementspécifique"><span>Paramétrage et développement spécifique</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="MIS_10_20"></a>
+                                                            <h2 class="g1" id="Introduction" data-magellan-target="Introduction">Introduction</h2>
+                                                            <p>Lors de la mise en place d’ADONIX X3, deux niveaux d’intervention sur le produit sont possibles.</p>
+                                                            <p>Le premier niveau est celui des paramétrages, qui peuvent jouer de façon importante sur l’ergonomie du progiciel et sur ses fonctionnalités&#160;; le deuxième est le niveau des développements spécifiques.</p>
+                                                            <p>La caractérisation des fonctions relevant de chaque niveau n’est donc pas liée à leur complexité relative, mais elle se fait de la façon suivante&#160;:</p>
+                                                            <ul>
+                                                                <li>Le paramétrage se caractérise par le fait qu’il n’est en principe pas impacté en cas de changement de version mineure ou de patch applicatif. &#160;Ceci signifie qu’il n’y a pas d’effort de protection à faire pour le rendre pérenne. Les opérations de paramétrage sont accessibles, pour un utilisateur ayant le profil ADMIN de l’administrateur, dans les menus nommés <i>Paramétrage, Exploitation</i>, et dans les sous-menus qui en dépendent.</li>
+                                                                <li>Le développement doit être pérennisé par l’emploi de mesures particulières (règles de nommage, utilisation de codes activité dédiés) qui nécessite de ce fait des efforts complémentaires. Les règles à respecter pour que les développements soient pérennes sont définies dans un <a href="../MODEL/RULES_DEV.htm">document annexe</a>. Les opérations de développement sont accessibles, pour un utilisateur ayant le profil ADMIN de l’administrateur, dans les menu nommé <i>Développement</i>, et dans les sous-menus qui en dépendent.</li>
+                                                            </ul>
+                                                            <p>La conséquence de ceci est que les solutions à base de paramétrage sont en principe moins contraignantes, du point de vue de la maintenance, et doivent être préférées, quand cela est possible, aux développements spécifiques.</p>
+                                                            <p>Par ailleurs, une classification des opérations de paramétrage peut être faite, selon leur degré de difficulté et leur accessibilité à des utilisateurs avancés. Il en est de même pour les opérations de développement. Cette classification est faite dans la suite de ce document.</p>
+                                                            <p>Le paramétrage peut conduire à une génération automatisée de code, mais ceci est transparent pour l’utilisateur. Il suppose dans certains cas une connaissance limitée du langage, dans la mesure où on peut utiliser des formules de calcul (un peu l’équivalent de formules Excel™)&#160;; mais un assistant permet de simplifier leur création. De fait, on peut considérer qu’il existe un niveau simple de paramétrage et un niveau plus complexe. Certaines opérations de paramétrage nécessitent en effet des compétences de développement.</p>
+                                                            <p>Le développement peut impliquer ou pas l’écriture de code utilisant l’AGL ADONIX. Là encore, on peut déléguer certaines opérations de développement se faisant sans écriture de code à des consultants non programmeurs, à condition d’être précautionneux sur leur pérennisation.</p>
+                                                            <p>L’écriture d’états Crystal Reports™ peut s’apparenter à du paramétrage, mais elle suppose une bonne connaissance de la base de données d’ADONIX X3. La présence d’aides en ligne sur la structure de la base (MCD, dictionnaire en ligne) doit simplifier la connaissance de cette structure. Reste que certains états (ceux qui mettent à jour des flags d’édition) supposent l’écriture de code ADONIX, et que par ailleurs la mise à jour du dictionnaire des états est également un acte de développement (relativement simple).</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_20_10"></a>
+                                                            <h2 class="g1" id="Opérationsrelevantduparamétrage" data-magellan-target="Opérationsrelevantduparamétrage">Opérations relevant du paramétrage</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_20_20">Mise à jour de paramètres simples</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_30">Paramétrages de second niveau</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_20_40">Paramétrages particuliers</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>Dans le menu de paramétrage, on trouve des sous-menus fonctionnels dépendant du progiciel en technologie X3. Ces menus correspondent effectivement à du paramétrage en général simple. Les sous-menus <i>Utilisateurs, Paramètres généraux, Exploitation</i> méritent une caractérisation des fonctions qui s’y trouvent. Le menu <i>Structure générale</i> correspond à un paramétrage simple, c’est aussi le cas du menu <i>Workflow</i>, dont le seul paramétrage complexe est celui des règles de Workflow.</p><a id="MIS_20_20"></a>
+                                                            <h3 class="g1">Mise à jour de paramètres simples</h3>
+                                                            <p>Ces fonctions mettent simplement à jour des paramètres ou des données dans la base. Leur mauvaise mise en œuvre peut avoir des conséquences fonctionnelles, mais rien n’est normalement irréversible. Ces fonctions sont les suivantes&#160;:</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAUS.htm">GESAUS</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Gestion des utilisateurs</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p />
+                                                                            <p><a href="GESACS.htm">GESACS</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p />
+                                                                            <p>Définition des codes accès</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p />
+                                                                            <p><a href="GESADI.htm">GESADI2</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Tables diverses</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p />
+                                                                            <p><a href="GESANM.htm">GESANM</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Compteurs documents</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p />
+                                                                            <p>GESTCA</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Affectation des compteurs</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p />
+                                                                            <p><a href="APARHIS.htm">APARHIS</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Paramètres d’épuration</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p />
+                                                                            <p><a href="GIMPEXPPAR.htm">GIMPEXPPAR</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Paramètres d’import/export</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p />
+                                                                            <p><a href="GESAEN.htm">GESAEN</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Enchaînements d’import/export</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p />
+                                                                            <p><a href="ABATPAR.htm">ABATPAR</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>Paramètres du serveur batch</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p />
+                                                            <p>La fonction de mise à jour des paramètres généraux (<a href="ADPVAL.htm">ADPVAL</a>) est un cas particulier&#160;: c’est clairement une fonction de paramétrage, mais la modification inconsidérée de certains paramètres du superviseur (chapitre SUP) et surtout du moteur (chapitre ADX) peut être très dangereuse.</p><a id="MIS_20_30"></a>
+                                                            <h3 class="g1">Paramétrages de second niveau</h3>
+                                                            <p>Ces paramétrages peuvent être considérés comme plus complexes pour plusieurs raisons&#160;:</p>
+                                                            <p>Ils peuvent impliquer, pour être opérants, une phase de validation ou de génération de code. Ceci implique une revalidation en cas de copie de dossier à dossier. Même si des contrôles de validité sont faits dans ces paramétrages, un mauvais paramétrage peut, dans des cas limites, provoquer des erreurs à l’exécution du progiciel.</p>
+                                                            <p>Entrent dans cette catégorie les fonctions suivantes&#160;:</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESGTC.htm">GESGTC</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Ecrans de consultation</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESAFT.htm">GESAFT</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p />
+                                                                            <p />Profils fonction</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAFP.htm">GESAFP</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Habilitation fonctionnelle</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p><a href="GESAPM.htm">GESAPM</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>Profils menus</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Tous les paramétrage de transaction de saisie (dans tous les modules) entrent aussi dans cette catégorie (on crée des écrans et des sources de traitements à partir du paramétrage).</p>
+                                                            <p>Une autre raison de complexité est que certains paramétrage peuvent supposer de la part de l’utilisateur une connaissance de la base de données, car on va définir comme critères des champs de cette base. Cette catégorie, qui peut être un peu plus complexe à paramétrer, peut aussi impliquer une génération de code associée.</p>
+                                                            <p>Entrent dans cette catégorie les fonctions suivantes&#160;:</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESARL.htm">GESARL</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Gestion des rôles</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p><a href="GESCDE.htm">GESCDE</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p />
+                                                                            <p />Paramétrage des sections par défaut</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Enfin, certains paramétrages peuvent nécessiter le recours à des formules de calcul (qui peuvent être guidés par des assistants de paramétrage), ou nécessiter la connaissance d’un contexte (nom de l’écran à paramétrer). La connaissance de la structure de la base, du langage des formules de calcul, et du contexte technique de façon plus générale est souvent utile voire nécessaire pour réaliser ces paramétrages. </p>
+                                                            <p>Entrent dans cette catégorie les fonctions suivantes&#160;:</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="HEIGHT: 212px;mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAWA.htm">GESAWA</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Règles de Workflow</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESACL.htm">GESACL</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p />
+                                                                            <p />Tables de contrôle</td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="CODCTL.htm">CODCTL</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Affectation des contrôles</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="CODACC.htm">CODACC</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Affectation des codes d’accès</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAOP.htm">GESAOP</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Propriétés objets</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESAOC.htm">GESAOC</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Personnalisation des objets</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESPS1.htm">GESPS1</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Déclencheurs statistiques</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESPS2.htm">GESPS2</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Paramètres statistiques</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAOE.htm">GESAOE</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Modèles d’import/export</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESAEV.htm">GESAEV</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Paramétrage d’import V3</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESALH.htm">GESALH</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Création de requêtes</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body2">
+                                                                            <p><a href="GESANX.htm">GESANX</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body2">
+                                                                            <p>Optimisation base de données</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Il est important de noter que, parmi ces opérations de paramétrage, certaines, lorsqu’elles sont mal faites, peuvent provoquer des dysfonctionnements des objets cibles&#160;:</p>
+                                                            <ul>
+                                                                <li>La personnalisation des objets peut aboutir à un dysfonctionnement de l’objet, par exemple si on ne place pas dans la liste gauche de l’objet tous les champs composant la clé principale de cet objet.</li>
+                                                                <li>Une définition erronée des statistiques, surtout si elles sont définies en temps réel, peut provoquer des erreurs à l’exécution des créations et mises à jour, empêchant ainsi le fonctionnement de l’objet de départ.</li>
+                                                                <li>La création de requêtes, qui crée à la fois un écran, des traitements, peut dans certains cas aboutir à des requêtes erronées lorsque les liens sont donnés sous forme explicite.</li>
+                                                            </ul>
+                                                            <p>Par ailleurs, l’optimisation base de données (<a href="GESANX.htm">GESANX</a>) suppose de bonnes connaissances techniques en gestion des bases de données&#160;; un mauvais paramétrage peut aller à l’encontre de l’objectif recherché, à savoir améliorer les performances en exploitation.</p><a id="MIS_20_40"></a>
+                                                            <h3 class="g1">Paramétrages particuliers</h3>
+                                                            <p>Deux séries de fonctions constituent des cas particuliers, mais sont du paramétrage&#160;:</p>
+                                                            <p>La gestion des dossiers (<a href="GESADS.htm">GESADS</a>), qui a des incidences importantes sur l’exploitation et nécessite, du moins quand on crée le dossier d’exploitation, une certaine expertise technique.</p>
+                                                            <p>La gestion des pièces automatiques (<a href="../FCTGESGAU.htm">GESGAU</a>) qui nécessitent une bonne connaissance à la fois du langage et du contexte, qui aboutissent à une génération de code et qui, si elles sont mal paramétrées, aboutissent à la création de pièces comptables déséquilibrées qui ne seront pas intégrées.</p>
+                                                        </div>
+                                                        <div class="stdBloc"><a id="MIS_30_10"></a>
+                                                            <h2 class="g1" id="Développementsspécifiques" data-magellan-target="Développementsspécifiques">Développements spécifiques</h2>
+                                                            <div class="links">
+                                                                <ul>
+                                                                    <li><a href="#MIS_30_20">Spécifiques simples</a>
+                                                                    </li>
+                                                                    <li><a href="#MIS_30_30">Spécifiques complexes</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <p>D’une façon simple, est développement spécifique tout ce qui relève, dans les menus standard du profil ADMIN, des entrées de menu <i>Développement</i>. L’autre manière de caractériser le spécifique est de dire qu’il nécessite le recours à au moins un <a href="GESACV.htm">code activité</a> commençant par X, Y ou Z pour être pérennisé. Selon que le recours au langage de développement est ou n’est pas nécessaire, on peut considérer qu’il y a deux niveaux de difficulté.</p><a id="MIS_30_20"></a>
+                                                            <h3 class="g1">Spécifiques simples</h3>
+                                                            <p>Ces spécifiques ne supposent pas un niveau d’expertise plus grand que les fonctions précédentes (dans certains cas, ils sont même plus simples que certaines fonctions complexes ci-dessus). Il ne s’agit pas forcément de fonctions, mais dans certains cas de l’utilisation limitée de certaines fonctions.</p>
+                                                            <p>L’assistant de paramétrage <i>Toolbox</i> décrit ces spécifiques simples et la manière de les réaliser.</p>
+                                                            <p>Dans tous les cas, la première règle à observer est la pérennisation de ces développements. Si ceci n’est pas fait, une revalidation quelconque de dossier va conduire à leur perte. Ceci suppose la définition et l’activation d’au moins un code activité commençant par X, Y ou Z, et l’adoption d’une normalisation des noms sur les éléments créés.</p>
+                                                            <p>Les opérations dont on peut considérer qu’elles rentrent dans cette catégorie sont&#160;les suivantes :</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESACV.htm">GESACV</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Codes activité</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESATB.htm">GESATB</a> (*)</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p />
+                                                                            <p>Gestion des tables</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="COMBOS.htm">COMBOS</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Menus locaux</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESATY.htm">GESATY</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Types de données</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAMK.htm">GESAMK</a> (*)</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Ecrans</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESAWI.htm">GESAWI</a> (*)</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Fenêtres</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAOB.htm">GESAOB</a> (*)</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Objets</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GESAFC.htm">GESAFC</a> (*)</p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Fonctions</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p><a href="GESAHI.htm">GESAHI</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>Formules d’épuration / historisation</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>Les fonctions marquées d’une astérisque peuvent être considérées comme faciles à mettre en œuvre sous certaines conditions. L’ajout de champs supplémentaires à des tables et des écrans existants, la création d’objets simples, d’écrans simples, de fenêtres et de fonctions par création d’objets sont des conditions simplificatrices de mise en œuvre.</p>
+                                                            <p>Certaines fonctions de développement ressemblent, par leur facilité de mise en œuvre, à du paramétrage, mais peuvent être extrêmement dangereuses, car elles mettent à jour des données avec un minimum de contrôles et parfois de façon massive. Ce sont les fonctions suivantes&#160;:</p>
+                                                            <table width="586" border="1" cellspacing="0" cellpadding="0" style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows">
+                                                                <tbody>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p align="center"><b>Fonction</b>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p align="center"><b>Définition</b>
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body1">
+                                                                            <p><a href="GESAMI.htm">GESAMI</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body1">
+                                                                            <p>Transactions système</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyE-Column1-Body2">
+                                                                            <p><a href="GMAINT.htm">GMAINT</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyD-Column1-Body2">
+                                                                            <p>Maintenance</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                                        <td width="27%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyB-Column1-Body1">
+                                                                            <p><a href="GSTDCOL.htm">GSTDCOL</a>
+                                                                            </p>
+                                                                        </td>
+                                                                        <td width="72%" valign="top" colspan="1" rowspan="1" class="TableStyle-NormalRows-BodyA-Column1-Body1">
+                                                                            <p>Maintenance en colonnes</p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p>En effet, la définition de transactions système (GESAMI) pour mettre à jour des champs en masse est très dangereuse si elle est faite sur des champs calculés ou ayant des contraintes d’intégrité qui peuvent être mises à mal par cette fonction. Les fonction de maintenance permettent de même de faire fi des contraintes d’intégrité.</p>
+                                                            <p>On peut par ailleurs considérer que ce qui se trouve dans les utilitaires nécessite un niveau de connaissance de type «&#160;spécifique léger&#160;», même si certaines fonctions sont potentiellement dangereuses et doivent être bien comprises dans leur utilisation. Ceci inclut&#160;:</p>
+                                                            <p>Les utilitaires de vérification (<a href="UTIBASE.htm">UTIBASE</a>, <a href="ETAFIC.htm">ETAFIC</a>, <a href="VERSYMB.htm">VERSYMB</a>, <a href="AVERSION.htm">AVERSION</a>)</p>
+                                                            <p>Les utilitaires de validation (<a href="VALDICO.htm">VALDICO</a>, <a href="ACOPDIC.htm">ACOPDIC</a>, <a href="ACOPTRS.htm">ACOPTRS</a>, <a href="ACOMPOBJ.htm">ACOMPOBJ</a>, <a href="AVALAFC.htm">AVALAFC</a>, <a href="VALMENU.htm">VALMENU</a>, <a href="GENMSKTRT.htm">GENMSKTRT</a>, <a href="COPTRT.htm">COPTRT</a>, <a href="GENMENULOC.htm">GENMENULOC</a>)</p>
+                                                            <p>Les utilitaires de maintenance de dossiers (<a href="CHDOS.htm">CHDOS</a>, <a href="DEVERROU.htm">DEVERROU</a>, <a href="RAZDOS.htm">RAZDOS</a>, <a href="IMPDOS.htm">IMPDOS</a>)</p>
+                                                            <p>Les utilitaires de recherche (<a href="RECHACT.htm">RECHACT</a>, <a href="RECHTYP.htm">RECHTYP</a>, <a href="RECHACI.htm">RECHACI</a>, <a href="RECHMESS.htm">RECHMESS</a>, <a href="RECHTXT.htm">RECHTXT</a>)</p>
+                                                            <p>Les utilitaires de sauvegarde (<a href="DOSEXTRA.htm">DOSEXTRA</a>, <a href="DOSINTEG.htm">DOSINTEG</a>)</p>
+                                                            <p>Les utilitaires de gestion de patches (<a href="PATCH.htm">PATCH</a>, <a href="APATCH.htm">APATCH</a>, <a href="GESAPT.htm">GESAPT</a>, <a href="APATCHA.htm">APATCHA</a>)</p>
+                                                            <p>Les utilitaires divers (<a href="AMIEXE.htm">AMIEXE</a>, <a href="SYSTEME.htm">SYSTEME</a>, <a href="LECTRACE.htm">LECTRACE</a>, <a href="EXETRT.htm">EXETRT</a>,&#160;<a href="VISULIC.htm">VISULIC</a>, <a href="PSADX.htm">PSADX</a>, <a href="ADXD.htm">ADXD</a>, <a href="GENTXTTRA.htm">GENTXTTRA</a>, <a href="MODCPT.htm">MODCPT</a>, <a href="ADELETE.htm">ADELETE</a>, <a href="RECUPLNK.htm">RECUPLNK</a>, <a href="ACTIVLNK.htm">ACTIVLNK</a>).</p><a id="MIS_30_30"></a>
+                                                            <h3 class="g1">Spécifiques complexes</h3>
+                                                            <p>Ces spécifiques supposent une connaissance approfondie du langage de développement, et donc un profil développeur affirmé. Sont notamment concernées toutes les fonctions de développement précédentes, lorsqu’elles agissent sur des écrans générés, toutes les fonctions où un point d’entrée est utilisé, toutes les fonctions où il est nécessaire d’écrire du code L4G adonix (par exemple dans un écran complexe). Les opérations qui peuvent être complexes sont&#160;:</p>
+                                                            <ul>
+                                                                <li>La définition des types de données (<a href="GESATY.htm">GESATY</a>), les écrans (<a href="GESAMK.htm">GESAMK</a>), les fenêtres (<a href="GESAWI.htm">GESAWI</a>), les fonctions (<a href="GESAFC.htm">GESAFC</a>), les objets (<a href="GESAOB.htm">GESAOB</a>), dès lors que ces fonctions sont utilisées dans des cas complexes</li>
+                                                                <li>Les consultations (<a href="GESACN.htm">GESACN</a>), les actions et fonctions liées&#160; (<a href="GESACT.htm">GESACT</a>,&#160; <a href="GESASU.htm">GESASU</a>, <a href="ADOTRT.htm">ADOTRT</a>) car le recours au code adonix est nécessaire dans tous les cas.</li>
+                                                                <li>Les états dès lors que des traitements préliminaires doivent être réalisés.&#160;</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Param%C3%A9trageetd%C3%A9veloppementsp%C3%A9cifique">Paramétrage et développement spécifique</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Introduction">Introduction</a>
+                                                        </li>
+                                                        <li><a href="#Op%C3%A9rationsrelevantduparam%C3%A9trage">Opérations relevant du paramétrage</a>
+                                                        </li>
+                                                        <li><a href="#D%C3%A9veloppementssp%C3%A9cifiques">Développements spécifiques</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janvier 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

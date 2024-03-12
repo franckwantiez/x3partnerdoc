@@ -1,0 +1,436 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="Local Crystal Report development" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> Local Crystal Report development
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="LocalCrystalReportdevelopment" data-magellan-target="LocalCrystalReportdevelopment"> Local Crystal Report development
+</h1>
+                                                <ul>
+                                                    <li><a href="#prerequisites">Prerequisites</a>
+                                                    </li>
+                                                    <li><a href="#local-use-of-crystal-reports">Local use of Crystal Reports</a>
+                                                    </li>
+                                                    <li><a href="#report-edition">Report Edition</a>
+                                                    </li>
+                                                    <li><a href="#report-edition">Report creation</a>
+                                                    </li>
+                                                    <li><a href="#report-modification">Report modification</a>
+                                                    </li>
+                                                    <li><a href="#troubleshooting">TroubleShooting</a>
+                                                    </li>
+                                                </ul>
+                                                <h2 id="Prerequisites" data-magellan-target="Prerequisites">Prerequisites</h2>
+                                                <p>The first prerequisite is of course to have Crystal Designer installed in one of the following versions: 2013, 2016 or 2020.</p>
+                                                <p>You also need to create the relevant ODBC data source on your PC if you want to access to the database through Crystal Designer (at least to add a table to a report, or to add a column to a given query). </p>
+                                                <p>Then, you need to install the CR connector plugin in your browser by following a link in the <i><b>Utility / Installation</b></i> path of the Administration menus.</p>
+                                                <p>A dedicated ODBC datasource is now automatically created on your desktop by the connector, mapped on the database of the current endpoint. The datasource name is <b>ADX CRCNN solname</b>, with solname which represents the name of the solution of the current endpoint.<br />Of course you could create and use your own ODBC datasource, but if you are not comfortable with datasource creation, we recommend using the one created by the connector.<br />If you are using Crystal Designer 2016 or 2020, we recommend to install the optional feature named <b>Data Access/ODBC Datadirect</b> of the Crystal Designer setup, in order to work with the latest version of the CR ODBC Drivers.<br /></p>
+                                                <p>Note that Crystal Report Designer 2020 is only supported from SAGE X3 CRConnector 2.28, released in 2023.04.<br /></p>
+                                                <p>The following screen appears during the download:</p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector-2-28_480x600.jpg" alt="Installing CRConnector" style="width: 480;height: 600;" />
+                                                    <br />
+                                                </p>
+                                                <p>Then an installation procedure starts<br /><br />By clicking successively on Next, the installation completes<br /></p>
+                                                <p>Finally, there is one last prerequisite to be able to edit future reports. To use the <b>Transfer</b> development mode, add your printer destination in the X3 folder. Indeed, you need to have your folder published on the print server before using this tool.</p>
+                                                <h2 id="LocaluseofCrystalReports" data-magellan-target="LocaluseofCrystalReports">Local use of Crystal Reports</h2>
+                                                <p>There is no longer a session switch to <i>Report Development mode</i>.</p>
+                                                <p>The user parameter <b>DEVCRY</b> still remains, but it can have three values:</p>
+                                                <ul>
+                                                    <li><i>No</i> doesn't allow a user to edit reports</li>
+                                                    <li><i>Yes</i> allows a user to switch a report in development mode.</li>
+                                                    <li><i>Administrator</i> allows a user to quit the development mode (by the Revert operation described further) even if he is not the owner of the sandbox copy.</li>
+                                                </ul>
+                                                <p>At the very first use of the connector, through the GESARP function, you might have a pop up asking for confirmation, like the following one:</p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector-04.png" alt="Confirmation" />
+                                                    <br />
+                                                </p>
+                                                <p>If you want to avoid the display of this pop up in the future, don't forget to check the <b>Remember my choice</b> box. <br /></p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector-07.png" alt="SAP CR Designer" />
+                                                    <br />
+                                                    <br />After few seconds, you Crystal Designer is launched with the selected report<br />Note the bubble "CRConnector" at the right bottom: this is actually this SAGE component which launch SAP Crystal Report Designer.</p>
+                                                <h1 id="ReportEdition" data-magellan-target="ReportEdition">Report Edition</h1>
+                                                <p>Editing a report starts from the report editor (classic page function GESARP). A contextual menu on the line that displays the report allows you:</p>
+                                                <ul>
+                                                    <li>To switch the report to development mode (<i><b>Transfer</b></i>). This transfers the report to a local sandbox and launches the connector that runs the Crystal Report developer. The report is now locked by you and cannot be edited by someone else.</li>
+                                                    <li>To roll back if necessary, by using the <i><b>Revert</b></i> choice on the line (you will lose your modifications).</li>
+                                                    <li>To open Crystal Report designer by using <i><b>Crystal Report Designer Load</b></i> if you previously exited during the Report editing.</li>
+                                                    <li>To validate the report and to send it back to the repository (by using <i><b>Commit</b></i>).</li>
+                                                    <li>Don't forget first to click <i><b>Save</b></i>  in the left panel of Crystal designer.</li>
+                                                </ul>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector-09.png" alt="GESARP" />
+                                                </p>
+                                                <p>Each time you save locally from the report designer, a version of the report is automatically saved in the sandbox of the corresponding Report server. <br /><br />This allows you to test immediately the results of your modified report through the AIMP classic function. However, this option is available only for the user who edits the report; the other users continues to use the standard report as long as the commit has not been done.<br />See the dedicated help page of GESARP function for more details regarding report modification workflow.</p>
+                                                <h1 id="Reportcreation" data-magellan-target="Reportcreation">Report creation</h1>
+                                                <p>Creating a new report requires you to upload the new report first in the REPORT storage area on the application server. This can be done either from scratch, or by starting from a template that needs to be downloaded to the local PC, renamed, and uploaded.</p>
+                                                <p>The report can then be edited from GESARP function through the connector.<br />See the dedicated help page of GESARP function for more details regarding report creation workflow.</p>
+                                                <h1 id="Reportmodification" data-magellan-target="Reportmodification">Report modification</h1>
+                                                <h2 id="Warning" data-magellan-target="Warning">Warning</h2>
+                                                <p>Users mustn't modify the report in the X3 reference folder because future updates in Sage X3 would overwrite their changes.<br /></p>
+                                                <p>If the report exists, the ADMCA user (or a user with access) must:<br />- download the report from the X3 reference folder,<br />- upload it to the child folder.</p>
+                                                <p>The report in the child folder is the one the users should be modifying.</p>
+                                                <p>The user will get an error in the <b>transfer</b> option if:<br />- he doesn't have rights to the X3 reference folder, <br />- the report hasn't previously been uploaded to the child folder.</p>
+                                                <div style="page-break-after: always;">
+                                                </div>
+                                                <h1 id="TroubleShooting" data-magellan-target="TroubleShooting">TroubleShooting</h1>
+                                                <h2 id="SupportSAPCrystalReportDesigner2020" data-magellan-target="SupportSAPCrystalReportDesigner2020">Support SAP Crystal Report Designer 2020</h2>
+                                                <p>SAP Crystal Report Designer 2020 is supported from PrintServer 2.28 and CRConnector 2.28 <br /></p>
+                                                <p>Error in SAP Crystal Report Designer 2020 :  <b>UFL 'u112ltext.dll' that implement this function is missing</b>: <br /><br />You need to upgrade CRConnector to CRConnector version 2.28 and PrintServer 2.28 to solve this issue. <br /><br />CrystalReport Designer 2020 is running in 64 bits.<br /><br />CrystalReport Designer 2016 is running in 32 bits. <br /></p>
+                                                <p>U212LText.dll and U212ltoword.dll are from this version 2.28 compile in 32bit and 64 bits to support Crystal Designer 2016 and 2020. <br /><br /><br /></p>
+                                                <p><b>Unable to find language and/or path in registry: </b>
+                                                    <br />
+                                                </p>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector-10_360x166.jpg" style="width: 360;height: 166;" />
+                                                    <br />
+                                                </p>
+                                                <p>
+                                                    <br />
+                                                    <br />In case of error while launching a preview in the SAP Crystal Designer 2020: <br /><b>"Unable to find language and/or path in registry" </b>: <br /> <br />This error is due to a bug in SageCRConnector 2.28, while reading registry in 64 bit instead of 32 bits.<br />Correct entrie to check in registries: <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX\SRVIMP\0,1,5,0\GENERAL</code>, key <code>Language</code> <br /><br />You need to upgrade CRConnector to CRConnector version 2.29 to solve this issue.<br /><br />Previous version of CRConnector 2.29 will check the key <code>Language</code> in <code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\ADONIX\SRVIMP\0,1,5,0\GENERAL</code>, the 64 bits path, which doesn't exist.<br /></p>
+                                                <p>Registry entries needed by CRConnector: <br /><br /><img src="../Resources/Images/images_CRConnector--04_640x460.jpg" style="width: 640;height: 460;" /><br /></p>
+                                                <p>Example Registy entries to import on a station WITHOUT PrintServer: <br /></p><pre xml:space="preserve">
+Windows Registry Editor Version 5.00
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX\SRVIMP]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX\SRVIMP\0,1,5,0]
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX\SRVIMP\0,1,5,0\GENERAL]
+"Path"="c:\\Sage\\SafeX3\\PRTSRV"
+"Language"="ENG"
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\ADONIX\SRVIMP\0,1,5,0\REPORT]
+"ForceNonUnicodeFont"="0"
+"NonUnicodeFont "="Courier New"
+"PrintEngine"="0"
+"ForceUnicodeFont"="0"
+"U2LTEXT_TraceMode"="ON"
+"U2LTOWORD_TraceMode"="ON"
+</pre>
+                                                <p>Don't forget to indicate a correct endpoint in the report to be able to read local menus: Folder;HostName;Port<br /><img src="../Resources/Images/images_CRConnector--03_640x768.jpg" style="width: 640;height: 768;" /><br /><br />In the example, if the PrintServer is installed in <code>c:\Sage\SafeX3\PRTSRV</code>, localmenu files while be read from: </p><pre xml:space="preserve">
+c:\Sage\SafeX3\PRTSRV\Data\[Folder]_[Hostname]_[Runtime Port]\GEN\ALL\MENL
+Result:
+C:\Sage\SafeX3\PRTSRV\Data\SEED10_FRPO402328_20130\GEN\ALL\MENL
+</pre>
+                                                <p>
+                                                    <img src="../Resources/Images/images_CRConnector--05_640x891.jpg" alt="" style="width: 640;height: 891;" />
+                                                    <br />
+                                                    <br />
+                                                    <br />
+                                                </p>
+                                                <h2 id="Forfurtherinformation" data-magellan-target="Forfurtherinformation">For further information</h2>
+                                                <p>For cloud: <a href="http://online-help.sageerpx3.com/erp/99/wp-static-content/whitepapers/en_US/technical/Standard%20Crystal%20Reports%20Modification/Default.htm">Standard Crystal Reports Modification</a> guide.<br />For on-premises: <a href="http://online-help.sageerpx3.com/erp/12/wp-static-content/whitepapers/en_US/technical/Standard%20Crystal%20Reports%20Modification/Default.htm">Standard Crystal Reports Modification</a> guide.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#LocalCrystalReportdevelopment"> Local Crystal Report development
+</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Prerequisites">Prerequisites</a>
+                                                        </li>
+                                                        <li><a href="#LocaluseofCrystalReports">Local use of Crystal Reports</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#ReportEdition">Report Edition</a>
+                                                    </li>
+                                                    <li><a href="#Reportcreation">Report creation</a>
+                                                    </li>
+                                                    <li><a href="#Reportmodification">Report modification</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Warning">Warning</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#TroubleShooting">TroubleShooting</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#SupportSAPCrystalReportDesigner2020">Support SAP Crystal Report Designer 2020</a>
+                                                        </li>
+                                                        <li><a href="#Forfurtherinformation">For further information</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 fevereiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

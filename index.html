@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Sage X3 Warehousing Documentation</title>
+</head>
+
+<body>
+    <noscript>If you don't have JavaScript enabled, please click <a href="/en-us/Default.htm">here</a> to
+        continue.</noscript>
+    <script src="static/jwt-decode.min.js"></script>
+    <script>
+        function getCookies() {
+            return window.document.cookie.split(';').reduce((prevValue, currentValue) => {
+                const separatorIndex = currentValue.indexOf('=');
+                prevValue[currentValue.substr(0, separatorIndex).trim()] = currentValue.substr(separatorIndex + 1).trim();
+                return prevValue;
+            }, {});
+        };
+
+        let locale = 'en-us';
+        let productVersion = '/erp/12/'
+        let index = 0
+        let versionIndex = 0
+        let currentPageURL = window.location.href
+        console.log("URL",currentPageURL);
+        let cookies = getCookies();
+        if (cookies.access_token) {
+            let tokenContent = window.jwt_decode(cookies.access_token);
+            if (tokenContent && tokenContent.locale) {
+                // This is the redirect rule table, as more locales get added we need to revise the logic below
+                switch (tokenContent.locale) {
+                    case 'en-GB':
+                        locale = 'en-gb';
+                        break;
+                    case 'en-US':
+                        locale = 'en-us';
+                        break;
+                    case 'fr-FR':
+                        locale = 'fr-fr';
+                        break;
+                    default:
+                        locale = 'en-us';
+                }
+            }
+        }
+
+        if(currentPageURL.includes("erp")){
+            index = currentPageURL.indexOf("erp")
+            productVersion = "/erp"
+        }
+        else if(currentPageURL.includes("geode")){
+            index = currentPageURL.indexOf("geode")
+            productVersion = "/geode"
+        }
+
+        versionIndex = index + productVersion.length;
+        const baseUrl = `${productVersion}/${currentPageURL.substring(versionIndex, versionIndex + 3)}`;
+
+        window.location.href = baseUrl + locale + '/Default.htm';
+    </script>
+</body>
+
+</html>

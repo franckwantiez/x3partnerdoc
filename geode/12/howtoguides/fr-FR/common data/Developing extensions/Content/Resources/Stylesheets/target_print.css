@@ -1,0 +1,28 @@
+﻿/*<meta conditions="Other.Master,Other.MasterTopNav" />*/
+
+/* This stylesheet contains styles that are specific to the 'print' medium, which is used when you print help output from a browser. */
+
+@media print
+{
+	html.procedure
+	{
+		mc-master-page: url('../MasterPages/Print.flmsp');
+	}
+
+	body,
+	table,
+	pre
+	{
+		font-size: 10pt;
+		mc-hyphenate: never;
+	}
+	
+
+
+    .dropDownBody, 
+	[data-mc-target-name] /* Make the drop down body and toggler body visible when a topic is printed */
+	{ 
+		display: block !important; 
+	}
+
+}

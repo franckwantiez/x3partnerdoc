@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-fr" xml:lang="fr-fr" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta charset="utf-8" />
+        <meta name="description" content="LDAP directories" />
+        <meta name="module" content="Platform" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title> LDAP directories
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../Resources/TableStyles/NormalRows.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script type="text/javascript">/*<![CDATA[*/
+
+
+function onload(){
+	window.focus();
+	window[window.history.pushState ? "onpopstate" : "onhashchange"] = function(event){ windows.focus(); };
+}
+
+
+/*]]>*/</script>
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Changer de langue">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Changer de langue">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <h1 id="LDAPdirectories" data-magellan-target="LDAPdirectories"> LDAP directories
+</h1>
+                                                <!-- Public -->
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="workbench-reference_launching-url.html#native">Administration Page</a>
+                                                        </th>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Application/Contract</th>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2">Syracuse/Collaboration</td>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Class</th>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><i>ldaps</i>
+                                                        </td>
+                                                        <th class="TableStyle-NormalRows-BodyE-Column1-Body2">Representation</th>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><i>ldap</i>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <p>When starting the application, users are granted access, or not, depending on their identity. There are four types of authentications:</p>
+                                                <ul>
+                                                    <li>Database authentication</li>
+                                                    <li>LDAP authentication (on-premise installations only)</li>
+                                                    <li>OAuth2 authentication</li>
+                                                    <li>SAML2 authentication (on-premise installations only)</li>
+                                                </ul>
+                                                <p>This page describes the LDAP authentication settings.</p>
+                                                <table style="mc-table-style: url('../Resources/TableStyles/NormalRows.css');" class="TableStyle-NormalRows" cellspacing="0">
+                                                    <tr class="TableStyle-NormalRows-Body-Body2">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#principles">Principles of LDAP authentication</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#connection">Connection properties</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#mapping">User mapping LDAP attributes</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body2"><a href="#search">Users search filter for synchronization</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyD-Column1-Body2"><a href="#groups">Groups</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-NormalRows-Body-Body1">
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#sync-settings">Synchronization settings</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#test">Connection test</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#import">User import from LDAP</a>
+                                                        </td>
+                                                        <td class="TableStyle-NormalRows-BodyE-Column1-Body1"><a href="#update">Schedule users update</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h1 id="PrinciplesofLDAPAuthentication" data-magellan-target="PrinciplesofLDAPAuthentication"><a id="principles">Principles of LDAP Authentication</a>
+                                                </h1>
+                                                <p>The user enters a login and password in the application login screen:</p>
+                                                <ol>
+                                                    <li value="1">If the login does not correspond to a user entity, the user cannot log in.</li>
+                                                    <li value="2">If the login corresponds to a user entity, the system performs an LDAP search for the user's distinguished name (which identifies the user in the LDAP structure). If an authentication name is provided, it can be used for the search. Otherwise, the login name is used.</li>
+                                                    <li value="3">If the entry is found, an LDAP authentication is performed with the distinguished name and the password. If the authentication succeeds, the user can use the application.</li>
+                                                </ol>
+                                                <h1 id="Connectionproperties" data-magellan-target="Connectionproperties"><a id="connection">Connection properties</a>
+                                                </h1>
+                                                <p>This section provides relevant information about the connection to the LDAP authentication server.</p>
+                                                <h2 id="Name" data-magellan-target="Name"><a id="name"></a>Name</h2>
+                                                <p>Name used to reference the LDAP setup.</p>
+                                                <h2 id="Displayname" data-magellan-target="Displayname"><a id="displayName"></a>Display name</h2>
+                                                <p>User-friendly description.</p>
+                                                <h2 id="Active" data-magellan-target="Active"><a id="active"></a>Active</h2>
+                                                <p>If the check box is cleared, the server is considered as inactive, and no login is possible using this setup.</p>
+                                                <h2 id="URL" data-magellan-target="URL"><a id="url"></a>URL</h2>
+                                                <p>Defines the LDAP server name, port, and protocol (example: "ldap://vil-ldap:3268").</p>
+                                                <h2 id="DNforsearching" data-magellan-target="DNforsearching"><a id="adminDn"></a>DN for searching</h2>
+                                                <p>Distinguished name of an LDAP user who has the rights to search the LDAP tree. All other rights should be disabled for this user as it is more "public" than other users.</p>
+                                                <p><b>Note:</b> Anonymous binding is not supported.</p>
+                                                <h2 id="PasswordforDNsearch" data-magellan-target="PasswordforDNsearch"><a id="adminPassword"></a>Password for DN search</h2>
+                                                <p>Password for the search user defined in <b>DN for searching</b>.</p>
+                                                <h2 id="Searchbase" data-magellan-target="Searchbase"><a id="searchBase"></a>Search base</h2>
+                                                <p>Defines the root of the subtree within the LDAP structure in which the search will be performed.</p>
+                                                <h2 id="Searchfilter" data-magellan-target="Searchfilter"><a id="searchBase"></a>Search filter</h2>
+                                                <p>Defines the search filter.</p>
+                                                <h2 id="CAcertificatesofLDAPserverforTLS" data-magellan-target="CAcertificatesofLDAPserverforTLS"><a id="cacerts"></a>CA certificates of LDAP server for TLS</h2>
+                                                <p>CA certificates to set up if the LDAP server uses an SSL certificate of a well-known certificate authority (CA).</p>
+                                                <h1 id="UsermappingLDAPattributes" data-magellan-target="UsermappingLDAPattributes"><a id="mapping">User mapping LDAP attributes</a>
+                                                </h1>
+                                                <p>This section defines the mapping LDAP attributes if you want to import users from LDAP.</p>
+                                                <h2 id="Mappingforauthenticationname" data-magellan-target="Mappingforauthenticationname"><a id="authenticationNameMapping"></a>Mapping for authentication name</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the authentication name property (and in most cases, the login name) of the user entity. Set this field with an existing LDAP attribute. When you use Active Directory, the value is usually "sAMAccountName". You can select the value from a list of LDAP attributes which is obtained from LDAP during runtime. To do so, the fields of the LDAP server have to be already saved in the database. You can also directly enter another LDAP attribute, or even a name that is not on the list.</p>
+                                                <h2 id="Mappingforfirstname" data-magellan-target="Mappingforfirstname"><a id="firstNameMapping"></a>Mapping for first name</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the first name property of the user entity. You can select an attribute from the list for the authentication name mapping. The value is usually "firstName".</p>
+                                                <h2 id="Mappingforlastname" data-magellan-target="Mappingforlastname"><a id="lastNameMapping"></a>Mapping for last name</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the last name property of the user entity. You can select an attribute from the list for the authentication name mapping. The value is usually "sn".</p>
+                                                <h2 id="Mappingforemail" data-magellan-target="Mappingforemail"><a id="emailMapping"></a>Mapping for email</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the email property of the user entity. You can select an attribute from the list for the authentication name mapping. The value is usually "mail".</p>
+                                                <h2 id="Mappingforphoto" data-magellan-target="Mappingforphoto"><a id="photoMapping"></a>Mapping for photo</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the photo properties of the user entity. You can select an attribute from the list for the authentication name mapping. When you use Active Directory, the value is usually "thumbnailPhoto".</p>
+                                                <h2 id="Mappingforgroupmembership" data-magellan-target="Mappingforgroupmembership"><a id="userGroupNameMapping"></a>Mapping for group membership</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the group membership property of the user entity. The value is usually "memberOf". The link between X3 groups and LDAP groups is made in the group settings. </p>
+                                                <h1 id="Userssearchfilterforsynchronization" data-magellan-target="Userssearchfilterforsynchronization"><a id="search">Users search filter for synchronization</a>
+                                                </h1>
+                                                <p>This section allows you to define search criteria for LDAP users. LDAP has strong search capabilities built in to the server.<br />LDAP filters consist of one or more criteria. If at least two criteria exist in a filter definition, they can be concatenated by logical operators "AND" and "OR". These operators are always placed between two criteria.</p>
+                                                <p>Refer to <a href="https://msdn.microsoft.com/en-us/library/aa746475%28v=vs.85%29.aspx">this page</a> for more information on filters.</p>
+                                                <h2 id="Usersearchfilter" data-magellan-target="Usersearchfilter"><a id="syncSearchFilter"></a>User search filter</h2>
+                                                <p>Defines a custom search filter for importing user data from the LDAP.</p>
+                                                <h2 id="Usersbelongingtoknowngroups" data-magellan-target="Usersbelongingtoknowngroups"><a id="onlyKnownGroups"></a>Users belonging to known groups</h2>
+                                                <p>Adds a complementary filter in order to select only LDAP users belonging to LDAP groups linked to X3 groups. The link between X3 groups and LDAP groups is made in the group settings. </p>
+                                                <h2 id="GlobalLDAPusersearchfilter" data-magellan-target="GlobalLDAPusersearchfilter"><a id="globalSearchFilter"></a>Global LDAP user search filter</h2>
+                                                <p>Read-only field that displays the final query (in the LDAP filter syntax) that will be sent to the LDAP server in order to select the user entity.</p>
+                                                <h1 id="Groups" data-magellan-target="Groups"><a id="groups">Groups</a>
+                                                </h1>
+                                                <p>This section defines the LDAP group settings.</p>
+                                                <h2 id="Groupsearchfilter" data-magellan-target="Groupsearchfilter"><a id="groupSearchFilter"></a>Group search filter</h2>
+                                                <p>LDAP filter that identifies the group's entities on the LDAP tree.<br />The group search filter is only used for helping to link X3 groups with LDAP groups (LDAP group name lookup). It is not related to the synchronization of users.</p>
+                                                <p><b>Example:</b> "(objectClass=group)"</p>
+                                                <h2 id="Mappingforgroupname" data-magellan-target="Mappingforgroupname"><a id="groupNameMapping"></a>Mapping for group name</h2>
+                                                <p>Contains the name of the LDAP attribute corresponding to the group identification property used to identify group memberships on the user entity. Refer to <a href="#userGroupNameMapping">Mapping for group membership</a>.</p>
+                                                <h1 id="Synchronizationsettings" data-magellan-target="Synchronizationsettings"><a id="sync-settings">Synchronization settings</a>
+                                                </h1>
+                                                <p>This section defines the LDAP syncronization settings.</p>
+                                                <h2 id="Userauthentication" data-magellan-target="Userauthentication"><a id="userAuthentication"></a>User authentication</h2>
+                                                <p>Defines the default user's authentication policy. Imported users inherit this setting. <br />If you chose "Standard" authentication, make sure you have a valid policy setting different than "Basic" in the global settings:</p>
+                                                <ul>
+                                                    <li><b>LDAP</b> (Lightweight Directory Access Protocol) means that the control is performed using an access to an LDAP directory.</li>
+                                                    <li><b>Standard</b> corresponds to the default global policy setting. This default setting is managed in the Global settings function.</li>
+                                                </ul>
+                                                <h1 id="Connectiontest" data-magellan-target="Connectiontest"><a id="test">Connection test</a>
+                                                </h1>
+                                                <p>This service tries to connect to the LDAP server using the entered authentication data and then disconnects from the LDAP server. Any errors during this process (e. g. wrong password) will be shown.</p>
+                                                <h1 id="UserimportfromLDAP" data-magellan-target="UserimportfromLDAP"><a id="import">User import from LDAP</a>
+                                                </h1>
+                                                <p>An LDAP server contains more information about users than necessary for authentication. User data can be imported from an LDAP server into a user entity.</p>
+                                                <h2 id="MappinguserattributestoLDAPattributes" data-magellan-target="MappinguserattributestoLDAPattributes">Mapping user attributes to LDAP attributes</h2>
+                                                <p>As attribute names in LDAP and in the user entity are different, you have to enter:</p>
+                                                <ul>
+                                                    <li>The appropriate authentication name in the <b>Mapping for authentication name</b> field.</li>
+                                                    <li>The appropriate first name in the <b>Mapping for first name</b> field.</li>
+                                                    <li>The appropriate last name in the <b>Mapping for last name</b> field.</li>
+                                                    <li>The appropriate email in the <b>Mapping for email</b> field.</li>
+                                                    <li>The appropriate photo properties in the <b>Mapping for photo</b> field.</li>
+                                                </ul>
+                                                <h2 id="Theimportprocess" data-magellan-target="Theimportprocess">The import process</h2>
+                                                <p>To run this function, the current LDAP entry must be active, and you must have write access to the user data. If this is the case, the program performs the following:</p>
+                                                <ol>
+                                                    <li value="1">The LDAP server uses the pattern defined in the <b>Sync search filter</b> field to search within the subtree defined by the <b>Search Base</b> field, and retrieve a list of LDAP user data.</li>
+                                                    <li value="2">For each user, the program checks if any entry of the LDAP user data has the same value as the LDAP attribute in which the user account was mapped. The user account corresponds to the "Authentication name" if the user has LDAP authentication selected by default, and if the field is not empty. If not, it corresponds to the "login code".</li>
+                                                    <li value="3">If there is such an entry, all values of the user entity attributes are filled using the corresponding values of the LDAP user data attributes. The LDAP user data entry is also marked as used, and the user entity is marked as active.<br />
+If not, it is marked as inactive and the user can no longer log in.</li>
+                                                    <li value="4">At the end of this process, the program runs a loop over all LDAP user data entries that have not been marked as used. These correspond to users that still have to be created. If there is already a user whose "login" is the same as the value of the "authenticationName", a login name is created as follows:
+<ul><li>The program retrieves all instances of the user entity whose login name starts with the given value. The lowest available number is then appended to the login name. For example, if the name is "test" and users test, test0, test1, test3 and testa already exist, "2" is the lowest available number. In this case, test2 will be the new login name.</li><li>The "authenticationName" is not changed because it is used for LDAP authentication. For existing users, the mechanism described above guarantees that user data will be updated correctly when this function is called again. An error message is triggered if a new user is created by another connection while the searching user entity process is in progress. There is no loop that tests each possible combined user name, whether it has already been created or not, so that endless loops will not be possible under any circumstance.</li></ul></li>
+                                                    <li value="5">For the other attributes (first name, last name, mail, photo), the value in the user instance is updated when a mapping is given, and when there is a value for the LDAP attribute. If the mapping is given but there is no value for the LDAP attribute, the value in the user instance is emptied. If no mapping is given, the value in the user instance does not change.</li>
+                                                    <li value="6">If the LDAP user contains group information and a group mapping exists, the user instance is included in this group. For all X3 endpoints of the group, an X3 user is created with a unique login composed of the original login and a hash code that is automatically generated. The profession code associated to the X3 user is determined using the "roles to profession codes mapping" grid defined in the corresponding endpoint.</li>
+                                                </ol>
+                                                <p>Once all users have been managed, all error messages are displayed.</p>
+                                                <h1 id="Schedulinguserupdate" data-magellan-target="Schedulinguserupdate"><a id="update">Scheduling user update</a>
+                                                </h1>
+                                                <p>The Scheduler function (<b>Administration &gt; Usage &gt; Automate &gt; Scheduler</b>) allows the selection of a scheduler to automate the process.</p>
+                                                <br />
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#LDAPdirectories"> LDAP directories
+</a>
+                                                    </li>
+                                                    <li><a href="#PrinciplesofLDAPAuthentication">Principles of LDAP Authentication</a>
+                                                    </li>
+                                                    <li><a href="#Connectionproperties">Connection properties</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Name">Name</a>
+                                                        </li>
+                                                        <li><a href="#Displayname">Display name</a>
+                                                        </li>
+                                                        <li><a href="#Active">Active</a>
+                                                        </li>
+                                                        <li><a href="#URL">URL</a>
+                                                        </li>
+                                                        <li><a href="#DNforsearching">DN for searching</a>
+                                                        </li>
+                                                        <li><a href="#PasswordforDNsearch">Password for DN search</a>
+                                                        </li>
+                                                        <li><a href="#Searchbase">Search base</a>
+                                                        </li>
+                                                        <li><a href="#Searchfilter">Search filter</a>
+                                                        </li>
+                                                        <li><a href="#CAcertificatesofLDAPserverforTLS">CA certificates of LDAP server for TLS</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#UsermappingLDAPattributes">User mapping LDAP attributes</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Mappingforauthenticationname">Mapping for authentication name</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforfirstname">Mapping for first name</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforlastname">Mapping for last name</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforemail">Mapping for email</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforphoto">Mapping for photo</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforgroupmembership">Mapping for group membership</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Userssearchfilterforsynchronization">Users search filter for synchronization</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Usersearchfilter">User search filter</a>
+                                                        </li>
+                                                        <li><a href="#Usersbelongingtoknowngroups">Users belonging to known groups</a>
+                                                        </li>
+                                                        <li><a href="#GlobalLDAPusersearchfilter">Global LDAP user search filter</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Groups">Groups</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Groupsearchfilter">Group search filter</a>
+                                                        </li>
+                                                        <li><a href="#Mappingforgroupname">Mapping for group name</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Synchronizationsettings">Synchronization settings</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Userauthentication">User authentication</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Connectiontest">Connection test</a>
+                                                    </li>
+                                                    <li><a href="#UserimportfromLDAP">User import from LDAP</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#MappinguserattributestoLDAPattributes">Mapping user attributes to LDAP attributes</a>
+                                                        </li>
+                                                        <li><a href="#Theimportprocess">The import process</a>
+                                                        </li>
+                                                    </ul>
+                                                    <li><a href="#Schedulinguserupdate">Scheduling user update</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">26 février 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

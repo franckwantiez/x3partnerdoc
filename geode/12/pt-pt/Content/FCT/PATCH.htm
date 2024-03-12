@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-pt" xml:lang="pt-pt" class="_Skins_Sage_Skin_SideNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="author" content="ADONIX" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="keywords" content="Integração,Patch" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="description" content="Integração de patchs" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="module" content="[Supervisor]" xmlns="http://www.w3.org/1999/xhtml" />
+        <meta name="robots" content="all" xmlns="http://www.w3.org/1999/xhtml" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" /><title>Integração de patchs</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/Sage.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.select-language-button
+{
+	-pie-background: #000000 url('../../Skins/Default/Stylesheets/Images/60x60_globe_white-on-transparent_icon.png') no-repeat center center;
+}
+
+.needs-pie
+{
+	behavior: url('../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link rel="stylesheet" type="text/css" media="all" href="../Resources/Images/ADXHelp_main.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../../Skins/Favicons/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Voltar" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Ir para conteúdo principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Mostrar painel de navegação" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Home.htm" alt="Logótipo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Conta</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Definições</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Terminar sessão</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Campo de pesquisa" placeholder="Pesquisar" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtro:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtro de pesquisa" title="Todos os ficheiros" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Todos os ficheiros</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Pesquisar" role="button" tabindex="0"><span class="invisible-label">Enviar pesquisa</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <script type="text/javascript">/*<![CDATA[*/$(document).ready(function(){
+			$("#selectlang").appendTo("div.central-account-wrapper");
+		});/*]]>*/</script>
+                                    <div id="selectlang" class="headerlang">
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Language_toggle mc-component nocontent" style="mc-topic-toolbar-items: ;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie select-language-button" title="Alterar idioma">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Alterar idioma">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sage-header-title">
+                                        <img id="sage-header-logo" src="../Resources/Images/Sage_logo_green.svg" alt="Sage" /><span id="sage-header-product-name"><span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3 Warehousing</span></span></span>
+                                    </div>
+                                    <section class="sage-topic-body sage-layout-two-columns">
+                                        <div class="sage-layout-topic-main">
+                                            <div role="main" id="mc-main-content">
+                                                <div id="container" xmlns="http://www.w3.org/1999/xhtml">
+                                                    <div id="pageHeader">
+                                                        <h1 class="g1" id="Integraçãodepatchs" data-magellan-target="Integraçãodepatchs"><span>Integração de patchs</span>
+                                                        </h1>
+                                                    </div>
+                                                    <div id="intro">
+                                                        <div id="presentation">
+                                                            <p>Os softwares utilizando a tecnologia SAFE X3 integram uma função permitindo de integrar os correctivos ou das evoluções funcionais entregues sob forma de ficheiros arquivo nomeados "patches". Está assim que um desenvolvimento terceiro pode ser integrado, que os dados suplementares podem estar carregados numa tabela, que corretivos podem ser contribuidos.</p>
+                                                            <p>Um patch pode conter um ou vários elementos tais que ecrãs, definições das tabelas, códigos atividades, tipos de dados, objectos, menus locais, capítulos de mensagens, tratamentos, pedidos de execução de tratamentos, dados...</p>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEWARNING" alt="SEEWARNING" keeps="true" realloc="SEEWARNING" />&#160;<span style="color: #7f0000;">A integração de um patch modifica o dicionário e a base de dados dos dossiers sobre os quais foi aplicado. Uma única exceção a este princípio : os tratamentos entregues por patch não são instalados que o dossier supervisor (excepto casos particulares explicitados mais longe).</span></p>
+                                                            <h5>Caso particular : Integração de uma tabela</h5>
+                                                            <p>A integração de uma tabela se faz em duas etapas : </p>
+                                                            <p>1. Atualização da descrição da tabela em SAFE X3.</p>
+                                                            <p>2. Validação desta tabela (execução do valfil) : durante esta última etapa, se estatísticas Bdd (base de dados) existem sobre esta tabela, elas podem ser suprimidas. <br />Isto depende dos tipo de modificação da tabela. </p>
+                                                            <p><i><b><u>Exemplos:</u></b></i> </p>
+                                                            <ul>
+                                                                <li>Acréscimo de um campo em fim de descrição da tabela : as estatísticas bdd são conservadas.</li>
+                                                                <li>Inserção de um campo entre dois outros : as estatísticas bdd estão perdidas sobre toda a tabela. <br />Com efeito a tabela foi suprimida depois recriada.</li>
+                                                            </ul>
+                                                            <h5>Ficheiros&#160;</h5>
+                                                            <p>Um ficheiro patch se caracteriza por um nome integrando em princípio uma sequência de números, afim de permitir de controlar, quando vários ficheiros existem, que as patches são bem integradas na ordem.</p>
+                                                            <p>O caso das patches corretivas entregues em standard foi gerado da maneira seguinte :</p>
+                                                            <ul>
+                                                                <li>Os ficheiros são definidos com o nome <i>P_nnnn_vvv.dat</i>, <i>nnnn</i> sendo um número cronológico, e <i>vvv</i> a versão maior sobre a qual o patch pode-se aplicar (justo ao presente,  <i>vvv</i> pode ser igual a 110, 120, 130, 140, 150) Um ficheiro deste tipo contém um conjunto de objectos ou de elementos constituitivos de um correctivo ou de uma avaliação funcional (por exemplo, a entrega de um novo ponto de entrada).</li>
+                                                                <li>vários ficheiros de patches (em geral pelo menos uma dezena, mas podem ser mais) são organizados sob a forma de uma lista que está disponível junto dos parceiros de Sage.</li>
+                                                                <li>A colocação em lugar de uma ou várias listas se faz por função, que integra os ficheiros na ordem sequêncial dos números cronológicos, um certo número de controlos de coerência estando realizados (número de versão sobre a qual o patch se aplica, sequencialmente depois a última atualização de patches).</li>
+                                                            </ul>
+                                                            <p>É aconselhado aos parceiros Sage desejando entregar as funcionalidades sob a forma de patches de adoptar a mesma política de nomeação dos ficheiros, em utilizando uma primeira letra diferente (por exemplo <i>X, Y,</i> ou <i>Z</i>). Com efeito, um controlo sequêncial está feito desde logo que o nome do ficheiro integra os caracteres _(<i>underscore</i>) em posição 2 e 7 do nome do ficheiro : os caracteres 3 a 6 são então um número sequêncial sobre o qual (a raíz igual) vai se fazer um controlo de sequencialidade e os carateres para além do oitavo (extenção excluida) são controlados por relação ao número de versão maior.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div id="supportingText">
+                                                        <div class="stdBloc"><a id="PRQ"></a>
+                                                            <h2 class="g1" id="Prérequisitos" data-magellan-target="Prérequisitos">Pré-requisitos</h2>
+                                                            <p>
+                                                                <img src="../Resources/Images/SEEREFERTTO" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> [Refer to documentation  <a href="PRQ_AFC_PATCH.htm#PRQ">[Implementation]</a>]
+          </p>
+                                                            <div class="stdBloc"><a id="ECR"></a>
+                                                                <h2 class="g1" id="Gestãodoecrã" data-magellan-target="Gestãodoecrã">Gestão do ecrã</h2><a id="ON1"></a>
+                                                                <h3 class="g1">[Tab] Ecrã de registo</h3>
+                                                                <div id="desc_on1" class="ddesc" style="display: block;">
+                                                                    <p>Regista-se, na janela que se abre, as informações relativas na integração de patch desejada, depois valida-se o ecrã.</p>
+                                                                    <p>A integração se faz então; ela pode ser longa se numerosos ficheiros patches estão presentes, mas uma barra de progressão permite seguir o processo de integração.</p>
+                                                                    <p>No fim de integração dos patches, obtem-se um ficheiro rasto que se situa fisicamente no directório do rasto do dossier de onde se está lançada a integração. Uma visualização atenta deste ficheiro está aconselhado para assinalar os erros eventuais.</p>
+                                                                </div>
+                                                                <div class="bfields">
+                                                                    <div id="on1" class="dfields">
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>Ficheiro</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">[field] AW</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Tipo de destino ([field] TYPEXP)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Patch ([field] VOLFIL)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b>[Block number] 2</b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Integração patch ([field] INTEG)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>Se este campo não está assinalado, a integração será simulada. Neste caso, a integração está restreada mas as transferência não são realizadas.</p>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Apagar comentário ([field] REM)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>Esta check box é útil se integra as patches num ambiente estrangeiro. Se está assinalada, o ficheiro rasto do resultado da integração será em inglês</p>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Validação diferida ([field] AVALDIF)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>Esta opção permite não validar diretamente as janelas e os ecrãs para otimizar os tempos de validação destes objetos.<br />Se esta check box está assinalada, a janela e os ecrãs serão validadas na sua primeira utilização.</p>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Sincronização das ligações ([field] ALNKSYNC)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Sincronização janelas ([field] AFLGSYNCH)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                        </table>
+                                                                        <h4 class="bloctitle">
+                                                                            <p><b><a href="TBL_MGT.htm">[Grid]</a><i> Dossiers</i></b>
+                                                                            </p>
+                                                                        </h4>
+                                                                        <table class="fld1">
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Dossier (<a href="GESADS.htm">[field] DOSSIER</a>)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td>
+                                                                                <p>Permite dar a lista dos Dossiers sobre a qual a integração das patches vai ser feita; por defeito o conjunto dos dossiers se encontrando no ambiente está proposto para a integração das patches, mas é possivel de suprimir a lista. Exceto <a href="#MIN_30_100">casos particulares</a>, é necessário que pelo menos o dossier supervisor seja colocado em patch.</p>
+                                                                            </td>
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Versão ([field] VERSION)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Data ([field] MAJ)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                            <tr>
+                                                                                <td>
+                                                                                    <ul>
+                                                                                        <li class="fld">Línguas ([field] LANGUES)</li>
+                                                                                    </ul>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <td />
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ABT"></a>
+                                                                    <h2 class="g1" id="Tarefabatch" data-magellan-target="Tarefabatch">Tarefa batch</h2>
+                                                                    <p>[This function can be run in batch mode]. [The standard task] PATCH [is provided for that purpose].</p>
+                                                                    <p>A integração das listas de patch pode se efectar em batch sobre 50 dossiers máximo. </p>
+                                                                    <p>Esta opção é muito interessante porque a integração das patches pode se efetuar na noite após a salvaguarda então que a exploração não foi retomada. Com efeito, a integração das patches pode estar uma operação longa. A consulta do ficheiro rasto poderá então se fazer directamente depois o gestor dos pedidos da tarefa batch.</p>
+                                                                    <p>Atenção, um patch standard já integrada ou que não está em sequência não poderá ser integrado em batch : o que não é que uma mensagem de advertência que pode ser forçada quando o patch está integrado directamente torna-se uma causa de paragem automática em caso de execução batch.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="MIS_70_10"></a>
+                                                                    <h2 class="g1" id="Patchdedocumentação" data-magellan-target="Patchdedocumentação">Patch de documentação</h2>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="#MIS_70_20">Geração da documentação.</a>
+                                                                            </li>
+                                                                            <li><a href="#MIS_70_30">Atualização dos documentos automáticos</a>
+                                                                            </li>
+                                                                            <li><a href="#MIS_70_40">Geração dos documentos sobre o servidor de documentação</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <p>A instalação de um patch de documentação segundo o memo procedimemento que aquele explicado aqui e se aplica aos dossiers selecionados.</p>
+                                                                    <p>Os ficheiros são definidos com o nome Dy_nnnnn_vvv_ppp.dat, "y" sendo o abreviado do produto, "nnnnn" sendo o número cronológico, "wv" a versão maior sobre o qual o patch pode-se aplicar, e "ppp" o código legislação.</p>
+                                                                    <p>Existe um único ficheiro por legislação que contêm o conjunto das documentações criadas ou modificadas depois o patch precedente.</p>
+                                                                    <p>Os patchs de documentações são entregues ao mesmo tempo que as patches aplicativas. Podem ser integrados antes ou após o patch aplicativo. O sistema verifica a cronologia dos números.</p>
+                                                                    <p>A integração de um patch de documentação atualiza o dicionário dos documentos mas não toca aos documentos colocados sobre o servidor de documentação. Para que estes últimos sejam atualizados, falta lançar uma geração da documentação.</p><a id="MIS_70_20"></a>
+                                                                    <h3 class="g1">Geração da documentação.</h3>
+                                                                    <p>Se utiliza o modo de acesso ao formato compreendido (CHM), você deve antes de lançar a actualização dos documentos automatizados, executar uma descompressão do seu ficheiro de documentação (<a href="../CONSOLE/SRVDOC.htm"><span style="color: #0000ff;">cf servidor documentação</span></a>).</p>
+                                                                    <p>Se utiliza o modo de acesso ao formato separado (HTML), você pode diretamente lançar a actualização.</p><a id="MIS_70_30"></a>
+                                                                    <h3 class="g1">Atualização dos documentos automáticos</h3>
+                                                                    <p>Na função de documentação, clicar sobre o botão <a href="GESADO.htm"><span style="color: #0000ff;">Geração</span></a> e registar os dados seguintes segundo o seu código língua :</p>
+                                                                    <p>
+                                                                        <img src="../Resources/Images/PATCH_001.jpg" alt="PATCH_001.jpg" keeps="true" realloc="PATCH_001.jpg" />
+                                                                    </p>
+                                                                    <p />
+                                                                    <p>N.B : o directório está emitido do parâmetro utilizador DIRDOC.</p>
+                                                                    <p>Relançar em seguida 3 outros géneros com os memos parâmetros excepto o tipo de dados ou você indica sucessivamente AML depois ATB depois ATY.</p><a id="MIS_70_40"></a>
+                                                                    <h3 class="g1">Geração dos documentos sobre o servidor de documentação</h3>
+                                                                    <p>Para fazer a actualização das documentações sobre o servidor de documentação, lançar a geração seguinte, segundo o código língua :</p>
+                                                                    <p>
+                                                                        <img src="../Resources/Images/PATCH_002.jpg" alt="PATCH_002.jpg" keeps="true" realloc="PATCH_002.jpg" />
+                                                                    </p>
+                                                                    <p>Se utiliza o acesso à documentação em modo comprimido, você deve recompressar os ficheiros (cf <a href="../CONSOLE/SRVDOC.htm"><span style="color: #0000ff;">servidor de documentação</span></a>).</p>
+                                                                    <p>Se utilizar o acesso em modo separado, a atualização está terminada.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="MIS_90_10"></a>
+                                                                    <h2 class="g1" id="Mensagensdeerro" data-magellan-target="Mensagensdeerro">Mensagens de erro</h2>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="#ERR">Mensagens de erro ao lançamento da função</a>
+                                                                            </li>
+                                                                            <li><a href="#MIS_90_30">Mensagens de erro no rasto</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div><a id="ERR"></a>
+                                                                    <h3 class="g1">Mensagens de erro ao lançamento da função</h3>
+                                                                    <div class="links">
+                                                                        <ul>
+                                                                            <li><a href="ERR_GEN.htm">[Generic messages]</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <p>[In addition to the generic error messages, the following messages can appear during the entry] :</p>
+                                                                    <h5>Sem patch no directório</h5>
+                                                                    <p>Indicou-se um diretório vazio.</p><a id="MIS_90_30"></a>
+                                                                    <h3 class="g1">Mensagens de erro no rasto</h3>
+                                                                    <p>As outras mensagens de erro são todas afixadas no ficheiro rasto. Por entre este, encontramos as mensagens seguintes :</p>
+                                                                    <h5>O dossier deve ser ao menos na versão nnn</h5>
+                                                                    <p>O patch não pode ser aplicado, porque a versão mínima requere os dossiers não está respeitado.</p>
+                                                                    <h5>xxxxx : módulo não implantado no dossier</h5>
+                                                                    <p>O patch não foi aplicado sobre o dossier, porque o módulo funcional não está utilizado.</p>
+                                                                    <h5>Fim de ficheiro anormal</h5>
+                                                                    <h5>Estrutura ficheiro incorrecto</h5>
+                                                                    <p>O ficheiro de patch está provavelmente corrompido, o processo de integração não pode reler até ao máximo os dados correspondentes, onde está tomado sobre uma estrutura não conforme.</p>
+                                                                    <h5>Gestão de ficheiro XXX : &lt;&lt;mensagem de error&gt;&gt;</h5>
+                                                                    <p>Um erro de tipo transacional está produzido durante a atualização do dicionário</p>
+                                                                    <h5>Erro em linha NNN: &lt;&lt;mensagem de error&gt;&gt;</h5>
+                                                                    <p>Um erro se produz na execução de um tratamento acompanhando a patch</p>
+                                                                    <h5>Patch mais recente integrada</h5>
+                                                                    <h5>Falta as patches, a última integrada está ###</h5>
+                                                                    <h5>Patch normalmente incluida na versão NNN</h5>
+                                                                    <p>Estas três mensagens afetando a verificação de sequêncialidade de passagem de patches. Normalmente, se o patch standard número N é o último a ter passado, espera-se a não passar um pach mais antigo (mensagem número 1), nem de patch de número estritamente superior a N+1 (mensagem número 2). Por outro lado, a instalação de uma versão intermédia incluida de facto das patches standard que não falta integrar (mensagem número 3). Em todo o estado de causa, em modo interativo, estas mensagens não são bloqueantes, e é possível de continuar mesmo, em respondendo <i>Sim</i> à questão <i>Pretende continuar apesar os erros?</i>.</p>
+                                                                </div>
+                                                                <div class="stdBloc"><a id="ATB"></a>
+                                                                    <h2 class="g1" id="Tabelasconsideradas" data-magellan-target="Tabelasconsideradas">Tabelas consideradas</h2>
+                                                                    <p>
+                                                                        <img src="../Resources/Images/SEEREFERTTO" alt="SEEREFERTTO" keeps="true" realloc="SEEREFERTTO" /> [Refer to documentation  <a href="PRQ_AFC_PATCH.htm#ATB">[Implementation]</a>]
+          </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div data-mc-conditions="Other.Production only">
+                                                <div id="feedback-survey">
+                                                    <div class="feedback-question">
+                                                        <h4>Did you find this helpful?</h4>
+                                                        <p>
+                                                            <button class="feedback-button feedback-yes" title="Yes, this article was helpful." alt="Yes, this article was helpful.">Yes</button>&#160;<button class="feedback-button feedback-no" title="No, this article wasn't helpful." alt="No, this article wasn't helpful.">No</button></p>
+                                                    </div>
+                                                    <div class="feedback-reason no">
+                                                        <hr />
+                                                        <div class="highlightBox">
+                                                            <h4>Sorry about that</h4>
+                                                            <p>Why wasn't this helpful? (check all that apply)</p>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option1" value="Couldn't find what I was looking for" data-analytics-label="Could not find" />
+                                                                <label for="option1">Couldn't find what I was looking for</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option2" value="Instructions confusing or unclear" data-analytics-label="Confusing or unclear" />
+                                                                <label for="option2">Instructions confusing or unclear</label>
+                                                            </div>
+                                                            <div class="feedback-option">
+                                                                <input type="checkbox" class="option no" id="option3" value="Instructions didn't work" data-analytics-label="Did not work" />
+                                                                <label for="option3">Instructions didn't work</label>
+                                                            </div>
+                                                            <div class="feedback-reason no-thanks">
+                                                                <p><b>Thanks for your feedback.</b>
+                                                                </p>
+                                                                <h4>Want to tell us more?</h4>
+                                                                <p>Send an email to our authors to leave your feedback.</p>
+                                                                <!--email_off-->
+                                                                <p><a href="mailto:Sage200TechnicalAuthors@sage.com?subject=Sage 200 feedback" id="feedbackEmailLink" title="Tell us if there's a problem with the information on this page." alt="Tell us if there's a problem with the information on this page." class="sageButton">Email our authors</a>
+                                                                </p>
+                                                                <!--/email_off-->
+                                                                <p>Sorry, but we can't provide technical support from this email address. If you need assistance, then please contact our support team directly.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="get-in-touch" class="highlightBox colour-dark-1">
+                                                            <h4>Need support?</h4>
+                                                            <p>You can contact our support team on <b>0845 111 5555</b>, 9am-5pm Monday-Friday.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="feedback-reason yes-thanks">
+                                                        <hr />
+                                                        <h4>Great!</h4>
+                                                        <p>Thanks for taking the time to give us some feedback.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sage-layout-topic-panel">
+                                            <div class="menu-topic-container" id="menu-on-page">
+                                                <ul data-magellan="" data-animation-duration="250" data-active-class="selected" data-scroll-container=".body-container" data-scroll-container-on="only screen and (min-width: 1280px)" class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component">
+                                                    <li><a href="#Integra%C3%A7%C3%A3odepatchs">Integração de patchs</a>
+                                                    </li>
+                                                    <ul>
+                                                        <li><a href="#Pr%C3%A9requisitos">Pré-requisitos</a>
+                                                        </li>
+                                                        <li><a href="#Gest%C3%A3odoecr%C3%A3">Gestão do ecrã</a>
+                                                        </li>
+                                                        <li><a href="#Tarefabatch">Tarefa batch</a>
+                                                        </li>
+                                                        <li><a href="#Patchdedocumenta%C3%A7%C3%A3o">Patch de documentação</a>
+                                                        </li>
+                                                        <li><a href="#Mensagensdeerro">Mensagens de erro</a>
+                                                        </li>
+                                                        <li><a href="#Tabelasconsideradas">Tabelas consideradas</a>
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <button class="go-to-top">
+                                        <!-- icon and label are inserted -->
+                                    </button>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Site links</h5>
+                                                <p><a href="../Sitemap.htm" class="MCXref xref">Sitemap</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage links</h5>
+                                                <p><a href="https://my.sage.co.uk/public/help.aspx" target="_blank" class="external">Sage Support Hub</a>
+                                                </p>
+                                                <p><a href="https://communities.sage.co.uk/product_support_community/" class="external" target="_blank" title="Your place to get product support from other customers and Sage experts" alt="Your place to get product support from other customers and Sage experts">Product support community</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/gdpr/" class="external" target="_blank">General Data Protection Regulation</a>
+                                                </p>
+                                                <p><a href="https://www.sage.com/en-gb/legal/" class="external" target="_blank">Legal information</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Page info</h5>
+                                                <p>Page updated: <span class="mc-variable Dates.DateFileSaved variable">23 janeiro 2024</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Sage media</h5>
+                                                <p><a href="https://www.facebook.com/sageuk" target="_blank" alt="Find us on Facebook" title="Find us on Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="Find us on LinkedIn" title="Find us on LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a>&#160;
+						<a href="https://twitter.com/sageuk/" target="_blank" alt="Find us on Twitter" title="Find us on Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>&#160;
+						<a href="https://www.youtube.com/user/SageUKOfficial" target="_blank" alt="Find us on YouTube" title="Find us on YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../Resources/Scripts/SideNav-template.js" data-mc-conditions="Other.HTML5-SideNav">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.js">
+                                    </script>
+                                    <script src="../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr" xml:lang="fr" class="_Skins_Sage_Skin_TopNav" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedHeader%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" /><title>Règles de développement</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/Sage_X3.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/Stylesheets/font-awesome.css" rel="stylesheet" type="text/css" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.previous-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.button.next-topic-button
+{
+	-pie-background: linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../../Resources/TableStyles/Normal.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="apple-touch-icon" sizes="558x558" href="../../../../Skins/Favicons/Sage_logo_favicon_558x558.png" />
+        <link rel="shortcut icon" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="96x96" href="../../../../Skins/Favicons/favicon-96x96.png" />
+        <link rel="icon" sizes="32x32" href="../../../../Skins/Favicons/favicon-32x32.png" />
+        <link rel="icon" sizes="16x16" href="../../../../Skins/Favicons/favicon-16x16.png" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" role="navigation" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Retour" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" role="banner" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Passer au contenu principal</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Afficher le volet de navigation" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="Topic 1 Developing extensions.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="2" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Compte</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Paramètres</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Déconnexion</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <section class="sage-header" id="header-normal">
+                                        <div class="row outer-row small-collapse">
+                                            <div class="large-6 columns">
+                                                <div id="sage-header-title">
+                                                    <img id="sage-header-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" />
+                                                    <div id="sage-header-product-name"><span class="mc-variable Sage-Product.ProductFamily variable">Sage</span>&#160; <span id="sage-header-product"><span class="mc-variable Sage-Product.ProductName variable">X3</span></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="large-6 columns end">
+                                                <div id="sage-header-search">
+                                                    <form class="search" action="#">
+                                                        <div class="search-bar search-bar-container needs-pie _Skins_Sage_Search_Normal_TopNav mc-component">
+                                                            <input class="search-field needs-pie" type="search" aria-label="Champ de recherche" placeholder="Rechercher" />
+                                                            <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filtrer&#160;:</span>
+                                                                <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Filtre de recherche" title="Tous les fichiers" role="button" tabindex="0">
+                                                                </div>
+                                                                <div class="search-filter-content" id="sf-content">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">Tous les fichiers</span>
+                                                                            </button>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="search-submit-wrapper" dir="ltr">
+                                                                <div class="search-submit" title="Rechercher" role="button" tabindex="0"><span class="invisible-label">Démarrer la recherche</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="sage-header" id="menu-bar-container">
+                                        <!-- menu goes here -->
+                                    </section>
+                                    <section class="sage-topic-body clearfix">
+                                        <div class="small-12 medium-4 large-3 columns right">
+                                            <div id="page-toc">
+                                                <!-- page table of contents generated here -->
+                                            </div>
+                                            <div class="menu-topic-container" data-mc-conditions="Other.HTML5-TopNav">
+                                                <ul class="nocontent menu _Skins_Sage_Menu_Topic_TopNav mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/Web_outputs__Developing_extensions.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Pistes de navigation" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Vous êtes ici : </span>
+                                            </div>
+                                        </div>
+                                        <div role="main" id="mc-main-content">
+                                            <h1>Règles de développement</h1>
+                                            <p>Les add-ons doivent respecter un ensemble de règles pour éviter les conflits provoqués par la cohabitation d’extensions.</p>
+                                            <p>Dans ce chapitre :</p>
+                                            <ul>
+                                                <li>
+                                                    <p>nous détaillons les principales règles à appliquer,</p>
+                                                </li>
+                                                <li>
+                                                    <p>nous mettons en évidence certaines limitations dont vous devez tenir compte,</p>
+                                                </li>
+                                                <li>
+                                                    <p>nous vous fournissons des conseils pour concevoir et tester vos développements.</p>
+                                                </li>
+                                            </ul>
+                                            <p>Les sujets abordés sont tous disponibles depuis la version 7.</p>
+                                            <h2>Principales règles de développement à appliquer</h2>
+                                            <h3>Actions sur champ</h3>
+                                            <p>La plateforme vous permet de définir des actions sur champs dans les écrans.</p>
+                                            <p>Une fonctionnalité vous permet d'utiliser une action verticale (<span class="reference">SPV</span>) sur chaque événement (initialisation, contrôle, etc.) de chaque champ.</p>
+                                            <p>Toutefois, il ne peut y avoir qu'une seule action de ce type pour chaque champ.</p>
+                                            <p>Dans le mode add-on, tous les partenaires partagent le même dictionnaire. Vous devez utiliser les actions du dictionnaire pour éviter tout conflit.</p>
+                                            <p>Le script vertical du dictionnaire écran est un programme unique et peut difficilement être partagé par différents partenaires.</p>
+                                            <p>Les noms d'action du dictionnaire doivent commencer par votre identifiant. Vous devez également les protéger avec un code activité.</p>
+                                            <p>Cette règle s'applique à toute action que vous ajouterez dans un champ des écrans standard.</p>
+                                            <p>Si vous êtes seul à travailler sur le script vertical, vous pouvez utiliser les actions <span class="reference">SPV</span> pour vos écrans qui :</p>
+                                            <ul>
+                                                <li>
+                                                    <p>sont protégés par votre code activité,</p>
+                                                </li>
+                                                <li>
+                                                    <p>n'incluent pas de développement vertical.</p>
+                                                </li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 1.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="833" data-mc-height="346" src="../../../Resources/Images/Develop Extensions/Dev rules 1_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 2.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1025" data-mc-height="327" src="../../../Resources/Images/Develop Extensions/Dev rules 2_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Utilisez uniquement des actions du dictionnaire pour vos actions sur champs.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 3.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="443" data-mc-height="197" src="../../../Resources/Images/Develop Extensions/Dev rules 3_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>N'oubliez pas de définir un code activité sur l'action. Le nom du code activité doit commencer par votre identifiant unique.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 4.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="566" data-mc-height="318" src="../../../Resources/Images/Develop Extensions/Dev rules 4_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h3>Comment gérer la couche verticale avec modèle d'objet et points d'entrée</h3>
+                                            <p>Un script distinct gère chacune de ces trois couches : <span class="reference">spécifique</span>, <span class="reference">verticale</span>, et <span class="reference">standard</span>.</p>
+                                            <p>Dans chaque script, les développeurs utilisent les points d'entrée fournis par les différents modèles dans lesquels ils travaillent.</p>
+                                            <p>Le code source du modèle ou objet (le plus utilisé) n'est pas fourni.</p>
+                                            <p>La documentation fournit la liste des points d'entrée disponibles ainsi qu'un ensemble de variables, que vous pouvez utiliser pour interagir avec le standard.</p>
+                                            <p>Une fonction ne peut faire l'objet que d'<strong>un seul script vertical</strong>.</p>
+                                            <p>C’est pourquoi différents acteurs pouvaient difficilement partager le script. Il fallait alors concevoir et utiliser un programme d’aiguillage géré manuellement pour exécuter de manière séquentielle les scripts des différents partenaires.</p>
+                                            <p>La marche à suivre :</p>
+                                            <ul>
+                                                <li><strong>avant l'update 8</strong> : vous deviez gérer, de façon manuelle, le programme d’aiguillage, Cela a posé de nombreux problèmes par le passé.</li>
+                                                <li><strong>depuis l'update 8</strong> : le superviseur gère automatiquement le programme d'aiguillage des objets et points d'entrée. Cela représente une réelle amélioration.</li>
+                                            </ul>
+                                            <h4>Couche verticale avec des objets</h4>
+                                            <p>Auparavant, le nom du script vertical était défini dans l'objet. Le nom du programme d’aiguillage était utilisé pour autoriser les appels multi-verticaux.</p>
+                                            <p>Désormais, une case à cocher figure dans la définition de l'objet. Si cette case est cochée, il existe au moins un traitement vertical sur l'objet.</p>
+                                            <p>Un bouton <span class="reference">info</span> vous fournit les noms de tous les traitements verticaux définis pour cet objet.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 5.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="803" data-mc-height="451" src="../../../Resources/Images/Develop Extensions/Dev rules 5_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 6.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="388" data-mc-height="272" src="../../../Resources/Images/Develop Extensions/Dev rules 6_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>La définition des scripts verticaux à utiliser pour un objet est indiquée dans la table des points d'entrée.</p>
+                                            <p>L'ordre dans lequel les différents scripts devraient s'exécuter est également défini dans cette table.</p>
+                                            <p>Veuillez tenir compte des points suivants :</p>
+                                            <ul>
+                                                <li>la table des <span class="reference">points d'entrée</span> est chargée comme un ensemble de variables globales lorsque vous créez une session classique. Si vous modifiez la liste des points d'entrée, vous devrez vous déconnecter et vous reconnecter pour que la modification soit prise en compte,</li>
+                                                <li>lorsque la table est chargée dans la mémoire, un contrôle vérifie que le script adx défini dans la liste des points d'entrée existe. Si ce n'est pas le cas, dans le dossier ou dans l’un des dossiers parents, le script n'est pas ajouté à la table mémoire et ne s'exécute pas, même si vous l'ajoutez après la création de session. Vous devez vous déconnecter et recréer la table mémoire.</li>
+                                            </ul>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 7.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="986" data-mc-height="418" src="../../../Resources/Images/Develop Extensions/Dev rules 7_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Comprendre les ordres d'exécution des différentes couches</h4>
+                                            <p>La même logique s'applique à tous les points d'entrée.</p>
+                                            <p>Le modèle appelle les éléments ci-dessous, s'ils existent, dans l'ordre suivant :</p>
+                                            <ul>
+                                                <li>le script spécifique,</li>
+                                                <li>tous les scripts verticaux selon leur rang,</li>
+                                                <li>le script standard.</li>
+                                            </ul>
+                                            <p>Deux variables globales sont utilisées pour contrôler l’exécution des différents scripts :</p>
+                                            <ul>
+                                                <li><span class="reference">GPV</span> : empêche l'exécution de la couche verticale lorsqu’elle est paramétrée à 1.</li>
+                                                <li><span class="reference">GPE</span> : empêche l'exécution de la couche standard lorsqu’elle est paramétrée à 1.</li>
+                                            </ul>
+                                            <p>Ces deux variables sont paramétrées à 0 par le standard avant l'exécution de la boucle globale.</p>
+                                            <p>Puis&#160;:</p>
+                                            <ul>
+                                                <li>
+                                                    <p>si la variable <span class="reference">GPV</span> est paramétrée à 1 dans le script spécifique, tous les scripts verticaux seront ignorés et ne seront pas exécutés. Ce comportement doit être validé au cas par cas sur un site du client,</p>
+                                                </li>
+                                                <li>
+                                                    <p>si la variable <span class="reference">GPE</span> est paramétrée à 1 dans le script spécifique ou dans l'un des scripts verticaux, la couche standard ne sera pas exécutée. Ce comportement est exceptionnel. Il intervient généralement lorsque la couche standard doit être exécutée avant la couche verticale ou spécifique. Pensez à bien exécuter la couche standard.</p>
+                                                </li>
+                                            </ul>
+                                            <div class="note-warning">Lorsque plusieurs scripts (par exemple, un script spécifique et plusieurs scripts verticaux) sont exécutés, la valeur de la variable <span class="reference">GPE</span> est la dernière à être définie. C'est pourquoi, dans les cas d'interaction complexes, le comportement doit être validé par le site client.</div>
+                                            <h4>Cas complexes en exécution de points d'entrée</h4>
+                                            <p>L'une des verticales requiert une exécution préalable de la couche standard.</p>
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Exemple</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 8.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="853" data-mc-height="242" src="../../../Resources/Images/Develop Extensions/Dev rules 8_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                                    </p>
+                                                    <p>Trois scripts verticaux sont définis pour l'objet <span class="reference">BPC</span>.</p>
+                                                    <p>Par exemple, le script <span class="reference">XY23BPC2</span> requiert une exécution préalable de la couche standard dans le point d'entrée <span class="reference">PICKE</span>.</p>
+                                                    <p>Dans ce cas, le script est : </p><pre class="code">$ACTION<br />Case ACTION<br />When “PICKE” : Gosub ETIQP<br />………<br />Endcase<br />Return<br /><br />$ETIQP<br /># Execute the standard code first<br /><strong>Gosub ACTION From SUBPTH<br></br>GPE=1   :# Avoid to reexecute the standard</strong><br />#  Vertical code<br />……<br />……<br />Return</pre>
+                                                    <p>Dans ce cas, vous devez faire en sorte que le troisième script vertical <span class="reference">XX34PH78</span> soit le prochain exécuté.</p>
+                                                </div>
+                                            </div>
+                                            <p>Sur un site client, l'ordre d'exécution des différentes verticales doit être défini en fonction des besoins spécifiques.</p>
+                                            <p>Si une verticale requiert que la couche standard soit exécutée en premier plutôt que les autres, cette verticale doit être exécutée en dernier, et l'ordre d'exécution doit être adapté.</p>
+                                            <p>Vérifiez également qu'un autre script vertical :</p>
+                                            <ul>
+                                                <li>ne paramètre pas <span class="reference">GPE</span> à 0 après que votre script l'a paramétré à 1. Dans ce cas, le standard s'exécutera deux fois,</li>
+                                                <li>ne s'exécute pas avant le standard.</li>
+                                            </ul>
+                                            <div class="note-warning">Il s'agit de cas exceptionnels. Elles doivent être vérifiées sur un site client car il est impossible de gérer et d'anticiper toutes les combinaisons de scripts verticaux.<br />Dans de rares cas, l'ordre doit être différent en fonction du point d'entrée. Sur un site client, l'une des verticales doit être scindée pour répondre à ce besoin spécifique car aucune modélisation ne gère ce type de requête.</div>
+                                            <h4>Patching des points d'entrée à partir de l'update 8</h4>
+                                            <ul>
+                                                <li><strong>Patching des points d'entrée</strong> :<br />L'ordre d'exécution n'est jamais modifié via un patch. Toutefois, lorsqu'un nouveau point d'entrée est patché, l'ordre d'exécution est défini s'il a été établi.</li>
+                                                <li><strong>En revalidation de dossier</strong> :<br />le script vertical, s'il existe sur un objet, est automatiquement inséré dans la table des points d'entrée.</li>
+                                            </ul>
+                                            <h3>Gérer la couche verticale avec d'autres modèles : programme d'aiguillage</h3>
+                                            <p>Avec les autres modèles pour lesquels le programme d'aiguillage n'est pas automatiquement créé, il vous faut gérer l'aiguillage manuellement.</p>
+                                            <p>Vous devez le faire pour les :</p>
+                                            <ul>
+                                                <li>actions, </li>
+                                                <li>consultations,</li>
+                                                <li>modèles import/export,</li>
+                                                <li>états.</li>
+                                            </ul>
+                                            <p>Les consultations, modèles d'importation/exportation et états sont généralement dupliqués lorsque vous souhaitez les personnaliser. Vous devez surtout vous focaliser sur les scripts associés aux actions.</p>
+                                            <p>Pour ces différents éléments, il n'existe pas de couche verticale.</p>
+                                            <p>Le seul script disponible est le <span class="reference">Script spécifique</span> qui sera utilisé comme un aiguillage polyvalent.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="752" data-mc-height="379" src="../../../Resources/Images/Develop Extensions/Dev rules 9_thumb_150_0.png" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <h4>Traitement d'aiguillage et traitements applicatifs</h4>
+                                            <p>Exemple : les add-ons <span class="reference">X1</span> et <span class="reference">X2</span> sont développés sur la consultation core CSO.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 10.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="906" data-mc-height="189" src="../../../Resources/Images/Develop Extensions/Dev rules 10_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Vous devez conserver un programme "neutre" en script spécifique : <span class="reference">CNSCSOSPE</span> par exemple.</p>
+                                            <p>Ce programme ne sera pas patché, mais doit être livré séparément et géré manuellement.</p>
+                                            <p>Si vous avez besoin d'un ordre d'appel identique pour chacune des actions du modèle, utilisez cette syntaxe simple dans le programme d’aiguillage.</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 11.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1059" data-mc-height="380" src="../../../Resources/Images/Develop Extensions/Dev rules 11_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Pour différencier l'ordre des appels en fonction des actions, utilisez cette syntaxe :</p>
+                                            <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Resources/Images/Develop Extensions/Dev rules 12.bmp"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1051" data-mc-height="386" src="../../../Resources/Images/Develop Extensions/Dev rules 12_thumb_150_0.jpg" style="mc-thumbnail-max-width: 150px;mc-thumbnail-max-height: auto;" tabindex="" /></a>
+                                            </p>
+                                            <p>Ainsi, vous pouvez gérer l'appel de chaque script vertical et spécifique.</p>
+                                            <h4>Gérer la livraison de traitements d'aiguillage</h4>
+                                            <ul>
+                                                <li>Créez un patch séparé pour tous vos traitements d'aiguillage,</li>
+                                                <li>dans le patch principal, ajoutez :<ul><li>le <strong>code source</strong> des traitements d'aiguillage dans un répertoire dédié nommé <span class="reference">ADDSRC</span>,</li><li>dans le fichier <strong>Readme</strong>, une liste de tous les noms de traitements d'aiguillage et leur nom de traitement core correspondants,</li><li>dans le fichier <strong>Readme</strong> l'explication concernant la nécessité de <strong>modifier manuellement</strong> chaque processus d'aiguillage en utilisant le traitement code source correspondant livré dans le répertoire <span class="reference">ADDSRC</span>, si d'autres add-ons ou assets existent dans la couche verticale.</li></ul></li>
+                                            </ul>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <col class="TableStyle-Normal-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader1" data-mc-pattern="8">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader1">Patch principal</td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader1">Patch séparé</td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-RowHeader2" data-mc-pattern="5">
+                                                        <td class="TableStyle-Normal-BodyE-Column1-RowHeader2">
+                                                            <p>X1CNSCSOSPE<br />Traitement applicatif d'add-on X1</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-RowHeader2">
+                                                            <p>CNSCSOSPE<br />Traitement d'aiguillage</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-Column1-Body1">Ce patch sera toujours intégré.</td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>Ce patch sera intégré par le client si aucun autre add-on ou asset n'existe sur les mêmes fonctions core.</p>
+                                                            <p><strong>Sinon, ce patch ne pourra pas être intégré pour éviter l'écrasement des traitements existants</strong>.<strong> Les traitements d'aiguillage doivent être mis à jour manuellement</strong>.<strong> </strong></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>États de développement</h2>
+                                            <p>Les états standards sont développés avec l'outil Crystal Report.</p>
+                                            <p>Voici quelques conseils sur la manière d'élaborer vos rapports :</p>
+                                            <ul>
+                                                <li>utilisez la charte de développement des états Crystal Reports telle que définie dans le centre d'aide en ligne,<br />développez vos états à l'aide d'un des modèles d'états suivants : <span class="reference">ATEMPLATE_RPT1</span> ou <span class="reference">ATEMPLATE_RPT2</span>,</li>
+                                                <li>
+                                                    <p>le nom de l'état doit commencer par votre identifiant et porter le même nom que le code d'état du dictionnaire,</p>
+                                                </li>
+                                                <li>tous les états doivent se baser sur une source ODBC,</li>
+                                                <li>vous devez fournir des états dans les différentes langues auxquelles vous avez accès en tant que partenaire. L'anglais est obligatoire,</li>
+                                                <li>les états seront conformes aux règles de développement de gestion des autorisations.</li>
+                                            </ul>
+                                            <p>Reportez-vous au support de formation.</p>
+                                            <h2>Limites principales</h2>
+                                            <p>La plate-forme technologique connaît certaines limites. <span class="mc-variable Sage-Product.ProductFamily variable">Sage</span> cherche à corriger ces limitations.</p>
+                                            <p>Certains aspects des fonctions classiques doivent être pris en compte : </p>
+                                            <table style="mc-table-style: url('../../../Resources/TableStyles/Normal.css');" class="TableStyle-Normal" cellspacing="0">
+                                                <col class="TableStyle-Normal-Column-ColumnHeader1" data-mc-pattern="7">
+                                                </col>
+                                                <col class="TableStyle-Normal-Column-Column1">
+                                                </col>
+                                                <tbody>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Le nombre de colonnes dans une table</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>est limité à 512. Lorsque vous travaillez avec une table standard proche de cette limite, créez et gérez votre table de complément pour éviter les problèmes.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>La longueur d’une ligne dans une table </p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>est limitée à 8 Kb.</p>
+                                                            <p>Si la table standard est proche de cette limite, vous pouvez ajouter et gérer votre propre table.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyE-ColumnHeader1-Body1">
+                                                            <p>Le nombre de sections dans un masque </p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyD-Column1-Body1">
+                                                            <p>est limité à 15.</p>
+                                                            <p>Si vous ajoutez plusieurs sections et approchez de la limite, il vous faut ajouter un nouveau masque.</p>
+                                                            <p>L'authoring vous permet de concevoir une mise en page adaptée à vos besoins.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-Normal-Body-Body1">
+                                                        <td class="TableStyle-Normal-BodyB-ColumnHeader1-Body1">
+                                                            <p>Le nombre de champs dans un masque</p>
+                                                        </td>
+                                                        <td class="TableStyle-Normal-BodyA-Column1-Body1">
+                                                            <p>est limité à 500 dans la définition.</p>
+                                                            <p>limité à 300.</p>
+                                                            <p>si vous ajoutez plusieurs champs et approchez de la limite, il vous faut ajouter un nouveau masque.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h2>Interactions avec la couche standard</h2>
+                                            <p>Évitez d'apporter des modifications à la fonctionnalité d'un élément core, notamment pour les localisations. Ces fonctionnalités sont destinées à coexister dans un même dossier client. Il est important de se rappeler qu'un add-on est un moyen de renforcer et d'étendre la fonctionnalité core et non de la contourner.</p>
+                                            <p>Points particuliers à se rappeler : </p>
+                                            <ul>
+                                                <li>n'utilisez pas votre code d'activité pour modifier ou supprimer un élément de base,</li>
+                                                <li>ne désactivez pas de bouton, menu, champ, etc.,</li>
+                                                <li>ne modifiez pas le comportement d'un bouton ou d'une menu,</li>
+                                                <li>utilisez uniquement <span class="reference">GPE=1</span> pour appeler directement le core mais pas pour l'éviter,</li>
+                                                <li>utilisez un menu plutôt qu'un bouton dans une fenêtre core,</li>
+                                                <li>utilisez votre propre écran dans une fenêtre core ou créer votre propre pop-up complémentaire,</li>
+                                                <li>évitez de partager un même espace disponible sur des écrans core entre différents add-ons installés au sein d'un même dossier client,</li>
+                                                <li>ce type de conflit doit être géré par l'équipe de mise en œuvre du projet.</li>
+                                            </ul>
+                                            <p>Faites attention, lorsque vous complétez une fonction core. Si la couche verticale (spécifique dans certains dictionnaires) est déjà utilisée par un add-on ou asset vertical, <strong>ne forcez pas le traitement d'aiguillage existant de cet add-on ou asset vertical.</strong></p>
+                                            <p>Dans cette situation et pour vos développements futurs, vous devez utiliser la stratégie du traitement d'aiguillage qui appelle votre propre traitement applicatif.</p>
+                                            <ul>
+                                                <li><strong>Pour utiliser un point d'entrée</strong>, utilisez la stratégie du traitement d'aiguillage pour aider la mise à jour des traitements d'aiguillage.</li>
+                                                <li>Créez un patch distinct pour ces derniers. Ensuite, ajoutez un exemple de ce à quoi devrait ressembler le traitement des sources dans un dossier dédié nommé <span class="reference">ADDSRC</span> que vous livrez dans votre patch.</li>
+                                                <li>Complétez le fichier Readme en ajoutant la référence des traitements d'aiguillage et les traitements core correspondants.</li>
+                                            </ul>
+                                            <div class="note-warning">Ne modifiez jamais l'utilisation d'un élément core.</div>
+                                            <h2>Test</h2>
+                                            <p>Pour tester une fonction core : </p>
+                                            <ul>
+                                                <li>vérifiez <strong>la fonctionnalité globale de la fonction core</strong>, une fois que les add-ons et les assets ont été ajoutés,</li>
+                                                <li>vérifiez le <strong>traitement d'aiguillage</strong> dans la couche verticale, dans la couche spécifique pour certains dictionnaires ainsi que dans les points d'entrée,</li>
+                                                <li>vérifiez que <strong>les actions de champ coexistantes</strong> fonctionnent ensemble dans un <strong>écran core</strong>,</li>
+                                                <li>vérifiez que <strong>les menus et boutons</strong> fonctionnent pour plusieurs add-ons dans <strong>une fenêtre core</strong>, évitez le même code menu pour deux add-ons de la même fenêtre core,</li>
+                                                <li>assurez-vous que les <strong>capacités de la plate-forme</strong> sont respectées (nombre de champs dans une table, nombre d'onglets dans une fenêtre, etc.).</li>
+                                            </ul>
+                                        </div>
+                                        <div class="buttons popup-container clearfix topicToolbarProxy _Skins_Toolbar mc-component nocontent" style="mc-topic-toolbar-items: PreviousTopic NextTopic;position: relative;left: 45%; width: 200px; overflow: auto;">
+                                            <div class="button-group-container-left">
+                                                <button class="button needs-pie previous-topic-button" title="Précédent" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Précédent">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                                <button class="button needs-pie next-topic-button" title="Suivant" disabled="true">
+                                                    <div>
+                                                        <div role="img" class="button-icon-wrapper" aria-label="Suivant">
+                                                            <div class="button-icon"> </div>
+                                                        </div>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </section><a class="go-to-top" href="#"><!-- icon and label are inserted --></a>
+                                    <section class="sage-footer colour-dark-1" id="footer" role="contentinfo">
+                                        <div class="row">
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Liens Sage</h5>
+                                                <p><a href="https://www.sage.com/fr-fr/assistance-support/" target="_blank" class="external">Hub Services Sage</a>
+                                                </p>
+                                                <p><a href="https://www.sagecity.com/fr/subgrouplist/" class="external" target="_blank" title="Cliquez pour accéder à la communauté des clients et experts Sage." alt="Cliquez pour accéder à la communauté des clients et experts Sage.">Communauté Sage City</a>
+                                                </p>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5>Informations sur la page</h5>
+                                                <p>Date de publication : <span class="mc-variable Dates.DateProjectBuilt variable">15 novembre 2022</span></p>
+                                                <!-- script moves last published date to here -->
+                                                <div id="last-published-footer">
+                                                </div>
+                                            </div>
+                                            <div class="small-6 medium-3 columns">
+                                                <h5><a href="https://www.sage.com" target="_blank" alt="Sage" title="Sage"><img class="sage-logo" src="../../../Resources/Images/Sage_logo_green.svg" alt="Sage" /></a>
+                                                </h5>
+                                                <p><a href="https://www.facebook.com/Sage/" target="_blank" alt="Facebook" title="Facebook"><i class="fa fa-lg fa-facebook" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/sage-software" target="_blank" alt="LinkedIn" title="LinkedIn"><i class="fa fa-lg fa-linkedin" aria-hidden="true"></i></a> <a href="https://twitter.com/sagegroupplc/" target="_blank" alt="Twitter" title="Twitter"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a> <a href="https://www.youtube.com/sage/ " target="_blank" alt="YouTube" title="YouTube"><i class="fa fa-lg fa-youtube" aria-hidden="true"></i></a></p>
+                                                <p style="display: none;"><a href="../../../Resources/MasterPages/SearchResults_X3.htm"> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Skin type scripts -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-template.js" data-mc-conditions="Other.HTML5-TopNav">
+                                    </script>
+                                    <!-- Page TOC -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/TopNav-page-toc.js">
+                                    </script>
+                                    <!-- Business size -->
+                                    <script type="text/javascript" src="../../../Resources/Scripts/Business-Medium.js" data-mc-conditions="Other.Business-Medium">
+                                    </script>
+                                    <!-- Google Analytics -->
+                                    <div data-mc-conditions="Other.Production only">
+                                        <!-- Google analytics script -->
+                                        <!-- Copy and paste full HTML of tracking code here for Global site tag (gtag.js) -->
+                                        <!-- Remember to edit 'async' parameter to read async="" -->
+                                        <!-- Analytics for events -->
+                                        <script type="text/javascript" src="../../../Resources/Scripts/google-analytics-events.js">
+                                        </script>
+                                    </div>
+                                    <!-- cookies -->
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage_X3.js">
+                                    </script>
+                                    <script src="../../../Resources/Scripts/jquery.cookiesdirective.sage.config.js">
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

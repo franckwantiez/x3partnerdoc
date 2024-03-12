@@ -1,0 +1,299 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+
+html.panel a,
+html.panel a:link,
+html.panel a:visited	/* a: normal hyperlink styles */
+{
+	color: #007E45; /* Same as --business-product */
+}
+
+html.panel a:hover	/* a: normal hyperlink styles */
+{
+	color: #006738; /* Same as --business-product-hover1 */
+}
+
+html.panel :focus
+{
+	/* outline: none; */
+}
+
+html.panel nav.tab-bar
+{
+	display: none !important; /* hide top nav menu in panel topics (required for testing only) */
+}
+
+html.panel	/* set master page for topics with panel class */
+{
+	mc-master-page: url('../MasterPages/Panel.flmsp');
+}
+
+html.panel-blank	/* set master page for topics with panel_blank class - used for what's new */
+{
+	mc-master-page: url('../MasterPages/Panel_blank.flmsp');
+}
+
+section.sage-panel	/* container for all panel content (set in master page panel.flmsp) */
+{
+	padding: 0 6px 0 6px; /* set padding from left and right edges */
+	background-color: #ffffff; /* set white background as body is light grey */
+}
+
+html.panel body	/* set body style for panel topics */
+{
+	/* reset margins and padding to zero */
+	margin: 0 !important;
+	padding: 0 !important;
+	max-width: 260px !important; /* panel width is 256px, this is just to get an idea when preview in browser */
+	font-size: 87.5%; /* reduce font size to 14px (14/16) */
+}
+
+html.panel body.web
+{
+	background-color: #E6EBED; /* Same as --col-action-minor-100  */ /* grey background outside panel, same as footer. To stop appearing in editor, set on body.web which is output only */
+}
+
+html.panel ol,
+html.panel ul	/* Reduce margin for lists*/
+{
+	margin-left: 18px;
+}
+
+html.panel h1	/* main heading for panel */
+{
+	color: #ffffff;
+	background-color: #000000; /* Same as colour-dark-1 */ 
+	font-size: 1.429em;
+	font-weight: 500;
+	padding: 6px;
+	margin: 0 -6px 0 -6px;
+}
+
+html.panel h2	/* sub heading for panel */
+{
+	color: #ffffff;
+	background-color: #404040; /* Same as colour-dark-3 / --col-yin-75 / equivalent to rgba(0,0,0,0.85); */
+	font-size: 1.286em;
+	font-weight: 500;
+	padding: 6px;
+	margin: 0 -6px 6px -6px;
+}
+
+html.panel h3	/* h3 in panel */
+{
+	font-size: 1.286em;
+	font-weight: 500;
+	padding: 6px;
+	margin: 0 -6px 6px -6px;
+}
+
+html.panel h4	/* h4 in panel - feedback control*/
+{
+	font-size: 1.143em;
+	font-weight: 500;
+	padding: 6px;
+	margin: 0 -6px 6px -6px;
+}
+
+div#panel-footer	/* container for footer */
+{
+	background-color: #E6EBED; /* Same as --col-action-minor-100  */ /* grey background outside panel, same as footer. To stop appearing in editor, set on body.web which is output only */
+	margin: 0 -6px 0 -6px;
+	padding: 6px;
+}
+
+div#panel-footer a	/* links inside footer */
+{
+	
+}
+
+a[href^="form"]	/* form link for panels */
+{
+	
+}
+
+a[href^="form"]:after	/* add icon for form links */
+{
+	font-family: "FontAwesome";
+	content: "\f108";
+	padding: 0 0 0 0.5em;
+}
+
+a.external	/* external link for panels (such as help) - this class is automatically added using a script */
+{
+	mc-disabled: true;
+}
+
+/* ----- dropdown (standard) ------- */
+
+html.panel .dropDownHotspot:link,
+html.panel .dropDownHotspot:visited
+{
+	color: rgba(0,0,0,0.9); /* Same as --col-black-90. */ /* Reset standard dropdown colour */
+	font-weight: 500;
+}
+
+html.panel MadCap|dropDown > MadCap|dropDownHead > MadCap|dropDownHotspot	/* to make visible in XML editor only - doesn't affect output */
+{
+	color: rgba(0,0,0,0.9); /* Same as --col-black-90. */ /* Reset standard dropdown colour */
+	font-weight: 500;
+}
+
+html.panel .dropDownHead
+{
+	font-size: 1em; /* reduce normal drop down size */
+}
+
+html.panel .dropDownBody 
+{
+    border-bottom-color: #E6EBED; /* Same as --col-action-minor-100  */
+}
+
+/* ----- dropdown.panel ------- */
+
+MadCap|dropDown.panel	/* drop down - larger panel style */
+{
+
+}
+
+html.panel MadCap|dropDown.panel > MadCap|dropDownHead > MadCap|dropDownHotspot	/* to make visible in XML editor only - doesn't affect output */
+{
+	font-size: 1.05em; /* increase drop down size from normal - note: font size also set in parent dropDownHead */
+	color: #007E45; /* Same as --business-product */
+	display: block;
+	padding: 0.7em 0 0.7em 0;
+}
+
+html.panel MadCap|dropDown.panel > MadCap|dropDownHead > MadCap|dropDownHotspot:hover,
+html.panel MadCap|dropDown.panel > MadCap|dropDownHead > MadCap|dropDownHotspot:focus 	/* to make visible in XML editor only - doesn't affect output */
+{
+	color: #006738; /* Same as --business-product-hover1 */
+}
+
+html.panel MadCap|dropDown > MadCap|dropDownHead > MadCap|dropDownHotspot MadCap|dropDownHotspot /* nested drop downs. to make visible in XML editor only - doesn't affect output */
+{
+	color: rgba(0,0,0,0.9); /* Same as --col-black-90. */
+}
+
+
+html.panel .MCDropDown.dropDownpanel	/* only when used in panel, not topic */
+{
+	border-bottom: 2px solid #E6EBED; /* Same as --col-action-minor-100  */
+	margin: 0 -6px 0 -6px;
+	/* override default for normal dropdowns */
+	padding: 0 6px 0 6px;
+}
+
+html.panel .MCDropDown.dropDownpanel > .MCDropDownHead > .MCDropDownHotSpot	/* panel drop down hotspot */
+{
+	font-size: 1.05em; /* increase drop down size from normal  - note: font size also set in parent dropDownHead */
+	color: #007E45; /* Same as --business-product */
+}
+
+html.panel .MCDropDown.dropDownpanel > .MCDropDownHead > .MCDropDownHotSpot:hover,
+html.panel .MCDropDown.dropDownpanel > .MCDropDownHead > .MCDropDownHotSpot:focus 	/* panel drop down hotspot */
+{
+	color: #006738; /* Same as --business-product-hover1 */
+}
+
+
+
+html.panel .MCDropDown.dropDownpanel > .MCDropDownHead > .MCDropDownHotSpot	/* panel drop down hotspot - only when used in panel, not topic */
+{
+	display: block;
+	padding: 0.7em 0 0.7em 0;
+	/* background-position: right 0.5em top 1em; */
+}
+
+html.panel .MCDropDown.dropDownpanel > .MCDropDownHead > .MCDropDownHotSpot > img.MCDropDown_Image_Icon	/* panel drop down hotspot image placeholder - override transparent.gif*/
+{
+	display: none;
+}
+
+html.panel .MCDropDown.dropDownpanel > .MCDropDownBody	/* panel dropdown body - only when used in panel, not topic */
+{
+	margin: 0;
+	/* override normal margin  */
+	padding: 0 0 6px 0;
+	/* override normal padding */
+	border-bottom-style: none;
+	/* override normal bottom border */
+	background-image: none;
+	/* override normal bottom border image */
+}
+
+html.panel .dropDown.dropDownpanel.MCDropDown_Closed > .dropDownHead > .dropDownHotspot
+{
+	overflow: auto; /* required to contain icon added using ::after */
+}
+
+html.panel .dropDown.dropDownpanel.MCDropDown_Closed > .dropDownHead > .dropDownHotspot::after
+{
+	float: right; /* float dopdown panel icon right */
+}
+
+html.panel .dropDown.dropDownpanel.MCDropDown_Open > .dropDownHead > .dropDownHotspot::after
+{
+	float: right; /* float dopdown panel icon right */
+}
+
+/* ----- dropdown.panelheading ------- */
+
+MadCap|dropDown.panelheading	/* drop down - larger heading style */
+{
+	border-bottom: 2px solid #CCD6DB; /* Same as --col-action-minor-200 */
+	margin: 0 -6px 0 -6px;
+	/* override default for normal dropdowns */
+	padding: 0 6px 0 6px;
+}
+
+MadCap|dropDown.panelheading > MadCap|dropDownHead > MadCap|dropDownHotspot	/* to make visible in XML editor only - doesn't affect output */
+{
+	font-weight: 700;
+	font-size: 1.05em;
+	color: rgba(0,0,0,0.9); /* Same as --col-black-90 */
+	display: block;
+	padding: 0.7em 0 0.7em 0;
+}
+
+html.panel .MCDropDown.dropDownpanelheading > .MCDropDownHead > .MCDropDownHotSpot	/* panelheading drop down hotspot */
+{
+	font-weight: 700;
+	font-size: 1.05em;
+	color: rgba(0,0,0,0.9); /* Same as --col-black-90 */
+	display: block;
+	padding: 0.7em 0 0.7em 0;
+	/* background-position: right 0.5em top 1em; */
+}
+
+html.panel .MCDropDown.dropDownpanelheading > .MCDropDownHead > .MCDropDownHotSpot > img.MCDropDown_Image_Icon	/* panelheading drop down hotspot image placeholder - override transparent.gif*/
+{
+	display: none;
+}
+
+html.panel .MCDropDown.dropDownpanelheading > .MCDropDownBody	/* panelheading dropdown body */
+{
+	margin: 0;
+	/* override normal margin  */
+	padding: 0 0 6px 0;
+	/* override normal padding */
+	border-bottom-style: none;
+	/* override normal bottom border */
+	background-image: none;
+	/* override normal bottom border image */
+}
+
+
+/* ------------------------------------------ hide styles ---------------------- */
+
+.MCDropDownBody,
+.MCDropDownHead,
+.MCDropDownHotSpot,
+.MCDropDownpanel,
+.MCDropDownpanelheading,
+.MCDropDown.dropDownpanel,
+.MCDropDown.dropDownpanelheading	/* hide styles from editor */
+{
+	mc-disabled: true;
+}
